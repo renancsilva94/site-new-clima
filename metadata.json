@@ -1,0 +1,7 @@
+{
+  "name": "New Clima Ar Condicionado",
+  "description": "Especialista em instalação, manutenção e limpeza de ar condicionado em São Paulo e ABC. Atendimento residencial, comercial e corporativo com padrão premium.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
