@@ -40,27 +40,26 @@ const BlogPostLayout = ({ title, date, author, tag, children }: { title: string,
 export const BlogInverter = () => (
   <BlogPostLayout 
     tag="Guia de Compra"
-    title="Ar-Condicionado Inverter Vale a Pena? A Verdade Sobre a Economia"
+    title="Ar Condicionado Inverter: Vale a Pena? Economia e Vantagens Reais"
     date="15 de Março, 2026"
-    author="Eng. Ricardo Carvalho"
+    author="Ricardo Carvalho"
   >
     <p>
-      Uma das perguntas mais frequentes que recebemos na <strong>New Clima Ar Condicionado</strong> é se a tecnologia Inverter realmente compensa o investimento inicial mais alto. A resposta curta é: <strong>sim, mas depende do seu perfil de uso.</strong>
+      Uma das dúvidas mais comuns na <strong>New Clima Ar Condicionado</strong> é se a tecnologia Inverter realmente compensa. Se você busca <strong>economia de energia</strong> e conforto, a resposta é um sim absoluto.
     </p>
-    <h2 className="text-2xl font-bold text-primary">Como funciona a tecnologia Inverter?</h2>
+    <h2 className="text-2xl font-bold text-primary">O que é a Tecnologia Inverter?</h2>
     <p>
-      Diferente dos aparelhos convencionais (On/Off), onde o compressor liga e desliga constantemente para manter a temperatura, o sistema Inverter nunca desliga totalmente. Ele apenas reduz a velocidade do compressor quando a temperatura desejada é atingida. Isso evita os picos de energia que ocorrem toda vez que um motor elétrico precisa "dar a partida".
+      Ao contrário dos modelos convencionais, o <strong>ar condicionado inverter</strong> não desliga o compressor. Ele ajusta a velocidade de rotação para manter a temperatura constante, evitando picos de consumo elétrico que encarecem a conta de luz.
     </p>
-    <h2 className="text-2xl font-bold text-primary">Vantagens Reais</h2>
+    <h2 className="text-2xl font-bold text-primary">Principais Benefícios</h2>
     <ul className="list-disc pl-6 space-y-2">
-      <li><strong>Economia de Energia:</strong> Redução de até 60% na conta de luz comparado ao modelo convencional.</li>
-      <li><strong>Conforto Térmico:</strong> A temperatura do ambiente fica estável, sem aquelas oscilações de "muito frio" e "muito quente".</li>
-      <li><strong>Silêncio Absoluto:</strong> Como o compressor trabalha em rotações menores, o ruído da unidade externa é drasticamente menor.</li>
-      <li><strong>Durabilidade:</strong> Menos desgaste mecânico por não ter o impacto do liga/desliga constante.</li>
+      <li><strong>Economia Real:</strong> Redução de até 60% no consumo de energia elétrica.</li>
+      <li><strong>Silêncio:</strong> Operação muito mais silenciosa, ideal para quartos e escritórios.</li>
+      <li><strong>Conforto Térmico:</strong> Mantém a temperatura estável, sem oscilações incômodas.</li>
+      <li><strong>Durabilidade:</strong> Menor desgaste do compressor, aumentando a vida útil do aparelho.</li>
     </ul>
-    <h2 className="text-2xl font-bold text-primary">Quando vale a pena?</h2>
     <p>
-      Se você usa o ar condicionado por mais de 4 horas diárias (como em quartos para dormir ou escritórios), o <strong>Inverter se paga em menos de 18 meses</strong> apenas com a economia na conta de luz. Em São Paulo, onde o calor tem sido cada vez mais frequente, o Inverter deixou de ser um luxo para se tornar uma escolha inteligente de engenharia residencial.
+      Para quem utiliza o aparelho por longos períodos em São Paulo ou no ABC, o investimento em um modelo Inverter se paga rapidamente através da economia mensal.
     </p>
   </BlogPostLayout>
 );
@@ -68,28 +67,24 @@ export const BlogInverter = () => (
 export const BlogApartamento = () => (
   <BlogPostLayout 
     tag="Instalação"
-    title="Instalação de Ar-Condicionado em Apartamento: O Que Saber Antes de Começar"
+    title="Instalação de Ar Condicionado em Apartamento em SP: Guia Completo"
     date="10 de Março, 2026"
     author="Equipe Técnica New Clima"
   >
     <p>
-      Morar em apartamento em <strong>São Paulo ou no ABC</strong> exige planejamento extra na hora de instalar um ar condicionado. Não basta apenas comprar o aparelho; é preciso respeitar normas de condomínio, prefeitura e segurança estrutural.
+      Instalar <strong>ar condicionado em apartamento em São Paulo</strong> requer atenção a detalhes que vão além da escolha do aparelho. É fundamental respeitar as normas do condomínio e garantir uma instalação segura e estética.
     </p>
-    <h2 className="text-2xl font-bold text-primary">1. Normas do Condomínio e Fachada</h2>
+    <h2 className="text-2xl font-bold text-primary">Normas e Varanda Técnica</h2>
     <p>
-      Antes de qualquer furo, consulte a convenção do seu condomínio. Muitos prédios proíbem a alteração da fachada ou exigem que a condensadora fique em locais específicos, como a varanda técnica. O descumprimento pode gerar multas pesadas e a obrigatoriedade de remover o equipamento.
+      A maioria dos prédios novos em SP e no ABC já possui varanda técnica. É essencial verificar a capacidade de carga e as regras para alteração de fachada. Nossa equipe é especialista em otimizar o espaço e garantir que a instalação esteja em total conformidade com o regimento interno.
     </p>
-    <h2 className="text-2xl font-bold text-primary">2. Varanda Técnica e Drenagem</h2>
+    <h2 className="text-2xl font-bold text-primary">Drenagem e Elétrica</h2>
     <p>
-      A drenagem é o ponto onde ocorrem mais problemas em apartamentos. A água condensada precisa ser descartada corretamente. Se o prédio não possui dreno embutido, você precisará de uma bomba de dreno ou de um projeto que direcione a água para um ralo interno, evitando o gotejamento na fachada ou no vizinho de baixo.
-    </p>
-    <h2 className="text-2xl font-bold text-primary">3. Carga Elétrica e Disjuntores</h2>
-    <p>
-      Verifique se o quadro elétrico do seu apartamento suporta a carga do novo aparelho. Em prédios mais antigos, pode ser necessária a troca da fiação ou do disjuntor para evitar sobrecargas e riscos de incêndio.
+      Um dos maiores desafios em apartamentos é o dreno. Projetamos soluções que evitam infiltrações e garantem o escoamento correto da água. Além disso, revisamos a parte elétrica para suportar a carga do novo sistema de climatização.
     </p>
     <div className="bg-ice p-6 rounded-2xl border border-primary-light/10">
-      <p className="font-bold text-primary mb-2">Dica de Ouro:</p>
-      <p className="text-sm">Sempre solicite a ART (Anotação de Responsabilidade Técnica) do instalador. Muitos condomínios exigem esse documento assinado por um engenheiro para autorizar a entrada da equipe.</p>
+      <p className="font-bold text-primary mb-2">Atenção:</p>
+      <p className="text-sm">Sempre exija a ART (Anotação de Responsabilidade Técnica) para instalações em condomínios. Isso garante a segurança jurídica e técnica da sua obra.</p>
     </div>
   </BlogPostLayout>
 );
@@ -99,7 +94,7 @@ export const BlogBTUs = () => (
     tag="Guia Técnico"
     title="Como Calcular os BTUs Ideais Para Seu Ambiente: Não Erre na Escolha"
     date="05 de Março, 2026"
-    author="Eng. Ricardo Carvalho"
+    author="Ricardo Carvalho"
   >
     <p>
       Escolher um ar condicionado com capacidade insuficiente (poucos BTUs) fará com que ele nunca gele o ambiente e gaste muita energia tentando. Escolher um muito potente (muitos BTUs) é desperdício de dinheiro e pode gerar um ambiente úmido e desconfortável.
@@ -133,7 +128,7 @@ export const BlogPMOC = () => (
     tag="Legislação"
     title="PMOC Obrigatório: O Que Sua Empresa Precisa Saber Para Evitar Multas"
     date="01 de Março, 2026"
-    author="Equipe de Engenharia New Clima"
+    author="Equipe Técnica New Clima"
   >
     <p>
       Desde 2018, a Lei Federal 13.589 tornou obrigatório o <strong>PMOC (Plano de Manutenção, Operação e Controle)</strong> para todos os edifícios públicos ou privados que possuem sistemas de ar condicionado. Se sua empresa tem uma soma de capacidades superior a 60.000 BTUs (5 TR), você precisa de um PMOC assinado por um responsável técnico.
@@ -152,6 +147,117 @@ export const BlogPMOC = () => (
     </ul>
     <p>
       A <strong>New Clima Ar Condicionado</strong> oferece a gestão completa do PMOC para sua empresa em São Paulo e ABC, cuidando de toda a burocracia e garantindo que seus equipamentos operem sempre na máxima eficiência.
+    </p>
+  </BlogPostLayout>
+);
+
+export const BlogRoundCassette = () => (
+  <BlogPostLayout 
+    tag="Tecnologia"
+    title="LG Round Cassette: Climatização Circular Para Quem Não Aceita Ponto Quente"
+    date="28 de Março, 2026"
+    author="Ricardo Carvalho"
+  >
+    <p>
+      O <strong>LG Round Cassette</strong> é a revolução estética e funcional no mercado de climatização comercial e residencial de alto padrão. Diferente dos cassetes tradicionais de 4 vias, que podem deixar "pontos mortos" no ambiente, o design circular permite uma distribuição de ar em 360 graus.
+    </p>
+    <h2 className="text-2xl font-bold text-primary">Design que Valoriza o Projeto</h2>
+    <p>
+      Com um perfil ultra-fino e linhas fluidas, ele se integra perfeitamente a tetos com design moderno, sendo a escolha preferida de arquitetos em bairros como <strong>Vila Madalena e Pinheiros</strong>. Além da beleza, ele utiliza a tecnologia de fluxo de ar laminar, que resfria o ambiente de forma mais suave e silenciosa.
+    </p>
+    <h2 className="text-2xl font-bold text-primary">Vantagens Técnicas</h2>
+    <ul className="list-disc pl-6 space-y-2">
+      <li><strong>Fluxo de Ar 360°:</strong> Elimina correntes de ar diretas desconfortáveis.</li>
+      <li><strong>Instalação Flexível:</strong> Ideal para ambientes com pé-direito alto.</li>
+      <li><strong>Eficiência Inverter:</strong> Máxima economia com o selo de qualidade LG.</li>
+    </ul>
+  </BlogPostLayout>
+);
+
+export const BlogObraLimpa = () => (
+  <BlogPostLayout 
+    tag="Instalação"
+    title="Obra Limpa: Como Instalar Ar-Condicionado Sem Quebra-Quebra"
+    date="25 de Março, 2026"
+    author="Equipe Técnica New Clima"
+  >
+    <p>
+      O maior medo de quem decide climatizar a casa é a sujeira e a destruição das paredes. Na <strong>New Clima Ar</strong>, desenvolvemos o método de <strong>Obra Limpa</strong>, focado em precisão e organização.
+    </p>
+    <h2 className="text-2xl font-bold text-primary">Tecnologia a Favor da Limpeza</h2>
+    <p>
+      Utilizamos ferramentas de perfuração com sistema de vácuo integrado, que capturam 99% da poeira no momento do furo. Além disso, protegemos todo o mobiliário e piso com mantas especiais antes de iniciar qualquer atividade.
+    </p>
+    <h2 className="text-2xl font-bold text-primary">Planejamento Estratégico</h2>
+    <p>
+      Muitas vezes, é possível utilizar canaletas de acabamento premium ou aproveitar infraestruturas existentes para evitar rasgos na alvenaria. Nosso objetivo é entregar o conforto do ar condicionado com a casa exatamente como a encontramos: limpa e intacta.
+    </p>
+  </BlogPostLayout>
+);
+
+export const BlogQuarto = () => (
+  <BlogPostLayout 
+    tag="Guia Prático"
+    title="Como Instalar Ar Condicionado no Quarto: O Guia Para Noites Perfeitas"
+    date="20 de Março, 2026"
+    author="Paulo Souza"
+  >
+    <p>
+      A posição do ar condicionado no quarto é decisiva para a qualidade do seu sono. Um erro comum é instalar o aparelho diretamente acima da cabeceira ou soprando ar direto no rosto.
+    </p>
+    <h2 className="text-2xl font-bold text-primary">Onde Instalar?</h2>
+    <p>
+      O ideal é que a unidade evaporadora fique em uma parede lateral à cama, permitindo que o ar circule pelo ambiente antes de atingir as pessoas. Isso evita o ressecamento das vias respiratórias e o desconforto térmico.
+    </p>
+    <h2 className="text-2xl font-bold text-primary">Silêncio é Fundamental</h2>
+    <p>
+      Para quartos, sempre recomendamos a tecnologia <strong>Inverter</strong>. Além da economia, esses aparelhos são extremamente silenciosos, mantendo a temperatura estável sem os estalos e ruídos de partida dos modelos antigos.
+    </p>
+  </BlogPostLayout>
+);
+
+export const BlogConvencionalInverter = () => (
+  <BlogPostLayout 
+    tag="Comparativo"
+    title="Split Convencional vs Inverter: Qual Escolher Para Sua Realidade?"
+    date="18 de Março, 2026"
+    author="Ricardo Carvalho"
+  >
+    <p>
+      Embora o Inverter seja a tecnologia superior, entender as diferenças ajuda a decidir onde investir seu dinheiro.
+    </p>
+    <h2 className="text-2xl font-bold text-primary">Convencional (On/Off)</h2>
+    <p>
+      Funciona como uma lâmpada: ou está ligado no máximo, ou desligado. Isso gera picos de consumo e uma oscilação de temperatura de até 3°C no ambiente. É indicado apenas para locais de uso muito esporádico.
+    </p>
+    <h2 className="text-2xl font-bold text-primary">Inverter</h2>
+    <p>
+      Funciona como um acelerador de carro: ajusta a potência conforme a necessidade. É até 60% mais econômico, muito mais silencioso e mantém a temperatura com precisão de 0,5°C.
+    </p>
+    <div className="bg-ice p-6 rounded-2xl border border-primary-light/10">
+      <p className="font-bold text-primary">Veredito:</p>
+      <p>Para o dia a dia em São Paulo, o Inverter é o único que faz sentido financeiro e técnico a longo prazo.</p>
+    </div>
+  </BlogPostLayout>
+);
+
+export const BlogEmpresas = () => (
+  <BlogPostLayout 
+    tag="Corporativo"
+    title="Ar Condicionado para Empresas: Do Split ao VRF com Foco em ROI"
+    date="12 de Março, 2026"
+    author="Equipe Técnica New Clima"
+  >
+    <p>
+      Climatização corporativa não é custo, é investimento em produtividade. Funcionários em ambientes com temperatura controlada produzem até 15% mais e cometem menos erros.
+    </p>
+    <h2 className="text-2xl font-bold text-primary">Escalabilidade</h2>
+    <p>
+      Para pequenas salas, o Multi Split resolve. Para andares inteiros ou edifícios, o sistema <strong>VRF</strong> é a solução definitiva, permitindo controle centralizado e uma economia de escala impressionante na manutenção e no consumo de energia.
+    </p>
+    <h2 className="text-2xl font-bold text-primary">Conformidade Legal</h2>
+    <p>
+      Lembramos que toda empresa com sistema de climatização coletiva deve possuir o <strong>PMOC</strong>. A New Clima Ar cuida de toda a parte técnica e documentação, permitindo que você foque apenas no seu negócio.
     </p>
   </BlogPostLayout>
 );

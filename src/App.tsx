@@ -1,7 +1,6 @@
 import React from 'react';
 import { 
   Phone, 
-  MessageCircle, 
   Menu, 
   X, 
   CheckCircle2, 
@@ -20,7 +19,13 @@ import {
   ArrowRight,
   Facebook,
   Instagram,
-  Linkedin
+  Linkedin,
+  MessageSquare,
+  Ruler,
+  HardHat,
+  Paintbrush,
+  HeartHandshake,
+  ExternalLink
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
@@ -37,7 +42,12 @@ import {
   BlogInverter, 
   BlogApartamento, 
   BlogBTUs, 
-  BlogPMOC 
+  BlogPMOC,
+  BlogRoundCassette,
+  BlogObraLimpa,
+  BlogQuarto,
+  BlogConvencionalInverter,
+  BlogEmpresas
 } from './components/BlogContent';
 import { 
   SaoPauloRegion, 
@@ -48,9 +58,21 @@ import {
 } from './components/RegionContent';
 
 // --- Types ---
-type PageId = 'home' | 'split-multisplit' | 'sistemas-comerciais' | 'vrf-mini-vrf' | 'manutencao-preventiva' | 'manutencao-corretiva' | 'limpeza' | 'blog' | 'sobre' | 'contato' | 'sao-paulo' | 'santo-andre' | 'sao-bernardo' | 'sao-caetano' | 'diadema' | 'maua' | 'blog-inverter' | 'blog-apartamento' | 'blog-btus' | 'blog-pmoc';
+type PageId = 'home' | 'split-multisplit' | 'sistemas-comerciais' | 'vrf-mini-vrf' | 'manutencao-preventiva' | 'manutencao-corretiva' | 'limpeza' | 'blog' | 'sobre' | 'contato' | 'sao-paulo' | 'santo-andre' | 'sao-bernardo' | 'sao-caetano' | 'diadema' | 'maua' | 'blog-inverter' | 'blog-apartamento' | 'blog-btus' | 'blog-pmoc' | 'blog-round-cassette' | 'blog-obra-limpa' | 'blog-quarto' | 'blog-convencional-inverter' | 'blog-empresas';
 
 // --- Components ---
+
+const WhatsAppIcon = ({ size = 20 }: { size?: number }) => (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="currentColor" 
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.445 0 .062 5.383.06 11.983c0 2.108.544 4.165 1.582 6.022L0 24l6.146-1.612a11.827 11.827 0 005.904 1.599h.005c6.605 0 11.988-5.383 11.99-11.984a11.846 11.846 0 00-3.515-8.417z" />
+  </svg>
+);
 
 const WhatsAppButton = ({ className, text = "Orçamento via WhatsApp" }: { className?: string, text?: string }) => (
   <a 
@@ -59,7 +81,7 @@ const WhatsAppButton = ({ className, text = "Orçamento via WhatsApp" }: { class
     rel="noopener noreferrer"
     className={`inline-flex items-center justify-center gap-2 bg-success hover:bg-success/90 text-white font-bold py-3 px-6 rounded-xl transition-all hover:-translate-y-0.5 shadow-lg hover:shadow-success/40 ${className}`}
   >
-    <MessageCircle size={20} />
+    <WhatsAppIcon size={20} />
     {text}
   </a>
 );
@@ -97,7 +119,8 @@ export default function App() {
       <div className="min-h-screen font-sans text-slate-900 bg-white selection:bg-primary/10 selection:text-primary">
         <Helmet>
           <title>New Clima Ar | Instalação e Manutenção de Ar Condicionado em SP e ABC</title>
-          <meta name="description" content="Especialista em ar condicionado em São Paulo e ABC. Instalação, manutenção preventiva (PMOC), corretiva e limpeza profunda. Atendimento premium residencial e comercial." />
+          <meta name="description" content="Especialista em ar condicionado em São Paulo e ABC. Instalação técnica, manutenção preventiva (PMOC), conserto e limpeza profunda. Atendimento premium residencial e comercial com garantia técnica." />
+          <meta name="keywords" content="ar condicionado sp, ar condicionado abc, instalação de ar condicionado, manutenção de ar condicionado, limpeza de ar condicionado, pmoc, conserto de ar condicionado, split inverter, multi split, vrf" />
         </Helmet>
 
         {/* Topbar */}
@@ -118,26 +141,22 @@ export default function App() {
         </div>
 
         {/* Header */}
-        <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
-          <div className="container mx-auto px-4 h-20 flex items-center justify-between">
+        <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-slate-100">
+          <div className="container mx-auto px-4 h-24 flex items-center justify-between">
             <div 
-              className="flex items-center gap-3 cursor-pointer group" 
+              className="flex items-center cursor-pointer group" 
               onClick={() => navigate('home')}
             >
-              <div className="w-10 h-10 bg-gradient-to-br from-primary-light to-primary rounded-xl flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
-                <Wind size={24} />
-              </div>
-              <div>
-                <h1 className="font-display font-extrabold text-xl text-primary leading-none">
-                  New Clima Ar
-                </h1>
-                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-                  Engenharia de Climatização
-                </span>
-              </div>
+              <img 
+                src="https://cdn.coteibem.com.br/company/41315/logo/f4d0405d-28b6-4834-a8ca-9e63b68073fa.png" 
+                alt="New Clima Ar" 
+                className="h-20 md:h-24 w-auto object-contain transition-transform group-hover:scale-105"
+                referrerPolicy="no-referrer"
+              />
             </div>
 
             <nav className="hidden lg:flex items-center gap-1">
+              <button onClick={() => navigate('home')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light transition-colors">Início</button>
               <div className="relative group">
                 <button className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light flex items-center gap-1">
                   Serviços <ChevronDown size={14} />
@@ -188,6 +207,8 @@ export default function App() {
                 className="lg:hidden bg-white border-t border-slate-100 overflow-hidden"
               >
                 <div className="container mx-auto px-4 py-6 flex flex-col gap-4">
+                  <button onClick={() => navigate('home')} className="text-left font-semibold py-2 text-primary-light">Início</button>
+                  <hr className="border-slate-100" />
                   <div className="font-bold text-xs text-slate-400 uppercase tracking-widest mb-1">Serviços</div>
                   <div className="grid grid-cols-2 gap-2">
                     <button onClick={() => navigate('split-multisplit')} className="text-left text-sm py-2 text-slate-600">Split/Multi Split</button>
@@ -222,6 +243,11 @@ export default function App() {
           {currentPage === 'blog-apartamento' && <BlogView navigate={navigate} postId="apartamento" />}
           {currentPage === 'blog-btus' && <BlogView navigate={navigate} postId="btus" />}
           {currentPage === 'blog-pmoc' && <BlogView navigate={navigate} postId="pmoc" />}
+          {currentPage === 'blog-round-cassette' && <BlogView navigate={navigate} postId="round-cassette" />}
+          {currentPage === 'blog-obra-limpa' && <BlogView navigate={navigate} postId="obra-limpa" />}
+          {currentPage === 'blog-quarto' && <BlogView navigate={navigate} postId="quarto" />}
+          {currentPage === 'blog-convencional-inverter' && <BlogView navigate={navigate} postId="convencional-inverter" />}
+          {currentPage === 'blog-empresas' && <BlogView navigate={navigate} postId="empresas" />}
           {currentPage === 'sobre' && <AboutView navigate={navigate} />}
           {currentPage === 'contato' && <ContactView />}
           {['sao-paulo', 'santo-andre', 'sao-bernardo', 'sao-caetano', 'diadema', 'maua'].includes(currentPage) && (
@@ -230,16 +256,10 @@ export default function App() {
         </main>
 
         {/* Footer */}
-        <footer className="bg-primary text-white pt-16 pb-8">
+        <footer className="bg-primary text-white pt-12 pb-6">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
               <div className="space-y-6">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center text-white">
-                    <Wind size={24} />
-                  </div>
-                  <h2 className="font-display font-extrabold text-xl">New Clima Ar</h2>
-                </div>
                 <p className="text-blue-100/70 text-sm leading-relaxed">
                   Referência em climatização de alta performance em São Paulo e ABC. Projetos residenciais, comerciais e industriais com foco em eficiência energética e qualidade do ar.
                 </p>
@@ -284,7 +304,9 @@ export default function App() {
                     <a href="tel:+5511963462516" className="text-blue-100/60 hover:text-white">(11) 96346-2516</a>
                   </li>
                   <li className="flex items-center gap-3">
-                    <MessageCircle size={18} className="text-accent shrink-0" />
+                    <div className="text-accent shrink-0">
+                      <WhatsAppIcon size={18} />
+                    </div>
                     <a href="https://wa.me/5511963462516" className="text-blue-100/60 hover:text-white">WhatsApp 24h</a>
                   </li>
                 </ul>
@@ -310,14 +332,17 @@ export default function App() {
           >
             Dúvidas? Fale com um técnico!
           </motion.div>
-          <a 
-            href="https://wa.me/5511963462516" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="w-16 h-16 bg-success text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform pointer-events-auto animate-bounce"
-          >
-            <MessageCircle size={32} />
-          </a>
+          <div className="relative pointer-events-auto">
+            <div className="absolute inset-0 bg-success rounded-full animate-ping opacity-25"></div>
+            <a 
+              href="https://wa.me/5511963462516" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="relative w-16 h-16 bg-success text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform"
+            >
+              <WhatsAppIcon size={32} />
+            </a>
+          </div>
         </div>
       </div>
     </HelmetProvider>
@@ -330,7 +355,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-primary overflow-hidden pt-20 pb-32">
+      <section className="relative bg-primary overflow-hidden pt-16 pb-24">
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-white rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2" />
           <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-primary-light rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2" />
@@ -347,11 +372,11 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                 <CheckCircle2 size={16} className="text-success" />
                 Atendimento Premium em SP e ABC
               </div>
-              <h2 className="text-4xl md:text-6xl font-extrabold text-white leading-[1.1] mb-6">
-                Sistemas de <span className="text-blue-400">Climatização</span> de Alta Performance
-              </h2>
+              <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-[1.1] mb-6">
+                Instalação de <span className="text-blue-400">Ar Condicionado</span> em São Paulo e ABC Paulista
+              </h1>
               <p className="text-lg text-blue-100/80 mb-10 max-w-xl leading-relaxed">
-                Projetos de engenharia, instalação técnica e manutenção especializada para residências, comércios e indústrias. Conforto térmico com máxima eficiência.
+                A New Clima Ar é especialista em <strong>instalação, manutenção e limpeza de ar condicionado em São Paulo e no ABC</strong>. Oferecemos soluções completas de climatização, PMOC para empresas e projetos personalizados para residências com foco em eficiência e economia.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <WhatsAppButton className="h-14 px-8 text-lg" text="Solicitar Orçamento Grátis" />
@@ -362,13 +387,6 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                   Ver Nossos Serviços
                 </button>
               </div>
-              <div className="mt-12 flex flex-wrap gap-8 opacity-60 grayscale brightness-200">
-                {/* Mock logos or trust indicators */}
-                <div className="flex items-center gap-2 text-white font-bold text-sm italic">LG INVERTER</div>
-                <div className="flex items-center gap-2 text-white font-bold text-sm italic">SAMSUNG WIND-FREE</div>
-                <div className="flex items-center gap-2 text-white font-bold text-sm italic">DAIKIN VRV</div>
-                <div className="flex items-center gap-2 text-white font-bold text-sm italic">MIDEA CARRIER</div>
-              </div>
             </motion.div>
 
             <motion.div 
@@ -378,36 +396,33 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               className="hidden lg:block relative"
             >
               <div className="relative z-10 bg-white rounded-3xl p-8 shadow-2xl border border-white/10">
-                <div className="flex items-center justify-between mb-8">
-                  <h3 className="text-xl font-bold text-primary">Cálculo de Carga Térmica</h3>
-                  <div className="bg-ice px-3 py-1 rounded-lg text-primary-light font-bold text-xs">GRÁTIS</div>
+                <div className="mb-8">
+                  <h3 className="text-xl font-bold text-primary">Solicite um Orçamento</h3>
+                  <p className="text-sm text-slate-500">Resposta rápida via WhatsApp ou E-mail.</p>
                 </div>
-                <div className="space-y-4">
+                <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
                   <div className="space-y-2">
-                    <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Tipo de Ambiente</label>
+                    <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Nome Completo</label>
+                    <input type="text" placeholder="Seu nome" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary-light" />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">WhatsApp / Telefone</label>
+                    <input type="tel" placeholder="(11) 99999-9999" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary-light" />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Serviço Desejado</label>
                     <select className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary-light">
-                      <option>Residencial (Quarto/Sala)</option>
-                      <option>Comercial (Escritório/Loja)</option>
-                      <option>Corporativo (VRF/Dutado)</option>
+                      <option>Instalação Residencial</option>
+                      <option>Instalação Comercial / VRF</option>
+                      <option>Manutenção Preventiva / PMOC</option>
+                      <option>Manutenção Corretiva / Reparo</option>
+                      <option>Limpeza e Higienização</option>
                     </select>
                   </div>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Metragem (m²)</label>
-                      <input type="number" placeholder="Ex: 20" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary-light" />
-                    </div>
-                    <div className="space-y-2">
-                      <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Pessoas</label>
-                      <input type="number" placeholder="Ex: 2" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary-light" />
-                    </div>
-                  </div>
-                  <button className="w-full bg-primary text-white font-bold py-4 rounded-xl hover:bg-primary-light transition-colors shadow-lg shadow-primary/20">
-                    Calcular BTUs Necessários
+                  <button className="w-full bg-primary text-white font-bold py-4 rounded-xl hover:bg-primary-light transition-colors shadow-lg shadow-primary/20 flex items-center justify-center gap-2">
+                    Enviar Solicitação <ArrowRight size={18} />
                   </button>
-                  <p className="text-[10px] text-center text-slate-400 leading-tight">
-                    *Cálculo aproximado. Recomendamos visita técnica para dimensionamento preciso de infraestrutura e engenharia.
-                  </p>
-                </div>
+                </form>
               </div>
               {/* Decorative elements */}
               <div className="absolute -top-6 -right-6 w-32 h-32 bg-accent rounded-full blur-3xl opacity-20" />
@@ -416,91 +431,218 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
           </div>
         </div>
       </section>
-
-      {/* Stats Section */}
-      <section className="bg-white py-12 border-b border-slate-100">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-extrabold text-primary mb-1">15+ Anos</div>
-              <div className="text-sm font-semibold text-slate-500 uppercase tracking-widest">Experiência</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-extrabold text-primary mb-1">5.000+</div>
-              <div className="text-sm font-semibold text-slate-500 uppercase tracking-widest">Instalações</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-extrabold text-primary mb-1">100%</div>
-              <div className="text-sm font-semibold text-slate-500 uppercase tracking-widest">Garantia Técnica</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-extrabold text-primary mb-1">24h</div>
-              <div className="text-sm font-semibold text-slate-500 uppercase tracking-widest">Suporte WhatsApp</div>
-            </div>
+      
+      {/* Brands Section */}
+      <section className="bg-white py-10 border-b border-slate-100 relative z-20 overflow-hidden">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
+          <div className="flex-shrink-0 border-b md:border-b-0 md:border-r border-slate-200 pb-4 md:pb-0 md:pr-8 w-full md:w-auto">
+            <span className="text-slate-400 text-[10px] font-bold uppercase tracking-[0.2em] leading-tight text-left block">
+              Trabalhamos com as<br />
+              <span className="text-primary font-extrabold">melhores marcas</span>
+            </span>
+          </div>
+          
+          <div className="flex-grow relative overflow-hidden py-2">
+            <motion.div 
+              className="flex items-center gap-12 md:gap-20 lg:gap-24 whitespace-nowrap"
+              animate={{ x: ["0%", "-50%"] }}
+              transition={{ 
+                duration: 25, 
+                repeat: Infinity, 
+                ease: "linear" 
+              }}
+            >
+              {/* First set of logos */}
+              {[
+                { name: "Samsung", url: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Samsung_logo_blue.png", h: "h-6 md:h-8" },
+                { name: "LG", url: "https://upload.wikimedia.org/wikipedia/commons/8/8d/LG_logo_%282014%29.svg", h: "h-6 md:h-8" },
+                { name: "Daikin", url: "https://upload.wikimedia.org/wikipedia/commons/0/05/DAIKIN_logo.svg", h: "h-6 md:h-8" },
+                { name: "Fujitsu", url: "https://upload.wikimedia.org/wikipedia/commons/5/53/Fujitsu-Logo.svg", h: "h-8 md:h-10" },
+                { name: "Carrier", url: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Logo_of_the_Carrier_Corporation.svg", h: "h-6 md:h-8" },
+                { name: "Midea", url: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Midea.svg", h: "h-6 md:h-8" },
+                { name: "Elgin", url: "https://www.maquinadecartao.com/img/1/elgin-logo-fabricante-de-maquininha-de-cartao-david-tech.webp", h: "h-6 md:h-8" },
+                { name: "Gree", url: "https://upload.wikimedia.org/wikipedia/commons/0/01/Gree_electric_appliances_logo.svg", h: "h-6 md:h-8" }
+              ].map((brand, idx) => (
+                <img 
+                  key={`${brand.name}-${idx}`}
+                  src={brand.url} 
+                  alt={brand.name} 
+                  className={`${brand.h} opacity-100 transition-all duration-300`} 
+                  referrerPolicy="no-referrer" 
+                />
+              ))}
+              
+              {/* Duplicate set for seamless loop */}
+              {[
+                { name: "Samsung", url: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Samsung_logo_blue.png", h: "h-6 md:h-8" },
+                { name: "LG", url: "https://upload.wikimedia.org/wikipedia/commons/8/8d/LG_logo_%282014%29.svg", h: "h-6 md:h-8" },
+                { name: "Daikin", url: "https://upload.wikimedia.org/wikipedia/commons/0/05/DAIKIN_logo.svg", h: "h-6 md:h-8" },
+                { name: "Fujitsu", url: "https://upload.wikimedia.org/wikipedia/commons/5/53/Fujitsu-Logo.svg", h: "h-8 md:h-10" },
+                { name: "Carrier", url: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Logo_of_the_Carrier_Corporation.svg", h: "h-6 md:h-8" },
+                { name: "Midea", url: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Midea.svg", h: "h-6 md:h-8" },
+                { name: "Elgin", url: "https://www.maquinadecartao.com/img/1/elgin-logo-fabricante-de-maquininha-de-cartao-david-tech.webp", h: "h-6 md:h-8" },
+                { name: "Gree", url: "https://upload.wikimedia.org/wikipedia/commons/0/01/Gree_electric_appliances_logo.svg", h: "h-6 md:h-8" }
+              ].map((brand, idx) => (
+                <img 
+                  key={`${brand.name}-dup-${idx}`}
+                  src={brand.url} 
+                  alt={brand.name} 
+                  className={`${brand.h} opacity-100 transition-all duration-300`} 
+                  referrerPolicy="no-referrer" 
+                />
+              ))}
+            </motion.div>
           </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-16 bg-[#020617]">
         <div className="container mx-auto px-4">
-          <SectionHeading 
-            centered
-            tag="Nossas Soluções"
-            title="Engenharia e Serviços de Climatização"
-            subtitle="Atendemos desde pequenos ambientes residenciais até grandes complexos corporativos com soluções customizadas."
-          />
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <p className="text-blue-400 text-sm font-bold uppercase tracking-[0.3em] mb-4">Especialistas em Climatização</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-6">Serviços de Ar Condicionado em São Paulo e ABC com Garantia Técnica</h2>
+            <p className="text-blue-100/60">Soluções técnicas completas para garantir o conforto térmico e a qualidade do ar em seu imóvel residencial ou comercial.</p>
+          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ServiceCard 
-              icon={<Zap />}
-              title="Split e Multi Split"
-              desc="Instalação premium de sistemas hi-wall e multi-split com infraestrutura embutida e acabamento de alto padrão."
+              icon={<Wind />}
+              category="RESIDENCIAL"
+              title="Instalação de Ar Condicionado Split"
+              desc="Instalação técnica em SP com infraestrutura embutida, acabamento impecável e garantia total do fabricante."
               onClick={() => navigate('split-multisplit')}
             />
             <ServiceCard 
-              icon={<Thermometer />}
-              title="Sistemas Comerciais"
-              desc="Cassete, Piso-Teto e sistemas dutados para lojas, clínicas e escritórios que exigem alta vazão de ar."
+              icon={<Wind />}
+              category="COMERCIAL"
+              title="Sistemas Cassete e Piso-Teto"
+              desc="Soluções de climatização para lojas e escritórios em São Paulo. Alta vazão de ar com eficiência energética."
               onClick={() => navigate('sistemas-comerciais')}
             />
             <ServiceCard 
-              icon={<Settings />}
-              title="VRF e Mini VRF"
-              desc="Tecnologia de ponta para edifícios e grandes residências com controle individual de temperatura por ambiente."
+              icon={<Wind />}
+              category="CORPORATIVO"
+              title="Sistemas VRF e Multi Split"
+              desc="Soluções completas para grandes ambientes e edifícios corporativos. Controle total e economia real."
               onClick={() => navigate('vrf-mini-vrf')}
             />
             <ServiceCard 
-              icon={<ShieldCheck />}
-              title="Manutenção Preventiva"
-              desc="Planos de manutenção periódica e PMOC para garantir a saúde dos ocupantes e a vida útil do equipamento."
+              icon={<Settings />}
+              category="MANUTENÇÃO"
+              title="Manutenção Preventiva e PMOC"
+              desc="Gestão de PMOC para empresas no ABC e SP. Visitas técnicas regulares para garantir a saúde e o ar puro."
               onClick={() => navigate('manutencao-preventiva')}
             />
             <ServiceCard 
               icon={<AlertTriangle />}
-              title="Manutenção Corretiva"
-              desc="Diagnóstico preciso e reparo rápido de falhas, vazamentos de gás e problemas elétricos em todas as marcas."
+              category="CORRETIVA"
+              title="Conserto de Ar Condicionado"
+              desc="Manutenção corretiva rápida em São Paulo. Diagnóstico preciso, peças originais e solução definitiva."
               onClick={() => navigate('manutencao-corretiva')}
             />
             <ServiceCard 
               icon={<Droplets />}
-              title="Limpeza e Higienização"
-              desc="Limpeza profunda com produtos bactericidas homologados para eliminação de fungos, ácaros e odores."
+              category="HIGIENE"
+              title="Limpeza de Ar Condicionado SP"
+              desc="Higienização profunda bactericida. Eliminação de fungos e ácaros para um ambiente saudável no ABC e SP."
               onClick={() => navigate('limpeza')}
             />
           </div>
         </div>
       </section>
 
+      {/* How It Works Section */}
+      <section className="py-16 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 bg-ice px-4 py-1.5 rounded-full text-primary-light text-sm font-bold mb-6 uppercase tracking-widest">
+              Como Funciona
+            </div>
+            <h2 className="text-3xl md:text-5xl font-extrabold text-primary mb-6">
+              Sua instalação sem estresse e com <span className="text-primary-light">zero surpresas</span>
+            </h2>
+            <p className="text-slate-500 text-lg">
+              Um processo técnico claro e previsível, do primeiro contato à entrega das chaves.
+            </p>
+          </div>
+
+          <div className="relative">
+            {/* Connection Line (Desktop) */}
+            <div className="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 bg-slate-100 -translate-y-1/2 z-0" />
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-12 relative z-10">
+              {[
+                {
+                  step: "01",
+                  icon: <MessageSquare />,
+                  title: "Consulta Técnica",
+                  desc: "Avaliamos seu ambiente com visita presencial para entender cada detalhe técnico."
+                },
+                {
+                  step: "02",
+                  icon: <Ruler />,
+                  title: "Projeto Personalizado",
+                  desc: "Dimensionamento preciso (BTUs) para garantir máximo conforto com menor consumo."
+                },
+                {
+                  step: "03",
+                  icon: <HardHat />,
+                  title: "Execução Profissional",
+                  desc: "Equipe técnica treinada, uniformizada e focada em prazos e normas de segurança."
+                },
+                {
+                  step: "04",
+                  icon: <Paintbrush />,
+                  title: "Acabamento Perfeito",
+                  desc: "Entregamos a obra pronta: gesso, pintura e limpeza inclusos. Você não se preocupa com nada."
+                },
+                {
+                  step: "05",
+                  icon: <HeartHandshake />,
+                  title: "Pós-venda Ativo",
+                  desc: "Garantia real, suporte técnico prioritário e plano de manutenção preventiva."
+                }
+              ].map((item, idx) => (
+                <div key={idx} className="flex flex-col items-center text-center group">
+                  <div className="relative mb-8">
+                    <div className="w-20 h-20 bg-white border-2 border-slate-100 rounded-full flex items-center justify-center text-primary-light group-hover:border-primary-light group-hover:bg-primary-light group-hover:text-white transition-all duration-500 shadow-xl shadow-slate-200/50">
+                      {React.cloneElement(item.icon as React.ReactElement, { size: 32 })}
+                    </div>
+                    <div className="absolute -top-2 -right-2 w-8 h-8 bg-primary text-white text-xs font-bold rounded-full flex items-center justify-center border-4 border-white">
+                      {item.step}
+                    </div>
+                  </div>
+                  <h3 className="text-lg font-bold text-primary mb-3 group-hover:text-primary-light transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="text-slate-500 text-sm leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          <div className="mt-20 text-center">
+            <WhatsAppButton text="Quero agendar uma visita técnica" className="shadow-xl shadow-success/20" />
+          </div>
+        </div>
+        
+        {/* Background Decorative Elements */}
+        <div className="absolute top-0 left-0 w-64 h-64 bg-ice rounded-full blur-3xl opacity-50 -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-50 translate-x-1/3 translate-y-1/3" />
+      </section>
+
       {/* Why Us Section */}
-      <section className="py-24 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="relative">
               <img 
-                src="https://picsum.photos/seed/hvac-tech/800/1000" 
-                alt="Técnico ar condicionado" 
-                className="rounded-3xl shadow-2xl"
+                src="https://lh3.googleusercontent.com/6heGd7th8Pj-lMMTr-rWhQgDXIHEtDgkUzYkEakZwnOvYabXG6ykwi_RHfm8RpDcoNoWHvGRKRz8Yf2l7A=s360-w360-h360" 
+                alt="Diferenciais New Clima Ar" 
+                className="rounded-3xl shadow-2xl w-full h-[600px] object-cover"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute -bottom-10 -right-10 bg-primary p-8 rounded-3xl shadow-2xl hidden md:block">
@@ -520,7 +662,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               <SectionHeading 
                 tag="Diferenciais"
                 title="Por que escolher a New Clima Ar?"
-                subtitle="Não somos apenas instaladores. Somos uma empresa de engenharia focada em resultados e satisfação do cliente."
+                subtitle="Não somos apenas instaladores. Somos uma empresa referência focada em resultados e satisfação do cliente."
               />
               
               <div className="space-y-8">
@@ -551,7 +693,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
       </section>
 
       {/* Regions Section */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-16 bg-slate-50">
         <div className="container mx-auto px-4">
           <SectionHeading 
             centered
@@ -590,37 +732,97 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-24 bg-white">
+      {/* Google Reviews Section */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <SectionHeading 
             centered
             tag="Depoimentos"
-            title="O que dizem nossos clientes"
+            title="Clientes que confiam na New Clima"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <TestimonialCard 
-              name="Ricardo Mendes"
-              role="Empresário - Moema"
-              content="Instalei o sistema VRF na minha empresa com a New Clima. O projeto foi impecável, economia de energia visível e o suporte pós-venda é excelente."
+          {/* Google Rating Summary Bar */}
+          <div className="max-w-xl mx-auto mb-10">
+            <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-xl shadow-slate-200/50 flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-white border border-slate-100 rounded-lg flex items-center justify-center shadow-sm">
+                  <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                    <path d="M12 23c3.11 0 5.71-1.03 7.62-2.81l-3.57-2.77c-1.04.7-2.38 1.11-4.05 1.11-3.11 0-5.75-2.1-6.7-4.93H1.7v2.87C3.61 20.29 7.56 23 12 23z" fill="#34A853"/>
+                    <path d="M5.3 13.6c-.24-.7-.38-1.45-.38-2.25s.14-1.55.38-2.25V6.23H1.7C.62 8.39 0 10.81 0 13.37c0 2.56.62 4.98 1.7 7.14l3.6-2.91z" fill="#FBBC05"/>
+                    <path d="M12 4.75c1.69 0 3.21.58 4.41 1.71l3.3-3.3C17.71 1.03 15.11 0 12 0 7.56 0 3.61 2.71 1.7 6.23l3.6 2.87c.95-2.83 3.59-4.93 6.7-4.93z" fill="#EA4335"/>
+                  </svg>
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-0.5">Avaliações no Google</div>
+                  <div className="text-sm font-extrabold text-primary">Google Meu Negócio</div>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-6 border-l border-slate-100 pl-6 hidden md:flex">
+                <div className="text-4xl font-black text-primary">4.9</div>
+                <div>
+                  <div className="flex gap-0.5 text-accent mb-1">
+                    {[1,2,3,4,5].map(i => <Star key={i} size={14} fill="currentColor" />)}
+                  </div>
+                  <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Mais de 800 avaliações reais</div>
+                </div>
+                <a 
+                  href="https://maps.app.goo.gl/kHeynjnXoG943iG3A" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full border border-slate-100 flex items-center justify-center text-slate-300 hover:text-primary hover:border-primary transition-all"
+                >
+                  <ExternalLink size={16} />
+                </a>
+              </div>
+
+              {/* Mobile Rating */}
+              <div className="flex items-center gap-4 md:hidden w-full pt-4 border-t border-slate-50">
+                <div className="text-3xl font-black text-primary">4.9</div>
+                <div className="flex-1">
+                  <div className="flex gap-0.5 text-accent mb-0.5">
+                    {[1,2,3,4,5].map(i => <Star key={i} size={12} fill="currentColor" />)}
+                  </div>
+                  <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Mais de 800 avaliações reais</div>
+                </div>
+                <ExternalLink size={16} className="text-slate-300" />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <GoogleReviewCard 
+              name="Fabiana Silva"
+              service="Instalação de Ar Condicionado"
+              content="Excelente atendimento! O técnico Fabrício foi muito atencioso, explicou tudo com detalhes e a instalação ficou impecável. Recomendo muito a New Clima."
             />
-            <TestimonialCard 
-              name="Ana Paula Silva"
-              role="Arquiteta - Santo André"
-              content="Sempre indico para meus clientes. O acabamento da infraestrutura é muito superior ao que se vê no mercado. Profissionais educados e limpos."
+            <GoogleReviewCard 
+              name="Rodrigo Santos"
+              service="Manutenção e Limpeza"
+              content="Serviço de primeira qualidade. Equipe pontual, uniformizada e muito cuidadosa com a limpeza do local. O ar condicionado está gelando como novo."
             />
-            <TestimonialCard 
-              name="Dr. Carlos Eduardo"
-              role="Clínica Médica - Tatuapé"
-              content="Fizemos o PMOC da clínica. Tudo dentro das normas, relatórios detalhados e ar sempre limpo. Passamos pela fiscalização sem nenhum problema."
+            <GoogleReviewCard 
+              name="Camila Oliveira"
+              service="Infraestrutura"
+              content="Fiz a infraestrutura do meu apartamento com eles e o trabalho foi nota 10. Acabamento perfeito e técnicos muito profissionais. Vale cada centavo."
+            />
+            <GoogleReviewCard 
+              name="Marcos Souza"
+              service="Instalação Residencial"
+              content="Melhor empresa de ar condicionado que já contratei. Atendimento rápido e preço justo. O pós-venda também é excelente, tiraram todas as minhas dúvidas."
+            />
+            <GoogleReviewCard 
+              name="Juliana Lima"
+              service="Higienização"
+              content="Super recomendo! A higienização foi completa e os técnicos foram muito educados. Empresa séria e comprometida com a satisfação do cliente."
             />
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-16 bg-slate-50">
         <div className="container mx-auto px-4 max-w-4xl">
           <SectionHeading 
             centered
@@ -642,6 +844,22 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               answer="Sim, somos especialistas em instalações em apartamentos, respeitando normas de condomínio, fachadas e varandas técnicas."
             />
             <FaqItem 
+              question="Qual a diferença entre o modelo Inverter e o Convencional?"
+              answer="O modelo Inverter economiza até 60% de energia pois seu compressor nunca desliga totalmente, mantendo a temperatura constante, enquanto o convencional liga e desliga, gerando picos de consumo."
+            />
+            <FaqItem 
+              question="Com que frequência devo fazer a limpeza do ar condicionado?"
+              answer="Para uso residencial, recomendamos a limpeza completa (higienização) a cada 6 meses. Em ambientes comerciais ou com uso intenso, o ideal é a cada 3 meses ou mensalmente via PMOC."
+            />
+            <FaqItem 
+              question="Vocês instalam aparelhos comprados em outras lojas?"
+              answer="Sim! Realizamos a instalação técnica de qualquer marca ou modelo, garantindo que você não perca a garantia de fábrica do seu equipamento."
+            />
+            <FaqItem 
+              question="Como saber a potência (BTUs) correta para meu ambiente?"
+              answer="O cálculo leva em conta a metragem, incidência de sol, número de pessoas e eletrônicos no local. Em média, usamos 600 a 800 BTUs por m². Nossos técnicos realizam esse cálculo exato para você."
+            />
+            <FaqItem 
               question="Quais as formas de pagamento?"
               answer="Aceitamos PIX, Cartão de Crédito (até 10x), Débito e faturamento para empresas (sob consulta)."
             />
@@ -650,7 +868,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 bg-primary relative overflow-hidden">
+      <section className="py-16 bg-primary relative overflow-hidden">
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-8">
             Pronto para climatizar seu ambiente?
@@ -675,19 +893,31 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
 
 // --- Helper Components ---
 
-function ServiceCard({ icon, title, desc, onClick }: { icon: React.ReactNode, title: string, desc: string, onClick: () => void }) {
+function ServiceCard({ icon, title, desc, category, onClick }: { icon: React.ReactNode, title: string, desc: string, category: string, onClick: () => void }) {
   return (
     <div 
       onClick={onClick}
-      className="bg-white p-8 rounded-3xl border border-slate-200 hover:border-primary-light hover:shadow-xl transition-all cursor-pointer group"
+      className="bg-[#0f172a] p-8 rounded-3xl border border-white/5 hover:border-primary-light/40 hover:bg-[#1e293b] transition-all cursor-pointer group relative overflow-hidden shadow-lg shadow-black/20"
     >
-      <div className="w-14 h-14 bg-ice rounded-2xl flex items-center justify-center text-primary-light mb-6 group-hover:scale-110 transition-transform">
-        {React.cloneElement(icon as React.ReactElement, { size: 28 })}
+      <div className="flex justify-between items-start mb-8">
+        <div className="w-12 h-12 bg-primary/20 border border-primary/30 rounded-xl flex items-center justify-center text-primary-light group-hover:scale-110 transition-transform shadow-inner shadow-white/5">
+          {React.cloneElement(icon as React.ReactElement, { size: 24 })}
+        </div>
+        <span className="text-[10px] font-bold text-blue-400 uppercase tracking-[0.2em]">
+          {category}
+        </span>
       </div>
-      <h3 className="text-xl font-bold text-primary mb-3">{title}</h3>
-      <p className="text-slate-500 text-sm leading-relaxed mb-6">{desc}</p>
-      <div className="flex items-center gap-2 text-primary-light font-bold text-sm group-hover:gap-3 transition-all">
-        Ver Detalhes <ArrowRight size={16} />
+      
+      <h3 className="text-xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors">
+        {title}
+      </h3>
+      
+      <p className="text-blue-100/70 text-sm leading-relaxed mb-8 min-h-[3rem]">
+        {desc}
+      </p>
+      
+      <div className="flex items-center gap-2 text-primary-light font-bold text-xs uppercase tracking-widest group-hover:gap-3 transition-all border-t border-white/5 pt-6">
+        SAIBA MAIS <ArrowRight size={14} />
       </div>
     </div>
   );
@@ -707,22 +937,24 @@ function FeatureItem({ title, desc }: { title: string, desc: string }) {
   );
 }
 
-function TestimonialCard({ name, role, content }: { name: string, role: string, content: string }) {
+function GoogleReviewCard({ name, service, content }: { name: string, service: string, content: string }) {
   return (
-    <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100">
-      <div className="flex gap-1 text-accent mb-6">
-        {[1,2,3,4,5].map(i => <Star key={i} size={16} fill="currentColor" />)}
-      </div>
-      <p className="text-slate-700 italic mb-8 leading-relaxed">"{content}"</p>
-      <div className="flex items-center gap-4">
-        <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
-          {name.charAt(0)}
+    <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow flex flex-col">
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary font-bold text-sm">
+            {name.charAt(0)}
+          </div>
+          <div>
+            <div className="font-bold text-primary text-sm">{name}</div>
+            <div className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">{service}</div>
+          </div>
         </div>
-        <div>
-          <div className="font-bold text-primary">{name}</div>
-          <div className="text-xs text-slate-400 font-bold uppercase tracking-wider">{role}</div>
+        <div className="flex gap-0.5 text-accent">
+          {[1,2,3,4,5].map(i => <Star key={i} size={10} fill="currentColor" />)}
         </div>
       </div>
+      <p className="text-slate-600 text-sm leading-relaxed line-clamp-4 flex-grow">"{content}"</p>
     </div>
   );
 }
@@ -759,14 +991,14 @@ function FaqItem({ question, answer }: { question: string, answer: string }) {
 
 function ServiceDetailView({ service, navigate }: { service: string, navigate: (p: PageId) => void }) {
   return (
-    <div className="container mx-auto px-4">
+    <div className="pt-10">
       {service === 'split' && <SplitMultiSplit />}
       {service === 'comercial' && <SistemasComerciais />}
       {service === 'vrf' && <VRFMiniVRF />}
       {service === 'preventiva' && <ManutencaoPreventiva />}
       {service === 'corretiva' && <ManutencaoCorretiva />}
       {service === 'limpeza' && <LimpezaHigienizacao />}
-      <div className="pb-20">
+      <div className="container mx-auto px-4 pb-20">
         <button onClick={() => navigate('home')} className="text-primary-light font-bold flex items-center gap-2 hover:gap-3 transition-all">
           <ArrowRight size={16} className="rotate-180" /> Voltar para Home
         </button>
@@ -776,28 +1008,68 @@ function ServiceDetailView({ service, navigate }: { service: string, navigate: (
 }
 
 function BlogView({ navigate, postId }: { navigate: (p: PageId) => void, postId?: string }) {
-  if (postId === 'inverter') return <div className="container mx-auto px-4"><BlogInverter /><button onClick={() => navigate('blog')} className="mb-20 text-primary-light font-bold flex items-center gap-2"><ArrowRight size={16} className="rotate-180" /> Voltar para Blog</button></div>;
-  if (postId === 'apartamento') return <div className="container mx-auto px-4"><BlogApartamento /><button onClick={() => navigate('blog')} className="mb-20 text-primary-light font-bold flex items-center gap-2"><ArrowRight size={16} className="rotate-180" /> Voltar para Blog</button></div>;
-  if (postId === 'btus') return <div className="container mx-auto px-4"><BlogBTUs /><button onClick={() => navigate('blog')} className="mb-20 text-primary-light font-bold flex items-center gap-2"><ArrowRight size={16} className="rotate-180" /> Voltar para Blog</button></div>;
-  if (postId === 'pmoc') return <div className="container mx-auto px-4"><BlogPMOC /><button onClick={() => navigate('blog')} className="mb-20 text-primary-light font-bold flex items-center gap-2"><ArrowRight size={16} className="rotate-180" /> Voltar para Blog</button></div>;
+  const BackButton = () => (
+    <button onClick={() => navigate('blog')} className="mb-20 text-primary-light font-bold flex items-center gap-2 hover:gap-3 transition-all">
+      <ArrowRight size={16} className="rotate-180" /> Voltar para Blog
+    </button>
+  );
+
+  if (postId === 'inverter') return <div className="container mx-auto px-4"><BlogInverter /><BackButton /></div>;
+  if (postId === 'apartamento') return <div className="container mx-auto px-4"><BlogApartamento /><BackButton /></div>;
+  if (postId === 'btus') return <div className="container mx-auto px-4"><BlogBTUs /><BackButton /></div>;
+  if (postId === 'pmoc') return <div className="container mx-auto px-4"><BlogPMOC /><BackButton /></div>;
+  if (postId === 'round-cassette') return <div className="container mx-auto px-4"><BlogRoundCassette /><BackButton /></div>;
+  if (postId === 'obra-limpa') return <div className="container mx-auto px-4"><BlogObraLimpa /><BackButton /></div>;
+  if (postId === 'quarto') return <div className="container mx-auto px-4"><BlogQuarto /><BackButton /></div>;
+  if (postId === 'convencional-inverter') return <div className="container mx-auto px-4"><BlogConvencionalInverter /><BackButton /></div>;
+  if (postId === 'empresas') return <div className="container mx-auto px-4"><BlogEmpresas /><BackButton /></div>;
 
   return (
-    <div className="py-20 container mx-auto px-4">
+    <div className="py-16 container mx-auto px-4">
+      <Helmet>
+        <title>Blog New Clima Ar | Dicas de Ar Condicionado e Climatização</title>
+        <meta name="description" content="Aprenda tudo sobre ar condicionado: economia de energia, tecnologia inverter, instalação em apartamentos e muito mais no blog da New Clima Ar." />
+      </Helmet>
       <SectionHeading 
         tag="Nosso Blog"
-        title="Dicas e Engenharia de Climatização"
+        title="Dicas e Especialista em Climatização"
         subtitle="Conteúdo técnico para ajudar você a escolher e manter seu ar condicionado com inteligência."
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <BlogCard 
-          title="Ar-Condicionado Inverter Vale a Pena?"
+          title="Ar Condicionado Inverter: Vale a Pena?"
           desc="Entenda a tecnologia que reduz em até 60% sua conta de luz."
           onClick={() => navigate('blog-inverter')}
         />
         <BlogCard 
-          title="Instalação em Apartamento"
+          title="LG Round Cassette: 360 Graus"
+          desc="O design circular que elimina pontos mortos no ambiente."
+          onClick={() => navigate('blog-round-cassette')}
+        />
+        <BlogCard 
+          title="Obra Limpa: Sem Quebra-Quebra"
+          desc="Como instalamos seu ar condicionado sem fazer sujeira na casa."
+          onClick={() => navigate('blog-obra-limpa')}
+        />
+        <BlogCard 
+          title="Instalação em Apartamento em SP"
           desc="O que saber sobre normas de fachada e drenagem em condomínios."
           onClick={() => navigate('blog-apartamento')}
+        />
+        <BlogCard 
+          title="Ar Condicionado no Quarto"
+          desc="Onde instalar para ter noites perfeitas e sem doenças."
+          onClick={() => navigate('blog-quarto')}
+        />
+        <BlogCard 
+          title="Convencional vs Inverter"
+          desc="Qual a melhor escolha para sua realidade e seu bolso?"
+          onClick={() => navigate('blog-convencional-inverter')}
+        />
+        <BlogCard 
+          title="Ar para Empresas e ROI"
+          desc="Como a climatização certa aumenta a produtividade da equipe."
+          onClick={() => navigate('blog-empresas')}
         />
         <BlogCard 
           title="Como Calcular os BTUs"
@@ -805,7 +1077,7 @@ function BlogView({ navigate, postId }: { navigate: (p: PageId) => void, postId?
           onClick={() => navigate('blog-btus')}
         />
         <BlogCard 
-          title="PMOC Obrigatório"
+          title="PMOC Obrigatório em SP"
           desc="Sua empresa está em dia com a legislação? Veja os riscos."
           onClick={() => navigate('blog-pmoc')}
         />
@@ -829,77 +1101,88 @@ function BlogCard({ title, desc, onClick }: { title: string, desc: string, onCli
 
 function AboutView({ navigate }: { navigate: (p: PageId) => void }) {
   return (
-    <div className="py-20 container mx-auto px-4">
+    <div className="py-16 container mx-auto px-4">
+      <Helmet>
+        <title>Sobre a New Clima Ar | Referência em Climatização em SP e ABC</title>
+        <meta name="description" content="A New Clima Ar é referência em climatização em São Paulo e no ABC. Oferecemos instalação, manutenção, limpeza e PMOC com técnicos certificados e garantia de qualidade." />
+        <meta name="keywords" content="ar condicionado sp, ar condicionado abc, instalação ar condicionado são paulo, manutenção ar condicionado abc, limpeza ar condicionado sp, pmoc ar condicionado" />
+      </Helmet>
+      
       <SectionHeading 
         tag="Nossa História"
-        title="New Clima Ar Condicionado: Engenharia e Conforto"
-        subtitle="Mais de 15 anos transformando ambientes em São Paulo e ABC com soluções de climatização de alta performance."
+        title="New Clima Ar Condicionado: Referência em Climatização em SP e ABC"
+        subtitle="Especialistas em climatização com foco em eficiência, saúde e conforto térmico para residências e empresas."
       />
       
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
         <div className="prose prose-slate max-w-none text-slate-600 leading-relaxed space-y-6">
-          <p>
-            Fundada com o propósito de elevar o padrão técnico do mercado de HVAC (Heating, Ventilation, and Air Conditioning) no Brasil, a <strong>New Clima Ar Condicionado</strong> consolidou-se como uma das principais referências em engenharia de climatização em São Paulo.
+          <p className="text-lg">
+            A <strong>New Clima Ar Condicionado</strong> nasceu da necessidade de oferecer um serviço de <strong>climatização especializado</strong> diferenciado em São Paulo e na região do ABC Paulista. Com anos de experiência, consolidamos nossa marca como sinônimo de confiança em <strong>instalação de ar condicionado em SP</strong>.
           </p>
           <p>
-            Nossa jornada começou com o foco em instalações residenciais de alto padrão, mas rapidamente expandimos para projetos corporativos complexos, sistemas VRF e gestão de PMOC para grandes empresas. Acreditamos que um ambiente bem climatizado vai além do conforto térmico; trata-se de saúde, produtividade e eficiência energética.
+            Nossa atuação abrange desde a climatização residencial de alto padrão até complexos sistemas industriais e comerciais. Somos especialistas em marcas líderes como Daikin, Fujitsu, LG, Samsung e Carrier, garantindo que cada projeto de <strong>ar condicionado no ABC e São Paulo</strong> seja executado com perfeição técnica e estética.
+          </p>
+          <p>
+            Acreditamos que a qualidade do ar é fundamental para a saúde e produtividade. Por isso, investimos constantemente em tecnologias de <strong>limpeza e higienização profunda</strong>, além de sermos autoridade na implementação de <strong>PMOC (Plano de Manutenção, Operação e Controle)</strong>, garantindo que sua empresa esteja em conformidade com as normas da ANVISA.
           </p>
           <div className="bg-ice p-8 rounded-3xl border border-primary-light/10">
             <h4 className="text-primary font-bold mb-2">Nossa Missão</h4>
-            <p className="text-sm italic">"Proporcionar a melhor experiência em conforto térmico através de soluções de engenharia sustentáveis, seguras e de alta performance."</p>
+            <p className="text-sm italic">"Proporcionar ambientes saudáveis e confortáveis através de soluções de climatização inteligentes, sustentáveis e com o mais alto rigor técnico."</p>
           </div>
         </div>
         <div className="relative">
-          <img src="https://picsum.photos/seed/office-hvac/800/600" alt="Escritório New Clima" className="rounded-3xl shadow-2xl" referrerPolicy="no-referrer" />
-          <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100">
-            <div className="text-primary font-bold text-2xl">100%</div>
-            <div className="text-slate-400 text-xs font-bold uppercase tracking-widest">Comprometimento</div>
+          <img src="https://lh3.googleusercontent.com/iQKQFvKF5SWFsxmrm5b60daSTbTDLx4TiQGsh2R-UnoejbPz0gCFAuwhvwAd1QUAKN0Bqwy-m28h8Z2ITQ=s360-w360-h360" alt="Sobre a New Clima Ar" className="rounded-3xl shadow-2xl w-full h-auto object-cover" referrerPolicy="no-referrer" />
+          <div className="absolute -bottom-6 -right-6 bg-white p-8 rounded-2xl shadow-xl border border-slate-100 hidden md:block">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 bg-primary-light/10 rounded-full flex items-center justify-center text-primary-light">
+                <ShieldCheck size={28} />
+              </div>
+              <div>
+                <div className="text-primary font-bold text-xl">Garantia Total</div>
+                <div className="text-slate-400 text-xs font-bold uppercase tracking-widest">Em todos os serviços</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <SectionHeading 
         centered
-        tag="Nossa Equipe"
-        title="Liderança Técnica"
+        tag="Diferenciais"
+        title="Por que escolher a New Clima Ar?"
+        subtitle="Trabalhamos para ser a sua primeira escolha em ar condicionado em São Paulo e ABC."
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
-        <TeamCard 
-          name="Ricardo Carvalho"
-          role="Engenheiro Chefe"
-          desc="Especialista em sistemas VRF e projetos industriais com 20 anos de mercado."
-        />
-        <TeamCard 
-          name="Paulo Souza"
-          role="Coordenador de Campo"
-          desc="Lidera nossa equipe de instaladores certificados com foco em acabamento premium."
-        />
-        <TeamCard 
-          name="Fernando Oliveira"
-          role="Especialista em Manutenção"
-          desc="Expert em diagnósticos complexos e placas eletrônicas Inverter."
-        />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+        {[
+          { title: "Equipe Própria", desc: "Projetos acompanhados por técnicos especialistas em climatização.", icon: <HardHat /> },
+          { title: "Técnicos Certificados", desc: "Nossa equipe passa por treinamentos constantes nos principais fabricantes.", icon: <CheckCircle2 /> },
+          { title: "Obra Limpa", desc: "Utilizamos ferramentas de aspiração e proteção para garantir sua casa impecável.", icon: <Paintbrush /> },
+          { title: "Atendimento Rápido", desc: "Logística estratégica para atender SP e ABC com agilidade e pontualidade.", icon: <Clock /> }
+        ].map((item, i) => (
+          <div key={i} className="bg-white border border-slate-100 p-8 rounded-3xl hover:shadow-xl hover:shadow-primary/5 transition-all group">
+            <div className="w-14 h-14 bg-ice rounded-2xl flex items-center justify-center text-primary-light mb-6 group-hover:scale-110 transition-transform">
+              {React.cloneElement(item.icon as React.ReactElement, { size: 28 })}
+            </div>
+            <h4 className="text-xl font-bold text-primary mb-3">{item.title}</h4>
+            <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
       </div>
 
-      <div className="bg-primary rounded-3xl p-12 text-center text-white">
-        <h3 className="text-3xl font-bold mb-6">Pronto para trabalhar conosco?</h3>
-        <p className="text-blue-100/70 mb-8 max-w-xl mx-auto">Seja para sua casa ou para sua empresa, temos a solução técnica ideal.</p>
-        <WhatsAppButton text="Solicitar Consultoria Técnica" />
+      <div className="bg-gradient-to-br from-primary to-primary-dark rounded-[2.5rem] p-12 text-center text-white shadow-2xl shadow-primary/20">
+        <h3 className="text-3xl md:text-4xl font-bold mb-6">Pronto para climatizar seu ambiente com quem entende?</h3>
+        <p className="text-blue-100/70 mb-10 max-w-2xl mx-auto text-lg">Seja para instalação residencial ou manutenção corporativa em SP e ABC, a New Clima Ar é sua parceira de confiança.</p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <WhatsAppButton text="Falar com um Especialista" className="bg-white !text-primary hover:bg-blue-50" />
+          <button 
+            onClick={() => navigate('contato')}
+            className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-xl transition-all border border-white/20"
+          >
+            Ver Canais de Contato
+          </button>
+        </div>
       </div>
-    </div>
-  );
-}
-
-function TeamCard({ name, role, desc }: { name: string, role: string, desc: string }) {
-  return (
-    <div className="bg-white border border-slate-200 rounded-3xl p-8 text-center hover:shadow-lg transition-all">
-      <div className="w-24 h-24 bg-ice rounded-full mx-auto mb-6 flex items-center justify-center text-primary-light font-bold text-3xl">
-        {name.charAt(0)}
-      </div>
-      <h4 className="text-xl font-bold text-primary mb-1">{name}</h4>
-      <div className="text-primary-light text-xs font-bold uppercase tracking-widest mb-4">{role}</div>
-      <p className="text-slate-500 text-sm leading-relaxed">{desc}</p>
     </div>
   );
 }
@@ -907,11 +1190,15 @@ function TeamCard({ name, role, desc }: { name: string, role: string, desc: stri
 
 function ContactView() {
   return (
-    <div className="py-20 container mx-auto px-4">
+    <div className="py-16 container mx-auto px-4">
+      <Helmet>
+        <title>Contato | Orçamento de Ar Condicionado em São Paulo e ABC</title>
+        <meta name="description" content="Entre em contato com a New Clima Ar. Solicite seu orçamento para instalação, manutenção ou limpeza de ar condicionado em SP e ABC Paulista." />
+      </Helmet>
       <SectionHeading 
         tag="Contato"
-        title="Fale Conosco"
-        subtitle="Estamos prontos para atender seu chamado."
+        title="Fale com Nossos Especialistas em Climatização"
+        subtitle="Estamos prontos para atender seu chamado em São Paulo e no ABC Paulista."
       />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="bg-slate-50 p-8 rounded-3xl">
@@ -919,27 +1206,28 @@ function ContactView() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label className="text-sm font-bold text-slate-700">Nome Completo</label>
-                <input type="text" className="w-full bg-white border border-slate-200 rounded-xl px-4 py-3" />
+                <input type="text" className="w-full bg-white border border-slate-200 rounded-xl px-4 py-3" placeholder="Seu nome" />
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-bold text-slate-700">WhatsApp</label>
-                <input type="tel" className="w-full bg-white border border-slate-200 rounded-xl px-4 py-3" />
+                <input type="tel" className="w-full bg-white border border-slate-200 rounded-xl px-4 py-3" placeholder="(11) 99999-9999" />
               </div>
             </div>
             <div className="space-y-2">
-              <label className="text-sm font-bold text-slate-700">Assunto</label>
+              <label className="text-sm font-bold text-slate-700">Serviço Desejado</label>
               <select className="w-full bg-white border border-slate-200 rounded-xl px-4 py-3">
-                <option>Instalação</option>
-                <option>Manutenção</option>
-                <option>Limpeza</option>
+                <option>Instalação de Ar Condicionado</option>
+                <option>Manutenção / Conserto</option>
+                <option>Limpeza e Higienização</option>
+                <option>PMOC / Corporativo</option>
                 <option>Outros</option>
               </select>
             </div>
             <div className="space-y-2">
               <label className="text-sm font-bold text-slate-700">Mensagem</label>
-              <textarea className="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 h-32"></textarea>
+              <textarea className="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 h-32" placeholder="Descreva sua necessidade..."></textarea>
             </div>
-            <button className="w-full bg-primary text-white font-bold py-4 rounded-xl">Enviar Mensagem</button>
+            <button className="w-full bg-primary text-white font-bold py-4 rounded-xl hover:bg-primary-light transition-colors">Enviar Mensagem</button>
           </form>
         </div>
         <div className="space-y-8">
@@ -948,7 +1236,7 @@ function ContactView() {
               <Phone size={24} />
             </div>
             <div>
-              <h4 className="font-bold text-primary mb-1">Telefone</h4>
+              <h4 className="font-bold text-primary mb-1">Telefone / WhatsApp</h4>
               <p className="text-slate-500">(11) 96346-2516</p>
             </div>
           </div>
@@ -957,9 +1245,15 @@ function ContactView() {
               <MapPin size={24} />
             </div>
             <div>
-              <h4 className="font-bold text-primary mb-1">Endereço</h4>
+              <h4 className="font-bold text-primary mb-1">Endereço Técnico</h4>
               <p className="text-slate-500">R. Santa Cruz, 2187 - Vila Mariana, São Paulo - SP</p>
+              <p className="text-xs text-slate-400 mt-1">Atendemos toda a Capital e Grande ABC.</p>
             </div>
+          </div>
+          <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+            <h4 className="font-bold text-primary mb-2">Horário de Atendimento</h4>
+            <p className="text-sm text-slate-500">Segunda a Sexta: 08h às 18h</p>
+            <p className="text-sm text-slate-500">Sábado: 08h às 13h</p>
           </div>
         </div>
       </div>
@@ -969,14 +1263,14 @@ function ContactView() {
 
 function RegionView({ region, navigate }: { region: string, navigate: (p: PageId) => void }) {
   return (
-    <div className="container mx-auto px-4">
-      {region === 'sao-paulo' && <SaoPauloRegion />}
-      {region === 'santo-andre' && <SantoAndreRegion />}
-      {region === 'sao-bernardo' && <SaoBernardoRegion />}
-      {region === 'sao-caetano' && <SaoCaetanoRegion />}
-      {region === 'diadema' && <DiademaMauaRegion regionName="Diadema" />}
-      {region === 'maua' && <DiademaMauaRegion regionName="Mauá" />}
-      <div className="pb-20">
+    <div>
+      {region === 'sao-paulo' && <SaoPauloRegion navigate={navigate} />}
+      {region === 'santo-andre' && <SantoAndreRegion navigate={navigate} />}
+      {region === 'sao-bernardo' && <SaoBernardoRegion navigate={navigate} />}
+      {region === 'sao-caetano' && <SaoCaetanoRegion navigate={navigate} />}
+      {region === 'diadema' && <DiademaMauaRegion regionName="Diadema" navigate={navigate} />}
+      {region === 'maua' && <DiademaMauaRegion regionName="Mauá" navigate={navigate} />}
+      <div className="container mx-auto px-4 pb-20">
         <button onClick={() => navigate('home')} className="text-primary-light font-bold flex items-center gap-2">
           <ArrowRight size={16} className="rotate-180" /> Voltar para Home
         </button>
