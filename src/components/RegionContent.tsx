@@ -30,7 +30,7 @@ const RelatedPagesSection = ({ currentRegion, navigate }: { currentRegion: strin
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <span className="text-primary-light text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Veja Também</span>
-          <h2 className="text-4xl md:text-5xl font-bold text-primary">Páginas relacionadas</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-primary">Mais serviços de ar condicionado em São Paulo e ABC</h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
