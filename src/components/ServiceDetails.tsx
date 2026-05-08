@@ -698,12 +698,11 @@ export const ServiceCTA = ({
           <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
         </a>
         <a 
-          href="https://wa.me/5511963462516"
-          rel="noopener noreferrer"
+          href="tel:+5511963462516"
           className="border border-white/10 hover:bg-white/5 text-white px-10 py-5 rounded-full font-bold flex items-center gap-3 transition-all w-full sm:w-auto justify-center"
         >
-          <Building2 size={22} />
-          Ver Detalhes
+          <Phone size={22} />
+          Ligar: (11) 96346-2516
         </a>
       </div>
     </div>

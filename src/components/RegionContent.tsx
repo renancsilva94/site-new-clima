@@ -275,19 +275,29 @@ export const SaoCaetanoRegion = ({ navigate }: { navigate: (p: any) => void }) =
 export const DiademaMauaRegion = ({ regionName, navigate }: { regionName: string, navigate: (p: any) => void }) => (
   <RegionLayout 
     region={regionName}
-    title={`Ar Condicionado em ${regionName}: Instalação e Limpeza`}
-    description={`Serviços técnicos de ar condicionado em ${regionName}. Atendimento especializado para instalação e manutenção residencial e comercial.`}
+    title={`Ar Condicionado em ${regionName}: Instalação e Manutenção`}
+    description={`Instalação e manutenção de ar condicionado em ${regionName}. Técnicos certificados, atendimento rápido e orçamento gratuito para residências e empresas.`}
     neighborhoods={regionName === 'Diadema' ? [
-      "Centro", "Serraria", "Taboão", "Piraporinha", "Canhema", "Conceição"
+      "Centro", "Serraria", "Taboão", "Piraporinha", "Canhema", "Conceição",
+      "Eldorado", "Campanário", "Inamar", "Vila Nogueira"
     ] : [
-      "Centro", "Jardim Zaíra", "Parque São Vicente", "Vila Assis", "Guapituba"
+      "Centro", "Jardim Zaíra", "Parque São Vicente", "Vila Assis", "Guapituba",
+      "Vila Vitória", "Jardim Oratório", "Capuava", "Vila Cardoso"
     ]}
     showInstallation
     showMaintenance
     navigate={navigate}
   >
     <p>
-      Moradores e empresários de <strong>{regionName}</strong> contam com o suporte técnico da New Clima Ar Condicionado para garantir o conforto térmico o ano todo. Oferecemos orçamentos transparentes e execução rápida para <strong>instalação de ar condicionado em {regionName}</strong> e manutenção de todas as marcas.
+      Moradores e empresários de <strong>{regionName}</strong> contam com o suporte técnico da New Clima Ar Condicionado para garantir o conforto térmico o ano todo. Atendemos residências, comércios e indústrias com o mesmo padrão técnico que nos tornou referência em toda a região do ABC Paulista.
+    </p>
+    <h2 className="text-2xl font-bold text-primary">Instalação de Ar Condicionado em {regionName}</h2>
+    <p>
+      Realizamos a instalação completa de sistemas Split, Multi Split e Cassete em {regionName}, com infraestrutura embutida, acabamento impecável e garantia técnica de 1 ano. Nossos técnicos chegam no horário combinado e entregam a obra limpa — sem poeira, sem entulho.
+    </p>
+    <h2 className="text-2xl font-bold text-primary">Manutenção e PMOC em {regionName}</h2>
+    <p>
+      Para empresas em {regionName} que precisam manter seus sistemas de climatização em conformidade com a <strong>Lei 13.589/2018</strong>, oferecemos contratos de manutenção preventiva e gestão completa do <strong>PMOC</strong>. Evite multas da Vigilância Sanitária e garanta o ar-condicionado funcionando o ano todo.
     </p>
   </RegionLayout>
 );

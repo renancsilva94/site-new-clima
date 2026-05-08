@@ -7,6 +7,8 @@ import {
   Clock, 
   MapPin, 
   ChevronDown,
+  ChevronLeft,
+  ChevronRight,
   Wind,
   ShieldCheck,
   Zap,
@@ -472,6 +474,20 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               <p className="text-lg text-blue-100/80 mb-10 max-w-xl leading-relaxed">
                 A New Clima Ar é especialista em <strong>instalação, manutenção e limpeza de ar condicionado em São Paulo e no ABC</strong>. Oferecemos soluções completas de climatização, PMOC para empresas e projetos personalizados para residências com foco em eficiência e economia.
               </p>
+              
+              <div className="flex flex-wrap gap-8 mb-10">
+                {[
+                  { number: "7+", label: "Anos de experiência" },
+                  { number: "500+", label: "Instalações realizadas" },
+                  { number: "4.9★", label: "Nota no Google" },
+                ].map((stat, i) => (
+                  <div key={i}>
+                    <div className="text-2xl font-extrabold text-white">{stat.number}</div>
+                    <div className="text-xs text-blue-100/60 font-medium">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+
               <div className="flex flex-col sm:flex-row gap-4">
                 <WhatsAppButton className="h-14 px-8 text-lg" text="Quero Solicitar Orçamento" />
                 <button 
@@ -855,7 +871,10 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               </div>
               
               <div className="flex items-center gap-6 border-l border-slate-100 pl-6 hidden md:flex">
-                <div className="text-4xl font-black text-primary">4.9</div>
+                <div>
+                  <div className="text-4xl font-black text-primary">4.9</div>
+                  <div className="text-xs text-slate-400 font-bold">24 avaliações</div>
+                </div>
                 <div>
                   <div className="flex gap-0.5 text-accent mb-1">
                     {[1,2,3,4,5].map(i => <Star key={i} size={14} fill="currentColor" />)}
@@ -885,32 +904,75 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <GoogleReviewCard 
-              name="Fabiana Silva"
-              service="Instalação de Ar Condicionado"
-              content="Excelente atendimento! O técnico Fabrício foi muito atencioso, explicou tudo com detalhes e a instalação ficou impecável. Recomendo muito a New Clima."
-            />
-            <GoogleReviewCard 
-              name="Rodrigo Santos"
-              service="Manutenção e Limpeza"
-              content="Serviço de primeira qualidade. Equipe pontual, uniformizada e muito cuidadosa com a limpeza do local. O ar condicionado está gelando como novo."
-            />
-            <GoogleReviewCard 
-              name="Camila Oliveira"
-              service="Infraestrutura"
-              content="Fiz a infraestrutura do meu apartamento com eles e o trabalho foi nota 10. Acabamento perfeito e técnicos muito profissionais. Vale cada centavo."
-            />
-            <GoogleReviewCard 
-              name="Marcos Souza"
-              service="Instalação Residencial"
-              content="Melhor empresa de ar condicionado que já contratei. Atendimento rápido e preço justo. O pós-venda também é excelente, tiraram todas as minhas dúvidas."
-            />
-            <GoogleReviewCard 
-              name="Juliana Lima"
-              service="Higienização"
-              content="Super recomendo! A higienização foi completa e os técnicos foram muito educados. Empresa séria e comprometida com a satisfação do cliente."
-            />
+          {/* Scrollable Container Container */}
+          <div className="relative group">
+            {/* Scroll Buttons */}
+            <div className="absolute -left-4 top-1/2 -translate-y-1/2 z-10 hidden xl:block">
+              <button 
+                onClick={() => {
+                  const container = document.getElementById('testimonials-container');
+                  if (container) container.scrollBy({ left: -400, behavior: 'smooth' });
+                }}
+                className="w-12 h-12 rounded-full bg-white shadow-xl border border-slate-100 flex items-center justify-center text-primary hover:bg-slate-50 transition-all"
+                aria-label="Anterior"
+              >
+                <ChevronLeft size={24} />
+              </button>
+            </div>
+            
+            <div className="absolute -right-4 top-1/2 -translate-y-1/2 z-10 hidden xl:block">
+              <button 
+                onClick={() => {
+                  const container = document.getElementById('testimonials-container');
+                  if (container) container.scrollBy({ left: 400, behavior: 'smooth' });
+                }}
+                className="w-12 h-12 rounded-full bg-white shadow-xl border border-slate-100 flex items-center justify-center text-primary hover:bg-slate-50 transition-all"
+                aria-label="Próximo"
+              >
+                <ChevronRight size={24} />
+              </button>
+            </div>
+
+            <div 
+              id="testimonials-container"
+              className="flex gap-6 overflow-x-auto pb-8 hide-scrollbar snap-x snap-mandatory -mx-4 px-4 md:mx-0 md:px-0 scroll-smooth"
+            >
+              <div className="flex-none w-[85vw] md:w-[400px] snap-center">
+                <GoogleReviewCard 
+                  name="Samuel Carvalho"
+                  service="Instalação, Manutenção e Limpeza"
+                  content="Contratei o profissional José Erivaldo para serviços de instalação, manutenção preventiva, conserto e limpeza do meu ar-condicionado. O trabalho foi muito ótimo! Ele é pontual, atencioso, caprichoso e explica tudo o que está fazendo. O ambiente ficou limpo e o ar-condicionado funcionando perfeitamente. Recomendo muito e com certeza voltarei a contratar!"
+                />
+              </div>
+              <div className="flex-none w-[85vw] md:w-[400px] snap-center">
+                <GoogleReviewCard 
+                  name="Victor Peres"
+                  service="Instalação de 3 Ar Condicionados"
+                  content="Contratei esta empresa para instalação de 3 Ar Condicionado na minha residência. O Sr. Erivaldo é um ótimo profissional e atencioso, me explicou como seria feito todo serviço. Muito obrigado!"
+                />
+              </div>
+              <div className="flex-none w-[85vw] md:w-[400px] snap-center">
+                <GoogleReviewCard 
+                  name="Melcia Beleza"
+                  service="Manutenção Corretiva"
+                  content="A empresa tem um excelente atendimento, são atenciosos e o técnico responsável Erivaldo consertou o problema do meu equipamento. Indico muito essa empresa!"
+                />
+              </div>
+              <div className="flex-none w-[85vw] md:w-[400px] snap-center">
+                <GoogleReviewCard 
+                  name="Rosemeire Fonseca"
+                  service="Manutenção de Ar Condicionado"
+                  content="Indico muito a empresa New Clima. Ótimo trabalho, técnico muito atencioso."
+                />
+              </div>
+              <div className="flex-none w-[85vw] md:w-[400px] snap-center">
+                <GoogleReviewCard 
+                  name="Matheus Santos"
+                  service="Serviços Gerais"
+                  content="Empresa com muita experiência e trabalho de qualidade. Os melhores profissionais que já trabalhei."
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -925,6 +987,10 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
           />
           
           <div className="space-y-4">
+            <FaqItem 
+              question="Quanto custa instalar ar condicionado em São Paulo?"
+              answer="O valor varia conforme a capacidade do equipamento (BTUs), complexidade da infraestrutura e distância entre as unidades. Uma instalação residencial padrão em SP começa a partir de R$ 350. O orçamento é gratuito — nossa equipe visita o local sem compromisso e entrega o valor exato no mesmo dia."
+            />
             <FaqItem 
               question="Quanto tempo leva para instalar um ar condicionado?"
               answer="Uma instalação padrão de split hi-wall leva em média de 3 a 5 horas, dependendo da complexidade da infraestrutura e distância entre as unidades."
@@ -1217,7 +1283,7 @@ function AboutView({ navigate }: { navigate: (p: PageId) => void }) {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
         <div className="prose prose-slate max-w-none text-slate-600 leading-relaxed space-y-6">
           <p className="text-lg">
-            A <strong>New Clima Ar Condicionado</strong> nasceu da necessidade de oferecer um serviço de <strong>climatização especializado</strong> diferenciado em São Paulo e na região do ABC Paulista. Com anos de experiência, consolidamos nossa marca como sinônimo de confiança em <strong>instalação de ar condicionado em SP</strong>.
+            A <strong>New Clima Ar Condicionado</strong> nasceu da necessidade de oferecer um serviço de <strong>climatização especializado</strong> diferenciado em São Paulo e na região do ABC Paulista. Desde 2018, são 7 anos consolidando nossa marca como sinônimo de confiança em instalação de ar condicionado em SP e ABC Paulista.
           </p>
           <p>
             Nossa atuação abrange desde a climatização residencial de alto padrão até complexos sistemas industriais e comerciais. Somos especialistas em marcas líderes como Daikin, Fujitsu, LG, Samsung e Carrier, garantindo que cada projeto de <strong>ar condicionado no ABC e São Paulo</strong> seja executado com perfeição técnica e estética.
