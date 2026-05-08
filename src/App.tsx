@@ -39,7 +39,6 @@ import {
   ManutencaoCorretiva, 
   LimpezaHigienizacao 
 } from './components/ServiceDetails';
-import logo from './assets/logo-new-clima.png';
 import { 
   BlogInverter, 
   BlogApartamento, 
@@ -157,14 +156,14 @@ export default function App() {
           <meta property="og:url" content="https://newclimaar.com.br/" />
           <meta property="og:title" content="New Clima Ar | Instalação e Manutenção de Ar Condicionado" />
           <meta property="og:description" content="Especialista em ar condicionado em São Paulo e ABC. Atendimento premium residencial e comercial com garantia técnica." />
-          <meta property="og:image" content="https://www.newclimaar.com.br/opengraph.jpg" />
+          <meta property="og:image" content="https://www.newclimaar.com.br/logo.png" />
 
           {/* Twitter */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:url" content="https://newclimaar.com.br/" />
           <meta name="twitter:title" content="New Clima Ar | Instalação e Manutenção de Ar Condicionado" />
           <meta name="twitter:description" content="Especialista em ar condicionado em São Paulo e ABC. Atendimento premium residencial e comercial com garantia técnica." />
-          <meta name="twitter:image" content="https://www.newclimaar.com.br/opengraph.jpg" />
+          <meta name="twitter:image" content="https://www.newclimaar.com.br/logo.png" />
 
           {/* Schema.org markup for Google */}
           <script type="application/ld+json">
@@ -173,7 +172,7 @@ export default function App() {
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
                 "name": "New Clima Ar Condicionado",
-                "image": "https://www.newclimaar.com.br/images/logo-new-clima.png",
+                "image": "https://www.newclimaar.com.br/logo.png",
                 "@id": "https://www.newclimaar.com.br",
                 "url": "https://newclimaar.com.br/",
                 "telephone": "+5511963462516",
@@ -236,10 +235,9 @@ export default function App() {
               onClick={() => navigate('home')}
             >
               <img 
-                src={logo} 
+                src="/logo.png" 
                 alt="New Clima Ar" 
                 className="h-20 md:h-24 w-auto object-contain transition-transform group-hover:scale-105"
-                referrerPolicy="no-referrer"
               />
             </div>
 
@@ -354,6 +352,7 @@ export default function App() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
               <div className="space-y-6">
+                <img src="/logo.png" alt="New Clima Ar" className="h-16 w-auto brightness-0 invert" />
                 <p className="text-blue-100/70 text-sm leading-relaxed">
                   Referência em climatização de alta performance em São Paulo e ABC. Projetos residenciais, comerciais e industriais com foco em eficiência energética e qualidade do ar.
                 </p>
