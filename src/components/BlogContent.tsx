@@ -42,12 +42,12 @@ const BlogPostLayout = ({ title, date, author, tag, children }: { title: string,
         <p className="text-slate-500 text-sm">Se precisar de ajuda técnica, fale com nossos especialistas.</p>
       </div>
       <a 
-        href="https://kit.cursodescomplicandosites.com.br/" 
+        href="https://wa.me/5511963462516" 
         rel="noopener noreferrer"
         className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-4 px-8 rounded-xl transition-all hover:-translate-y-0.5 shadow-lg shadow-success/20"
       >
         <MessageCircle size={20} />
-        Garantir Minha Vaga
+        Solicitar Orçamento
       </a>
     </div>
   </div>

@@ -76,7 +76,7 @@ const WhatsAppIcon = ({ size = 20 }: { size?: number }) => (
 
 const WhatsAppButton = ({ className, text = "Solicitar Orçamento" }: { className?: string, text?: string }) => (
   <a 
-    href="https://kit.cursodescomplicandosites.com.br/" 
+    href="https://wa.me/5511963462516" 
     rel="noopener noreferrer"
     className={`inline-flex items-center justify-center gap-2 bg-success hover:bg-success/90 text-white font-bold py-3 px-6 rounded-xl transition-all hover:-translate-y-0.5 shadow-lg hover:shadow-success/40 ${className}`}
   >
@@ -120,7 +120,6 @@ export default function App() {
           <title>New Clima Ar | Instalação e Manutenção de Ar Condicionado em SP e ABC</title>
           <meta name="description" content="Especialista em ar condicionado em São Paulo e ABC. Instalação técnica, manutenção preventiva (PMOC), conserto e limpeza profunda. Atendimento premium residencial e comercial com garantia técnica." />
           <meta name="keywords" content="ar condicionado sp, ar condicionado abc, instalação de ar condicionado, manutenção de ar condicionado, limpeza de ar condicionado, pmoc, conserto de ar condicionado, split inverter, multi split, vrf" />
-          <meta name="robots" content="index, follow" />
           <link rel="canonical" href="https://newclimaar.com.br/" />
           
           {/* Open Graph / Facebook */}
@@ -128,14 +127,14 @@ export default function App() {
           <meta property="og:url" content="https://newclimaar.com.br/" />
           <meta property="og:title" content="New Clima Ar | Instalação e Manutenção de Ar Condicionado" />
           <meta property="og:description" content="Especialista em ar condicionado em São Paulo e ABC. Atendimento premium residencial e comercial com garantia técnica." />
-          <meta property="og:image" content="https://cdn.coteibem.com.br/company/41315/logo/f4d0405d-28b6-4834-a8ca-9e63b68073fa.png" />
+          <meta property="og:image" content="https://www.newclimaar.com.br/opengraph.jpg" />
 
           {/* Twitter */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:url" content="https://newclimaar.com.br/" />
           <meta name="twitter:title" content="New Clima Ar | Instalação e Manutenção de Ar Condicionado" />
           <meta name="twitter:description" content="Especialista em ar condicionado em São Paulo e ABC. Atendimento premium residencial e comercial com garantia técnica." />
-          <meta name="twitter:image" content="https://cdn.coteibem.com.br/company/41315/logo/f4d0405d-28b6-4834-a8ca-9e63b68073fa.png" />
+          <meta name="twitter:image" content="https://www.newclimaar.com.br/opengraph.jpg" />
 
           {/* Schema.org markup for Google */}
           <script type="application/ld+json">
@@ -144,8 +143,8 @@ export default function App() {
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
                 "name": "New Clima Ar Condicionado",
-                "image": "https://cdn.coteibem.com.br/company/41315/logo/f4d0405d-28b6-4834-a8ca-9e63b68073fa.png",
-                "@id": "",
+                "image": "https://www.newclimaar.com.br/opengraph.jpg",
+                "@id": "https://www.newclimaar.com.br",
                 "url": "https://newclimaar.com.br/",
                 "telephone": "+5511963462516",
                 "address": {
@@ -153,7 +152,7 @@ export default function App() {
                   "streetAddress": "R. Santa Cruz, 2187",
                   "addressLocality": "São Paulo",
                   "addressRegion": "SP",
-                  "postalCode": "04121-001",
+                  "postalCode": "04121-002",
                   "addressCountry": "BR"
                 },
                 "geo": {
@@ -245,7 +244,7 @@ export default function App() {
               <button onClick={() => navigate('blog')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light">Blog</button>
               <button onClick={() => navigate('sobre')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light">Sobre</button>
               <button onClick={() => navigate('contato')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light">Contato</button>
-              <WhatsAppButton className="ml-4 h-11 text-sm px-5" text="Falar com Especialista" />
+              <WhatsAppButton className="ml-4 h-11 text-sm px-5" text="WhatsApp (11) 96346-2516" />
             </nav>
 
             <button 
@@ -366,7 +365,7 @@ export default function App() {
                     <div className="text-accent shrink-0">
                       <WhatsAppIcon size={18} />
                     </div>
-                    <a href="https://kit.cursodescomplicandosites.com.br/" rel="noopener noreferrer" className="text-blue-100/60 hover:text-white">Garantir Vaga</a>
+                    <a href="https://wa.me/5511963462516" rel="noopener noreferrer" className="text-blue-100/60 hover:text-white">Falar no WhatsApp</a>
                   </li>
                 </ul>
               </div>
@@ -394,7 +393,7 @@ export default function App() {
           <div className="relative pointer-events-auto">
             <div className="absolute inset-0 bg-success rounded-full animate-ping opacity-25"></div>
             <a 
-              href="https://kit.cursodescomplicandosites.com.br/" 
+              href="https://wa.me/5511963462516" 
               rel="noopener noreferrer"
               aria-label="Falar com especialista"
               className="relative w-16 h-16 bg-success text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform"
@@ -438,7 +437,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                 A New Clima Ar é especialista em <strong>instalação, manutenção e limpeza de ar condicionado em São Paulo e no ABC</strong>. Oferecemos soluções completas de climatização, PMOC para empresas e projetos personalizados para residências com foco em eficiência e economia.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <WhatsAppButton className="h-14 px-8 text-lg" text="Quero Garantir Minha Vaga" />
+                <WhatsAppButton className="h-14 px-8 text-lg" text="Quero Solicitar Orçamento" />
                 <button 
                   onClick={() => navigate('contato')}
                   className="h-14 px-8 rounded-xl border-2 border-white/20 text-white font-bold hover:bg-white/10 transition-all"
@@ -459,7 +458,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                   <h3 className="text-xl font-bold text-primary">Receba uma Proposta</h3>
                   <p className="text-sm text-slate-500">Preencha os dados e entraremos em contato.</p>
                 </div>
-                <form className="space-y-4" action="https://kit.cursodescomplicandosites.com.br/" method="GET">
+                <form className="space-y-4" action="https://wa.me/5511963462516" method="GET">
                   <div className="space-y-2">
                     <label htmlFor="hero-name" className="text-xs font-bold text-slate-400 uppercase tracking-wider">Nome Completo</label>
                     <input id="hero-name" type="text" placeholder="Seu nome" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary-light" required />
@@ -479,7 +478,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                     </select>
                   </div>
                   <button type="submit" className="w-full bg-primary text-white font-bold py-4 rounded-xl hover:bg-primary-light transition-colors shadow-lg shadow-primary/20 flex items-center justify-center gap-2">
-                    Garantir Vaga Agora <ArrowRight size={18} />
+                    Solicitar Orçamento <ArrowRight size={18} />
                   </button>
                 </form>
               </div>
@@ -937,11 +936,11 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a 
-              href="https://kit.cursodescomplicandosites.com.br/"
+              href="https://wa.me/5511963462516"
               rel="noopener noreferrer"
               className="h-16 px-10 rounded-xl bg-success text-white font-bold flex items-center justify-center hover:bg-success/90 transition-all shadow-xl shadow-success/20"
             >
-              Garantir Minha Vaga Agora
+              Solicitar Orçamento Grátis
             </a>
             <a 
               href="tel:+5511963462516"

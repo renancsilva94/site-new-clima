@@ -126,19 +126,20 @@ const RegionLayout = ({
             </p>
             <div className="space-y-4">
               <a 
-                href="https://kit.cursodescomplicandosites.com.br/" 
+                href="https://wa.me/5511963462516" 
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-success text-white font-bold py-4 rounded-xl transition-all hover:-translate-y-0.5"
               >
                 <MessageCircle size={20} />
-                Falar com Especialista
+                WhatsApp (11) 96346-2516
               </a>
               <a 
-                href="https://kit.cursodescomplicandosites.com.br/" 
+                href="https://wa.me/5511963462516" 
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-white/10 text-white font-bold py-4 rounded-xl transition-all hover:bg-white/20"
               >
-                Ver Oferta
+                <Clock size={20} />
+                Ligar Agora
               </a>
             </div>
           </div>
