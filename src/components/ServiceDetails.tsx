@@ -53,7 +53,7 @@ export const SistemasInstalamosSection = () => (
     <div className="container mx-auto px-4 max-w-6xl">
       <div className="text-center mb-10">
         <span className="text-blue-400 text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Tipos de Instalação</span>
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Sistemas que instalamos</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Sistemas de ar condicionado que instalamos em São Paulo</h2>
         <p className="text-blue-100/60 max-w-2xl mx-auto">Cada tipo de sistema exige técnicas e infraestrutura específicas. Conheça as opções.</p>
       </div>
 
@@ -84,7 +84,7 @@ export const ProcessoSection = () => (
     <div className="container mx-auto px-4 max-w-6xl">
       <div className="text-center mb-12">
         <span className="text-primary-light text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Como Funciona</span>
-        <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Nosso processo</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Nosso processo de instalação de ar condicionado em SP</h2>
         <p className="text-slate-500 max-w-2xl mx-auto">Cada etapa é planejada para garantir qualidade e sua total satisfação.</p>
       </div>
 
@@ -336,7 +336,7 @@ export const ProcessoManutencaoSection = () => (
     <div className="container mx-auto px-4 max-w-6xl">
       <div className="text-center mb-12">
         <span className="text-primary-light text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Como Funciona</span>
-        <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Nosso processo</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Nosso processo de manutenção de ar condicionado em SP</h2>
         <p className="text-slate-500 max-w-2xl mx-auto">Cada etapa é planejada para garantir qualidade e sua total satisfação.</p>
       </div>
 
@@ -541,7 +541,7 @@ export const ProcessoHigienizacaoSection = () => (
     <div className="container mx-auto px-4 max-w-6xl">
       <div className="text-center mb-12">
         <span className="text-primary-light text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Como Funciona</span>
-        <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Nosso processo</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Nosso processo de limpeza e higienização em São Paulo</h2>
         <p className="text-slate-500 max-w-2xl mx-auto">Cada etapa é planejada para garantir qualidade e sua total satisfação.</p>
       </div>
 
