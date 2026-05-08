@@ -180,7 +180,7 @@ export const SaoPauloRegion = ({ navigate }: { navigate: (p: any) => void }) => 
   <RegionLayout 
     region="São Paulo"
     title="Instalação e Manutenção de Ar Condicionado em São Paulo (SP)"
-    description="Atendimento especializado em ar condicionado em toda a capital paulista. Instalação, limpeza e manutenção com técnicos certificados em SP."
+    description="Atendimento especializado em ar condicionado em toda a capital paulista. Instalação, limpeza e manutenção com técnicos certificados em SP. Orçamento gratuito."
     neighborhoods={[
       "Moema", "Vila Mariana", "Saúde", "Ipiranga", "Pinheiros", "Vila Madalena", 
       "Perdizes", "Santana", "Tatuapé", "Anália Franco", "Mooca", "Brooklin", 
@@ -191,39 +191,58 @@ export const SaoPauloRegion = ({ navigate }: { navigate: (p: any) => void }) => 
     navigate={navigate}
   >
     <p>
-      A <strong>New Clima Ar Condicionado</strong> é referência em climatização na cidade de <strong>São Paulo</strong>. Atendemos todas as zonas da capital, oferecendo soluções completas para residências, apartamentos e empresas que buscam <strong>ar condicionado em SP</strong>.
+      A <strong>New Clima Ar Condicionado</strong> é referência em climatização na cidade de <strong>São Paulo</strong>. Desde 2018 atendemos todas as zonas da capital, oferecendo soluções completas para residências, apartamentos e empresas que buscam <strong>ar condicionado em SP</strong> com qualidade técnica e garantia real.
     </p>
     <h2 className="text-2xl font-bold text-primary">Instalação de Ar Condicionado em SP</h2>
     <p>
-      Sabemos que instalar ar condicionado em apartamentos de São Paulo exige o cumprimento rigoroso de normas de fachada e segurança. Nossa equipe realiza instalações limpas, utilizando varandas técnicas ou suportes reforçados, sempre respeitando o regimento interno do seu condomínio em bairros como Moema, Jardins e Itaim Bibi.
+      Instalar ar condicionado em apartamentos de São Paulo exige conhecimento das normas de fachada e segurança de cada condomínio. Nossa equipe realiza instalações limpas em bairros como <strong>Moema, Jardins, Itaim Bibi, Vila Mariana e Pinheiros</strong>, utilizando varandas técnicas ou suportes reforçados, sempre respeitando o regimento interno. Trabalhamos com infraestrutura embutida para preservar a estética do seu imóvel.
     </p>
     <h2 className="text-2xl font-bold text-primary">Manutenção e PMOC em São Paulo</h2>
     <p>
-      Atendemos escritórios e empresas em polos como a <strong>Avenida Paulista, Faria Lima e Berrini</strong>. Oferecemos planos de manutenção preventiva (PMOC) que garantem a conformidade com a lei e o bem-estar dos seus colaboradores, evitando paradas inesperadas no sistema de climatização.
+      Atendemos escritórios e empresas nos principais polos corporativos de SP: <strong>Avenida Paulista, Faria Lima, Berrini e Alphaville</strong>. Oferecemos planos de manutenção preventiva e gestão completa do <strong>PMOC (Plano de Manutenção, Operação e Controle)</strong>, garantindo conformidade com a Lei 13.589/2018 e evitando multas da Vigilância Sanitária de até R$ 1,5 milhão.
     </p>
+    <h2 className="text-2xl font-bold text-primary">Perguntas Frequentes — Ar Condicionado em São Paulo</h2>
+    <p><strong>Quanto custa instalar ar condicionado em São Paulo?</strong><br />
+    Uma instalação residencial padrão em SP começa a partir de R$ 350. O valor varia conforme a complexidade da infraestrutura e a distância entre as unidades. A visita técnica é gratuita e o orçamento é entregue no mesmo dia.</p>
+    <p><strong>Vocês atendem em apartamentos com regras de condomínio?</strong><br />
+    Sim. Somos especialistas em instalações em prédios e condomínios de SP, com total respeito às normas de fachada, varandas técnicas e regimentos internos.</p>
+    <p><strong>Qual o prazo de atendimento em São Paulo?</strong><br />
+    Atendemos em até 24 horas para orçamento e agendamos a instalação conforme sua disponibilidade. Para emergências, nosso WhatsApp funciona 24h.</p>
   </RegionLayout>
 );
 
 export const SantoAndreRegion = ({ navigate }: { navigate: (p: any) => void }) => (
   <RegionLayout 
     region="Santo André"
-    title="Ar Condicionado em Santo André: Instalação e Limpeza"
-    description="Serviços técnicos de ar condicionado em Santo André. Atendimento rápido para instalação, manutenção e higienização no ABC."
+    title="Ar Condicionado em Santo André: Instalação e Manutenção"
+    description="Instalação e manutenção de ar condicionado em Santo André. Técnicos certificados, orçamento gratuito e atendimento rápido em toda a cidade."
     neighborhoods={[
       "Bairro Jardim", "Campestre", "Vila Assunção", "Vila Gilda", "Vila Bastos", 
-      "Utinga", "Santa Teresinha", "Parque das Nações", "Centro", "Jardim"
+      "Utinga", "Santa Teresinha", "Parque das Nações", "Centro", "Vila Pires",
+      "Jardim Bela Vista", "Vila Alzira", "Paraíso"
     ]}
     showInstallation
     showCleaning
     navigate={navigate}
   >
     <p>
-      Se você busca <strong>ar condicionado em Santo André</strong>, a New Clima Ar é a sua melhor escolha. Atendemos desde residências no Bairro Jardim até grandes comércios no Centro, sempre com o mesmo padrão de excelência e transparência que nos tornou referência no ABC.
+      A <strong>New Clima Ar Condicionado</strong> atende toda a cidade de <strong>Santo André</strong> with serviços de instalação, manutenção e limpeza de ar condicionado. Com base estratégica no ABC Paulista, nossa equipe chega rápido e entrega o serviço com o padrão técnico que nos tornou referência na região.
     </p>
-    <h2 className="text-2xl font-bold text-primary">Assistência Técnica em Santo André</h2>
+    <h2 className="text-2xl font-bold text-primary">Instalação de Ar Condicionado em Santo André</h2>
     <p>
-      Nossa base operacional permite um deslocamento ágil para toda a cidade de Santo André. Seja para uma instalação de um Split Inverter ou para uma limpeza profunda com bactericida, nossa equipe chega no horário combinado e realiza o serviço com o máximo de organização e limpeza.
+      Atendemos residências e comércios em bairros como <strong>Campestre, Vila Assunção, Bairro Jardim, Utinga e Vila Pires</strong>. Seja para instalar um split inverter num quarto ou um sistema multi split num apartamento, nossa equipe dimensiona o equipamento correto, executa a infraestrutura completa e entrega a obra limpa — sem quebradeira desnecessária.
     </p>
+    <h2 className="text-2xl font-bold text-primary">Manutenção e Limpeza em Santo André</h2>
+    <p>
+      A poluição do ABC acelera o acúmulo de sujeira nos filtros e serpentinas. Oferecemos higienização profissional com bactericida para residências, clínicas, escritórios e comércios em Santo André. Também realizamos manutenção preventiva e corretiva de todas as marcas — Daikin, LG, Samsung, Midea e Carrier.
+    </p>
+    <h2 className="text-2xl font-bold text-primary">Perguntas Frequentes — Ar Condicionado em Santo André</h2>
+    <p><strong>Quanto custa instalar ar condicionado em Santo André?</strong><br />
+    O valor depende do modelo e da complexidade da instalação. Uma instalação residencial padrão começa a partir de R$ 350. Oferecemos visita técnica gratuita com orçamento no mesmo dia.</p>
+    <p><strong>Vocês atendem no Centro de Santo André?</strong><br />
+    Sim, atendemos toda a cidade de Santo André incluindo Centro, Campestre, Vila Assunção e todos os bairros.</p>
+    <p><strong>Fazem manutenção de ar condicionado em Santo André?</strong><br />
+    Sim. Realizamos manutenção preventiva, corretiva e limpeza profunda de todas as marcas em Santo André e toda a região do ABC.</p>
   </RegionLayout>
 );
 
@@ -231,21 +250,33 @@ export const SaoBernardoRegion = ({ navigate }: { navigate: (p: any) => void }) 
   <RegionLayout 
     region="São Bernardo do Campo"
     title="Ar Condicionado em São Bernardo do Campo (SBC)"
-    description="Instalação e manutenção de ar condicionado em São Bernardo do Campo. Técnicos especializados em sistemas residenciais e industriais em SBC."
+    description="Instalação e manutenção de ar condicionado em São Bernardo do Campo. Técnicos especializados em sistemas residenciais, comerciais e industriais em SBC."
     neighborhoods={[
       "Rudge Ramos", "Jardim do Mar", "Assunção", "Nova Petrópolis", "Baeta Neves", 
-      "Centro", "Planalto", "Demarchi", "Alves Dias", "Anchieta"
+      "Centro", "Planalto", "Demarchi", "Alves Dias", "Anchieta",
+      "Paulicéia", "Cooperativa", "Vila Euclides"
     ]}
     showMaintenance
     navigate={navigate}
   >
     <p>
-      Atendemos toda a cidade de <strong>São Bernardo do Campo</strong>, oferecendo soluções de climatização para residências, indústrias e comércios. Em uma cidade com forte presença industrial, a <strong>manutenção de ar condicionado em SBC</strong> é essencial para garantir a saúde e economia.
+      A <strong>New Clima Ar Condicionado</strong> atende toda a cidade de <strong>São Bernardo do Campo</strong> com instalação, manutenção e limpeza de ar condicionado. Em uma das maiores cidades industriais do Brasil, a climatização profissional é essencial tanto para o conforto residencial quanto para a produtividade nos ambientes corporativos.
+    </p>
+    <h2 className="text-2xl font-bold text-primary">Instalação de Ar Condicionado em SBC</h2>
+    <p>
+      Atendemos residências e empresas em bairros como <strong>Rudge Ramos, Assunção, Nova Petrópolis, Baeta Neves e Anchieta</strong>. Instalamos sistemas Split, Multi Split, Cassete e VRF com infraestrutura completa e acabamento impecável. Nossa equipe é treinada para atender apartamentos, casas, escritórios e galpões industriais em São Bernardo.
     </p>
     <h2 className="text-2xl font-bold text-primary">Manutenção Industrial e Comercial em SBC</h2>
     <p>
-      Com vasta experiência em sistemas de grande porte, atendemos empresas e galpões industriais em São Bernardo, realizando desde o projeto de infraestrutura até a manutenção corretiva de compressores e placas eletrônicas de alta potência.
+      São Bernardo do Campo concentra grandes polos industriais e corporativos que dependem de sistemas de climatização funcionando 100% do tempo. Oferecemos contratos de <strong>manutenção preventiva e PMOC</strong> para empresas de todos os portes, com relatórios técnicos, cronogramas e gestão completa da documentação exigida pela Lei 13.589/2018.
     </p>
+    <h2 className="text-2xl font-bold text-primary">Perguntas Frequentes — Ar Condicionado em São Bernardo</h2>
+    <p><strong>Vocês atendem condomínios em São Bernardo do Campo?</strong><br />
+    Sim. Atendemos condomínios residenciais e comerciais em toda a cidade, com respeito às normas de fachada e varandas técnicas.</p>
+    <p><strong>Fazem PMOC para empresas em SBC?</strong><br />
+    Sim. Elaboramos e executamos o PMOC completo para empresas em São Bernardo do Campo, garantindo conformidade com a Vigilância Sanitária.</p>
+    <p><strong>Qual o prazo para atendimento em São Bernardo?</strong><br />
+    Atendemos em até 24 horas para orçamento. Para emergências, nosso WhatsApp funciona 24h.</p>
   </RegionLayout>
 );
 
@@ -253,22 +284,33 @@ export const SaoCaetanoRegion = ({ navigate }: { navigate: (p: any) => void }) =
   <RegionLayout 
     region="São Caetano do Sul"
     title="Ar Condicionado em São Caetano do Sul: Instalação Premium"
-    description="Serviços de ar condicionado em São Caetano do Sul. Instalação silenciosa e higienização profunda para residências e clínicas."
+    description="Instalação e manutenção de ar condicionado em São Caetano do Sul. Serviço premium para residências, clínicas e empresas. Orçamento gratuito."
     neighborhoods={[
       "Santa Paula", "Barcelona", "Centro", "Santo Antônio", "Olímpico", 
-      "Boa Vista", "Cerâmica", "Mauá", "Jardim São Caetano"
+      "Boa Vista", "Cerâmica", "Fundação", "Nova Gerty", "Jardim São Caetano"
     ]}
     showInstallation
     showCleaning
     navigate={navigate}
   >
     <p>
-      Em <strong>São Caetano do Sul</strong>, a New Clima Ar Condicionado entrega um serviço que acompanha o alto padrão de vida da cidade. Focamos em <strong>instalação de ar condicionado</strong> estética, silenciosa e extremamente eficiente para residências e clínicas médicas.
+      A <strong>New Clima Ar Condicionado</strong> atende toda a cidade de <strong>São Caetano do Sul</strong> with instalação e manutenção de ar condicionado. Reconhecida pelo alto padrão de vida, São Caetano exige um serviço diferenciado — e é exatamente isso que entregamos: técnicos certificados, obra limpa e garantia por escrito em todos os serviços.
     </p>
-    <h2 className="text-2xl font-bold text-primary">Especialistas em Clínicas em São Caetano</h2>
+    <h2 className="text-2xl font-bold text-primary">Instalação de Ar Condicionado em São Caetano do Sul</h2>
     <p>
-      Muitos profissionais de saúde em São Caetano confiam na New Clima para a manutenção de seus consultórios. Realizamos a higienização química profunda que elimina 99,9% de germes e bactérias, garantindo um ambiente seguro para seus pacientes.
+      Atendemos residências e comércios em bairros como <strong>Santa Paula, Barcelona, Olímpico, Boa Vista e Centro</strong>. Instalamos desde splits residenciais Inverter até sistemas Cassete e VRF para espaços comerciais e corporativos. Nossa instalação é silenciosa, estética e totalmente dentro das normas de condomínio.
     </p>
+    <h2 className="text-2xl font-bold text-primary">Especialistas em Clínicas e Consultórios em São Caetano</h2>
+    <p>
+      São Caetano do Sul concentra muitos consultórios médicos, clínicas e espaços de saúde que exigem ar-condicionado funcionando com perfeição. Realizamos higienização química profunda que elimina 99,9% de fungos e bactérias, garantindo um ambiente seguro para pacientes e colaboradores. Também emitimos laudo técnico para fins de vigilância sanitária.
+    </p>
+    <h2 className="text-2xl font-bold text-primary">Perguntas Frequentes — Ar Condicionado em São Caetano do Sul</h2>
+    <p><strong>Quanto custa instalar ar condicionado em São Caetano do Sul?</strong><br />
+    Uma instalação residencial padrão começa a partir de R$ 350. A visita técnica é gratuita e o orçamento é entregue no mesmo dia sem compromisso.</p>
+    <p><strong>Vocês fazem higienização de ar condicionado em São Caetano?</strong><br />
+    Sim. Realizamos higienização completa com bactericida em residências, clínicas e escritórios em toda a cidade de São Caetano do Sul.</p>
+    <p><strong>Atendem apartamentos em São Caetano?</strong><br />
+    Sim, somos especialistas em instalações em condomínios, com total respeito às normas de fachada e regimento interno.</p>
   </RegionLayout>
 );
 
@@ -276,7 +318,7 @@ export const DiademaMauaRegion = ({ regionName, navigate }: { regionName: string
   <RegionLayout 
     region={regionName}
     title={`Ar Condicionado em ${regionName}: Instalação e Manutenção`}
-    description={`Instalação e manutenção de ar condicionado em ${regionName}. Técnicos certificados, atendimento rápido e orçamento gratuito para residências e empresas.`}
+    description={`Instalação e manutenção de ar condicionado em ${regionName}. Técnicos certificados, orçamento gratuito e atendimento rápido para residências e empresas.`}
     neighborhoods={regionName === 'Diadema' ? [
       "Centro", "Serraria", "Taboão", "Piraporinha", "Canhema", "Conceição",
       "Eldorado", "Campanário", "Inamar", "Vila Nogueira"
@@ -289,15 +331,22 @@ export const DiademaMauaRegion = ({ regionName, navigate }: { regionName: string
     navigate={navigate}
   >
     <p>
-      Moradores e empresários de <strong>{regionName}</strong> contam com o suporte técnico da New Clima Ar Condicionado para garantir o conforto térmico o ano todo. Atendemos residências, comércios e indústrias com o mesmo padrão técnico que nos tornou referência em toda a região do ABC Paulista.
+      A <strong>New Clima Ar Condicionado</strong> atende residências e empresas em <strong>{regionName}</strong> with instalação, manutenção e limpeza de ar condicionado. Com base operacional no ABC Paulista, nossa equipe chega rápido e entrega o serviço com garantia técnica de 1 ano.
     </p>
     <h2 className="text-2xl font-bold text-primary">Instalação de Ar Condicionado em {regionName}</h2>
     <p>
-      Realizamos a instalação completa de sistemas Split, Multi Split e Cassete em {regionName}, com infraestrutura embutida, acabamento impecável e garantia técnica de 1 ano. Nossos técnicos chegam no horário combinado e entregam a obra limpa — sem poeira, sem entulho.
+      Instalamos sistemas Split, Multi Split e Cassete em {regionName} with infraestrutura completa, acabamento impecável e obra limpa. Atendemos apartamentos, casas, escritórios e comércios — sempre com cálculo preciso de BTUs para garantir eficiência energética e conforto real.
     </p>
-    <h2 className="text-2xl font-bold text-primary">Manutenção e PMOC em {regionName}</h2>
+    <h2 className="text-2xl font-bold text-primary">Manutenção Preventiva e Corretiva em {regionName}</h2>
     <p>
-      Para empresas em {regionName} que precisam manter seus sistemas de climatização em conformidade com a <strong>Lei 13.589/2018</strong>, oferecemos contratos de manutenção preventiva e gestão completa do <strong>PMOC</strong>. Evite multas da Vigilância Sanitária e garanta o ar-condicionado funcionando o ano todo.
+      Oferecemos manutenção preventiva semestral para residências e contratos de PMOC para empresas em {regionName}. Nossa manutenção inclui limpeza de filtros, verificação de gás, check-up elétrico e relatório técnico completo. Para consertos e emergências, atendemos pelo WhatsApp 24h.
     </p>
+    <h2 className="text-2xl font-bold text-primary">Perguntas Frequentes — Ar Condicionado em {regionName}</h2>
+    <p><strong>Quanto custa instalar ar condicionado em {regionName}?</strong><br />
+    Uma instalação residencial padrão começa a partir de R$ 350. A visita técnica é gratuita e o orçamento é entregue no mesmo dia.</p>
+    <p><strong>Vocês fazem manutenção de ar condicionado em {regionName}?</strong><br />
+    Sim. Realizamos manutenção preventiva, corretiva e limpeza profissional de todas as marcas em {regionName} e toda a região do ABC.</p>
+    <p><strong>Qual o prazo de atendimento em {regionName}?</strong><br />
+    Atendemos em até 24 horas para orçamento. Para emergências nosso WhatsApp funciona 24h.</p>
   </RegionLayout>
 );
