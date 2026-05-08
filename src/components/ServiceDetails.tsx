@@ -789,7 +789,7 @@ export const SplitMultiSplit = () => {
         <p>
           Diferente de instalações amadoras, nosso processo inclui o cálculo preciso da carga térmica, garantindo que seu <strong>ar condicionado split</strong> opere com máxima economia de energia. Utilizamos tubulação de cobre de alta qualidade e isolamento térmico adequado para evitar vazamentos e garantir a durabilidade do seu equipamento.
         </p>
-        <h3 className="text-xl font-bold text-primary">Vantagens do Sistema Multi Split</h3>
+        <h3 className="text-xl font-bold text-primary">Vantagens do Sistema Multi Split em São Paulo</h3>
         <p>
           O sistema Multi Split é ideal para quem deseja climatizar vários ambientes (como quartos e sala) utilizando apenas uma unidade condensadora externa. É a escolha perfeita para apartamentos com varandas técnicas limitadas em São Paulo.
         </p>
@@ -829,7 +829,7 @@ export const SistemasComerciais = () => {
         <p>
           O modelo <strong>Cassete</strong> é discreto e elegante, ideal para forros de gesso. Já o <strong>Piso-Teto</strong> oferece robustez para grandes vãos e pé-direito alto, garantindo que o ambiente atinja a temperatura ideal rapidamente, mesmo nos dias mais quentes do ABC.
         </p>
-        <h3 className="text-xl font-bold text-primary">Climatização Comercial Estratégica</h3>
+        <h3 className="text-xl font-bold text-primary">Climatização Comercial para Empresas em SP e ABC</h3>
         <p>
           Oferecemos também sistemas <strong>Dutados</strong> para projetos arquitetônicos que exigem invisibilidade dos equipamentos. Nossa equipe técnica garante que a vazão de ar seja perfeita em todos os pontos do seu estabelecimento comercial.
         </p>
@@ -869,7 +869,7 @@ export const VRFMiniVRF = () => {
         <p>
           Na New Clima Ar, nossos engenheiros projetam sistemas VRF que otimizam o espaço das condensadoras e garantem o máximo de conforto com o mínimo de ruído. É a solução definitiva para bairros como Moema, Jardins e para o setor corporativo do ABC.
         </p>
-        <h3 className="text-xl font-bold text-primary">Mini VRF para Residências de Alto Padrão</h3>
+        <h3 className="text-xl font-bold text-primary">Mini VRF para Residências de Alto Padrão em São Paulo</h3>
         <p>
           O Mini VRF traz a potência industrial para o ambiente doméstico, permitindo climatizar toda a casa com uma única unidade externa compacta. Ideal para quem busca sofisticação, silêncio e automação residencial completa.
         </p>
@@ -909,7 +909,7 @@ export const ManutencaoPreventiva = () => {
         <p>
           Para empresas, implementamos o <strong>PMOC (Plano de Manutenção, Operação e Controle)</strong>, garantindo conformidade com a Lei 13.589/2018. Nossa gestão de PMOC no ABC e SP assegura que seu estabelecimento esteja sempre dentro das normas da Vigilância Sanitária, protegendo seus clientes e funcionários.
         </p>
-        <h3 className="text-xl font-bold text-primary">Benefícios da Manutenção Periódica</h3>
+        <h3 className="text-xl font-bold text-primary">Benefícios da Manutenção Preventiva em SP e ABC</h3>
         <ul className="space-y-2">
           <li className="flex gap-2"><strong>✓ Ar Mais Puro:</strong> Eliminação de fungos, bactérias e ácaros do sistema.</li>
           <li className="flex gap-2"><strong>✓ Menor Consumo:</strong> Equipamentos limpos e regulados gastam até 30% menos energia.</li>
@@ -947,7 +947,7 @@ export const ManutencaoCorretiva = () => {
         <p>
           Nossos técnicos são especialistas em resolver falhas em compressores, vazamentos de gás, problemas em placas eletrônicas Inverter e ruídos excessivos. Atendemos com agilidade para que você não sofra com o calor, seja em sua residência ou empresa.
         </p>
-        <h3 className="text-xl font-bold text-primary">Soluções Rápidas e Definitivas</h3>
+        <h3 className="text-xl font-bold text-primary">Conserto de Ar Condicionado Rápido em São Paulo</h3>
         <p>
           Não fazemos apenas "remendos". Buscamos a causa raiz do problema para que seu <strong>ar condicionado</strong> volte a operar com 100% de performance. Oferecemos garantia em todos os serviços de manutenção corretiva realizados.
         </p>
@@ -987,7 +987,7 @@ export const LimpezaHigienizacao = () => {
         <p>
           Na New Clima Ar, utilizamos produtos bactericidas de alta eficiência que garantem um ar livre de impurezas. Nossa <strong>higienização de ar condicionado</strong> inclui a limpeza da serpentina, turbina, filtros e bandeja de dreno, prevenindo gotejamentos e melhorando a eficiência térmica do aparelho.
         </p>
-        <h3 className="text-xl font-bold text-primary">Por que Higienizar seu Ar Condicionado?</h3>
+        <h3 className="text-xl font-bold text-primary">Por que Higienizar seu Ar Condicionado em São Paulo?</h3>
         <ul className="space-y-2">
           <li className="flex gap-2"><strong>✓ Saúde Respiratória:</strong> Prevenção de rinites, asmas e outras alergias.</li>
           <li className="flex gap-2"><strong>✓ Eficiência Energética:</strong> Aparelhos limpos gelam mais rápido e gastam menos.</li>
