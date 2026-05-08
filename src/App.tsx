@@ -39,6 +39,7 @@ import {
   ManutencaoCorretiva, 
   LimpezaHigienizacao 
 } from './components/ServiceDetails';
+import logo from './assets/logo-new-clima.png';
 import { 
   BlogInverter, 
   BlogApartamento, 
@@ -235,7 +236,7 @@ export default function App() {
               onClick={() => navigate('home')}
             >
               <img 
-                src="/images/logo-new-clima.png" 
+                src={logo} 
                 alt="New Clima Ar" 
                 className="h-20 md:h-24 w-auto object-contain transition-transform group-hover:scale-105"
                 referrerPolicy="no-referrer"
