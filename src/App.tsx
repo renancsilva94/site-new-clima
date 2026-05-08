@@ -50,7 +50,15 @@ import {
   BlogObraLimpa,
   BlogQuarto,
   BlogConvencionalInverter,
-  BlogEmpresas
+  BlogEmpresas,
+  BlogPMOCObrigatorio,
+  BlogMultaPMOC,
+  BlogPMOCCondominio,
+  BlogCustoPMOC,
+  BlogCustoInstalacao,
+  BlogQualAC,
+  BlogSplitMultiSplitApartamento,
+  BlogManutencaoConsequencias
 } from './components/BlogContent';
 import { 
   SaoPauloRegion, 
@@ -61,7 +69,7 @@ import {
 } from './components/RegionContent';
 
 // --- Types ---
-type PageId = 'home' | 'split-multisplit' | 'sistemas-comerciais' | 'vrf-mini-vrf' | 'manutencao-preventiva' | 'manutencao-corretiva' | 'limpeza' | 'blog' | 'sobre' | 'contato' | 'sao-paulo' | 'santo-andre' | 'sao-bernardo' | 'sao-caetano' | 'diadema' | 'maua' | 'blog-inverter' | 'blog-apartamento' | 'blog-btus' | 'blog-pmoc' | 'blog-round-cassette' | 'blog-obra-limpa' | 'blog-quarto' | 'blog-convencional-inverter' | 'blog-empresas';
+type PageId = 'home' | 'split-multisplit' | 'sistemas-comerciais' | 'vrf-mini-vrf' | 'manutencao-preventiva' | 'manutencao-corretiva' | 'limpeza' | 'blog' | 'sobre' | 'contato' | 'sao-paulo' | 'santo-andre' | 'sao-bernardo' | 'sao-caetano' | 'diadema' | 'maua' | 'blog-inverter' | 'blog-apartamento' | 'blog-btus' | 'blog-pmoc' | 'blog-round-cassette' | 'blog-obra-limpa' | 'blog-quarto' | 'blog-convencional-inverter' | 'blog-empresas' | 'blog-pmoc-obrigatorio' | 'blog-multa-pmoc' | 'blog-pmoc-condominio' | 'blog-custo-pmoc' | 'blog-custo-instalacao' | 'blog-qual-ac' | 'blog-split-multi-split' | 'blog-manutencao-consequencias';
 
 // --- Components ---
 
@@ -136,7 +144,15 @@ export default function App() {
       'blog-obra-limpa': '/blog/instalacao-ar-condicionado-obra-limpa',
       'blog-quarto': '/blog/ar-condicionado-quarto',
       'blog-convencional-inverter': '/blog/split-convencional-vs-inverter',
-      'blog-empresas': '/blog/ar-condicionado-empresas-vrf'
+      'blog-empresas': '/blog/ar-condicionado-empresas-vrf',
+      'blog-pmoc-obrigatorio': '/blog/pmoc-obrigatorio-sao-paulo-lei',
+      'blog-multa-pmoc': '/blog/multa-pmoc-sao-paulo',
+      'blog-pmoc-condominio': '/blog/pmoc-condominios-sao-paulo',
+      'blog-custo-pmoc': '/blog/quanto-custa-pmoc-sao-paulo',
+      'blog-custo-instalacao': '/blog/quanto-custa-instalar-ar-condicionado-sp',
+      'blog-qual-ac': '/blog/qual-ar-condicionado-comprar-2026',
+      'blog-split-multi-split': '/blog/split-vs-multi-split-apartamento-sp',
+      'blog-manutencao-consequencias': '/blog/manutencao-ar-condicionado-consequencias'
     }
     const path = routes[page] || '/'
     routerNavigate(path)
@@ -337,6 +353,14 @@ export default function App() {
             <Route path="/blog/ar-condicionado-quarto" element={<BlogView navigate={navigate} postId="quarto" />} />
             <Route path="/blog/split-convencional-vs-inverter" element={<BlogView navigate={navigate} postId="convencional-inverter" />} />
             <Route path="/blog/ar-condicionado-empresas-vrf" element={<BlogView navigate={navigate} postId="empresas" />} />
+            <Route path="/blog/pmoc-obrigatorio-sao-paulo-lei" element={<BlogView navigate={navigate} postId="pmoc-obrigatorio" />} />
+            <Route path="/blog/multa-pmoc-sao-paulo" element={<BlogView navigate={navigate} postId="multa-pmoc" />} />
+            <Route path="/blog/pmoc-condominios-sao-paulo" element={<BlogView navigate={navigate} postId="pmoc-condominio" />} />
+            <Route path="/blog/quanto-custa-pmoc-sao-paulo" element={<BlogView navigate={navigate} postId="custo-pmoc" />} />
+            <Route path="/blog/quanto-custa-instalar-ar-condicionado-sp" element={<BlogView navigate={navigate} postId="custo-instalacao" />} />
+            <Route path="/blog/qual-ar-condicionado-comprar-2026" element={<BlogView navigate={navigate} postId="qual-ac" />} />
+            <Route path="/blog/split-vs-multi-split-apartamento-sp" element={<BlogView navigate={navigate} postId="split-multi-split" />} />
+            <Route path="/blog/manutencao-ar-condicionado-consequencias" element={<BlogView navigate={navigate} postId="manutencao-consequencias" />} />
             <Route path="/sobre" element={<AboutView navigate={navigate} />} />
             <Route path="/contato" element={<ContactView />} />
             <Route path="/ar-condicionado-sao-paulo" element={<RegionView region="sao-paulo" navigate={navigate} />} />
@@ -1189,6 +1213,14 @@ function BlogView({ navigate, postId }: { navigate: (p: PageId) => void, postId?
   if (postId === 'quarto') return <div className="container mx-auto px-4"><BlogQuarto /><BackButton /></div>;
   if (postId === 'convencional-inverter') return <div className="container mx-auto px-4"><BlogConvencionalInverter /><BackButton /></div>;
   if (postId === 'empresas') return <div className="container mx-auto px-4"><BlogEmpresas /><BackButton /></div>;
+  if (postId === 'pmoc-obrigatorio') return <div className="container mx-auto px-4"><BlogPMOCObrigatorio /><BackButton /></div>;
+  if (postId === 'multa-pmoc') return <div className="container mx-auto px-4"><BlogMultaPMOC /><BackButton /></div>;
+  if (postId === 'pmoc-condominio') return <div className="container mx-auto px-4"><BlogPMOCCondominio /><BackButton /></div>;
+  if (postId === 'custo-pmoc') return <div className="container mx-auto px-4"><BlogCustoPMOC /><BackButton /></div>;
+  if (postId === 'custo-instalacao') return <div className="container mx-auto px-4"><BlogCustoInstalacao /><BackButton /></div>;
+  if (postId === 'qual-ac') return <div className="container mx-auto px-4"><BlogQualAC /><BackButton /></div>;
+  if (postId === 'split-multi-split') return <div className="container mx-auto px-4"><BlogSplitMultiSplitApartamento /><BackButton /></div>;
+  if (postId === 'manutencao-consequencias') return <div className="container mx-auto px-4"><BlogManutencaoConsequencias /><BackButton /></div>;
 
   return (
     <div className="py-16 container mx-auto px-4">
@@ -1203,60 +1235,123 @@ function BlogView({ navigate, postId }: { navigate: (p: PageId) => void, postId?
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <BlogCard 
-          title="Ar Condicionado Inverter: Vale a Pena?"
-          desc="Entenda a tecnologia que reduz em até 60% sua conta de luz."
+          title="PMOC Obrigatório: O Que É e Quem Precisa Ter em SP"
+          desc="Lei 13.589/2018 exige PMOC para empresas com mais de 60.000 BTUs. Multas chegam a R$ 1,5 milhão."
+          image="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-pmoc-obrigatorio')}
+        />
+        <BlogCard 
+          title="Multa por Não Ter PMOC: R$ 2.000 a R$ 1,5 Milhão"
+          desc="Como funciona a fiscalização da Vigilância Sanitária em SP e como regularizar antes de ser autuado."
+          image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-multa-pmoc')}
+        />
+        <BlogCard 
+          title="PMOC para Condomínios em SP: Guia para Síndicos"
+          desc="Responsabilidades do síndico, quais condomínios são obrigados e passo a passo para regularizar."
+          image="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-pmoc-condominio')}
+        />
+        <BlogCard 
+          title="Quanto Custa o PMOC em São Paulo em 2026?"
+          desc="Tabela de preços por porte de empresa, o que está incluso e cálculo de ROI do contrato."
+          image="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-custo-pmoc')}
+        />
+        <BlogCard 
+          title="Quanto Custa Instalar Ar Condicionado em SP em 2026?"
+          desc="Tabela completa de preços por tipo de sistema, o que está incluso e o que encarece a instalação."
+          image="https://images.unsplash.com/photo-1621905252507-b353174ad739?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-custo-instalacao')}
+        />
+        <BlogCard 
+          title="Qual Ar Condicionado Comprar em 2026?"
+          desc="Guia completo: Inverter vs Convencional, melhores marcas para SP e como calcular BTUs."
+          image="https://images.unsplash.com/photo-1563228911-37d40078021a?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-qual-ac')}
+        />
+        <BlogCard 
+          title="Split ou Multi Split para Apartamento em SP?"
+          desc="Quando escolher cada sistema, diferenças de custo e qual é mais econômico no longo prazo."
+          image="https://images.unsplash.com/photo-1513584684374-8bdb7489feef?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-split-multi-split')}
+        />
+        <BlogCard 
+          title="O Que Acontece Sem Manutenção no Ar Condicionado?"
+          desc="Do aumento na conta de luz à morte prematura do compressor — o que esperar mês a mês."
+          image="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-manutencao-consequencias')}
+        />
+        <BlogCard 
+          title="Ar Condicionado Inverter"
+          desc="Entenda por que a tecnologia inverter é a melhor escolha para economia."
+          image="https://images.unsplash.com/photo-1596752763335-513470717c18?auto=format&fit=crop&q=80&w=800"
           onClick={() => navigate('blog-inverter')}
         />
         <BlogCard 
-          title="LG Round Cassette: 360 Graus"
-          desc="O design circular que elimina pontos mortos no ambiente."
-          onClick={() => navigate('blog-round-cassette')}
-        />
-        <BlogCard 
-          title="Obra Limpa: Sem Quebra-Quebra"
-          desc="Como instalamos seu ar condicionado sem fazer sujeira na casa."
-          onClick={() => navigate('blog-obra-limpa')}
-        />
-        <BlogCard 
-          title="Instalação em Apartamento em SP"
-          desc="O que saber sobre normas de fachada e drenagem em condomínios."
+          title="Instalação em Apartamento"
+          desc="O que você precisa saber antes de instalar ar condicionado em condomínios."
+          image="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=800"
           onClick={() => navigate('blog-apartamento')}
         />
         <BlogCard 
-          title="Ar Condicionado no Quarto"
-          desc="Onde instalar para ter noites perfeitas e sem doenças."
+          title="Cálculo de BTUs"
+          desc="Aprenda a calcular a potência ideal para cada tipo de ambiente."
+          image="https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-btus')}
+        />
+        <BlogCard 
+          title="PMOC: Tudo que você precisa saber"
+          desc="Guia básico sobre o Plano de Manutenção, Operação e Controle."
+          image="https://images.unsplash.com/photo-1504917595217-d4dc5f6b276d?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-pmoc')}
+        />
+        <BlogCard 
+          title="LG Round Cassette"
+          desc="Conheça o design e a eficiência do cassete circular 360° da LG."
+          image="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-round-cassette')}
+        />
+        <BlogCard 
+          title="Instalação Obra Limpa"
+          desc="Saiba como é possível instalar seu ar sem sujeira e quebra-quebra."
+          image="https://images.unsplash.com/photo-1527359443443-84a48abc7dfd?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-obra-limpa')}
+        />
+        <BlogCard 
+          title="Ar no Quarto"
+          desc="Dicas para posicionar o aparelho e ter noites de sono perfeitas."
+          image="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&q=80&w=800"
           onClick={() => navigate('blog-quarto')}
         />
         <BlogCard 
           title="Convencional vs Inverter"
           desc="Qual a melhor escolha para sua realidade e seu bolso?"
+          image="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800"
           onClick={() => navigate('blog-convencional-inverter')}
         />
         <BlogCard 
-          title="Ar para Empresas e ROI"
-          desc="Como a climatização certa aumenta a produtividade da equipe."
+          title="Sistemas VRF"
+          desc="A solução definitiva para grandes residências e empresas."
+          image="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=800"
           onClick={() => navigate('blog-empresas')}
-        />
-        <BlogCard 
-          title="Como Calcular os BTUs"
-          desc="Guia prático para não errar na potência do seu equipamento."
-          onClick={() => navigate('blog-btus')}
-        />
-        <BlogCard 
-          title="PMOC Obrigatório em SP"
-          desc="Sua empresa está em dia com a legislação? Veja os riscos."
-          onClick={() => navigate('blog-pmoc')}
         />
       </div>
     </div>
   );
 }
 
-function BlogCard({ title, desc, onClick }: { title: string, desc: string, onClick: () => void }) {
+function BlogCard({ title, desc, image, onClick }: { title: string, desc: string, image?: string, onClick: () => void }) {
   return (
     <div onClick={onClick} className="bg-white border border-slate-200 rounded-3xl p-8 hover:shadow-xl transition-all cursor-pointer group">
       <div className="w-full h-48 bg-slate-100 rounded-2xl mb-6 overflow-hidden">
-        <img src={`https://picsum.photos/seed/${title}/600/400`} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform" referrerPolicy="no-referrer" loading="lazy" />
+        <img 
+          src={image || `https://picsum.photos/seed/${title}/600/400`} 
+          alt={title} 
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform" 
+          referrerPolicy="no-referrer" 
+          loading="lazy" 
+        />
       </div>
       <h3 className="text-xl font-bold text-primary mb-3">{title}</h3>
       <p className="text-slate-500 text-sm mb-6">{desc}</p>

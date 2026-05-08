@@ -226,7 +226,7 @@ export const SantoAndreRegion = ({ navigate }: { navigate: (p: any) => void }) =
     navigate={navigate}
   >
     <p>
-      A <strong>New Clima Ar Condicionado</strong> atende toda a cidade de <strong>Santo André</strong> with serviços de instalação, manutenção e limpeza de ar condicionado. Com base estratégica no ABC Paulista, nossa equipe chega rápido e entrega o serviço com o padrão técnico que nos tornou referência na região.
+      A <strong>New Clima Ar Condicionado</strong> atende toda a cidade de <strong>Santo André</strong> com serviços de instalação, manutenção e limpeza de ar condicionado. Com base estratégica no ABC Paulista, nossa equipe chega rápido e entrega o serviço com o padrão técnico que nos tornou referência na região.
     </p>
     <h2 className="text-2xl font-bold text-primary">Instalação de Ar Condicionado em Santo André</h2>
     <p>
@@ -294,7 +294,7 @@ export const SaoCaetanoRegion = ({ navigate }: { navigate: (p: any) => void }) =
     navigate={navigate}
   >
     <p>
-      A <strong>New Clima Ar Condicionado</strong> atende toda a cidade de <strong>São Caetano do Sul</strong> with instalação e manutenção de ar condicionado. Reconhecida pelo alto padrão de vida, São Caetano exige um serviço diferenciado — e é exatamente isso que entregamos: técnicos certificados, obra limpa e garantia por escrito em todos os serviços.
+      A <strong>New Clima Ar Condicionado</strong> atende toda a cidade de <strong>São Caetano do Sul</strong> com instalação e manutenção de ar condicionado. Reconhecida pelo alto padrão de vida, São Caetano exige um serviço diferenciado — e é exatamente isso que entregamos: técnicos certificados, obra limpa e garantia por escrito em todos os serviços.
     </p>
     <h2 className="text-2xl font-bold text-primary">Instalação de Ar Condicionado em São Caetano do Sul</h2>
     <p>
@@ -331,11 +331,11 @@ export const DiademaMauaRegion = ({ regionName, navigate }: { regionName: string
     navigate={navigate}
   >
     <p>
-      A <strong>New Clima Ar Condicionado</strong> atende residências e empresas em <strong>{regionName}</strong> with instalação, manutenção e limpeza de ar condicionado. Com base operacional no ABC Paulista, nossa equipe chega rápido e entrega o serviço com garantia técnica de 1 ano.
+      A <strong>New Clima Ar Condicionado</strong> atende residências e empresas em <strong>{regionName}</strong> com instalação, manutenção e limpeza de ar condicionado. Com base operacional no ABC Paulista, nossa equipe chega rápido e entrega o serviço com garantia técnica de 1 ano.
     </p>
     <h2 className="text-2xl font-bold text-primary">Instalação de Ar Condicionado em {regionName}</h2>
     <p>
-      Instalamos sistemas Split, Multi Split e Cassete em {regionName} with infraestrutura completa, acabamento impecável e obra limpa. Atendemos apartamentos, casas, escritórios e comércios — sempre com cálculo preciso de BTUs para garantir eficiência energética e conforto real.
+      Instalamos sistemas Split, Multi Split e Cassete em {regionName} com infraestrutura completa, acabamento impecável e obra limpa. Atendemos apartamentos, casas, escritórios e comércios — sempre com cálculo preciso de BTUs para garantir eficiência energética e conforto real.
     </p>
     <h2 className="text-2xl font-bold text-primary">Manutenção Preventiva e Corretiva em {regionName}</h2>
     <p>
