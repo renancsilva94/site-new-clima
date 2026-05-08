@@ -30,6 +30,7 @@ import {
 import { motion, AnimatePresence } from 'motion/react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
+import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import { 
   SplitMultiSplit, 
   SistemasComerciais, 
@@ -104,14 +105,42 @@ const SectionHeading = ({ tag, title, subtitle, centered = false }: { tag?: stri
 );
 
 export default function App() {
-  const [currentPage, setCurrentPage] = React.useState<PageId>('home');
+  const routerNavigate = useNavigate();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   const navigate = (page: PageId) => {
-    setCurrentPage(page);
+    const routes: Record<PageId, string> = {
+      'home': '/',
+      'split-multisplit': '/instalacao-ar-condicionado-split-sao-paulo',
+      'sistemas-comerciais': '/ar-condicionado-comercial-sao-paulo',
+      'vrf-mini-vrf': '/instalacao-vrf-mini-vrf-sao-paulo',
+      'manutencao-preventiva': '/manutencao-preventiva-ar-condicionado-sp',
+      'manutencao-corretiva': '/manutencao-corretiva-ar-condicionado-sp',
+      'limpeza': '/limpeza-higienizacao-ar-condicionado-sp',
+      'blog': '/blog',
+      'sobre': '/sobre',
+      'contato': '/contato',
+      'sao-paulo': '/ar-condicionado-sao-paulo',
+      'santo-andre': '/ar-condicionado-santo-andre',
+      'sao-bernardo': '/ar-condicionado-sao-bernardo-do-campo',
+      'sao-caetano': '/ar-condicionado-sao-caetano-do-sul',
+      'diadema': '/ar-condicionado-diadema',
+      'maua': '/ar-condicionado-maua',
+      'blog-inverter': '/blog/ar-condicionado-inverter',
+      'blog-apartamento': '/blog/instalacao-ar-condicionado-apartamento-sp',
+      'blog-btus': '/blog/como-calcular-btus-ar-condicionado',
+      'blog-pmoc': '/blog/pmoc-obrigatorio-sao-paulo',
+      'blog-round-cassette': '/blog/lg-round-cassette',
+      'blog-obra-limpa': '/blog/instalacao-ar-condicionado-obra-limpa',
+      'blog-quarto': '/blog/ar-condicionado-quarto',
+      'blog-convencional-inverter': '/blog/split-convencional-vs-inverter',
+      'blog-empresas': '/blog/ar-condicionado-empresas-vrf'
+    }
+    const path = routes[page] || '/'
+    routerNavigate(path)
     setIsMobileMenuOpen(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   return (
     <HelmetProvider>
@@ -143,7 +172,7 @@ export default function App() {
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
                 "name": "New Clima Ar Condicionado",
-                "image": "https://www.newclimaar.com.br/opengraph.jpg",
+                "image": "https://www.newclimaar.com.br/images/logo-new-clima.png",
                 "@id": "https://www.newclimaar.com.br",
                 "url": "https://newclimaar.com.br/",
                 "telephone": "+5511963462516",
@@ -206,7 +235,7 @@ export default function App() {
               onClick={() => navigate('home')}
             >
               <img 
-                src="https://cdn.coteibem.com.br/company/41315/logo/f4d0405d-28b6-4834-a8ca-9e63b68073fa.png" 
+                src="/images/logo-new-clima.png" 
                 alt="New Clima Ar" 
                 className="h-20 md:h-24 w-auto object-contain transition-transform group-hover:scale-105"
                 referrerPolicy="no-referrer"
@@ -220,12 +249,12 @@ export default function App() {
                   Serviços <ChevronDown size={14} />
                 </button>
                 <div className="absolute top-full left-0 w-64 bg-white shadow-xl rounded-xl border border-slate-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all translate-y-2 group-hover:translate-y-0">
-                  <button onClick={() => navigate('split-multisplit')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors">Split e Multi Split</button>
-                  <button onClick={() => navigate('sistemas-comerciais')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors">Sistemas Comerciais</button>
-                  <button onClick={() => navigate('vrf-mini-vrf')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors">VRF e Mini VRF</button>
-                  <button onClick={() => navigate('manutencao-preventiva')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors">Manutenção Preventiva (PMOC)</button>
-                  <button onClick={() => navigate('manutencao-corretiva')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors">Manutenção Corretiva</button>
-                  <button onClick={() => navigate('limpeza')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors">Limpeza e Higienização</button>
+                  <button onClick={() => navigate('split-multisplit')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors">Instalação de Ar Condicionado Split</button>
+                  <button onClick={() => navigate('sistemas-comerciais')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors">Sistemas Cassete e Piso-Teto</button>
+                  <button onClick={() => navigate('vrf-mini-vrf')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors">Sistemas VRF e Mini VRF</button>
+                  <button onClick={() => navigate('manutencao-preventiva')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors">Manutenção Preventiva e PMOC</button>
+                  <button onClick={() => navigate('manutencao-corretiva')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors">Conserto de Ar Condicionado</button>
+                  <button onClick={() => navigate('limpeza')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors">Limpeza de Ar Condicionado SP</button>
                 </div>
               </div>
               <div className="relative group">
@@ -268,13 +297,13 @@ export default function App() {
                   <button onClick={() => navigate('home')} className="text-left font-semibold py-2 text-primary-light">Início</button>
                   <hr className="border-slate-100" />
                   <div className="font-bold text-xs text-slate-400 uppercase tracking-widest mb-1">Serviços</div>
-                  <div className="grid grid-cols-2 gap-2">
-                    <button onClick={() => navigate('split-multisplit')} className="text-left text-sm py-2 text-slate-600">Split/Multi Split</button>
-                    <button onClick={() => navigate('sistemas-comerciais')} className="text-left text-sm py-2 text-slate-600">Comerciais</button>
-                    <button onClick={() => navigate('vrf-mini-vrf')} className="text-left text-sm py-2 text-slate-600">VRF/Mini VRF</button>
-                    <button onClick={() => navigate('manutencao-preventiva')} className="text-left text-sm py-2 text-slate-600">Preventiva</button>
-                    <button onClick={() => navigate('manutencao-corretiva')} className="text-left text-sm py-2 text-slate-600">Corretiva</button>
-                    <button onClick={() => navigate('limpeza')} className="text-left text-sm py-2 text-slate-600">Limpeza</button>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <button onClick={() => navigate('split-multisplit')} className="text-left text-sm py-2 text-slate-600 border-b border-slate-50">Instalação de Ar Condicionado Split</button>
+                    <button onClick={() => navigate('sistemas-comerciais')} className="text-left text-sm py-2 text-slate-600 border-b border-slate-50">Sistemas Cassete e Piso-Teto</button>
+                    <button onClick={() => navigate('vrf-mini-vrf')} className="text-left text-sm py-2 text-slate-600 border-b border-slate-50">Sistemas VRF e Mini VRF</button>
+                    <button onClick={() => navigate('manutencao-preventiva')} className="text-left text-sm py-2 text-slate-600 border-b border-slate-50">Manutenção Preventiva e PMOC</button>
+                    <button onClick={() => navigate('manutencao-corretiva')} className="text-left text-sm py-2 text-slate-600 border-b border-slate-50">Conserto de Ar Condicionado</button>
+                    <button onClick={() => navigate('limpeza')} className="text-left text-sm py-2 text-slate-600">Limpeza de Ar Condicionado SP</button>
                   </div>
                   <hr className="border-slate-100" />
                   <button onClick={() => navigate('blog')} className="text-left font-semibold py-2">Blog</button>
@@ -289,28 +318,34 @@ export default function App() {
 
         {/* Main Content */}
         <main>
-          {currentPage === 'home' && <HomeView navigate={navigate} />}
-          {currentPage === 'split-multisplit' && <ServiceDetailView service="split" navigate={navigate} />}
-          {currentPage === 'sistemas-comerciais' && <ServiceDetailView service="comercial" navigate={navigate} />}
-          {currentPage === 'vrf-mini-vrf' && <ServiceDetailView service="vrf" navigate={navigate} />}
-          {currentPage === 'manutencao-preventiva' && <ServiceDetailView service="preventiva" navigate={navigate} />}
-          {currentPage === 'manutencao-corretiva' && <ServiceDetailView service="corretiva" navigate={navigate} />}
-          {currentPage === 'limpeza' && <ServiceDetailView service="limpeza" navigate={navigate} />}
-          {currentPage === 'blog' && <BlogView navigate={navigate} />}
-          {currentPage === 'blog-inverter' && <BlogView navigate={navigate} postId="inverter" />}
-          {currentPage === 'blog-apartamento' && <BlogView navigate={navigate} postId="apartamento" />}
-          {currentPage === 'blog-btus' && <BlogView navigate={navigate} postId="btus" />}
-          {currentPage === 'blog-pmoc' && <BlogView navigate={navigate} postId="pmoc" />}
-          {currentPage === 'blog-round-cassette' && <BlogView navigate={navigate} postId="round-cassette" />}
-          {currentPage === 'blog-obra-limpa' && <BlogView navigate={navigate} postId="obra-limpa" />}
-          {currentPage === 'blog-quarto' && <BlogView navigate={navigate} postId="quarto" />}
-          {currentPage === 'blog-convencional-inverter' && <BlogView navigate={navigate} postId="convencional-inverter" />}
-          {currentPage === 'blog-empresas' && <BlogView navigate={navigate} postId="empresas" />}
-          {currentPage === 'sobre' && <AboutView navigate={navigate} />}
-          {currentPage === 'contato' && <ContactView />}
-          {['sao-paulo', 'santo-andre', 'sao-bernardo', 'sao-caetano', 'diadema', 'maua'].includes(currentPage) && (
-            <RegionView region={currentPage as any} navigate={navigate} />
-          )}
+          <Routes>
+            <Route path="/" element={<HomeView navigate={navigate} />} />
+            <Route path="/instalacao-ar-condicionado-split-sao-paulo" element={<ServiceDetailView service="split" navigate={navigate} />} />
+            <Route path="/ar-condicionado-comercial-sao-paulo" element={<ServiceDetailView service="comercial" navigate={navigate} />} />
+            <Route path="/instalacao-vrf-mini-vrf-sao-paulo" element={<ServiceDetailView service="vrf" navigate={navigate} />} />
+            <Route path="/manutencao-preventiva-ar-condicionado-sp" element={<ServiceDetailView service="preventiva" navigate={navigate} />} />
+            <Route path="/manutencao-corretiva-ar-condicionado-sp" element={<ServiceDetailView service="corretiva" navigate={navigate} />} />
+            <Route path="/limpeza-higienizacao-ar-condicionado-sp" element={<ServiceDetailView service="limpeza" navigate={navigate} />} />
+            <Route path="/blog" element={<BlogView navigate={navigate} />} />
+            <Route path="/blog/ar-condicionado-inverter" element={<BlogView navigate={navigate} postId="inverter" />} />
+            <Route path="/blog/instalacao-ar-condicionado-apartamento-sp" element={<BlogView navigate={navigate} postId="apartamento" />} />
+            <Route path="/blog/como-calcular-btus-ar-condicionado" element={<BlogView navigate={navigate} postId="btus" />} />
+            <Route path="/blog/pmoc-obrigatorio-sao-paulo" element={<BlogView navigate={navigate} postId="pmoc" />} />
+            <Route path="/blog/lg-round-cassette" element={<BlogView navigate={navigate} postId="round-cassette" />} />
+            <Route path="/blog/instalacao-ar-condicionado-obra-limpa" element={<BlogView navigate={navigate} postId="obra-limpa" />} />
+            <Route path="/blog/ar-condicionado-quarto" element={<BlogView navigate={navigate} postId="quarto" />} />
+            <Route path="/blog/split-convencional-vs-inverter" element={<BlogView navigate={navigate} postId="convencional-inverter" />} />
+            <Route path="/blog/ar-condicionado-empresas-vrf" element={<BlogView navigate={navigate} postId="empresas" />} />
+            <Route path="/sobre" element={<AboutView navigate={navigate} />} />
+            <Route path="/contato" element={<ContactView />} />
+            <Route path="/ar-condicionado-sao-paulo" element={<RegionView region="sao-paulo" navigate={navigate} />} />
+            <Route path="/ar-condicionado-santo-andre" element={<RegionView region="santo-andre" navigate={navigate} />} />
+            <Route path="/ar-condicionado-sao-bernardo-do-campo" element={<RegionView region="sao-bernardo" navigate={navigate} />} />
+            <Route path="/ar-condicionado-sao-caetano-do-sul" element={<RegionView region="sao-caetano" navigate={navigate} />} />
+            <Route path="/ar-condicionado-diadema" element={<RegionView region="diadema" navigate={navigate} />} />
+            <Route path="/ar-condicionado-maua" element={<RegionView region="maua" navigate={navigate} />} />
+            <Route path="*" element={<HomeView navigate={navigate} />} />
+          </Routes>
         </main>
 
         {/* Footer */}
@@ -331,11 +366,12 @@ export default function App() {
               <div>
                 <h4 className="font-display font-bold text-lg mb-6">Serviços Especializados</h4>
                 <ul className="space-y-3 text-sm text-blue-100/60">
-                  <li><button onClick={() => navigate('split-multisplit')} className="hover:text-white transition-colors">Instalação Split e Multi Split</button></li>
+                  <li><button onClick={() => navigate('split-multisplit')} className="hover:text-white transition-colors">Instalação de Ar Condicionado Split</button></li>
                   <li><button onClick={() => navigate('sistemas-comerciais')} className="hover:text-white transition-colors">Sistemas Cassete e Piso-Teto</button></li>
-                  <li><button onClick={() => navigate('vrf-mini-vrf')} className="hover:text-white transition-colors">Projetos VRF e Mini VRF</button></li>
-                  <li><button onClick={() => navigate('manutencao-preventiva')} className="hover:text-white transition-colors">Manutenção Preventiva (PMOC)</button></li>
-                  <li><button onClick={() => navigate('limpeza')} className="hover:text-white transition-colors">Limpeza e Higienização Química</button></li>
+                  <li><button onClick={() => navigate('vrf-mini-vrf')} className="hover:text-white transition-colors">Sistemas VRF e Mini VRF</button></li>
+                  <li><button onClick={() => navigate('manutencao-preventiva')} className="hover:text-white transition-colors">Manutenção Preventiva e PMOC</button></li>
+                  <li><button onClick={() => navigate('manutencao-corretiva')} className="hover:text-white transition-colors">Conserto de Ar Condicionado</button></li>
+                  <li><button onClick={() => navigate('limpeza')} className="hover:text-white transition-colors">Limpeza de Ar Condicionado SP</button></li>
                 </ul>
               </div>
 
@@ -575,14 +611,14 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               icon={<Wind />}
               category="COMERCIAL"
               title="Sistemas Cassete e Piso-Teto"
-              desc="Soluções de climatização para lojas e escritórios em São Paulo. Alta vazão de ar com eficiência energética."
+              desc="Soluções de climatização para lojas e escritórios em São Paulo. Sistemas Cassete, Piso-Teto e Dutados com eficiência."
               onClick={() => navigate('sistemas-comerciais')}
             />
             <ServiceCard 
               icon={<Wind />}
-              category="CORPORATIVO"
-              title="Sistemas VRF e Multi Split"
-              desc="Soluções completas para grandes ambientes e edifícios corporativos. Controle total e economia real."
+              category="ALTA TECNOLOGIA"
+              title="Sistemas VRF e Mini VRF"
+              desc="Soluções avançadas para grandes residências e edifícios corporativos. Máxima eficiência energética e controle total."
               onClick={() => navigate('vrf-mini-vrf')}
             />
             <ServiceCard 
@@ -596,7 +632,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               icon={<AlertTriangle />}
               category="CORRETIVA"
               title="Conserto de Ar Condicionado"
-              desc="Manutenção corretiva rápida em São Paulo. Diagnóstico preciso, peças originais e solução definitiva."
+              desc="Conserto de ar condicionado rápido em São Paulo. Diagnóstico preciso, peças originais e solução definitiva."
               onClick={() => navigate('manutencao-corretiva')}
             />
             <ServiceCard 
