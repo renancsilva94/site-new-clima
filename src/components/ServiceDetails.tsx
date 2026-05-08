@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { 
   CheckCircle2, 
   ArrowRight, 
@@ -773,6 +774,10 @@ const ServiceLayout = ({ title, tag, icon, children }: { title: string, tag: str
 export const SplitMultiSplit = () => {
   return (
     <div className="space-y-16 pb-20">
+      <Helmet>
+        <title>Instalação de Ar Condicionado Split e Multi Split em São Paulo | New Clima</title>
+        <meta name="description" content="Instalação de ar condicionado split e multi split em São Paulo e ABC Paulista. Técnicos certificados, infraestrutura embutida e garantia de 1 ano. Solicite orçamento gratuito." />
+      </Helmet>
       <ServiceLayout 
         tag="Residencial & Comercial"
         title="Instalação de Ar Condicionado Split e Multi Split em SP"
@@ -809,6 +814,10 @@ export const SplitMultiSplit = () => {
 export const SistemasComerciais = () => {
   return (
     <div className="space-y-16 pb-20">
+      <Helmet>
+        <title>Ar Condicionado Cassete, Piso-Teto e Dutado para Empresas em SP | New Clima</title>
+        <meta name="description" content="Sistemas de ar condicionado comercial em São Paulo e ABC. Cassete, Piso-Teto e Dutado para lojas, escritórios e restaurantes. Projeto técnico completo." />
+      </Helmet>
       <ServiceLayout 
         tag="Corporativo & Comercial"
         title="Ar Condicionado Cassete, Piso-Teto e Dutados para Empresas"
@@ -845,6 +854,10 @@ export const SistemasComerciais = () => {
 export const VRFMiniVRF = () => {
   return (
     <div className="space-y-16 pb-20">
+      <Helmet>
+        <title>Instalação de Sistema VRF e Mini VRF em São Paulo | New Clima</title>
+        <meta name="description" content="Especialistas em sistemas VRF e Mini VRF em São Paulo e ABC. Projetos para residências de alto padrão e edifícios corporativos com máxima eficiência energética." />
+      </Helmet>
       <ServiceLayout 
         tag="Alta Tecnologia"
         title="Sistemas VRF e Mini VRF: O Ápice da Climatização"
@@ -881,6 +894,10 @@ export const VRFMiniVRF = () => {
 export const ManutencaoPreventiva = () => {
   return (
     <div className="space-y-16 pb-20">
+      <Helmet>
+        <title>Manutenção Preventiva de Ar Condicionado e PMOC em SP | New Clima</title>
+        <meta name="description" content="Manutenção preventiva de ar condicionado e gestão de PMOC em São Paulo e ABC Paulista. Conformidade com a Lei 13.589/2018. Contratos para empresas e condomínios." />
+      </Helmet>
       <ServiceLayout 
         tag="Saúde & Economia"
         title="Manutenção Preventiva de Ar Condicionado e PMOC em SP"
@@ -915,6 +932,10 @@ export const ManutencaoPreventiva = () => {
 export const ManutencaoCorretiva = () => {
   return (
     <div className="space-y-16 pb-20">
+      <Helmet>
+        <title>Conserto de Ar Condicionado em São Paulo e ABC | New Clima</title>
+        <meta name="description" content="Manutenção corretiva e conserto de ar condicionado em São Paulo e ABC. Diagnóstico rápido, peças originais e garantia de 90 dias. Atendimento emergencial." />
+      </Helmet>
       <ServiceLayout 
         tag="Assistência Técnica"
         title="Conserto e Manutenção Corretiva de Ar Condicionado em SP"
@@ -951,6 +972,10 @@ export const ManutencaoCorretiva = () => {
 export const LimpezaHigienizacao = () => {
   return (
     <div className="space-y-16 pb-20">
+      <Helmet>
+        <title>Limpeza e Higienização de Ar Condicionado em São Paulo | New Clima</title>
+        <meta name="description" content="Limpeza profunda e higienização de ar condicionado em São Paulo e ABC. Bactericida profissional, eliminação de fungos e ácaros. Agendamento pelo WhatsApp." />
+      </Helmet>
       <ServiceLayout 
         tag="Qualidade do Ar"
         title="Limpeza e Higienização de Ar Condicionado em São Paulo"
