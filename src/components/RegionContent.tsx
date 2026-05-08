@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { MapPin, CheckCircle2, MessageCircle, ArrowRight, Clock, ShieldCheck } from 'lucide-react';
 import { SistemasInstalamosSection, ProcessoSection, ProcessoManutencaoSection, ProcessoHigienizacaoSection, ServiceCTA } from './ServiceDetails';
 
@@ -22,7 +23,7 @@ const RelatedPagesSection = ({ currentRegion, navigate }: { currentRegion: strin
   const related = [
     ...allRegions.filter(r => r.name !== currentRegion),
     ...services
-  ].sort(() => 0.5 - Math.random()).slice(0, 5);
+  ].slice(0, 5);
 
   return (
     <section className="py-16 bg-slate-50/50">
@@ -79,6 +80,10 @@ const RegionLayout = ({
   showCleaning?: boolean
 }) => (
   <div className="pt-12">
+    <Helmet>
+      <title>{title} | New Clima Ar Condicionado</title>
+      <meta name="description" content={description} />
+    </Helmet>
     <div className="container mx-auto px-4">
       <div className="flex flex-col lg:flex-row gap-12 items-start mb-16">
         <div className="flex-1 space-y-8">
@@ -121,19 +126,19 @@ const RegionLayout = ({
             </p>
             <div className="space-y-4">
               <a 
-                href="https://wa.me/5511963462516" 
-                target="_blank" 
+                href="https://kit.cursodescomplicandosites.com.br/" 
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-success text-white font-bold py-4 rounded-xl transition-all hover:-translate-y-0.5"
               >
                 <MessageCircle size={20} />
-                WhatsApp {region}
+                Falar com Especialista
               </a>
               <a 
-                href="tel:+5511963462516" 
+                href="https://kit.cursodescomplicandosites.com.br/" 
+                rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-white/10 text-white font-bold py-4 rounded-xl transition-all hover:bg-white/20"
               >
-                Ligar Agora
+                Ver Oferta
               </a>
             </div>
           </div>

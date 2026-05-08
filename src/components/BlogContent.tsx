@@ -1,8 +1,25 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { ArrowRight, MessageCircle, Clock, User, Tag } from 'lucide-react';
 
 const BlogPostLayout = ({ title, date, author, tag, children }: { title: string, date: string, author: string, tag: string, children: React.ReactNode }) => (
   <div className="py-12 max-w-4xl mx-auto">
+    <Helmet>
+      <title>{title} | Blog New Clima Ar Condicionado</title>
+      <meta name="description" content={`${title}. Guia técnico da New Clima Ar Condicionado — especialistas em ar condicionado em São Paulo e ABC Paulista.`} />
+      <script type="application/ld+json">{JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": title,
+        "author": { "@type": "Person", "name": author },
+        "datePublished": date,
+        "publisher": {
+          "@type": "Organization",
+          "name": "New Clima Ar Condicionado",
+          "url": "https://www.newclimaar.com.br"
+        }
+      })}</script>
+    </Helmet>
     <div className="space-y-6 mb-12">
       <span className="inline-block bg-ice text-primary-light text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full">
         {tag}
@@ -25,13 +42,12 @@ const BlogPostLayout = ({ title, date, author, tag, children }: { title: string,
         <p className="text-slate-500 text-sm">Se precisar de ajuda técnica, fale com nossos especialistas.</p>
       </div>
       <a 
-        href="https://wa.me/5511963462516" 
-        target="_blank" 
+        href="https://kit.cursodescomplicandosites.com.br/" 
         rel="noopener noreferrer"
         className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-4 px-8 rounded-xl transition-all hover:-translate-y-0.5 shadow-lg shadow-success/20"
       >
         <MessageCircle size={20} />
-        Falar no WhatsApp
+        Garantir Minha Vaga
       </a>
     </div>
   </div>

@@ -36,10 +36,9 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-const WhatsAppButton = ({ text = "Solicitar Orçamento via WhatsApp" }: { text?: string }) => (
+const WhatsAppButton = ({ text = "Solicitar Orçamento" }: { text?: string }) => (
   <a 
-    href="https://wa.me/5511963462516?text=Olá! Gostaria de um orçamento para meu ar condicionado." 
-    target="_blank" 
+    href="https://kit.cursodescomplicandosites.com.br/" 
     rel="noopener noreferrer"
     className="inline-flex items-center justify-center gap-2 bg-success hover:bg-success/90 text-white font-bold py-4 px-8 rounded-xl transition-all hover:-translate-y-0.5 shadow-lg shadow-success/20 w-full md:w-auto"
   >
@@ -689,20 +688,21 @@ export const ServiceCTA = ({
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
         <a 
-          href="https://wa.me/5511963462516?text=Olá! Gostaria de um orçamento." 
-          target="_blank"
+          href="https://kit.cursodescomplicandosites.com.br/" 
+          rel="noopener noreferrer"
           className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-full font-bold flex items-center gap-3 transition-all shadow-xl shadow-blue-600/20 group w-full sm:w-auto justify-center"
         >
           <MessageCircle size={22} />
-          Falar no WhatsApp
+          Garantir Vaga
           <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
         </a>
         <a 
-          href="tel:+5511963462516"
+          href="https://kit.cursodescomplicandosites.com.br/"
+          rel="noopener noreferrer"
           className="border border-white/10 hover:bg-white/5 text-white px-10 py-5 rounded-full font-bold flex items-center gap-3 transition-all w-full sm:w-auto justify-center"
         >
-          <Phone size={22} />
-          (11) 96346-2516
+          <Building2 size={22} />
+          Ver Detalhes
         </a>
       </div>
     </div>

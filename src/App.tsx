@@ -493,7 +493,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
       
       {/* Brands Section */}
       <section className="bg-white py-10 border-b border-slate-100 relative z-20 overflow-hidden">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
+        <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="flex-shrink-0 border-b md:border-b-0 md:border-r border-slate-200 pb-4 md:pb-0 md:pr-8 w-full md:w-auto">
             <span className="text-slate-400 text-[10px] font-bold uppercase tracking-[0.2em] leading-tight text-left block">
               Trabalhamos com as<br />
@@ -501,7 +501,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
             </span>
           </div>
           
-          <div className="flex-grow relative overflow-hidden py-2">
+          <div className="flex-grow relative overflow-hidden py-2" role="region" aria-label="Marcas parceiras">
             <motion.div 
               className="flex items-center gap-12 md:gap-20 lg:gap-24 whitespace-nowrap"
               animate={{ x: ["0%", "-50%"] }}
@@ -1155,7 +1155,7 @@ function BlogCard({ title, desc, onClick }: { title: string, desc: string, onCli
   return (
     <div onClick={onClick} className="bg-white border border-slate-200 rounded-3xl p-8 hover:shadow-xl transition-all cursor-pointer group">
       <div className="w-full h-48 bg-slate-100 rounded-2xl mb-6 overflow-hidden">
-        <img src={`https://picsum.photos/seed/${title}/600/400`} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform" referrerPolicy="no-referrer" />
+        <img src={`https://picsum.photos/seed/${title}/600/400`} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform" referrerPolicy="no-referrer" loading="lazy" />
       </div>
       <h3 className="text-xl font-bold text-primary mb-3">{title}</h3>
       <p className="text-slate-500 text-sm mb-6">{desc}</p>
@@ -1196,7 +1196,7 @@ function AboutView({ navigate }: { navigate: (p: PageId) => void }) {
           </div>
         </div>
         <div className="relative">
-          <img src="https://lh3.googleusercontent.com/iQKQFvKF5SWFsxmrm5b60daSTbTDLx4TiQGsh2R-UnoejbPz0gCFAuwhvwAd1QUAKN0Bqwy-m28h8Z2ITQ=s360-w360-h360" alt="Sobre a New Clima Ar" className="rounded-3xl shadow-2xl w-full h-auto object-cover" referrerPolicy="no-referrer" />
+          <img src="https://lh3.googleusercontent.com/iQKQFvKF5SWFsxmrm5b60daSTbTDLx4TiQGsh2R-UnoejbPz0gCFAuwhvwAd1QUAKN0Bqwy-m28h8Z2ITQ=s360-w360-h360" alt="Sobre a New Clima Ar" className="rounded-3xl shadow-2xl w-full h-auto object-cover" referrerPolicy="no-referrer" loading="lazy" />
           <div className="absolute -bottom-6 -right-6 bg-white p-8 rounded-2xl shadow-xl border border-slate-100 hidden md:block">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 bg-primary-light/10 rounded-full flex items-center justify-center text-primary-light">
