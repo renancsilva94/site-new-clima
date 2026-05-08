@@ -74,10 +74,9 @@ const WhatsAppIcon = ({ size = 20 }: { size?: number }) => (
   </svg>
 );
 
-const WhatsAppButton = ({ className, text = "Orçamento via WhatsApp" }: { className?: string, text?: string }) => (
+const WhatsAppButton = ({ className, text = "Solicitar Orçamento" }: { className?: string, text?: string }) => (
   <a 
-    href="https://wa.me/5511963462516?text=Olá! Vim pelo site da New Clima Ar e gostaria de solicitar um orçamento." 
-    target="_blank" 
+    href="https://kit.cursodescomplicandosites.com.br/" 
     rel="noopener noreferrer"
     className={`inline-flex items-center justify-center gap-2 bg-success hover:bg-success/90 text-white font-bold py-3 px-6 rounded-xl transition-all hover:-translate-y-0.5 shadow-lg hover:shadow-success/40 ${className}`}
   >
@@ -121,6 +120,66 @@ export default function App() {
           <title>New Clima Ar | Instalação e Manutenção de Ar Condicionado em SP e ABC</title>
           <meta name="description" content="Especialista em ar condicionado em São Paulo e ABC. Instalação técnica, manutenção preventiva (PMOC), conserto e limpeza profunda. Atendimento premium residencial e comercial com garantia técnica." />
           <meta name="keywords" content="ar condicionado sp, ar condicionado abc, instalação de ar condicionado, manutenção de ar condicionado, limpeza de ar condicionado, pmoc, conserto de ar condicionado, split inverter, multi split, vrf" />
+          <meta name="robots" content="index, follow" />
+          <link rel="canonical" href="https://newclimaar.com.br/" />
+          
+          {/* Open Graph / Facebook */}
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://newclimaar.com.br/" />
+          <meta property="og:title" content="New Clima Ar | Instalação e Manutenção de Ar Condicionado" />
+          <meta property="og:description" content="Especialista em ar condicionado em São Paulo e ABC. Atendimento premium residencial e comercial com garantia técnica." />
+          <meta property="og:image" content="https://cdn.coteibem.com.br/company/41315/logo/f4d0405d-28b6-4834-a8ca-9e63b68073fa.png" />
+
+          {/* Twitter */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:url" content="https://newclimaar.com.br/" />
+          <meta name="twitter:title" content="New Clima Ar | Instalação e Manutenção de Ar Condicionado" />
+          <meta name="twitter:description" content="Especialista em ar condicionado em São Paulo e ABC. Atendimento premium residencial e comercial com garantia técnica." />
+          <meta name="twitter:image" content="https://cdn.coteibem.com.br/company/41315/logo/f4d0405d-28b6-4834-a8ca-9e63b68073fa.png" />
+
+          {/* Schema.org markup for Google */}
+          <script type="application/ld+json">
+            {`
+              {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "New Clima Ar Condicionado",
+                "image": "https://cdn.coteibem.com.br/company/41315/logo/f4d0405d-28b6-4834-a8ca-9e63b68073fa.png",
+                "@id": "",
+                "url": "https://newclimaar.com.br/",
+                "telephone": "+5511963462516",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "R. Santa Cruz, 2187",
+                  "addressLocality": "São Paulo",
+                  "addressRegion": "SP",
+                  "postalCode": "04121-001",
+                  "addressCountry": "BR"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": -23.5937,
+                  "longitude": -46.6341
+                },
+                "openingHoursSpecification": {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ],
+                  "opens": "08:00",
+                  "closes": "18:00"
+                },
+                "sameAs": [
+                  "https://www.instagram.com/newclimaar/",
+                  "https://www.facebook.com/newclimaar/"
+                ]
+              }
+            `}
+          </script>
         </Helmet>
 
         {/* Topbar */}
@@ -264,9 +323,9 @@ export default function App() {
                   Referência em climatização de alta performance em São Paulo e ABC. Projetos residenciais, comerciais e industriais com foco em eficiência energética e qualidade do ar.
                 </p>
                 <div className="flex gap-4">
-                  <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"><Instagram size={18} /></a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"><Facebook size={18} /></a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"><Linkedin size={18} /></a>
+                  <a href="#" aria-label="Instagram" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"><Instagram size={18} /></a>
+                  <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"><Facebook size={18} /></a>
+                  <a href="#" aria-label="Linkedin" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"><Linkedin size={18} /></a>
                 </div>
               </div>
 
@@ -307,7 +366,7 @@ export default function App() {
                     <div className="text-accent shrink-0">
                       <WhatsAppIcon size={18} />
                     </div>
-                    <a href="https://wa.me/5511963462516" className="text-blue-100/60 hover:text-white">WhatsApp 24h</a>
+                    <a href="https://kit.cursodescomplicandosites.com.br/" rel="noopener noreferrer" className="text-blue-100/60 hover:text-white">Garantir Vaga</a>
                   </li>
                 </ul>
               </div>
@@ -335,9 +394,9 @@ export default function App() {
           <div className="relative pointer-events-auto">
             <div className="absolute inset-0 bg-success rounded-full animate-ping opacity-25"></div>
             <a 
-              href="https://wa.me/5511963462516" 
-              target="_blank" 
+              href="https://kit.cursodescomplicandosites.com.br/" 
               rel="noopener noreferrer"
+              aria-label="Falar com especialista"
               className="relative w-16 h-16 bg-success text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform"
             >
               <WhatsAppIcon size={32} />
@@ -379,12 +438,12 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                 A New Clima Ar é especialista em <strong>instalação, manutenção e limpeza de ar condicionado em São Paulo e no ABC</strong>. Oferecemos soluções completas de climatização, PMOC para empresas e projetos personalizados para residências com foco em eficiência e economia.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <WhatsAppButton className="h-14 px-8 text-lg" text="Solicitar Orçamento Grátis" />
+                <WhatsAppButton className="h-14 px-8 text-lg" text="Quero Garantir Minha Vaga" />
                 <button 
                   onClick={() => navigate('contato')}
                   className="h-14 px-8 rounded-xl border-2 border-white/20 text-white font-bold hover:bg-white/10 transition-all"
                 >
-                  Ver Nossos Serviços
+                  Saiba Mais
                 </button>
               </div>
             </motion.div>
@@ -397,21 +456,21 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
             >
               <div className="relative z-10 bg-white rounded-3xl p-8 shadow-2xl border border-white/10">
                 <div className="mb-8">
-                  <h3 className="text-xl font-bold text-primary">Solicite um Orçamento</h3>
-                  <p className="text-sm text-slate-500">Resposta rápida via WhatsApp ou E-mail.</p>
+                  <h3 className="text-xl font-bold text-primary">Receba uma Proposta</h3>
+                  <p className="text-sm text-slate-500">Preencha os dados e entraremos em contato.</p>
                 </div>
-                <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+                <form className="space-y-4" action="https://kit.cursodescomplicandosites.com.br/" method="GET">
                   <div className="space-y-2">
-                    <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Nome Completo</label>
-                    <input type="text" placeholder="Seu nome" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary-light" />
+                    <label htmlFor="hero-name" className="text-xs font-bold text-slate-400 uppercase tracking-wider">Nome Completo</label>
+                    <input id="hero-name" type="text" placeholder="Seu nome" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary-light" required />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">WhatsApp / Telefone</label>
-                    <input type="tel" placeholder="(11) 99999-9999" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary-light" />
+                    <label htmlFor="hero-phone" className="text-xs font-bold text-slate-400 uppercase tracking-wider">WhatsApp / Telefone</label>
+                    <input id="hero-phone" type="tel" placeholder="(11) 99999-9999" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary-light" required />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Serviço Desejado</label>
-                    <select className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary-light">
+                    <label htmlFor="hero-service" className="text-xs font-bold text-slate-400 uppercase tracking-wider">Serviço Desejado</label>
+                    <select id="hero-service" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary-light">
                       <option>Instalação Residencial</option>
                       <option>Instalação Comercial / VRF</option>
                       <option>Manutenção Preventiva / PMOC</option>
@@ -419,8 +478,8 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                       <option>Limpeza e Higienização</option>
                     </select>
                   </div>
-                  <button className="w-full bg-primary text-white font-bold py-4 rounded-xl hover:bg-primary-light transition-colors shadow-lg shadow-primary/20 flex items-center justify-center gap-2">
-                    Enviar Solicitação <ArrowRight size={18} />
+                  <button type="submit" className="w-full bg-primary text-white font-bold py-4 rounded-xl hover:bg-primary-light transition-colors shadow-lg shadow-primary/20 flex items-center justify-center gap-2">
+                    Garantir Vaga Agora <ArrowRight size={18} />
                   </button>
                 </form>
               </div>
@@ -641,7 +700,8 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
             <div className="relative">
               <img 
                 src="https://lh3.googleusercontent.com/6heGd7th8Pj-lMMTr-rWhQgDXIHEtDgkUzYkEakZwnOvYabXG6ykwi_RHfm8RpDcoNoWHvGRKRz8Yf2l7A=s360-w360-h360" 
-                alt="Diferenciais New Clima Ar" 
+                alt="Equipe New Clima Ar realizando instalação técnica" 
+                loading="lazy"
                 className="rounded-3xl shadow-2xl w-full h-[600px] object-cover"
                 referrerPolicy="no-referrer"
               />
@@ -765,12 +825,12 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                   <div className="flex gap-0.5 text-accent mb-1">
                     {[1,2,3,4,5].map(i => <Star key={i} size={14} fill="currentColor" />)}
                   </div>
-                  <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Mais de 800 avaliações reais</div>
                 </div>
                 <a 
                   href="https://maps.app.goo.gl/kHeynjnXoG943iG3A" 
                   target="_blank" 
                   rel="noopener noreferrer"
+                  aria-label="Ver todas as avaliações no Google"
                   className="w-10 h-10 rounded-full border border-slate-100 flex items-center justify-center text-slate-300 hover:text-primary hover:border-primary transition-all"
                 >
                   <ExternalLink size={16} />
@@ -784,7 +844,6 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                   <div className="flex gap-0.5 text-accent mb-0.5">
                     {[1,2,3,4,5].map(i => <Star key={i} size={12} fill="currentColor" />)}
                   </div>
-                  <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Mais de 800 avaliações reais</div>
                 </div>
                 <ExternalLink size={16} className="text-slate-300" />
               </div>
@@ -877,7 +936,13 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
             Fale agora com um de nossos especialistas e receba um orçamento personalizado para seu projeto.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <WhatsAppButton className="h-16 px-10 text-xl" text="Chamar no WhatsApp Agora" />
+            <a 
+              href="https://kit.cursodescomplicandosites.com.br/"
+              rel="noopener noreferrer"
+              className="h-16 px-10 rounded-xl bg-success text-white font-bold flex items-center justify-center hover:bg-success/90 transition-all shadow-xl shadow-success/20"
+            >
+              Garantir Minha Vaga Agora
+            </a>
             <a 
               href="tel:+5511963462516"
               className="h-16 px-10 rounded-xl border-2 border-white/20 text-white font-bold flex items-center justify-center hover:bg-white/10 transition-all"
