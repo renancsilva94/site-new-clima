@@ -143,10 +143,9 @@ export const FaqSection = () => {
                   {openFaq === i ? <Minus size={18} /> : <Plus size={18} />}
                 </div>
               </button>
-              {openFaq === i && (<div style={{overflow:"hidden"}}>
-                    <div className="px-8 pb-8 text-slate-500 leading-relaxed border-t border-slate-50 pt-6">{item.answer}</div>
-                  </div>
-                )}
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${openFaq === i ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+                <div className="px-8 pb-8 text-slate-500 leading-relaxed border-t border-slate-50 pt-6">{item.answer}</div>
+              </div>
               
             </div>
           ))}
@@ -212,10 +211,9 @@ const FaqVRFSection = () => {
                   {openFaq === i ? <Minus size={18} /> : <Plus size={18} />}
                 </div>
               </button>
-              {openFaq === i && (<div style={{overflow:"hidden"}}>
-                    <div className="px-8 pb-8 text-slate-500 leading-relaxed border-t border-slate-50 pt-6">{item.answer}</div>
-                  </div>
-                )}
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${openFaq === i ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+                <div className="px-8 pb-8 text-slate-500 leading-relaxed border-t border-slate-50 pt-6">{item.answer}</div>
+              </div>
               
             </div>
           ))}
@@ -316,10 +314,9 @@ const FaqPreventivaSection = () => {
                   {openFaq === i ? <Minus size={18} /> : <Plus size={18} />}
                 </div>
               </button>
-              {openFaq === i && (<div style={{overflow:"hidden"}}>
-                    <div className="px-8 pb-8 text-slate-500 leading-relaxed border-t border-slate-50 pt-6">{item.answer}</div>
-                  </div>
-                )}
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${openFaq === i ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+                <div className="px-8 pb-8 text-slate-500 leading-relaxed border-t border-slate-50 pt-6">{item.answer}</div>
+              </div>
               
             </div>
           ))}
@@ -353,10 +350,9 @@ const FaqCorretivaSection = () => {
                   {openFaq === i ? <Minus size={18} /> : <Plus size={18} />}
                 </div>
               </button>
-              {openFaq === i && (<div style={{overflow:"hidden"}}>
-                    <div className="px-8 pb-8 text-slate-500 leading-relaxed border-t border-slate-50 pt-6">{item.answer}</div>
-                  </div>
-                )}
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${openFaq === i ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+                <div className="px-8 pb-8 text-slate-500 leading-relaxed border-t border-slate-50 pt-6">{item.answer}</div>
+              </div>
               
             </div>
           ))}
@@ -457,10 +453,9 @@ const FaqLimpezaSection = () => {
                   {openFaq === i ? <Minus size={18} /> : <Plus size={18} />}
                 </div>
               </button>
-              {openFaq === i && (<div style={{overflow:"hidden"}}>
-                    <div className="px-8 pb-8 text-slate-500 leading-relaxed border-t border-slate-50 pt-6">{item.answer}</div>
-                  </div>
-                )}
+              <div className={`overflow-hidden transition-all duration-300 ease-in-out ${openFaq === i ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+                <div className="px-8 pb-8 text-slate-500 leading-relaxed border-t border-slate-50 pt-6">{item.answer}</div>
+              </div>
               
             </div>
           ))}
