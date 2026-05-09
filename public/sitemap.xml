@@ -547,4 +547,67 @@
     <priority>0.9</priority>
   </url>
 
+
+  <!-- Novos Posts Blog -->
+  <url>
+    <loc>https://www.newclimaar.com.br/blog/ar-condicionado-faz-mal-saude</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.newclimaar.com.br/blog/dormir-com-ar-condicionado-faz-mal</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.newclimaar.com.br/blog/ar-condicionado-gasta-mais-dia-ou-noite</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.newclimaar.com.br/blog/quanto-gasta-ar-condicionado-inverter</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.newclimaar.com.br/blog/mau-cheiro-ar-condicionado</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.newclimaar.com.br/blog/ar-condicionado-desliga-sozinho</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.newclimaar.com.br/blog/vida-util-ar-condicionado</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.newclimaar.com.br/blog/temperatura-ideal-ar-condicionado</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.newclimaar.com.br/blog/funcao-dry-ar-condicionado</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.newclimaar.com.br/blog/gas-r32-r410a-ar-condicionado</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
