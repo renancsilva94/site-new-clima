@@ -1605,7 +1605,7 @@ function BlogView({ navigate, postId }: { navigate: (p: PageId) => void, postId?
           title="O Que Acontece Sem Manutenção no Ar Condicionado?"
           desc="Do aumento na conta de luz à morte prematura do compressor — o que esperar mês a mês."
           image="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-manutencao-consequencias' | 'blog-saude' | 'blog-dormir' | 'blog-consumo' | 'blog-quanto-gasta' | 'blog-mau-cheiro' | 'blog-desliga-sozinho' | 'blog-vida-util' | 'blog-temperatura' | 'blog-funcao-dry' | 'blog-gas')}
+          onClick={() => navigate('blog-manutencao-consequencias')}
         />
         <BlogCard 
           title="Ar Condicionado Inverter"
