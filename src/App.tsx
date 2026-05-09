@@ -72,7 +72,7 @@ import {
 } from './components/RegionContent';
 
 // --- Types ---
-type PageId = 'home' | 'mapa-site' | 'split-multisplit' | 'bairro-moema' | 'bairro-vila-mariana' | 'bairro-pinheiros' | 'bairro-itaim-bibi' | 'bairro-jardins' | 'bairro-tatuape' | 'bairro-santana' | 'bairro-brooklin' | 'bairro-perdizes' | 'bairro-morumbi' | 'bairro-mooca' | 'bairro-analia-franco' | 'bairro-vila-madalena' | 'bairro-campo-belo' | 'bairro-saude' | 'bairro-higienopolis' | 'bairro-lapa' | 'bairro-santo-amaro' | 'bairro-tucuruvi' | 'bairro-ipiranga' | 'bairro-vila-prudente' | 'bairro-jabaquara' | 'bairro-campo-grande' | 'bairro-penha' | 'bairro-cursino' | 'bairro-agua-rasa' | 'bairro-bela-vista' | 'bairro-butanta' | 'bairro-vila-olimpia' | 'bairro-pompeia' | 'bairro-paraiso' | 'bairro-aclimacao' | 'bairro-mirandopolis' | 'bairro-planalto-paulista' | 'bairro-vila-clementino' | 'bairro-chacara-klabin' | 'bairro-cambuci' | 'bairro-liberdade' | 'segmento-clinica' | 'segmento-escritorio' | 'segmento-condominio' | 'segmento-restaurante' | 'segmento-hotel' | 'segmento-pousada' | 'segmento-academia' | 'segmento-escola' | 'abc-santo-andre' | 'abc-sao-bernardo' | 'abc-sao-caetano' | 'abc-diadema' | 'abc-maua' | 'sistemas-comerciais' | 'vrf-mini-vrf' | 'manutencao-preventiva' | 'manutencao-corretiva' | 'limpeza' | 'blog' | 'sobre' | 'contato' | 'sao-paulo' | 'santo-andre' | 'sao-bernardo' | 'sao-caetano' | 'diadema' | 'maua' | 'blog-inverter' | 'blog-apartamento' | 'blog-btus' | 'blog-pmoc' | 'blog-round-cassette' | 'blog-obra-limpa' | 'blog-quarto' | 'blog-convencional-inverter' | 'blog-empresas' | 'blog-pmoc-obrigatorio' | 'blog-multa-pmoc' | 'blog-pmoc-condominio' | 'blog-custo-pmoc' | 'blog-custo-instalacao' | 'blog-qual-ac' | 'blog-split-multi-split' | 'blog-manutencao-consequencias';
+type PageId = 'home' | 'mapa-site' | 'split-multisplit' | 'bairro-moema' | 'bairro-vila-mariana' | 'bairro-pinheiros' | 'bairro-itaim-bibi' | 'bairro-jardins' | 'bairro-tatuape' | 'bairro-santana' | 'bairro-brooklin' | 'bairro-perdizes' | 'bairro-morumbi' | 'bairro-mooca' | 'bairro-analia-franco' | 'bairro-vila-madalena' | 'bairro-campo-belo' | 'bairro-saude' | 'bairro-higienopolis' | 'bairro-lapa' | 'bairro-santo-amaro' | 'bairro-tucuruvi' | 'bairro-ipiranga' | 'bairro-vila-prudente' | 'bairro-jabaquara' | 'bairro-campo-grande' | 'bairro-penha' | 'bairro-cursino' | 'bairro-agua-rasa' | 'bairro-bela-vista' | 'bairro-butanta' | 'bairro-vila-olimpia' | 'bairro-pompeia' | 'bairro-paraiso' | 'bairro-aclimacao' | 'bairro-mirandopolis' | 'bairro-planalto-paulista' | 'bairro-vila-clementino' | 'bairro-chacara-klabin' | 'bairro-cambuci' | 'bairro-liberdade' | 'segmento-clinica' | 'segmento-escritorio' | 'segmento-condominio' | 'segmento-restaurante' | 'segmento-hotel' | 'segmento-pousada' | 'segmento-academia' | 'segmento-escola' | 'sistemas-comerciais' | 'vrf-mini-vrf' | 'manutencao-preventiva' | 'manutencao-corretiva' | 'limpeza' | 'blog' | 'sobre' | 'contato' | 'sao-paulo' | 'santo-andre' | 'sao-bernardo' | 'sao-caetano' | 'diadema' | 'maua' | 'blog-inverter' | 'blog-apartamento' | 'blog-btus' | 'blog-pmoc' | 'blog-round-cassette' | 'blog-obra-limpa' | 'blog-quarto' | 'blog-convencional-inverter' | 'blog-empresas' | 'blog-pmoc-obrigatorio' | 'blog-multa-pmoc' | 'blog-pmoc-condominio' | 'blog-custo-pmoc' | 'blog-custo-instalacao' | 'blog-qual-ac' | 'blog-split-multi-split' | 'blog-manutencao-consequencias';
 
 // --- Components ---
 
@@ -186,11 +186,6 @@ export default function App() {
       'segmento-pousada': '/ar-condicionado-pousada-sp',
       'segmento-academia': '/ar-condicionado-academia-sp',
       'segmento-escola': '/ar-condicionado-escola-sp',
-      'abc-santo-andre': '/ar-condicionado-santo-andre',
-      'abc-sao-bernardo': '/ar-condicionado-sao-bernardo-do-campo',
-      'abc-sao-caetano': '/ar-condicionado-sao-caetano-do-sul',
-      'abc-diadema': '/ar-condicionado-diadema',
-      'abc-maua': '/ar-condicionado-maua',
       'sao-paulo': '/ar-condicionado-sao-paulo',
       'santo-andre': '/ar-condicionado-santo-andre',
       'sao-bernardo': '/ar-condicionado-sao-bernardo-do-campo',
@@ -405,41 +400,12 @@ export default function App() {
             if (p === '/ar-condicionado-pousada-sp') return <SegmentoView slug="pousada" title="Pousada" tag="HOTELARIA" headline="Ar Condicionado para Pousadas em SP e ABC" desc="Instalação e manutenção de ar condicionado para pousadas em São Paulo e ABC. Conforto para hóspedes e manutenção sem burocracia." dor="Pousada sem ar condicionado perde reserva. Equipamento parado no fim de semana é o pior momento para dar problema." servicos={["Instalação em quartos e áreas comuns", "Manutenção preventiva sob contrato", "Atendimento rápido para emergências", "Todas as marcas e modelos"]} faq={[["Pousadas precisam de PMOC?", "Pousadas com capacidade acima de 60.000 BTUs são obrigadas pela Lei 13.589/18. Mesmo abaixo desse limite, a manutenção documentada é exigida pela Vigilância Sanitária."], ["Qual o melhor equipamento para quarto de pousada?", "Split inverter hi-wall é a opção mais popular — bom custo-benefício, silencioso e eficiente. Para quartos premium, o cassete de 4 vias oferece ar mais uniforme."], ["Atendem pousadas no ABC Paulista?", "Sim. Atendemos pousadas em toda a região do ABC: Santo André, São Bernardo, São Caetano, Diadema e Mauá."]]} vizinhos="Santo André · São Bernardo · São Caetano · Vila Mariana · Moema" navigate={navigate} />;
             if (p === '/ar-condicionado-academia-sp') return <SegmentoView slug="academia" title="Academia" tag="FITNESS" headline="Ar Condicionado para Academias em São Paulo" desc="Sistemas de climatização para academias, estúdios de pilates e crossfit em SP. Alta capacidade, PMOC e manutenção que não para seu negócio." dor="Academia quente perde aluno. Sistema subdimensionado não refresca e gera reclamação e cancelamento de matrícula." servicos={["Projeto de dimensionamento correto para alta ocupação", "Instalação de sistemas de alta capacidade", "PMOC e manutenção preventiva", "Higienização profissional dos filtros"]} faq={[["Qual capacidade de BTUs para academia?", "Para academias, o cálculo considera a quantidade de pessoas em exercício — que gera muito mais calor que pessoas em repouso. Fazemos o cálculo de carga térmica gratuitamente."], ["Com que frequência fazer manutenção em academia?", "Recomendamos manutenção a cada 2 meses — o alto fluxo de pessoas e a umidade do suor contaminam os filtros rapidamente."], ["Academias são obrigadas a ter PMOC?", "Academias com capacidade acima de 60.000 BTUs são obrigadas pela Lei 13.589/18. A maioria das academias de médio porte se enquadra nessa faixa."]]} vizinhos="Vila Mariana · Moema · Brooklin · Pinheiros · Itaim Bibi" navigate={navigate} />;
             if (p === '/ar-condicionado-escola-sp') return <SegmentoView slug="escola" title="Escola" tag="EDUCAÇÃO" headline="Ar Condicionado para Escolas em São Paulo" desc="Instalação e manutenção de ar condicionado para escolas, creches e universidades em SP. PMOC obrigatório e qualidade do ar para alunos e professores." dor="Sala de aula quente reduz concentração e rendimento. PMOC irregular pode resultar em interdição pela Vigilância Sanitária." servicos={["Instalação em salas de aula e áreas comuns", "Contrato PMOC para instituições de ensino", "Manutenção preventiva nas férias escolares", "Higienização com produtos seguros para crianças"]} faq={[["Escolas são obrigadas a ter PMOC?", "Sim. Instituições de ensino com sistema de ar condicionado acima de 60.000 BTUs são obrigadas pela Lei 13.589/18. O descumprimento pode resultar em interdição."], ["Qual o melhor horário para manutenção em escola?", "Realizamos a manutenção preferencialmente durante as férias escolares (janeiro e julho) para não impactar as aulas."], ["O ar condicionado pode piorar alergias das crianças?", "Um ar condicionado sem manutenção acumula fungos e ácaros. Com higienização regular, o ar condicionado melhora a qualidade do ar — especialmente em SP, com alto nível de poluição."]]} vizinhos="Vila Mariana · Moema · Brooklin · Santo André · São Bernardo" navigate={navigate} />;
-            if (p === '/ar-condicionado-santo-andre') return <CidadeABCView
-              cidade="Santo André"
-              slug="abc-santo-andre"
-              bairros={['Centro', 'Campestre', 'Vila Assunção', 'Vila Bastos', 'Utinga', 'Santa Teresinha', 'Parque das Nações', 'Vila Pires', 'Jardim Bela Vista', 'Vila Alzira', 'Paraíso', 'Vila Humaitá', 'Bangú', 'Vila Luzita', 'Jardim', 'Bairro Jardim', 'Vila Gilda']}
-              vizinhos={['São Paulo', 'São Bernardo do Campo', 'Mauá', 'Ribeirão Pires']}
-              navigate={navigate}
-            />;
-            if (p === '/ar-condicionado-sao-bernardo-do-campo') return <CidadeABCView
-              cidade="São Bernardo do Campo"
-              slug="abc-sao-bernardo"
-              bairros={['Centro', 'Rudge Ramos', 'Jardim do Mar', 'Assunção', 'Nova Petrópolis', 'Baeta Neves', 'Planalto', 'Demarchi', 'Alves Dias', 'Anchieta', 'Paulicéia', 'Cooperativa', 'Vila Euclides', 'Ferrazópolis', 'Independência', 'Vila São Pedro', 'Jardim Olavo']}
-              vizinhos={['São Paulo', 'Santo André', 'São Caetano do Sul', 'Diadema']}
-              navigate={navigate}
-            />;
-            if (p === '/ar-condicionado-sao-caetano-do-sul') return <CidadeABCView
-              cidade="São Caetano do Sul"
-              slug="abc-sao-caetano"
-              bairros={['Centro', 'Santa Paula', 'Barcelona', 'Santo Antônio', 'Olímpico', 'Boa Vista', 'Cerâmica', 'Fundação', 'Nova Gerty', 'Jardim São Caetano', 'Oswaldo Cruz', 'Prosperidade', 'São José', 'Mauá']}
-              vizinhos={['São Paulo', 'Santo André', 'São Bernardo do Campo', 'Diadema']}
-              navigate={navigate}
-            />;
-            if (p === '/ar-condicionado-diadema') return <CidadeABCView
-              cidade="Diadema"
-              slug="abc-diadema"
-              bairros={['Centro', 'Serraria', 'Taboão', 'Piraporinha', 'Canhema', 'Conceição', 'Eldorado', 'Campanário', 'Inamar', 'Vila Nogueira', 'Casa Grande', 'Jardim Canhema', 'Vila Mota', 'Bairro Casa Grande']}
-              vizinhos={['São Paulo', 'São Bernardo do Campo', 'São Caetano do Sul', 'Mauá']}
-              navigate={navigate}
-            />;
-            if (p === '/ar-condicionado-maua') return <CidadeABCView
-              cidade="Mauá"
-              slug="abc-maua"
-              bairros={['Centro', 'Jardim Zaíra', 'Parque São Vicente', 'Vila Assis', 'Guapituba', 'Vila Vitória', 'Jardim Oratório', 'Capuava', 'Vila Cardoso', 'Jardim Miranda', 'Matriz', 'Vila Magini', 'Parque das Américas', 'Vila Nastri']}
-              vizinhos={['Santo André', 'Diadema', 'Ribeirão Pires', 'São Paulo']}
-              navigate={navigate}
-            />;
+            if (p === '/ar-condicionado-sao-paulo') return <SaoPauloRegion navigate={navigate} />;
+            if (p === '/ar-condicionado-santo-andre') return <SantoAndreRegion navigate={navigate} />;
+            if (p === '/ar-condicionado-sao-bernardo-do-campo') return <SaoBernardoRegion navigate={navigate} />;
+            if (p === '/ar-condicionado-sao-caetano-do-sul') return <SaoCaetanoRegion navigate={navigate} />;
+            if (p === '/ar-condicionado-diadema') return <DiademaMauaRegion navigate={navigate} />;
+            if (p === '/ar-condicionado-maua') return <DiademaMauaRegion navigate={navigate} />;
             return <HomeView navigate={navigate} />;
           })()}
         </main>
@@ -1866,178 +1832,7 @@ function RegionView({ region, navigate }: { region: string, navigate: (p: PageId
 
 // --- Segmento View ---
 
-// --- Cidade ABC View ---
-function CidadeABCView({ cidade, slug, bairros, vizinhos, navigate }: {
-  cidade: string
-  slug: string
-  bairros: string[]
-  vizinhos: string[]
-  navigate: (p: PageId) => void
-}) {
-  return (
-    <div className="pt-10 pb-20">
-      {/* Hero */}
-      <section className="bg-primary py-16">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center gap-2 text-blue-100/50 text-sm mb-4">
-            <button onClick={() => navigate('home')} className="hover:text-white transition-colors">Início</button>
-            <span>/</span>
-            <span className="text-white font-medium">{cidade}</span>
-          </div>
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-3 py-1 rounded-full text-white text-xs font-bold uppercase tracking-widest mb-6">
-              <MapPin size={12} /> ABC Paulista
-            </div>
-            <h1 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6">
-              Ar Condicionado em {cidade} — Instalação e Manutenção
-            </h1>
-            <p className="text-lg text-blue-100/80 mb-8 max-w-2xl">
-              A New Clima Ar atende {cidade} com instalação, manutenção, higienização e PMOC de ar condicionado. Técnicos certificados, visita técnica gratuita e garantia por escrito.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://wa.me/5511963462516"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-4 px-8 rounded-xl hover:-translate-y-0.5 transition-all shadow-lg"
-              >
-                <MessageSquare size={20} />
-                Orçamento Grátis em {cidade}
-              </a>
-              <a
-                href="tel:+5511963462516"
-                className="inline-flex items-center justify-center gap-2 border-2 border-white/20 text-white font-bold py-4 px-8 rounded-xl hover:bg-white/10 transition-all"
-              >
-                <Phone size={20} />
-                (11) 96346-2516
-              </a>
-            </div>
-            <p className="text-blue-100/50 text-sm mt-4">⚡ Resposta em até 2 horas · Visita técnica sem custo · Garantia por escrito</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Serviços */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-primary mb-8 text-center">
-            Serviços de Ar Condicionado em {cidade}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
-            {[
-              { title: `Instalação em ${cidade}`, desc: 'Split, multi-split e VRF. Infraestrutura completa, obra limpa e garantia de 1 ano.', page: 'split-multisplit' as PageId },
-              { title: `Manutenção Preventiva em ${cidade}`, desc: 'Planos mensais e trimestrais. Atuamos antes do defeito aparecer.', page: 'manutencao-preventiva' as PageId },
-              { title: `Conserto de Ar Condicionado em ${cidade}`, desc: 'Diagnóstico rápido, peças originais e garantia de 90 dias.', page: 'manutencao-corretiva' as PageId },
-              { title: `Higienização em ${cidade}`, desc: 'Limpeza profunda com bactericida. Elimina fungos e ácaros.', page: 'limpeza' as PageId },
-              { title: `PMOC para Empresas em ${cidade}`, desc: 'Conformidade com a Lei 13.589/18. Documentação completa.', page: 'manutencao-preventiva' as PageId },
-              { title: `Sistemas VRF em ${cidade}`, desc: 'Projetos completos para indústrias e grandes empresas.', page: 'vrf-mini-vrf' as PageId },
-            ].map((s, i) => (
-              <div key={i} onClick={() => navigate(s.page)} className="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-primary-light hover:shadow-md transition-all cursor-pointer group">
-                <h3 className="font-bold text-primary mb-2 group-hover:text-primary-light transition-colors">{s.title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed">{s.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Bairros */}
-      <section className="py-16 bg-slate-50">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="mb-8">
-            <h2 className="text-2xl font-extrabold text-primary mb-2">Bairros atendidos em {cidade}</h2>
-            <p className="text-slate-500">Visita técnica gratuita para qualquer bairro abaixo.</p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mb-6">
-            {bairros.map((b, i) => (
-              <div key={i} className="flex items-center gap-2 text-sm text-slate-600 font-medium">
-                <MapPin size={12} className="text-primary-light shrink-0" />
-                {b}
-              </div>
-            ))}
-          </div>
-          <p className="text-slate-400 text-sm">{bairros.length} bairros cobertos em {cidade}.</p>
-        </div>
-      </section>
-
-      {/* Diferenciais */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-2xl font-extrabold text-primary mb-8 text-center">Por que contratar a New Clima em {cidade}?</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { icon: <ShieldCheck size={24} />, title: 'Garantia por Escrito', desc: `Todo serviço em ${cidade} com garantia documentada.` },
-              { icon: <Clock size={24} />, title: 'Atendimento Rápido', desc: 'Respondemos em até 2 horas. Equipe no ABC todos os dias.' },
-              { icon: <CheckCircle2 size={24} />, title: 'Desde 2018 no ABC', desc: 'Conhecemos cada cidade do ABC e seus condomínios.' },
-            ].map((item, i) => (
-              <div key={i} className="bg-slate-50 p-6 rounded-2xl border border-slate-100 text-center">
-                <div className="w-12 h-12 bg-ice rounded-xl flex items-center justify-center text-primary-light mx-auto mb-4">{item.icon}</div>
-                <h3 className="font-bold text-primary mb-2">{item.title}</h3>
-                <p className="text-slate-500 text-sm">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Cidades vizinhas */}
-      <section className="py-12 bg-slate-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-xl font-bold text-primary mb-4">Também atendemos cidades próximas a {cidade}</h2>
-          <div className="flex flex-wrap gap-3">
-            {vizinhos.map((v, i) => (
-              <div key={i} className="flex items-center gap-2 bg-ice px-4 py-2 rounded-full text-sm font-semibold text-primary-light">
-                <MapPin size={12} /> {v}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <h2 className="text-2xl font-extrabold text-primary mb-8">Perguntas Frequentes — Ar Condicionado em {cidade}</h2>
-          <div className="space-y-4">
-            {[
-              [`Quanto custa instalar ar condicionado em ${cidade}?`, `Uma instalação residencial padrão em ${cidade} começa a partir de R$ 350. A visita técnica é gratuita e o orçamento é entregue no mesmo dia, sem compromisso.`],
-              [`A New Clima tem equipe em ${cidade}?`, `Sim. Atendemos ${cidade} com equipe própria e técnicos certificados. Respondemos em até 2 horas e agendamos a visita conforme sua disponibilidade.`],
-              [`Fazem PMOC para empresas em ${cidade}?`, `Sim. Elaboramos e executamos o PMOC conforme a Lei 13.589/18 para empresas, condomínios e estabelecimentos de saúde em ${cidade}.`],
-            ].map((item, i) => {
-              const [open, setOpen] = React.useState(false)
-              return (
-                <div key={i} className="border border-slate-200 rounded-2xl overflow-hidden">
-                  <button onClick={() => setOpen(!open)} className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-slate-50 transition-colors">
-                    <span className="font-bold text-primary">{item[0]}</span>
-                    <ChevronDown size={18} className={`text-slate-400 transition-transform shrink-0 ml-4 ${open ? 'rotate-180' : ''}`} />
-                  </button>
-                  <div className={`overflow-hidden transition-all duration-300 ${open ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="px-6 pb-5 pt-4 text-slate-500 text-sm leading-relaxed border-t border-slate-50">{item[1]}</div>
-                  </div>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-16 bg-primary">
-        <div className="container mx-auto px-4 text-center max-w-3xl">
-          <h2 className="text-3xl font-extrabold text-white mb-4">Precisa de ar condicionado em {cidade}?</h2>
-          <p className="text-blue-100/70 mb-8">Visita técnica gratuita · Orçamento no mesmo dia · Garantia por escrito</p>
-          <a
-            href="https://wa.me/5511963462516"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-success text-white font-bold py-4 px-10 rounded-xl shadow-xl hover:-translate-y-0.5 transition-all"
-          >
-            <MessageSquare size={20} />
-            Falar no WhatsApp Agora
-          </a>
-        </div>
-      </section>
-    </div>
-  )
-}
+// --- Segmento View ---
 
 function SegmentoView({ slug, title, tag, headline, desc, dor, servicos, faq, vizinhos, navigate }: {
   slug: string
