@@ -166,6 +166,46 @@ const metaMap: Record<string, { title: string; description: string }> = {
     title: 'Instalação de Ar Condicionado em Perdizes SP | New Clima',
     description: 'Instalação e manutenção de ar condicionado em Perdizes. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
   },
+  'instalacao-ar-condicionado-mooca': {
+    title: 'Instalação de Ar Condicionado na Mooca SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado na Mooca. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-analia-franco': {
+    title: 'Instalação de Ar Condicionado no Anália Franco SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado no Anália Franco. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-vila-madalena': {
+    title: 'Instalação de Ar Condicionado em Vila Madalena SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em Vila Madalena. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-campo-belo': {
+    title: 'Instalação de Ar Condicionado em Campo Belo SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em Campo Belo. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-saude': {
+    title: 'Instalação de Ar Condicionado na Saúde SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado na Saúde. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-higienopolis': {
+    title: 'Instalação de Ar Condicionado em Higienópolis SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em Higienópolis. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-lapa': {
+    title: 'Instalação de Ar Condicionado na Lapa SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado na Lapa. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-santo-amaro': {
+    title: 'Instalação de Ar Condicionado em Santo Amaro SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em Santo Amaro. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-tucuruvi': {
+    title: 'Instalação de Ar Condicionado no Tucuruvi SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado no Tucuruvi. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-ipiranga': {
+    title: 'Instalação de Ar Condicionado no Ipiranga SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado no Ipiranga. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
   'instalacao-ar-condicionado-morumbi': {
     title: 'Instalação de Ar Condicionado no Morumbi SP | New Clima',
     description: 'Instalação e manutenção de ar condicionado no Morumbi. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
