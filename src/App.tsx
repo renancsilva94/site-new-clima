@@ -72,7 +72,7 @@ import {
 } from './components/RegionContent';
 
 // --- Types ---
-type PageId = 'home' | 'mapa-site' | 'split-multisplit' | 'bairro-moema' | 'bairro-vila-mariana' | 'bairro-pinheiros' | 'bairro-itaim-bibi' | 'bairro-jardins' | 'bairro-tatuape' | 'bairro-santana' | 'bairro-brooklin' | 'bairro-perdizes' | 'bairro-morumbi' | 'bairro-mooca' | 'bairro-analia-franco' | 'bairro-vila-madalena' | 'bairro-campo-belo' | 'bairro-saude' | 'bairro-higienopolis' | 'bairro-lapa' | 'bairro-santo-amaro' | 'bairro-tucuruvi' | 'bairro-ipiranga' | 'bairro-vila-prudente' | 'bairro-jabaquara' | 'bairro-campo-grande' | 'bairro-penha' | 'bairro-cursino' | 'bairro-agua-rasa' | 'bairro-bela-vista' | 'bairro-butanta' | 'bairro-vila-olimpia' | 'bairro-pompeia' | 'bairro-paraiso' | 'bairro-aclimacao' | 'bairro-mirandopolis' | 'bairro-planalto-paulista' | 'bairro-vila-clementino' | 'bairro-chacara-klabin' | 'bairro-cambuci' | 'bairro-liberdade' | 'sistemas-comerciais' | 'vrf-mini-vrf' | 'manutencao-preventiva' | 'manutencao-corretiva' | 'limpeza' | 'blog' | 'sobre' | 'contato' | 'sao-paulo' | 'santo-andre' | 'sao-bernardo' | 'sao-caetano' | 'diadema' | 'maua' | 'blog-inverter' | 'blog-apartamento' | 'blog-btus' | 'blog-pmoc' | 'blog-round-cassette' | 'blog-obra-limpa' | 'blog-quarto' | 'blog-convencional-inverter' | 'blog-empresas' | 'blog-pmoc-obrigatorio' | 'blog-multa-pmoc' | 'blog-pmoc-condominio' | 'blog-custo-pmoc' | 'blog-custo-instalacao' | 'blog-qual-ac' | 'blog-split-multi-split' | 'blog-manutencao-consequencias';
+type PageId = 'home' | 'mapa-site' | 'split-multisplit' | 'bairro-moema' | 'bairro-vila-mariana' | 'bairro-pinheiros' | 'bairro-itaim-bibi' | 'bairro-jardins' | 'bairro-tatuape' | 'bairro-santana' | 'bairro-brooklin' | 'bairro-perdizes' | 'bairro-morumbi' | 'bairro-mooca' | 'bairro-analia-franco' | 'bairro-vila-madalena' | 'bairro-campo-belo' | 'bairro-saude' | 'bairro-higienopolis' | 'bairro-lapa' | 'bairro-santo-amaro' | 'bairro-tucuruvi' | 'bairro-ipiranga' | 'bairro-vila-prudente' | 'bairro-jabaquara' | 'bairro-campo-grande' | 'bairro-penha' | 'bairro-cursino' | 'bairro-agua-rasa' | 'bairro-bela-vista' | 'bairro-butanta' | 'bairro-vila-olimpia' | 'bairro-pompeia' | 'bairro-paraiso' | 'bairro-aclimacao' | 'bairro-mirandopolis' | 'bairro-planalto-paulista' | 'bairro-vila-clementino' | 'bairro-chacara-klabin' | 'bairro-cambuci' | 'bairro-liberdade' | 'segmento-clinica' | 'segmento-escritorio' | 'segmento-condominio' | 'segmento-restaurante' | 'segmento-hotel' | 'segmento-pousada' | 'segmento-academia' | 'segmento-escola' | 'sistemas-comerciais' | 'vrf-mini-vrf' | 'manutencao-preventiva' | 'manutencao-corretiva' | 'limpeza' | 'blog' | 'sobre' | 'contato' | 'sao-paulo' | 'santo-andre' | 'sao-bernardo' | 'sao-caetano' | 'diadema' | 'maua' | 'blog-inverter' | 'blog-apartamento' | 'blog-btus' | 'blog-pmoc' | 'blog-round-cassette' | 'blog-obra-limpa' | 'blog-quarto' | 'blog-convencional-inverter' | 'blog-empresas' | 'blog-pmoc-obrigatorio' | 'blog-multa-pmoc' | 'blog-pmoc-condominio' | 'blog-custo-pmoc' | 'blog-custo-instalacao' | 'blog-qual-ac' | 'blog-split-multi-split' | 'blog-manutencao-consequencias';
 
 // --- Components ---
 
@@ -178,6 +178,14 @@ export default function App() {
       'bairro-chacara-klabin': '/instalacao-ar-condicionado-chacara-klabin',
       'bairro-cambuci': '/instalacao-ar-condicionado-cambuci',
       'bairro-liberdade': '/instalacao-ar-condicionado-liberdade',
+      'segmento-clinica': '/ar-condicionado-clinica-medica-sp',
+      'segmento-escritorio': '/ar-condicionado-escritorio-sao-paulo',
+      'segmento-condominio': '/ar-condicionado-condominio-sp',
+      'segmento-restaurante': '/ar-condicionado-restaurante-sp',
+      'segmento-hotel': '/ar-condicionado-hotel-sp',
+      'segmento-pousada': '/ar-condicionado-pousada-sp',
+      'segmento-academia': '/ar-condicionado-academia-sp',
+      'segmento-escola': '/ar-condicionado-escola-sp',
       'sao-paulo': '/ar-condicionado-sao-paulo',
       'santo-andre': '/ar-condicionado-santo-andre',
       'sao-bernardo': '/ar-condicionado-sao-bernardo-do-campo',
@@ -384,6 +392,102 @@ export default function App() {
             if (p === '/instalacao-ar-condicionado-chacara-klabin') return <BairroView bairro="Chácara Klabin" slug="chacara-klabin" zona="Zona Sul" vizinhos={['Vila Mariana', 'Paraíso', 'Aclimação', 'Saúde']} navigate={navigate} />;
             if (p === '/instalacao-ar-condicionado-cambuci') return <BairroView bairro="Cambuci" slug="cambuci" zona="Região Central" vizinhos={['Liberdade', 'Aclimação', 'Ipiranga', 'Vila Mariana']} navigate={navigate} />;
             if (p === '/instalacao-ar-condicionado-liberdade') return <BairroView bairro="Liberdade" slug="liberdade" zona="Região Central" vizinhos={['Bela Vista', 'Cambuci', 'Aclimação', 'Paraíso']} navigate={navigate} />;
+            if (p === '/ar-condicionado-clinica-medica-sp') return <SegmentoView
+              slug="clinica-medica"
+              title="Clínica Médica"
+              tag="SAÚDE"
+              headline="Ar Condicionado para Clínicas Médicas em São Paulo"
+              desc="Temperatura controlada, PMOC obrigatório e qualidade do ar certificada para clínicas, consultórios e laboratórios em SP e ABC."
+              dor="Temperatura instável prejudica equipamentos e pacientes. PMOC não regularizado gera multas de até R$ 1,5 milhão."
+              servicos={['Instalação de sistemas silenciosos para salas de consulta', 'Contrato PMOC conforme Lei 13.589/18', 'Manutenção preventiva trimestral', 'Higienização com bactericida certificado']}
+              faq={[['Clínicas médicas são obrigadas a ter PMOC?', 'Sim. Qualquer estabelecimento de saúde com sistema de ar condicionado acima de 60.000 BTUs é obrigado pela Lei 13.589/18 a manter um PMOC — Plano de Manutenção, Operação e Controle. A multa por descumprimento pode chegar a R$ 1,5 milhão.'], ['Qual o sistema ideal para sala de consulta?', 'Para salas de consulta, recomendamos splits inverter de baixo ruído (abaixo de 26dB). Para centros cirúrgicos e laboratórios, sistemas com filtragem HEPA e controle preciso de temperatura são exigidos pelas normas da ANVISA.'], ['Com que frequência fazer manutenção em clínica?', 'Para clínicas, o mínimo exigido pelo PMOC é trimestral. Recomendamos bimensal para ambientes de alta ocupação como pronto-socorros e centros de diagnóstico.']]}
+              vizinhos="Vila Mariana · Moema · Itaim Bibi · Pinheiros · Jardins"
+              navigate={navigate}
+            />;
+            if (p === '/ar-condicionado-escritorio-sao-paulo') return <SegmentoView
+              slug="escritorio"
+              title="Escritório"
+              tag="COMERCIAL"
+              headline="Ar Condicionado para Escritórios em São Paulo"
+              desc="Sistemas de climatização para escritórios, coworkings e espaços corporativos em SP. Sem barulho, sem parada e com contrato de manutenção."
+              dor="Ar condicionado barulhento ou que para no meio do expediente custa produtividade e clientes."
+              servicos={['Instalação de sistemas silenciosos tipo cassete e piso-teto', 'Contrato de manutenção mensal ou trimestral', 'PMOC para prédios comerciais', 'Atendimento emergencial em até 4 horas']}
+              faq={[['Qual sistema é melhor para escritório?', 'Para salas pequenas (até 20m²), split hi-wall inverter é suficiente. Para escritórios maiores, o cassete de 4 vias distribui o ar uniformemente sem criar zonas frias. Para andares inteiros, VRF ou dutado são as melhores opções.'], ['É possível instalar sem interromper o trabalho?', 'Sim. Planejamos a instalação para fora do horário comercial — finais de semana ou noturno — minimizando qualquer interrupção das atividades.'], ['Escritórios precisam de PMOC?', 'Prédios comerciais com mais de 60.000 BTUs de capacidade instalada são obrigados pela Lei 13.589/18. A maioria dos andares corporativos se enquadra nessa faixa.']]}
+              vizinhos="Itaim Bibi · Pinheiros · Jardins · Faria Lima · Vila Olímpia"
+              navigate={navigate}
+            />;
+            if (p === '/ar-condicionado-condominio-sp') return <SegmentoView
+              slug="condominio"
+              title="Condomínio"
+              tag="CONDOMÍNIO"
+              headline="Ar Condicionado para Condomínios em São Paulo"
+              desc="Instalação, manutenção e PMOC para condomínios residenciais e comerciais em SP e ABC. Contratos flexíveis para síndicos e administradoras."
+              dor="Síndicos respondem pessoalmente por irregularidades no PMOC. Sem contrato, a multa sai do bolso da administração."
+              servicos={['Contrato PMOC para áreas comuns', 'Instalação em unidades residenciais e comerciais', 'Manutenção preventiva das áreas comuns', 'Relatórios técnicos para assembleias']}
+              faq={[['Condomínios precisam de PMOC?', 'Sim. Condomínios com sistema central de ar condicionado ou com capacidade instalada acima de 60.000 BTUs nas áreas comuns são obrigados a manter PMOC ativo. O síndico responde legalmente pelo cumprimento.'], ['Como funciona o contrato para condomínio?', 'Fazemos um levantamento de todos os equipamentos, elaboramos o PMOC conforme a norma, executamos as manutenções programadas e entregamos relatório técnico após cada visita — tudo que a lei exige.'], ['A New Clima atende unidades individuais também?', 'Sim. Além do contrato de áreas comuns, atendemos moradores individualmente para instalação e manutenção nas unidades.']]}
+              vizinhos="Vila Mariana · Moema · Brooklin · Pinheiros · Jardins"
+              navigate={navigate}
+            />;
+            if (p === '/ar-condicionado-restaurante-sp') return <SegmentoView
+              slug="restaurante"
+              title="Restaurante"
+              tag="ALIMENTAÇÃO"
+              headline="Ar Condicionado para Restaurantes em São Paulo"
+              desc="Sistemas de climatização para restaurantes, bares e lanchonetes em SP. Exigência da Vigilância Sanitária cumprida com PMOC e manutenção regular."
+              dor="Restaurante quente perde cliente. Ar condicionado parado no horário de pico é prejuízo direto."
+              servicos={['Instalação de sistemas para ambientes com alta ocupação', 'PMOC para atender a Vigilância Sanitária', 'Manutenção emergencial com prioridade', 'Higienização profunda com produtos alimentar-safe']}
+              faq={[['Restaurantes precisam de PMOC?', 'Sim. Restaurantes com sistema de ar condicionado são fiscalizados pela Vigilância Sanitária, que exige manutenção regular documentada. O PMOC é a forma legal de comprovar essa manutenção.'], ['Com que frequência higienizar o ar condicionado de restaurante?', 'Para restaurantes, recomendamos higienização a cada 3 meses no mínimo — especialmente em cozinhas e áreas de preparo, onde a gordura contamina os filtros rapidamente.'], ['O serviço pode ser feito fora do horário de funcionamento?', 'Sim. Realizamos manutenção e instalação no horário que melhor atende o restaurante — madrugada, antes da abertura ou após o fechamento.']]}
+              vizinhos="Pinheiros · Vila Madalena · Itaim Bibi · Jardins · Moema"
+              navigate={navigate}
+            />;
+            if (p === '/ar-condicionado-hotel-sp') return <SegmentoView
+              slug="hotel"
+              title="Hotel"
+              tag="HOTELARIA"
+              headline="Ar Condicionado para Hotéis em São Paulo"
+              desc="Sistemas de climatização para hotéis, apart-hotéis e hostels em SP. PMOC obrigatório, manutenção silenciosa e atendimento 24h."
+              dor="Ar condicionado com defeito no quarto gera reclamação, avaliação negativa e perda de hóspede."
+              servicos={['Instalação de sistemas para quartos e áreas comuns', 'Contrato PMOC e manutenção preventiva', 'Atendimento emergencial 24 horas', 'Manutenção silenciosa sem incomodar hóspedes']}
+              faq={[['Hotéis são obrigados a ter PMOC?', 'Sim. Hotéis com sistema de ar condicionado central ou capacidade acima de 60.000 BTUs são obrigados pela Lei 13.589/18. A Vigilância Sanitária fiscaliza e as multas podem chegar a R$ 1,5 milhão.'], ['Como funciona a manutenção sem incomodar hóspedes?', 'Planejamos as visitas de manutenção para o período de menor ocupação — geralmente entre 10h e 14h — e priorizamos quartos vagos. Para emergências, temos protocolo de atendimento silencioso.'], ['Vocês atendem apart-hotéis e hostels também?', 'Sim. Atendemos qualquer tipo de hospedagem em SP e ABC, do hostel ao hotel boutique. O contrato é adaptado ao tamanho e necessidade do estabelecimento.']]}
+              vizinhos="Jardins · Itaim Bibi · Vila Mariana · Centro · Higienópolis"
+              navigate={navigate}
+            />;
+            if (p === '/ar-condicionado-pousada-sp') return <SegmentoView
+              slug="pousada"
+              title="Pousada"
+              tag="HOTELARIA"
+              headline="Ar Condicionado para Pousadas em SP e ABC"
+              desc="Instalação e manutenção de ar condicionado para pousadas em São Paulo e ABC. Conforto para hóspedes e manutenção sem burocracia."
+              dor="Pousada sem ar condicionado perde reserva. Equipamento parado no fim de semana é o pior momento para dar problema."
+              servicos={['Instalação em quartos e áreas comuns', 'Manutenção preventiva sob contrato', 'Atendimento rápido para emergências', 'Todas as marcas e modelos']}
+              faq={[['Pousadas precisam de PMOC?', 'Pousadas com capacidade instalada acima de 60.000 BTUs são obrigadas pela Lei 13.589/18. Mesmo abaixo desse limite, a manutenção documentada é exigida pela Vigilância Sanitária em muitos municípios.'], ['Qual o melhor equipamento para quarto de pousada?', 'Split inverter hi-wall é a opção mais popular — bom custo-benefício, silencioso e eficiente. Para quartos premium, o cassete de 4 vias oferece distribuição de ar mais uniforme e discreta.'], ['Vocês atendem pousadas no ABC Paulista?', 'Sim. Atendemos pousadas em toda a região do ABC: Santo André, São Bernardo, São Caetano, Diadema e Mauá.']]}
+              vizinhos="Santo André · São Bernardo · São Caetano · Vila Mariana · Moema"
+              navigate={navigate}
+            />;
+            if (p === '/ar-condicionado-academia-sp') return <SegmentoView
+              slug="academia"
+              title="Academia"
+              tag="FITNESS"
+              headline="Ar Condicionado para Academias em São Paulo"
+              desc="Sistemas de climatização para academias, estúdios de pilates e crossfit em SP. Alta capacidade, PMOC e manutenção que não para seu negócio."
+              dor="Academia quente perde aluno. Sistema subdimensionado não refresca — gera reclamação e cancelamento."
+              servicos={['Projeto de dimensionamento correto para alta ocupação', 'Instalação de sistemas de alta capacidade', 'PMOC e manutenção preventiva', 'Higienização profissional dos filtros']}
+              faq={[['Qual capacidade de BTUs para academia?', 'Para academias, o cálculo leva em conta a quantidade de pessoas em exercício — que gera muito mais calor que pessoas em repouso. Uma sala de musculação de 100m² com 30 alunos pode precisar de 4x mais BTUs do que um escritório do mesmo tamanho. Fazemos o cálculo de carga térmica gratuitamente.'], ['Com que frequência fazer manutenção em academia?', 'Recomendamos manutenção a cada 2 meses para academias — o alto fluxo de pessoas e a umidade do suor contaminam os filtros rapidamente.'], ['Academias são obrigadas a ter PMOC?', 'Academias com capacidade instalada acima de 60.000 BTUs são obrigadas pela Lei 13.589/18. A maioria das academias de médio porte se enquadra nessa faixa.']]}
+              vizinhos="Vila Mariana · Moema · Brooklin · Pinheiros · Itaim Bibi"
+              navigate={navigate}
+            />;
+            if (p === '/ar-condicionado-escola-sp') return <SegmentoView
+              slug="escola"
+              title="Escola"
+              tag="EDUCAÇÃO"
+              headline="Ar Condicionado para Escolas em São Paulo"
+              desc="Instalação e manutenção de ar condicionado para escolas, creches e universidades em SP. PMOC obrigatório e qualidade do ar para alunos e professores."
+              dor="Sala de aula quente reduz concentração e rendimento. PMOC irregular pode resultar em interdição."
+              servicos={['Instalação em salas de aula e áreas comuns', 'Contrato PMOC para instituições de ensino', 'Manutenção preventiva nas férias escolares', 'Higienização com produtos seguros para crianças']}
+              faq={[['Escolas são obrigadas a ter PMOC?', 'Sim. Instituições de ensino com sistema de ar condicionado acima de 60.000 BTUs são obrigadas pela Lei 13.589/18. A Vigilância Sanitária e o MEC fiscalizam o cumprimento — o descumprimento pode resultar em interdição.'], ['Qual o melhor horário para manutenção em escola?', 'Realizamos a manutenção preferencialmente durante as férias escolares (janeiro e julho) para não impactar as aulas. Para emergências, atendemos em qualquer horário.'], ['O ar condicionado pode piorar alergias das crianças?', 'Um ar condicionado sem manutenção regular acumula fungos, ácaros e bactérias que causam rinite e asma. Com higienização e filtros limpos, o ar condicionado melhora a qualidade do ar — especialmente em SP, com alto nível de poluição.']]}
+              vizinhos="Vila Mariana · Moema · Brooklin · Santo André · São Bernardo"
+              navigate={navigate}
+            />;
             if (p === '/ar-condicionado-sao-paulo') return <RegionView region="sao-paulo" navigate={navigate} />;
             if (p === '/ar-condicionado-santo-andre') return <RegionView region="santo-andre" navigate={navigate} />;
             if (p === '/ar-condicionado-sao-bernardo-do-campo') return <RegionView region="sao-bernardo" navigate={navigate} />;
@@ -1813,6 +1917,165 @@ function RegionView({ region, navigate }: { region: string, navigate: (p: PageId
 
 
 // --- Bairro View ---
+
+// --- Segmento View ---
+function SegmentoView({ slug, title, tag, headline, desc, dor, servicos, faq, vizinhos, navigate }: {
+  slug: string
+  title: string
+  tag: string
+  headline: string
+  desc: string
+  dor: string
+  servicos: string[]
+  faq: [string, string][]
+  vizinhos: string
+  navigate: (p: PageId) => void
+}) {
+  return (
+    <div className="pt-10 pb-20">
+      {/* Hero */}
+      <section className="bg-primary py-16">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center gap-2 text-blue-100/50 text-sm mb-4">
+            <button onClick={() => navigate('home')} className="hover:text-white transition-colors">Início</button>
+            <span>/</span>
+            <button onClick={() => navigate('split-multisplit')} className="hover:text-white transition-colors">Serviços</button>
+            <span>/</span>
+            <span className="text-white font-medium">{title}</span>
+          </div>
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-3 py-1 rounded-full text-white text-xs font-bold uppercase tracking-widest mb-6">
+              {tag}
+            </div>
+            <h1 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6">{headline}</h1>
+            <p className="text-lg text-blue-100/80 mb-8 max-w-2xl">{desc}</p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="https://wa.me/5511963462516"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-4 px-8 rounded-xl hover:-translate-y-0.5 transition-all shadow-lg"
+              >
+                <MessageSquare size={20} />
+                Solicitar Orçamento Grátis
+              </a>
+              <a
+                href="tel:+5511963462516"
+                className="inline-flex items-center justify-center gap-2 border-2 border-white/20 text-white font-bold py-4 px-8 rounded-xl hover:bg-white/10 transition-all"
+              >
+                <Phone size={20} />
+                (11) 96346-2516
+              </a>
+            </div>
+            <p className="text-blue-100/50 text-sm mt-4">⚡ Resposta em até 2 horas · Visita técnica gratuita · Atendemos SP e ABC</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Problema */}
+      <section className="py-12 bg-amber-50 border-y border-amber-100">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="flex items-start gap-4">
+            <div className="w-10 h-10 bg-amber-400 rounded-xl flex items-center justify-center shrink-0">
+              <AlertTriangle size={20} className="text-white" />
+            </div>
+            <div>
+              <h2 className="font-bold text-amber-900 mb-1">O risco de não regularizar</h2>
+              <p className="text-amber-800 leading-relaxed">{dor}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Serviços */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-primary mb-8">
+            O que a New Clima oferece para {title}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {servicos.map((s, i) => (
+              <div key={i} className="flex items-start gap-3 p-5 bg-slate-50 rounded-2xl border border-slate-100">
+                <CheckCircle2 size={20} className="text-success shrink-0 mt-0.5" />
+                <span className="text-slate-700 font-medium text-sm">{s}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Diferenciais */}
+      <section className="py-16 bg-slate-50">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <h2 className="text-2xl font-extrabold text-primary mb-8 text-center">Por que escolher a New Clima?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { icon: <ShieldCheck size={24} />, title: 'Garantia por Escrito', desc: 'Todo serviço com garantia documentada. Sem letra miúda.' },
+              { icon: <Clock size={24} />, title: 'Atendimento Rápido', desc: 'Respondemos em até 2 horas e agendamos conforme sua necessidade.' },
+              { icon: <CheckCircle2 size={24} />, title: 'PMOC Regularizado', desc: 'Documentação completa conforme a Lei 13.589/18. Sem risco de multa.' },
+            ].map((item, i) => (
+              <div key={i} className="bg-white p-6 rounded-2xl border border-slate-100 text-center">
+                <div className="w-12 h-12 bg-ice rounded-xl flex items-center justify-center text-primary-light mx-auto mb-4">{item.icon}</div>
+                <h3 className="font-bold text-primary mb-2">{item.title}</h3>
+                <p className="text-slate-500 text-sm">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-2xl font-extrabold text-primary mb-8">Perguntas Frequentes</h2>
+          <div className="space-y-4">
+            {faq.map((item, i) => {
+              const [open, setOpen] = React.useState(false)
+              return (
+                <div key={i} className="border border-slate-200 rounded-2xl overflow-hidden">
+                  <button onClick={() => setOpen(!open)} className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-slate-50 transition-colors">
+                    <span className="font-bold text-primary">{item[0]}</span>
+                    <ChevronDown size={18} className={`text-slate-400 transition-transform shrink-0 ml-4 ${open ? 'rotate-180' : ''}`} />
+                  </button>
+                  <div className={`overflow-hidden transition-all duration-300 ${open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+                    <div className="px-6 pb-5 pt-4 text-slate-500 text-sm leading-relaxed border-t border-slate-50">{item[1]}</div>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Regiões */}
+      <section className="py-12 bg-slate-50">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-xl font-bold text-primary mb-4">Regiões atendidas em SP e ABC</h2>
+          <p className="text-slate-500 text-sm mb-2">{vizinhos}</p>
+          <button onClick={() => navigate('sao-paulo')} className="text-primary-light font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all mt-2">
+            Ver todas as regiões <ArrowRight size={13} />
+          </button>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-primary">
+        <div className="container mx-auto px-4 text-center max-w-3xl">
+          <h2 className="text-3xl font-extrabold text-white mb-4">Solicite um orçamento para {title}</h2>
+          <p className="text-blue-100/70 mb-8">Visita técnica gratuita · Orçamento no mesmo dia · Garantia por escrito</p>
+          <a
+            href="https://wa.me/5511963462516"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-success text-white font-bold py-4 px-10 rounded-xl shadow-xl hover:-translate-y-0.5 transition-all"
+          >
+            <MessageSquare size={20} />
+            Falar no WhatsApp Agora
+          </a>
+        </div>
+      </section>
+    </div>
+  )
+}
+
 function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
   bairro: string
   slug: string
@@ -2170,6 +2433,19 @@ function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
         <div>
           <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Segmentos Atendidos</h2>
           <LinkList links={segmentLinks} />
+        </div>
+        <div>
+          <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Páginas por Segmento</h2>
+          <LinkList links={[
+            { label: 'Ar Condicionado para Clínicas Médicas', page: 'segmento-clinica' as PageId },
+            { label: 'Ar Condicionado para Escritórios', page: 'segmento-escritorio' as PageId },
+            { label: 'Ar Condicionado para Condomínios', page: 'segmento-condominio' as PageId },
+            { label: 'Ar Condicionado para Restaurantes', page: 'segmento-restaurante' as PageId },
+            { label: 'Ar Condicionado para Hotéis', page: 'segmento-hotel' as PageId },
+            { label: 'Ar Condicionado para Pousadas', page: 'segmento-pousada' as PageId },
+            { label: 'Ar Condicionado para Academias', page: 'segmento-academia' as PageId },
+            { label: 'Ar Condicionado para Escolas', page: 'segmento-escola' as PageId },
+          ]} />
         </div>
         <div>
           <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Regiões Atendidas</h2>
