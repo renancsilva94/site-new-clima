@@ -235,7 +235,7 @@ export default function App() {
                 </div>
               </div>
               <button onClick={() => navigate('blog')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light">Blog</button>
-              <button onClick={() => navigate('sobre')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light">Sobre</button>
+              <button onClick={() => navigate('sobre')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light">Quem Somos</button>
               <button onClick={() => navigate('contato')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light">Contato</button>
               <WhatsAppButton className="ml-4 h-11 text-sm px-5" text="WhatsApp (11) 96346-2516" />
             </nav>
@@ -269,7 +269,7 @@ export default function App() {
                   </div>
                   <hr className="border-slate-100" />
                   <button onClick={() => navigate('blog')} className="text-left font-semibold py-2">Blog</button>
-                  <button onClick={() => navigate('sobre')} className="text-left font-semibold py-2">Sobre Nós</button>
+                  <button onClick={() => navigate('sobre')} className="text-left font-semibold py-2">Quem Somos</button>
                   <button onClick={() => navigate('contato')} className="text-left font-semibold py-2">Contato</button>
                   <WhatsAppButton className="w-full mt-2" text="WhatsApp (11) 96346-2516" />
                 </div>
@@ -552,57 +552,138 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 bg-[#020617]">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-10">
-            <p className="text-blue-400 text-sm font-bold uppercase tracking-[0.3em] mb-4">Especialistas em Climatização</p>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-6">Serviços de Ar Condicionado em São Paulo e ABC com Garantia Técnica</h2>
-            <p className="text-blue-100/60">Soluções técnicas completas para garantir o conforto térmico e a qualidade do ar em seu imóvel residencial ou comercial.</p>
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <span className="inline-block bg-ice text-primary-light text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-4">Nossos Serviços</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4">Do split do quarto ao sistema VRF de um galpão</h2>
+            <p className="text-slate-500 text-lg">A New Clima cobre todo o ciclo: instalação, manutenção, higienização e PMOC.</p>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <ServiceCard 
-              icon={<Wind />}
-              category="RESIDENCIAL"
-              title="Instalação de Ar Condicionado Split"
-              desc="Instalação técnica em SP com infraestrutura embutida, acabamento impecável e garantia total do fabricante."
-              onClick={() => navigate('split-multisplit')}
-            />
-            <ServiceCard 
-              icon={<Wind />}
-              category="COMERCIAL"
-              title="Sistemas Cassete e Piso-Teto"
-              desc="Soluções de climatização para lojas e escritórios em São Paulo. Sistemas Cassete, Piso-Teto e Dutados com eficiência."
-              onClick={() => navigate('sistemas-comerciais')}
-            />
-            <ServiceCard 
-              icon={<Wind />}
-              category="ALTA TECNOLOGIA"
-              title="Sistemas VRF e Mini VRF"
-              desc="Soluções avançadas para grandes residências e edifícios corporativos. Máxima eficiência energética e controle total."
-              onClick={() => navigate('vrf-mini-vrf')}
-            />
-            <ServiceCard 
-              icon={<Settings />}
-              category="MANUTENÇÃO"
-              title="Manutenção Preventiva e PMOC"
-              desc="Gestão de PMOC para empresas no ABC e SP. Visitas técnicas regulares para garantir a saúde e o ar puro."
-              onClick={() => navigate('manutencao-preventiva')}
-            />
-            <ServiceCard 
-              icon={<AlertTriangle />}
-              category="CORRETIVA"
-              title="Conserto de Ar Condicionado"
-              desc="Conserto de ar condicionado rápido em São Paulo. Diagnóstico preciso, peças originais e solução definitiva."
-              onClick={() => navigate('manutencao-corretiva')}
-            />
-            <ServiceCard 
-              icon={<Droplets />}
-              category="HIGIENE"
-              title="Limpeza de Ar Condicionado SP"
-              desc="Higienização profunda bactericida. Eliminação de fungos e ácaros para um ambiente saudável no ABC e SP."
-              onClick={() => navigate('limpeza')}
-            />
+            {[
+              {
+                tag: "INSTALAÇÃO",
+                title: "Instalação de Ar Condicionado",
+                desc: "Split, multi-split, VRF e cassete. Projeto dimensionado, instalação limpa e teste de funcionamento antes de entregar.",
+                img: "https://images.unsplash.com/photo-1621905252507-b353174ad739?w=600&q=80&auto=format&fit=crop",
+                page: 'split-multisplit' as PageId,
+              },
+              {
+                tag: "MANUTENÇÃO",
+                title: "Manutenção Preventiva e Corretiva",
+                desc: "Planos mensais, trimestrais ou sob demanda. Atuamos antes do defeito aparecer — evita parada e conta de luz inflada.",
+                img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&auto=format&fit=crop",
+                page: 'manutencao-preventiva' as PageId,
+              },
+              {
+                tag: "HIGIENIZAÇÃO",
+                title: "Higienização e Limpeza Técnica",
+                desc: "Remove fungos, bactérias e poeira do evaporador. Ar mais limpo para respirar e equipamento com vida útil maior.",
+                img: "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&q=80&auto=format&fit=crop",
+                page: 'limpeza' as PageId,
+              },
+              {
+                tag: "PMOC",
+                title: "Contrato PMOC",
+                desc: "Plano de Manutenção, Operação e Controle conforme a Lei 13.589/18. Obrigatório para prédios, shoppings e hospitais.",
+                img: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80&auto=format&fit=crop",
+                page: 'manutencao-preventiva' as PageId,
+              },
+              {
+                tag: "SISTEMAS VRF",
+                title: "Sistemas VRF e Mini VRF",
+                desc: "Projetos completos para grandes residências e edifícios corporativos. Máxima eficiência energética e controle total.",
+                img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&auto=format&fit=crop",
+                page: 'vrf-mini-vrf' as PageId,
+              },
+              {
+                tag: "COMERCIAL",
+                title: "Ar Condicionado Comercial",
+                desc: "Cassete, Piso-Teto e Dutado para lojas, escritórios e restaurantes em SP e ABC. Projeto técnico completo.",
+                img: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80&auto=format&fit=crop",
+                page: 'sistemas-comerciais' as PageId,
+              },
+            ].map((s, i) => (
+              <div
+                key={i}
+                onClick={() => navigate(s.page)}
+                className="group cursor-pointer bg-white border border-slate-100 rounded-3xl overflow-hidden hover:shadow-xl transition-all duration-300"
+              >
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={s.img}
+                    alt={s.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <span className="absolute top-4 left-4 bg-white/90 text-primary text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full">
+                    {s.tag}
+                  </span>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-lg font-bold text-primary mb-2 group-hover:text-primary-light transition-colors">{s.title}</h3>
+                  <p className="text-slate-500 text-sm leading-relaxed mb-4">{s.desc}</p>
+                  <div className="flex items-center gap-2 text-primary-light font-bold text-sm">
+                    Saiba mais <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Segments Section */}
+      <section className="py-16 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="mb-12">
+            <span className="text-primary-light text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Segmentos</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-primary">Para quem atendemos</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                icon: <Wind size={28} />,
+                title: "Residencial",
+                desc: "Apartamentos, casas e condomínios. Instalação discreta, manutenção programada e higienização para quem quer ar limpo em casa.",
+                page: 'split-multisplit' as PageId,
+              },
+              {
+                icon: <Settings size={28} />,
+                title: "Comercial",
+                desc: "Escritórios, lojas, clínicas e restaurantes. Equipamento que resfria com consistência, sem barulho e sem parada no meio do expediente.",
+                page: 'sistemas-comerciais' as PageId,
+              },
+              {
+                icon: <Zap size={28} />,
+                title: "Industrial",
+                desc: "Galpões, fábricas e data centers. Sistemas dimensionados para rodar 24/7 com controle preciso de temperatura e umidade.",
+                page: 'vrf-mini-vrf' as PageId,
+              },
+              {
+                icon: <ShieldCheck size={28} />,
+                title: "PMOC Empresarial",
+                desc: "Prédios comerciais, hospitais, shoppings e escolas. Plano de manutenção completo com responsável técnico e documentação legal.",
+                page: 'manutencao-preventiva' as PageId,
+              },
+            ].map((seg, i) => (
+              <div
+                key={i}
+                onClick={() => navigate(seg.page)}
+                className="bg-white p-8 rounded-3xl border border-slate-200 hover:border-primary-light hover:shadow-lg transition-all cursor-pointer group"
+              >
+                <div className="w-12 h-12 bg-ice rounded-xl flex items-center justify-center text-primary-light mb-6 group-hover:scale-110 transition-transform">
+                  {seg.icon}
+                </div>
+                <h3 className="text-xl font-bold text-primary mb-3">{seg.title}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed mb-5">{seg.desc}</p>
+                <div className="flex items-center gap-2 text-primary-light font-bold text-sm">
+                  Ver serviços <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
