@@ -529,7 +529,7 @@ const ServiceLayout = ({ title, tag, icon, imageUrl, imageAlt, children }: { tit
             <div className="w-12 h-12 bg-primary text-white rounded-xl flex items-center justify-center shrink-0">
               {React.cloneElement(icon as React.ReactElement, { size: 24 })}
             </div>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-primary leading-tight">{title}</h2>
+            <h1 className="text-3xl md:text-4xl font-extrabold text-primary leading-tight">{title}</h1>
           </div>
         </div>
         {imageUrl && (
