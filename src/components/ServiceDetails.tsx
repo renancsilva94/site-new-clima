@@ -48,6 +48,56 @@ const WhatsAppButton = ({ text = "Solicitar Orçamento" }: { text?: string }) =>
   </a>
 );
 
+
+// --- Regiões Atendidas (usado nas páginas de serviço) ---
+export const RegioesSectionService = ({ navigate }: { navigate?: (p: any) => void }) => {
+  const zonas = [
+    { label: 'Zona Sul', bairros: ['Vila Mariana', 'Moema', 'Campo Belo', 'Brooklin', 'Itaim Bibi', 'Morumbi', 'Santo Amaro', 'Saúde', 'Ipiranga', 'Jabaquara'] },
+    { label: 'Zona Oeste', bairros: ['Pinheiros', 'Vila Madalena', 'Perdizes', 'Lapa', 'Pompéia', 'Higienópolis', 'Jardins', 'Cerqueira César'] },
+    { label: 'Zona Norte', bairros: ['Santana', 'Tucuruvi', 'Vila Guilherme', 'Casa Verde', 'Mandaqui'] },
+    { label: 'Zona Leste', bairros: ['Tatuapé', 'Anália Franco', 'Mooca', 'Vila Prudente', 'Penha', 'Água Rasa'] },
+    { label: 'ABC Paulista', bairros: ['Santo André', 'São Bernardo do Campo', 'São Caetano do Sul', 'Diadema', 'Mauá'] },
+  ]
+
+  return (
+    <section className="py-16 bg-slate-50">
+      <div className="container mx-auto px-4">
+        <div className="mb-8">
+          <span className="inline-block bg-white text-primary-light text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-4 border border-slate-200">
+            Onde Atendemos
+          </span>
+          <h2 className="text-2xl md:text-3xl font-extrabold text-primary mb-2">
+            Atendemos São Paulo e todo o ABC Paulista
+          </h2>
+          <p className="text-slate-500">Visita técnica gratuita para qualquer bairro listado abaixo.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+          {zonas.map((zona, i) => (
+            <div key={i}>
+              <h3 className="text-xs font-bold text-primary-light uppercase tracking-widest mb-3">{zona.label}</h3>
+              <div className="flex flex-wrap gap-2">
+                {zona.bairros.map((b, j) => (
+                  <span key={j} className="flex items-center gap-1 text-sm text-slate-600 bg-white border border-slate-200 px-3 py-1 rounded-full">
+                    <MapPin size={10} className="text-primary-light" /> {b}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        <p className="text-slate-400 text-sm">
+          Não encontrou seu bairro?{' '}
+          <a href="https://wa.me/5511963462516" rel="noopener noreferrer" className="text-primary-light font-bold hover:underline">
+            Fale no WhatsApp
+          </a>{' '}
+          — atendemos toda a Grande São Paulo.
+        </p>
+      </div>
+    </section>
+  )
+}
+
+
 export const SistemasInstalamosSection = () => (
   <section className="bg-[#0f172a] py-16">
     <div className="container mx-auto px-4 max-w-6xl">
@@ -574,6 +624,7 @@ export const SplitMultiSplit = () => (
     <SistemasInstalamosSection />
     <ProcessoSection />
     <FaqSection />
+    <RegioesSectionService />
     <ServiceCTA title={<>Pronto para climatizar seu ambiente com <span className="text-blue-500 italic">qualidade real</span>?</>} subtitle="Solicite uma consulta técnica e receba um projeto completo de instalação com obra limpa e garantia real." />
   </div>
 );
@@ -594,6 +645,7 @@ export const SistemasComerciais = () => (
     <SistemasInstalamosSection />
     <ProcessoSection />
     <FaqSection />
+    <RegioesSectionService />
     <ServiceCTA title={<>Pronto para climatizar seu comércio com <span className="text-blue-500 italic">qualidade real</span>?</>} subtitle="Especialistas em Cassete, Piso-Teto e Sistemas Dutados para o seu negócio." />
   </div>
 );
@@ -614,6 +666,7 @@ export const VRFMiniVRF = () => (
     <SistemasVRFSection />
     <ProcessoSection />
     <FaqVRFSection />
+    <RegioesSectionService />
     <ServiceCTA title={<>Pronto para o ápice da climatização com <span className="text-blue-500 italic">tecnologia VRF</span>?</>} subtitle="Projetos personalizados para grandes residências e edifícios corporativos." />
   </div>
 );
@@ -634,6 +687,7 @@ export const ManutencaoPreventiva = () => (
     <ServicosPreventivosSection />
     <ProcessoManutencaoSection />
     <FaqPreventivaSection />
+    <RegioesSectionService />
     <ServiceCTA title={<>Pronto para garantir a <span className="text-blue-500 italic">vida útil</span> do seu ar condicionado?</>} subtitle="Evite gastos inesperados e garanta a saúde do seu ambiente com nosso plano de manutenção." />
   </div>
 );
@@ -654,6 +708,7 @@ export const ManutencaoCorretiva = () => (
     <ServicosCorretivosSection />
     <ProcessoManutencaoSection />
     <FaqCorretivaSection />
+    <RegioesSectionService />
     <ServiceCTA title={<>Pronto para <span className="text-blue-500 italic">resolver o problema</span> do seu ar condicionado?</>} subtitle="Diagnóstico preciso e reparo rápido com peças originais e garantia de 90 dias." />
   </div>
 );
@@ -673,6 +728,7 @@ export const LimpezaHigienizacao = () => (
     <LimpezaDetalhesSection />
     <ProcessoHigienizacaoSection />
     <FaqLimpezaSection />
+    <RegioesSectionService />
     <ServiceCTA title={<>Pronto para respirar um <span className="text-blue-500 italic">ar mais puro</span> e saudável?</>} subtitle="Higienização profunda com bactericida para eliminar fungos, ácaros e odores." />
   </div>
 );
