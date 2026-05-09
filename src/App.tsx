@@ -72,7 +72,7 @@ import {
 } from './components/RegionContent';
 
 // --- Types ---
-type PageId = 'home' | 'mapa-site' | 'split-multisplit' | 'bairro-moema' | 'bairro-vila-mariana' | 'bairro-pinheiros' | 'bairro-itaim-bibi' | 'bairro-jardins' | 'bairro-tatuape' | 'bairro-santana' | 'bairro-brooklin' | 'bairro-perdizes' | 'bairro-morumbi' | 'bairro-mooca' | 'bairro-analia-franco' | 'bairro-vila-madalena' | 'bairro-campo-belo' | 'bairro-saude' | 'bairro-higienopolis' | 'bairro-lapa' | 'bairro-santo-amaro' | 'bairro-tucuruvi' | 'bairro-ipiranga' | 'bairro-vila-prudente' | 'bairro-jabaquara' | 'bairro-campo-grande' | 'bairro-penha' | 'bairro-cursino' | 'bairro-agua-rasa' | 'bairro-bela-vista' | 'bairro-butanta' | 'bairro-vila-olimpia' | 'bairro-pompeia' | 'sistemas-comerciais' | 'vrf-mini-vrf' | 'manutencao-preventiva' | 'manutencao-corretiva' | 'limpeza' | 'blog' | 'sobre' | 'contato' | 'sao-paulo' | 'santo-andre' | 'sao-bernardo' | 'sao-caetano' | 'diadema' | 'maua' | 'blog-inverter' | 'blog-apartamento' | 'blog-btus' | 'blog-pmoc' | 'blog-round-cassette' | 'blog-obra-limpa' | 'blog-quarto' | 'blog-convencional-inverter' | 'blog-empresas' | 'blog-pmoc-obrigatorio' | 'blog-multa-pmoc' | 'blog-pmoc-condominio' | 'blog-custo-pmoc' | 'blog-custo-instalacao' | 'blog-qual-ac' | 'blog-split-multi-split' | 'blog-manutencao-consequencias';
+type PageId = 'home' | 'mapa-site' | 'split-multisplit' | 'bairro-moema' | 'bairro-vila-mariana' | 'bairro-pinheiros' | 'bairro-itaim-bibi' | 'bairro-jardins' | 'bairro-tatuape' | 'bairro-santana' | 'bairro-brooklin' | 'bairro-perdizes' | 'bairro-morumbi' | 'bairro-mooca' | 'bairro-analia-franco' | 'bairro-vila-madalena' | 'bairro-campo-belo' | 'bairro-saude' | 'bairro-higienopolis' | 'bairro-lapa' | 'bairro-santo-amaro' | 'bairro-tucuruvi' | 'bairro-ipiranga' | 'bairro-vila-prudente' | 'bairro-jabaquara' | 'bairro-campo-grande' | 'bairro-penha' | 'bairro-cursino' | 'bairro-agua-rasa' | 'bairro-bela-vista' | 'bairro-butanta' | 'bairro-vila-olimpia' | 'bairro-pompeia' | 'bairro-paraiso' | 'bairro-aclimacao' | 'bairro-mirandopolis' | 'bairro-planalto-paulista' | 'bairro-vila-clementino' | 'bairro-chacara-klabin' | 'bairro-cambuci' | 'bairro-liberdade' | 'sistemas-comerciais' | 'vrf-mini-vrf' | 'manutencao-preventiva' | 'manutencao-corretiva' | 'limpeza' | 'blog' | 'sobre' | 'contato' | 'sao-paulo' | 'santo-andre' | 'sao-bernardo' | 'sao-caetano' | 'diadema' | 'maua' | 'blog-inverter' | 'blog-apartamento' | 'blog-btus' | 'blog-pmoc' | 'blog-round-cassette' | 'blog-obra-limpa' | 'blog-quarto' | 'blog-convencional-inverter' | 'blog-empresas' | 'blog-pmoc-obrigatorio' | 'blog-multa-pmoc' | 'blog-pmoc-condominio' | 'blog-custo-pmoc' | 'blog-custo-instalacao' | 'blog-qual-ac' | 'blog-split-multi-split' | 'blog-manutencao-consequencias';
 
 // --- Components ---
 
@@ -170,6 +170,14 @@ export default function App() {
       'bairro-butanta': '/instalacao-ar-condicionado-butanta',
       'bairro-vila-olimpia': '/instalacao-ar-condicionado-vila-olimpia',
       'bairro-pompeia': '/instalacao-ar-condicionado-pompeia',
+      'bairro-paraiso': '/instalacao-ar-condicionado-paraiso',
+      'bairro-aclimacao': '/instalacao-ar-condicionado-aclimacao',
+      'bairro-mirandopolis': '/instalacao-ar-condicionado-mirandopolis',
+      'bairro-planalto-paulista': '/instalacao-ar-condicionado-planalto-paulista',
+      'bairro-vila-clementino': '/instalacao-ar-condicionado-vila-clementino',
+      'bairro-chacara-klabin': '/instalacao-ar-condicionado-chacara-klabin',
+      'bairro-cambuci': '/instalacao-ar-condicionado-cambuci',
+      'bairro-liberdade': '/instalacao-ar-condicionado-liberdade',
       'sao-paulo': '/ar-condicionado-sao-paulo',
       'santo-andre': '/ar-condicionado-santo-andre',
       'sao-bernardo': '/ar-condicionado-sao-bernardo-do-campo',
@@ -368,6 +376,14 @@ export default function App() {
             if (p === '/instalacao-ar-condicionado-butanta') return <BairroView bairro="Butantã" slug="butanta" zona="Zona Oeste" vizinhos={['Vila Madalena', 'Pinheiros', 'Rio Pequeno', 'Vila Sônia']} navigate={navigate} />;
             if (p === '/instalacao-ar-condicionado-vila-olimpia') return <BairroView bairro="Vila Olímpia" slug="vila-olimpia" zona="Zona Sul" vizinhos={['Itaim Bibi', 'Brooklin', 'Moema', 'Campo Belo']} navigate={navigate} />;
             if (p === '/instalacao-ar-condicionado-pompeia') return <BairroView bairro="Pompéia" slug="pompeia" zona="Zona Oeste" vizinhos={['Perdizes', 'Lapa', 'Água Branca', 'Barra Funda']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-paraiso') return <BairroView bairro="Paraíso" slug="paraiso" zona="Zona Sul" vizinhos={['Vila Mariana', 'Bela Vista', 'Moema', 'Aclimação']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-aclimacao') return <BairroView bairro="Aclimação" slug="aclimacao" zona="Zona Sul" vizinhos={['Paraíso', 'Vila Mariana', 'Cambuci', 'Liberdade']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-mirandopolis') return <BairroView bairro="Mirandópolis" slug="mirandopolis" zona="Zona Sul" vizinhos={['Vila Mariana', 'Moema', 'Saúde', 'Cursino']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-planalto-paulista') return <BairroView bairro="Planalto Paulista" slug="planalto-paulista" zona="Zona Sul" vizinhos={['Vila Mariana', 'Saúde', 'Moema', 'Cursino']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-vila-clementino') return <BairroView bairro="Vila Clementino" slug="vila-clementino" zona="Zona Sul" vizinhos={['Vila Mariana', 'Saúde', 'Jabaquara', 'Moema']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-chacara-klabin') return <BairroView bairro="Chácara Klabin" slug="chacara-klabin" zona="Zona Sul" vizinhos={['Vila Mariana', 'Paraíso', 'Aclimação', 'Saúde']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-cambuci') return <BairroView bairro="Cambuci" slug="cambuci" zona="Região Central" vizinhos={['Liberdade', 'Aclimação', 'Ipiranga', 'Vila Mariana']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-liberdade') return <BairroView bairro="Liberdade" slug="liberdade" zona="Região Central" vizinhos={['Bela Vista', 'Cambuci', 'Aclimação', 'Paraíso']} navigate={navigate} />;
             if (p === '/ar-condicionado-sao-paulo') return <RegionView region="sao-paulo" navigate={navigate} />;
             if (p === '/ar-condicionado-santo-andre') return <RegionView region="santo-andre" navigate={navigate} />;
             if (p === '/ar-condicionado-sao-bernardo-do-campo') return <RegionView region="sao-bernardo" navigate={navigate} />;
@@ -2029,6 +2045,14 @@ function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
     { label: 'Instalação de Ar Condicionado em Butantã', page: 'bairro-butanta' as PageId },
     { label: 'Instalação de Ar Condicionado em Vila Olímpia', page: 'bairro-vila-olimpia' as PageId },
     { label: 'Instalação de Ar Condicionado em Pompéia', page: 'bairro-pompeia' as PageId },
+    { label: 'Instalação de Ar Condicionado em Paraíso', page: 'bairro-paraiso' as PageId },
+    { label: 'Instalação de Ar Condicionado em Aclimação', page: 'bairro-aclimacao' as PageId },
+    { label: 'Instalação de Ar Condicionado em Mirandópolis', page: 'bairro-mirandopolis' as PageId },
+    { label: 'Instalação de Ar Condicionado em Planalto Paulista', page: 'bairro-planalto-paulista' as PageId },
+    { label: 'Instalação de Ar Condicionado em Vila Clementino', page: 'bairro-vila-clementino' as PageId },
+    { label: 'Instalação de Ar Condicionado em Chácara Klabin', page: 'bairro-chacara-klabin' as PageId },
+    { label: 'Instalação de Ar Condicionado em Cambuci', page: 'bairro-cambuci' as PageId },
+    { label: 'Instalação de Ar Condicionado em Liberdade', page: 'bairro-liberdade' as PageId },
   ]
 
   const regionLinks = [
