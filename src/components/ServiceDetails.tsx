@@ -35,7 +35,7 @@ import {
   Sparkles,
   Phone
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+
 
 const WhatsAppButton = ({ text = "Solicitar Orçamento" }: { text?: string }) => (
   <a 
@@ -143,13 +143,11 @@ export const FaqSection = () => {
                   {openFaq === i ? <Minus size={18} /> : <Plus size={18} />}
                 </div>
               </button>
-              <AnimatePresence>
-                {openFaq === i && (
-                  <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.3, ease: "easeInOut" }}>
+              {openFaq === i && (<div style={{overflow:"hidden"}}>
                     <div className="px-8 pb-8 text-slate-500 leading-relaxed border-t border-slate-50 pt-6">{item.answer}</div>
-                  </motion.div>
+                  </div>
                 )}
-              </AnimatePresence>
+              
             </div>
           ))}
         </div>
@@ -214,13 +212,11 @@ const FaqVRFSection = () => {
                   {openFaq === i ? <Minus size={18} /> : <Plus size={18} />}
                 </div>
               </button>
-              <AnimatePresence>
-                {openFaq === i && (
-                  <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.3, ease: "easeInOut" }}>
+              {openFaq === i && (<div style={{overflow:"hidden"}}>
                     <div className="px-8 pb-8 text-slate-500 leading-relaxed border-t border-slate-50 pt-6">{item.answer}</div>
-                  </motion.div>
+                  </div>
                 )}
-              </AnimatePresence>
+              
             </div>
           ))}
         </div>
@@ -320,13 +316,11 @@ const FaqPreventivaSection = () => {
                   {openFaq === i ? <Minus size={18} /> : <Plus size={18} />}
                 </div>
               </button>
-              <AnimatePresence>
-                {openFaq === i && (
-                  <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.3, ease: "easeInOut" }}>
+              {openFaq === i && (<div style={{overflow:"hidden"}}>
                     <div className="px-8 pb-8 text-slate-500 leading-relaxed border-t border-slate-50 pt-6">{item.answer}</div>
-                  </motion.div>
+                  </div>
                 )}
-              </AnimatePresence>
+              
             </div>
           ))}
         </div>
@@ -359,13 +353,11 @@ const FaqCorretivaSection = () => {
                   {openFaq === i ? <Minus size={18} /> : <Plus size={18} />}
                 </div>
               </button>
-              <AnimatePresence>
-                {openFaq === i && (
-                  <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.3, ease: "easeInOut" }}>
+              {openFaq === i && (<div style={{overflow:"hidden"}}>
                     <div className="px-8 pb-8 text-slate-500 leading-relaxed border-t border-slate-50 pt-6">{item.answer}</div>
-                  </motion.div>
+                  </div>
                 )}
-              </AnimatePresence>
+              
             </div>
           ))}
         </div>
@@ -465,13 +457,11 @@ const FaqLimpezaSection = () => {
                   {openFaq === i ? <Minus size={18} /> : <Plus size={18} />}
                 </div>
               </button>
-              <AnimatePresence>
-                {openFaq === i && (
-                  <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: 'auto', opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.3, ease: "easeInOut" }}>
+              {openFaq === i && (<div style={{overflow:"hidden"}}>
                     <div className="px-8 pb-8 text-slate-500 leading-relaxed border-t border-slate-50 pt-6">{item.answer}</div>
-                  </motion.div>
+                  </div>
                 )}
-              </AnimatePresence>
+              
             </div>
           ))}
         </div>
