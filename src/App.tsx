@@ -250,11 +250,11 @@ export default function App() {
           </div>
 
           {/* Mobile Menu */}
-          {isMobileMenuOpen && (
-              <div
-
-                className="lg:hidden bg-white border-t border-slate-100 overflow-hidden"
-              >
+          <div
+            className={`lg:hidden bg-white border-t border-slate-100 overflow-hidden transition-all duration-300 ease-in-out ${
+              isMobileMenuOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
+            }`}
+          >
                 <div className="container mx-auto px-4 py-6 flex flex-col gap-4">
                   <button onClick={() => navigate('home')} className="text-left font-semibold py-2 text-primary-light">Início</button>
                   <hr className="border-slate-100" />
@@ -273,8 +273,7 @@ export default function App() {
                   <button onClick={() => navigate('contato')} className="text-left font-semibold py-2">Contato</button>
                   <WhatsAppButton className="w-full mt-2" text="WhatsApp (11) 96346-2516" />
                 </div>
-              </div>
-            )}
+          </div>
           </header>
 
         {/* Main Content */}
@@ -1094,15 +1093,11 @@ function FaqItem({ question, answer }: { question: string, answer: string }) {
         <span className="font-bold text-primary">{question}</span>
         <ChevronDown size={20} className={`text-slate-400 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
       </button>
-      {isOpen && (
-              <div
-
-          >
-            <div className="px-6 pb-5 text-slate-500 text-sm leading-relaxed border-t border-slate-50 pt-4">
-              {answer}
-            </div>
+      <div className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+          <div className="px-6 pb-5 text-slate-500 text-sm leading-relaxed border-t border-slate-50 pt-4">
+            {answer}
           </div>
-        )}
+        </div>
       </div>
   );
 }
