@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import { 
   Phone, 
@@ -30,9 +32,9 @@ import {
   ExternalLink
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
+import { useRouter, usePathname } from 'next/navigation';
 
-import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import { 
   SplitMultiSplit, 
   SistemasComerciais, 
@@ -115,7 +117,8 @@ const SectionHeading = ({ tag, title, subtitle, centered = false }: { tag?: stri
 );
 
 export default function App() {
-  const routerNavigate = useNavigate();
+  const router = useRouter();
+  const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   const navigate = (page: PageId) => {
@@ -155,13 +158,13 @@ export default function App() {
       'blog-manutencao-consequencias': '/blog/manutencao-ar-condicionado-consequencias'
     }
     const path = routes[page] || '/'
-    routerNavigate(path)
+    router.push(path)
     setIsMobileMenuOpen(false);
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   return (
-    <HelmetProvider>
+    <>
       <div className="min-h-screen font-sans text-slate-900 bg-white selection:bg-primary/10 selection:text-primary">
         <Helmet>
           <title>New Clima Ar | Instalação e Manutenção de Ar Condicionado em SP e ABC</title>
@@ -336,42 +339,42 @@ export default function App() {
 
         {/* Main Content */}
         <main>
-          <Routes>
-            <Route path="/" element={<HomeView navigate={navigate} />} />
-            <Route path="/instalacao-ar-condicionado-split-sao-paulo" element={<ServiceDetailView service="split" navigate={navigate} />} />
-            <Route path="/ar-condicionado-comercial-sao-paulo" element={<ServiceDetailView service="comercial" navigate={navigate} />} />
-            <Route path="/instalacao-vrf-mini-vrf-sao-paulo" element={<ServiceDetailView service="vrf" navigate={navigate} />} />
-            <Route path="/manutencao-preventiva-ar-condicionado-sp" element={<ServiceDetailView service="preventiva" navigate={navigate} />} />
-            <Route path="/manutencao-corretiva-ar-condicionado-sp" element={<ServiceDetailView service="corretiva" navigate={navigate} />} />
-            <Route path="/limpeza-higienizacao-ar-condicionado-sp" element={<ServiceDetailView service="limpeza" navigate={navigate} />} />
-            <Route path="/blog" element={<BlogView navigate={navigate} />} />
-            <Route path="/blog/ar-condicionado-inverter" element={<BlogView navigate={navigate} postId="inverter" />} />
-            <Route path="/blog/instalacao-ar-condicionado-apartamento-sp" element={<BlogView navigate={navigate} postId="apartamento" />} />
-            <Route path="/blog/como-calcular-btus-ar-condicionado" element={<BlogView navigate={navigate} postId="btus" />} />
-            <Route path="/blog/pmoc-obrigatorio-sao-paulo" element={<BlogView navigate={navigate} postId="pmoc" />} />
-            <Route path="/blog/lg-round-cassette" element={<BlogView navigate={navigate} postId="round-cassette" />} />
-            <Route path="/blog/instalacao-ar-condicionado-obra-limpa" element={<BlogView navigate={navigate} postId="obra-limpa" />} />
-            <Route path="/blog/ar-condicionado-quarto" element={<BlogView navigate={navigate} postId="quarto" />} />
-            <Route path="/blog/split-convencional-vs-inverter" element={<BlogView navigate={navigate} postId="convencional-inverter" />} />
-            <Route path="/blog/ar-condicionado-empresas-vrf" element={<BlogView navigate={navigate} postId="empresas" />} />
-            <Route path="/blog/pmoc-obrigatorio-sao-paulo-lei" element={<BlogView navigate={navigate} postId="pmoc-obrigatorio" />} />
-            <Route path="/blog/multa-pmoc-sao-paulo" element={<BlogView navigate={navigate} postId="multa-pmoc" />} />
-            <Route path="/blog/pmoc-condominios-sao-paulo" element={<BlogView navigate={navigate} postId="pmoc-condominio" />} />
-            <Route path="/blog/quanto-custa-pmoc-sao-paulo" element={<BlogView navigate={navigate} postId="custo-pmoc" />} />
-            <Route path="/blog/quanto-custa-instalar-ar-condicionado-sp" element={<BlogView navigate={navigate} postId="custo-instalacao" />} />
-            <Route path="/blog/qual-ar-condicionado-comprar-2026" element={<BlogView navigate={navigate} postId="qual-ac" />} />
-            <Route path="/blog/split-vs-multi-split-apartamento-sp" element={<BlogView navigate={navigate} postId="split-multi-split" />} />
-            <Route path="/blog/manutencao-ar-condicionado-consequencias" element={<BlogView navigate={navigate} postId="manutencao-consequencias" />} />
-            <Route path="/sobre" element={<AboutView navigate={navigate} />} />
-            <Route path="/contato" element={<ContactView />} />
-            <Route path="/ar-condicionado-sao-paulo" element={<RegionView region="sao-paulo" navigate={navigate} />} />
-            <Route path="/ar-condicionado-santo-andre" element={<RegionView region="santo-andre" navigate={navigate} />} />
-            <Route path="/ar-condicionado-sao-bernardo-do-campo" element={<RegionView region="sao-bernardo" navigate={navigate} />} />
-            <Route path="/ar-condicionado-sao-caetano-do-sul" element={<RegionView region="sao-caetano" navigate={navigate} />} />
-            <Route path="/ar-condicionado-diadema" element={<RegionView region="diadema" navigate={navigate} />} />
-            <Route path="/ar-condicionado-maua" element={<RegionView region="maua" navigate={navigate} />} />
-            <Route path="*" element={<HomeView navigate={navigate} />} />
-          </Routes>
+          {(() => {
+            const p = pathname || '/';
+            if (p === '/instalacao-ar-condicionado-split-sao-paulo') return <ServiceDetailView service="split" navigate={navigate} />;
+            if (p === '/ar-condicionado-comercial-sao-paulo') return <ServiceDetailView service="comercial" navigate={navigate} />;
+            if (p === '/instalacao-vrf-mini-vrf-sao-paulo') return <ServiceDetailView service="vrf" navigate={navigate} />;
+            if (p === '/manutencao-preventiva-ar-condicionado-sp') return <ServiceDetailView service="preventiva" navigate={navigate} />;
+            if (p === '/manutencao-corretiva-ar-condicionado-sp') return <ServiceDetailView service="corretiva" navigate={navigate} />;
+            if (p === '/limpeza-higienizacao-ar-condicionado-sp') return <ServiceDetailView service="limpeza" navigate={navigate} />;
+            if (p === '/blog/ar-condicionado-inverter') return <BlogView navigate={navigate} postId="inverter" />;
+            if (p === '/blog/instalacao-ar-condicionado-apartamento-sp') return <BlogView navigate={navigate} postId="apartamento" />;
+            if (p === '/blog/como-calcular-btus-ar-condicionado') return <BlogView navigate={navigate} postId="btus" />;
+            if (p === '/blog/pmoc-obrigatorio-sao-paulo') return <BlogView navigate={navigate} postId="pmoc" />;
+            if (p === '/blog/lg-round-cassette') return <BlogView navigate={navigate} postId="round-cassette" />;
+            if (p === '/blog/instalacao-ar-condicionado-obra-limpa') return <BlogView navigate={navigate} postId="obra-limpa" />;
+            if (p === '/blog/ar-condicionado-quarto') return <BlogView navigate={navigate} postId="quarto" />;
+            if (p === '/blog/split-convencional-vs-inverter') return <BlogView navigate={navigate} postId="convencional-inverter" />;
+            if (p === '/blog/ar-condicionado-empresas-vrf') return <BlogView navigate={navigate} postId="empresas" />;
+            if (p === '/blog/pmoc-obrigatorio-sao-paulo-lei') return <BlogView navigate={navigate} postId="pmoc-obrigatorio" />;
+            if (p === '/blog/multa-pmoc-sao-paulo') return <BlogView navigate={navigate} postId="multa-pmoc" />;
+            if (p === '/blog/pmoc-condominios-sao-paulo') return <BlogView navigate={navigate} postId="pmoc-condominio" />;
+            if (p === '/blog/quanto-custa-pmoc-sao-paulo') return <BlogView navigate={navigate} postId="custo-pmoc" />;
+            if (p === '/blog/quanto-custa-instalar-ar-condicionado-sp') return <BlogView navigate={navigate} postId="custo-instalacao" />;
+            if (p === '/blog/qual-ar-condicionado-comprar-2026') return <BlogView navigate={navigate} postId="qual-ac" />;
+            if (p === '/blog/split-vs-multi-split-apartamento-sp') return <BlogView navigate={navigate} postId="split-multi-split" />;
+            if (p === '/blog/manutencao-ar-condicionado-consequencias') return <BlogView navigate={navigate} postId="manutencao-consequencias" />;
+            if (p === '/blog') return <BlogView navigate={navigate} />;
+            if (p === '/sobre') return <AboutView navigate={navigate} />;
+            if (p === '/contato') return <ContactView />;
+            if (p === '/ar-condicionado-sao-paulo') return <RegionView region="sao-paulo" navigate={navigate} />;
+            if (p === '/ar-condicionado-santo-andre') return <RegionView region="santo-andre" navigate={navigate} />;
+            if (p === '/ar-condicionado-sao-bernardo-do-campo') return <RegionView region="sao-bernardo" navigate={navigate} />;
+            if (p === '/ar-condicionado-sao-caetano-do-sul') return <RegionView region="sao-caetano" navigate={navigate} />;
+            if (p === '/ar-condicionado-diadema') return <RegionView region="diadema" navigate={navigate} />;
+            if (p === '/ar-condicionado-maua') return <RegionView region="maua" navigate={navigate} />;
+            return <HomeView navigate={navigate} />;
+          })()}
         </main>
 
         {/* Footer */}
@@ -466,7 +469,7 @@ export default function App() {
           </div>
         </div>
       </div>
-    </HelmetProvider>
+    </>
   );
 }
 
