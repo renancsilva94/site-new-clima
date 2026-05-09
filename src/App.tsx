@@ -513,14 +513,8 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
           
           <div className="flex-grow relative overflow-hidden py-2" role="region" aria-label="Marcas parceiras">
               <div
-
               className="flex items-center gap-12 md:gap-20 lg:gap-24 whitespace-nowrap"
-              animate={{ x: ["0%", "-50%"] }}
-              transition={{ 
-                duration: 25, 
-                repeat: Infinity, 
-                ease: "linear" 
-              }}
+              
             >
               {/* First set of logos */}
               {[
