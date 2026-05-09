@@ -72,7 +72,7 @@ import {
 } from './components/RegionContent';
 
 // --- Types ---
-type PageId = 'home' | 'mapa-site' | 'split-multisplit' | 'bairro-moema' | 'bairro-vila-mariana' | 'bairro-pinheiros' | 'bairro-itaim-bibi' | 'bairro-jardins' | 'bairro-tatuape' | 'bairro-santana' | 'bairro-brooklin' | 'bairro-perdizes' | 'bairro-morumbi' | 'sistemas-comerciais' | 'vrf-mini-vrf' | 'manutencao-preventiva' | 'manutencao-corretiva' | 'limpeza' | 'blog' | 'sobre' | 'contato' | 'sao-paulo' | 'santo-andre' | 'sao-bernardo' | 'sao-caetano' | 'diadema' | 'maua' | 'blog-inverter' | 'blog-apartamento' | 'blog-btus' | 'blog-pmoc' | 'blog-round-cassette' | 'blog-obra-limpa' | 'blog-quarto' | 'blog-convencional-inverter' | 'blog-empresas' | 'blog-pmoc-obrigatorio' | 'blog-multa-pmoc' | 'blog-pmoc-condominio' | 'blog-custo-pmoc' | 'blog-custo-instalacao' | 'blog-qual-ac' | 'blog-split-multi-split' | 'blog-manutencao-consequencias';
+type PageId = 'home' | 'mapa-site' | 'split-multisplit' | 'bairro-moema' | 'bairro-vila-mariana' | 'bairro-pinheiros' | 'bairro-itaim-bibi' | 'bairro-jardins' | 'bairro-tatuape' | 'bairro-santana' | 'bairro-brooklin' | 'bairro-perdizes' | 'bairro-morumbi' | 'bairro-mooca' | 'bairro-analia-franco' | 'bairro-vila-madalena' | 'bairro-campo-belo' | 'bairro-saude' | 'bairro-higienopolis' | 'bairro-lapa' | 'bairro-santo-amaro' | 'bairro-tucuruvi' | 'bairro-ipiranga' | 'sistemas-comerciais' | 'vrf-mini-vrf' | 'manutencao-preventiva' | 'manutencao-corretiva' | 'limpeza' | 'blog' | 'sobre' | 'contato' | 'sao-paulo' | 'santo-andre' | 'sao-bernardo' | 'sao-caetano' | 'diadema' | 'maua' | 'blog-inverter' | 'blog-apartamento' | 'blog-btus' | 'blog-pmoc' | 'blog-round-cassette' | 'blog-obra-limpa' | 'blog-quarto' | 'blog-convencional-inverter' | 'blog-empresas' | 'blog-pmoc-obrigatorio' | 'blog-multa-pmoc' | 'blog-pmoc-condominio' | 'blog-custo-pmoc' | 'blog-custo-instalacao' | 'blog-qual-ac' | 'blog-split-multi-split' | 'blog-manutencao-consequencias';
 
 // --- Components ---
 
@@ -150,6 +150,16 @@ export default function App() {
       'bairro-brooklin': '/instalacao-ar-condicionado-brooklin',
       'bairro-perdizes': '/instalacao-ar-condicionado-perdizes',
       'bairro-morumbi': '/instalacao-ar-condicionado-morumbi',
+      'bairro-mooca': '/instalacao-ar-condicionado-mooca',
+      'bairro-analia-franco': '/instalacao-ar-condicionado-analia-franco',
+      'bairro-vila-madalena': '/instalacao-ar-condicionado-vila-madalena',
+      'bairro-campo-belo': '/instalacao-ar-condicionado-campo-belo',
+      'bairro-saude': '/instalacao-ar-condicionado-saude',
+      'bairro-higienopolis': '/instalacao-ar-condicionado-higienopolis',
+      'bairro-lapa': '/instalacao-ar-condicionado-lapa',
+      'bairro-santo-amaro': '/instalacao-ar-condicionado-santo-amaro',
+      'bairro-tucuruvi': '/instalacao-ar-condicionado-tucuruvi',
+      'bairro-ipiranga': '/instalacao-ar-condicionado-ipiranga',
       'sao-paulo': '/ar-condicionado-sao-paulo',
       'santo-andre': '/ar-condicionado-santo-andre',
       'sao-bernardo': '/ar-condicionado-sao-bernardo-do-campo',
@@ -328,6 +338,16 @@ export default function App() {
             if (p === '/instalacao-ar-condicionado-brooklin') return <BairroView bairro="Brooklin" slug="brooklin" zona="Zona Sul" vizinhos={['Moema', 'Campo Belo', 'Vila Olímpia', 'Santo Amaro']} navigate={navigate} />;
             if (p === '/instalacao-ar-condicionado-perdizes') return <BairroView bairro="Perdizes" slug="perdizes" zona="Zona Oeste" vizinhos={['Pompéia', 'Higienópolis', 'Pacaembu', 'Lapa']} navigate={navigate} />;
             if (p === '/instalacao-ar-condicionado-morumbi') return <BairroView bairro="Morumbi" slug="morumbi" zona="Zona Sul" vizinhos={['Itaim Bibi', 'Vila Andrade', 'Campo Belo', 'Santo Amaro']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-mooca') return <BairroView bairro="Mooca" slug="mooca" zona="Zona Leste" vizinhos={['Tatuapé', 'Brás', 'Belém', 'Vila Prudente']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-analia-franco') return <BairroView bairro="Anália Franco" slug="analia-franco" zona="Zona Leste" vizinhos={['Tatuapé', 'Carrão', 'Jardim Anália', 'Parque São Jorge']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-vila-madalena') return <BairroView bairro="Vila Madalena" slug="vila-madalena" zona="Zona Oeste" vizinhos={['Pinheiros', 'Perdizes', 'Sumaré', 'Alto de Pinheiros']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-campo-belo') return <BairroView bairro="Campo Belo" slug="campo-belo" zona="Zona Sul" vizinhos={['Moema', 'Brooklin', 'Santo Amaro', 'Itaim Bibi']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-saude') return <BairroView bairro="Saúde" slug="saude" zona="Zona Sul" vizinhos={['Vila Mariana', 'Ipiranga', 'Cursino', 'Jabaquara']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-higienopolis') return <BairroView bairro="Higienópolis" slug="higienopolis" zona="Zona Oeste" vizinhos={['Consolação', 'Santa Cecília', 'Perdizes', 'Bom Retiro']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-lapa') return <BairroView bairro="Lapa" slug="lapa" zona="Zona Oeste" vizinhos={['Perdizes', 'Pompéia', 'Vila Leopoldina', 'Água Branca']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-santo-amaro') return <BairroView bairro="Santo Amaro" slug="santo-amaro" zona="Zona Sul" vizinhos={['Campo Belo', 'Brooklin', 'Campo Grande', 'Morumbi']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-tucuruvi') return <BairroView bairro="Tucuruvi" slug="tucuruvi" zona="Zona Norte" vizinhos={['Santana', 'Vila Guilherme', 'Mandaqui', 'Jaçanã']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-ipiranga') return <BairroView bairro="Ipiranga" slug="ipiranga" zona="Zona Sul" vizinhos={['Saúde', 'Cursino', 'Vila Mariana', 'Vila Prudente']} navigate={navigate} />;
             if (p === '/ar-condicionado-sao-paulo') return <RegionView region="sao-paulo" navigate={navigate} />;
             if (p === '/ar-condicionado-santo-andre') return <RegionView region="santo-andre" navigate={navigate} />;
             if (p === '/ar-condicionado-sao-bernardo-do-campo') return <RegionView region="sao-bernardo" navigate={navigate} />;
@@ -1969,6 +1989,16 @@ function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
     { label: 'Instalação de Ar Condicionado no Brooklin', page: 'bairro-brooklin' as PageId },
     { label: 'Instalação de Ar Condicionado em Perdizes', page: 'bairro-perdizes' as PageId },
     { label: 'Instalação de Ar Condicionado no Morumbi', page: 'bairro-morumbi' as PageId },
+    { label: 'Instalação de Ar Condicionado na Mooca', page: 'bairro-mooca' as PageId },
+    { label: 'Instalação de Ar Condicionado no Anália Franco', page: 'bairro-analia-franco' as PageId },
+    { label: 'Instalação de Ar Condicionado em Vila Madalena', page: 'bairro-vila-madalena' as PageId },
+    { label: 'Instalação de Ar Condicionado em Campo Belo', page: 'bairro-campo-belo' as PageId },
+    { label: 'Instalação de Ar Condicionado na Saúde', page: 'bairro-saude' as PageId },
+    { label: 'Instalação de Ar Condicionado em Higienópolis', page: 'bairro-higienopolis' as PageId },
+    { label: 'Instalação de Ar Condicionado na Lapa', page: 'bairro-lapa' as PageId },
+    { label: 'Instalação de Ar Condicionado em Santo Amaro', page: 'bairro-santo-amaro' as PageId },
+    { label: 'Instalação de Ar Condicionado no Tucuruvi', page: 'bairro-tucuruvi' as PageId },
+    { label: 'Instalação de Ar Condicionado no Ipiranga', page: 'bairro-ipiranga' as PageId },
   ]
 
   const regionLinks = [
