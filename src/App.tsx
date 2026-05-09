@@ -60,7 +60,17 @@ import {
   BlogCustoInstalacao,
   BlogQualAC,
   BlogSplitMultiSplitApartamento,
-  BlogManutencaoConsequencias
+  BlogManutencaoConsequencias,
+  BlogSaude,
+  BlogDormir,
+  BlogConsumo,
+  BlogQuantoGasta,
+  BlogMauCheiro,
+  BlogDesligaSozinho,
+  BlogVidaUtil,
+  BlogTemperatura,
+  BlogFuncaoDry,
+  BlogGas
 } from './components/BlogContent';
 import SchemaOrg from './components/SchemaOrg';
 import { 
@@ -72,7 +82,7 @@ import {
 } from './components/RegionContent';
 
 // --- Types ---
-type PageId = 'home' | 'mapa-site' | 'split-multisplit' | 'bairro-moema' | 'bairro-vila-mariana' | 'bairro-pinheiros' | 'bairro-itaim-bibi' | 'bairro-jardins' | 'bairro-tatuape' | 'bairro-santana' | 'bairro-brooklin' | 'bairro-perdizes' | 'bairro-morumbi' | 'bairro-mooca' | 'bairro-analia-franco' | 'bairro-vila-madalena' | 'bairro-campo-belo' | 'bairro-saude' | 'bairro-higienopolis' | 'bairro-lapa' | 'bairro-santo-amaro' | 'bairro-tucuruvi' | 'bairro-ipiranga' | 'bairro-vila-prudente' | 'bairro-jabaquara' | 'bairro-campo-grande' | 'bairro-penha' | 'bairro-cursino' | 'bairro-agua-rasa' | 'bairro-bela-vista' | 'bairro-butanta' | 'bairro-vila-olimpia' | 'bairro-pompeia' | 'bairro-paraiso' | 'bairro-aclimacao' | 'bairro-mirandopolis' | 'bairro-planalto-paulista' | 'bairro-vila-clementino' | 'bairro-chacara-klabin' | 'bairro-cambuci' | 'bairro-liberdade' | 'segmento-clinica' | 'segmento-escritorio' | 'segmento-condominio' | 'segmento-restaurante' | 'segmento-hotel' | 'segmento-pousada' | 'segmento-academia' | 'segmento-escola' | 'sem-instalacao' | 'sem-manutencao' | 'sem-tecnico' | 'sem-conserto' | 'sem-empresa' | 'sem-assistencia' | 'sistemas-comerciais' | 'vrf-mini-vrf' | 'manutencao-preventiva' | 'manutencao-corretiva' | 'limpeza' | 'blog' | 'sobre' | 'contato' | 'sao-paulo' | 'santo-andre' | 'sao-bernardo' | 'sao-caetano' | 'diadema' | 'maua' | 'blog-inverter' | 'blog-apartamento' | 'blog-btus' | 'blog-pmoc' | 'blog-round-cassette' | 'blog-obra-limpa' | 'blog-quarto' | 'blog-convencional-inverter' | 'blog-empresas' | 'blog-pmoc-obrigatorio' | 'blog-multa-pmoc' | 'blog-pmoc-condominio' | 'blog-custo-pmoc' | 'blog-custo-instalacao' | 'blog-qual-ac' | 'blog-split-multi-split' | 'blog-manutencao-consequencias';
+type PageId = 'home' | 'mapa-site' | 'split-multisplit' | 'bairro-moema' | 'bairro-vila-mariana' | 'bairro-pinheiros' | 'bairro-itaim-bibi' | 'bairro-jardins' | 'bairro-tatuape' | 'bairro-santana' | 'bairro-brooklin' | 'bairro-perdizes' | 'bairro-morumbi' | 'bairro-mooca' | 'bairro-analia-franco' | 'bairro-vila-madalena' | 'bairro-campo-belo' | 'bairro-saude' | 'bairro-higienopolis' | 'bairro-lapa' | 'bairro-santo-amaro' | 'bairro-tucuruvi' | 'bairro-ipiranga' | 'bairro-vila-prudente' | 'bairro-jabaquara' | 'bairro-campo-grande' | 'bairro-penha' | 'bairro-cursino' | 'bairro-agua-rasa' | 'bairro-bela-vista' | 'bairro-butanta' | 'bairro-vila-olimpia' | 'bairro-pompeia' | 'bairro-paraiso' | 'bairro-aclimacao' | 'bairro-mirandopolis' | 'bairro-planalto-paulista' | 'bairro-vila-clementino' | 'bairro-chacara-klabin' | 'bairro-cambuci' | 'bairro-liberdade' | 'segmento-clinica' | 'segmento-escritorio' | 'segmento-condominio' | 'segmento-restaurante' | 'segmento-hotel' | 'segmento-pousada' | 'segmento-academia' | 'segmento-escola' | 'sem-instalacao' | 'sem-manutencao' | 'sem-tecnico' | 'sem-conserto' | 'sem-empresa' | 'sem-assistencia' | 'sistemas-comerciais' | 'vrf-mini-vrf' | 'manutencao-preventiva' | 'manutencao-corretiva' | 'limpeza' | 'blog' | 'sobre' | 'contato' | 'sao-paulo' | 'santo-andre' | 'sao-bernardo' | 'sao-caetano' | 'diadema' | 'maua' | 'blog-inverter' | 'blog-apartamento' | 'blog-btus' | 'blog-pmoc' | 'blog-round-cassette' | 'blog-obra-limpa' | 'blog-quarto' | 'blog-convencional-inverter' | 'blog-empresas' | 'blog-pmoc-obrigatorio' | 'blog-multa-pmoc' | 'blog-pmoc-condominio' | 'blog-custo-pmoc' | 'blog-custo-instalacao' | 'blog-qual-ac' | 'blog-split-multi-split' | 'blog-manutencao-consequencias' | 'blog-saude' | 'blog-dormir' | 'blog-consumo' | 'blog-quanto-gasta' | 'blog-mau-cheiro' | 'blog-desliga-sozinho' | 'blog-vida-util' | 'blog-temperatura' | 'blog-funcao-dry' | 'blog-gas';
 
 // --- Components ---
 
@@ -215,6 +225,16 @@ export default function App() {
       'blog-qual-ac': '/blog/qual-ar-condicionado-comprar-2026',
       'blog-split-multi-split': '/blog/split-vs-multi-split-apartamento-sp',
       'blog-manutencao-consequencias': '/blog/manutencao-ar-condicionado-consequencias',
+      'blog-saude': '/blog/ar-condicionado-faz-mal-saude',
+      'blog-dormir': '/blog/dormir-com-ar-condicionado-faz-mal',
+      'blog-consumo': '/blog/ar-condicionado-gasta-mais-dia-ou-noite',
+      'blog-quanto-gasta': '/blog/quanto-gasta-ar-condicionado-inverter',
+      'blog-mau-cheiro': '/blog/mau-cheiro-ar-condicionado',
+      'blog-desliga-sozinho': '/blog/ar-condicionado-desliga-sozinho',
+      'blog-vida-util': '/blog/vida-util-ar-condicionado',
+      'blog-temperatura': '/blog/temperatura-ideal-ar-condicionado',
+      'blog-funcao-dry': '/blog/funcao-dry-ar-condicionado',
+      'blog-gas': '/blog/gas-r32-r410a-ar-condicionado',
     }
     const path = routes[page] || '/'
     router.push(path)
@@ -1585,7 +1605,7 @@ function BlogView({ navigate, postId }: { navigate: (p: PageId) => void, postId?
           title="O Que Acontece Sem Manutenção no Ar Condicionado?"
           desc="Do aumento na conta de luz à morte prematura do compressor — o que esperar mês a mês."
           image="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-manutencao-consequencias')}
+          onClick={() => navigate('blog-manutencao-consequencias' | 'blog-saude' | 'blog-dormir' | 'blog-consumo' | 'blog-quanto-gasta' | 'blog-mau-cheiro' | 'blog-desliga-sozinho' | 'blog-vida-util' | 'blog-temperatura' | 'blog-funcao-dry' | 'blog-gas')}
         />
         <BlogCard 
           title="Ar Condicionado Inverter"
@@ -2263,7 +2283,7 @@ function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
     { label: 'Quanto Custa Instalar Ar Condicionado em SP em 2026?', page: 'blog-custo-instalacao' as PageId },
     { label: 'Qual Ar Condicionado Comprar em 2026?', page: 'blog-qual-ac' as PageId },
     { label: 'Split ou Multi Split para Apartamento em SP?', page: 'blog-split-multi-split' as PageId },
-    { label: 'O Que Acontece Sem Manutenção no Ar Condicionado?', page: 'blog-manutencao-consequencias' as PageId },
+    { label: 'O Que Acontece Sem Manutenção no Ar Condicionado?', page: 'blog-manutencao-consequencias' | 'blog-saude' | 'blog-dormir' | 'blog-consumo' | 'blog-quanto-gasta' | 'blog-mau-cheiro' | 'blog-desliga-sozinho' | 'blog-vida-util' | 'blog-temperatura' | 'blog-funcao-dry' | 'blog-gas' as PageId },
     { label: 'Ar Condicionado Inverter: Vale a Pena?', page: 'blog-inverter' as PageId },
     { label: 'Instalação em Apartamento em SP: Guia Completo', page: 'blog-apartamento' as PageId },
     { label: 'Como Calcular os BTUs Ideais para Seu Ambiente', page: 'blog-btus' as PageId },
