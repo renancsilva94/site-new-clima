@@ -130,6 +130,10 @@ const metaMap: Record<string, { title: string; description: string }> = {
     title: 'Split Convencional vs Inverter: Qual Escolher? | New Clima Blog',
     description: 'Diferenças entre split convencional e inverter para São Paulo.',
   },
+  'mapa-site': {
+    title: 'Mapa do Site | New Clima Ar Condicionado SP e ABC',
+    description: 'Todas as páginas do site da New Clima Ar Condicionado organizadas por categoria: serviços, regiões e blog.',
+  },
   'blog/ar-condicionado-empresas-vrf': {
     title: 'Ar Condicionado para Empresas: Split ao VRF | New Clima Blog',
     description: 'Soluções de climatização corporativa com foco em ROI. Do split ao VRF.',
