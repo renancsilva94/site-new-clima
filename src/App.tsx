@@ -31,8 +31,8 @@ import {
   HeartHandshake,
   ExternalLink
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Helmet } from 'react-helmet-async';
+
+
 import { useRouter, usePathname } from 'next/navigation';
 
 import { 
@@ -169,70 +169,7 @@ export default function App() {
   return (
     <>
       <div className="min-h-screen font-sans text-slate-900 bg-white selection:bg-primary/10 selection:text-primary">
-        <Helmet>
-          <title>New Clima Ar | Instalação e Manutenção de Ar Condicionado em SP e ABC</title>
-          <meta name="description" content="Especialista em ar condicionado em São Paulo e ABC. Instalação técnica, manutenção preventiva (PMOC), conserto e limpeza profunda. Atendimento premium residencial e comercial com garantia técnica." />
-          <meta name="keywords" content="ar condicionado sp, ar condicionado abc, instalação de ar condicionado, manutenção de ar condicionado, limpeza de ar condicionado, pmoc, conserto de ar condicionado, split inverter, multi split, vrf" />
-          <link rel="canonical" href="https://www.newclimaar.com.br/" />
-          
-          {/* Open Graph / Facebook */}
-          <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://www.newclimaar.com.br/" />
-          <meta property="og:title" content="New Clima Ar | Instalação e Manutenção de Ar Condicionado" />
-          <meta property="og:description" content="Especialista em ar condicionado em São Paulo e ABC. Atendimento premium residencial e comercial com garantia técnica." />
-          <meta property="og:image" content="https://www.newclimaar.com.brhttps://cdn.coteibem.com.br/company/41315/logo/f4d0405d-28b6-4834-a8ca-9e63b68073fa.png" />
-
-          {/* Twitter */}
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:url" content="https://www.newclimaar.com.br/" />
-          <meta name="twitter:title" content="New Clima Ar | Instalação e Manutenção de Ar Condicionado" />
-          <meta name="twitter:description" content="Especialista em ar condicionado em São Paulo e ABC. Atendimento premium residencial e comercial com garantia técnica." />
-          <meta name="twitter:image" content="https://www.newclimaar.com.brhttps://cdn.coteibem.com.br/company/41315/logo/f4d0405d-28b6-4834-a8ca-9e63b68073fa.png" />
-
-          {/* Schema.org markup for Google */}
-          <script type="application/ld+json">
-            {`
-              {
-                "@context": "https://schema.org",
-                "@type": "LocalBusiness",
-                "name": "New Clima Ar Condicionado",
-                "image": "https://www.newclimaar.com.brhttps://cdn.coteibem.com.br/company/41315/logo/f4d0405d-28b6-4834-a8ca-9e63b68073fa.png",
-                "@id": "https://www.newclimaar.com.br",
-                "url": "https://www.newclimaar.com.br/",
-                "telephone": "+5511963462516",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "R. Santa Cruz, 2187",
-                  "addressLocality": "São Paulo",
-                  "addressRegion": "SP",
-                  "postalCode": "04121-002",
-                  "addressCountry": "BR"
-                },
-                "geo": {
-                  "@type": "GeoCoordinates",
-                  "latitude": -23.5937,
-                  "longitude": -46.6341
-                },
-                "openingHoursSpecification": {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday"
-                  ],
-                  "opens": "08:00",
-                  "closes": "18:00"
-                },
-                "sameAs": [
-                  "https://www.instagram.com/newclimaar/",
-                  "https://www.facebook.com/newclimaar/"
-                ]
-              }
-            `}
-          </script>
-        </Helmet>
+        
 
         {/* Topbar */}
         <div className="hidden md:block bg-primary text-white py-2 text-sm border-b border-white/10">
@@ -309,12 +246,9 @@ export default function App() {
           </div>
 
           {/* Mobile Menu */}
-          <AnimatePresence>
-            {isMobileMenuOpen && (
-              <motion.div 
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: 'auto', opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
+          {isMobileMenuOpen && (
+              <div
+
                 className="lg:hidden bg-white border-t border-slate-100 overflow-hidden"
               >
                 <div className="container mx-auto px-4 py-6 flex flex-col gap-4">
@@ -335,10 +269,9 @@ export default function App() {
                   <button onClick={() => navigate('contato')} className="text-left font-semibold py-2">Contato</button>
                   <WhatsAppButton className="w-full mt-2" text="WhatsApp (11) 96346-2516" />
                 </div>
-              </motion.div>
+              </div>
             )}
-          </AnimatePresence>
-        </header>
+          </header>
 
         {/* Main Content */}
         <main>
@@ -452,13 +385,12 @@ export default function App() {
 
         {/* WhatsApp Float */}
         <div className="fixed bottom-6 right-6 z-[60] flex flex-col items-end gap-3 pointer-events-none">
-          <motion.div 
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
+              <div
+
             className="bg-white px-4 py-2 rounded-full shadow-xl border border-slate-100 text-sm font-bold text-slate-700 pointer-events-auto"
           >
             Dúvidas? Fale com um técnico!
-          </motion.div>
+          </div>
           <div className="relative pointer-events-auto">
             <div className="absolute inset-0 bg-success rounded-full animate-ping opacity-25"></div>
             <a 
@@ -490,10 +422,8 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+              <div
+
             >
               <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-4 py-1.5 rounded-full text-white text-sm font-semibold mb-8">
                 <CheckCircle2 size={16} className="text-success" />
@@ -528,12 +458,10 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                   Saiba Mais
                 </button>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              <div
+
               className="hidden lg:block relative"
             >
               <div className="relative z-10 bg-white rounded-3xl p-8 shadow-2xl border border-white/10">
@@ -568,7 +496,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               {/* Decorative elements */}
               <div className="absolute -top-6 -right-6 w-32 h-32 bg-accent rounded-full blur-3xl opacity-20" />
               <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-blue-400 rounded-full blur-3xl opacity-10" />
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -584,7 +512,8 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
           </div>
           
           <div className="flex-grow relative overflow-hidden py-2" role="region" aria-label="Marcas parceiras">
-            <motion.div 
+              <div
+
               className="flex items-center gap-12 md:gap-20 lg:gap-24 whitespace-nowrap"
               animate={{ x: ["0%", "-50%"] }}
               transition={{ 
@@ -632,7 +561,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                   referrerPolicy="no-referrer" 
                 />
               ))}
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -1167,20 +1096,16 @@ function FaqItem({ question, answer }: { question: string, answer: string }) {
         <span className="font-bold text-primary">{question}</span>
         <ChevronDown size={20} className={`text-slate-400 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
       </button>
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div 
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
+      {isOpen && (
+              <div
+
           >
             <div className="px-6 pb-5 text-slate-500 text-sm leading-relaxed border-t border-slate-50 pt-4">
               {answer}
             </div>
-          </motion.div>
+          </div>
         )}
-      </AnimatePresence>
-    </div>
+      </div>
   );
 }
 
@@ -1231,10 +1156,7 @@ function BlogView({ navigate, postId }: { navigate: (p: PageId) => void, postId?
 
   return (
     <div className="py-16 container mx-auto px-4">
-      <Helmet>
-        <title>Blog New Clima Ar | Dicas de Ar Condicionado e Climatização</title>
-        <meta name="description" content="Aprenda tudo sobre ar condicionado: economia de energia, tecnologia inverter, instalação em apartamentos e muito mais no blog da New Clima Ar." />
-      </Helmet>
+      
       <SectionHeading 
         tag="Nosso Blog"
         title="Dicas e Especialista em Climatização"
@@ -1370,11 +1292,7 @@ function BlogCard({ title, desc, image, onClick }: { title: string, desc: string
 function AboutView({ navigate }: { navigate: (p: PageId) => void }) {
   return (
     <div className="py-16 container mx-auto px-4">
-      <Helmet>
-        <title>Sobre a New Clima Ar | Referência em Climatização em SP e ABC</title>
-        <meta name="description" content="A New Clima Ar é referência em climatização em São Paulo e no ABC. Oferecemos instalação, manutenção, limpeza e PMOC com técnicos certificados e garantia de qualidade." />
-        <meta name="keywords" content="ar condicionado sp, ar condicionado abc, instalação ar condicionado são paulo, manutenção ar condicionado abc, limpeza ar condicionado sp, pmoc ar condicionado" />
-      </Helmet>
+      
       
       <SectionHeading 
         tag="Nossa História"
@@ -1459,10 +1377,7 @@ function AboutView({ navigate }: { navigate: (p: PageId) => void }) {
 function ContactView() {
   return (
     <div className="py-16 container mx-auto px-4">
-      <Helmet>
-        <title>Contato | Orçamento de Ar Condicionado em São Paulo e ABC</title>
-        <meta name="description" content="Entre em contato com a New Clima Ar. Solicite seu orçamento para instalação, manutenção ou limpeza de ar condicionado em SP e ABC Paulista." />
-      </Helmet>
+      
       <SectionHeading 
         tag="Contato"
         title="Fale com Nossos Especialistas em Climatização"
