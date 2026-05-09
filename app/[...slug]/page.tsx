@@ -310,6 +310,26 @@ const metaMap: Record<string, { title: string; description: string }> = {
     title: 'Ar Condicionado para Escolas em São Paulo | New Clima',
     description: 'Instalação e PMOC para escolas, creches e universidades em SP. Qualidade do ar para alunos e professores. (11) 96346-2516.',
   },
+  'ar-condicionado-santo-andre': {
+    title: 'Ar Condicionado em Santo André por Bairros | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em todos os bairros de Santo André. Técnicos certificados, visita gratuita e garantia por escrito. (11) 96346-2516.',
+  },
+  'ar-condicionado-sao-bernardo-do-campo': {
+    title: 'Ar Condicionado em São Bernardo do Campo por Bairros | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em todos os bairros de São Bernardo do Campo. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'ar-condicionado-sao-caetano-do-sul': {
+    title: 'Ar Condicionado em São Caetano do Sul por Bairros | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em todos os bairros de São Caetano do Sul. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'ar-condicionado-diadema': {
+    title: 'Ar Condicionado em Diadema por Bairros | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em todos os bairros de Diadema. Técnicos certificados, visita gratuita. (11) 96346-2516.',
+  },
+  'ar-condicionado-maua': {
+    title: 'Ar Condicionado em Mauá por Bairros | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em todos os bairros de Mauá. Técnicos certificados, visita gratuita. (11) 96346-2516.',
+  },
   'instalacao-ar-condicionado-morumbi': {
     title: 'Instalação de Ar Condicionado no Morumbi SP | New Clima',
     description: 'Instalação e manutenção de ar condicionado no Morumbi. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
