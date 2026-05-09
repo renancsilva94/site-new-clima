@@ -440,23 +440,6 @@ export default function App() {
               vizinhos={['Santo André', 'Diadema', 'Ribeirão Pires', 'São Paulo']}
               navigate={navigate}
             />;
-              slug="escola"
-              title="Escola"
-              tag="EDUCAÇÃO"
-              headline="Ar Condicionado para Escolas em São Paulo"
-              desc="Instalação e manutenção de ar condicionado para escolas, creches e universidades em SP. PMOC obrigatório e qualidade do ar para alunos e professores."
-              dor="Sala de aula quente reduz concentração e rendimento. PMOC irregular pode resultar em interdição."
-              servicos={['Instalação em salas de aula e áreas comuns', 'Contrato PMOC para instituições de ensino', 'Manutenção preventiva nas férias escolares', 'Higienização com produtos seguros para crianças']}
-              faq={[['Escolas são obrigadas a ter PMOC?', 'Sim. Instituições de ensino com sistema de ar condicionado acima de 60.000 BTUs são obrigadas pela Lei 13.589/18. A Vigilância Sanitária e o MEC fiscalizam o cumprimento — o descumprimento pode resultar em interdição.'], ['Qual o melhor horário para manutenção em escola?', 'Realizamos a manutenção preferencialmente durante as férias escolares (janeiro e julho) para não impactar as aulas. Para emergências, atendemos em qualquer horário.'], ['O ar condicionado pode piorar alergias das crianças?', 'Um ar condicionado sem manutenção regular acumula fungos, ácaros e bactérias que causam rinite e asma. Com higienização e filtros limpos, o ar condicionado melhora a qualidade do ar — especialmente em SP, com alto nível de poluição.']]}
-              vizinhos="Vila Mariana · Moema · Brooklin · Santo André · São Bernardo"
-              navigate={navigate}
-            />;
-            if (p === '/ar-condicionado-sao-paulo') return <RegionView region="sao-paulo" navigate={navigate} />;
-            if (p === '/ar-condicionado-santo-andre') return <RegionView region="santo-andre" navigate={navigate} />;
-            if (p === '/ar-condicionado-sao-bernardo-do-campo') return <RegionView region="sao-bernardo" navigate={navigate} />;
-            if (p === '/ar-condicionado-sao-caetano-do-sul') return <RegionView region="sao-caetano" navigate={navigate} />;
-            if (p === '/ar-condicionado-diadema') return <RegionView region="diadema" navigate={navigate} />;
-            if (p === '/ar-condicionado-maua') return <RegionView region="maua" navigate={navigate} />;
             return <HomeView navigate={navigate} />;
           })()}
         </main>
