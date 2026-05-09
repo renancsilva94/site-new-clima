@@ -1958,6 +1958,19 @@ function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
     { label: 'PMOC para Empresas — Conformidade com a Lei 13.589/18', page: 'manutencao-preventiva' as PageId },
   ]
 
+  const bairroLinks = [
+    { label: 'Instalação de Ar Condicionado em Moema', page: 'bairro-moema' as PageId },
+    { label: 'Instalação de Ar Condicionado em Vila Mariana', page: 'bairro-vila-mariana' as PageId },
+    { label: 'Instalação de Ar Condicionado em Pinheiros', page: 'bairro-pinheiros' as PageId },
+    { label: 'Instalação de Ar Condicionado no Itaim Bibi', page: 'bairro-itaim-bibi' as PageId },
+    { label: 'Instalação de Ar Condicionado nos Jardins', page: 'bairro-jardins' as PageId },
+    { label: 'Instalação de Ar Condicionado no Tatuapé', page: 'bairro-tatuape' as PageId },
+    { label: 'Instalação de Ar Condicionado em Santana', page: 'bairro-santana' as PageId },
+    { label: 'Instalação de Ar Condicionado no Brooklin', page: 'bairro-brooklin' as PageId },
+    { label: 'Instalação de Ar Condicionado em Perdizes', page: 'bairro-perdizes' as PageId },
+    { label: 'Instalação de Ar Condicionado no Morumbi', page: 'bairro-morumbi' as PageId },
+  ]
+
   const regionLinks = [
     { label: 'Ar Condicionado em São Paulo (Capital)', page: 'sao-paulo' as PageId },
     { label: 'Ar Condicionado em Santo André', page: 'santo-andre' as PageId },
@@ -2077,6 +2090,10 @@ function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
         <div>
           <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Regiões Atendidas</h2>
           <LinkList links={regionLinks} />
+        </div>
+        <div>
+          <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Páginas por Bairro</h2>
+          <LinkList links={bairroLinks} />
         </div>
         <div>
           <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Blog — Guias e Legislação</h2>
