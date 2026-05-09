@@ -246,6 +246,38 @@ const metaMap: Record<string, { title: string; description: string }> = {
     title: 'Instalação de Ar Condicionado em Pompéia SP | New Clima',
     description: 'Instalação e manutenção de ar condicionado em Pompéia. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
   },
+  'instalacao-ar-condicionado-paraiso': {
+    title: 'Instalação de Ar Condicionado no Paraíso SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado no Paraíso. Técnicos certificados, obra limpa e garantia por escrito. Próximo à Vila Mariana. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-aclimacao': {
+    title: 'Instalação de Ar Condicionado na Aclimação SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado na Aclimação. Técnicos certificados, obra limpa e garantia por escrito. Próximo à Vila Mariana. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-mirandopolis': {
+    title: 'Instalação de Ar Condicionado em Mirandópolis SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em Mirandópolis. Técnicos certificados, obra limpa e garantia por escrito. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-planalto-paulista': {
+    title: 'Instalação de Ar Condicionado no Planalto Paulista SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado no Planalto Paulista. Técnicos certificados, obra limpa e garantia por escrito. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-vila-clementino': {
+    title: 'Instalação de Ar Condicionado em Vila Clementino SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em Vila Clementino. Técnicos certificados, obra limpa e garantia por escrito. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-chacara-klabin': {
+    title: 'Instalação de Ar Condicionado na Chácara Klabin SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado na Chácara Klabin. Técnicos certificados, obra limpa e garantia por escrito. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-cambuci': {
+    title: 'Instalação de Ar Condicionado no Cambuci SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado no Cambuci. Técnicos certificados, obra limpa e garantia por escrito. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-liberdade': {
+    title: 'Instalação de Ar Condicionado na Liberdade SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado na Liberdade. Técnicos certificados, obra limpa e garantia por escrito. (11) 96346-2516.',
+  },
   'instalacao-ar-condicionado-morumbi': {
     title: 'Instalação de Ar Condicionado no Morumbi SP | New Clima',
     description: 'Instalação e manutenção de ar condicionado no Morumbi. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
