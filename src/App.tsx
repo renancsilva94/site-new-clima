@@ -98,16 +98,18 @@ const WhatsAppButton = ({ className, text = "Solicitar Orçamento" }: { classNam
   </a>
 );
 
-const SectionHeading = ({ tag, title, subtitle, centered = false }: { tag?: string, title: string, subtitle?: string, centered?: boolean }) => (
+const SectionHeading = ({ tag, title, subtitle, centered = false, asH1 = false }: { tag?: string, title: string, subtitle?: string, centered?: boolean, asH1?: boolean }) => (
   <div className={`mb-12 ${centered ? 'text-center max-w-3xl mx-auto' : 'max-w-2xl'}`}>
     {tag && (
       <span className="inline-block bg-ice text-primary-light text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-4">
         {tag}
       </span>
     )}
-    <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4 leading-tight">
-      {title}
-    </h2>
+    {asH1 ? (
+      <h1 className="text-3xl md:text-4xl font-extrabold text-primary mb-4 leading-tight">{title}</h1>
+    ) : (
+      <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4 leading-tight">{title}</h2>
+    )}
     {subtitle && (
       <p className="text-lg text-slate-600 leading-relaxed">
         {subtitle}
@@ -1155,6 +1157,7 @@ function BlogView({ navigate, postId }: { navigate: (p: PageId) => void, postId?
         tag="Nosso Blog"
         title="Dicas e Especialista em Climatização"
         subtitle="Conteúdo técnico para ajudar você a escolher e manter seu ar condicionado com inteligência."
+        asH1
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <BlogCard 
@@ -1292,6 +1295,7 @@ function AboutView({ navigate }: { navigate: (p: PageId) => void }) {
         tag="Nossa História"
         title="New Clima Ar Condicionado: Referência em Climatização em SP e ABC"
         subtitle="Especialistas em climatização com foco em eficiência, saúde e conforto térmico para residências e empresas."
+        asH1
       />
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
@@ -1376,6 +1380,7 @@ function ContactView() {
         tag="Contato"
         title="Fale com Nossos Especialistas em Climatização"
         subtitle="Estamos prontos para atender seu chamado em São Paulo e no ABC Paulista."
+        asH1
       />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="bg-slate-50 p-8 rounded-3xl">
