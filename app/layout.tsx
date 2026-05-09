@@ -5,9 +5,6 @@ export const metadata: Metadata = {
   title: 'New Clima Ar | Instalação e Manutenção de Ar Condicionado em SP e ABC Paulista',
   description: 'Instalação e manutenção de ar condicionado em São Paulo e ABC Paulista. 7 anos de experiência, técnicos certificados e visita gratuita. Ligue (11) 96346-2516.',
   metadataBase: new URL('https://www.newclimaar.com.br'),
-  alternates: {
-    canonical: 'https://www.newclimaar.com.br/',
-  },
   openGraph: {
     type: 'website',
     url: 'https://www.newclimaar.com.br/',
