@@ -72,7 +72,7 @@ import {
 } from './components/RegionContent';
 
 // --- Types ---
-type PageId = 'home' | 'mapa-site' | 'split-multisplit' | 'bairro-moema' | 'bairro-vila-mariana' | 'bairro-pinheiros' | 'bairro-itaim-bibi' | 'bairro-jardins' | 'bairro-tatuape' | 'bairro-santana' | 'bairro-brooklin' | 'bairro-perdizes' | 'bairro-morumbi' | 'bairro-mooca' | 'bairro-analia-franco' | 'bairro-vila-madalena' | 'bairro-campo-belo' | 'bairro-saude' | 'bairro-higienopolis' | 'bairro-lapa' | 'bairro-santo-amaro' | 'bairro-tucuruvi' | 'bairro-ipiranga' | 'sistemas-comerciais' | 'vrf-mini-vrf' | 'manutencao-preventiva' | 'manutencao-corretiva' | 'limpeza' | 'blog' | 'sobre' | 'contato' | 'sao-paulo' | 'santo-andre' | 'sao-bernardo' | 'sao-caetano' | 'diadema' | 'maua' | 'blog-inverter' | 'blog-apartamento' | 'blog-btus' | 'blog-pmoc' | 'blog-round-cassette' | 'blog-obra-limpa' | 'blog-quarto' | 'blog-convencional-inverter' | 'blog-empresas' | 'blog-pmoc-obrigatorio' | 'blog-multa-pmoc' | 'blog-pmoc-condominio' | 'blog-custo-pmoc' | 'blog-custo-instalacao' | 'blog-qual-ac' | 'blog-split-multi-split' | 'blog-manutencao-consequencias';
+type PageId = 'home' | 'mapa-site' | 'split-multisplit' | 'bairro-moema' | 'bairro-vila-mariana' | 'bairro-pinheiros' | 'bairro-itaim-bibi' | 'bairro-jardins' | 'bairro-tatuape' | 'bairro-santana' | 'bairro-brooklin' | 'bairro-perdizes' | 'bairro-morumbi' | 'bairro-mooca' | 'bairro-analia-franco' | 'bairro-vila-madalena' | 'bairro-campo-belo' | 'bairro-saude' | 'bairro-higienopolis' | 'bairro-lapa' | 'bairro-santo-amaro' | 'bairro-tucuruvi' | 'bairro-ipiranga' | 'bairro-vila-prudente' | 'bairro-jabaquara' | 'bairro-campo-grande' | 'bairro-penha' | 'bairro-cursino' | 'bairro-agua-rasa' | 'bairro-bela-vista' | 'bairro-butanta' | 'bairro-vila-olimpia' | 'bairro-pompeia' | 'sistemas-comerciais' | 'vrf-mini-vrf' | 'manutencao-preventiva' | 'manutencao-corretiva' | 'limpeza' | 'blog' | 'sobre' | 'contato' | 'sao-paulo' | 'santo-andre' | 'sao-bernardo' | 'sao-caetano' | 'diadema' | 'maua' | 'blog-inverter' | 'blog-apartamento' | 'blog-btus' | 'blog-pmoc' | 'blog-round-cassette' | 'blog-obra-limpa' | 'blog-quarto' | 'blog-convencional-inverter' | 'blog-empresas' | 'blog-pmoc-obrigatorio' | 'blog-multa-pmoc' | 'blog-pmoc-condominio' | 'blog-custo-pmoc' | 'blog-custo-instalacao' | 'blog-qual-ac' | 'blog-split-multi-split' | 'blog-manutencao-consequencias';
 
 // --- Components ---
 
@@ -160,6 +160,16 @@ export default function App() {
       'bairro-santo-amaro': '/instalacao-ar-condicionado-santo-amaro',
       'bairro-tucuruvi': '/instalacao-ar-condicionado-tucuruvi',
       'bairro-ipiranga': '/instalacao-ar-condicionado-ipiranga',
+      'bairro-vila-prudente': '/instalacao-ar-condicionado-vila-prudente',
+      'bairro-jabaquara': '/instalacao-ar-condicionado-jabaquara',
+      'bairro-campo-grande': '/instalacao-ar-condicionado-campo-grande',
+      'bairro-penha': '/instalacao-ar-condicionado-penha',
+      'bairro-cursino': '/instalacao-ar-condicionado-cursino',
+      'bairro-agua-rasa': '/instalacao-ar-condicionado-agua-rasa',
+      'bairro-bela-vista': '/instalacao-ar-condicionado-bela-vista',
+      'bairro-butanta': '/instalacao-ar-condicionado-butanta',
+      'bairro-vila-olimpia': '/instalacao-ar-condicionado-vila-olimpia',
+      'bairro-pompeia': '/instalacao-ar-condicionado-pompeia',
       'sao-paulo': '/ar-condicionado-sao-paulo',
       'santo-andre': '/ar-condicionado-santo-andre',
       'sao-bernardo': '/ar-condicionado-sao-bernardo-do-campo',
@@ -348,6 +358,16 @@ export default function App() {
             if (p === '/instalacao-ar-condicionado-santo-amaro') return <BairroView bairro="Santo Amaro" slug="santo-amaro" zona="Zona Sul" vizinhos={['Campo Belo', 'Brooklin', 'Campo Grande', 'Morumbi']} navigate={navigate} />;
             if (p === '/instalacao-ar-condicionado-tucuruvi') return <BairroView bairro="Tucuruvi" slug="tucuruvi" zona="Zona Norte" vizinhos={['Santana', 'Vila Guilherme', 'Mandaqui', 'Jaçanã']} navigate={navigate} />;
             if (p === '/instalacao-ar-condicionado-ipiranga') return <BairroView bairro="Ipiranga" slug="ipiranga" zona="Zona Sul" vizinhos={['Saúde', 'Cursino', 'Vila Mariana', 'Vila Prudente']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-vila-prudente') return <BairroView bairro="Vila Prudente" slug="vila-prudente" zona="Zona Leste" vizinhos={['Ipiranga', 'Mooca', 'Sapopemba', 'Cursino']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-jabaquara') return <BairroView bairro="Jabaquara" slug="jabaquara" zona="Zona Sul" vizinhos={['Saúde', 'Santo Amaro', 'Cursino', 'Vila Mariana']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-campo-grande') return <BairroView bairro="Campo Grande" slug="campo-grande" zona="Zona Sul" vizinhos={['Santo Amaro', 'Campo Belo', 'Brooklin', 'Morumbi']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-penha') return <BairroView bairro="Penha" slug="penha" zona="Zona Leste" vizinhos={['Tatuapé', 'Anália Franco', 'Ermelino Matarazzo', 'Aricanduva']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-cursino') return <BairroView bairro="Cursino" slug="cursino" zona="Zona Sul" vizinhos={['Saúde', 'Ipiranga', 'Vila Prudente', 'Jabaquara']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-agua-rasa') return <BairroView bairro="Água Rasa" slug="agua-rasa" zona="Zona Leste" vizinhos={['Mooca', 'Tatuapé', 'Belém', 'Vila Prudente']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-bela-vista') return <BairroView bairro="Bela Vista" slug="bela-vista" zona="Região Central" vizinhos={['Paraíso', 'Liberdade', 'Consolação', 'Higienópolis']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-butanta') return <BairroView bairro="Butantã" slug="butanta" zona="Zona Oeste" vizinhos={['Vila Madalena', 'Pinheiros', 'Rio Pequeno', 'Vila Sônia']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-vila-olimpia') return <BairroView bairro="Vila Olímpia" slug="vila-olimpia" zona="Zona Sul" vizinhos={['Itaim Bibi', 'Brooklin', 'Moema', 'Campo Belo']} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-pompeia') return <BairroView bairro="Pompéia" slug="pompeia" zona="Zona Oeste" vizinhos={['Perdizes', 'Lapa', 'Água Branca', 'Barra Funda']} navigate={navigate} />;
             if (p === '/ar-condicionado-sao-paulo') return <RegionView region="sao-paulo" navigate={navigate} />;
             if (p === '/ar-condicionado-santo-andre') return <RegionView region="santo-andre" navigate={navigate} />;
             if (p === '/ar-condicionado-sao-bernardo-do-campo') return <RegionView region="sao-bernardo" navigate={navigate} />;
@@ -1999,6 +2019,16 @@ function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
     { label: 'Instalação de Ar Condicionado em Santo Amaro', page: 'bairro-santo-amaro' as PageId },
     { label: 'Instalação de Ar Condicionado no Tucuruvi', page: 'bairro-tucuruvi' as PageId },
     { label: 'Instalação de Ar Condicionado no Ipiranga', page: 'bairro-ipiranga' as PageId },
+    { label: 'Instalação de Ar Condicionado em Vila Prudente', page: 'bairro-vila-prudente' as PageId },
+    { label: 'Instalação de Ar Condicionado em Jabaquara', page: 'bairro-jabaquara' as PageId },
+    { label: 'Instalação de Ar Condicionado em Campo Grande', page: 'bairro-campo-grande' as PageId },
+    { label: 'Instalação de Ar Condicionado em Penha', page: 'bairro-penha' as PageId },
+    { label: 'Instalação de Ar Condicionado em Cursino', page: 'bairro-cursino' as PageId },
+    { label: 'Instalação de Ar Condicionado em Água Rasa', page: 'bairro-agua-rasa' as PageId },
+    { label: 'Instalação de Ar Condicionado em Bela Vista', page: 'bairro-bela-vista' as PageId },
+    { label: 'Instalação de Ar Condicionado em Butantã', page: 'bairro-butanta' as PageId },
+    { label: 'Instalação de Ar Condicionado em Vila Olímpia', page: 'bairro-vila-olimpia' as PageId },
+    { label: 'Instalação de Ar Condicionado em Pompéia', page: 'bairro-pompeia' as PageId },
   ]
 
   const regionLinks = [
