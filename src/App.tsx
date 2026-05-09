@@ -31,7 +31,7 @@ import {
   HeartHandshake,
   ExternalLink
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { useRouter, usePathname } from 'next/navigation';
 
