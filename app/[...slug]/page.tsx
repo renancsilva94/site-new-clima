@@ -315,6 +315,30 @@ const metaMap: Record<string, { title: string; description: string }> = {
 
 
 
+  'instalacao-ar-condicionado-sp': {
+    title: 'Instalação de Ar Condicionado em São Paulo | New Clima',
+    description: 'Serviço completo de instalação de ar condicionado em São Paulo e ABC. Split, multi-split, VRF e cassete. Técnicos certificados e garantia por escrito. (11) 96346-2516.',
+  },
+  'manutencao-ar-condicionado-sp': {
+    title: 'Manutenção de Ar Condicionado em São Paulo | New Clima',
+    description: 'Manutenção preventiva e corretiva de ar condicionado em São Paulo e ABC. Todas as marcas, peças originais e garantia por escrito. (11) 96346-2516.',
+  },
+  'tecnico-ar-condicionado-sp': {
+    title: 'Técnico de Ar Condicionado em São Paulo | New Clima',
+    description: 'Técnicos certificados de ar condicionado em São Paulo e ABC. Instalação, manutenção e conserto com atendimento em até 2 horas. (11) 96346-2516.',
+  },
+  'conserto-ar-condicionado-sp': {
+    title: 'Conserto de Ar Condicionado em São Paulo | New Clima',
+    description: 'Conserto de ar condicionado em São Paulo e ABC. Diagnóstico preciso, peças originais e garantia de 90 dias. Atendimento em até 2 horas. (11) 96346-2516.',
+  },
+  'empresa-ar-condicionado-sp': {
+    title: 'Empresa de Ar Condicionado em São Paulo | New Clima',
+    description: 'New Clima — empresa especializada em ar condicionado em SP e ABC desde 2018. Instalação, manutenção, higienização e PMOC com garantia por escrito.',
+  },
+  'assistencia-tecnica-ar-condicionado-sp': {
+    title: 'Assistência Técnica de Ar Condicionado em SP | New Clima',
+    description: 'Assistência técnica especializada em ar condicionado em São Paulo e ABC. Conserto, manutenção e instalação com técnicos certificados. (11) 96346-2516.',
+  },
   'instalacao-ar-condicionado-morumbi': {
     title: 'Instalação de Ar Condicionado no Morumbi SP | New Clima',
     description: 'Instalação e manutenção de ar condicionado no Morumbi. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
