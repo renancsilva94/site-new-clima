@@ -339,6 +339,46 @@ const metaMap: Record<string, { title: string; description: string }> = {
     title: 'Assistência Técnica de Ar Condicionado em SP | New Clima',
     description: 'Assistência técnica especializada em ar condicionado em São Paulo e ABC. Conserto, manutenção e instalação com técnicos certificados. (11) 96346-2516.',
   },
+  'blog/ar-condicionado-faz-mal-saude': {
+    title: 'Ar Condicionado Faz Mal à Saúde? Verdades e Mitos | New Clima',
+    description: 'Ar condicionado faz mal à saúde? Depende da manutenção. Saiba como evitar problemas respiratórios e manter o ar limpo em SP.',
+  },
+  'blog/dormir-com-ar-condicionado-faz-mal': {
+    title: 'Dormir com Ar Condicionado Faz Mal? Saiba a Verdade | New Clima',
+    description: 'Dormir com ar condicionado faz mal? Não, se estiver limpo e regulado. Veja as melhores práticas para noites confortáveis em SP.',
+  },
+  'blog/ar-condicionado-gasta-mais-dia-ou-noite': {
+    title: 'Ar Condicionado Gasta Mais de Dia ou à Noite? | New Clima',
+    description: 'Descubra quando o ar condicionado consome mais energia em SP e como economizar na conta de luz sem abrir mão do conforto.',
+  },
+  'blog/quanto-gasta-ar-condicionado-inverter': {
+    title: 'Quanto Gasta um Ar Condicionado Inverter por Mês? | New Clima',
+    description: 'Tabela completa de consumo do ar condicionado inverter em SP. Calcule o gasto mensal por BTUs e horas de uso.',
+  },
+  'blog/mau-cheiro-ar-condicionado': {
+    title: 'Mau Cheiro no Ar Condicionado: Causas e Solução | New Clima',
+    description: 'Por que o ar condicionado está com cheiro ruim? Conheça as causas e como eliminar o odor com higienização profissional em SP.',
+  },
+  'blog/ar-condicionado-desliga-sozinho': {
+    title: 'Ar Condicionado Desliga Sozinho: 7 Causas e Como Resolver | New Clima',
+    description: 'Ar condicionado desligando sozinho? Veja as 7 causas mais comuns e como resolver. Atendimento em SP e ABC.',
+  },
+  'blog/vida-util-ar-condicionado': {
+    title: 'Qual a Vida Útil do Ar Condicionado? Como Prolongar | New Clima',
+    description: 'Um split dura até 15 anos com manutenção. Saiba o que reduz a vida útil e como prolongar o seu equipamento em SP.',
+  },
+  'blog/temperatura-ideal-ar-condicionado': {
+    title: 'Qual a Temperatura Ideal do Ar Condicionado? | New Clima',
+    description: 'A temperatura ideal do ar condicionado é entre 23°C e 25°C. Saiba o impacto na saúde e na economia de energia em SP.',
+  },
+  'blog/funcao-dry-ar-condicionado': {
+    title: 'Função Dry no Ar Condicionado: Para que Serve? | New Clima',
+    description: 'A função Dry desumidifica o ar sem resfriar demais. Ideal para dias úmidos em SP. Saiba quando e como usar.',
+  },
+  'blog/gas-r32-r410a-ar-condicionado': {
+    title: 'Gás R32 e R410A: Diferenças e Qual é Melhor | New Clima',
+    description: 'Entenda a diferença entre o gás R32 e R410A no ar condicionado. Qual usar, como recarregar e por que não misturar.',
+  },
   'instalacao-ar-condicionado-morumbi': {
     title: 'Instalação de Ar Condicionado no Morumbi SP | New Clima',
     description: 'Instalação e manutenção de ar condicionado no Morumbi. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
