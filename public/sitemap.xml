@@ -9,6 +9,26 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- Páginas Principais -->
+  <url>
+    <loc>https://www.newclimaar.com.br/sobre</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.newclimaar.com.br/contato</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.newclimaar.com.br/mapa-site</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
   <!-- Páginas de Serviço -->
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-split-sao-paulo</loc>
@@ -83,20 +103,6 @@
     <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-
-  <!-- Sobre e Contato -->
-  <url>
-    <loc>https://www.newclimaar.com.br/sobre</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.newclimaar.com.br/contato</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 
   <!-- Blog Index -->
