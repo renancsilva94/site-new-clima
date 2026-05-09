@@ -51,14 +51,53 @@ const WhatsAppButton = ({ text = "Solicitar Orçamento" }: { text?: string }) =>
 
 
 // --- Regiões Atendidas (usado nas páginas de serviço) ---
-export const RegioesSectionService = ({ navigate }: { navigate?: (p: any) => void }) => {
-  const zonas = [
-    { label: 'Zona Sul', bairros: ['Vila Mariana', 'Moema', 'Campo Belo', 'Brooklin', 'Itaim Bibi', 'Morumbi', 'Santo Amaro', 'Saúde', 'Ipiranga', 'Jabaquara'] },
-    { label: 'Zona Oeste', bairros: ['Pinheiros', 'Vila Madalena', 'Perdizes', 'Lapa', 'Pompéia', 'Higienópolis', 'Jardins', 'Cerqueira César'] },
-    { label: 'Zona Norte', bairros: ['Santana', 'Tucuruvi', 'Vila Guilherme', 'Casa Verde', 'Mandaqui'] },
-    { label: 'Zona Leste', bairros: ['Tatuapé', 'Anália Franco', 'Mooca', 'Vila Prudente', 'Penha', 'Água Rasa'] },
-    { label: 'ABC Paulista', bairros: ['Santo André', 'São Bernardo do Campo', 'São Caetano do Sul', 'Diadema', 'Mauá'] },
+export const RegioesSectionService = () => {
+  const [activeTab, setActiveTab] = React.useState(0)
+
+  const tabs = [
+    {
+      label: 'Zona Sul',
+      bairros: ['Vila Mariana', 'Moema', 'Saúde', 'Ipiranga', 'Jabaquara', 'Santo Amaro', 'Campo Belo', 'Campo Grande', 'Brooklin', 'Cursino', 'Mirandópolis', 'Planalto Paulista', 'Aclimação', 'Vila Clementino', 'Chácara Klabin', 'Paraíso', 'Vila Olímpia', 'Itaim Bibi', 'Morumbi', 'Vila Andrade'],
+    },
+    {
+      label: 'Zona Oeste',
+      bairros: ['Pinheiros', 'Vila Madalena', 'Perdizes', 'Lapa', 'Pompéia', 'Água Branca', 'Alto de Pinheiros', 'Butantã', 'Vila Leopoldina', 'Jardim Europa', 'Jardim América', 'Jardins', 'Cerqueira César', 'Consolação', 'Santa Cecília', 'Higienópolis', 'Pacaembu'],
+    },
+    {
+      label: 'Zona Norte',
+      bairros: ['Santana', 'Tucuruvi', 'Vila Guilherme', 'Vila Maria', 'Casa Verde', 'Mandaqui', 'Tremembé', 'Jaçanã', 'Vila Medeiros', 'Freguesia do Ó', 'Brasilândia', 'Limão'],
+    },
+    {
+      label: 'Zona Leste',
+      bairros: ['Tatuapé', 'Anália Franco', 'Mooca', 'Vila Prudente', 'Penha', 'Aricanduva', 'Carrão', 'Água Rasa', 'Belém', 'Brás', 'Jardim Anália', 'Vila Formosa', 'Sapopemba', 'São Mateus', 'Itaquera'],
+    },
+    {
+      label: 'Região Central',
+      bairros: ['Centro', 'República', 'Sé', 'Liberdade', 'Bela Vista', 'Cambuci', 'Consolação', 'Santa Cecília', 'Vila Buarque', 'Luz', 'Glicério', 'Santa Efigênia', 'Bom Retiro'],
+    },
+    {
+      label: 'Santo André',
+      bairros: ['Centro', 'Campestre', 'Vila Assunção', 'Vila Bastos', 'Utinga', 'Santa Teresinha', 'Parque das Nações', 'Vila Pires', 'Jardim Bela Vista', 'Vila Alzira', 'Paraíso', 'Bangú', 'Vila Luzita'],
+    },
+    {
+      label: 'São Bernardo',
+      bairros: ['Centro', 'Rudge Ramos', 'Jardim do Mar', 'Assunção', 'Nova Petrópolis', 'Baeta Neves', 'Planalto', 'Demarchi', 'Alves Dias', 'Anchieta', 'Paulicéia', 'Cooperativa', 'Vila Euclides'],
+    },
+    {
+      label: 'São Caetano',
+      bairros: ['Centro', 'Santa Paula', 'Barcelona', 'Santo Antônio', 'Olímpico', 'Boa Vista', 'Cerâmica', 'Fundação', 'Nova Gerty', 'Prosperidade'],
+    },
+    {
+      label: 'Diadema',
+      bairros: ['Centro', 'Serraria', 'Taboão', 'Piraporinha', 'Canhema', 'Conceição', 'Eldorado', 'Campanário', 'Inamar', 'Vila Nogueira'],
+    },
+    {
+      label: 'Mauá',
+      bairros: ['Centro', 'Jardim Zaíra', 'Parque São Vicente', 'Vila Assis', 'Guapituba', 'Vila Vitória', 'Jardim Oratório', 'Capuava', 'Vila Cardoso'],
+    },
   ]
+
+  const active = tabs[activeTab]
 
   return (
     <section className="py-16 bg-slate-50">
@@ -72,27 +111,44 @@ export const RegioesSectionService = ({ navigate }: { navigate?: (p: any) => voi
           </h2>
           <p className="text-slate-500">Visita técnica gratuita para qualquer bairro listado abaixo.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-          {zonas.map((zona, i) => (
-            <div key={i}>
-              <h3 className="text-xs font-bold text-primary-light uppercase tracking-widest mb-3">{zona.label}</h3>
-              <div className="flex flex-wrap gap-2">
-                {zona.bairros.map((b, j) => (
-                  <span key={j} className="flex items-center gap-1 text-sm text-slate-600 bg-white border border-slate-200 px-3 py-1 rounded-full">
-                    <MapPin size={10} className="text-primary-light" /> {b}
-                  </span>
-                ))}
-              </div>
+
+        {/* Tabs */}
+        <div className="flex flex-wrap gap-2 mb-6 border-b border-slate-200 pb-0">
+          {tabs.map((tab, i) => (
+            <button
+              key={i}
+              onClick={() => setActiveTab(i)}
+              className={`px-4 py-3 text-sm font-bold transition-all border-b-2 -mb-px ${
+                activeTab === i
+                  ? 'border-primary-light text-primary-light'
+                  : 'border-transparent text-slate-400 hover:text-slate-600'
+              }`}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Bairros */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mb-6">
+          {active.bairros.map((bairro, i) => (
+            <div key={i} className="flex items-center gap-2 text-sm text-slate-600 font-medium">
+              <MapPin size={13} className="text-primary-light shrink-0" />
+              {bairro}
             </div>
           ))}
         </div>
-        <p className="text-slate-400 text-sm">
-          Não encontrou seu bairro?{' '}
-          <a href="https://wa.me/5511963462516" rel="noopener noreferrer" className="text-primary-light font-bold hover:underline">
-            Fale no WhatsApp
-          </a>{' '}
-          — atendemos toda a Grande São Paulo.
-        </p>
+
+        <div className="flex items-center justify-between">
+          <p className="text-slate-400 text-sm">{active.bairros.length} localidades cobertas em {active.label}.</p>
+          <a
+            href="https://wa.me/5511963462516"
+            rel="noopener noreferrer"
+            className="text-primary-light font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all"
+          >
+            Falar no WhatsApp <ArrowRight size={13} />
+          </a>
+        </div>
       </div>
     </section>
   )
