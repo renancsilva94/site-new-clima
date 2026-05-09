@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+
 import { 
   CheckCircle2, 
   ArrowRight, 
@@ -565,10 +565,6 @@ const ServiceLayout = ({ title, tag, icon, imageUrl, imageAlt, children }: { tit
 
 export const SplitMultiSplit = () => (
   <div className="space-y-16 pb-20">
-    <Helmet>
-      <title>Instalação de Ar Condicionado Split e Multi Split em São Paulo | New Clima</title>
-      <meta name="description" content="Instalação de ar condicionado split e multi split em São Paulo e ABC Paulista. Técnicos certificados, infraestrutura embutida e garantia de 1 ano." />
-    </Helmet>
     <ServiceLayout tag="Residencial & Comercial" title="Instalação de Ar Condicionado Split e Multi Split em SP" icon={<Zap />} imageUrl="https://images.unsplash.com/photo-1631545806609-c7e2b0bf7e19?w=1200&q=80&auto=format&fit=crop" imageAlt="Técnico realizando instalação de ar condicionado split em apartamento em São Paulo">
       <p>A <strong>instalação de sistemas Split e Multi Split</strong> é a solução mais eficiente para climatização de residências, apartamentos e escritórios em <strong>São Paulo e no ABC Paulista</strong>.</p>
       <p>Diferente de instalações amadoras, nosso processo inclui o cálculo preciso da carga térmica. Utilizamos tubulação de cobre de alta qualidade e isolamento térmico adequado.</p>
@@ -589,10 +585,6 @@ export const SplitMultiSplit = () => (
 
 export const SistemasComerciais = () => (
   <div className="space-y-16 pb-20">
-    <Helmet>
-      <title>Ar Condicionado Cassete, Piso-Teto e Dutado para Empresas em SP | New Clima</title>
-      <meta name="description" content="Sistemas de ar condicionado comercial em São Paulo e ABC. Cassete, Piso-Teto e Dutado para lojas, escritórios e restaurantes." />
-    </Helmet>
     <ServiceLayout tag="Corporativo & Comercial" title="Ar Condicionado Cassete, Piso-Teto e Dutados para Empresas" icon={<Thermometer />} imageUrl="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80&auto=format&fit=crop" imageAlt="Sistema de ar condicionado cassete instalado em escritório comercial em São Paulo">
       <p>Para ambientes comerciais como <strong>lojas, restaurantes e escritórios em São Paulo</strong>, os sistemas Cassete e Piso-Teto são as melhores opções. A New Clima Ar projeta sistemas que garantem distribuição uniforme do ar.</p>
       <p>O modelo <strong>Cassete</strong> é discreto e elegante, ideal para forros de gesso. Já o <strong>Piso-Teto</strong> oferece robustez para grandes vãos e pé-direito alto.</p>
@@ -613,10 +605,6 @@ export const SistemasComerciais = () => (
 
 export const VRFMiniVRF = () => (
   <div className="space-y-16 pb-20">
-    <Helmet>
-      <title>Instalação de Sistema VRF e Mini VRF em São Paulo | New Clima</title>
-      <meta name="description" content="Especialistas em sistemas VRF e Mini VRF em São Paulo e ABC. Projetos para residências de alto padrão e edifícios corporativos." />
-    </Helmet>
     <ServiceLayout tag="Alta Tecnologia" title="Sistemas VRF e Mini VRF: O Ápice da Climatização" icon={<Settings />} imageUrl="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80&auto=format&fit=crop" imageAlt="Sistema VRF de ar condicionado instalado em edifício corporativo em São Paulo">
       <p>O sistema <strong>VRF (Variable Refrigerant Flow)</strong> é a tecnologia mais avançada para climatização de grandes residências de luxo e edifícios corporativos em <strong>São Paulo</strong>.</p>
       <p>Na New Clima Ar, nossos engenheiros projetam sistemas VRF que otimizam o espaço das condensadoras e garantem o máximo de conforto com o mínimo de ruído.</p>
@@ -637,10 +625,6 @@ export const VRFMiniVRF = () => (
 
 export const ManutencaoPreventiva = () => (
   <div className="space-y-16 pb-20">
-    <Helmet>
-      <title>Manutenção Preventiva de Ar Condicionado e PMOC em SP | New Clima</title>
-      <meta name="description" content="Manutenção preventiva de ar condicionado e gestão de PMOC em São Paulo e ABC Paulista. Conformidade com a Lei 13.589/2018." />
-    </Helmet>
     <ServiceLayout tag="Saúde & Economia" title="Manutenção Preventiva de Ar Condicionado e PMOC em SP" icon={<ShieldCheck />} imageUrl="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80&auto=format&fit=crop" imageAlt="Técnico realizando manutenção preventiva de ar condicionado em São Paulo">
       <p>A <strong>manutenção preventiva de ar condicionado</strong> é essencial para garantir a qualidade do ar e a vida útil do seu aparelho.</p>
       <p>Para empresas, implementamos o <strong>PMOC (Plano de Manutenção, Operação e Controle)</strong>, garantindo conformidade com a Lei 13.589/2018.</p>
@@ -661,10 +645,6 @@ export const ManutencaoPreventiva = () => (
 
 export const ManutencaoCorretiva = () => (
   <div className="space-y-16 pb-20">
-    <Helmet>
-      <title>Conserto de Ar Condicionado em São Paulo e ABC | New Clima</title>
-      <meta name="description" content="Manutenção corretiva e conserto de ar condicionado em São Paulo e ABC. Diagnóstico rápido, peças originais e garantia de 90 dias." />
-    </Helmet>
     <ServiceLayout tag="Assistência Técnica" title="Conserto e Manutenção Corretiva de Ar Condicionado em SP" icon={<AlertTriangle />} imageUrl="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80&auto=format&fit=crop" imageAlt="Técnico realizando conserto de ar condicionado em São Paulo">
       <p>Seu ar condicionado parou de funcionar? A New Clima Ar oferece <strong>assistência técnica rápida em São Paulo e no ABC</strong>. Realizamos o conserto de ar condicionado de todas as marcas, com diagnóstico preciso e uso de peças originais.</p>
       <p>Nossos técnicos são especialistas em resolver falhas em compressores, vazamentos de gás, problemas em placas eletrônicas Inverter e ruídos excessivos.</p>
@@ -685,10 +665,6 @@ export const ManutencaoCorretiva = () => (
 
 export const LimpezaHigienizacao = () => (
   <div className="space-y-16 pb-20">
-    <Helmet>
-      <title>Limpeza e Higienização de Ar Condicionado em São Paulo | New Clima</title>
-      <meta name="description" content="Limpeza profunda e higienização de ar condicionado em São Paulo e ABC. Bactericida profissional, eliminação de fungos e ácaros." />
-    </Helmet>
     <ServiceLayout tag="Qualidade do Ar" title="Limpeza e Higienização de Ar Condicionado em São Paulo" icon={<Droplets />} imageUrl="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=1200&q=80&auto=format&fit=crop" imageAlt="Limpeza e higienização profunda de ar condicionado em São Paulo">
       <p>A <strong>limpeza de ar condicionado</strong> é vital para a saúde de quem frequenta o ambiente. Em São Paulo e no ABC, o acúmulo de poeira e poluição nos aparelhos é acelerado, exigindo higienização profunda.</p>
       <p>Na New Clima Ar, utilizamos produtos bactericidas de alta eficiência. Nossa <strong>higienização</strong> inclui a limpeza da serpentina, turbina, filtros e bandeja de dreno.</p>
