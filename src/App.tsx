@@ -62,6 +62,7 @@ import {
   BlogSplitMultiSplitApartamento,
   BlogManutencaoConsequencias
 } from './components/BlogContent';
+import SchemaOrg from './components/SchemaOrg';
 import { 
   SaoPauloRegion, 
   SantoAndreRegion, 
@@ -170,6 +171,7 @@ export default function App() {
 
   return (
     <>
+      <SchemaOrg />
       <div className="min-h-screen font-sans text-slate-900 bg-white selection:bg-primary/10 selection:text-primary">
         
 
