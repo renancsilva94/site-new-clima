@@ -319,76 +319,106 @@ export default function App() {
         </main>
 
         {/* Footer */}
-        <footer className="bg-primary text-white pt-12 pb-6">
+        <footer className="bg-[#0b1120] text-white pt-16 pb-6">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+
+              {/* Col 1 — Logo + Descrição + Redes */}
               <div className="space-y-6">
-                <img src="https://cdn.coteibem.com.br/company/41315/logo/f4d0405d-28b6-4834-a8ca-9e63b68073fa.png" alt="New Clima Ar" className="h-20 w-auto brightness-0 invert" />
-                <p className="text-blue-100/70 text-sm leading-relaxed">
-                  Referência em climatização de alta performance em São Paulo e ABC. Projetos residenciais, comerciais e industriais com foco em eficiência energética e qualidade do ar.
+                <img
+                  src="https://cdn.coteibem.com.br/company/41315/logo/f4d0405d-28b6-4834-a8ca-9e63b68073fa.png"
+                  alt="New Clima Ar Condicionado"
+                  className="h-16 w-auto brightness-0 invert"
+                />
+                <p className="text-blue-100/60 text-sm leading-relaxed">
+                  Especialista em instalação, manutenção, higienização e PMOC de ar condicionado em São Paulo e ABC Paulista. Atendimento residencial, comercial e industrial.
                 </p>
-                <div className="flex gap-4">
-                  <a href="#" aria-label="Instagram" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"><Instagram size={18} /></a>
-                  <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"><Facebook size={18} /></a>
-                  <a href="#" aria-label="Linkedin" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"><Linkedin size={18} /></a>
+                <div className="flex gap-3">
+                  <a href="https://www.instagram.com/newclimaar" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                    <Instagram size={16} />
+                  </a>
+                  <a href="https://www.facebook.com/newclimaar" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                    <Facebook size={16} />
+                  </a>
+                  <a href="https://www.linkedin.com/company/newclimaar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+                    <Linkedin size={16} />
+                  </a>
                 </div>
               </div>
 
+              {/* Col 2 — Contato */}
               <div>
-                <h4 className="font-display font-bold text-lg mb-6">Serviços Especializados</h4>
-                <ul className="space-y-3 text-sm text-blue-100/60">
-                  <li><button onClick={() => navigate('split-multisplit')} className="hover:text-white transition-colors">Instalação de Ar Condicionado Split</button></li>
-                  <li><button onClick={() => navigate('sistemas-comerciais')} className="hover:text-white transition-colors">Sistemas Cassete e Piso-Teto</button></li>
-                  <li><button onClick={() => navigate('vrf-mini-vrf')} className="hover:text-white transition-colors">Sistemas VRF e Mini VRF</button></li>
-                  <li><button onClick={() => navigate('manutencao-preventiva')} className="hover:text-white transition-colors">Manutenção Preventiva e PMOC</button></li>
-                  <li><button onClick={() => navigate('manutencao-corretiva')} className="hover:text-white transition-colors">Conserto de Ar Condicionado</button></li>
-                  <li><button onClick={() => navigate('limpeza')} className="hover:text-white transition-colors">Limpeza de Ar Condicionado SP</button></li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="font-display font-bold text-lg mb-6">Regiões de Atendimento</h4>
-                <ul className="space-y-3 text-sm text-blue-100/60">
-                  <li><button onClick={() => navigate('sao-paulo')} className="hover:text-white transition-colors">São Paulo (Capital)</button></li>
-                  <li><button onClick={() => navigate('santo-andre')} className="hover:text-white transition-colors">Santo André</button></li>
-                  <li><button onClick={() => navigate('sao-bernardo')} className="hover:text-white transition-colors">São Bernardo do Campo</button></li>
-                  <li><button onClick={() => navigate('sao-caetano')} className="hover:text-white transition-colors">São Caetano do Sul</button></li>
-                  <li><button onClick={() => navigate('diadema')} className="hover:text-white transition-colors">Diadema e Mauá</button></li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="font-display font-bold text-lg mb-6">Fale Conosco</h4>
+                <h4 className="font-bold text-white mb-6">Contato</h4>
                 <ul className="space-y-4 text-sm">
-                  <li className="flex items-start gap-3">
-                    <MapPin size={18} className="text-accent shrink-0" />
-                    <span className="text-blue-100/60">R. Santa Cruz, 2187 - Vila Mariana, São Paulo - SP</span>
+                  <li className="flex items-center gap-3 text-blue-100/70">
+                    <Phone size={15} className="text-primary-light shrink-0" />
+                    <a href="tel:+5511963462516" className="hover:text-white transition-colors">(11) 96346-2516</a>
                   </li>
-                  <li className="flex items-center gap-3">
-                    <Phone size={18} className="text-accent shrink-0" />
-                    <a href="tel:+5511963462516" className="text-blue-100/60 hover:text-white">(11) 96346-2516</a>
+                  <li className="flex items-center gap-3 text-blue-100/70">
+                    <div className="shrink-0 text-primary-light"><WhatsAppIcon size={15} /></div>
+                    <a href="https://wa.me/5511963462516" rel="noopener noreferrer" className="hover:text-white transition-colors">WhatsApp — resposta em até 2h</a>
                   </li>
-                  <li className="flex items-center gap-3">
-                    <div className="text-accent shrink-0">
-                      <WhatsAppIcon size={18} />
-                    </div>
-                    <a href="https://wa.me/5511963462516" rel="noopener noreferrer" className="text-blue-100/60 hover:text-white">Falar no WhatsApp</a>
+                  <li className="flex items-start gap-3 text-blue-100/70">
+                    <MapPin size={15} className="text-primary-light shrink-0 mt-0.5" />
+                    <span>R. Santa Cruz, 2187 — Vila Mariana, São Paulo / SP</span>
+                  </li>
+                  <li className="flex items-center gap-3 text-blue-100/70">
+                    <Clock size={15} className="text-primary-light shrink-0" />
+                    <span>Seg–Sex 8h–18h · Sáb 8h–13h</span>
                   </li>
                 </ul>
+              </div>
+
+              {/* Col 3 — Institucional */}
+              <div>
+                <h4 className="font-bold text-white mb-6">Institucional</h4>
+                <ul className="space-y-3 text-sm text-blue-100/60">
+                  <li><button onClick={() => navigate('home')} className="hover:text-white transition-colors">Início</button></li>
+                  <li><button onClick={() => navigate('sobre')} className="hover:text-white transition-colors">Quem Somos</button></li>
+                  <li><button onClick={() => navigate('blog')} className="hover:text-white transition-colors">Blog</button></li>
+                  <li><button onClick={() => navigate('contato')} className="hover:text-white transition-colors">Contato</button></li>
+                  <li><button onClick={() => navigate('mapa-site')} className="hover:text-white transition-colors">Mapa do Site</button></li>
+                  <li>
+                    <a
+                      href="https://maps.app.goo.gl/kHeynjnXoG943iG3A"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-white transition-colors flex items-center gap-1"
+                    >
+                      Avaliações no Google <ExternalLink size={11} />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Col 4 — Mapa */}
+              <div>
+                <h4 className="font-bold text-white mb-6">Localização</h4>
+                <div className="rounded-2xl overflow-hidden border border-white/10">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.9!2d-46.6378!3d-23.5893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2b2ed7f3a1%3A0x53986ad429ea0b1b!2sR.%20Santa%20Cruz%2C%202187%20-%20Vila%20Mariana%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1683900000000!5m2!1spt-BR!2sbr"
+                    width="100%"
+                    height="180"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="New Clima Ar Condicionado — Vila Mariana, São Paulo"
+                  />
+                </div>
               </div>
             </div>
 
-            <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-blue-100/40">
+            {/* Bottom bar */}
+            <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-blue-100/40">
               <p>© 2026 New Clima Ar Condicionado. Todos os direitos reservados.</p>
               <div className="flex gap-6">
-                <a href="#" className="hover:text-white">Política de Privacidade</a>
-                <button onClick={() => navigate('mapa-site')} className="hover:text-white">Mapa do Site</button>
-                <a href="#" className="hover:text-white">Termos de Uso</a>
+                <a href="#" className="hover:text-white transition-colors">Política de Privacidade</a>
+                <button onClick={() => navigate('mapa-site')} className="hover:text-white transition-colors">Mapa do Site</button>
               </div>
             </div>
           </div>
         </footer>
-
         {/* WhatsApp Float */}
         <div className="fixed bottom-6 right-6 z-[60] flex flex-col items-end gap-3 pointer-events-none">
               <div
@@ -428,7 +458,7 @@ function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
         'Vila Mariana', 'Moema', 'Saúde', 'Ipiranga', 'Jabaquara', 'Santo Amaro',
         'Campo Belo', 'Campo Grande', 'Brooklin', 'Cursino', 'Mirandópolis',
         'Planalto Paulista', 'Aclimação', 'Vila Clementino', 'Chácara Klabin',
-        'Paraíso', 'Vila Olimpia', 'Itaim Bibi', 'Morumbi', 'Vila Andrade',
+        'Paraíso', 'Vila Olímpia', 'Itaim Bibi', 'Morumbi', 'Vila Andrade',
       ],
     },
     {
@@ -455,7 +485,7 @@ function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
       page: 'sao-paulo' as PageId,
       bairros: [
         'Tatuapé', 'Anália Franco', 'Mooca', 'Vila Prudente', 'Penha',
-        'Aricanduva', 'Carrão', 'Água Rasa', 'Belém', 'Brás', 'Pari',
+        'Aricanduva', 'Carrão', 'Água Rasa', 'Belém', 'Brás',
         'Jardim Anália', 'Parque São Jorge', 'Vila Formosa', 'Sapopemba',
         'São Mateus', 'Itaquera', 'Guaianases',
       ],
@@ -470,14 +500,50 @@ function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
       ],
     },
     {
-      label: 'ABC Paulista',
+      label: 'Santo André',
       page: 'santo-andre' as PageId,
       bairros: [
-        'Santo André', 'São Bernardo do Campo', 'São Caetano do Sul',
-        'Diadema', 'Mauá', 'Ribeirão Pires', 'Rio Grande da Serra',
-        'Rudge Ramos', 'Campestre', 'Vila Assunção', 'Vila Bastos',
-        'Utinga', 'Nova Petrópolis', 'Assunção', 'Santa Paula',
-        'Barcelona', 'Olímpico', 'Serraria', 'Taboão',
+        'Centro', 'Bairro Jardim', 'Campestre', 'Vila Assunção', 'Vila Gilda',
+        'Vila Bastos', 'Utinga', 'Santa Teresinha', 'Parque das Nações',
+        'Vila Pires', 'Jardim Bela Vista', 'Vila Alzira', 'Paraíso',
+        'Vila Humaitá', 'Jardim', 'Bangú', 'Vila Luzita',
+      ],
+    },
+    {
+      label: 'São Bernardo',
+      page: 'sao-bernardo' as PageId,
+      bairros: [
+        'Centro', 'Rudge Ramos', 'Jardim do Mar', 'Assunção', 'Nova Petrópolis',
+        'Baeta Neves', 'Planalto', 'Demarchi', 'Alves Dias', 'Anchieta',
+        'Paulicéia', 'Cooperativa', 'Vila Euclides', 'Ferrazópolis',
+        'Jardim Olavo', 'Independência', 'Vila São Pedro',
+      ],
+    },
+    {
+      label: 'São Caetano',
+      page: 'sao-caetano' as PageId,
+      bairros: [
+        'Centro', 'Santa Paula', 'Barcelona', 'Santo Antônio', 'Olímpico',
+        'Boa Vista', 'Cerâmica', 'Fundação', 'Nova Gerty', 'Jardim São Caetano',
+        'Oswaldo Cruz', 'Prosperidade', 'São José', 'Mauá',
+      ],
+    },
+    {
+      label: 'Diadema',
+      page: 'diadema' as PageId,
+      bairros: [
+        'Centro', 'Serraria', 'Taboão', 'Piraporinha', 'Canhema', 'Conceição',
+        'Eldorado', 'Campanário', 'Inamar', 'Vila Nogueira', 'Casa Grande',
+        'Bairro Casa Grande', 'Jardim Canhema', 'Vila Mota',
+      ],
+    },
+    {
+      label: 'Mauá',
+      page: 'maua' as PageId,
+      bairros: [
+        'Centro', 'Jardim Zaíra', 'Parque São Vicente', 'Vila Assis', 'Guapituba',
+        'Vila Vitória', 'Jardim Oratório', 'Capuava', 'Vila Cardoso',
+        'Jardim Miranda', 'Matriz', 'Vila Magini', 'Parque das Américas',
       ],
     },
   ]
