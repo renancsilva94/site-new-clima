@@ -287,3 +287,190 @@ export const BlogManutencaoConsequencias = () => (
     <p>Substituição do compressor: R$ 800 a R$ 3.000. Tudo isso evitado com manutenção semestral de R$ 180 a R$ 300. Agende pelo WhatsApp <strong>(11) 96346-2516</strong>.</p>
   </BlogPostLayout>
 );
+
+// --- 10 Novos Posts ---
+
+export const BlogSaude = () => (
+  <BlogPostLayout tag="Saúde" title="Ar Condicionado Faz Mal à Saúde? Verdades e Mitos" date="9 de Maio, 2026" author="José Erivaldo">
+    <p>Uma dúvida muito comum entre nossos clientes em São Paulo é: <strong>ar condicionado faz mal à saúde?</strong> A resposta depende de como o equipamento é usado e mantido. Sem manutenção regular, sim, pode causar problemas. Com higienização em dia, é aliado da saúde.</p>
+    <h2 className="text-2xl font-bold text-primary">Por que o ar condicionado pode fazer mal?</h2>
+    <p>Quando o ar condicionado fica longos períodos sem limpeza, o filtro acumula <strong>fungos, ácaros, bactérias e poeira</strong>. Ao ligar o aparelho, essas partículas são expelidas no ar do ambiente, podendo causar:</p>
+    <ul className="space-y-2 list-disc pl-6">
+      <li><strong>Rinite e sinusite:</strong> irritação das mucosas nasais</li>
+      <li><strong>Asma:</strong> especialmente em crianças e idosos</li>
+      <li><strong>Alergias:</strong> coceira nos olhos, espirros frequentes</li>
+      <li><strong>Ressecamento:</strong> ar seco irrita garganta e pele</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary">Como evitar os problemas de saúde?</h2>
+    <p>A solução é simples: <strong>manutenção preventiva a cada 6 meses</strong> para uso residencial e a cada 3 meses para uso comercial. A higienização profunda elimina todos os agentes causadores de doenças respiratórias.</p>
+    <p>Além disso, manter a temperatura entre <strong>23°C e 25°C</strong> e não apontar o fluxo de ar diretamente para as pessoas reduz muito os desconfortos. Em São Paulo, com a qualidade do ar já comprometida pela poluição, um ar condicionado limpo filtra partículas e melhora o ar interior.</p>
+    <h2 className="text-2xl font-bold text-primary">Conclusão</h2>
+    <p>Ar condicionado não faz mal à saúde — <strong>ar condicionado sujo faz</strong>. Com higienização regular, o equipamento melhora a qualidade do ar e o conforto de quem vive e trabalha no ambiente. Agende sua higienização com a New Clima: <strong>(11) 96346-2516</strong>.</p>
+  </BlogPostLayout>
+);
+
+export const BlogDormir = () => (
+  <BlogPostLayout tag="Uso do Ar Condicionado" title="Dormir com Ar Condicionado Faz Mal? Saiba a Verdade" date="9 de Maio, 2026" author="José Erivaldo">
+    <p>Com o calor de São Paulo, dormir com ar condicionado ligado virou rotina para milhões de pessoas. Mas afinal, <strong>dormir com ar condicionado faz mal?</strong> Não necessariamente — desde que você siga algumas boas práticas.</p>
+    <h2 className="text-2xl font-bold text-primary">O que pode causar desconforto à noite</h2>
+    <ul className="space-y-2 list-disc pl-6">
+      <li><strong>Temperatura muito baixa:</strong> abaixo de 20°C resseca as vias aéreas e causa desconforto</li>
+      <li><strong>Ar direcionado ao corpo:</strong> pode causar torcicolos e ressecamento</li>
+      <li><strong>Filtros sujos:</strong> expelem alérgenos que prejudicam o sono</li>
+      <li><strong>Ruído excessivo:</strong> sinal de manutenção atrasada</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary">Como dormir bem com ar condicionado</h2>
+    <p>Configure o <strong>timer (sleep mode)</strong> para desligar automaticamente após 2 a 3 horas. Mantenha a temperatura entre <strong>23°C e 26°C</strong>. Não aponte a saída de ar diretamente para a cama. Mantenha a higienização em dia — especialmente no quarto, onde você passa 8 horas respirando o ar filtrado pelo aparelho.</p>
+    <p>Um dado importante: o modo <strong>Sleep</strong> presente na maioria dos inverter aumenta gradualmente a temperatura durante a noite, simulando a queda natural da temperatura corporal durante o sono — muito mais confortável e econômico.</p>
+    <h2 className="text-2xl font-bold text-primary">Conclusão</h2>
+    <p>Dormir com ar condicionado <strong>não faz mal</strong> quando o equipamento está limpo e a temperatura está regulada corretamente. O segredo é manutenção em dia e configuração adequada. Dúvidas? Fale com a New Clima: <strong>(11) 96346-2516</strong>.</p>
+  </BlogPostLayout>
+);
+
+export const BlogConsumo = () => (
+  <BlogPostLayout tag="Economia de Energia" title="Ar Condicionado Gasta Mais de Dia ou à Noite? Descubra Agora" date="9 de Maio, 2026" author="José Erivaldo">
+    <p>Uma dúvida frequente de quem quer economizar na conta de luz em São Paulo: <strong>ar condicionado gasta mais de dia ou à noite?</strong> A resposta envolve temperatura externa, tipo de equipamento e como você usa o aparelho.</p>
+    <h2 className="text-2xl font-bold text-primary">Por que o período faz diferença</h2>
+    <p>O ar condicionado trabalha comparando a temperatura interna desejada com a temperatura externa. Quanto maior a diferença, mais esforço — e mais energia consumida. Em São Paulo, durante o dia o calor pode chegar a <strong>35°C ou mais</strong>. À noite, a temperatura cai para 20°C a 22°C.</p>
+    <p>Resultado: <strong>de dia o ar condicionado consome mais</strong>, pois precisa trabalhar mais para atingir os 23°C desejados. À noite, o esforço é menor e o consumo cai significativamente.</p>
+    <h2 className="text-2xl font-bold text-primary">Dicas para economizar independente do horário</h2>
+    <ul className="space-y-2 list-disc pl-6">
+      <li>Use o <strong>modo Inverter</strong> — ele ajusta a potência automaticamente</li>
+      <li>Mantenha portas e janelas fechadas</li>
+      <li>Use o <strong>timer</strong> para não deixar ligado sem necessidade</li>
+      <li>Faça manutenção regular — aparelho limpo consome até <strong>30% menos</strong></li>
+      <li>Mantenha a temperatura em <strong>23°C</strong> — cada grau a mais economiza 5% de energia</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary">Tarifa de energia em SP</h2>
+    <p>Na ENEL São Paulo, a <strong>tarifa branca</strong> cobra mais nos horários de pico (18h às 21h). Se você tem tarifa convencional, o horário não impacta o custo direto — mas o consumo físico é maior durante o dia pelo calor externo. Consulte a New Clima para escolher o equipamento mais eficiente: <strong>(11) 96346-2516</strong>.</p>
+  </BlogPostLayout>
+);
+
+export const BlogQuantoGasta = () => (
+  <BlogPostLayout tag="Economia de Energia" title="Quanto Gasta um Ar Condicionado Inverter por Mês? Conta Exata" date="9 de Maio, 2026" author="José Erivaldo">
+    <p>Antes de comprar ou instalar, a dúvida é sempre: <strong>quanto gasta um ar condicionado inverter por mês?</strong> A resposta depende da potência, horas de uso e tarifa local. Vamos aos números reais para São Paulo.</p>
+    <h2 className="text-2xl font-bold text-primary">Como calcular o consumo</h2>
+    <p>A fórmula básica: <strong>Consumo (kWh) = Potência (kW) × Horas de uso × Dias</strong>. Um split inverter de 9.000 BTUs tem potência média de 0,85 kW. Usando 8 horas por dia durante 30 dias: <strong>0,85 × 8 × 30 = 204 kWh/mês</strong>.</p>
+    <p>Com a tarifa média da ENEL SP de <strong>R$ 0,85/kWh</strong>, o custo seria: <strong>204 × 0,85 = R$ 173/mês</strong>.</p>
+    <h2 className="text-2xl font-bold text-primary">Tabela de consumo estimado em SP</h2>
+    <ul className="space-y-2 list-disc pl-6">
+      <li><strong>9.000 BTUs inverter (8h/dia):</strong> ~R$ 130 a R$ 180/mês</li>
+      <li><strong>12.000 BTUs inverter (8h/dia):</strong> ~R$ 170 a R$ 230/mês</li>
+      <li><strong>18.000 BTUs inverter (8h/dia):</strong> ~R$ 250 a R$ 320/mês</li>
+      <li><strong>24.000 BTUs inverter (8h/dia):</strong> ~R$ 320 a R$ 420/mês</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary">Inverter vs Convencional — diferença real</h2>
+    <p>Um modelo convencional de mesma potência consome em média <strong>35% a 60% mais</strong> do que o inverter, pois funciona em liga/desliga constante. O inverter ajusta a rotação do compressor — muito mais eficiente.</p>
+    <p>A manutenção em dia também impacta diretamente: um aparelho com filtro sujo consome até <strong>30% mais energia</strong>. Agende com a New Clima: <strong>(11) 96346-2516</strong>.</p>
+  </BlogPostLayout>
+);
+
+export const BlogMauCheiro = () => (
+  <BlogPostLayout tag="Problemas" title="Mau Cheiro no Ar Condicionado: Causas e Como Eliminar" date="9 de Maio, 2026" author="José Erivaldo">
+    <p>Se o seu ar condicionado está soltando <strong>mau cheiro</strong>, é sinal de que precisa de atenção imediata. O odor ruim indica acúmulo de fungos, bactérias ou sujeira — o que também prejudica a qualidade do ar que você respira.</p>
+    <h2 className="text-2xl font-bold text-primary">Principais causas do mau cheiro</h2>
+    <ul className="space-y-2 list-disc pl-6">
+      <li><strong>Fungos e mofo:</strong> crescem na umidade do evaporador e na bandeja de dreno</li>
+      <li><strong>Dreno entupido:</strong> água parada cria ambiente ideal para bactérias</li>
+      <li><strong>Filtros sujos:</strong> retêm sujeira orgânica que apodrece com o calor</li>
+      <li><strong>Cheiro de queimado:</strong> pode ser poeira acumulada nos resistores ou problema elétrico</li>
+      <li><strong>Cheiro de plástico:</strong> pode ser equipamento novo aquecendo ou problema no motor</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary">Como eliminar o mau cheiro</h2>
+    <p>A solução definitiva é a <strong>higienização profunda</strong> com produto bactericida. O processo inclui limpeza da serpentina evaporadora, turbina, filtros e desobstrução do dreno. Em São Paulo, a umidade alta favorece o crescimento de fungos — recomendamos higienização a cada 6 meses para residências.</p>
+    <p><strong>Não use produtos caseiros</strong> como vinagre ou desinfetante diretamente no aparelho — podem danificar componentes e anular a garantia. Chame um técnico certificado. Agende com a New Clima: <strong>(11) 96346-2516</strong>.</p>
+  </BlogPostLayout>
+);
+
+export const BlogDesligaSozinho = () => (
+  <BlogPostLayout tag="Problemas" title="Ar Condicionado Desliga Sozinho: 7 Causas e Como Resolver" date="9 de Maio, 2026" author="José Erivaldo">
+    <p>Se o seu <strong>ar condicionado desliga sozinho</strong>, não ignore. Pode ser algo simples como o timer ativado ou um sinal de alerta de um problema mais sério. Veja as causas mais comuns e como resolver.</p>
+    <h2 className="text-2xl font-bold text-primary">7 razões para o ar condicionado desligar sozinho</h2>
+    <ul className="space-y-2 list-disc pl-6">
+      <li><strong>1. Timer ativado:</strong> verifique as configurações do controle remoto</li>
+      <li><strong>2. Proteção contra superaquecimento:</strong> o compressor desliga para se proteger quando está muito quente — geralmente por falta de gás ou filtro sujo</li>
+      <li><strong>3. Falta de gás refrigerante:</strong> o aparelho não consegue resfriar e entra em proteção</li>
+      <li><strong>4. Filtro muito sujo:</strong> restringe o fluxo de ar e causa superaquecimento</li>
+      <li><strong>5. Problema elétrico:</strong> tensão instável ou disjuntor fraco</li>
+      <li><strong>6. Placa eletrônica com defeito:</strong> causa desligamentos aleatórios</li>
+      <li><strong>7. Sensor de temperatura com defeito:</strong> lê temperatura errada e desliga indevidamente</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary">O que fazer</h2>
+    <p>Primeiro, verifique se o timer está ativado. Se o aparelho desliga após alguns minutos de funcionamento, o mais provável é falta de gás ou filtro muito sujo — ambos resolvidos com uma visita técnica. Não tente recarregar o gás sozinho: exige equipamento específico e técnico habilitado.</p>
+    <p>A New Clima atende em São Paulo e ABC com <strong>resposta em até 2 horas</strong>. Ligue: <strong>(11) 96346-2516</strong>.</p>
+  </BlogPostLayout>
+);
+
+export const BlogVidaUtil = () => (
+  <BlogPostLayout tag="Dicas" title="Qual a Vida Útil do Ar Condicionado? Como Prolongar" date="9 de Maio, 2026" author="José Erivaldo">
+    <p>Você sabe qual é a <strong>vida útil do ar condicionado</strong>? Em média, um split bem mantido dura entre <strong>10 e 15 anos</strong>. Sem manutenção, esse prazo cai para 5 a 7 anos. Entenda o que faz a diferença.</p>
+    <h2 className="text-2xl font-bold text-primary">Vida útil por tipo de equipamento</h2>
+    <ul className="space-y-2 list-disc pl-6">
+      <li><strong>Split hi-wall residencial:</strong> 10 a 15 anos com manutenção</li>
+      <li><strong>Multi-split:</strong> 12 a 15 anos</li>
+      <li><strong>Cassete comercial:</strong> 10 a 15 anos</li>
+      <li><strong>VRF:</strong> 15 a 20 anos com manutenção preventiva</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary">O que reduz a vida útil</h2>
+    <ul className="space-y-2 list-disc pl-6">
+      <li>Falta de limpeza dos filtros — aumenta esforço do compressor</li>
+      <li>Uso sem manutenção preventiva semestral</li>
+      <li>Instalação mal feita — vibração e vazamentos destroem componentes</li>
+      <li>Recarga de gás feita por não habilitados — pode causar danos irreversíveis</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary">Como prolongar a vida do seu ar condicionado</h2>
+    <p>O segredo é simples: <strong>manutenção preventiva semestral</strong>. Inclui limpeza completa, verificação de gás, inspeção elétrica e lubrificação. O custo de uma manutenção preventiva é de R$ 120 a R$ 200 — muito menos do que um conserto de compressor (R$ 800 a R$ 2.500) ou um aparelho novo.</p>
+    <p>Agende manutenção com a New Clima em SP e ABC: <strong>(11) 96346-2516</strong>.</p>
+  </BlogPostLayout>
+);
+
+export const BlogTemperatura = () => (
+  <BlogPostLayout tag="Dicas de Uso" title="Qual a Temperatura Ideal do Ar Condicionado? Conforto e Economia" date="9 de Maio, 2026" author="José Erivaldo">
+    <p>Escolher a <strong>temperatura ideal do ar condicionado</strong> impacta diretamente no seu conforto, na conta de luz e na saúde. Em São Paulo, onde o calor pode passar dos 35°C no verão, a tentação é colocar na mínima — mas isso não é recomendado.</p>
+    <h2 className="text-2xl font-bold text-primary">Qual temperatura usar?</h2>
+    <p>Para <strong>conforto e economia</strong>, a recomendação dos especialistas é entre <strong>23°C e 25°C</strong>. O INMETRO recomenda 23°C como temperatura de referência para ambientes climatizados no Brasil.</p>
+    <ul className="space-y-2 list-disc pl-6">
+      <li><strong>Quarto (dormir):</strong> 23°C a 26°C</li>
+      <li><strong>Sala e escritório:</strong> 22°C a 24°C</li>
+      <li><strong>Academia:</strong> 19°C a 22°C</li>
+      <li><strong>Servidor/datacenter:</strong> 18°C a 21°C</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary">Impacto na conta de luz</h2>
+    <p>Cada grau a menos na temperatura configurada representa cerca de <strong>5% a 8% a mais no consumo de energia</strong>. Ou seja, colocar em 18°C em vez de 23°C aumenta o consumo em cerca de 25% a 40% sem trazer conforto proporcional.</p>
+    <h2 className="text-2xl font-bold text-primary">Choque térmico e saúde</h2>
+    <p>Temperaturas muito baixas causam <strong>choque térmico</strong> ao entrar e sair do ambiente — especialmente problemático em dias quentes de São Paulo. Para evitar, mantenha a diferença entre temperatura interna e externa em no máximo <strong>8°C a 10°C</strong>.</p>
+    <p>Dúvidas sobre qual equipamento escolher para seu ambiente? Fale com a New Clima: <strong>(11) 96346-2516</strong>.</p>
+  </BlogPostLayout>
+);
+
+export const BlogFuncaoDry = () => (
+  <BlogPostLayout tag="Dicas de Uso" title="Função Dry no Ar Condicionado: Para que Serve e Quando Usar" date="9 de Maio, 2026" author="José Erivaldo">
+    <p>Você já viu o símbolo de gota no controle remoto e ficou sem saber o que é? A <strong>função Dry</strong> (ou modo desumidificação) é um dos recursos mais úteis e menos usados dos ar condicionados — especialmente em São Paulo, onde a umidade pode chegar a 90%.</p>
+    <h2 className="text-2xl font-bold text-primary">O que é a função Dry?</h2>
+    <p>O modo Dry <strong>remove o excesso de umidade do ar</strong> sem resfriar tanto o ambiente. O compressor funciona em ciclos menores, priorizando a desumidificação. O resultado é um ar mais seco e confortável, sem aquela sensação de abafamento.</p>
+    <h2 className="text-2xl font-bold text-primary">Quando usar o modo Dry?</h2>
+    <ul className="space-y-2 list-disc pl-6">
+      <li><strong>Dias nublados e chuvosos</strong> em São Paulo, quando a umidade está alta mas não está quente</li>
+      <li><strong>Transição de estações</strong> — outono e primavera paulistana</li>
+      <li><strong>Ambientes com mofo</strong> — reduz a umidade que favorece o crescimento de fungos</li>
+      <li><strong>Quarto à noite</strong> — quando você quer conforto sem frio excessivo</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary">Dry vs Cool — qual a diferença?</h2>
+    <p>No modo <strong>Cool</strong>, o objetivo é resfriar. No modo <strong>Dry</strong>, o objetivo é desumidificar — com temperatura mais próxima do ambiente. O consumo de energia no Dry é geralmente <strong>menor</strong> que no Cool para o mesmo período de uso.</p>
+    <p>Para melhor eficiência de qualquer modo, mantenha a manutenção em dia. Agende com a New Clima em SP e ABC: <strong>(11) 96346-2516</strong>.</p>
+  </BlogPostLayout>
+);
+
+export const BlogGas = () => (
+  <BlogPostLayout tag="Técnico" title="Gás R32 e R410A: Qual a Diferença e Qual é Melhor?" date="9 de Maio, 2026" author="José Erivaldo">
+    <p>Se você está comprando um ar condicionado novo ou foi informado que precisa recarregar o gás, provavelmente ouviu falar em <strong>R32 ou R410A</strong>. Entenda a diferença e por que isso importa para sua escolha.</p>
+    <h2 className="text-2xl font-bold text-primary">O que é o gás refrigerante?</h2>
+    <p>O gás refrigerante é o fluido que circula pelo sistema e realiza a troca térmica — é ele quem "faz o frio". Sem gás ou com nível baixo, o ar condicionado não resfria adequadamente e pode danificar o compressor.</p>
+    <h2 className="text-2xl font-bold text-primary">R410A — o mais comum no Brasil</h2>
+    <p>Durante anos foi o padrão. Não é inflamável e tem boa eficiência. Porém, seu <strong>GWP (potencial de aquecimento global) é alto</strong> — 2.088 vezes maior que o CO₂. Por isso está sendo gradualmente substituído.</p>
+    <h2 className="text-2xl font-bold text-primary">R32 — o novo padrão</h2>
+    <p>O R32 tem <strong>GWP de 675</strong> — muito menor que o R410A. É mais eficiente energeticamente, usa menor quantidade de carga e está presente na maioria dos inverter novos das marcas LG, Daikin, Midea e Samsung. A desvantagem: é levemente inflamável, exigindo técnico certificado para manuseio.</p>
+    <h2 className="text-2xl font-bold text-primary">Posso misturar os gases?</h2>
+    <p><strong>Nunca</strong>. R32 e R410A são incompatíveis e não podem ser misturados. Sempre informe o modelo do aparelho ao técnico para que ele use o gás correto. A New Clima trabalha com ambos os tipos em São Paulo e ABC: <strong>(11) 96346-2516</strong>.</p>
+  </BlogPostLayout>
+);
