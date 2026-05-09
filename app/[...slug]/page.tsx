@@ -1,7 +1,5 @@
 import { Metadata } from 'next'
-import dynamic from 'next/dynamic'
-
-const App = dynamic(() => import('../../src/App'), { ssr: false })
+import SlugClient from './SlugClient'
 
 type MetaMap = {
   [key: string]: { title: string; description: string; canonical: string }
@@ -170,5 +168,5 @@ export async function generateMetadata({ params }: { params: { slug?: string[] }
 }
 
 export default function SlugPage() {
-  return <App />
+  return <SlugClient />
 }
