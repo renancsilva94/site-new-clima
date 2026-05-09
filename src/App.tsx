@@ -167,18 +167,18 @@ export default function App() {
           <title>New Clima Ar | Instalação e Manutenção de Ar Condicionado em SP e ABC</title>
           <meta name="description" content="Especialista em ar condicionado em São Paulo e ABC. Instalação técnica, manutenção preventiva (PMOC), conserto e limpeza profunda. Atendimento premium residencial e comercial com garantia técnica." />
           <meta name="keywords" content="ar condicionado sp, ar condicionado abc, instalação de ar condicionado, manutenção de ar condicionado, limpeza de ar condicionado, pmoc, conserto de ar condicionado, split inverter, multi split, vrf" />
-          <link rel="canonical" href="https://newclimaar.com.br/" />
+          <link rel="canonical" href="https://www.newclimaar.com.br/" />
           
           {/* Open Graph / Facebook */}
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://newclimaar.com.br/" />
+          <meta property="og:url" content="https://www.newclimaar.com.br/" />
           <meta property="og:title" content="New Clima Ar | Instalação e Manutenção de Ar Condicionado" />
           <meta property="og:description" content="Especialista em ar condicionado em São Paulo e ABC. Atendimento premium residencial e comercial com garantia técnica." />
           <meta property="og:image" content="https://www.newclimaar.com.br/images/logo-new-clima.png" />
 
           {/* Twitter */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:url" content="https://newclimaar.com.br/" />
+          <meta name="twitter:url" content="https://www.newclimaar.com.br/" />
           <meta name="twitter:title" content="New Clima Ar | Instalação e Manutenção de Ar Condicionado" />
           <meta name="twitter:description" content="Especialista em ar condicionado em São Paulo e ABC. Atendimento premium residencial e comercial com garantia técnica." />
           <meta name="twitter:image" content="https://www.newclimaar.com.br/images/logo-new-clima.png" />
@@ -192,7 +192,7 @@ export default function App() {
                 "name": "New Clima Ar Condicionado",
                 "image": "https://www.newclimaar.com.br/images/logo-new-clima.png",
                 "@id": "https://www.newclimaar.com.br",
-                "url": "https://newclimaar.com.br/",
+                "url": "https://www.newclimaar.com.br/",
                 "telephone": "+5511963462516",
                 "address": {
                   "@type": "PostalAddress",
@@ -247,15 +247,15 @@ export default function App() {
 
         {/* Header */}
         <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-slate-100">
-          <div className="container mx-auto px-4 h-24 flex items-center justify-between">
+          <div className="container mx-auto px-4 h-28 md:h-32 flex items-center justify-between">
             <div 
               className="flex items-center cursor-pointer group" 
               onClick={() => navigate('home')}
             >
               <img 
-                src="https://cdn.coteibem.com.br/company/41315/logo/f4d0405d-28b6-4834-a8ca-9e63b68073fa.png" 
+                src="/images/logo-new-clima.png" 
                 alt="New Clima Ar" 
-                className="h-20 md:h-24 w-auto object-contain transition-transform group-hover:scale-105"
+                className="h-24 md:h-28 w-auto object-contain transition-transform group-hover:scale-105"
               />
             </div>
 
@@ -296,6 +296,7 @@ export default function App() {
             <button 
               className="lg:hidden p-2 text-primary"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
             >
               {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
@@ -378,7 +379,7 @@ export default function App() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
               <div className="space-y-6">
-                <img src="https://cdn.coteibem.com.br/company/41315/logo/f4d0405d-28b6-4834-a8ca-9e63b68073fa.png" alt="New Clima Ar" className="h-16 w-auto brightness-0 invert" />
+                <img src="/images/logo-new-clima.png" alt="New Clima Ar" className="h-20 w-auto brightness-0 invert" />
                 <p className="text-blue-100/70 text-sm leading-relaxed">
                   Referência em climatização de alta performance em São Paulo e ABC. Projetos residenciais, comerciais e industriais com foco em eficiência energética e qualidade do ar.
                 </p>
