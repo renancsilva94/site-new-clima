@@ -130,6 +130,46 @@ const metaMap: Record<string, { title: string; description: string }> = {
     title: 'Split Convencional vs Inverter: Qual Escolher? | New Clima Blog',
     description: 'Diferenças entre split convencional e inverter para São Paulo.',
   },
+  'instalacao-ar-condicionado-moema': {
+    title: 'Instalação de Ar Condicionado em Moema SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em Moema. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-vila-mariana': {
+    title: 'Instalação de Ar Condicionado em Vila Mariana SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em Vila Mariana. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-pinheiros': {
+    title: 'Instalação de Ar Condicionado em Pinheiros SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em Pinheiros. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-itaim-bibi': {
+    title: 'Instalação de Ar Condicionado no Itaim Bibi SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado no Itaim Bibi. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-jardins': {
+    title: 'Instalação de Ar Condicionado nos Jardins SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado nos Jardins. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-tatuape': {
+    title: 'Instalação de Ar Condicionado no Tatuapé SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado no Tatuapé. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-santana': {
+    title: 'Instalação de Ar Condicionado em Santana SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em Santana. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-brooklin': {
+    title: 'Instalação de Ar Condicionado no Brooklin SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado no Brooklin. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-perdizes': {
+    title: 'Instalação de Ar Condicionado em Perdizes SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em Perdizes. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-morumbi': {
+    title: 'Instalação de Ar Condicionado no Morumbi SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado no Morumbi. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
   'mapa-site': {
     title: 'Mapa do Site | New Clima Ar Condicionado SP e ABC',
     description: 'Todas as páginas do site da New Clima Ar Condicionado organizadas por categoria: serviços, regiões e blog.',
