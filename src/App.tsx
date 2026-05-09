@@ -441,9 +441,10 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               
               <div className="flex flex-wrap gap-8 mb-10">
                 {[
-                  { number: "7+", label: "Anos de experiência" },
-                  { number: "500+", label: "Instalações realizadas" },
-                  { number: "4.9★", label: "Nota no Google" },
+                  { number: "Desde 2018", label: "Operando em SP e ABC" },
+                  { number: "500+", label: "Equipamentos instalados" },
+                  { number: "4.9★", label: "24 avaliações no Google" },
+                  { number: "100%", label: "Com garantia por escrito" },
                 ].map((stat, i) => (
                   <div key={i}>
                     <div className="text-2xl font-extrabold text-white">{stat.number}</div>
@@ -630,32 +631,32 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                 {
                   step: "01",
                   icon: <MessageSquare />,
-                  title: "Consulta Técnica",
-                  desc: "Avaliamos seu ambiente com visita presencial para entender cada detalhe técnico."
+                  title: "Você chama no WhatsApp",
+                  desc: "Conta o que precisa — pode mandar fotos ou a planta se tiver. Respondemos em até 2 horas."
                 },
                 {
                   step: "02",
                   icon: <Ruler />,
-                  title: "Projeto Personalizado",
-                  desc: "Dimensionamento preciso (BTUs) para garantir máximo conforto com menor consumo."
+                  title: "Agendamos a visita",
+                  desc: "Um técnico vai ao local, avalia o ambiente e confere a infraestrutura. Sem custo e sem compromisso."
                 },
                 {
                   step: "03",
                   icon: <HardHat />,
-                  title: "Execução Profissional",
-                  desc: "Equipe técnica treinada, uniformizada e focada em prazos e normas de segurança."
+                  title: "Você recebe o orçamento",
+                  desc: "Escopo, prazo e valor fechado por escrito — sem taxa escondida e sem 'a partir de'."
                 },
                 {
                   step: "04",
                   icon: <Paintbrush />,
-                  title: "Acabamento Perfeito",
-                  desc: "Entregamos a obra pronta: gesso, pintura e limpeza inclusos. Você não se preocupa com nada."
+                  title: "Executamos com cuidado",
+                  desc: "Equipe própria, ferramental adequado e proteção do ambiente. Obra limpa, sem quebradeira."
                 },
                 {
                   step: "05",
                   icon: <HeartHandshake />,
-                  title: "Pós-venda Ativo",
-                  desc: "Garantia real, suporte técnico prioritário e plano de manutenção preventiva."
+                  title: "Você só aprova funcionando",
+                  desc: "Teste final antes de entregar. Garantia por escrito em todo serviço executado."
                 }
               ].map((item, idx) => (
                 <div key={idx} className="flex flex-col items-center text-center group">
@@ -742,6 +743,61 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               <div className="mt-12">
                 <WhatsAppButton text="Falar com um Técnico Agora" />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="inline-block bg-ice text-primary-light text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-4">
+              Nossa Equipe
+            </span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4">
+              Quem vai até a sua casa
+            </h2>
+            <p className="text-slate-500 text-lg">
+              Técnicos certificados, uniformizados e com nome — você sabe exatamente quem está atendendo você.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            <div className="bg-slate-50 rounded-3xl p-8 flex items-center gap-6 border border-slate-100">
+              <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center shrink-0 overflow-hidden">
+                <img
+                  src="https://lh3.googleusercontent.com/6heGd7th8Pj-lMMTr-rWhQgDXIHEtDgkUzYkEakZwnOvYabXG6ykwi_RHfm8RpDcoNoWHvGRKRz8Yf2l7A=s360-w360-h360"
+                  alt="José Erivaldo - Técnico New Clima"
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <div>
+                <div className="font-extrabold text-primary text-lg">José Erivaldo</div>
+                <div className="text-primary-light text-sm font-bold mb-2">Técnico Sênior · Desde 2018</div>
+                <div className="flex gap-1 text-accent">
+                  {[1,2,3,4,5].map(i => <Star key={i} size={12} fill="currentColor" />)}
+                </div>
+                <p className="text-slate-500 text-sm mt-2 leading-relaxed italic">
+                  "Pontual, atencioso e caprichoso — explica tudo que está fazendo."
+                </p>
+              </div>
+            </div>
+            <div className="bg-primary rounded-3xl p-8 text-white flex flex-col justify-between">
+              <div>
+                <div className="text-blue-100/70 text-sm font-bold uppercase tracking-widest mb-4">Por que isso importa?</div>
+                <p className="text-white/90 leading-relaxed">
+                  Quando você contrata a New Clima, sabe quem vai aparecer. Técnico identificado, uniformizado e com histórico de avaliações reais no Google.
+                </p>
+              </div>
+              <a
+                href="https://maps.app.goo.gl/kHeynjnXoG943iG3A"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold py-3 px-5 rounded-xl transition-all text-sm"
+              >
+                Ver 24 avaliações no Google <ArrowRight size={14} />
+              </a>
             </div>
           </div>
         </div>
