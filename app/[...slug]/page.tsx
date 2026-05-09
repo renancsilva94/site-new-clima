@@ -206,6 +206,46 @@ const metaMap: Record<string, { title: string; description: string }> = {
     title: 'Instalação de Ar Condicionado no Ipiranga SP | New Clima',
     description: 'Instalação e manutenção de ar condicionado no Ipiranga. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
   },
+  'instalacao-ar-condicionado-vila-prudente': {
+    title: 'Instalação de Ar Condicionado em Vila Prudente SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em Vila Prudente. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-jabaquara': {
+    title: 'Instalação de Ar Condicionado no Jabaquara SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado no Jabaquara. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-campo-grande': {
+    title: 'Instalação de Ar Condicionado em Campo Grande SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em Campo Grande. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-penha': {
+    title: 'Instalação de Ar Condicionado na Penha SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado na Penha. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-cursino': {
+    title: 'Instalação de Ar Condicionado no Cursino SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado no Cursino. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-agua-rasa': {
+    title: 'Instalação de Ar Condicionado na Água Rasa SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado na Água Rasa. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-bela-vista': {
+    title: 'Instalação de Ar Condicionado na Bela Vista SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado na Bela Vista. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-butanta': {
+    title: 'Instalação de Ar Condicionado no Butantã SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado no Butantã. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-vila-olimpia': {
+    title: 'Instalação de Ar Condicionado em Vila Olímpia SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em Vila Olímpia. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-pompeia': {
+    title: 'Instalação de Ar Condicionado em Pompéia SP | New Clima',
+    description: 'Instalação e manutenção de ar condicionado em Pompéia. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
+  },
   'instalacao-ar-condicionado-morumbi': {
     title: 'Instalação de Ar Condicionado no Morumbi SP | New Clima',
     description: 'Instalação e manutenção de ar condicionado no Morumbi. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
