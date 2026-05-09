@@ -505,60 +505,47 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
       </section>
       
       {/* Brands Section */}
-      <section className="bg-white py-10 border-b border-slate-100 relative z-20 overflow-hidden">
-        <div className="flex flex-col md:flex-row items-center gap-8">
-          <div className="flex-shrink-0 border-b md:border-b-0 md:border-r border-slate-200 pb-4 md:pb-0 md:pr-8 w-full md:w-auto">
-            <span className="text-slate-400 text-[10px] font-bold uppercase tracking-[0.2em] leading-tight text-left block">
-              Trabalhamos com as<br />
-              <span className="text-primary font-extrabold">melhores marcas</span>
-            </span>
-          </div>
-          
-          <div className="flex-grow relative overflow-hidden py-2" role="region" aria-label="Marcas parceiras">
-              <div
-              className="flex items-center gap-12 md:gap-20 lg:gap-24 whitespace-nowrap"
-              
-            >
-              {/* First set of logos */}
-              {[
-                { name: "Samsung", url: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Samsung_logo_blue.png", h: "h-6 md:h-8" },
-                { name: "LG", url: "https://upload.wikimedia.org/wikipedia/commons/8/8d/LG_logo_%282014%29.svg", h: "h-6 md:h-8" },
-                { name: "Daikin", url: "https://upload.wikimedia.org/wikipedia/commons/0/05/DAIKIN_logo.svg", h: "h-6 md:h-8" },
-                { name: "Fujitsu", url: "https://upload.wikimedia.org/wikipedia/commons/5/53/Fujitsu-Logo.svg", h: "h-8 md:h-10" },
-                { name: "Carrier", url: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Logo_of_the_Carrier_Corporation.svg", h: "h-6 md:h-8" },
-                { name: "Midea", url: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Midea.svg", h: "h-6 md:h-8" },
-                { name: "Elgin", url: "https://www.maquinadecartao.com/img/1/elgin-logo-fabricante-de-maquininha-de-cartao-david-tech.webp", h: "h-6 md:h-8" },
-                { name: "Gree", url: "https://upload.wikimedia.org/wikipedia/commons/0/01/Gree_electric_appliances_logo.svg", h: "h-6 md:h-8" }
-              ].map((brand, idx) => (
-                <img 
-                  key={`${brand.name}-${idx}`}
-                  src={brand.url} 
-                  alt={brand.name} 
-                  className={`${brand.h} opacity-100 transition-all duration-300`} 
-                  referrerPolicy="no-referrer" 
-                />
-              ))}
-              
-              {/* Duplicate set for seamless loop */}
-              {[
-                { name: "Samsung", url: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Samsung_logo_blue.png", h: "h-6 md:h-8" },
-                { name: "LG", url: "https://upload.wikimedia.org/wikipedia/commons/8/8d/LG_logo_%282014%29.svg", h: "h-6 md:h-8" },
-                { name: "Daikin", url: "https://upload.wikimedia.org/wikipedia/commons/0/05/DAIKIN_logo.svg", h: "h-6 md:h-8" },
-                { name: "Fujitsu", url: "https://upload.wikimedia.org/wikipedia/commons/5/53/Fujitsu-Logo.svg", h: "h-8 md:h-10" },
-                { name: "Carrier", url: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Logo_of_the_Carrier_Corporation.svg", h: "h-6 md:h-8" },
-                { name: "Midea", url: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Midea.svg", h: "h-6 md:h-8" },
-                { name: "Elgin", url: "https://www.maquinadecartao.com/img/1/elgin-logo-fabricante-de-maquininha-de-cartao-david-tech.webp", h: "h-6 md:h-8" },
-                { name: "Gree", url: "https://upload.wikimedia.org/wikipedia/commons/0/01/Gree_electric_appliances_logo.svg", h: "h-6 md:h-8" }
-              ].map((brand, idx) => (
-                <img 
-                  key={`${brand.name}-dup-${idx}`}
-                  src={brand.url} 
-                  alt={brand.name} 
-                  className={`${brand.h} opacity-100 transition-all duration-300`} 
-                  referrerPolicy="no-referrer" 
-                />
-              ))}
-            </div>
+      <section className="bg-white py-8 border-b border-slate-100 relative z-20 overflow-hidden">
+        <style>{`
+          @keyframes scroll-brands {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .brands-track {
+            animation: scroll-brands 20s linear infinite;
+          }
+          .brands-track:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
+        <div className="overflow-hidden">
+          <div className="brands-track flex items-center gap-16 whitespace-nowrap w-max">
+            {[
+              { name: "Samsung", url: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Samsung_logo_blue.png", h: "h-7" },
+              { name: "LG", url: "https://upload.wikimedia.org/wikipedia/commons/8/8d/LG_logo_%282014%29.svg", h: "h-7" },
+              { name: "Daikin", url: "https://upload.wikimedia.org/wikipedia/commons/0/05/DAIKIN_logo.svg", h: "h-6" },
+              { name: "Fujitsu", url: "https://upload.wikimedia.org/wikipedia/commons/5/53/Fujitsu-Logo.svg", h: "h-8" },
+              { name: "Carrier", url: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Logo_of_the_Carrier_Corporation.svg", h: "h-6" },
+              { name: "Midea", url: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Midea.svg", h: "h-6" },
+              { name: "Elgin", url: "https://www.maquinadecartao.com/img/1/elgin-logo-fabricante-de-maquininha-de-cartao-david-tech.webp", h: "h-7" },
+              { name: "Gree", url: "https://upload.wikimedia.org/wikipedia/commons/0/01/Gree_electric_appliances_logo.svg", h: "h-6" },
+              { name: "Samsung2", url: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Samsung_logo_blue.png", h: "h-7" },
+              { name: "LG2", url: "https://upload.wikimedia.org/wikipedia/commons/8/8d/LG_logo_%282014%29.svg", h: "h-7" },
+              { name: "Daikin2", url: "https://upload.wikimedia.org/wikipedia/commons/0/05/DAIKIN_logo.svg", h: "h-6" },
+              { name: "Fujitsu2", url: "https://upload.wikimedia.org/wikipedia/commons/5/53/Fujitsu-Logo.svg", h: "h-8" },
+              { name: "Carrier2", url: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Logo_of_the_Carrier_Corporation.svg", h: "h-6" },
+              { name: "Midea2", url: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Midea.svg", h: "h-6" },
+              { name: "Elgin2", url: "https://www.maquinadecartao.com/img/1/elgin-logo-fabricante-de-maquininha-de-cartao-david-tech.webp", h: "h-7" },
+              { name: "Gree2", url: "https://upload.wikimedia.org/wikipedia/commons/0/01/Gree_electric_appliances_logo.svg", h: "h-6" },
+            ].map((brand) => (
+              <img
+                key={brand.name}
+                src={brand.url}
+                alt={brand.name.replace(/\d+$/, '')}
+                className={`${brand.h} w-auto object-contain opacity-80 hover:opacity-100 transition-opacity`}
+                referrerPolicy="no-referrer"
+              />
+            ))}
           </div>
         </div>
       </section>
