@@ -33,7 +33,8 @@ import {
   Snowflake,
   Shield,
   Sparkles,
-  Phone
+  Phone,
+  MapPin
 } from 'lucide-react';
 
 
