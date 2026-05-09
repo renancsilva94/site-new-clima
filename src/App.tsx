@@ -404,8 +404,8 @@ export default function App() {
             if (p === '/ar-condicionado-santo-andre') return <SantoAndreRegion navigate={navigate} />;
             if (p === '/ar-condicionado-sao-bernardo-do-campo') return <SaoBernardoRegion navigate={navigate} />;
             if (p === '/ar-condicionado-sao-caetano-do-sul') return <SaoCaetanoRegion navigate={navigate} />;
-            if (p === '/ar-condicionado-diadema') return <DiademaMauaRegion navigate={navigate} />;
-            if (p === '/ar-condicionado-maua') return <DiademaMauaRegion navigate={navigate} />;
+            if (p === '/ar-condicionado-diadema') return <DiademaMauaRegion regionName="Diadema" navigate={navigate} />;
+            if (p === '/ar-condicionado-maua') return <DiademaMauaRegion regionName="Mauá" navigate={navigate} />;
             return <HomeView navigate={navigate} />;
           })()}
         </main>
