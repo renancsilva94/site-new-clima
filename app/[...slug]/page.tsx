@@ -278,6 +278,38 @@ const metaMap: Record<string, { title: string; description: string }> = {
     title: 'Instalação de Ar Condicionado na Liberdade SP | New Clima',
     description: 'Instalação e manutenção de ar condicionado na Liberdade. Técnicos certificados, obra limpa e garantia por escrito. (11) 96346-2516.',
   },
+  'ar-condicionado-clinica-medica-sp': {
+    title: 'Ar Condicionado para Clínicas Médicas em SP | New Clima',
+    description: 'Instalação, manutenção e PMOC para clínicas médicas em São Paulo. Conformidade com a Lei 13.589/18. Técnicos certificados. (11) 96346-2516.',
+  },
+  'ar-condicionado-escritorio-sao-paulo': {
+    title: 'Ar Condicionado para Escritórios em São Paulo | New Clima',
+    description: 'Sistemas de climatização para escritórios e espaços corporativos em SP. Sem barulho, sem parada e contrato de manutenção. (11) 96346-2516.',
+  },
+  'ar-condicionado-condominio-sp': {
+    title: 'Ar Condicionado para Condomínios em SP | New Clima',
+    description: 'Instalação, manutenção e PMOC para condomínios em São Paulo e ABC. Contratos para síndicos e administradoras. (11) 96346-2516.',
+  },
+  'ar-condicionado-restaurante-sp': {
+    title: 'Ar Condicionado para Restaurantes em SP | New Clima',
+    description: 'Climatização para restaurantes, bares e lanchonetes em SP. PMOC para Vigilância Sanitária e manutenção de emergência. (11) 96346-2516.',
+  },
+  'ar-condicionado-hotel-sp': {
+    title: 'Ar Condicionado para Hotéis em São Paulo | New Clima',
+    description: 'Sistemas de climatização para hotéis e apart-hotéis em SP. PMOC obrigatório, manutenção silenciosa e atendimento 24h. (11) 96346-2516.',
+  },
+  'ar-condicionado-pousada-sp': {
+    title: 'Ar Condicionado para Pousadas em SP e ABC | New Clima',
+    description: 'Instalação e manutenção de ar condicionado para pousadas em São Paulo e ABC Paulista. Conforto para hóspedes. (11) 96346-2516.',
+  },
+  'ar-condicionado-academia-sp': {
+    title: 'Ar Condicionado para Academias em São Paulo | New Clima',
+    description: 'Sistemas de alta capacidade para academias e estúdios em SP. PMOC e manutenção frequente para alta ocupação. (11) 96346-2516.',
+  },
+  'ar-condicionado-escola-sp': {
+    title: 'Ar Condicionado para Escolas em São Paulo | New Clima',
+    description: 'Instalação e PMOC para escolas, creches e universidades em SP. Qualidade do ar para alunos e professores. (11) 96346-2516.',
+  },
   'instalacao-ar-condicionado-morumbi': {
     title: 'Instalação de Ar Condicionado no Morumbi SP | New Clima',
     description: 'Instalação e manutenção de ar condicionado no Morumbi. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
