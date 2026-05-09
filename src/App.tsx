@@ -72,7 +72,7 @@ import {
 } from './components/RegionContent';
 
 // --- Types ---
-type PageId = 'home' | 'split-multisplit' | 'sistemas-comerciais' | 'vrf-mini-vrf' | 'manutencao-preventiva' | 'manutencao-corretiva' | 'limpeza' | 'blog' | 'sobre' | 'contato' | 'sao-paulo' | 'santo-andre' | 'sao-bernardo' | 'sao-caetano' | 'diadema' | 'maua' | 'blog-inverter' | 'blog-apartamento' | 'blog-btus' | 'blog-pmoc' | 'blog-round-cassette' | 'blog-obra-limpa' | 'blog-quarto' | 'blog-convencional-inverter' | 'blog-empresas' | 'blog-pmoc-obrigatorio' | 'blog-multa-pmoc' | 'blog-pmoc-condominio' | 'blog-custo-pmoc' | 'blog-custo-instalacao' | 'blog-qual-ac' | 'blog-split-multi-split' | 'blog-manutencao-consequencias';
+type PageId = 'home' | 'mapa-site' | 'split-multisplit' | 'sistemas-comerciais' | 'vrf-mini-vrf' | 'manutencao-preventiva' | 'manutencao-corretiva' | 'limpeza' | 'blog' | 'sobre' | 'contato' | 'sao-paulo' | 'santo-andre' | 'sao-bernardo' | 'sao-caetano' | 'diadema' | 'maua' | 'blog-inverter' | 'blog-apartamento' | 'blog-btus' | 'blog-pmoc' | 'blog-round-cassette' | 'blog-obra-limpa' | 'blog-quarto' | 'blog-convencional-inverter' | 'blog-empresas' | 'blog-pmoc-obrigatorio' | 'blog-multa-pmoc' | 'blog-pmoc-condominio' | 'blog-custo-pmoc' | 'blog-custo-instalacao' | 'blog-qual-ac' | 'blog-split-multi-split' | 'blog-manutencao-consequencias';
 
 // --- Components ---
 
@@ -139,6 +139,7 @@ export default function App() {
       'blog': '/blog',
       'sobre': '/sobre',
       'contato': '/contato',
+      'mapa-site': '/mapa-site',
       'sao-paulo': '/ar-condicionado-sao-paulo',
       'santo-andre': '/ar-condicionado-santo-andre',
       'sao-bernardo': '/ar-condicionado-sao-bernardo-do-campo',
@@ -306,6 +307,7 @@ export default function App() {
             if (p === '/blog') return <BlogView navigate={navigate} />;
             if (p === '/sobre') return <AboutView navigate={navigate} />;
             if (p === '/contato') return <ContactView />;
+            if (p === '/mapa-site') return <SitemapView navigate={navigate} />;
             if (p === '/ar-condicionado-sao-paulo') return <RegionView region="sao-paulo" navigate={navigate} />;
             if (p === '/ar-condicionado-santo-andre') return <RegionView region="santo-andre" navigate={navigate} />;
             if (p === '/ar-condicionado-sao-bernardo-do-campo') return <RegionView region="sao-bernardo" navigate={navigate} />;
@@ -380,6 +382,7 @@ export default function App() {
               <p>© 2026 New Clima Ar Condicionado. Todos os direitos reservados.</p>
               <div className="flex gap-6">
                 <a href="#" className="hover:text-white">Política de Privacidade</a>
+                <button onClick={() => navigate('mapa-site')} className="hover:text-white">Mapa do Site</button>
                 <a href="#" className="hover:text-white">Termos de Uso</a>
               </div>
             </div>
@@ -412,6 +415,117 @@ export default function App() {
 }
 
 // --- Views ---
+
+// --- Regions Tabs Component ---
+function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
+  const [activeTab, setActiveTab] = React.useState(0)
+
+  const tabs = [
+    {
+      label: 'Zona Sul',
+      page: 'sao-paulo' as PageId,
+      bairros: [
+        'Vila Mariana', 'Moema', 'Saúde', 'Ipiranga', 'Jabaquara', 'Santo Amaro',
+        'Campo Belo', 'Campo Grande', 'Brooklin', 'Cursino', 'Mirandópolis',
+        'Planalto Paulista', 'Aclimação', 'Vila Clementino', 'Chácara Klabin',
+        'Paraíso', 'Vila Olimpia', 'Itaim Bibi', 'Morumbi', 'Vila Andrade',
+      ],
+    },
+    {
+      label: 'Zona Oeste',
+      page: 'sao-paulo' as PageId,
+      bairros: [
+        'Pinheiros', 'Vila Madalena', 'Perdizes', 'Lapa', 'Pompéia', 'Água Branca',
+        'Alto de Pinheiros', 'Butantã', 'Vila Leopoldina', 'Jardim Europa',
+        'Jardim América', 'Jardim Paulista', 'Jardins', 'Cerqueira César',
+        'Consolação', 'Santa Cecília', 'Higienópolis', 'Pacaembu',
+      ],
+    },
+    {
+      label: 'Zona Norte',
+      page: 'sao-paulo' as PageId,
+      bairros: [
+        'Santana', 'Tucuruvi', 'Vila Guilherme', 'Vila Maria', 'Casa Verde',
+        'Mandaqui', 'Tremembé', 'Jaçanã', 'Vila Medeiros', 'Freguesia do Ó',
+        'Brasilândia', 'Limão', 'Bom Retiro', 'Pari', 'Santa Efigênia',
+      ],
+    },
+    {
+      label: 'Zona Leste',
+      page: 'sao-paulo' as PageId,
+      bairros: [
+        'Tatuapé', 'Anália Franco', 'Mooca', 'Vila Prudente', 'Penha',
+        'Aricanduva', 'Carrão', 'Água Rasa', 'Belém', 'Brás', 'Pari',
+        'Jardim Anália', 'Parque São Jorge', 'Vila Formosa', 'Sapopemba',
+        'São Mateus', 'Itaquera', 'Guaianases',
+      ],
+    },
+    {
+      label: 'Região Central',
+      page: 'sao-paulo' as PageId,
+      bairros: [
+        'Centro', 'República', 'Sé', 'Liberdade', 'Bela Vista', 'Cambuci',
+        'Consolação', 'Santa Cecília', 'Vila Buarque', 'Luz', 'Glicério',
+        'Santa Efigênia', 'Bom Retiro', 'Pari', 'Brás',
+      ],
+    },
+    {
+      label: 'ABC Paulista',
+      page: 'santo-andre' as PageId,
+      bairros: [
+        'Santo André', 'São Bernardo do Campo', 'São Caetano do Sul',
+        'Diadema', 'Mauá', 'Ribeirão Pires', 'Rio Grande da Serra',
+        'Rudge Ramos', 'Campestre', 'Vila Assunção', 'Vila Bastos',
+        'Utinga', 'Nova Petrópolis', 'Assunção', 'Santa Paula',
+        'Barcelona', 'Olímpico', 'Serraria', 'Taboão',
+      ],
+    },
+  ]
+
+  const active = tabs[activeTab]
+
+  return (
+    <div>
+      {/* Tabs */}
+      <div className="flex flex-wrap gap-2 mb-8 border-b border-slate-200 pb-0">
+        {tabs.map((tab, i) => (
+          <button
+            key={i}
+            onClick={() => setActiveTab(i)}
+            className={`px-4 py-3 text-sm font-bold transition-all border-b-2 -mb-px ${
+              activeTab === i
+                ? 'border-primary-light text-primary-light'
+                : 'border-transparent text-slate-400 hover:text-slate-600'
+            }`}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </div>
+
+      {/* Bairros Grid */}
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mb-6">
+        {active.bairros.map((bairro, i) => (
+          <div key={i} className="flex items-center gap-2 text-sm text-slate-600 font-medium">
+            <MapPin size={13} className="text-primary-light shrink-0" />
+            {bairro}
+          </div>
+        ))}
+      </div>
+
+      <div className="flex items-center justify-between">
+        <p className="text-slate-400 text-sm">{active.bairros.length} localidades cobertas em {active.label}.</p>
+        <button
+          onClick={() => navigate(active.page)}
+          className="text-primary-light font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all"
+        >
+          Ver página completa <ArrowRight size={14} />
+        </button>
+      </div>
+    </div>
+  )
+}
+
 
 function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
   return (
@@ -887,40 +1001,13 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
       {/* Regions Section */}
       <section className="py-16 bg-slate-50">
         <div className="container mx-auto px-4">
-          <SectionHeading 
-            centered
-            tag="Onde Atendemos"
-            title="Presença em São Paulo e ABC Paulista"
-            subtitle="Atendimento rápido em bairros estratégicos e em todas as cidades do ABC."
-          />
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {[
-              { name: 'São Paulo', id: 'sao-paulo' },
-              { name: 'Santo André', id: 'santo-andre' },
-              { name: 'São Bernardo', id: 'sao-bernardo' },
-              { name: 'São Caetano', id: 'sao-caetano' },
-              { name: 'Diadema', id: 'diadema' },
-              { name: 'Mauá', id: 'maua' }
-            ].map((city) => (
-              <button 
-                key={city.id}
-                onClick={() => navigate(city.id as any)}
-                className="bg-white border border-slate-200 p-6 rounded-2xl text-center hover:border-primary-light hover:shadow-lg transition-all group"
-              >
-                <MapPin size={24} className="mx-auto mb-3 text-slate-300 group-hover:text-primary-light transition-colors" />
-                <span className="font-bold text-primary">{city.name}</span>
-              </button>
-            ))}
+          <div className="mb-10">
+            <span className="text-primary-light text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Onde Atendemos</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-3">Regiões onde a New Clima atende</h2>
+            <p className="text-slate-500 text-lg max-w-2xl">São Paulo capital por zona, ABC Paulista completo. Visita técnica gratuita para qualquer bairro listado.</p>
           </div>
 
-          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            {['Moema', 'Vila Mariana', 'Tatuapé', 'Anália Franco', 'Pinheiros', 'Perdizes', 'Santana', 'Ipiranga', 'Saúde', 'Brooklin'].map((bairro) => (
-              <div key={bairro} className="bg-white/50 border border-slate-100 px-4 py-2 rounded-full text-center text-sm text-slate-500 font-medium">
-                {bairro}
-              </div>
-            ))}
-          </div>
+          <RegionsTabs navigate={navigate} />
         </div>
       </section>
 
@@ -1580,4 +1667,94 @@ function RegionView({ region, navigate }: { region: string, navigate: (p: PageId
       </div>
     </div>
   );
+}
+
+function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
+  const sections = [
+    {
+      title: 'Páginas Principais',
+      links: [
+        { label: 'Início', page: 'home' as PageId },
+        { label: 'Quem Somos', page: 'sobre' as PageId },
+        { label: 'Contato', page: 'contato' as PageId },
+        { label: 'Blog', page: 'blog' as PageId },
+      ],
+    },
+    {
+      title: 'Serviços',
+      links: [
+        { label: 'Instalação de Ar Condicionado Split', page: 'split-multisplit' as PageId },
+        { label: 'Ar Condicionado Comercial (Cassete e Piso-Teto)', page: 'sistemas-comerciais' as PageId },
+        { label: 'Sistemas VRF e Mini VRF', page: 'vrf-mini-vrf' as PageId },
+        { label: 'Manutenção Preventiva e PMOC', page: 'manutencao-preventiva' as PageId },
+        { label: 'Conserto de Ar Condicionado', page: 'manutencao-corretiva' as PageId },
+        { label: 'Limpeza e Higienização', page: 'limpeza' as PageId },
+      ],
+    },
+    {
+      title: 'Regiões Atendidas',
+      links: [
+        { label: 'Ar Condicionado em São Paulo', page: 'sao-paulo' as PageId },
+        { label: 'Ar Condicionado em Santo André', page: 'santo-andre' as PageId },
+        { label: 'Ar Condicionado em São Bernardo do Campo', page: 'sao-bernardo' as PageId },
+        { label: 'Ar Condicionado em São Caetano do Sul', page: 'sao-caetano' as PageId },
+        { label: 'Ar Condicionado em Diadema', page: 'diadema' as PageId },
+        { label: 'Ar Condicionado em Mauá', page: 'maua' as PageId },
+      ],
+    },
+    {
+      title: 'Blog — Guias e Legislação',
+      links: [
+        { label: 'PMOC Obrigatório: O Que É e Quem Precisa Ter', page: 'blog-pmoc-obrigatorio' as PageId },
+        { label: 'Multa por Não Ter PMOC em SP: R$ 2.000 a R$ 1,5 Milhão', page: 'blog-multa-pmoc' as PageId },
+        { label: 'PMOC para Condomínios em SP: Guia para Síndicos', page: 'blog-pmoc-condominio' as PageId },
+        { label: 'Quanto Custa o PMOC em São Paulo?', page: 'blog-custo-pmoc' as PageId },
+        { label: 'Quanto Custa Instalar Ar Condicionado em SP em 2026?', page: 'blog-custo-instalacao' as PageId },
+        { label: 'Qual Ar Condicionado Comprar em 2026?', page: 'blog-qual-ac' as PageId },
+        { label: 'Split ou Multi Split para Apartamento em SP?', page: 'blog-split-multi-split' as PageId },
+        { label: 'O Que Acontece Sem Manutenção no Ar Condicionado?', page: 'blog-manutencao-consequencias' as PageId },
+        { label: 'Ar Condicionado Inverter: Vale a Pena?', page: 'blog-inverter' as PageId },
+        { label: 'Instalação em Apartamento em SP: Guia Completo', page: 'blog-apartamento' as PageId },
+        { label: 'Como Calcular os BTUs Ideais', page: 'blog-btus' as PageId },
+        { label: 'LG Round Cassette: Climatização 360°', page: 'blog-round-cassette' as PageId },
+        { label: 'Obra Limpa: Instalação Sem Quebra-Quebra', page: 'blog-obra-limpa' as PageId },
+        { label: 'Como Instalar Ar Condicionado no Quarto', page: 'blog-quarto' as PageId },
+        { label: 'Split Convencional vs Inverter', page: 'blog-convencional-inverter' as PageId },
+        { label: 'Ar Condicionado para Empresas: Do Split ao VRF', page: 'blog-empresas' as PageId },
+      ],
+    },
+  ]
+
+  return (
+    <div className="py-16 container mx-auto px-4 max-w-5xl">
+      <div className="mb-12">
+        <span className="inline-block bg-ice text-primary-light text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-4">
+          Mapa do Site
+        </span>
+        <h1 className="text-3xl md:text-4xl font-extrabold text-primary mb-3">Mapa do Site — New Clima Ar Condicionado</h1>
+        <p className="text-slate-500 text-lg">Todas as páginas do site organizadas por categoria.</p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        {sections.map((section, i) => (
+          <div key={i}>
+            <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">{section.title}</h2>
+            <ul className="space-y-2">
+              {section.links.map((link, j) => (
+                <li key={j}>
+                  <button
+                    onClick={() => navigate(link.page)}
+                    className="flex items-center gap-2 text-slate-600 hover:text-primary-light text-sm font-medium transition-colors group"
+                  >
+                    <ArrowRight size={12} className="text-primary-light group-hover:translate-x-1 transition-transform" />
+                    {link.label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
 }
