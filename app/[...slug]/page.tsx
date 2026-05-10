@@ -379,6 +379,22 @@ const metaMap: Record<string, { title: string; description: string }> = {
     title: 'Gás R32 e R410A: Diferenças e Qual é Melhor | New Clima',
     description: 'Entenda a diferença entre o gás R32 e R410A no ar condicionado. Qual usar, como recarregar e por que não misturar.',
   },
+  'ar-condicionado-apartamento-sp': {
+    title: 'Ar Condicionado para Apartamento em São Paulo | New Clima',
+    description: 'Instalação de ar condicionado em apartamentos em SP. Obra limpa, normas do condomínio e garantia por escrito. Visita gratuita. (11) 96346-2516.',
+  },
+  'ar-condicionado-residencial-sp': {
+    title: 'Ar Condicionado Residencial em São Paulo | New Clima',
+    description: 'Soluções completas de ar condicionado residencial em SP e ABC. Instalação, manutenção e higienização para casas e apartamentos. (11) 96346-2516.',
+  },
+  'ar-condicionado-casa-sp': {
+    title: 'Ar Condicionado para Casa em São Paulo | New Clima',
+    description: 'Instalação de ar condicionado em casas em SP e ABC. Projeto completo com multi-split e VRF para toda a residência. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-condominio-sp': {
+    title: 'Instalação de Ar Condicionado em Condomínio em SP | New Clima',
+    description: 'Especialistas em instalação de ar condicionado em condomínios de SP. Respeitamos o regimento e garantimos vizinhança tranquila. (11) 96346-2516.',
+  },
   'instalacao-ar-condicionado-morumbi': {
     title: 'Instalação de Ar Condicionado no Morumbi SP | New Clima',
     description: 'Instalação e manutenção de ar condicionado no Morumbi. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
