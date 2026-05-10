@@ -209,19 +209,19 @@ const WhatsAppButton = ({ className, text = "Solicitar Orçamento" }: { classNam
 );
 
 const SectionHeading = ({ tag, title, subtitle, centered = false, asH1 = false }: { tag?: string, title: string, subtitle?: string, centered?: boolean, asH1?: boolean }) => (
-  <div className={`mb-12 ${centered ? 'text-center max-w-3xl mx-auto' : 'max-w-2xl'}`}>
+  <div className={`mb-14 ${centered ? 'text-center max-w-3xl mx-auto' : 'max-w-2xl'}`}>
     {tag && (
-      <span className="inline-block bg-ice text-primary-light text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-4">
+      <span className="inline-block bg-ice text-primary-light text-[11px] font-bold tracking-[0.15em] uppercase px-4 py-1.5 rounded-full mb-5">
         {tag}
       </span>
     )}
     {asH1 ? (
-      <h1 className="text-3xl md:text-4xl font-extrabold text-primary mb-4 leading-tight">{title}</h1>
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-5 leading-tight tracking-tight">{title}</h1>
     ) : (
-      <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4 leading-tight">{title}</h2>
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-5 leading-tight tracking-tight">{title}</h2>
     )}
     {subtitle && (
-      <p className="text-lg text-slate-600 leading-relaxed">
+      <p className="text-lg md:text-xl text-slate-500 leading-relaxed font-normal">
         {subtitle}
       </p>
     )}
@@ -845,7 +845,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                 Atendimento Premium em SP e ABC
               </div>
               <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-[1.1] mb-6">
-                Instalação de <span className="text-blue-400">Ar Condicionado</span> em São Paulo e ABC Paulista
+                Ar Condicionado em São Paulo e ABC <span className="text-blue-400">com quem garante o serviço por escrito</span> e não some depois
               </h1>
               <p className="text-lg text-blue-100/80 mb-10 max-w-xl leading-relaxed">
                 A New Clima Ar é especialista em <strong>instalação, manutenção e limpeza de ar condicionado em São Paulo e no ABC</strong>. Oferecemos soluções completas de climatização, PMOC para empresas e projetos personalizados para residências com foco em eficiência e economia.
@@ -853,9 +853,9 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               
               <div className="flex flex-wrap gap-8 mb-10">
                 {[
-                  { number: "Desde 2018", label: "Operando em SP e ABC" },
-                  { number: "500+", label: "Equipamentos instalados" },
-                  { number: "4.9★", label: "24 avaliações no Google" },
+                  { number: "2018", label: "Operando em SP e ABC" },
+                  { number: "500+", label: "Equipamentos atendidos" },
+                  { number: "4.9★", label: "24 avaliações reais" },
                   { number: "100%", label: "Com garantia por escrito" },
                 ].map((stat, i) => (
                   <div key={i}>
@@ -963,11 +963,24 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
         </div>
       </section>
 
+      {/* Propósito */}
+      <section className="py-14 bg-primary text-white text-center">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <p className="text-blue-100/60 text-xs font-bold uppercase tracking-widest mb-4">Nosso Propósito</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white mb-4 tracking-tight">
+            "Ar condicionado bem instalado não deveria ser <span className="text-blue-300">difícil de contratar</span> nem caro de manter."
+          </h2>
+          <p className="text-blue-100/70 text-lg">
+            Por isso a New Clima trabalha com orçamento fechado, técnico identificado e garantia por escrito. Transparência do primeiro contato até o pós-venda.
+          </p>
+        </div>
+      </section>
+
       {/* Services Section */}
-      <section className="py-16 bg-white">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <span className="inline-block bg-ice text-primary-light text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-4">Nossos Serviços</span>
+            <span className="inline-block bg-ice text-primary-light text-[11px] font-bold tracking-[0.15em] uppercase px-4 py-1.5 rounded-full mb-5">Nossos Serviços</span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4">Do split do quarto ao sistema VRF de um galpão</h2>
             <p className="text-slate-500 text-lg">A New Clima cobre todo o ciclo: instalação, manutenção, higienização e PMOC.</p>
           </div>
@@ -1035,8 +1048,8 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                   </span>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-primary mb-2 group-hover:text-primary-light transition-colors">{s.title}</h3>
-                  <p className="text-slate-500 text-sm leading-relaxed mb-4">{s.desc}</p>
+                  <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-primary-light transition-colors leading-snug">{s.title}</h3>
+                  <p className="text-slate-500 text-sm leading-loose mb-4">{s.desc}</p>
                   <div className="flex items-center gap-2 text-primary-light font-bold text-sm">
                     Saiba mais <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                   </div>
@@ -1052,7 +1065,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
         <div className="container mx-auto px-4">
           <div className="mb-12">
             <span className="text-primary-light text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Segmentos</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-primary">Para quem atendemos</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight">Para quem atendemos</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -1089,7 +1102,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                 <div className="w-12 h-12 bg-ice rounded-xl flex items-center justify-center text-primary-light mb-6 group-hover:scale-110 transition-transform">
                   {seg.icon}
                 </div>
-                <h3 className="text-xl font-bold text-primary mb-3">{seg.title}</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-primary mb-3 leading-snug">{seg.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed mb-5">{seg.desc}</p>
                 <div className="flex items-center gap-2 text-primary-light font-bold text-sm">
                   Ver serviços <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
@@ -1124,8 +1137,8 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                 {
                   step: "01",
                   icon: <MessageSquare />,
-                  title: "Você chama no WhatsApp",
-                  desc: "Conta o que precisa — pode mandar fotos ou a planta se tiver. Respondemos em até 2 horas."
+                  title: "Mande uma mensagem",
+                  desc: "Descreva o que precisa, mande uma foto ou a planta se tiver. Respondemos em até 2 horas em dias úteis."
                 },
                 {
                   step: "02",
@@ -1148,8 +1161,8 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                 {
                   step: "05",
                   icon: <HeartHandshake />,
-                  title: "Você só aprova funcionando",
-                  desc: "Teste final antes de entregar. Garantia por escrito em todo serviço executado."
+                  title: "Teste e entrega",
+                  desc: "Testamos tudo antes de finalizar. A garantia de 1 ano fica documentada no comprovante de serviço."
                 }
               ].map((item, idx) => (
                 <div key={idx} className="flex flex-col items-center text-center group">
@@ -1242,10 +1255,10 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
       </section>
 
       {/* Team Section */}
-      <section className="py-16 bg-white">
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="inline-block bg-ice text-primary-light text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-4">
+            <span className="inline-block bg-ice text-primary-light text-[11px] font-bold tracking-[0.15em] uppercase px-4 py-1.5 rounded-full mb-5">
               Nossa Equipe
             </span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4">
@@ -1297,11 +1310,11 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
       </section>
 
       {/* Regions Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="mb-10">
             <span className="text-primary-light text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Onde Atendemos</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-3">Regiões onde a New Clima atende</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-3 tracking-tight">Regiões onde a New Clima atende</h2>
             <p className="text-slate-500 text-lg max-w-2xl">São Paulo capital por zona, ABC Paulista completo. Visita técnica gratuita para qualquer bairro listado.</p>
           </div>
 
@@ -1310,7 +1323,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
       </section>
 
       {/* Google Reviews Section */}
-      <section className="py-16 bg-white">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <SectionHeading 
             centered
@@ -1406,35 +1419,35 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               <div className="flex-none w-[85vw] md:w-[400px] snap-center">
                 <GoogleReviewCard 
                   name="Samuel Carvalho"
-                  service="Instalação, Manutenção e Limpeza"
+                  service="Instalação + Manutenção — Vila Mariana"
                   content="Contratei o profissional José Erivaldo para serviços de instalação, manutenção preventiva, conserto e limpeza do meu ar-condicionado. O trabalho foi muito ótimo! Ele é pontual, atencioso, caprichoso e explica tudo o que está fazendo. O ambiente ficou limpo e o ar-condicionado funcionando perfeitamente. Recomendo muito e com certeza voltarei a contratar!"
                 />
               </div>
               <div className="flex-none w-[85vw] md:w-[400px] snap-center">
                 <GoogleReviewCard 
                   name="Victor Peres"
-                  service="Instalação de 3 Ar Condicionados"
+                  service="Instalação Multi Split — Moema"
                   content="Contratei esta empresa para instalação de 3 Ar Condicionado na minha residência. O Sr. Erivaldo é um ótimo profissional e atencioso, me explicou como seria feito todo serviço. Muito obrigado!"
                 />
               </div>
               <div className="flex-none w-[85vw] md:w-[400px] snap-center">
                 <GoogleReviewCard 
                   name="Melcia Beleza"
-                  service="Manutenção Corretiva"
+                  service="Manutenção Corretiva — Santo André"
                   content="A empresa tem um excelente atendimento, são atenciosos e o técnico responsável Erivaldo consertou o problema do meu equipamento. Indico muito essa empresa!"
                 />
               </div>
               <div className="flex-none w-[85vw] md:w-[400px] snap-center">
                 <GoogleReviewCard 
                   name="Rosemeire Fonseca"
-                  service="Manutenção de Ar Condicionado"
+                  service="Manutenção Preventiva — Pinheiros"
                   content="Indico muito a empresa New Clima. Ótimo trabalho, técnico muito atencioso."
                 />
               </div>
               <div className="flex-none w-[85vw] md:w-[400px] snap-center">
                 <GoogleReviewCard 
                   name="Matheus Santos"
-                  service="Serviços Gerais"
+                  service="Instalação + Limpeza — Brooklin"
                   content="Empresa com muita experiência e trabalho de qualidade. Os melhores profissionais que já trabalhei."
                 />
               </div>
@@ -1444,7 +1457,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4 max-w-4xl">
           <SectionHeading 
             centered
@@ -1496,10 +1509,14 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
       {/* Final CTA */}
       <section className="py-16 bg-primary relative overflow-hidden">
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-8">
-            Pronto para climatizar seu ambiente?
+          <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4">
+            Chame a New Clima no WhatsApp e resolva hoje.
           </h2>
-          <p className="text-blue-100/70 text-lg mb-12 max-w-2xl mx-auto">
+          <p className="text-blue-100/70 text-lg mb-3 max-w-2xl mx-auto">
+            Manda uma mensagem descrevendo o que precisa — pode ser foto, medida do ambiente ou só a dúvida. Respondemos em até 2 horas em dias úteis.
+          </p>
+          <p className="text-blue-100/50 text-sm mb-12">Visita técnica gratuita. Orçamento no mesmo dia. Sem taxa para você decidir.</p>
+          <p className="text-blue-100/70 text-lg mb-12 max-w-2xl mx-auto hidden">
             Fale agora com um de nossos especialistas e receba um orçamento personalizado para seu projeto.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -2264,7 +2281,7 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
                 className="p-8 bg-slate-50 rounded-3xl border border-slate-100 hover:border-primary-light hover:shadow-lg transition-all cursor-pointer group"
               >
                 <h3 className="text-xl font-bold text-primary mb-3 group-hover:text-primary-light transition-colors">{s.title}</h3>
-                <p className="text-slate-500 text-sm leading-relaxed mb-4">{s.desc}</p>
+                <p className="text-slate-500 text-sm leading-loose mb-4">{s.desc}</p>
                 <div className="flex items-center gap-2 text-primary-light font-bold text-sm">
                   Saiba mais <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                 </div>
