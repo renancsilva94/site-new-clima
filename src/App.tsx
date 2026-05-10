@@ -2283,7 +2283,7 @@ function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
     { label: 'Quanto Custa Instalar Ar Condicionado em SP em 2026?', page: 'blog-custo-instalacao' as PageId },
     { label: 'Qual Ar Condicionado Comprar em 2026?', page: 'blog-qual-ac' as PageId },
     { label: 'Split ou Multi Split para Apartamento em SP?', page: 'blog-split-multi-split' as PageId },
-    { label: 'O Que Acontece Sem Manutenção no Ar Condicionado?', page: 'blog-manutencao-consequencias' | 'blog-saude' | 'blog-dormir' | 'blog-consumo' | 'blog-quanto-gasta' | 'blog-mau-cheiro' | 'blog-desliga-sozinho' | 'blog-vida-util' | 'blog-temperatura' | 'blog-funcao-dry' | 'blog-gas' as PageId },
+    { label: 'O Que Acontece Sem Manutenção no Ar Condicionado?', page: 'blog-manutencao-consequencias' as PageId },
     { label: 'Ar Condicionado Inverter: Vale a Pena?', page: 'blog-inverter' as PageId },
     { label: 'Instalação em Apartamento em SP: Guia Completo', page: 'blog-apartamento' as PageId },
     { label: 'Como Calcular os BTUs Ideais para Seu Ambiente', page: 'blog-btus' as PageId },
