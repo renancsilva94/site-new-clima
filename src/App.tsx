@@ -657,7 +657,7 @@ export default function App() {
 
             className="bg-white px-4 py-2 rounded-full shadow-xl border border-slate-100 text-sm font-bold text-slate-700 pointer-events-auto"
           >
-            Dúvidas? Fale com um técnico!
+            Orçamento grátis — resposta em 2h
           </div>
           <div className="relative pointer-events-auto">
             <div className="absolute inset-0 bg-success rounded-full animate-ping opacity-25"></div>
@@ -984,7 +984,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
             "Ar condicionado bem instalado não deveria ser <span className="text-blue-300">difícil de contratar</span> nem caro de manter."
           </h2>
           <p className="text-blue-100/70 text-lg">
-            Por isso a New Clima trabalha com orçamento fechado, técnico identificado e garantia por escrito. Transparência do primeiro contato até o pós-venda.
+            A New Clima entrega projetos de climatização com orçamento fechado, técnico nomeado, materiais certificados e garantia documentada. Transparência total do diagnóstico ao pós-venda.
           </p>
         </div>
       </section>
@@ -994,8 +994,8 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="inline-block bg-ice text-primary-light text-[11px] font-bold tracking-[0.15em] uppercase px-4 py-1.5 rounded-full mb-5">Nossos Serviços</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4">Do split do quarto ao sistema VRF de um galpão</h2>
-            <p className="text-slate-500 text-lg">A New Clima cobre todo o ciclo: instalação, manutenção, higienização e PMOC.</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4">Soluções completas de climatização em São Paulo e ABC</h2>
+            <p className="text-slate-500 text-lg">Do split residencial ao sistema VRF corporativo — instalação técnica, manutenção preventiva, higienização e PMOC em um único parceiro.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
@@ -1082,36 +1082,37 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
       </section>
 
       {/* Segments Section */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
-          <div className="mb-12">
-            <span className="text-primary-light text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Segmentos</span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight">Para quem atendemos</h2>
+          <div className="mb-14">
+            <span className="text-primary-light text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Segmentos Atendidos</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight">Climatização para cada tipo de projeto</h2>
+            <p className="text-slate-500 text-lg mt-3 max-w-xl">Residencial, comercial ou industrial — cada segmento tem suas exigências técnicas. A New Clima conhece todas.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 icon: <Wind size={28} />,
-                title: "Residencial",
-                desc: "Apartamentos, casas e condomínios. Instalação discreta, manutenção programada e higienização para quem quer ar limpo em casa.",
+                title: "Climatização Residencial",
+                desc: "Climatização residencial em apartamentos, casas e condomínios. Instalação com obra limpa, manutenção preventiva semestral e qualidade do ar garantida para sua família.",
                 page: 'split-multisplit' as PageId,
               },
               {
                 icon: <Settings size={28} />,
-                title: "Comercial",
-                desc: "Escritórios, lojas, clínicas e restaurantes. Equipamento que resfria com consistência, sem barulho e sem parada no meio do expediente.",
+                title: "Climatização Comercial",
+                desc: "Climatização comercial para escritórios, clínicas, lojas e restaurantes. Sistemas de baixo ruído, manutenção programada e PMOC conforme a Lei 13.589/18.",
                 page: 'sistemas-comerciais' as PageId,
               },
               {
                 icon: <Zap size={28} />,
-                title: "Industrial",
-                desc: "Galpões, fábricas e data centers. Sistemas dimensionados para rodar 24/7 com controle preciso de temperatura e umidade.",
+                title: "Climatização Industrial",
+                desc: "Climatização industrial para galpões, fábricas e data centers. Sistemas VRF e dutados dimensionados para operação contínua com eficiência energética máxima.",
                 page: 'vrf-mini-vrf' as PageId,
               },
               {
                 icon: <ShieldCheck size={28} />,
-                title: "PMOC Empresarial",
-                desc: "Prédios comerciais, hospitais, shoppings e escolas. Plano de manutenção completo com responsável técnico e documentação legal.",
+                title: "PMOC e Compliance",
+                desc: "PMOC para empresas obrigadas pela Lei 13.589/18. Plano de Manutenção, Operação e Controle com ART, documentação completa e sem risco de autuação.",
                 page: 'manutencao-preventiva' as PageId,
               },
             ].map((seg, i) => (
@@ -1135,7 +1136,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-16 bg-white relative overflow-hidden">
+      <section className="py-20 bg-white relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <div className="inline-flex items-center gap-2 bg-ice px-4 py-1.5 rounded-full text-primary-light text-sm font-bold mb-6 uppercase tracking-widest">
@@ -1159,19 +1160,19 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                   step: "01",
                   icon: <MessageSquare />,
                   title: "Mande uma mensagem",
-                  desc: "Descreva o que precisa, mande uma foto ou a planta se tiver. Respondemos em até 2 horas em dias úteis."
+                  desc: "Descreva o ambiente, mande uma foto ou a planta baixa se tiver. Nossa equipe técnica retorna em até 2 horas em dias úteis."
                 },
                 {
                   step: "02",
                   icon: <Ruler />,
                   title: "Agendamos a visita",
-                  desc: "Um técnico vai ao local, avalia o ambiente e confere a infraestrutura. Sem custo e sem compromisso."
+                  desc: "Técnico certificado visita o local, avalia carga térmica, infraestrutura elétrica e hidráulica. Sem custo, sem compromisso."
                 },
                 {
                   step: "03",
                   icon: <HardHat />,
                   title: "Você recebe o orçamento",
-                  desc: "Escopo, prazo e valor fechado por escrito — sem taxa escondida e sem 'a partir de'."
+                  desc: "Escopo técnico, prazo de execução e valor total fechado por escrito. Sem taxa oculta, sem surpresa no final."
                 },
                 {
                   step: "04",
@@ -1183,7 +1184,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                   step: "05",
                   icon: <HeartHandshake />,
                   title: "Teste e entrega",
-                  desc: "Testamos tudo antes de finalizar. A garantia de 1 ano fica documentada no comprovante de serviço."
+                  desc: "Teste funcional completo antes da entrega. Garantia de 1 ano na instalação documentada no comprovante — válida para qualquer defeito de execução."
                 }
               ].map((item, idx) => (
                 <div key={idx} className="flex flex-col items-center text-center group">
@@ -1245,25 +1246,25 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               <SectionHeading 
                 tag="Diferenciais"
                 title="Por que escolher a New Clima Ar?"
-                subtitle="Não somos apenas instaladores. Somos uma empresa referência focada em resultados e satisfação do cliente."
+                subtitle="Certificações, materiais técnicos de ponta e processo documentado — o padrão de execução que diferencia a New Clima no mercado de climatização."
               />
               
               <div className="space-y-8">
                 <FeatureItem 
                   title="Técnicos Certificados"
-                  desc="Nossa equipe possui certificações NR-10, NR-35 e treinamentos diretos dos fabricantes (LG, Samsung, Daikin)."
+                  desc="Equipe com certificações NR-10, NR-35 e treinamentos técnicos diretos dos fabricantes LG, Samsung, Daikin e Fujitsu."
                 />
                 <FeatureItem 
-                  title="Garantia por Escrito"
-                  desc="Todos os nossos serviços acompanham certificado de garantia e nota fiscal, assegurando seu investimento."
+                  title="Garantia Documentada"
+                  desc="Certificado de garantia e nota fiscal em todo serviço. 1 ano na instalação, 90 dias em corretiva — sem letra miúda."
                 />
                 <FeatureItem 
-                  title="Infraestrutura de Ponta"
-                  desc="Utilizamos materiais de primeira linha (cobre de alta pureza, isolamento blindado) para evitar vazamentos futuros."
+                  title="Materiais Técnicos de Primeira Linha"
+                  desc="Tubulação de cobre de alta pureza, isolamento térmico blindado e suportes galvanizados — padrão que evita vazamentos e reduz perda de eficiência."
                 />
                 <FeatureItem 
-                  title="Atendimento Local"
-                  desc="Base operacional estratégica em São Paulo e ABC para garantir rapidez no atendimento e suporte pós-venda."
+                  title="Suporte Pós-Venda Ativo"
+                  desc="Base operacional em SP e ABC com técnicos próprios. Respondemos em até 2 horas e mantemos histórico de cada equipamento atendido."
                 />
               </div>
 
@@ -1283,10 +1284,10 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               Nossa Equipe
             </span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4">
-              Quem vai até a sua casa
+              Técnico identificado em cada visita
             </h2>
             <p className="text-slate-500 text-lg">
-              Técnicos certificados, uniformizados e com nome — você sabe exatamente quem está atendendo você.
+              Nome, uniforme e histórico de avaliações reais — transparência total em cada atendimento de climatização.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -1301,7 +1302,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               </div>
               <div>
                 <div className="font-extrabold text-primary text-lg">José Erivaldo</div>
-                <div className="text-primary-light text-sm font-bold mb-2">Técnico Sênior · Desde 2018</div>
+                <div className="text-primary-light text-sm font-bold mb-2">Técnico em Climatização · NR-10 · NR-35</div>
                 <div className="flex gap-1 text-accent">
                   {[1,2,3,4,5].map(i => <Star key={i} size={12} fill="currentColor" />)}
                 </div>
@@ -1335,8 +1336,8 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
         <div className="container mx-auto px-4">
           <div className="mb-10">
             <span className="text-primary-light text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Onde Atendemos</span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-3 tracking-tight">Regiões onde a New Clima atende</h2>
-            <p className="text-slate-500 text-lg max-w-2xl">São Paulo capital por zona, ABC Paulista completo. Visita técnica gratuita para qualquer bairro listado.</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-3 tracking-tight">Climatização em São Paulo e ABC Paulista</h2>
+            <p className="text-slate-500 text-lg max-w-2xl">Cobertura completa na capital por zona e em todas as cidades do ABC. Visita técnica gratuita para diagnóstico de climatização em qualquer bairro listado.</p>
           </div>
 
           <RegionsTabs navigate={navigate} />
@@ -1349,7 +1350,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
           <SectionHeading 
             centered
             tag="Depoimentos"
-            title="Clientes que confiam na New Clima"
+            title="O que dizem os clientes sobre nossos serviços de climatização"
           />
 
           {/* Google Rating Summary Bar */}
@@ -1482,38 +1483,39 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
         <div className="container mx-auto px-4 max-w-4xl">
           <SectionHeading 
             centered
-            tag="FAQ"
-            title="Dúvidas Frequentes"
+            tag="Perguntas Frequentes"
+            title="Tudo sobre nossos serviços de climatização"
+            subtitle="Respondemos as dúvidas mais comuns sobre instalação, manutenção e PMOC em SP e ABC."
           />
           
           <div className="space-y-4">
             <FaqItem 
               question="Quanto custa instalar ar condicionado em São Paulo?"
-              answer="O valor varia conforme a capacidade do equipamento (BTUs), complexidade da infraestrutura e distância entre as unidades. Uma instalação residencial padrão em SP começa a partir de R$ 350. O orçamento é gratuito — nossa equipe visita o local sem compromisso e entrega o valor exato no mesmo dia."
+              answer="O custo de instalação varia conforme a capacidade em BTUs, complexidade da infraestrutura elétrica e hidráulica e distância entre as unidades interna e externa. Uma instalação residencial padrão em SP começa a partir de R$ 350. A visita técnica é gratuita e o orçamento é entregue no mesmo dia, com escopo e valor fechado por escrito."
             />
             <FaqItem 
               question="Quanto tempo leva para instalar um ar condicionado?"
               answer="Uma instalação padrão de split hi-wall leva em média de 3 a 5 horas, dependendo da complexidade da infraestrutura e distância entre as unidades."
             />
             <FaqItem 
-              question="Qual a garantia dos serviços?"
-              answer="Oferecemos 1 ano de garantia em nossas instalações e 90 dias em manutenções corretivas. Trabalhamos apenas com materiais de primeira linha."
+              question="Qual a garantia dos serviços de climatização?"
+              answer="Oferecemos 1 ano de garantia documentada em instalações e 90 dias em manutenções corretivas. Todos os serviços incluem nota fiscal e certificado de garantia. Trabalhamos com tubulação de cobre de alta pureza e isolamento blindado para garantir a vida útil do sistema."
             />
             <FaqItem 
               question="Vocês atendem em apartamentos?"
               answer="Sim, somos especialistas em instalações em apartamentos, respeitando normas de condomínio, fachadas e varandas técnicas."
             />
             <FaqItem 
-              question="Qual a diferença entre o modelo Inverter e o Convencional?"
-              answer="O modelo Inverter economiza até 60% de energia pois seu compressor nunca desliga totalmente, mantendo a temperatura constante, enquanto o convencional liga e desliga, gerando picos de consumo."
+              question="Qual a diferença entre tecnologia Inverter e Convencional?"
+              answer="O ar condicionado Inverter ajusta continuamente a rotação do compressor para manter a temperatura configurada, proporcionando economia de até 60% em eficiência energética. O convencional opera em ciclos liga/desliga, gerando picos de consumo e maior variação térmica. Para uso diário em SP, o Inverter tem retorno do investimento em menos de 18 meses."
             />
             <FaqItem 
-              question="Com que frequência devo fazer a limpeza do ar condicionado?"
-              answer="Para uso residencial, recomendamos a limpeza completa (higienização) a cada 6 meses. Em ambientes comerciais ou com uso intenso, o ideal é a cada 3 meses ou mensalmente via PMOC."
+              question="Com que frequência fazer a higienização do ar condicionado?"
+              answer="Para uso residencial, recomendamos higienização profunda a cada 6 meses. Em ambientes comerciais, clínicas ou locais com alta ocupação, o ideal é a cada 3 meses. Locais com cozinha industrial ou alto nível de poluição podem exigir manutenção mensal via PMOC. A higienização remove fungos, ácaros e bactérias que afetam a qualidade do ar e a eficiência energética do sistema."
             />
             <FaqItem 
-              question="Vocês instalam aparelhos comprados em outras lojas?"
-              answer="Sim! Realizamos a instalação técnica de qualquer marca ou modelo, garantindo que você não perca a garantia de fábrica do seu equipamento."
+              question="Vocês instalam equipamentos comprados em outras lojas?"
+              answer="Sim. Realizamos a instalação técnica certificada de qualquer marca — LG, Samsung, Daikin, Midea, Fujitsu, Carrier, Elgin e Gree. O serviço não anula a garantia de fábrica e inclui nossa garantia de 1 ano na mão de obra."
             />
             <FaqItem 
               question="Como saber a potência (BTUs) correta para meu ambiente?"
@@ -1531,12 +1533,12 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
       <section className="py-16 bg-primary relative overflow-hidden">
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4">
-            Chame a New Clima no WhatsApp e resolva hoje.
+            Pronto para resolver seu sistema de climatização?
           </h2>
           <p className="text-blue-100/70 text-lg mb-3 max-w-2xl mx-auto">
-            Manda uma mensagem descrevendo o que precisa — pode ser foto, medida do ambiente ou só a dúvida. Respondemos em até 2 horas em dias úteis.
+            Fale agora com um técnico da New Clima. Descreva o ambiente, mande uma foto ou só a dúvida — respondemos em até 2 horas e agendamos a visita técnica gratuita.
           </p>
-          <p className="text-blue-100/50 text-sm mb-12">Visita técnica gratuita. Orçamento no mesmo dia. Sem taxa para você decidir.</p>
+          <p className="text-blue-100/50 text-sm mb-12">Diagnóstico gratuito · Orçamento fechado no mesmo dia · Garantia documentada por escrito</p>
           <p className="text-blue-100/70 text-lg mb-12 max-w-2xl mx-auto hidden">
             Fale agora com um de nossos especialistas e receba um orçamento personalizado para seu projeto.
           </p>
