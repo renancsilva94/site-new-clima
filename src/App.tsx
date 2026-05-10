@@ -830,9 +830,10 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
     <>
       {/* Hero Section */}
       <section className="relative bg-primary overflow-hidden pt-16 pb-24">
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-white rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2" />
-          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-primary-light rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2" />
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-white/20 rounded-full blur-[80px] -translate-y-1/3 translate-x-1/3" />
+          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-400/20 rounded-full blur-[80px] translate-y-1/3 -translate-x-1/4" />
+          <div className="absolute top-1/2 left-1/2 w-[300px] h-[300px] bg-white/5 rounded-full blur-[60px] -translate-x-1/2 -translate-y-1/2" />
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -841,38 +842,50 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
 
             >
               <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-4 py-1.5 rounded-full text-white text-sm font-semibold mb-8">
-                <CheckCircle2 size={16} className="text-success" />
-                Atendimento Premium em SP e ABC
+                <Zap size={14} className="text-yellow-400" />
+                Resposta em até 2 horas · SP e ABC
               </div>
               <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-[1.1] mb-6">
-                Ar Condicionado em São Paulo e ABC <span className="text-blue-400">com quem garante o serviço por escrito</span> e não some depois
+                Ar Condicionado em SP <span className="text-blue-400">com garantia</span> e sem sumir depois
               </h1>
-              <p className="text-lg text-blue-100/80 mb-10 max-w-xl leading-relaxed">
-                A New Clima Ar é especialista em <strong>instalação, manutenção e limpeza de ar condicionado em São Paulo e no ABC</strong>. Oferecemos soluções completas de climatização, PMOC para empresas e projetos personalizados para residências com foco em eficiência e economia.
-              </p>
-              
-              <div className="flex flex-wrap gap-8 mb-10">
+              <div className="flex flex-col gap-3 mb-10 max-w-md">
                 {[
-                  { number: "2018", label: "Operando em SP e ABC" },
-                  { number: "500+", label: "Equipamentos atendidos" },
-                  { number: "4.9★", label: "24 avaliações reais" },
-                  { number: "100%", label: "Com garantia por escrito" },
+                  'Instalação limpa com garantia de 1 ano por escrito',
+                  'Manutenção e conserto de todas as marcas em SP e ABC',
+                  'Visita técnica gratuita — orçamento no mesmo dia',
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <CheckCircle2 size={18} className="text-success shrink-0 mt-0.5" />
+                    <span className="text-blue-100/80 text-base leading-snug">{item}</span>
+                  </div>
+                ))}
+              </div>
+              
+              <div className="flex flex-wrap gap-0 mb-10 bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
+                {[
+                  { number: "2018", label: "Em SP e ABC" },
+                  { number: "500+", label: "Equipamentos" },
+                  { number: "4.9★", label: "Google" },
+                  { number: "100%", label: "Com garantia" },
                 ].map((stat, i) => (
-                  <div key={i}>
-                    <div className="text-2xl font-extrabold text-white">{stat.number}</div>
-                    <div className="text-xs text-blue-100/60 font-medium">{stat.label}</div>
+                  <div key={i} className={`flex-1 min-w-[80px] px-4 py-4 text-center ${i < 3 ? 'border-r border-white/10' : ''}`}>
+                    <div className="text-xl font-extrabold text-white">{stat.number}</div>
+                    <div className="text-[11px] text-blue-100/50 font-medium mt-0.5">{stat.label}</div>
                   </div>
                 ))}
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <WhatsAppButton className="h-14 px-8 text-lg" text="Quero Solicitar Orçamento" />
-                <button 
-                  onClick={() => navigate('contato')}
-                  className="h-14 px-8 rounded-xl border-2 border-white/20 text-white font-bold hover:bg-white/10 transition-all"
+                <a
+                  href="https://maps.app.goo.gl/kHeynjnXoG943iG3A"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="h-14 px-8 rounded-xl border-2 border-white/20 text-white font-bold hover:bg-white/10 transition-all inline-flex items-center gap-2"
                 >
-                  Saiba Mais
-                </button>
+                  <Star size={16} className="text-yellow-400" fill="currentColor" />
+                  Ver avaliações no Google
+                </a>
               </div>
             </div>
 
