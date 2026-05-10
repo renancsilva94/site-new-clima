@@ -846,7 +846,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                 Resposta em até 2 horas · SP e ABC
               </div>
               <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-[1.1] mb-6">
-                Ar Condicionado em SP <span className="text-blue-400">com garantia</span> e sem sumir depois
+                Ar Condicionado em São Paulo e ABC — Instalação, Manutenção e Limpeza <span className="text-blue-400">com Garantia</span>
               </h1>
               <div className="flex flex-col gap-3 mb-10 max-w-md">
                 {[
@@ -863,7 +863,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               
               <div className="flex flex-wrap gap-0 mb-10 bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
                 {[
-                  { number: "2018", label: "Em SP e ABC" },
+                  { number: "2018", label: "Em São Paulo e ABC" },
                   { number: "500+", label: "Equipamentos" },
                   { number: "4.9★", label: "Google" },
                   { number: "100%", label: "Com garantia" },
@@ -1001,22 +1001,22 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
             {[
               {
                 tag: "INSTALAÇÃO",
-                title: "Instalação de Ar Condicionado em SP",
+                title: "Instalação de Ar Condicionado em São Paulo",
                 desc: "Split, multi-split, VRF e cassete em São Paulo e ABC. Projeto dimensionado, instalação limpa e teste de funcionamento antes de entregar.",
                 img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80&auto=format&fit=crop",
                 page: 'split-multisplit' as PageId,
               },
               {
                 tag: "MANUTENÇÃO",
-                title: "Manutenção Preventiva e Corretiva em SP",
+                title: "Manutenção Preventiva e Corretiva em São Paulo",
                 desc: "Planos mensais, trimestrais ou sob demanda em São Paulo e ABC. Atuamos antes do defeito aparecer — evita parada e conta de luz inflada.",
                 img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&auto=format&fit=crop",
                 page: 'manutencao-preventiva' as PageId,
               },
               {
                 tag: "LIMPEZA",
-                title: "Limpeza de Ar Condicionado em SP",
-                desc: "Remove fungos, bactérias e poeira acumulados no aparelho em SP e ABC. Ar mais limpo para respirar, menos cheiro ruim e equipamento que dura mais.",
+                title: "Limpeza de Ar Condicionado em São Paulo",
+                desc: "Remove fungos, bactérias e poeira acumulados no aparelho em São Paulo e ABC. Ar mais limpo para respirar, menos cheiro ruim e equipamento que dura mais.",
                 img: "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&q=80&auto=format&fit=crop",
                 page: 'limpeza' as PageId,
               },
@@ -1036,7 +1036,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               },
               {
                 tag: "COMERCIAL",
-                title: "Ar Condicionado Comercial em SP e ABC",
+                title: "Ar Condicionado Comercial em São Paulo e ABC",
                 desc: "Cassete, Piso-Teto e Dutado para lojas, escritórios e restaurantes em São Paulo e ABC. Projeto técnico e execução completos.",
                 img: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80&auto=format&fit=crop",
                 page: 'sistemas-comerciais' as PageId,
@@ -1094,7 +1094,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               {
                 icon: <Wind size={28} />,
                 title: "Residencial",
-                desc: "Instalamos e cuidamos do ar condicionado em apartamentos, casas e condomínios em SP e ABC. Obra limpa, sem sujeira, com garantia de 1 ano por escrito.",
+                desc: "Instalamos e cuidamos do ar condicionado em apartamentos, casas e condomínios em São Paulo e ABC. Obra limpa, sem sujeira, com garantia de 1 ano por escrito.",
                 page: 'split-multisplit' as PageId,
               },
               {
@@ -1264,7 +1264,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                 />
                 <FeatureItem 
                   title="Atendemos Depois Também"
-                  desc="Não sumimos após o serviço. Temos base em SP e ABC, respondemos em até 2 horas e guardamos o histórico do seu equipamento para futuras manutenções."
+                  desc="Não sumimos após o serviço. Temos base em São Paulo e ABC, respondemos em até 2 horas e guardamos o histórico do seu equipamento para futuras manutenções."
                 />
               </div>
 
@@ -1484,7 +1484,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
           <SectionHeading 
             centered
             tag="Perguntas Frequentes"
-            title="Dúvidas sobre ar condicionado em SP?"
+            title="Dúvidas sobre ar condicionado em São Paulo?"
             subtitle="Respondemos as perguntas mais comuns sobre instalação, limpeza, conserto e contratos de manutenção."
           />
           
