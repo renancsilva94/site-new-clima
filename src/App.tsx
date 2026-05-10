@@ -1661,6 +1661,66 @@ function BlogView({ navigate, postId }: { navigate: (p: PageId) => void, postId?
           image="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=800"
           onClick={() => navigate('blog-empresas')}
         />
+        <BlogCard
+          title="Ar Condicionado Faz Mal à Saúde?"
+          desc="Saiba quando o ar condicionado prejudica a saúde e como evitar com manutenção regular em SP."
+          image="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-saude')}
+        />
+        <BlogCard
+          title="Dormir com Ar Condicionado Faz Mal?"
+          desc="Temperatura certa e aparelho limpo fazem toda a diferença. Veja as melhores práticas para SP."
+          image="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-dormir')}
+        />
+        <BlogCard
+          title="Gasta Mais de Dia ou à Noite?"
+          desc="Descubra quando o ar condicionado consome mais energia em SP e como economizar na conta de luz."
+          image="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-consumo')}
+        />
+        <BlogCard
+          title="Quanto Gasta um Inverter por Mês?"
+          desc="Tabela completa de consumo por BTUs e horas de uso. Calcule o gasto real do seu aparelho em SP."
+          image="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-quanto-gasta')}
+        />
+        <BlogCard
+          title="Mau Cheiro no Ar Condicionado"
+          desc="Causas do mau cheiro e como eliminar de vez com higienização profissional em São Paulo."
+          image="https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-mau-cheiro')}
+        />
+        <BlogCard
+          title="Ar Condicionado Desliga Sozinho"
+          desc="7 causas para o desligamento automático e como resolver. Atendimento em SP e ABC."
+          image="https://images.unsplash.com/photo-1621905252507-b353174ad739?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-desliga-sozinho')}
+        />
+        <BlogCard
+          title="Qual a Vida Útil do Ar Condicionado?"
+          desc="Um split bem mantido dura até 15 anos. Saiba o que reduz a vida útil e como prolongar."
+          image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-vida-util')}
+        />
+        <BlogCard
+          title="Temperatura Ideal do Ar Condicionado"
+          desc="Entre 23°C e 25°C é o ideal para conforto e economia em São Paulo. Saiba o impacto na conta de luz."
+          image="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-temperatura')}
+        />
+        <BlogCard
+          title="Função Dry: Para que Serve?"
+          desc="O modo Dry desumidifica o ar sem resfriar demais. Ideal para dias úmidos e chuvosos em SP."
+          image="https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-funcao-dry')}
+        />
+        <BlogCard
+          title="Gás R32 e R410A: Qual a Diferença?"
+          desc="Entenda a diferença entre os gases refrigerantes e por que nunca devem ser misturados."
+          image="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800"
+          onClick={() => navigate('blog-gas')}
+        />
       </div>
     </div>
   );
