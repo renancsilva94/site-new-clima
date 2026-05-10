@@ -1032,9 +1032,9 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               <div
                 key={i}
                 onClick={() => navigate(s.page)}
-                className="group cursor-pointer bg-white border border-slate-100 rounded-3xl overflow-hidden hover:shadow-xl transition-all duration-300"
+                className="group cursor-pointer bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-52 overflow-hidden">
                   <img
                     src={s.img}
                     alt={s.title}
@@ -1042,16 +1042,24 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                     loading="lazy"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                  <span className="absolute top-4 left-4 bg-white/90 text-primary text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+                  <span className={`absolute top-4 left-4 text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full ${
+                    s.tag === 'INSTALAÇÃO' ? 'bg-blue-600 text-white' :
+                    s.tag === 'MANUTENÇÃO' ? 'bg-emerald-600 text-white' :
+                    s.tag === 'HIGIENIZAÇÃO' ? 'bg-cyan-600 text-white' :
+                    s.tag === 'PMOC' ? 'bg-amber-500 text-white' :
+                    s.tag === 'SISTEMAS VRF' ? 'bg-violet-600 text-white' :
+                    s.tag === 'COMERCIAL' ? 'bg-slate-700 text-white' :
+                    'bg-white/90 text-primary'
+                  }`}>
                     {s.tag}
                   </span>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-primary-light transition-colors leading-snug">{s.title}</h3>
-                  <p className="text-slate-500 text-sm leading-loose mb-4">{s.desc}</p>
-                  <div className="flex items-center gap-2 text-primary-light font-bold text-sm">
-                    Saiba mais <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                <div className="p-6 pt-5">
+                  <h3 className="text-lg font-bold text-primary mb-2 group-hover:text-primary-light transition-colors leading-snug">{s.title}</h3>
+                  <p className="text-slate-500 text-sm leading-relaxed mb-5">{s.desc}</p>
+                  <div className="flex items-center gap-2 text-primary-light font-semibold text-sm group-hover:gap-3 transition-all">
+                    Saiba mais <ArrowRight size={14} />
                   </div>
                 </div>
               </div>
@@ -1097,15 +1105,15 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               <div
                 key={i}
                 onClick={() => navigate(seg.page)}
-                className="bg-white p-8 rounded-3xl border border-slate-200 hover:border-primary-light hover:shadow-lg transition-all cursor-pointer group"
+                className="bg-white p-8 rounded-2xl border border-slate-200 hover:border-primary hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
               >
-                <div className="w-12 h-12 bg-ice rounded-xl flex items-center justify-center text-primary-light mb-6 group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary-light mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
                   {seg.icon}
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold text-primary mb-3 leading-snug">{seg.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed mb-5">{seg.desc}</p>
-                <div className="flex items-center gap-2 text-primary-light font-bold text-sm">
-                  Ver serviços <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                <div className="flex items-center gap-2 text-primary-light font-semibold text-sm group-hover:gap-3 transition-all">
+                  Ver serviços <ArrowRight size={14} />
                 </div>
               </div>
             ))}
