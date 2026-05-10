@@ -984,7 +984,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
             "Ar condicionado bem instalado não deveria ser <span className="text-blue-300">difícil de contratar</span> nem caro de manter."
           </h2>
           <p className="text-blue-100/70 text-lg">
-            A New Clima entrega projetos de climatização com orçamento fechado, técnico nomeado, materiais certificados e garantia documentada. Transparência total do diagnóstico ao pós-venda.
+            A New Clima faz a instalação ou manutenção com valor fechado antes de começar, técnico identificado e garantia por escrito ao final. Sem surpresa, sem sumiço depois.
           </p>
         </div>
       </section>
@@ -994,8 +994,8 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="inline-block bg-ice text-primary-light text-[11px] font-bold tracking-[0.15em] uppercase px-4 py-1.5 rounded-full mb-5">Nossos Serviços</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4">Soluções completas de climatização em São Paulo e ABC</h2>
-            <p className="text-slate-500 text-lg">Do split residencial ao sistema VRF corporativo — instalação técnica, manutenção preventiva, higienização e PMOC em um único parceiro.</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4">Instalação, manutenção e limpeza de ar condicionado em SP e ABC</h2>
+            <p className="text-slate-500 text-lg">Do aparelho do quarto ao sistema de vários ambientes para empresa — instalação, conserto, limpeza e contrato de manutenção. Tudo em um só lugar.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
@@ -1014,23 +1014,23 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                 page: 'manutencao-preventiva' as PageId,
               },
               {
-                tag: "HIGIENIZAÇÃO",
-                title: "Higienização de Ar Condicionado em SP",
-                desc: "Remove fungos, bactérias e poeira do evaporador em São Paulo e ABC. Ar mais limpo para respirar e equipamento com vida útil maior.",
+                tag: "LIMPEZA",
+                title: "Limpeza de Ar Condicionado em SP",
+                desc: "Remove fungos, bactérias e poeira acumulados no aparelho em SP e ABC. Ar mais limpo para respirar, menos cheiro ruim e equipamento que dura mais.",
                 img: "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&q=80&auto=format&fit=crop",
                 page: 'limpeza' as PageId,
               },
               {
-                tag: "PMOC",
-                title: "Contrato PMOC — Lei 13.589/18",
-                desc: "Plano de Manutenção, Operação e Controle obrigatório para prédios, shoppings e hospitais em São Paulo e ABC. Documentação completa.",
+                tag: "MANUTENÇÃO EMPRESARIAL",
+                title: "Contrato de Manutenção para Empresas (PMOC)",
+                desc: "Obrigatório por lei para prédios, hospitais e shoppings com mais de 60.000 BTUs. Cuidamos de tudo: visitas, registros e documentação conforme a Lei 13.589/18.",
                 img: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80&auto=format&fit=crop",
                 page: 'manutencao-preventiva' as PageId,
               },
               {
-                tag: "SISTEMAS VRF",
-                title: "Sistemas VRF e Mini VRF em SP",
-                desc: "Projetos completos para grandes residências e edifícios corporativos em São Paulo e ABC. Máxima eficiência energética e controle total.",
+                tag: "MULTI AMBIENTES",
+                title: "Ar Condicionado para Vários Ambientes (VRF)",
+                desc: "Ideal para empresas, edifícios e casas grandes que precisam climatizar vários cômodos ao mesmo tempo, com economia de energia e controle individual.",
                 img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&auto=format&fit=crop",
                 page: 'vrf-mini-vrf' as PageId,
               },
@@ -1086,33 +1086,33 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
         <div className="container mx-auto px-4">
           <div className="mb-14">
             <span className="text-primary-light text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Segmentos Atendidos</span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight">Climatização para cada tipo de projeto</h2>
-            <p className="text-slate-500 text-lg mt-3 max-w-xl">Residencial, comercial ou industrial — cada segmento tem suas exigências técnicas. A New Clima conhece todas.</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary tracking-tight">Ar condicionado para casa, empresa ou indústria</h2>
+            <p className="text-slate-500 text-lg mt-3 max-w-xl">Para casa, escritório, loja ou galpão — cada ambiente tem uma necessidade diferente. A New Clima tem a solução certa para cada um.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 icon: <Wind size={28} />,
-                title: "Climatização Residencial",
-                desc: "Climatização residencial em apartamentos, casas e condomínios. Instalação com obra limpa, manutenção preventiva semestral e qualidade do ar garantida para sua família.",
+                title: "Residencial",
+                desc: "Instalamos e cuidamos do ar condicionado em apartamentos, casas e condomínios em SP e ABC. Obra limpa, sem sujeira, com garantia de 1 ano por escrito.",
                 page: 'split-multisplit' as PageId,
               },
               {
                 icon: <Settings size={28} />,
-                title: "Climatização Comercial",
-                desc: "Climatização comercial para escritórios, clínicas, lojas e restaurantes. Sistemas de baixo ruído, manutenção programada e PMOC conforme a Lei 13.589/18.",
+                title: "Empresas e Comércios",
+                desc: "Instalação e manutenção de ar condicionado para escritórios, clínicas, lojas e restaurantes. Sem barulho, sem parar a operação e com contrato de manutenção (PMOC).",
                 page: 'sistemas-comerciais' as PageId,
               },
               {
                 icon: <Zap size={28} />,
-                title: "Climatização Industrial",
-                desc: "Climatização industrial para galpões, fábricas e data centers. Sistemas VRF e dutados dimensionados para operação contínua com eficiência energética máxima.",
+                title: "Industrial",
+                desc: "Galpões, fábricas e data centers. Sistemas dimensionados para funcionar 24h por dia, com manutenção preventiva que evita paradas inesperadas na produção.",
                 page: 'vrf-mini-vrf' as PageId,
               },
               {
                 icon: <ShieldCheck size={28} />,
-                title: "PMOC e Compliance",
-                desc: "PMOC para empresas obrigadas pela Lei 13.589/18. Plano de Manutenção, Operação e Controle com ART, documentação completa e sem risco de autuação.",
+                title: "Contrato de Manutenção (PMOC)",
+                desc: "Para empresas obrigadas pela Lei 13.589/18. Assumimos toda a manutenção, documentação e responsabilidade técnica — você fica em dia com a Vigilância Sanitária.",
                 page: 'manutencao-preventiva' as PageId,
               },
             ].map((seg, i) => (
@@ -1165,14 +1165,14 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                 {
                   step: "02",
                   icon: <Ruler />,
-                  title: "Agendamos a visita",
-                  desc: "Técnico certificado visita o local, avalia carga térmica, infraestrutura elétrica e hidráulica. Sem custo, sem compromisso."
+                  title: "Visita técnica gratuita",
+                  desc: "Um técnico vai até você, avalia o ambiente e confere tudo que precisa ser feito. Sem custo e sem compromisso."
                 },
                 {
                   step: "03",
                   icon: <HardHat />,
-                  title: "Você recebe o orçamento",
-                  desc: "Escopo técnico, prazo de execução e valor total fechado por escrito. Sem taxa oculta, sem surpresa no final."
+                  title: "Orçamento fechado, sem surpresa",
+                  desc: "Você recebe o valor total por escrito antes de qualquer serviço. Sem taxa extra no meio do caminho."
                 },
                 {
                   step: "04",
@@ -1183,8 +1183,8 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                 {
                   step: "05",
                   icon: <HeartHandshake />,
-                  title: "Teste e entrega",
-                  desc: "Teste funcional completo antes da entrega. Garantia de 1 ano na instalação documentada no comprovante — válida para qualquer defeito de execução."
+                  title: "Testamos tudo antes de ir embora",
+                  desc: "Ligamos o aparelho, conferimos o funcionamento e entregamos a garantia de 1 ano por escrito. Só encerramos quando você aprovar."
                 }
               ].map((item, idx) => (
                 <div key={idx} className="flex flex-col items-center text-center group">
@@ -1246,25 +1246,25 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               <SectionHeading 
                 tag="Diferenciais"
                 title="Por que escolher a New Clima Ar?"
-                subtitle="Certificações, materiais técnicos de ponta e processo documentado — o padrão de execução que diferencia a New Clima no mercado de climatização."
+                subtitle="Técnicos treinados, materiais de qualidade e garantia real. Veja por que nossos clientes voltam — e indicam."
               />
               
               <div className="space-y-8">
                 <FeatureItem 
-                  title="Técnicos Certificados"
-                  desc="Equipe com certificações NR-10, NR-35 e treinamentos técnicos diretos dos fabricantes LG, Samsung, Daikin e Fujitsu."
+                  title="Técnicos com Certificação"
+                  desc="Nossa equipe é treinada diretamente pelos fabricantes LG, Samsung, Daikin e Fujitsu — e possui as certificações de segurança NR-10 e NR-35."
                 />
                 <FeatureItem 
-                  title="Garantia Documentada"
-                  desc="Certificado de garantia e nota fiscal em todo serviço. 1 ano na instalação, 90 dias em corretiva — sem letra miúda."
+                  title="Garantia por Escrito"
+                  desc="Você recebe certificado de garantia e nota fiscal em todo serviço. 1 ano na instalação e 90 dias no conserto. Sem letra miúda."
                 />
                 <FeatureItem 
-                  title="Materiais Técnicos de Primeira Linha"
-                  desc="Tubulação de cobre de alta pureza, isolamento térmico blindado e suportes galvanizados — padrão que evita vazamentos e reduz perda de eficiência."
+                  title="Materiais que Duram"
+                  desc="Usamos tubulação de cobre puro, isolamento térmico de qualidade e suportes galvanizados. Isso evita vazamento de gás e mantém o aparelho rendendo por mais tempo."
                 />
                 <FeatureItem 
-                  title="Suporte Pós-Venda Ativo"
-                  desc="Base operacional em SP e ABC com técnicos próprios. Respondemos em até 2 horas e mantemos histórico de cada equipamento atendido."
+                  title="Atendemos Depois Também"
+                  desc="Não sumimos após o serviço. Temos base em SP e ABC, respondemos em até 2 horas e guardamos o histórico do seu equipamento para futuras manutenções."
                 />
               </div>
 
@@ -1337,7 +1337,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
           <div className="mb-10">
             <span className="text-primary-light text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Onde Atendemos</span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-3 tracking-tight">Climatização em São Paulo e ABC Paulista</h2>
-            <p className="text-slate-500 text-lg max-w-2xl">Cobertura completa na capital por zona e em todas as cidades do ABC. Visita técnica gratuita para diagnóstico de climatização em qualquer bairro listado.</p>
+            <p className="text-slate-500 text-lg max-w-2xl">Cobertura completa em São Paulo capital (por zona) e em todas as cidades do ABC Paulista. Visita gratuita para qualquer bairro da lista.</p>
           </div>
 
           <RegionsTabs navigate={navigate} />
@@ -1484,8 +1484,8 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
           <SectionHeading 
             centered
             tag="Perguntas Frequentes"
-            title="Tudo sobre nossos serviços de climatização"
-            subtitle="Respondemos as dúvidas mais comuns sobre instalação, manutenção e PMOC em SP e ABC."
+            title="Dúvidas sobre ar condicionado em SP?"
+            subtitle="Respondemos as perguntas mais comuns sobre instalação, limpeza, conserto e contratos de manutenção."
           />
           
           <div className="space-y-4">
@@ -1498,24 +1498,24 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               answer="Uma instalação padrão de split hi-wall leva em média de 3 a 5 horas, dependendo da complexidade da infraestrutura e distância entre as unidades."
             />
             <FaqItem 
-              question="Qual a garantia dos serviços de climatização?"
-              answer="Oferecemos 1 ano de garantia documentada em instalações e 90 dias em manutenções corretivas. Todos os serviços incluem nota fiscal e certificado de garantia. Trabalhamos com tubulação de cobre de alta pureza e isolamento blindado para garantir a vida útil do sistema."
+              question="Qual a garantia dos serviços?"
+              answer="1 ano de garantia na instalação e 90 dias no conserto de ar condicionado. Tudo documentado com certificado de garantia e nota fiscal. Usamos materiais de qualidade para que o serviço dure de verdade."
             />
             <FaqItem 
               question="Vocês atendem em apartamentos?"
               answer="Sim, somos especialistas em instalações em apartamentos, respeitando normas de condomínio, fachadas e varandas técnicas."
             />
             <FaqItem 
-              question="Qual a diferença entre tecnologia Inverter e Convencional?"
-              answer="O ar condicionado Inverter ajusta continuamente a rotação do compressor para manter a temperatura configurada, proporcionando economia de até 60% em eficiência energética. O convencional opera em ciclos liga/desliga, gerando picos de consumo e maior variação térmica. Para uso diário em SP, o Inverter tem retorno do investimento em menos de 18 meses."
+              question="Vale a pena pagar mais pelo Inverter?"
+              answer="Sim. O ar condicionado Inverter economiza até 60% de energia em comparação com o convencional — porque ele ajusta a potência em vez de ficar ligando e desligando. Para uso diário em SP, o valor a mais se paga em menos de 18 meses de conta de luz."
             />
             <FaqItem 
-              question="Com que frequência fazer a higienização do ar condicionado?"
-              answer="Para uso residencial, recomendamos higienização profunda a cada 6 meses. Em ambientes comerciais, clínicas ou locais com alta ocupação, o ideal é a cada 3 meses. Locais com cozinha industrial ou alto nível de poluição podem exigir manutenção mensal via PMOC. A higienização remove fungos, ácaros e bactérias que afetam a qualidade do ar e a eficiência energética do sistema."
+              question="Com que frequência fazer a limpeza do ar condicionado?"
+              answer="Para uso em casa, recomendamos limpeza completa (higienização) a cada 6 meses. Em escritórios, clínicas ou locais com muito uso, a cada 3 meses. Sem limpeza regular, o aparelho acumula fungos, ácaros e bactérias — e passa tudo isso para o ar que você respira."
             />
             <FaqItem 
-              question="Vocês instalam equipamentos comprados em outras lojas?"
-              answer="Sim. Realizamos a instalação técnica certificada de qualquer marca — LG, Samsung, Daikin, Midea, Fujitsu, Carrier, Elgin e Gree. O serviço não anula a garantia de fábrica e inclui nossa garantia de 1 ano na mão de obra."
+              question="Vocês instalam aparelhos que comprei em outra loja?"
+              answer="Sim. Instalamos qualquer marca — LG, Samsung, Daikin, Midea, Fujitsu, Carrier, Elgin e Gree. A instalação não cancela a garantia de fábrica do aparelho, e você ainda recebe 1 ano de garantia na nossa mão de obra."
             />
             <FaqItem 
               question="Como saber a potência (BTUs) correta para meu ambiente?"
@@ -1533,12 +1533,12 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
       <section className="py-16 bg-primary relative overflow-hidden">
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4">
-            Pronto para resolver seu sistema de climatização?
+            Precisa instalar, consertar ou limpar seu ar condicionado em SP?
           </h2>
           <p className="text-blue-100/70 text-lg mb-3 max-w-2xl mx-auto">
-            Fale agora com um técnico da New Clima. Descreva o ambiente, mande uma foto ou só a dúvida — respondemos em até 2 horas e agendamos a visita técnica gratuita.
+            Manda uma mensagem no WhatsApp com o que precisa — pode ser foto, medida do cômodo ou só a dúvida. Respondemos em até 2 horas e agendamos a visita gratuita.
           </p>
-          <p className="text-blue-100/50 text-sm mb-12">Diagnóstico gratuito · Orçamento fechado no mesmo dia · Garantia documentada por escrito</p>
+          <p className="text-blue-100/50 text-sm mb-12">Visita gratuita · Orçamento no mesmo dia · Garantia por escrito</p>
           <p className="text-blue-100/70 text-lg mb-12 max-w-2xl mx-auto hidden">
             Fale agora com um de nossos especialistas e receba um orçamento personalizado para seu projeto.
           </p>
