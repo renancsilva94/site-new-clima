@@ -2239,10 +2239,12 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
   navigate: (p: PageId) => void
 }) {
   const servicos = [
-    { title: `Instalação de Ar Condicionado em ${bairro}`, desc: `Split, multi-split e VRF com infraestrutura completa em ${bairro}. Obra limpa, garantia de 1 ano.`, page: 'split-multisplit' as PageId },
-    { title: `Manutenção de Ar Condicionado em ${bairro}`, desc: `Manutenção preventiva e corretiva em ${bairro}. Todas as marcas, peças originais.`, page: 'manutencao-preventiva' as PageId },
-    { title: `Limpeza de Ar Condicionado em ${bairro}`, desc: `Higienização profunda com bactericida em ${bairro}. Elimina fungos, ácaros e mau cheiro.`, page: 'limpeza' as PageId },
-    { title: `PMOC para Empresas em ${bairro}`, desc: `Gestão completa de PMOC para empresas e condomínios em ${bairro}. Conformidade com a Lei 13.589/18.`, page: 'manutencao-preventiva' as PageId },
+    { tag: 'INSTALAÇÃO', title: `Instalação de Ar Condicionado em ${bairro}`, desc: `Split, multi-split e sistemas para vários cômodos em ${bairro}. Obra limpa, sem quebradeira e com garantia de 1 ano por escrito.`, page: 'split-multisplit' as PageId },
+    { tag: 'MANUTENÇÃO', title: `Manutenção de Ar Condicionado em ${bairro}`, desc: `Manutenção preventiva e corretiva em ${bairro}. Atendemos todas as marcas com peças originais e garantia de 90 dias.`, page: 'manutencao-preventiva' as PageId },
+    { tag: 'LIMPEZA', title: `Limpeza de Ar Condicionado em ${bairro}`, desc: `Limpeza profunda que elimina fungos, ácaros e mau cheiro em ${bairro}. Produto bactericida, ar mais limpo e aparelho que dura mais.`, page: 'limpeza' as PageId },
+    { tag: 'CONSERTO', title: `Conserto de Ar Condicionado em ${bairro}`, desc: `Ar condicionado parou de funcionar em ${bairro}? Diagnóstico rápido, conserto no mesmo dia na maioria dos casos e garantia de 90 dias.`, page: 'manutencao-corretiva' as PageId },
+    { tag: 'CONTRATO', title: `Contrato de Manutenção para Empresas em ${bairro}`, desc: `Contrato de manutenção (PMOC) para empresas, condomínios e clínicas em ${bairro}. Documentação completa conforme a Lei 13.589/18.`, page: 'manutencao-preventiva' as PageId },
+    { tag: 'APARTAMENTO', title: `Ar Condicionado em Apartamento em ${bairro}`, desc: `Instalamos em apartamentos e condomínios em ${bairro} respeitando as normas do regimento. Obra limpa, sem sujeira, aprovado pelo síndico.`, page: 'res-apartamento' as PageId },
   ]
 
   return (
@@ -2262,11 +2264,20 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
               <MapPin size={12} /> {zona} — São Paulo
             </div>
             <h1 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6">
-              Instalação e Manutenção de Ar Condicionado em {bairro}
+              Ar Condicionado em {bairro} — Instalação, Manutenção, Limpeza e Conserto
             </h1>
-            <p className="text-lg text-blue-100/80 mb-8 max-w-2xl">
-              A New Clima Ar atende {bairro} com instalação, manutenção e higienização de ar condicionado. Técnicos certificados, visita técnica gratuita e garantia por escrito.
-            </p>
+            <div className="flex flex-col gap-2 mb-8 max-w-xl">
+              {[
+                `Instalação com obra limpa e garantia de 1 ano em ${bairro}`,
+                `Manutenção, limpeza e conserto de todas as marcas`,
+                `Visita técnica gratuita — orçamento no mesmo dia`,
+              ].map((item, i) => (
+                <div key={i} className="flex items-center gap-3">
+                  <CheckCircle2 size={16} className="text-success shrink-0" />
+                  <span className="text-blue-100/80 text-base">{item}</span>
+                </div>
+              ))}
+            </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="https://wa.me/5511963462516"
@@ -2284,7 +2295,7 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
                 (11) 96346-2516
               </a>
             </div>
-            <p className="text-blue-100/50 text-sm mt-4">⚡ Resposta em até 2 horas · Visita técnica sem custo</p>
+            <p className="text-blue-100/50 text-sm mt-4">⚡ Resposta em até 2 horas · Visita gratuita · Orçamento no mesmo dia</p>
           </div>
         </div>
       </section>
@@ -2293,20 +2304,28 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-extrabold text-primary mb-3">Serviços de Ar Condicionado em {bairro}</h2>
-            <p className="text-slate-500">Atendimento técnico especializado para residências, apartamentos e empresas em {bairro}.</p>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-3 tracking-tight">Serviços de Ar Condicionado em {bairro}</h2>
+            <p className="text-slate-500 text-lg">Para apartamentos, casas e empresas em {bairro} — instalação, manutenção, limpeza e conserto.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {servicos.map((s, i) => (
               <div
                 key={i}
                 onClick={() => navigate(s.page)}
-                className="p-8 bg-slate-50 rounded-3xl border border-slate-100 hover:border-primary-light hover:shadow-lg transition-all cursor-pointer group"
+                className="p-6 bg-white rounded-2xl border border-slate-100 hover:border-primary hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
               >
-                <h3 className="text-xl font-bold text-primary mb-3 group-hover:text-primary-light transition-colors">{s.title}</h3>
-                <p className="text-slate-500 text-sm leading-loose mb-4">{s.desc}</p>
-                <div className="flex items-center gap-2 text-primary-light font-bold text-sm">
-                  Saiba mais <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                <span className={`inline-block text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-4 ${
+                  s.tag === 'INSTALAÇÃO' ? 'bg-blue-100 text-blue-700' :
+                  s.tag === 'MANUTENÇÃO' ? 'bg-emerald-100 text-emerald-700' :
+                  s.tag === 'LIMPEZA' ? 'bg-cyan-100 text-cyan-700' :
+                  s.tag === 'CONSERTO' ? 'bg-orange-100 text-orange-700' :
+                  s.tag === 'CONTRATO' ? 'bg-amber-100 text-amber-700' :
+                  'bg-violet-100 text-violet-700'
+                }`}>{s.tag}</span>
+                <h3 className="text-base font-bold text-primary mb-2 group-hover:text-primary-light transition-colors leading-snug">{s.title}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed mb-4">{s.desc}</p>
+                <div className="flex items-center gap-2 text-primary-light font-semibold text-sm group-hover:gap-3 transition-all">
+                  Saiba mais <ArrowRight size={13} />
                 </div>
               </div>
             ))}
@@ -2317,14 +2336,15 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
       {/* Por que New Clima */}
       <section className="py-16 bg-slate-50">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-primary mb-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-primary mb-3 text-center tracking-tight">
             Por que contratar a New Clima em {bairro}?
           </h2>
+          <p className="text-slate-500 text-center mb-8">Empresa de ar condicionado com equipe própria, atuando em {bairro} desde 2018.</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {[
-              { icon: <ShieldCheck size={24} />, title: 'Garantia por Escrito', desc: `Todo serviço em ${bairro} com garantia documentada. Sem letra miúda.` },
-              { icon: <Clock size={24} />, title: 'Resposta Rápida', desc: `Atendemos ${bairro} e região em até 2 horas. Emergências no mesmo dia.` },
-              { icon: <CheckCircle2 size={24} />, title: 'Obra Limpa', desc: `Instalamos em apartamentos e casas em ${bairro} sem quebradeira e sem sujeira.` },
+              { icon: <ShieldCheck size={24} />, title: 'Garantia por Escrito', desc: `Todo serviço em ${bairro} com certificado de garantia e nota fiscal. Sem letra miúda.` },
+              { icon: <Clock size={24} />, title: 'Resposta em até 2h', desc: `Atendemos ${bairro} em até 2 horas. Para emergências, tentamos ir no mesmo dia.` },
+              { icon: <CheckCircle2 size={24} />, title: 'Obra Limpa', desc: `Instalação em apartamentos e casas em ${bairro} sem sujeira, sem quebradeira e sem surpresa no final.` },
             ].map((item, i) => (
               <div key={i} className="bg-white p-6 rounded-2xl border border-slate-100 text-center">
                 <div className="w-12 h-12 bg-ice rounded-xl flex items-center justify-center text-primary-light mx-auto mb-4">
@@ -2337,24 +2357,33 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
           </div>
 
           {/* FAQ local */}
-          <h2 className="text-2xl font-extrabold text-primary mb-6">Perguntas Frequentes — Ar Condicionado em {bairro}</h2>
+          <h2 className="text-2xl font-extrabold text-primary mb-2">Perguntas frequentes sobre ar condicionado em {bairro}</h2>
+          <p className="text-slate-500 text-sm mb-6">Instalação, limpeza, conserto e manutenção — respondemos as dúvidas mais comuns.</p>
           <div className="space-y-4">
-            {[
+            [
               {
                 q: `Quanto custa instalar ar condicionado em ${bairro}?`,
-                a: `Uma instalação residencial padrão em ${bairro} começa a partir de R$ 350, dependendo do modelo e complexidade da infraestrutura. A visita técnica é gratuita e o orçamento é entregue no mesmo dia, sem compromisso.`
+                a: `A instalação residencial padrão em ${bairro} começa a partir de R$ 350. O valor varia conforme o tipo de equipamento e a complexidade da infraestrutura. A visita técnica é gratuita e o orçamento é entregue no mesmo dia, sem compromisso.`
               },
               {
-                q: `Vocês atendem apartamentos em ${bairro}?`,
-                a: `Sim. Somos especialistas em instalações em condomínios e apartamentos em ${bairro}, com total respeito às normas de fachada, varandas técnicas e regimentos internos.`
+                q: `Vocês instalam ar condicionado em apartamento em ${bairro}?`,
+                a: `Sim. Somos especialistas em instalação em apartamentos e condomínios em ${bairro}. Respeitamos as normas de fachada, varanda técnica e o regimento interno. Obra limpa, sem sujeira e sem quebradeira.`
               },
               {
-                q: `Fazem manutenção de ar condicionado em ${bairro}?`,
-                a: `Sim. Realizamos manutenção preventiva, corretiva e limpeza profunda de todas as marcas em ${bairro}. Atendemos residências, escritórios e empresas.`
+                q: `Fazem limpeza de ar condicionado em ${bairro}?`,
+                a: `Sim. Realizamos limpeza profunda (higienização) de todas as marcas em ${bairro}. O processo remove fungos, ácaros e bactérias — ideal para quem tem alergia ou o aparelho está com mau cheiro.`
+              },
+              {
+                q: `Consertam ar condicionado em ${bairro}?`,
+                a: `Sim. Diagnosticamos e consertamos qualquer defeito — compressor, placa, capacitor, dreno entupido, falta de gás. Atendemos em ${bairro} em até 2 horas e resolvemos na maioria dos casos no mesmo dia.`
+              },
+              {
+                q: `Com que frequência fazer manutenção em ${bairro}?`,
+                a: `Para uso residencial, recomendamos manutenção a cada 6 meses. Para escritórios e comércios em ${bairro}, a cada 3 meses. Sem manutenção, o aparelho gasta mais energia, estraga antes do tempo e piora a qualidade do ar.`
               },
               {
                 q: `Qual o prazo de atendimento em ${bairro}?`,
-                a: `Respondemos em até 2 horas e agendamos a visita técnica conforme sua disponibilidade. Para emergências, nosso WhatsApp funciona 24h.`
+                a: `Respondemos em até 2 horas pelo WhatsApp e agendamos a visita conforme sua disponibilidade. Para urgências em ${bairro}, tentamos atender no mesmo dia.`
               },
             ].map((item, i) => {
               const [open, setOpen] = React.useState(false)
@@ -2377,7 +2406,8 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
       {/* Bairros vizinhos */}
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-xl font-bold text-primary mb-6">Também atendemos bairros próximos a {bairro}</h2>
+          <h2 className="text-xl font-bold text-primary mb-3">Também atendemos bairros próximos a {bairro}</h2>
+          <p className="text-slate-500 text-sm mb-6">Instalação, manutenção e limpeza de ar condicionado nos bairros vizinhos.</p>
           <div className="flex flex-wrap gap-3">
             {vizinhos.map((v, i) => (
               <div key={i} className="flex items-center gap-2 bg-ice px-4 py-2 rounded-full text-sm font-semibold text-primary-light">
@@ -2398,16 +2428,17 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
       <section className="py-16 bg-primary">
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <h2 className="text-3xl font-extrabold text-white mb-4">
-            Precisa de ar condicionado em {bairro}?
+            Instalação, manutenção ou limpeza de ar condicionado em {bairro}?
           </h2>
-          <p className="text-blue-100/70 mb-8">Visita técnica gratuita · Orçamento no mesmo dia · Garantia por escrito</p>
+          <p className="text-blue-100/70 mb-2">Manda uma mensagem — respondemos em até 2 horas e agendamos a visita gratuita.</p>
+          <p className="text-blue-100/40 text-sm mb-8">Visita gratuita · Orçamento no mesmo dia · Garantia por escrito</p>
           <a
             href="https://wa.me/5511963462516"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-success text-white font-bold py-4 px-10 rounded-xl shadow-xl hover:-translate-y-0.5 transition-all"
           >
             <MessageSquare size={20} />
-            Falar no WhatsApp Agora
+            Falar no WhatsApp — {bairro}
           </a>
         </div>
       </section>
