@@ -185,12 +185,12 @@ export const SistemasInstalamosSection = () => (
   </section>
 );
 
-export const ProcessoSection = () => (
+export const ProcessoSection = ({ cidade = "São Paulo e ABC" }: { cidade?: string } = {}) => (
   <section className="py-16">
     <div className="container mx-auto px-4 max-w-6xl">
       <div className="text-center mb-12">
         <span className="text-primary-light text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Como Funciona</span>
-        <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Nosso processo de instalação de ar condicionado em SP</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Nosso processo de instalação de ar condicionado em {cidade}</h2>
         <p className="text-slate-500 max-w-2xl mx-auto">Cada etapa é planejada para garantir qualidade e sua total satisfação.</p>
       </div>
       <div className="relative">
@@ -358,12 +358,12 @@ const ServicosPreventivosSection = () => (
   </section>
 );
 
-export const ProcessoManutencaoSection = () => (
+export const ProcessoManutencaoSection = ({ cidade = "São Paulo e ABC" }: { cidade?: string } = {}) => (
   <section className="py-16">
     <div className="container mx-auto px-4 max-w-6xl">
       <div className="text-center mb-12">
         <span className="text-primary-light text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Como Funciona</span>
-        <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Nosso processo de manutenção de ar condicionado em SP</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Nosso processo de manutenção de ar condicionado em {cidade}</h2>
         <p className="text-slate-500 max-w-2xl mx-auto">Cada etapa é planejada para garantir qualidade e sua total satisfação.</p>
       </div>
       <div className="relative">
@@ -497,12 +497,12 @@ const LimpezaDetalhesSection = () => (
   </section>
 );
 
-export const ProcessoHigienizacaoSection = () => (
+export const ProcessoHigienizacaoSection = ({ cidade = "São Paulo e ABC" }: { cidade?: string } = {}) => (
   <section className="py-16">
     <div className="container mx-auto px-4 max-w-6xl">
       <div className="text-center mb-12">
         <span className="text-primary-light text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Como Funciona</span>
-        <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Nosso processo de limpeza e higienização em São Paulo</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">Nosso processo de limpeza e higienização em {cidade}</h2>
         <p className="text-slate-500 max-w-2xl mx-auto">Cada etapa é planejada para garantir qualidade e sua total satisfação.</p>
       </div>
       <div className="relative">
