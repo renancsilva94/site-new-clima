@@ -694,7 +694,7 @@ export default function App() {
               {/* Col 1 — Logo + Descrição + Redes */}
               <div className="space-y-6">
                 <img
-                  src="https://cdn.coteibem.com.br/company/41315/logo/f4d0405d-28b6-4834-a8ca-9e63b68073fa.png"
+                  src="/images/logo-new-clima.png"
                   alt="New Clima Ar Condicionado"
                   className="h-16 w-auto brightness-0 invert"
                 />
@@ -2147,6 +2147,15 @@ function ContactView() {
             <div>
               <h4 className="font-bold text-primary mb-1">Telefone / WhatsApp</h4>
               <p className="text-slate-500">(11) 96346-2516</p>
+            </div>
+          </div>
+          <div className="flex gap-4">
+            <div className="w-12 h-12 bg-ice rounded-2xl flex items-center justify-center text-primary-light shrink-0">
+              <MessageSquare size={24} />
+            </div>
+            <div>
+              <h4 className="font-bold text-primary mb-1">E-mail</h4>
+              <a href="mailto:contato@newclimaar.com.br" className="text-slate-500 hover:text-primary-light transition-colors">contato@newclimaar.com.br</a>
             </div>
           </div>
           <div className="flex gap-4">
