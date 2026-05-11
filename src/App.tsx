@@ -2630,10 +2630,10 @@ function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
             {servicos.map((s, i) => (
               <div
                 key={i}
-                className={`grid grid-cols-1 lg:grid-cols-5 gap-0 items-center ${i > 0 ? 'border-t border-slate-100' : ''}`}
+                className={`grid grid-cols-1 lg:grid-cols-5 gap-10 items-center ${i > 0 ? 'border-t border-slate-100' : ''}`}
               >
                 {/* Conteúdo */}
-                <div className={`lg:col-span-3 py-14 pr-0 lg:pr-14 ${i % 2 !== 0 ? 'lg:order-2' : ''}`}>
+                <div className={`lg:col-span-3 py-14 ${i % 2 !== 0 ? 'lg:order-2' : ''}`}>
                   <div className="flex items-start gap-4 mb-6">
                     <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary-light shrink-0">
                       {s.icon}
@@ -2679,7 +2679,7 @@ function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
                 </div>
 
                 {/* Imagem */}
-                <div className={`hidden lg:block lg:col-span-2 relative ${i % 2 !== 0 ? 'lg:order-1 pl-0 pr-8' : 'pl-8 pr-0'}`}>
+                <div className={`hidden lg:block lg:col-span-2 relative ${i % 2 !== 0 ? 'lg:order-1' : ''}`}>
                   <div className="rounded-2xl overflow-hidden shadow-lg" style={{height: "380px"}}>
                     <img
                       src={s.img}
