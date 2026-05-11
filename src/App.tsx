@@ -216,6 +216,7 @@ type PageId = 'home'
   | 'seg-fisioterapia'
   | 'seg-creche'
   | 'seg-bar'
+  | 'servicos'
   | 'inst-split'
   | 'inst-cassete'
   | 'inst-piso-teto'
@@ -421,6 +422,7 @@ export default function App() {
       'seg-fisioterapia': '/ar-condicionado-clinica-fisioterapia-sao-paulo',
       'seg-creche': '/ar-condicionado-creche-sao-paulo',
       'seg-bar': '/ar-condicionado-bar-pub-sao-paulo',
+      'servicos': '/servicos',
       'inst-split': '/instalacao-ar-condicionado-split-sp',
       'inst-cassete': '/instalacao-ar-condicionado-cassete-sp',
       'inst-piso-teto': '/instalacao-ar-condicionado-piso-teto-sp',
@@ -482,6 +484,7 @@ export default function App() {
 
             <nav className="hidden lg:flex items-center gap-1">
               <button onClick={() => navigate('home')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light transition-colors">Início</button>
+              <button onClick={() => navigate('servicos')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light transition-colors">Serviços</button>
               <div className="relative group">
                 <button className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light flex items-center gap-1">
                   Serviços <ChevronDown size={14} />
@@ -531,6 +534,7 @@ export default function App() {
           >
                 <div className="container mx-auto px-4 py-6 flex flex-col gap-4">
                   <button onClick={() => navigate('home')} className="text-left font-semibold py-2 text-primary-light">Início</button>
+                  <button onClick={() => navigate('servicos')} className="text-left font-semibold py-2">Serviços</button>
                   <hr className="border-slate-100" />
                   <div className="font-bold text-xs text-slate-400 uppercase tracking-widest mb-1">Serviços</div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -680,6 +684,7 @@ export default function App() {
             if (p === '/ar-condicionado-clinica-fisioterapia-sao-paulo') return <SegmentoView slug="seg-fisioterapia" title="Clínica de Fisioterapia" tag="SAÚDE" headline="Ar Condicionado para Clínicas de Fisioterapia em São Paulo" desc="Instalação e manutenção de ar condicionado para clínicas de fisioterapia, pilates clínico e reabilitação em São Paulo e ABC. Temperatura ideal para tratamento, PMOC e ar limpo para pacientes." dor="Clínica de fisioterapia quente prejudica o tratamento e o conforto do paciente. Além do desconforto, a Vigilância Sanitária fiscaliza clínicas de saúde — e PMOC irregular é autuação na certa." servicos={["Instalação de ar condicionado para salas de fisioterapia e pilates clínico", "Temperatura controlada entre 22°C e 26°C para tratamentos", "Contrato de manutenção (PMOC) para clínicas de saúde obrigadas por lei", "Limpeza com bactericida para ambientes de tratamento", "Instalação fora do horário de atendimento aos pacientes", "Documentação para Vigilância Sanitária"]} faq={[["Clínica de fisioterapia precisa de PMOC?", "Sim. Clínicas de fisioterapia são estabelecimentos de saúde sujeitos à fiscalização da Vigilância Sanitária. Com capacidade acima de 60.000 BTUs, o PMOC é obrigatório pela Lei 13.589/18."], ["Qual temperatura ideal para sala de fisioterapia?", "Para a maioria dos tratamentos, entre 22°C e 26°C é ideal — confortável para o paciente durante os exercícios sem ser frio demais para quem está em repouso ou com exposição de membros."], ["Com que frequência fazer manutenção em clínica de fisioterapia?", "Recomendamos manutenção trimestral para clínicas com alto volume de pacientes. O exercício físico gera mais calor e umidade — o que contamina os filtros mais rápido que ambientes de repouso."]]} vizinhos="Vila Mariana · Moema · Pinheiros · Brooklin · Higienópolis · Santo André · São Caetano" navigate={navigate} />;
             if (p === '/ar-condicionado-creche-sao-paulo') return <SegmentoView slug="seg-creche" title="Creche e Berçário" tag="EDUCAÇÃO" headline="Ar Condicionado para Creches e Berçários em São Paulo" desc="Instalação e manutenção de ar condicionado para creches, berçários e educação infantil em São Paulo e ABC. Produtos seguros para bebês, temperatura controlada e PMOC conforme a Vigilância Sanitária." dor="Bebê com calor chora, fica agitado e fica doente com mais facilidade. Creche sem temperatura controlada pode ser interditada pela Vigilância Sanitária — e pai que vê o filho com calor não renova a matrícula." servicos={["Instalação de ar condicionado com temperatura ideal para bebês e crianças", "Produtos de limpeza 100% seguros para ambientes com bebês", "Contrato de manutenção (PMOC) para creches obrigadas pela lei", "Instalação e manutenção nas férias escolares para não afetar as turmas", "Filtros de alta eficiência para qualidade do ar em ambiente infantil", "Documentação para Vigilância Sanitária e Secretaria de Educação"]} faq={[["Qual temperatura ideal para berçário e creche?", "Para bebês, a temperatura ideal é entre 23°C e 26°C — confortável sem ser frio demais para recém-nascidos e bebês pequenos. O controle preciso é mais importante em creches do que em qualquer outro ambiente."], ["Os produtos de limpeza são seguros para bebês?", "Sim. Usamos apenas produtos bactericidas certificados e seguros para ambientes com crianças pequenas e bebês. O processo de higienização é adaptado para ambientes de educação infantil."], ["Creches são obrigadas a ter PMOC?", "Sim. Creches com capacidade de ar condicionado acima de 60.000 BTUs são obrigadas pela Lei 13.589/18. Além disso, a Vigilância Sanitária e a Secretaria de Educação podem exigir manutenção documentada durante vistorias."]]} vizinhos="Vila Mariana · Moema · Pinheiros · Santana · Brooklin · Santo André · São Bernardo" navigate={navigate} />;
             if (p === '/ar-condicionado-bar-pub-sao-paulo') return <SegmentoView slug="seg-bar" title="Bar e Pub" tag="ENTRETENIMENTO" headline="Ar Condicionado para Bares e Pubs em São Paulo" desc="Instalação e manutenção de ar condicionado para bares, pubs e casas noturnas em São Paulo e ABC. Ambiente fresco para a clientela, manutenção fora do horário de funcionamento e atendimento emergencial." dor="Bar quente no verão de São Paulo perde cliente para o concorrente da esquina. Com muita gente e bebida, a temperatura sobe muito — e o ar condicionado subdimensionado não consegue refrescar." servicos={["Projeto com cálculo correto de BTUs para ambientes com alta ocupação noturna", "Instalação de ar condicionado para bares, pubs e casas noturnas", "Manutenção antes da abertura ou após o fechamento do estabelecimento", "Limpeza frequente — fumaça e umidade contaminam filtros rapidamente", "Atendimento emergencial para não perder a noite de movimento", "Contrato de manutenção (PMOC) para bares com mais de 60.000 BTUs"]} faq={[["Qual potência de ar condicionado para bar?", "Bares com alta ocupação precisam de muito mais BTUs do que o cálculo convencional indica. Pessoas em pé geram muito mais calor que pessoas sentadas. Fazemos o cálculo específico gratuitamente."], ["A manutenção pode ser feita sem fechar o bar?", "Sim. Realizamos manutenção antes da abertura — geralmente entre 10h e 16h — para que o bar esteja funcionando perfeitamente quando abrir. Para emergências, temos atendimento mesmo durante o funcionamento."], ["Com que frequência fazer manutenção em bar?", "Recomendamos manutenção mensal ou bimensal. Fumaça, umidade e o alto fluxo de pessoas deterioram os filtros muito mais rápido que em outros ambientes. Manutenção em dia garante o ambiente fresco nas noites mais quentes."]]} vizinhos="Pinheiros · Vila Madalena · Itaim Bibi · Brooklin · Vila Olímpia · Jardins · Moema" navigate={navigate} />;
+            if (p === '/servicos') return <ServicosView navigate={navigate} />;
             if (p === '/instalacao-ar-condicionado-split-sp') return <SegmentoView slug="inst-split" title="Instalação Split SP" tag="INSTALAÇÃO" headline="Instalação de Ar Condicionado Split em São Paulo" desc="Instalação de ar condicionado split em São Paulo e ABC. Residencial e comercial, todas as marcas, obra limpa e garantia de 1 ano por escrito. Visita técnica gratuita." dor="Instalação errada de split causa vazamento de gás, gotejamento e curto-circuito. Técnico sem certificação pode anular a garantia do fabricante — e o problema aparece meses depois." servicos={["Instalação de split hi-wall em apartamentos e casas em São Paulo", "Instalação com infraestrutura elétrica e hidráulica completa", "Obra limpa — proteção de pisos e móveis, aspiração durante perfurações", "Instalação respeitando normas de condomínio e fachada", "Teste de funcionamento completo antes de finalizar", "Garantia de 1 ano na instalação por escrito"]} faq={[["Quanto custa instalar um split em São Paulo?", "A instalação de split residencial padrão em SP começa a partir de R$ 350. O valor varia conforme a complexidade da infraestrutura e a distância entre as unidades. Visita técnica gratuita e orçamento no mesmo dia."], ["Quanto tempo leva a instalação de um split?", "Uma instalação padrão leva entre 3 e 5 horas. Para multi-split com vários ambientes, pode levar 1 a 2 dias. O cronograma é informado no orçamento antes de começar."], ["A instalação inclui a infraestrutura elétrica?", "Sim. Realizamos toda a infraestrutura: tubulação de cobre, dreno, suporte da condensadora e ponto elétrico. Tudo documentado no orçamento."]]} vizinhos="São Paulo · Santo André · São Bernardo · São Caetano · Diadema · Mauá" navigate={navigate} />;
             if (p === '/instalacao-ar-condicionado-cassete-sp') return <SegmentoView slug="inst-cassete" title="Instalação Cassete SP" tag="INSTALAÇÃO" headline="Instalação de Ar Condicionado Cassete em São Paulo" desc="Instalação de ar condicionado cassete (teto) em São Paulo e ABC. Ideal para escritórios, lojas e ambientes comerciais que precisam distribuir o ar uniformemente sem ocupar parede." dor="Cassete instalado errado gera dreno entupido, infiltração no forro e distribuição de ar inadequada. É um equipamento que exige técnico experiente com esse tipo de sistema." servicos={["Instalação de cassete de 4 vias para distribuição uniforme do ar", "Instalação em forro de gesso, PVC e laje — todos os tipos de teto", "Projeto de posicionamento correto para o ambiente", "Infraestrutura de dreno e elétrica completa", "Instalação em escritórios, lojas, clínicas e restaurantes", "Garantia de 1 ano na instalação por escrito"]} faq={[["Qual a diferença entre cassete e split hi-wall?", "O cassete é instalado no teto e distribui o ar em 4 direções — ideal para ambientes abertos como escritórios e lojas. O split hi-wall é fixado na parede e direciona o ar em uma direção. Para espaços comerciais, o cassete é mais elegante e distribui melhor."], ["O cassete pode ser instalado em qualquer tipo de forro?", "Sim. Instalamos em forro de gesso, PVC, madeira e diretamente na laje. O tipo de forro influencia o método de fixação e o acabamento. Avaliamos na visita técnica."], ["Quanto custa instalar cassete em São Paulo?", "A instalação de cassete começa a partir de R$ 600, dependendo da altura do teto e da complexidade da infraestrutura. Orçamento gratuito na visita técnica."]]} vizinhos="São Paulo · Santo André · São Bernardo · São Caetano · Diadema · Mauá" navigate={navigate} />;
             if (p === '/instalacao-ar-condicionado-piso-teto-sp') return <SegmentoView slug="inst-piso-teto" title="Instalação Piso-Teto SP" tag="INSTALAÇÃO" headline="Instalação de Ar Condicionado Piso-Teto em São Paulo" desc="Instalação de ar condicionado piso-teto em São Paulo e ABC. Versátil, pode ser instalado tanto no piso quanto no teto — ideal para ambientes com pé-direito alto e restrições de parede." dor="Piso-teto instalado na posição errada perde muito da eficiência. O posicionamento e a inclinação do equipamento fazem toda a diferença no conforto e no consumo de energia." servicos={["Instalação de piso-teto em posição vertical (parede) ou horizontal (teto)", "Projeto com posicionamento correto para maximizar a distribuição do ar", "Instalação em salas de alta pé-direito, igrejas e ambientes especiais", "Infraestrutura elétrica e hidráulica completa", "Todas as marcas: LG, Samsung, Daikin, Midea, Fujitsu", "Garantia de 1 ano na instalação por escrito"]} faq={[["Qual a diferença entre piso-teto e split comum?", "O piso-teto é um equipamento maior, com maior capacidade, que pode ser instalado tanto no piso quanto no teto. É ideal para ambientes com pé-direito alto, salas grandes e locais onde a parede não é adequada para o split convencional."], ["Piso-teto é mais caro que split hi-wall?", "O equipamento em si é mais caro, e a instalação também — exige mais infraestrutura e o posicionamento é mais complexo. Mas para ambientes grandes ou com pé-direito alto, é a solução mais eficiente. Fazemos o projeto gratuito."], ["Em que ambientes o piso-teto é mais recomendado?", "Lojas, igrejas, salões de festa, academias, salas com pé-direito acima de 3 metros e ambientes onde a parede não está disponível para o split convencional."]]} vizinhos="São Paulo · Santo André · São Bernardo · São Caetano · Diadema · Mauá" navigate={navigate} />;
@@ -2595,6 +2600,141 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
   )
 }
 
+function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
+  const categorias = [
+    {
+      titulo: 'Instalação',
+      tag: 'INSTALAÇÃO',
+      cor: 'bg-blue-600',
+      servicos: [
+        { title: 'Instalação de Ar Condicionado Split', desc: 'Residencial e comercial. Obra limpa, infraestrutura completa e garantia de 1 ano.', page: 'split-multisplit' as PageId },
+        { title: 'Instalação de Multi Split', desc: 'Vários cômodos com uma única condensadora externa. Mais elegante e econômico.', page: 'inst-multi-split' as PageId },
+        { title: 'Instalação de Cassete de Teto', desc: 'Ideal para escritórios e lojas. Distribui o ar uniformemente sem ocupar parede.', page: 'inst-cassete' as PageId },
+        { title: 'Instalação de Piso-Teto', desc: 'Versátil para ambientes com pé-direito alto, igrejas e espaços especiais.', page: 'inst-piso-teto' as PageId },
+        { title: 'Instalação de Ar Condicionado Inverter', desc: 'Economia de até 60% em energia. Instalação correta para máxima eficiência.', page: 'inst-inverter' as PageId },
+        { title: 'Sistemas VRF e Multi Ambientes', desc: 'Para empresas e edifícios que precisam climatizar vários ambientes com controle individual.', page: 'vrf-mini-vrf' as PageId },
+        { title: 'Ar Condicionado Comercial', desc: 'Cassete, piso-teto e dutado para lojas, escritórios e restaurantes.', page: 'sistemas-comerciais' as PageId },
+      ]
+    },
+    {
+      titulo: 'Manutenção e Conserto',
+      tag: 'MANUTENÇÃO',
+      cor: 'bg-emerald-600',
+      servicos: [
+        { title: 'Manutenção Preventiva de Ar Condicionado', desc: 'Planos mensais, trimestrais ou semestrais. Evita quebras e mantém o aparelho econômico.', page: 'manutencao-preventiva' as PageId },
+        { title: 'Conserto de Ar Condicionado', desc: 'Diagnóstico rápido, peças originais e garantia de 90 dias no serviço.', page: 'manutencao-corretiva' as PageId },
+        { title: 'Ar Condicionado Não Gela', desc: 'Falta de gás, filtro sujo ou compressor com problema. Resolvemos no mesmo dia.', page: 'prob-nao-gela' as PageId },
+        { title: 'Ar Condicionado Vazando Água', desc: 'Dreno entupido é a causa mais comum. Resolvemos rápido para evitar danos no forro.', page: 'prob-vazando' as PageId },
+        { title: 'Recarga de Gás de Ar Condicionado', desc: 'Gás R410A e R32 com verificação e reparo do vazamento antes de recarregar.', page: 'prob-gas' as PageId },
+        { title: 'Ar Condicionado Fazendo Barulho', desc: 'Vibração, chiado ou rangido — diagnóstico gratuito e conserto com garantia.', page: 'prob-barulho' as PageId },
+        { title: 'Ar Condicionado Desligando Sozinho', desc: 'Pode ser proteção ativada por gás, filtro ou placa. Não ignore o sinal.', page: 'prob-desliga' as PageId },
+        { title: 'Contrato de Manutenção', desc: 'Mensal, trimestral ou semestral. A New Clima cuida de tudo — você não precisa lembrar.', page: 'serv-contrato-sp' as PageId },
+      ]
+    },
+    {
+      titulo: 'Limpeza e Higienização',
+      tag: 'LIMPEZA',
+      cor: 'bg-cyan-600',
+      servicos: [
+        { title: 'Limpeza de Ar Condicionado', desc: 'Limpeza profunda que remove fungos, ácaros e mau cheiro. Ar mais limpo na hora.', page: 'limpeza' as PageId },
+        { title: 'Higienização com Bactericida', desc: 'Bactericida certificado que elimina fungos e bactérias — ideal para alergias e mau cheiro.', page: 'serv-higienizacao-sp' as PageId },
+        { title: 'Ar Condicionado com Mau Cheiro', desc: 'Fungos na serpentina são a causa. Limpeza profunda elimina o problema de vez.', page: 'prob-mau-cheiro' as PageId },
+      ]
+    },
+    {
+      titulo: 'PMOC e Contratos Empresariais',
+      tag: 'PMOC',
+      cor: 'bg-amber-500',
+      servicos: [
+        { title: 'PMOC em São Paulo', desc: 'Obrigatório pela Lei 13.589/18. Elaboração, execução e documentação completa.', page: 'serv-pmoc-sp' as PageId },
+        { title: 'Manutenção Preventiva e PMOC', desc: 'Plano completo com relatório técnico, ART e documentação para a Vigilância Sanitária.', page: 'manutencao-preventiva' as PageId },
+        { title: 'PMOC em Santo André', desc: 'Contrato de manutenção obrigatório para empresas em Santo André e ABC.', page: 'pmoc-santo-andre' as PageId },
+        { title: 'PMOC em São Bernardo do Campo', desc: 'Contrato de manutenção obrigatório para empresas em São Bernardo do Campo.', page: 'pmoc-sao-bernardo' as PageId },
+        { title: 'PMOC em São Caetano do Sul', desc: 'Contrato de manutenção obrigatório para empresas em São Caetano do Sul.', page: 'pmoc-sao-caetano' as PageId },
+        { title: 'PMOC em Diadema', desc: 'Contrato de manutenção obrigatório para empresas em Diadema.', page: 'pmoc-diadema' as PageId },
+        { title: 'PMOC em Mauá', desc: 'Contrato de manutenção obrigatório para empresas em Mauá.', page: 'pmoc-maua' as PageId },
+      ]
+    },
+  ]
+
+  return (
+    <div className="pt-10 pb-20">
+      {/* Hero */}
+      <section className="bg-primary py-16">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center gap-2 text-blue-100/50 text-sm mb-4">
+            <button onClick={() => navigate('home')} className="hover:text-white transition-colors">Início</button>
+            <span>/</span>
+            <span className="text-white font-medium">Serviços</span>
+          </div>
+          <div className="max-w-3xl">
+            <h1 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6">
+              Instalação, Manutenção e Limpeza de Ar Condicionado em São Paulo e ABC
+            </h1>
+            <p className="text-lg text-blue-100/80 mb-8 max-w-2xl">
+              Todos os serviços de ar condicionado para residências, empresas e indústrias em São Paulo e ABC Paulista. Técnicos certificados, visita gratuita e garantia por escrito.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a href="https://wa.me/5511963462516" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-4 px-8 rounded-xl hover:-translate-y-0.5 transition-all shadow-lg">
+                <MessageSquare size={20} />
+                Solicitar Orçamento Grátis
+              </a>
+              <a href="tel:+5511963462516" className="inline-flex items-center justify-center gap-2 border-2 border-white/20 text-white font-bold py-4 px-8 rounded-xl hover:bg-white/10 transition-all">
+                <Phone size={20} />
+                (11) 96346-2516
+              </a>
+            </div>
+            <p className="text-blue-100/50 text-sm mt-4">⚡ Resposta em até 2 horas · Visita gratuita · Orçamento no mesmo dia</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Categorias de serviço */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          {categorias.map((cat, ci) => (
+            <div key={ci} className={ci > 0 ? 'mt-16 pt-16 border-t border-slate-100' : ''}>
+              <div className="flex items-center gap-3 mb-8">
+                <span className={`${cat.cor} text-white text-[11px] font-bold tracking-widest uppercase px-4 py-1.5 rounded-full`}>
+                  {cat.tag}
+                </span>
+                <h2 className="text-2xl md:text-3xl font-extrabold text-primary tracking-tight">{cat.titulo}</h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                {cat.servicos.map((s, i) => (
+                  <div
+                    key={i}
+                    onClick={() => navigate(s.page)}
+                    className="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-primary hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
+                  >
+                    <h3 className="text-base font-bold text-primary mb-2 group-hover:text-primary-light transition-colors leading-snug">{s.title}</h3>
+                    <p className="text-slate-500 text-sm leading-relaxed mb-4">{s.desc}</p>
+                    <div className="flex items-center gap-2 text-primary-light font-semibold text-sm group-hover:gap-3 transition-all">
+                      Saiba mais <ArrowRight size={13} />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-primary">
+        <div className="container mx-auto px-4 text-center max-w-3xl">
+          <h2 className="text-3xl font-extrabold text-white mb-4">Não encontrou o serviço que precisa?</h2>
+          <p className="text-blue-100/70 mb-8">Fale com um técnico — atendemos qualquer demanda de ar condicionado em São Paulo e ABC.</p>
+          <a href="https://wa.me/5511963462516" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-success text-white font-bold py-4 px-10 rounded-xl shadow-xl hover:-translate-y-0.5 transition-all">
+            <MessageSquare size={20} />
+            Falar no WhatsApp Agora
+          </a>
+        </div>
+      </section>
+    </div>
+  )
+}
+
 function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
   const serviceLinks = [
     { label: 'Instalação de Ar Condicionado Split e Multi Split', page: 'split-multisplit' as PageId },
@@ -2745,6 +2885,7 @@ function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
         <ul className="flex flex-wrap gap-x-8 gap-y-2">
           {[
             { label: 'Início', page: 'home' as PageId },
+            { label: 'Serviços', page: 'servicos' as PageId },
             { label: 'Quem Somos', page: 'sobre' as PageId },
             { label: 'Blog', page: 'blog' as PageId },
             { label: 'Contato', page: 'contato' as PageId },
