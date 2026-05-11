@@ -485,19 +485,7 @@ export default function App() {
             <nav className="hidden lg:flex items-center gap-1">
               <button onClick={() => navigate('home')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light transition-colors">Início</button>
               <button onClick={() => navigate('servicos')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light transition-colors">Serviços</button>
-              <div className="relative group">
-                <button className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light flex items-center gap-1">
-                  Serviços <ChevronDown size={14} />
-                </button>
-                <div className="absolute top-full left-0 w-64 bg-white shadow-xl rounded-xl border border-slate-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all translate-y-2 group-hover:translate-y-0">
-                  <button onClick={() => navigate('split-multisplit')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors">Instalação de Ar Condicionado Split</button>
-                  <button onClick={() => navigate('sistemas-comerciais')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors">Sistemas Cassete e Piso-Teto</button>
-                  <button onClick={() => navigate('vrf-mini-vrf')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors">Sistemas VRF e Mini VRF</button>
-                  <button onClick={() => navigate('manutencao-preventiva')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors">Manutenção Preventiva e PMOC</button>
-                  <button onClick={() => navigate('manutencao-corretiva')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors">Conserto de Ar Condicionado</button>
-                  <button onClick={() => navigate('limpeza')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors">Limpeza de Ar Condicionado SP</button>
-                </div>
-              </div>
+              <button onClick={() => { navigate('home'); setTimeout(() => { document.getElementById('depoimentos')?.scrollIntoView({ behavior: 'smooth' }); }, 300); }} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light transition-colors">Depoimentos</button>
               <div className="relative group">
                 <button className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light flex items-center gap-1">
                   Regiões <ChevronDown size={14} />
@@ -535,16 +523,7 @@ export default function App() {
                 <div className="container mx-auto px-4 py-6 flex flex-col gap-4">
                   <button onClick={() => navigate('home')} className="text-left font-semibold py-2 text-primary-light">Início</button>
                   <button onClick={() => navigate('servicos')} className="text-left font-semibold py-2">Serviços</button>
-                  <hr className="border-slate-100" />
-                  <div className="font-bold text-xs text-slate-400 uppercase tracking-widest mb-1">Serviços</div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                    <button onClick={() => navigate('split-multisplit')} className="text-left text-sm py-2 text-slate-600 border-b border-slate-50">Instalação de Ar Condicionado Split</button>
-                    <button onClick={() => navigate('sistemas-comerciais')} className="text-left text-sm py-2 text-slate-600 border-b border-slate-50">Sistemas Cassete e Piso-Teto</button>
-                    <button onClick={() => navigate('vrf-mini-vrf')} className="text-left text-sm py-2 text-slate-600 border-b border-slate-50">Sistemas VRF e Mini VRF</button>
-                    <button onClick={() => navigate('manutencao-preventiva')} className="text-left text-sm py-2 text-slate-600 border-b border-slate-50">Manutenção Preventiva e PMOC</button>
-                    <button onClick={() => navigate('manutencao-corretiva')} className="text-left text-sm py-2 text-slate-600 border-b border-slate-50">Conserto de Ar Condicionado</button>
-                    <button onClick={() => navigate('limpeza')} className="text-left text-sm py-2 text-slate-600">Limpeza de Ar Condicionado SP</button>
-                  </div>
+                  <button onClick={() => { setIsMobileMenuOpen(false); navigate('home'); setTimeout(() => { document.getElementById('depoimentos')?.scrollIntoView({ behavior: 'smooth' }); }, 300); }} className="text-left font-semibold py-2">Depoimentos</button>
                   <hr className="border-slate-100" />
                   <button onClick={() => navigate('blog')} className="text-left font-semibold py-2">Blog</button>
                   <button onClick={() => navigate('sobre')} className="text-left font-semibold py-2">Quem Somos</button>
@@ -1430,61 +1409,6 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="inline-block bg-ice text-primary-light text-[11px] font-bold tracking-[0.15em] uppercase px-4 py-1.5 rounded-full mb-5">
-              Nossa Equipe
-            </span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4">
-              Técnico identificado em cada visita
-            </h2>
-            <p className="text-slate-500 text-lg">
-              Nome, uniforme e histórico de avaliações reais — transparência total em cada atendimento de climatização.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-            <div className="bg-slate-50 rounded-3xl p-8 flex items-center gap-6 border border-slate-100">
-              <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center shrink-0 overflow-hidden">
-                <img
-                  src="https://lh3.googleusercontent.com/6heGd7th8Pj-lMMTr-rWhQgDXIHEtDgkUzYkEakZwnOvYabXG6ykwi_RHfm8RpDcoNoWHvGRKRz8Yf2l7A=s360-w360-h360"
-                  alt="José Erivaldo - Técnico New Clima"
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              <div>
-                <div className="font-extrabold text-primary text-lg">José Erivaldo</div>
-                <div className="text-primary-light text-sm font-bold mb-2">Técnico em Climatização · NR-10 · NR-35</div>
-                <div className="flex gap-1 text-accent">
-                  {[1,2,3,4,5].map(i => <Star key={i} size={12} fill="currentColor" />)}
-                </div>
-                <p className="text-slate-500 text-sm mt-2 leading-relaxed italic">
-                  "Pontual, atencioso e caprichoso — explica tudo que está fazendo."
-                </p>
-              </div>
-            </div>
-            <div className="bg-primary rounded-3xl p-8 text-white flex flex-col justify-between">
-              <div>
-                <div className="text-blue-100/70 text-sm font-bold uppercase tracking-widest mb-4">Por que isso importa?</div>
-                <p className="text-white/90 leading-relaxed">
-                  Quando você contrata a New Clima, sabe quem vai aparecer. Técnico identificado, uniformizado e com histórico de avaliações reais no Google.
-                </p>
-              </div>
-              <a
-                href="https://maps.app.goo.gl/kHeynjnXoG943iG3A"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-6 inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-bold py-3 px-5 rounded-xl transition-all text-sm"
-              >
-                Ver 24 avaliações no Google <ArrowRight size={14} />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Regions Section */}
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
@@ -1499,7 +1423,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
       </section>
 
       {/* Google Reviews Section */}
-      <section className="py-20 bg-white">
+      <section id="depoimentos" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <SectionHeading 
             centered
@@ -2601,59 +2525,76 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
 }
 
 function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
-  const categorias = [
+  const servicos = [
     {
-      titulo: 'Instalação',
-      tag: 'INSTALAÇÃO',
-      cor: 'bg-blue-600',
-      servicos: [
-        { title: 'Instalação de Ar Condicionado Split', desc: 'Residencial e comercial. Obra limpa, infraestrutura completa e garantia de 1 ano.', page: 'split-multisplit' as PageId },
-        { title: 'Instalação de Multi Split', desc: 'Vários cômodos com uma única condensadora externa. Mais elegante e econômico.', page: 'inst-multi-split' as PageId },
-        { title: 'Instalação de Cassete de Teto', desc: 'Ideal para escritórios e lojas. Distribui o ar uniformemente sem ocupar parede.', page: 'inst-cassete' as PageId },
-        { title: 'Instalação de Piso-Teto', desc: 'Versátil para ambientes com pé-direito alto, igrejas e espaços especiais.', page: 'inst-piso-teto' as PageId },
-        { title: 'Instalação de Ar Condicionado Inverter', desc: 'Economia de até 60% em energia. Instalação correta para máxima eficiência.', page: 'inst-inverter' as PageId },
-        { title: 'Sistemas VRF e Multi Ambientes', desc: 'Para empresas e edifícios que precisam climatizar vários ambientes com controle individual.', page: 'vrf-mini-vrf' as PageId },
-        { title: 'Ar Condicionado Comercial', desc: 'Cassete, piso-teto e dutado para lojas, escritórios e restaurantes.', page: 'sistemas-comerciais' as PageId },
-      ]
+      num: '01',
+      icon: <Ruler size={28} />,
+      title: 'Instalação de Ar Condicionado',
+      subtitle: 'Split, multi-split, cassete e piso-teto instalados com obra limpa e garantia de 1 ano',
+      img: '/images/instalacao.png',
+      desc: 'Instalamos ar condicionado residencial e comercial em São Paulo e ABC. Fazemos toda a infraestrutura necessária — tubulação de cobre, dreno, ponto elétrico e suporte — com obra limpa, sem quebradeira e sem sujeira. O equipamento é testado na sua frente antes de finalizar. Atendemos split hi-wall, multi-split, cassete de teto, piso-teto e sistemas VRF.',
+      quando: ['Equipamento novo comprado em loja ou online', 'Primeiro ar condicionado do apartamento ou casa', 'Instalação em obra ou reforma', 'Troca de equipamento antigo por novo', 'Multi-split para climatizar vários cômodos'],
+      page: 'split-multisplit' as PageId,
     },
     {
-      titulo: 'Manutenção e Conserto',
-      tag: 'MANUTENÇÃO',
-      cor: 'bg-emerald-600',
-      servicos: [
-        { title: 'Manutenção Preventiva de Ar Condicionado', desc: 'Planos mensais, trimestrais ou semestrais. Evita quebras e mantém o aparelho econômico.', page: 'manutencao-preventiva' as PageId },
-        { title: 'Conserto de Ar Condicionado', desc: 'Diagnóstico rápido, peças originais e garantia de 90 dias no serviço.', page: 'manutencao-corretiva' as PageId },
-        { title: 'Ar Condicionado Não Gela', desc: 'Falta de gás, filtro sujo ou compressor com problema. Resolvemos no mesmo dia.', page: 'prob-nao-gela' as PageId },
-        { title: 'Ar Condicionado Vazando Água', desc: 'Dreno entupido é a causa mais comum. Resolvemos rápido para evitar danos no forro.', page: 'prob-vazando' as PageId },
-        { title: 'Recarga de Gás de Ar Condicionado', desc: 'Gás R410A e R32 com verificação e reparo do vazamento antes de recarregar.', page: 'prob-gas' as PageId },
-        { title: 'Ar Condicionado Fazendo Barulho', desc: 'Vibração, chiado ou rangido — diagnóstico gratuito e conserto com garantia.', page: 'prob-barulho' as PageId },
-        { title: 'Ar Condicionado Desligando Sozinho', desc: 'Pode ser proteção ativada por gás, filtro ou placa. Não ignore o sinal.', page: 'prob-desliga' as PageId },
-        { title: 'Contrato de Manutenção', desc: 'Mensal, trimestral ou semestral. A New Clima cuida de tudo — você não precisa lembrar.', page: 'serv-contrato-sp' as PageId },
-      ]
+      num: '02',
+      icon: <ShieldCheck size={28} />,
+      title: 'Manutenção Preventiva de Ar Condicionado',
+      subtitle: 'Checklist completo, limpeza interna e verificação de gás — antes do problema aparecer',
+      img: '/images/limpeza.png',
+      desc: 'A manutenção preventiva mantém o ar condicionado funcionando com eficiência máxima e evita quebras inesperadas. Realizamos limpeza de filtros, serpentina e dreno, verificação de nível de gás, teste dos componentes elétricos e medição de temperatura. Entregamos relatório técnico após cada visita. Oferecemos contratos mensais, trimestrais ou semestrais conforme a necessidade.',
+      quando: ['Residência com uso diário — manutenção semestral', 'Escritório, loja ou clínica — manutenção trimestral', 'Restaurante, academia ou local de alta ocupação — manutenção bimensal', 'Empresa com PMOC obrigatório pela Lei 13.589/18', 'Equipamento que nunca passou por manutenção'],
+      page: 'manutencao-preventiva' as PageId,
     },
     {
-      titulo: 'Limpeza e Higienização',
-      tag: 'LIMPEZA',
-      cor: 'bg-cyan-600',
-      servicos: [
-        { title: 'Limpeza de Ar Condicionado', desc: 'Limpeza profunda que remove fungos, ácaros e mau cheiro. Ar mais limpo na hora.', page: 'limpeza' as PageId },
-        { title: 'Higienização com Bactericida', desc: 'Bactericida certificado que elimina fungos e bactérias — ideal para alergias e mau cheiro.', page: 'serv-higienizacao-sp' as PageId },
-        { title: 'Ar Condicionado com Mau Cheiro', desc: 'Fungos na serpentina são a causa. Limpeza profunda elimina o problema de vez.', page: 'prob-mau-cheiro' as PageId },
-      ]
+      num: '03',
+      icon: <Settings size={28} />,
+      title: 'Manutenção Corretiva e Conserto',
+      subtitle: 'Ar condicionado com defeito? Diagnóstico gratuito e conserto no mesmo dia na maioria dos casos',
+      img: '/images/higienizacao.png',
+      desc: 'Atendemos todas as falhas de ar condicionado: não gela, não liga, vaza água, faz barulho, desliga sozinho, congela, tem cheiro ruim ou erro no display. O técnico identifica a causa, apresenta o orçamento e executa o reparo com peça original. Garantia de 90 dias no serviço. Respondemos em até 2 horas em São Paulo e ABC.',
+      quando: ['Ar condicionado que não gela ou resfria mal', 'Vazamento de água dentro do ambiente', 'Barulho ou vibração incomum', 'Aparelho que desliga sozinho ou trava', 'Erro no display ou controle remoto sem resposta'],
+      page: 'manutencao-corretiva' as PageId,
     },
     {
-      titulo: 'PMOC e Contratos Empresariais',
-      tag: 'PMOC',
-      cor: 'bg-amber-500',
-      servicos: [
-        { title: 'PMOC em São Paulo', desc: 'Obrigatório pela Lei 13.589/18. Elaboração, execução e documentação completa.', page: 'serv-pmoc-sp' as PageId },
-        { title: 'Manutenção Preventiva e PMOC', desc: 'Plano completo com relatório técnico, ART e documentação para a Vigilância Sanitária.', page: 'manutencao-preventiva' as PageId },
-        { title: 'PMOC em Santo André', desc: 'Contrato de manutenção obrigatório para empresas em Santo André e ABC.', page: 'pmoc-santo-andre' as PageId },
-        { title: 'PMOC em São Bernardo do Campo', desc: 'Contrato de manutenção obrigatório para empresas em São Bernardo do Campo.', page: 'pmoc-sao-bernardo' as PageId },
-        { title: 'PMOC em São Caetano do Sul', desc: 'Contrato de manutenção obrigatório para empresas em São Caetano do Sul.', page: 'pmoc-sao-caetano' as PageId },
-        { title: 'PMOC em Diadema', desc: 'Contrato de manutenção obrigatório para empresas em Diadema.', page: 'pmoc-diadema' as PageId },
-        { title: 'PMOC em Mauá', desc: 'Contrato de manutenção obrigatório para empresas em Mauá.', page: 'pmoc-maua' as PageId },
-      ]
+      num: '04',
+      icon: <Droplets size={28} />,
+      title: 'Limpeza e Higienização de Ar Condicionado',
+      subtitle: 'Bactericida certificado que elimina fungos, ácaros e mau cheiro — ar limpo de verdade',
+      img: '/images/higienizacao.png',
+      desc: 'A limpeza profunda (higienização) vai além da troca de filtro. Limpamos a serpentina evaporadora, a turbina e o dreno com bactericida de registro na ANVISA — eliminando fungos, ácaros e bactérias invisíveis que o filtro não retém. Indicada para quem tem alergia, asma, crianças pequenas ou aparelho com mau cheiro. O resultado é imediato: ar mais limpo logo na primeira hora.',
+      quando: ['Ar condicionado com cheiro de mofo ou queimado', 'Moradores com alergia, rinite ou asma', 'Crianças pequenas ou idosos no ambiente', 'Aparelho que não passou por limpeza há mais de 6 meses', 'Ambiente com muita poluição ou poeira'],
+      page: 'limpeza' as PageId,
+    },
+    {
+      num: '05',
+      icon: <HelpCircle size={28} />,
+      title: 'PMOC — Contrato de Manutenção Obrigatório',
+      subtitle: 'Plano de Manutenção, Operação e Controle conforme a Lei 13.589/18 para empresas em SP e ABC',
+      img: '/images/pmoc.png',
+      desc: 'O PMOC é obrigatório para qualquer estabelecimento com sistema de ar condicionado acima de 60.000 BTUs — empresas, condomínios, clínicas, escolas, restaurantes e shoppings. Elaboramos o plano conforme a norma, executamos todas as manutenções preventivas, emitimos relatório técnico após cada visita e fornecemos ART. Documentação completa para a Vigilância Sanitária, sem risco de autuação.',
+      quando: ['Empresa, condomínio ou clínica com AC acima de 60.000 BTUs', 'Estabelecimento fiscalizado pela Vigilância Sanitária', 'PMOC vencido ou irregular que precisa ser regularizado', 'Novo estabelecimento que precisa elaborar o plano', 'Prédio comercial que exige documentação para auditoria'],
+      page: 'manutencao-preventiva' as PageId,
+    },
+    {
+      num: '06',
+      icon: <Thermometer size={28} />,
+      title: 'Sistemas VRF e Mini VRF',
+      subtitle: 'Climatização de múltiplos ambientes com controle individual e eficiência energética máxima',
+      img: '/images/vrf.png',
+      desc: 'O sistema VRF (Variable Refrigerant Flow) é a solução para empresas, edifícios e residências de alto padrão que precisam climatizar vários ambientes ao mesmo tempo, com controle individual de temperatura por cômodo. Uma única condensadora externa atende múltiplas evaporadoras com altíssima eficiência energética. Fazemos projeto, instalação e manutenção de sistemas VRF e Mini VRF de todas as marcas.',
+      quando: ['Empresa ou escritório com vários ambientes para climatizar', 'Edifício corporativo ou hotel com necessidade de controle individual', 'Residência de alto padrão que quer um sistema integrado e elegante', 'Retrofit de sistema antigo por solução mais eficiente', 'Projeto novo que exige máxima eficiência energética'],
+      page: 'vrf-mini-vrf' as PageId,
+    },
+    {
+      num: '07',
+      icon: <Zap size={28} />,
+      title: 'Chillers, Self-Contained e Fan Coils',
+      subtitle: 'Manutenção e instalação de sistemas centrais de climatização para grandes edificações',
+      img: '/images/comercial.png',
+      desc: 'Para grandes edificações — shoppings, hospitais, hotéis, indústrias e edifícios corporativos — os sistemas centrais de climatização (Chiller, Self-Contained e Fan Coil) exigem manutenção especializada. Realizamos manutenção preventiva e corretiva, limpeza de torres de resfriamento, verificação de compressores e bombas, e elaboramos o PMOC conforme as normas aplicáveis. Equipe técnica com experiência em sistemas de grande porte.',
+      quando: ['Shopping, hospital ou hotel com sistema central de climatização', 'Indústria ou galpão com Chiller ou Self-Contained', 'Manutenção preventiva de torre de resfriamento', 'Retrofit ou modernização de sistema central existente', 'PMOC para grandes edificações com sistema central'],
+      page: 'sistemas-comerciais' as PageId,
     },
   ]
 
@@ -2668,67 +2609,121 @@ function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
             <span className="text-white font-medium">Serviços</span>
           </div>
           <div className="max-w-3xl">
-            <h1 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6">
-              Instalação, Manutenção e Limpeza de Ar Condicionado em São Paulo e ABC
+            <h1 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-4">
+              Serviços de Ar Condicionado em São Paulo e ABC
             </h1>
             <p className="text-lg text-blue-100/80 mb-8 max-w-2xl">
-              Todos os serviços de ar condicionado para residências, empresas e indústrias em São Paulo e ABC Paulista. Técnicos certificados, visita gratuita e garantia por escrito.
+              Da instalação ao contrato de manutenção — a New Clima resolve qualquer demanda de ar condicionado em SP e ABC. Escolha o serviço que precisa e fale com um técnico agora.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href="https://wa.me/5511963462516" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-4 px-8 rounded-xl hover:-translate-y-0.5 transition-all shadow-lg">
-                <MessageSquare size={20} />
-                Solicitar Orçamento Grátis
-              </a>
-              <a href="tel:+5511963462516" className="inline-flex items-center justify-center gap-2 border-2 border-white/20 text-white font-bold py-4 px-8 rounded-xl hover:bg-white/10 transition-all">
-                <Phone size={20} />
-                (11) 96346-2516
-              </a>
-            </div>
-            <p className="text-blue-100/50 text-sm mt-4">⚡ Resposta em até 2 horas · Visita gratuita · Orçamento no mesmo dia</p>
+            <a
+              href="https://wa.me/5511963462516"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-success text-white font-bold py-4 px-8 rounded-xl hover:-translate-y-0.5 transition-all shadow-lg"
+            >
+              <MessageSquare size={20} />
+              Pedir Orçamento no WhatsApp
+            </a>
           </div>
         </div>
       </section>
 
-      {/* Categorias de serviço */}
+      {/* Lista de serviços */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          {categorias.map((cat, ci) => (
-            <div key={ci} className={ci > 0 ? 'mt-16 pt-16 border-t border-slate-100' : ''}>
-              <div className="flex items-center gap-3 mb-8">
-                <span className={`${cat.cor} text-white text-[11px] font-bold tracking-widest uppercase px-4 py-1.5 rounded-full`}>
-                  {cat.tag}
-                </span>
-                <h2 className="text-2xl md:text-3xl font-extrabold text-primary tracking-tight">{cat.titulo}</h2>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                {cat.servicos.map((s, i) => (
-                  <div
-                    key={i}
-                    onClick={() => navigate(s.page)}
-                    className="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-primary hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
-                  >
-                    <h3 className="text-base font-bold text-primary mb-2 group-hover:text-primary-light transition-colors leading-snug">{s.title}</h3>
-                    <p className="text-slate-500 text-sm leading-relaxed mb-4">{s.desc}</p>
-                    <div className="flex items-center gap-2 text-primary-light font-semibold text-sm group-hover:gap-3 transition-all">
-                      Saiba mais <ArrowRight size={13} />
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="space-y-0">
+            {servicos.map((s, i) => (
+              <div
+                key={i}
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-0 ${i > 0 ? 'border-t border-slate-100' : ''}`}
+              >
+                {/* Conteúdo */}
+                <div className={`py-14 pr-0 lg:pr-16 ${i % 2 !== 0 ? 'lg:order-2' : ''}`}>
+                  <div className="flex items-start gap-4 mb-6">
+                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary-light shrink-0">
+                      {s.icon}
+                    </div>
+                    <div>
+                      <span className="text-primary-light text-xs font-bold tracking-[0.2em] uppercase">{s.num}</span>
+                      <h2 className="text-2xl md:text-3xl font-extrabold text-primary leading-tight tracking-tight">{s.title}</h2>
+                      <p className="text-slate-500 text-sm mt-1 leading-relaxed">{s.subtitle}</p>
                     </div>
                   </div>
-                ))}
+
+                  <p className="text-slate-600 leading-relaxed mb-8 text-sm md:text-base">{s.desc}</p>
+
+                  {/* Quando chamar */}
+                  <div className="bg-slate-50 rounded-2xl p-5 mb-8 border border-slate-100">
+                    <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Quando chamar a New Clima</p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                      {s.quando.map((q, qi) => (
+                        <div key={qi} className="flex items-start gap-2">
+                          <CheckCircle2 size={14} className="text-success shrink-0 mt-0.5" />
+                          <span className="text-slate-600 text-sm">{q}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-4">
+                    <button
+                      onClick={() => navigate(s.page)}
+                      className="flex items-center gap-2 text-primary-light font-bold text-sm hover:gap-3 transition-all"
+                    >
+                      Saiba mais <ArrowRight size={14} />
+                    </button>
+                    <a
+                      href="https://wa.me/5511963462516"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-slate-500 font-semibold text-sm hover:text-success transition-colors"
+                    >
+                      <MessageSquare size={14} />
+                      Falar no WhatsApp
+                    </a>
+                  </div>
+                </div>
+
+                {/* Imagem */}
+                <div className={`hidden lg:block relative ${i % 2 !== 0 ? 'lg:order-1' : ''}`}>
+                  <div className="h-full min-h-[420px] relative overflow-hidden">
+                    <img
+                      src={s.img}
+                      alt={s.title}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                  </div>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 bg-primary">
-        <div className="container mx-auto px-4 text-center max-w-3xl">
-          <h2 className="text-3xl font-extrabold text-white mb-4">Não encontrou o serviço que precisa?</h2>
-          <p className="text-blue-100/70 mb-8">Fale com um técnico — atendemos qualquer demanda de ar condicionado em São Paulo e ABC.</p>
-          <a href="https://wa.me/5511963462516" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-success text-white font-bold py-4 px-10 rounded-xl shadow-xl hover:-translate-y-0.5 transition-all">
-            <MessageSquare size={20} />
-            Falar no WhatsApp Agora
-          </a>
+      {/* CTA final */}
+      <section className="py-16 bg-slate-50 border-t border-slate-100">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="bg-primary rounded-3xl p-12 text-center">
+            <h2 className="text-3xl font-extrabold text-white mb-3">Ainda em dúvida sobre qual serviço você precisa?</h2>
+            <p className="text-blue-100/70 mb-8 max-w-xl mx-auto">Mande uma mensagem descrevendo o problema — um técnico da New Clima analisa e indica o caminho. Resposta no mesmo dia, sem custo.</p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <a
+                href="https://wa.me/5511963462516"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-4 px-8 rounded-xl shadow-xl hover:-translate-y-0.5 transition-all"
+              >
+                <MessageSquare size={20} />
+                Falar no WhatsApp
+              </a>
+              <a
+                href="tel:+5511963462516"
+                className="inline-flex items-center justify-center gap-2 border-2 border-white/20 text-white font-bold py-4 px-8 rounded-xl hover:bg-white/10 transition-all"
+              >
+                <Phone size={20} />
+                (11) 96346-2516
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </div>
