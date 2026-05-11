@@ -395,6 +395,66 @@ const metaMap: Record<string, { title: string; description: string }> = {
     title: 'Instalação de Ar Condicionado em Condomínio em SP | New Clima',
     description: 'Especialistas em instalação de ar condicionado em condomínios de SP. Respeitamos o regimento e garantimos vizinhança tranquila. (11) 96346-2516.',
   },
+  'manutencao-ar-condicionado-santo-andre': {
+    title: 'Manutenção de Ar Condicionado em Santo André | New Clima',
+    description: 'Manutenção preventiva e corretiva de ar condicionado em Santo André. Todas as marcas, peças originais e garantia por escrito. Visita gratuita. (11) 96346-2516.',
+  },
+  'limpeza-ar-condicionado-santo-andre': {
+    title: 'Limpeza de Ar Condicionado em Santo André | New Clima',
+    description: 'Limpeza profunda de ar condicionado em Santo André. Remove fungos, ácaros e mau cheiro com bactericida certificado. Visita gratuita. (11) 96346-2516.',
+  },
+  'pmoc-santo-andre': {
+    title: 'PMOC em Santo André — Contrato de Manutenção Obrigatório | New Clima',
+    description: 'PMOC em Santo André conforme a Lei 13.589/18. Elaboração, execução e documentação completa para empresas, condomínios e clínicas. (11) 96346-2516.',
+  },
+  'manutencao-ar-condicionado-sao-bernardo-do-campo': {
+    title: 'Manutenção de Ar Condicionado em São Bernardo do Campo | New Clima',
+    description: 'Manutenção preventiva e corretiva de ar condicionado em São Bernardo do Campo. Todas as marcas, peças originais e garantia por escrito. Visita gratuita. (11) 96346-2516.',
+  },
+  'limpeza-ar-condicionado-sao-bernardo-do-campo': {
+    title: 'Limpeza de Ar Condicionado em São Bernardo do Campo | New Clima',
+    description: 'Limpeza profunda de ar condicionado em São Bernardo do Campo. Remove fungos, ácaros e mau cheiro com bactericida certificado. Visita gratuita. (11) 96346-2516.',
+  },
+  'pmoc-sao-bernardo-do-campo': {
+    title: 'PMOC em São Bernardo do Campo — Contrato de Manutenção Obrigatório | New Clima',
+    description: 'PMOC em São Bernardo do Campo conforme a Lei 13.589/18. Elaboração, execução e documentação completa para empresas, condomínios e clínicas. (11) 96346-2516.',
+  },
+  'manutencao-ar-condicionado-sao-caetano-do-sul': {
+    title: 'Manutenção de Ar Condicionado em São Caetano do Sul | New Clima',
+    description: 'Manutenção preventiva e corretiva de ar condicionado em São Caetano do Sul. Todas as marcas, peças originais e garantia por escrito. Visita gratuita. (11) 96346-2516.',
+  },
+  'limpeza-ar-condicionado-sao-caetano-do-sul': {
+    title: 'Limpeza de Ar Condicionado em São Caetano do Sul | New Clima',
+    description: 'Limpeza profunda de ar condicionado em São Caetano do Sul. Remove fungos, ácaros e mau cheiro com bactericida certificado. Visita gratuita. (11) 96346-2516.',
+  },
+  'pmoc-sao-caetano-do-sul': {
+    title: 'PMOC em São Caetano do Sul — Contrato de Manutenção Obrigatório | New Clima',
+    description: 'PMOC em São Caetano do Sul conforme a Lei 13.589/18. Elaboração, execução e documentação completa para empresas, condomínios e clínicas. (11) 96346-2516.',
+  },
+  'manutencao-ar-condicionado-diadema': {
+    title: 'Manutenção de Ar Condicionado em Diadema | New Clima',
+    description: 'Manutenção preventiva e corretiva de ar condicionado em Diadema. Todas as marcas, peças originais e garantia por escrito. Visita gratuita. (11) 96346-2516.',
+  },
+  'limpeza-ar-condicionado-diadema': {
+    title: 'Limpeza de Ar Condicionado em Diadema | New Clima',
+    description: 'Limpeza profunda de ar condicionado em Diadema. Remove fungos, ácaros e mau cheiro com bactericida certificado. Visita gratuita. (11) 96346-2516.',
+  },
+  'pmoc-diadema': {
+    title: 'PMOC em Diadema — Contrato de Manutenção Obrigatório | New Clima',
+    description: 'PMOC em Diadema conforme a Lei 13.589/18. Elaboração, execução e documentação completa para empresas, condomínios e clínicas. (11) 96346-2516.',
+  },
+  'manutencao-ar-condicionado-maua': {
+    title: 'Manutenção de Ar Condicionado em Mauá | New Clima',
+    description: 'Manutenção preventiva e corretiva de ar condicionado em Mauá. Todas as marcas, peças originais e garantia por escrito. Visita gratuita. (11) 96346-2516.',
+  },
+  'limpeza-ar-condicionado-maua': {
+    title: 'Limpeza de Ar Condicionado em Mauá | New Clima',
+    description: 'Limpeza profunda de ar condicionado em Mauá. Remove fungos, ácaros e mau cheiro com bactericida certificado. Visita gratuita. (11) 96346-2516.',
+  },
+  'pmoc-maua': {
+    title: 'PMOC em Mauá — Contrato de Manutenção Obrigatório | New Clima',
+    description: 'PMOC em Mauá conforme a Lei 13.589/18. Elaboração, execução e documentação completa para empresas, condomínios e clínicas. (11) 96346-2516.',
+  },
   'instalacao-ar-condicionado-morumbi': {
     title: 'Instalação de Ar Condicionado no Morumbi SP | New Clima',
     description: 'Instalação e manutenção de ar condicionado no Morumbi. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
