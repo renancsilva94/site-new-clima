@@ -969,10 +969,10 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
   return (
     <>
             {/* Hero Section */}
-      <section className="relative overflow-hidden pt-16 pb-24">
+      <section className="relative overflow-hidden pt-16 pb-24 bg-[#0b1a3b]">
         {/* Hero background com fetchpriority alto para melhorar LCP */}
         <img
-          src="/images/hero-bg.png"
+          src="/images/hero-bg.webp"
           alt=""
           aria-hidden="true"
           fetchPriority="high"
