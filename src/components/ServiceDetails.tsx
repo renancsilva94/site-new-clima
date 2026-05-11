@@ -155,7 +155,7 @@ export const RegioesSectionService = () => {
 }
 
 
-export const SistemasInstalamosSection = ({ cidade = "São Paulo e ABC" }: { cidade?: string } = {}) => (
+export const SistemasInstalamosSection = ({ cidade = "São Paulo e ABC" }: { cidade?: string }) => (
   <section className="bg-[#0f172a] py-16">
     <div className="container mx-auto px-4 max-w-6xl">
       <div className="text-center mb-10">
@@ -185,7 +185,7 @@ export const SistemasInstalamosSection = ({ cidade = "São Paulo e ABC" }: { cid
   </section>
 );
 
-export const ProcessoSection = ({ cidade = "São Paulo e ABC" }: { cidade?: string } = {}) => (
+export const ProcessoSection = ({ cidade = "São Paulo e ABC" }: { cidade?: string }) => (
   <section className="py-16">
     <div className="container mx-auto px-4 max-w-6xl">
       <div className="text-center mb-12">
@@ -358,7 +358,7 @@ const ServicosPreventivosSection = () => (
   </section>
 );
 
-export const ProcessoManutencaoSection = ({ cidade = "São Paulo e ABC" }: { cidade?: string } = {}) => (
+export const ProcessoManutencaoSection = ({ cidade = "São Paulo e ABC" }: { cidade?: string }) => (
   <section className="py-16">
     <div className="container mx-auto px-4 max-w-6xl">
       <div className="text-center mb-12">
@@ -497,7 +497,7 @@ const LimpezaDetalhesSection = () => (
   </section>
 );
 
-export const ProcessoHigienizacaoSection = ({ cidade = "São Paulo e ABC" }: { cidade?: string } = {}) => (
+export const ProcessoHigienizacaoSection = ({ cidade = "São Paulo e ABC" }: { cidade?: string }) => (
   <section className="py-16">
     <div className="container mx-auto px-4 max-w-6xl">
       <div className="text-center mb-12">
