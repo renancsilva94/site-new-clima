@@ -969,20 +969,14 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
   return (
     <>
             {/* Hero Section */}
-      <section className="relative overflow-hidden pt-16 pb-24 bg-[#0b1a3b]">
-        {/* Hero background com fetchpriority alto para melhorar LCP */}
-        <img
-          src="/images/hero-bg.webp"
-          alt=""
-          aria-hidden="true"
-          fetchPriority="high"
-          className="absolute inset-0 w-full h-full object-cover object-top"
-          style={{zIndex: 0}}
-        />
-        {/* Overlay escuro para legibilidade */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0b1a3b]/92 via-[#0b1a3b]/80 to-[#0b1a3b]/40" style={{zIndex: 1}} />
+      <section className="relative bg-primary overflow-hidden pt-16 pb-24">
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-white/20 rounded-full blur-[80px] -translate-y-1/3 translate-x-1/3" />
+          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-400/20 rounded-full blur-[80px] translate-y-1/3 -translate-x-1/4" />
+          <div className="absolute top-1/2 left-1/2 w-[300px] h-[300px] bg-white/5 rounded-full blur-[60px] -translate-x-1/2 -translate-y-1/2" />
+        </div>
 
-        <div className="container mx-auto px-4 relative" style={{zIndex: 2}}>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div
             >
