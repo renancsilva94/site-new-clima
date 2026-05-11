@@ -1284,4 +1284,49 @@
     <priority>0.8</priority>
   </url>
 
+
+  <!-- Equipamentos Grandes, Aquecimento e Pré-Verão -->
+  <url>
+    <loc>https://www.newclimaar.com.br/manutencao-chiller-sao-paulo</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.newclimaar.com.br/manutencao-fan-coil-sao-paulo</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.newclimaar.com.br/manutencao-self-contained-sao-paulo</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.newclimaar.com.br/limpeza-fan-coil-sao-paulo</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.newclimaar.com.br/central-agua-gelada-sao-paulo</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.newclimaar.com.br/ar-condicionado-aquecimento-sp</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.newclimaar.com.br/manutencao-preventiva-antes-do-verao-sp</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
