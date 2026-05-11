@@ -642,6 +642,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default function SlugPage() {
-  return <SlugClient />
+export default function SlugPage({ params }: Props) {
+  const slug = params?.slug?.[0] ?? ''
+  const isHome = !slug
+
+  return (
+    <>
+      {isHome && (
+        <link
+          rel="preload"
+          as="image"
+          href="/images/hero-bg.png"
+          fetchPriority="high"
+        />
+      )}
+      <SlugClient />
+    </>
+  )
 }
