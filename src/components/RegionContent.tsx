@@ -94,7 +94,7 @@ const RegionLayout = ({ region, title, description, neighborhoods, children, nav
       </div>
     </div>
     <div className="space-y-0">
-      {showInstallation && <SistemasInstalamosSection />}
+      {showInstallation && <SistemasInstalamosSection cidade={region} />}
       {showInstallation ? <ProcessoSection cidade={region} /> : showMaintenance ? <ProcessoManutencaoSection cidade={region} /> : showCleaning ? <ProcessoHigienizacaoSection cidade={region} /> : null}
       <ServiceCTA title={<span>Pronto para climatizar seu ambiente em <span className="text-blue-500 italic">{region}</span>?</span>} subtitle={`Atendimento técnico especializado em toda a região de ${region} com garantia técnica e obra limpa.`} />
       <RelatedPagesSection currentRegion={region} navigate={navigate} />
