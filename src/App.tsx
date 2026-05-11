@@ -1031,29 +1031,69 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                   <h3 className="text-xl font-bold text-primary">Receba uma Proposta</h3>
                   <p className="text-sm text-slate-500">Preencha os dados e entraremos em contato.</p>
                 </div>
-                <form className="space-y-4" action="https://wa.me/5511963462516" method="GET">
-                  <div className="space-y-2">
-                    <label htmlFor="hero-name" className="text-xs font-bold text-slate-400 uppercase tracking-wider">Nome Completo</label>
-                    <input id="hero-name" type="text" placeholder="Seu nome" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary-light" required />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="hero-phone" className="text-xs font-bold text-slate-400 uppercase tracking-wider">WhatsApp / Telefone</label>
-                    <input id="hero-phone" type="tel" placeholder="(11) 99999-9999" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary-light" required />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="hero-service" className="text-xs font-bold text-slate-400 uppercase tracking-wider">Serviço Desejado</label>
-                    <select id="hero-service" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary-light">
-                      <option>Instalação Residencial</option>
-                      <option>Instalação Comercial / VRF</option>
-                      <option>Manutenção Preventiva / PMOC</option>
-                      <option>Manutenção Corretiva / Reparo</option>
-                      <option>Limpeza e Higienização</option>
-                    </select>
-                  </div>
-                  <button type="submit" className="w-full bg-primary text-white font-bold py-4 rounded-xl hover:bg-primary-light transition-colors shadow-lg shadow-primary/20 flex items-center justify-center gap-2">
-                    Solicitar Orçamento <ArrowRight size={18} />
-                  </button>
-                </form>
+                {(() => {
+                  const [nome, setNome] = React.useState('');
+                  const [telefone, setTelefone] = React.useState('');
+                  const [servico, setServico] = React.useState('Instalação Residencial');
+
+                  const handleSubmit = (e: React.FormEvent) => {
+                    e.preventDefault();
+                    const msg = encodeURIComponent(
+                      `Olá! Me chamo *${nome}* e gostaria de um orçamento.\n\n` +
+                      `📱 *Telefone:* ${telefone}\n` +
+                      `🔧 *Serviço:* ${servico}\n\n` +
+                      `Aguardo o contato. Obrigado!`
+                    );
+                    window.open(`https://wa.me/5511963462516?text=${msg}`, '_blank');
+                  };
+
+                  return (
+                    <form className="space-y-4" onSubmit={handleSubmit}>
+                      <div className="space-y-2">
+                        <label htmlFor="hero-name" className="text-xs font-bold text-slate-400 uppercase tracking-wider">Nome Completo</label>
+                        <input
+                          id="hero-name"
+                          type="text"
+                          placeholder="Seu nome"
+                          value={nome}
+                          onChange={e => setNome(e.target.value)}
+                          className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary-light"
+                          required
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <label htmlFor="hero-phone" className="text-xs font-bold text-slate-400 uppercase tracking-wider">WhatsApp / Telefone</label>
+                        <input
+                          id="hero-phone"
+                          type="tel"
+                          placeholder="(11) 99999-9999"
+                          value={telefone}
+                          onChange={e => setTelefone(e.target.value)}
+                          className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary-light"
+                          required
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <label htmlFor="hero-service" className="text-xs font-bold text-slate-400 uppercase tracking-wider">Serviço Desejado</label>
+                        <select
+                          id="hero-service"
+                          value={servico}
+                          onChange={e => setServico(e.target.value)}
+                          className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-primary-light"
+                        >
+                          <option>Instalação Residencial</option>
+                          <option>Instalação Comercial / VRF</option>
+                          <option>Manutenção Preventiva / PMOC</option>
+                          <option>Manutenção Corretiva / Reparo</option>
+                          <option>Limpeza e Higienização</option>
+                        </select>
+                      </div>
+                      <button type="submit" className="w-full bg-primary text-white font-bold py-4 rounded-xl hover:bg-primary-light transition-colors shadow-lg shadow-primary/20 flex items-center justify-center gap-2">
+                        Solicitar Orçamento <ArrowRight size={18} />
+                      </button>
+                    </form>
+                  );
+                })()}
               </div>
             </div>
           </div>
