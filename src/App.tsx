@@ -251,7 +251,42 @@ type PageId = 'home'
   | 'marca-bosch'
   | 'marca-tcl'
   | 'marca-agratto'
-  | 'marca-consul';
+  | 'marca-consul'
+  | 'bairro-jardim-paulista'
+  | 'bairro-jardim-europa'
+  | 'bairro-vila-andrade'
+  | 'bairro-campo-limpo'
+  | 'bairro-interlagos'
+  | 'bairro-cerqueira-cesar'
+  | 'bairro-pacaembu'
+  | 'bairro-sumare'
+  | 'bairro-vila-leopoldina'
+  | 'bairro-barra-funda'
+  | 'bairro-alto-de-pinheiros'
+  | 'bairro-consolacao'
+  | 'bairro-vila-guilherme'
+  | 'bairro-vila-maria'
+  | 'bairro-casa-verde'
+  | 'bairro-mandaqui'
+  | 'bairro-tremembe'
+  | 'bairro-freguesia-do-o'
+  | 'bairro-limao'
+  | 'bairro-belem'
+  | 'bairro-bras'
+  | 'bairro-carrao'
+  | 'bairro-vila-formosa'
+  | 'bairro-sapopemba'
+  | 'bairro-penha-de-franca'
+  | 'bairro-jardim-analia'
+  | 'bairro-aricanduva'
+  | 'bairro-republica'
+  | 'bairro-santa-cecilia'
+  | 'bairro-bom-retiro'
+  | 'zona-sul'
+  | 'zona-norte'
+  | 'zona-leste'
+  | 'zona-oeste'
+  | 'zona-central';
 
 // --- Components ---
 
@@ -478,6 +513,41 @@ export default function App() {
       'marca-tcl': '/instalacao-ar-condicionado-tcl-sao-paulo',
       'marca-agratto': '/instalacao-ar-condicionado-agratto-sao-paulo',
       'marca-consul': '/instalacao-ar-condicionado-consul-sao-paulo',
+      'bairro-jardim-paulista': '/instalacao-ar-condicionado-jardim-paulista',
+      'bairro-jardim-europa': '/instalacao-ar-condicionado-jardim-europa',
+      'bairro-vila-andrade': '/instalacao-ar-condicionado-vila-andrade',
+      'bairro-campo-limpo': '/instalacao-ar-condicionado-campo-limpo',
+      'bairro-interlagos': '/instalacao-ar-condicionado-interlagos',
+      'bairro-cerqueira-cesar': '/instalacao-ar-condicionado-cerqueira-cesar',
+      'bairro-pacaembu': '/instalacao-ar-condicionado-pacaembu',
+      'bairro-sumare': '/instalacao-ar-condicionado-sumare',
+      'bairro-vila-leopoldina': '/instalacao-ar-condicionado-vila-leopoldina',
+      'bairro-barra-funda': '/instalacao-ar-condicionado-barra-funda',
+      'bairro-alto-de-pinheiros': '/instalacao-ar-condicionado-alto-de-pinheiros',
+      'bairro-consolacao': '/instalacao-ar-condicionado-consolacao',
+      'bairro-vila-guilherme': '/instalacao-ar-condicionado-vila-guilherme',
+      'bairro-vila-maria': '/instalacao-ar-condicionado-vila-maria',
+      'bairro-casa-verde': '/instalacao-ar-condicionado-casa-verde',
+      'bairro-mandaqui': '/instalacao-ar-condicionado-mandaqui',
+      'bairro-tremembe': '/instalacao-ar-condicionado-tremembe',
+      'bairro-freguesia-do-o': '/instalacao-ar-condicionado-freguesia-do-o',
+      'bairro-limao': '/instalacao-ar-condicionado-limao',
+      'bairro-belem': '/instalacao-ar-condicionado-belem',
+      'bairro-bras': '/instalacao-ar-condicionado-bras',
+      'bairro-carrao': '/instalacao-ar-condicionado-carrao',
+      'bairro-vila-formosa': '/instalacao-ar-condicionado-vila-formosa',
+      'bairro-sapopemba': '/instalacao-ar-condicionado-sapopemba',
+      'bairro-penha-de-franca': '/instalacao-ar-condicionado-penha-de-franca',
+      'bairro-jardim-analia': '/instalacao-ar-condicionado-jardim-analia',
+      'bairro-aricanduva': '/instalacao-ar-condicionado-aricanduva',
+      'bairro-republica': '/instalacao-ar-condicionado-republica',
+      'bairro-santa-cecilia': '/instalacao-ar-condicionado-santa-cecilia',
+      'bairro-bom-retiro': '/instalacao-ar-condicionado-bom-retiro',
+      'zona-sul': '/ar-condicionado-zona-sul-sp',
+      'zona-norte': '/ar-condicionado-zona-norte-sp',
+      'zona-leste': '/ar-condicionado-zona-leste-sp',
+      'zona-oeste': '/ar-condicionado-zona-oeste-sp',
+      'zona-central': '/ar-condicionado-zona-central-sp',
     }
     const path = routes[page] || '/'
     router.push(path)
@@ -742,6 +812,41 @@ export default function App() {
             if (p === '/instalacao-ar-condicionado-tcl-sao-paulo') return <SegmentoView slug="marca-tcl" title="TCL" tag="MARCA" headline="Instalação de Ar Condicionado TCL em São Paulo" desc="Instalação e manutenção de ar condicionado TCL em São Paulo e ABC. Técnicos treinados nos equipamentos TCL — splits inverter residenciais e comerciais. Garantia de 1 ano e visita técnica gratuita." dor="Instalação errada de ar condicionado TCL anula a garantia do fabricante. Exija técnico com experiência no equipamento e garantia documentada por escrito." servicos={["Instalação de ar condicionado TCL residencial e comercial em São Paulo", "Manutenção preventiva e corretiva de ar condicionado TCL", "Limpeza e higienização de equipamentos TCL", "Recarga de gás e diagnóstico de defeitos em ar condicionado TCL", "Instalação que mantém a garantia de fábrica TCL", "Atendimento em São Paulo e ABC — visita técnica gratuita"]} faq={[["A instalação cancela a garantia de fábrica do ar condicionado TCL?", "Não, desde que a instalação seja feita por técnico qualificado. A New Clima realiza instalações técnicas certificadas que mantêm a garantia de fábrica TCL intacta."], ["Vocês têm peças originais TCL para manutenção?", "Trabalhamos com peças originais e compatíveis certificadas para ar condicionado TCL. Todo serviço inclui garantia de 90 dias nas peças e mão de obra."], ["Quanto custa instalar ar condicionado TCL em São Paulo?", "A instalação de ar condicionado TCL em SP começa a partir de R$ 350 para modelos residenciais. Visita técnica gratuita e orçamento no mesmo dia sem compromisso."]]} vizinhos="São Paulo · Santo André · São Bernardo · São Caetano · Diadema · Mauá" navigate={navigate} />;
             if (p === '/instalacao-ar-condicionado-agratto-sao-paulo') return <SegmentoView slug="marca-agratto" title="Agratto" tag="MARCA" headline="Instalação de Ar Condicionado Agratto em São Paulo" desc="Instalação e manutenção de ar condicionado Agratto em São Paulo e ABC. Técnicos treinados nos equipamentos Agratto — splits inverter e sistemas de climatização. Garantia de 1 ano e visita técnica gratuita." dor="Instalação errada de ar condicionado Agratto anula a garantia do fabricante. Exija técnico com experiência no equipamento e garantia documentada por escrito." servicos={["Instalação de ar condicionado Agratto residencial e comercial em São Paulo", "Manutenção preventiva e corretiva de ar condicionado Agratto", "Limpeza e higienização de equipamentos Agratto", "Recarga de gás e diagnóstico de defeitos em ar condicionado Agratto", "Instalação que mantém a garantia de fábrica Agratto", "Atendimento em São Paulo e ABC — visita técnica gratuita"]} faq={[["A instalação cancela a garantia de fábrica do ar condicionado Agratto?", "Não, desde que a instalação seja feita por técnico qualificado. A New Clima realiza instalações técnicas certificadas que mantêm a garantia de fábrica Agratto intacta."], ["Vocês têm peças originais Agratto para manutenção?", "Trabalhamos com peças originais e compatíveis certificadas para ar condicionado Agratto. Todo serviço inclui garantia de 90 dias nas peças e mão de obra."], ["Quanto custa instalar ar condicionado Agratto em São Paulo?", "A instalação de ar condicionado Agratto em SP começa a partir de R$ 350 para modelos residenciais. Visita técnica gratuita e orçamento no mesmo dia sem compromisso."]]} vizinhos="São Paulo · Santo André · São Bernardo · São Caetano · Diadema · Mauá" navigate={navigate} />;
             if (p === '/instalacao-ar-condicionado-consul-sao-paulo') return <SegmentoView slug="marca-consul" title="Consul" tag="MARCA" headline="Instalação de Ar Condicionado Consul em São Paulo" desc="Instalação e manutenção de ar condicionado Consul em São Paulo e ABC. Técnicos treinados nos equipamentos Consul — splits inverter residenciais. Garantia de 1 ano e visita técnica gratuita." dor="Instalação errada de ar condicionado Consul anula a garantia do fabricante. Exija técnico com experiência no equipamento e garantia documentada por escrito." servicos={["Instalação de ar condicionado Consul residencial e comercial em São Paulo", "Manutenção preventiva e corretiva de ar condicionado Consul", "Limpeza e higienização de equipamentos Consul", "Recarga de gás e diagnóstico de defeitos em ar condicionado Consul", "Instalação que mantém a garantia de fábrica Consul", "Atendimento em São Paulo e ABC — visita técnica gratuita"]} faq={[["A instalação cancela a garantia de fábrica do ar condicionado Consul?", "Não, desde que a instalação seja feita por técnico qualificado. A New Clima realiza instalações técnicas certificadas que mantêm a garantia de fábrica Consul intacta."], ["Vocês têm peças originais Consul para manutenção?", "Trabalhamos com peças originais e compatíveis certificadas para ar condicionado Consul. Todo serviço inclui garantia de 90 dias nas peças e mão de obra."], ["Quanto custa instalar ar condicionado Consul em São Paulo?", "A instalação de ar condicionado Consul em SP começa a partir de R$ 350 para modelos residenciais. Visita técnica gratuita e orçamento no mesmo dia sem compromisso."]]} vizinhos="São Paulo · Santo André · São Bernardo · São Caetano · Diadema · Mauá" navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-jardim-paulista') return <BairroView bairro="Jardim Paulista" slug="jardim-paulista" zona="Zona Sul" vizinhos={["Jardins", "Itaim Bibi", "Pinheiros", "Cerqueira César"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-jardim-europa') return <BairroView bairro="Jardim Europa" slug="jardim-europa" zona="Zona Sul" vizinhos={["Jardins", "Itaim Bibi", "Jardim Paulista", "Pinheiros"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-vila-andrade') return <BairroView bairro="Vila Andrade" slug="vila-andrade" zona="Zona Sul" vizinhos={["Morumbi", "Campo Limpo", "Santo Amaro", "Brooklin"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-campo-limpo') return <BairroView bairro="Campo Limpo" slug="campo-limpo" zona="Zona Sul" vizinhos={["Vila Andrade", "Santo Amaro", "Campo Grande", "Capão Redondo"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-interlagos') return <BairroView bairro="Interlagos" slug="interlagos" zona="Zona Sul" vizinhos={["Campo Grande", "Santo Amaro", "Jurubatuba", "Socorro"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-cerqueira-cesar') return <BairroView bairro="Cerqueira César" slug="cerqueira-cesar" zona="Zona Oeste" vizinhos={["Jardins", "Higienópolis", "Pinheiros", "Consolação"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-pacaembu') return <BairroView bairro="Pacaembu" slug="pacaembu" zona="Zona Oeste" vizinhos={["Perdizes", "Higienópolis", "Santa Cecília", "Sumaré"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-sumare') return <BairroView bairro="Sumaré" slug="sumare" zona="Zona Oeste" vizinhos={["Perdizes", "Vila Madalena", "Pacaembu", "Água Branca"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-vila-leopoldina') return <BairroView bairro="Vila Leopoldina" slug="vila-leopoldina" zona="Zona Oeste" vizinhos={["Lapa", "Água Branca", "Jaguaré", "Barra Funda"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-barra-funda') return <BairroView bairro="Barra Funda" slug="barra-funda" zona="Zona Oeste" vizinhos={["Pompéia", "Lapa", "Santa Cecília", "Água Branca"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-alto-de-pinheiros') return <BairroView bairro="Alto de Pinheiros" slug="alto-de-pinheiros" zona="Zona Oeste" vizinhos={["Pinheiros", "Vila Madalena", "Butantã", "Lapa"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-consolacao') return <BairroView bairro="Consolação" slug="consolacao" zona="Zona Oeste" vizinhos={["Higienópolis", "Cerqueira César", "Bela Vista", "Santa Cecília"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-vila-guilherme') return <BairroView bairro="Vila Guilherme" slug="vila-guilherme" zona="Zona Norte" vizinhos={["Santana", "Vila Maria", "Casa Verde", "Carandiru"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-vila-maria') return <BairroView bairro="Vila Maria" slug="vila-maria" zona="Zona Norte" vizinhos={["Santana", "Vila Guilherme", "Tucuruvi", "Casa Verde"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-casa-verde') return <BairroView bairro="Casa Verde" slug="casa-verde" zona="Zona Norte" vizinhos={["Santana", "Vila Guilherme", "Limão", "Freguesia do Ó"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-mandaqui') return <BairroView bairro="Mandaqui" slug="mandaqui" zona="Zona Norte" vizinhos={["Santana", "Tucuruvi", "Tremembé", "Jaçanã"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-tremembe') return <BairroView bairro="Tremembé" slug="tremembe" zona="Zona Norte" vizinhos={["Tucuruvi", "Mandaqui", "Jaçanã", "Santana"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-freguesia-do-o') return <BairroView bairro="Freguesia do Ó" slug="freguesia-do-o" zona="Zona Norte" vizinhos={["Casa Verde", "Limão", "Brasilândia", "Cachoeirinha"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-limao') return <BairroView bairro="Limão" slug="limao" zona="Zona Norte" vizinhos={["Casa Verde", "Freguesia do Ó", "Cachoeirinha", "Santana"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-belem') return <BairroView bairro="Belém" slug="belem" zona="Zona Leste" vizinhos={["Mooca", "Brás", "Água Rasa", "Tatuapé"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-bras') return <BairroView bairro="Brás" slug="bras" zona="Zona Leste" vizinhos={["Belém", "Mooca", "Pari", "Cambuci"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-carrao') return <BairroView bairro="Carrão" slug="carrao" zona="Zona Leste" vizinhos={["Tatuapé", "Anália Franco", "Vila Formosa", "Água Rasa"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-vila-formosa') return <BairroView bairro="Vila Formosa" slug="vila-formosa" zona="Zona Leste" vizinhos={["Carrão", "Tatuapé", "Penha", "Aricanduva"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-sapopemba') return <BairroView bairro="Sapopemba" slug="sapopemba" zona="Zona Leste" vizinhos={["Vila Prudente", "São Mateus", "Itaquera", "Ermelino Matarazzo"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-penha-de-franca') return <BairroView bairro="Penha de França" slug="penha-de-franca" zona="Zona Leste" vizinhos={["Penha", "Tatuapé", "Aricanduva", "Ermelino Matarazzo"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-jardim-analia') return <BairroView bairro="Jardim Anália" slug="jardim-analia" zona="Zona Leste" vizinhos={["Anália Franco", "Tatuapé", "Carrão", "Parque São Jorge"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-aricanduva') return <BairroView bairro="Aricanduva" slug="aricanduva" zona="Zona Leste" vizinhos={["Penha", "Tatuapé", "Vila Formosa", "Carrão"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-republica') return <BairroView bairro="República" slug="republica" zona="Região Central" vizinhos={["Centro", "Consolação", "Bela Vista", "Santa Cecília"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-santa-cecilia') return <BairroView bairro="Santa Cecília" slug="santa-cecilia" zona="Região Central" vizinhos={["Higienópolis", "Consolação", "República", "Bom Retiro"]} navigate={navigate} />;
+            if (p === '/instalacao-ar-condicionado-bom-retiro') return <BairroView bairro="Bom Retiro" slug="bom-retiro" zona="Região Central" vizinhos={["Santa Cecília", "Brás", "Pari", "República"]} navigate={navigate} />;
+            if (p === '/ar-condicionado-zona-sul-sp') return <ZonaView zona="Zona Sul" bairros={["Vila Mariana", "Moema", "Brooklin", "Campo Belo", "Itaim Bibi", "Santo Amaro", "Jabaquara", "Saúde", "Ipiranga", "Cursino", "Campo Grande", "Morumbi", "Vila Andrade", "Vila Olímpia", "Paraíso", "Aclimação", "Mirandópolis", "Planalto Paulista", "Vila Clementino", "Chácara Klabin", "Cambuci", "Interlagos", "Campo Limpo", "Jardim Paulista", "Jardim Europa"]} navigate={navigate} />;
+            if (p === '/ar-condicionado-zona-norte-sp') return <ZonaView zona="Zona Norte" bairros={["Santana", "Tucuruvi", "Vila Guilherme", "Vila Maria", "Casa Verde", "Mandaqui", "Tremembé", "Jaçanã", "Freguesia do Ó", "Limão", "Brasilândia", "Cachoeirinha", "Imirim", "Bom Retiro"]} navigate={navigate} />;
+            if (p === '/ar-condicionado-zona-leste-sp') return <ZonaView zona="Zona Leste" bairros={["Tatuapé", "Anália Franco", "Mooca", "Vila Prudente", "Penha", "Carrão", "Água Rasa", "Belém", "Brás", "Vila Formosa", "Sapopemba", "Penha de França", "Jardim Anália", "Aricanduva", "Parque São Jorge", "Itaquera", "São Mateus"]} navigate={navigate} />;
+            if (p === '/ar-condicionado-zona-oeste-sp') return <ZonaView zona="Zona Oeste" bairros={["Pinheiros", "Vila Madalena", "Perdizes", "Lapa", "Pompéia", "Butantã", "Cerqueira César", "Pacaembu", "Sumaré", "Vila Leopoldina", "Barra Funda", "Alto de Pinheiros", "Consolação", "Higienópolis", "Jardins", "Água Branca", "Jaguaré"]} navigate={navigate} />;
+            if (p === '/ar-condicionado-zona-central-sp') return <ZonaView zona="Região Central" bairros={["Bela Vista", "Liberdade", "República", "Santa Cecília", "Bom Retiro", "Cambuci", "Consolação", "Brás", "Pari", "Sé", "Centro", "Glicério", "Luz"]} navigate={navigate} />;
             return <HomeView navigate={navigate} />;
           })()}
         </main>
@@ -891,6 +996,7 @@ function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
         'Campo Belo', 'Campo Grande', 'Brooklin', 'Cursino', 'Mirandópolis',
         'Planalto Paulista', 'Aclimação', 'Vila Clementino', 'Chácara Klabin',
         'Paraíso', 'Vila Olímpia', 'Itaim Bibi', 'Morumbi', 'Vila Andrade',
+        'Jardim Paulista', 'Jardim Europa', 'Campo Limpo', 'Interlagos', 'Cambuci',
       ],
     },
     {
@@ -898,9 +1004,9 @@ function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
       page: 'sao-paulo' as PageId,
       bairros: [
         'Pinheiros', 'Vila Madalena', 'Perdizes', 'Lapa', 'Pompéia', 'Água Branca',
-        'Alto de Pinheiros', 'Butantã', 'Vila Leopoldina', 'Jardim Europa',
-        'Jardim América', 'Jardim Paulista', 'Jardins', 'Cerqueira César',
-        'Consolação', 'Santa Cecília', 'Higienópolis', 'Pacaembu',
+        'Alto de Pinheiros', 'Butantã', 'Vila Leopoldina', 'Jardins',
+        'Cerqueira César', 'Consolação', 'Santa Cecília', 'Higienópolis',
+        'Pacaembu', 'Sumaré', 'Barra Funda',
       ],
     },
     {
@@ -910,6 +1016,7 @@ function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
         'Santana', 'Tucuruvi', 'Vila Guilherme', 'Vila Maria', 'Casa Verde',
         'Mandaqui', 'Tremembé', 'Jaçanã', 'Vila Medeiros', 'Freguesia do Ó',
         'Brasilândia', 'Limão', 'Bom Retiro', 'Pari', 'Santa Efigênia',
+        'Cachoeirinha', 'Imirim',
       ],
     },
     {
@@ -919,7 +1026,7 @@ function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
         'Tatuapé', 'Anália Franco', 'Mooca', 'Vila Prudente', 'Penha',
         'Aricanduva', 'Carrão', 'Água Rasa', 'Belém', 'Brás',
         'Jardim Anália', 'Parque São Jorge', 'Vila Formosa', 'Sapopemba',
-        'São Mateus', 'Itaquera', 'Guaianases',
+        'São Mateus', 'Itaquera', 'Guaianases', 'Penha de França',
       ],
     },
     {
@@ -2843,6 +2950,179 @@ function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
   )
 }
 
+function ZonaView({ zona, bairros, navigate }: {
+  zona: string
+  bairros: string[]
+  navigate: (p: PageId) => void
+}) {
+  const bairroPageMap: Record<string, PageId> = {
+    'Vila Mariana': 'bairro-vila-mariana', 'Moema': 'bairro-moema', 'Brooklin': 'bairro-brooklin',
+    'Campo Belo': 'bairro-campo-belo', 'Itaim Bibi': 'bairro-itaim-bibi', 'Santo Amaro': 'bairro-santo-amaro',
+    'Jabaquara': 'bairro-jabaquara', 'Saúde': 'bairro-saude', 'Ipiranga': 'bairro-ipiranga',
+    'Cursino': 'bairro-cursino', 'Campo Grande': 'bairro-campo-grande', 'Morumbi': 'bairro-morumbi',
+    'Vila Andrade': 'bairro-vila-andrade', 'Vila Olímpia': 'bairro-vila-olimpia', 'Paraíso': 'bairro-paraiso',
+    'Aclimação': 'bairro-aclimacao', 'Mirandópolis': 'bairro-mirandopolis', 'Planalto Paulista': 'bairro-planalto-paulista',
+    'Vila Clementino': 'bairro-vila-clementino', 'Chácara Klabin': 'bairro-chacara-klabin', 'Cambuci': 'bairro-cambuci',
+    'Interlagos': 'bairro-interlagos', 'Campo Limpo': 'bairro-campo-limpo', 'Jardim Paulista': 'bairro-jardim-paulista',
+    'Jardim Europa': 'bairro-jardim-europa', 'Santana': 'bairro-santana', 'Tucuruvi': 'bairro-tucuruvi',
+    'Vila Guilherme': 'bairro-vila-guilherme', 'Vila Maria': 'bairro-vila-maria', 'Casa Verde': 'bairro-casa-verde',
+    'Mandaqui': 'bairro-mandaqui', 'Tremembé': 'bairro-tremembe', 'Freguesia do Ó': 'bairro-freguesia-do-o',
+    'Limão': 'bairro-limao', 'Tatuapé': 'bairro-tatuape', 'Anália Franco': 'bairro-analia-franco',
+    'Mooca': 'bairro-mooca', 'Vila Prudente': 'bairro-vila-prudente', 'Penha': 'bairro-penha',
+    'Carrão': 'bairro-carrao', 'Água Rasa': 'bairro-agua-rasa', 'Belém': 'bairro-belem',
+    'Brás': 'bairro-bras', 'Vila Formosa': 'bairro-vila-formosa', 'Sapopemba': 'bairro-sapopemba',
+    'Penha de França': 'bairro-penha-de-franca', 'Jardim Anália': 'bairro-jardim-analia', 'Aricanduva': 'bairro-aricanduva',
+    'Pinheiros': 'bairro-pinheiros', 'Vila Madalena': 'bairro-vila-madalena', 'Perdizes': 'bairro-perdizes',
+    'Lapa': 'bairro-lapa', 'Pompéia': 'bairro-pompeia', 'Butantã': 'bairro-butanta',
+    'Cerqueira César': 'bairro-cerqueira-cesar', 'Pacaembu': 'bairro-pacaembu', 'Sumaré': 'bairro-sumare',
+    'Vila Leopoldina': 'bairro-vila-leopoldina', 'Barra Funda': 'bairro-barra-funda', 'Alto de Pinheiros': 'bairro-alto-de-pinheiros',
+    'Consolação': 'bairro-consolacao', 'Higienópolis': 'bairro-higienopolis', 'Jardins': 'bairro-jardins',
+    'Bela Vista': 'bairro-bela-vista', 'Liberdade': 'bairro-liberdade', 'República': 'bairro-republica',
+    'Santa Cecília': 'bairro-santa-cecilia', 'Bom Retiro': 'bairro-bom-retiro',
+  }
+
+  return (
+    <div className="pt-10 pb-20">
+      {/* Hero */}
+      <section className="bg-primary py-16">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center gap-2 text-blue-100/50 text-sm mb-4">
+            <button onClick={() => navigate('home')} className="hover:text-white">Início</button>
+            <span>/</span>
+            <button onClick={() => navigate('sao-paulo')} className="hover:text-white">São Paulo</button>
+            <span>/</span>
+            <span className="text-white font-medium">{zona}</span>
+          </div>
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-3 py-1 rounded-full text-white text-xs font-bold uppercase tracking-widest mb-6">
+              <MapPin size={12} /> São Paulo — {zona}
+            </div>
+            <h1 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-6">
+              Ar Condicionado na {zona} de São Paulo — Instalação, Manutenção e Limpeza
+            </h1>
+            <p className="text-lg text-blue-100/80 mb-8 max-w-2xl">
+              A New Clima atende todos os bairros da {zona} de SP com instalação, manutenção, limpeza e conserto de ar condicionado. Técnicos certificados, visita gratuita e garantia por escrito.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a href="https://wa.me/5511963462516" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-4 px-8 rounded-xl hover:-translate-y-0.5 transition-all shadow-lg">
+                <MessageSquare size={20} />
+                Orçamento Grátis — {zona}
+              </a>
+              <a href="tel:+5511963462516" className="inline-flex items-center justify-center gap-2 border-2 border-white/20 text-white font-bold py-4 px-8 rounded-xl hover:bg-white/10 transition-all">
+                <Phone size={20} />
+                (11) 96346-2516
+              </a>
+            </div>
+            <p className="text-blue-100/50 text-sm mt-4">⚡ Resposta em até 2 horas · Visita gratuita · Orçamento no mesmo dia</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Serviços */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-extrabold text-primary mb-3 tracking-tight">Serviços de Ar Condicionado na {zona}</h2>
+            <p className="text-slate-500 text-lg">Instalação, manutenção, limpeza e conserto em todos os bairros da {zona}.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              { tag: 'INSTALAÇÃO', title: `Instalação na ${zona}`, desc: 'Split, multi-split, cassete e VRF. Obra limpa e garantia de 1 ano.', page: 'split-multisplit' as PageId },
+              { tag: 'MANUTENÇÃO', title: `Manutenção na ${zona}`, desc: 'Preventiva e corretiva. Todas as marcas, peças originais.', page: 'manutencao-preventiva' as PageId },
+              { tag: 'LIMPEZA', title: `Limpeza na ${zona}`, desc: 'Higienização profunda com bactericida. Elimina fungos e mau cheiro.', page: 'limpeza' as PageId },
+              { tag: 'CONSERTO', title: `Conserto na ${zona}`, desc: 'Diagnóstico rápido e conserto no mesmo dia na maioria dos casos.', page: 'manutencao-corretiva' as PageId },
+            ].map((s, i) => (
+              <div key={i} onClick={() => navigate(s.page)} className="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-primary hover:shadow-xl hover:-translate-y-1 transition-all cursor-pointer group">
+                <span className={`inline-block text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-4 ${
+                  s.tag === 'INSTALAÇÃO' ? 'bg-blue-100 text-blue-700' :
+                  s.tag === 'MANUTENÇÃO' ? 'bg-emerald-100 text-emerald-700' :
+                  s.tag === 'LIMPEZA' ? 'bg-cyan-100 text-cyan-700' :
+                  'bg-orange-100 text-orange-700'
+                }`}>{s.tag}</span>
+                <h3 className="text-base font-bold text-primary mb-2 group-hover:text-primary-light">{s.title}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed mb-4">{s.desc}</p>
+                <div className="flex items-center gap-2 text-primary-light font-semibold text-sm group-hover:gap-3 transition-all">
+                  Saiba mais <ArrowRight size={13} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Bairros */}
+      <section className="py-16 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-primary mb-3 tracking-tight">
+            Bairros da {zona} que a New Clima atende
+          </h2>
+          <p className="text-slate-500 mb-8">Clique no bairro para ver informações específicas sobre instalação e manutenção de ar condicionado.</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+            {bairros.map((bairro, i) => {
+              const page = bairroPageMap[bairro]
+              return page ? (
+                <button
+                  key={i}
+                  onClick={() => navigate(page)}
+                  className="flex items-center gap-2 bg-white px-4 py-3 rounded-xl border border-slate-200 hover:border-primary hover:shadow-md transition-all text-sm font-semibold text-primary-light text-left group"
+                >
+                  <MapPin size={13} className="shrink-0" />
+                  {bairro}
+                </button>
+              ) : (
+                <div key={i} className="flex items-center gap-2 bg-white px-4 py-3 rounded-xl border border-slate-100 text-sm font-semibold text-slate-500">
+                  <MapPin size={13} className="shrink-0" />
+                  {bairro}
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <h2 className="text-2xl font-extrabold text-primary mb-2">Perguntas frequentes — Ar Condicionado na {zona}</h2>
+          <p className="text-slate-500 text-sm mb-8">Instalação, manutenção e limpeza nos bairros da {zona} de São Paulo.</p>
+          <div className="space-y-4">
+            {[
+              { q: `Quanto custa instalar ar condicionado na ${zona} de SP?`, a: `A instalação residencial padrão na ${zona} começa a partir de R$ 350. O valor varia conforme o tipo de equipamento e a complexidade da infraestrutura. Visita técnica gratuita e orçamento no mesmo dia.` },
+              { q: `Vocês atendem todos os bairros da ${zona}?`, a: `Sim. A New Clima atende todos os bairros da ${zona} de São Paulo com instalação, manutenção, limpeza e conserto de ar condicionado. Respondemos em até 2 horas e agendamos a visita conforme sua disponibilidade.` },
+              { q: `Fazem manutenção de ar condicionado na ${zona}?`, a: `Sim. Realizamos manutenção preventiva e corretiva de todas as marcas na ${zona}. Atendemos residências, apartamentos, escritórios e empresas. Contratos mensais, trimestrais ou semestrais disponíveis.` },
+            ].map((item, i) => {
+              const [open, setOpen] = React.useState(false)
+              return (
+                <div key={i} className="bg-white border border-slate-200 rounded-2xl overflow-hidden">
+                  <button onClick={() => setOpen(!open)} className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-slate-50">
+                    <span className="font-bold text-primary">{item.q}</span>
+                    <ChevronDown size={18} className={`text-slate-400 transition-transform shrink-0 ml-4 ${open ? 'rotate-180' : ''}`} />
+                  </button>
+                  <div className={`overflow-hidden transition-all duration-300 ${open ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'}`}>
+                    <div className="px-6 pb-5 pt-4 text-slate-500 text-sm leading-relaxed border-t border-slate-50">{item.a}</div>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-primary">
+        <div className="container mx-auto px-4 text-center max-w-3xl">
+          <h2 className="text-3xl font-extrabold text-white mb-4">Precisa de ar condicionado na {zona}?</h2>
+          <p className="text-blue-100/70 mb-8">Visita gratuita · Orçamento no mesmo dia · Garantia por escrito</p>
+          <a href="https://wa.me/5511963462516" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-success text-white font-bold py-4 px-10 rounded-xl shadow-xl hover:-translate-y-0.5 transition-all">
+            <MessageSquare size={20} />
+            Falar no WhatsApp Agora
+          </a>
+        </div>
+      </section>
+    </div>
+  )
+}
+
 function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
   const serviceLinks = [
     { label: 'Instalação de Ar Condicionado Split e Multi Split', page: 'split-multisplit' as PageId },
@@ -3117,6 +3397,16 @@ function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
             { label: 'Higienização de Ar Condicionado em São Paulo', page: 'serv-higienizacao-sp' as PageId },
             { label: 'PMOC em São Paulo — Contrato Obrigatório', page: 'serv-pmoc-sp' as PageId },
             { label: 'Contrato de Manutenção de Ar Condicionado em SP', page: 'serv-contrato-sp' as PageId },
+          ]} />
+        </div>
+        <div>
+          <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Regiões por Zona</h2>
+          <LinkList links={[
+            { label: 'Ar Condicionado na Zona Sul de São Paulo', page: 'zona-sul' as PageId },
+            { label: 'Ar Condicionado na Zona Norte de São Paulo', page: 'zona-norte' as PageId },
+            { label: 'Ar Condicionado na Zona Leste de São Paulo', page: 'zona-leste' as PageId },
+            { label: 'Ar Condicionado na Zona Oeste de São Paulo', page: 'zona-oeste' as PageId },
+            { label: 'Ar Condicionado na Região Central de São Paulo', page: 'zona-central' as PageId },
           ]} />
         </div>
         <div>
