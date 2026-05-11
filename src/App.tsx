@@ -2406,7 +2406,7 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
           <h2 className="text-2xl font-extrabold text-primary mb-2">Perguntas frequentes sobre ar condicionado em {bairro}</h2>
           <p className="text-slate-500 text-sm mb-6">Instalação, limpeza, conserto e manutenção — respondemos as dúvidas mais comuns.</p>
           <div className="space-y-4">
-            [
+            {[
               {
                 q: `Quanto custa instalar ar condicionado em ${bairro}?`,
                 a: `A instalação residencial padrão em ${bairro} começa a partir de R$ 350. O valor varia conforme o tipo de equipamento e a complexidade da infraestrutura. A visita técnica é gratuita e o orçamento é entregue no mesmo dia, sem compromisso.`
