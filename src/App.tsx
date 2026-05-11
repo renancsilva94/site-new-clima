@@ -2551,7 +2551,7 @@ function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
       icon: <Settings size={28} />,
       title: 'Manutenção Corretiva e Conserto',
       subtitle: 'Ar condicionado com defeito? Diagnóstico gratuito e conserto no mesmo dia na maioria dos casos',
-      img: '/images/higienizacao.png',
+      img: '/images/manutencao-corretiva.png',
       desc: 'Atendemos todas as falhas de ar condicionado: não gela, não liga, vaza água, faz barulho, desliga sozinho, congela, tem cheiro ruim ou erro no display. O técnico identifica a causa, apresenta o orçamento e executa o reparo com peça original. Garantia de 90 dias no serviço. Respondemos em até 2 horas em São Paulo e ABC.',
       quando: ['Ar condicionado que não gela ou resfria mal', 'Vazamento de água dentro do ambiente', 'Barulho ou vibração incomum', 'Aparelho que desliga sozinho ou trava', 'Erro no display ou controle remoto sem resposta'],
       page: 'manutencao-corretiva' as PageId,
@@ -2591,7 +2591,7 @@ function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
       icon: <Zap size={28} />,
       title: 'Chillers, Self-Contained e Fan Coils',
       subtitle: 'Manutenção e instalação de sistemas centrais de climatização para grandes edificações',
-      img: '/images/comercial.png',
+      img: '/images/chiller.png',
       desc: 'Para grandes edificações — shoppings, hospitais, hotéis, indústrias e edifícios corporativos — os sistemas centrais de climatização (Chiller, Self-Contained e Fan Coil) exigem manutenção especializada. Realizamos manutenção preventiva e corretiva, limpeza de torres de resfriamento, verificação de compressores e bombas, e elaboramos o PMOC conforme as normas aplicáveis. Equipe técnica com experiência em sistemas de grande porte.',
       quando: ['Shopping, hospital ou hotel com sistema central de climatização', 'Indústria ou galpão com Chiller ou Self-Contained', 'Manutenção preventiva de torre de resfriamento', 'Retrofit ou modernização de sistema central existente', 'PMOC para grandes edificações com sistema central'],
       page: 'sistemas-comerciais' as PageId,
@@ -2684,12 +2684,13 @@ function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
 
                 {/* Imagem */}
                 <div className={`hidden lg:block lg:col-span-2 relative ${i % 2 !== 0 ? 'lg:order-1 pl-0 pr-8' : 'pl-8 pr-0'}`}>
-                  <div className="h-full min-h-[360px] rounded-2xl relative overflow-hidden shadow-lg">
+                  <div className="rounded-2xl overflow-hidden shadow-lg" style={{height: "380px"}}>
                     <img
                       src={s.img}
                       alt={s.title}
                       className="w-full h-full object-cover"
                       loading="lazy"
+                      style={{height: "380px"}}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                   </div>
