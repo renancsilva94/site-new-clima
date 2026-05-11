@@ -155,12 +155,12 @@ export const RegioesSectionService = () => {
 }
 
 
-export const SistemasInstalamosSection = () => (
+export const SistemasInstalamosSection = ({ cidade = "São Paulo e ABC" }: { cidade?: string } = {}) => (
   <section className="bg-[#0f172a] py-16">
     <div className="container mx-auto px-4 max-w-6xl">
       <div className="text-center mb-10">
         <span className="text-blue-400 text-xs font-bold tracking-[0.3em] uppercase mb-4 block">Tipos de Instalação</span>
-        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Sistemas de ar condicionado que instalamos em São Paulo</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Sistemas de ar condicionado que instalamos em {cidade}</h2>
         <p className="text-blue-100/60 max-w-2xl mx-auto">Cada tipo de sistema exige técnicas e infraestrutura específicas. Conheça as opções.</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
