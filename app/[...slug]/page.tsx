@@ -591,6 +591,10 @@ const metaMap: Record<string, { title: string; description: string }> = {
     title: 'Contrato de Manutenção de Ar Condicionado em São Paulo | New Clima',
     description: 'Contratos mensais, trimestrais ou semestrais de manutenção de ar condicionado em SP. A partir de R$ 120. (11) 96346-2516.',
   },
+  'servicos': {
+    title: 'Serviços de Ar Condicionado em São Paulo e ABC | New Clima',
+    description: 'Instalação, manutenção, limpeza e conserto de ar condicionado em SP e ABC. PMOC para empresas. Visita gratuita. (11) 96346-2516.',
+  },
   'instalacao-ar-condicionado-morumbi': {
     title: 'Instalação de Ar Condicionado no Morumbi SP | New Clima',
     description: 'Instalação e manutenção de ar condicionado no Morumbi. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
