@@ -969,15 +969,20 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
   return (
     <>
             {/* Hero Section */}
-      <section className="relative overflow-hidden pt-16 pb-24" style={{
-        backgroundImage: 'url(/images/hero-bg.png)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center top',
-      }}>
+      <section className="relative overflow-hidden pt-16 pb-24">
+        {/* Hero background com fetchpriority alto para melhorar LCP */}
+        <img
+          src="/images/hero-bg.png"
+          alt=""
+          aria-hidden="true"
+          fetchPriority="high"
+          className="absolute inset-0 w-full h-full object-cover object-top"
+          style={{zIndex: 0}}
+        />
         {/* Overlay escuro para legibilidade */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0b1a3b]/92 via-[#0b1a3b]/80 to-[#0b1a3b]/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0b1a3b]/92 via-[#0b1a3b]/80 to-[#0b1a3b]/40" style={{zIndex: 1}} />
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-4 relative" style={{zIndex: 2}}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div
             >
@@ -1146,6 +1151,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                 alt={brand.name.replace(/\d+$/, '')}
                 className={`${brand.h} w-auto object-contain opacity-80 hover:opacity-100 transition-opacity`}
                 referrerPolicy="no-referrer"
+                loading="lazy"
               />
             ))}
           </div>
