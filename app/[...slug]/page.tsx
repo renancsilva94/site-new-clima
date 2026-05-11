@@ -531,6 +531,66 @@ const metaMap: Record<string, { title: string; description: string }> = {
     title: 'Ar Condicionado para Bares e Pubs em São Paulo | New Clima',
     description: 'Instalação e manutenção de ar condicionado para bares e pubs em SP. Projeto correto para alta ocupação noturna. (11) 96346-2516.',
   },
+  'instalacao-ar-condicionado-split-sp': {
+    title: 'Instalação de Ar Condicionado Split em São Paulo | New Clima',
+    description: 'Instalação de split em SP com obra limpa, infraestrutura completa e garantia de 1 ano. Todas as marcas. Visita gratuita. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-cassete-sp': {
+    title: 'Instalação de Ar Condicionado Cassete em São Paulo | New Clima',
+    description: 'Instalação de cassete de teto em SP e ABC. Ideal para escritórios e lojas. Projeto, infraestrutura e garantia inclusos. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-piso-teto-sp': {
+    title: 'Instalação de Ar Condicionado Piso-Teto em São Paulo | New Clima',
+    description: 'Instalação de piso-teto em SP. Ideal para pé-direito alto, igrejas e ambientes especiais. Garantia de 1 ano. (11) 96346-2516.',
+  },
+  'instalacao-multi-split-sp': {
+    title: 'Instalação de Multi Split em São Paulo | New Clima',
+    description: 'Instalação de multi split em SP — vários cômodos, uma condensadora. Projeto correto e garantia de 1 ano. (11) 96346-2516.',
+  },
+  'instalacao-ar-condicionado-inverter-sp': {
+    title: 'Instalação de Ar Condicionado Inverter em São Paulo | New Clima',
+    description: 'Instalação de inverter em SP com infraestrutura adequada para máxima eficiência. Todas as marcas. (11) 96346-2516.',
+  },
+  'ar-condicionado-nao-gela-sp': {
+    title: 'Ar Condicionado Não Gela em São Paulo — Conserto Rápido | New Clima',
+    description: 'Ar condicionado ligado mas não gela em SP? Diagnóstico gratuito, conserto no mesmo dia e garantia de 90 dias. (11) 96346-2516.',
+  },
+  'ar-condicionado-vazando-agua-sp': {
+    title: 'Ar Condicionado Vazando Água em São Paulo | New Clima',
+    description: 'Ar condicionado pingando em SP? Dreno entupido resolvemos na hora. Atendimento em até 2 horas. (11) 96346-2516.',
+  },
+  'recarga-gas-ar-condicionado-sp': {
+    title: 'Recarga de Gás de Ar Condicionado em São Paulo | New Clima',
+    description: 'Recarga de gás R410A e R32 em SP com verificação de vazamento. Técnicos certificados. (11) 96346-2516.',
+  },
+  'ar-condicionado-com-mau-cheiro-sp': {
+    title: 'Ar Condicionado com Mau Cheiro em São Paulo | New Clima',
+    description: 'Ar condicionado com cheiro de mofo em SP? Limpeza profunda com bactericida elimina a causa. (11) 96346-2516.',
+  },
+  'ar-condicionado-fazendo-barulho-sp': {
+    title: 'Ar Condicionado Fazendo Barulho em São Paulo | New Clima',
+    description: 'Ar condicionado barulhento em SP? Diagnóstico gratuito e conserto com garantia de 90 dias. (11) 96346-2516.',
+  },
+  'ar-condicionado-desligando-sozinho-sp': {
+    title: 'Ar Condicionado Desligando Sozinho em São Paulo | New Clima',
+    description: 'Ar condicionado que desliga sozinho em SP? Diagnóstico gratuito e conserto rápido. (11) 96346-2516.',
+  },
+  'limpeza-ar-condicionado-sp': {
+    title: 'Limpeza de Ar Condicionado em São Paulo | New Clima',
+    description: 'Limpeza profunda de ar condicionado em SP. Remove fungos, ácaros e mau cheiro. A partir de R$ 120. (11) 96346-2516.',
+  },
+  'higienizacao-ar-condicionado-sp': {
+    title: 'Higienização de Ar Condicionado em São Paulo | New Clima',
+    description: 'Higienização profissional com bactericida certificado em SP. Ar limpo, sem fungos, sem cheiro ruim. (11) 96346-2516.',
+  },
+  'pmoc-sao-paulo': {
+    title: 'PMOC em São Paulo — Contrato de Manutenção Obrigatório | New Clima',
+    description: 'PMOC em São Paulo conforme a Lei 13.589/18. Elaboração, execução e documentação para empresas, condomínios e clínicas.',
+  },
+  'contrato-manutencao-ar-condicionado-sp': {
+    title: 'Contrato de Manutenção de Ar Condicionado em São Paulo | New Clima',
+    description: 'Contratos mensais, trimestrais ou semestrais de manutenção de ar condicionado em SP. A partir de R$ 120. (11) 96346-2516.',
+  },
   'instalacao-ar-condicionado-morumbi': {
     title: 'Instalação de Ar Condicionado no Morumbi SP | New Clima',
     description: 'Instalação e manutenção de ar condicionado no Morumbi. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
