@@ -2501,20 +2501,9 @@ function SegmentoView({ slug, title, tag, headline, desc, dor, servicos, faq, vi
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="text-2xl font-extrabold text-primary mb-8">Perguntas Frequentes</h2>
           <div className="space-y-4">
-            {faq.map((item, i) => {
-              const [open, setOpen] = React.useState(false)
-              return (
-                <div key={i} className="border border-slate-200 rounded-2xl overflow-hidden">
-                  <button onClick={() => setOpen(!open)} className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-slate-50 transition-colors">
-                    <span className="font-bold text-primary">{item[0]}</span>
-                    <ChevronDown size={18} className={`text-slate-400 transition-transform shrink-0 ml-4 ${open ? 'rotate-180' : ''}`} />
-                  </button>
-                  <div className={`overflow-hidden transition-all duration-300 ${open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="px-6 pb-5 pt-4 text-slate-500 text-sm leading-relaxed border-t border-slate-50">{item[1]}</div>
-                  </div>
-                </div>
-              )
-            })}
+            {faq.map((item, i) => (
+              <FaqItem key={i} question={item[0]} answer={item[1]} />
+            ))}
           </div>
         </div>
       </section>
@@ -2703,20 +2692,9 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
                 q: `Qual o prazo de atendimento em ${bairro}?`,
                 a: `Respondemos em até 2 horas pelo WhatsApp e agendamos a visita conforme sua disponibilidade. Para urgências em ${bairro}, tentamos atender no mesmo dia.`
               },
-            ].map((item, i) => {
-              const [open, setOpen] = React.useState(false)
-              return (
-                <div key={i} className="bg-white border border-slate-200 rounded-2xl overflow-hidden">
-                  <button onClick={() => setOpen(!open)} className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-slate-50 transition-colors">
-                    <span className="font-bold text-primary">{item.q}</span>
-                    <ChevronDown size={18} className={`text-slate-400 transition-transform ${open ? 'rotate-180' : ''}`} />
-                  </button>
-                  <div className={`overflow-hidden transition-all duration-300 ${open ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="px-6 pb-5 pt-4 text-slate-500 text-sm leading-relaxed border-t border-slate-50">{item.a}</div>
-                  </div>
-                </div>
-              )
-            })}
+            ].map((item, i) => (
+              <FaqItem key={i} question={item.q} answer={item.a} />
+            ))}
           </div>
         </div>
       </section>
@@ -3111,20 +3089,9 @@ function ZonaView({ zona, bairros, navigate }: {
               { q: `Quanto custa instalar ar condicionado na ${zona} de SP?`, a: `A instalação residencial padrão na ${zona} começa a partir de R$ 350. O valor varia conforme o tipo de equipamento e a complexidade da infraestrutura. Visita técnica gratuita e orçamento no mesmo dia.` },
               { q: `Vocês atendem todos os bairros da ${zona}?`, a: `Sim. A New Clima atende todos os bairros da ${zona} de São Paulo com instalação, manutenção, limpeza e conserto de ar condicionado. Respondemos em até 2 horas e agendamos a visita conforme sua disponibilidade.` },
               { q: `Fazem manutenção de ar condicionado na ${zona}?`, a: `Sim. Realizamos manutenção preventiva e corretiva de todas as marcas na ${zona}. Atendemos residências, apartamentos, escritórios e empresas. Contratos mensais, trimestrais ou semestrais disponíveis.` },
-            ].map((item, i) => {
-              const [open, setOpen] = React.useState(false)
-              return (
-                <div key={i} className="bg-white border border-slate-200 rounded-2xl overflow-hidden">
-                  <button onClick={() => setOpen(!open)} className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-slate-50">
-                    <span className="font-bold text-primary">{item.q}</span>
-                    <ChevronDown size={18} className={`text-slate-400 transition-transform shrink-0 ml-4 ${open ? 'rotate-180' : ''}`} />
-                  </button>
-                  <div className={`overflow-hidden transition-all duration-300 ${open ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="px-6 pb-5 pt-4 text-slate-500 text-sm leading-relaxed border-t border-slate-50">{item.a}</div>
-                  </div>
-                </div>
-              )
-            })}
+            ].map((item, i) => (
+              <FaqItem key={i} question={item.q} answer={item.a} />
+            ))}
           </div>
         </div>
       </section>
