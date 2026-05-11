@@ -480,7 +480,7 @@ export default function App() {
             >
               <img 
                 src="https://cdn.coteibem.com.br/company/41315/logo/f4d0405d-28b6-4834-a8ca-9e63b68073fa.png" 
-                alt="New Clima Ar" 
+                alt="New Clima Ar Condicionado — Instalação e Manutenção em SP e ABC" 
                 className="h-24 md:h-28 w-auto object-contain transition-transform group-hover:scale-105"
               />
             </div>
@@ -694,9 +694,9 @@ export default function App() {
               {/* Col 1 — Logo + Descrição + Redes */}
               <div className="space-y-6">
                 <img
-                  src="/images/logo-new-clima.png"
-                  alt="New Clima Ar Condicionado"
-                  className="h-16 w-auto brightness-0 invert"
+                  src="/images/logo-rodape.png"
+                  alt="New Clima Ar Condicionado — Instalação e Manutenção de Ar Condicionado em SP"
+                  className="h-20 w-auto"
                 />
                 <p className="text-blue-100/60 text-sm leading-relaxed">
                   Especialista em instalação, manutenção, higienização e PMOC de ar condicionado em São Paulo e ABC Paulista. Atendimento residencial, comercial e industrial.
@@ -1400,7 +1400,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
             <div className="relative">
               <img 
                 src="https://lh3.googleusercontent.com/6heGd7th8Pj-lMMTr-rWhQgDXIHEtDgkUzYkEakZwnOvYabXG6ykwi_RHfm8RpDcoNoWHvGRKRz8Yf2l7A=s360-w360-h360" 
-                alt="Equipe New Clima Ar realizando instalação técnica" 
+                alt="Técnico New Clima realizando instalação de ar condicionado em São Paulo" 
                 loading="lazy"
                 className="rounded-3xl shadow-2xl w-full h-[600px] object-cover"
                 referrerPolicy="no-referrer"
@@ -2000,7 +2000,7 @@ function BlogCard({ title, desc, image, onClick }: { title: string, desc: string
       <div className="w-full h-48 bg-slate-100 rounded-2xl mb-6 overflow-hidden">
         <img 
           src={image || `https://picsum.photos/seed/${title}/600/400`} 
-          alt={title} 
+          alt={`${title} — New Clima Ar Condicionado SP`} 
           className="w-full h-full object-cover group-hover:scale-105 transition-transform" 
           referrerPolicy="no-referrer" 
           loading="lazy" 
@@ -2042,7 +2042,7 @@ function AboutView({ navigate }: { navigate: (p: PageId) => void }) {
           </div>
         </div>
         <div className="relative">
-          <img src="https://lh3.googleusercontent.com/iQKQFvKF5SWFsxmrm5b60daSTbTDLx4TiQGsh2R-UnoejbPz0gCFAuwhvwAd1QUAKN0Bqwy-m28h8Z2ITQ=s360-w360-h360" alt="Sobre a New Clima Ar" className="rounded-3xl shadow-2xl w-full h-auto object-cover" referrerPolicy="no-referrer" loading="lazy" />
+          <img src="https://lh3.googleusercontent.com/iQKQFvKF5SWFsxmrm5b60daSTbTDLx4TiQGsh2R-UnoejbPz0gCFAuwhvwAd1QUAKN0Bqwy-m28h8Z2ITQ=s360-w360-h360" alt="New Clima Ar Condicionado — empresa de ar condicionado em São Paulo e ABC desde 2018" className="rounded-3xl shadow-2xl w-full h-auto object-cover" referrerPolicy="no-referrer" loading="lazy" />
           <div className="absolute -bottom-6 -right-6 bg-white p-8 rounded-2xl shadow-xl border border-slate-100 hidden md:block">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 bg-primary-light/10 rounded-full flex items-center justify-center text-primary-light">
