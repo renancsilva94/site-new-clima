@@ -455,6 +455,82 @@ const metaMap: Record<string, { title: string; description: string }> = {
     title: 'PMOC em Mauá — Contrato de Manutenção Obrigatório | New Clima',
     description: 'PMOC em Mauá conforme a Lei 13.589/18. Elaboração, execução e documentação completa para empresas, condomínios e clínicas. (11) 96346-2516.',
   },
+  'ar-condicionado-farmacia-sao-paulo': {
+    title: 'Ar Condicionado para Farmácias em São Paulo | New Clima',
+    description: 'Instalação e manutenção de ar condicionado para farmácias em SP. Temperatura controlada para medicamentos, PMOC conforme ANVISA. (11) 96346-2516.',
+  },
+  'ar-condicionado-consultorio-odontologico-sao-paulo': {
+    title: 'Ar Condicionado para Consultório Odontológico em SP | New Clima',
+    description: 'Ar condicionado silencioso para consultórios odontológicos em São Paulo. PMOC, limpeza com bactericida e instalação fora do horário. (11) 96346-2516.',
+  },
+  'ar-condicionado-salao-beleza-sao-paulo': {
+    title: 'Ar Condicionado para Salão de Beleza em São Paulo | New Clima',
+    description: 'Instalação e manutenção de ar condicionado para salões de beleza e barbearias em SP e ABC. Projeto correto para secadores e químicas. (11) 96346-2516.',
+  },
+  'ar-condicionado-supermercado-sao-paulo': {
+    title: 'Ar Condicionado para Supermercados em São Paulo | New Clima',
+    description: 'Instalação e manutenção de ar condicionado para supermercados em SP. PMOC, atendimento emergencial e manutenção fora do horário. (11) 96346-2516.',
+  },
+  'ar-condicionado-data-center-sao-paulo': {
+    title: 'Ar Condicionado para Data Center e Sala de Servidor em SP | New Clima',
+    description: 'Ar condicionado de precisão para data centers e salas de servidor em São Paulo. Sistemas redundantes e atendimento emergencial. (11) 96346-2516.',
+  },
+  'ar-condicionado-coworking-sao-paulo': {
+    title: 'Ar Condicionado para Coworking em São Paulo | New Clima',
+    description: 'Instalação e manutenção de ar condicionado para coworkings e escritórios flexíveis em SP. Silencioso, PMOC e contrato de manutenção. (11) 96346-2516.',
+  },
+  'ar-condicionado-igreja-sao-paulo': {
+    title: 'Ar Condicionado para Igrejas e Templos em São Paulo | New Clima',
+    description: 'Instalação de ar condicionado para igrejas e templos em SP e ABC. Sistemas silenciosos, pé-direito alto e projeto específico. (11) 96346-2516.',
+  },
+  'ar-condicionado-laboratorio-sao-paulo': {
+    title: 'Ar Condicionado para Laboratórios em São Paulo | New Clima',
+    description: 'Instalação e manutenção de ar condicionado para laboratórios em SP. Temperatura controlada, PMOC conforme ANVISA e documentação. (11) 96346-2516.',
+  },
+  'ar-condicionado-pet-shop-sao-paulo': {
+    title: 'Ar Condicionado para Pet Shops e Clínicas Veterinárias em SP | New Clima',
+    description: 'Ar condicionado para pet shops e clínicas veterinárias em São Paulo. Temperatura ideal para animais e limpeza frequente. (11) 96346-2516.',
+  },
+  'ar-condicionado-clinica-estetica-sao-paulo': {
+    title: 'Ar Condicionado para Clínicas de Estética em São Paulo | New Clima',
+    description: 'Instalação silenciosa de ar condicionado para clínicas de estética em SP. PMOC, instalação discreta e conforto premium. (11) 96346-2516.',
+  },
+  'ar-condicionado-loja-varejo-sao-paulo': {
+    title: 'Ar Condicionado para Lojas e Varejo em São Paulo | New Clima',
+    description: 'Instalação e manutenção de ar condicionado para lojas e varejo em SP. Ambiente fresco que convida o cliente a entrar. (11) 96346-2516.',
+  },
+  'ar-condicionado-banco-financeira-sao-paulo': {
+    title: 'Ar Condicionado para Bancos e Financeiras em São Paulo | New Clima',
+    description: 'Instalação e PMOC para agências bancárias em SP. Manutenção fora do horário bancário e documentação completa. (11) 96346-2516.',
+  },
+  'ar-condicionado-padaria-sao-paulo': {
+    title: 'Ar Condicionado para Padarias e Confeitarias em São Paulo | New Clima',
+    description: 'Ar condicionado para padarias em SP com projeto correto para o calor dos fornos. Limpeza frequente e manutenção especializada. (11) 96346-2516.',
+  },
+  'ar-condicionado-concessionaria-sao-paulo': {
+    title: 'Ar Condicionado para Concessionárias em São Paulo | New Clima',
+    description: 'Instalação de ar condicionado para showrooms e concessionárias em SP e ABC. Projeto para grandes salões de exposição. (11) 96346-2516.',
+  },
+  'ar-condicionado-escritorio-advocacia-sao-paulo': {
+    title: 'Ar Condicionado para Escritório de Advocacia em SP | New Clima',
+    description: 'Ar condicionado silencioso para escritórios de advocacia em São Paulo. PMOC, controle por sala e instalação fora do expediente. (11) 96346-2516.',
+  },
+  'ar-condicionado-consultorio-psicologia-sao-paulo': {
+    title: 'Ar Condicionado para Consultório de Psicologia em SP | New Clima',
+    description: 'Ar condicionado ultrasilencioso para consultórios de psicologia em São Paulo. Até 19dB — não interfere nas sessões. (11) 96346-2516.',
+  },
+  'ar-condicionado-clinica-fisioterapia-sao-paulo': {
+    title: 'Ar Condicionado para Clínicas de Fisioterapia em SP | New Clima',
+    description: 'Instalação e PMOC para clínicas de fisioterapia em São Paulo. Temperatura ideal para tratamentos e documentação para Vigilância Sanitária. (11) 96346-2516.',
+  },
+  'ar-condicionado-creche-sao-paulo': {
+    title: 'Ar Condicionado para Creches e Berçários em São Paulo | New Clima',
+    description: 'Instalação de ar condicionado para creches e berçários em SP. Produtos seguros para bebês, PMOC e temperatura controlada. (11) 96346-2516.',
+  },
+  'ar-condicionado-bar-pub-sao-paulo': {
+    title: 'Ar Condicionado para Bares e Pubs em São Paulo | New Clima',
+    description: 'Instalação e manutenção de ar condicionado para bares e pubs em SP. Projeto correto para alta ocupação noturna. (11) 96346-2516.',
+  },
   'instalacao-ar-condicionado-morumbi': {
     title: 'Instalação de Ar Condicionado no Morumbi SP | New Clima',
     description: 'Instalação e manutenção de ar condicionado no Morumbi. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
