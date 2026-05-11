@@ -961,18 +961,18 @@ function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
 function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative bg-primary overflow-hidden pt-16 pb-24">
-        <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-white/20 rounded-full blur-[80px] -translate-y-1/3 translate-x-1/3" />
-          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-400/20 rounded-full blur-[80px] translate-y-1/3 -translate-x-1/4" />
-          <div className="absolute top-1/2 left-1/2 w-[300px] h-[300px] bg-white/5 rounded-full blur-[60px] -translate-x-1/2 -translate-y-1/2" />
-        </div>
+            {/* Hero Section */}
+      <section className="relative overflow-hidden pt-16 pb-24" style={{
+        backgroundImage: 'url(/images/hero-bg.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center top',
+      }}>
+        {/* Overlay escuro para legibilidade */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0b1a3b]/92 via-[#0b1a3b]/80 to-[#0b1a3b]/40" />
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div
-
             >
               <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-4 py-1.5 rounded-full text-white text-sm font-semibold mb-8">
                 <Zap size={14} className="text-yellow-400" />
@@ -983,25 +983,25 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
               </h1>
               <div className="flex flex-col gap-3 mb-10 max-w-md">
                 {[
-                  'Instalação limpa com garantia de 1 ano por escrito',
-                  'Manutenção e conserto de todas as marcas em SP e ABC',
-                  'Visita técnica gratuita — orçamento no mesmo dia',
+                  `Instalação com obra limpa e garantia de 1 ano por escrito`,
+                  `Manutenção, limpeza e conserto de todas as marcas`,
+                  `Visita técnica gratuita — orçamento no mesmo dia`,
                 ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <CheckCircle2 size={18} className="text-success shrink-0 mt-0.5" />
-                    <span className="text-blue-100/80 text-base leading-snug">{item}</span>
+                  <div key={i} className="flex items-center gap-3">
+                    <CheckCircle2 size={18} className="text-success shrink-0" />
+                    <span className="text-blue-100/90 text-base">{item}</span>
                   </div>
                 ))}
               </div>
-              
-              <div className="flex flex-wrap gap-0 mb-10 bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
+
+              <div className="flex flex-wrap gap-0 mb-10 bg-white/5 border border-white/10 rounded-2xl overflow-hidden w-fit">
                 {[
-                  { number: "2018", label: "Em São Paulo e ABC" },
+                  { number: "2018", label: "Em SP e ABC" },
                   { number: "500+", label: "Equipamentos" },
                   { number: "4.9★", label: "Google" },
                   { number: "100%", label: "Com garantia" },
                 ].map((stat, i) => (
-                  <div key={i} className={`flex-1 min-w-[80px] px-4 py-4 text-center ${i < 3 ? 'border-r border-white/10' : ''}`}>
+                  <div key={i} className={`px-5 py-4 text-center ${i < 3 ? 'border-r border-white/10' : ''}`}>
                     <div className="text-xl font-extrabold text-white">{stat.number}</div>
                     <div className="text-[11px] text-blue-100/50 font-medium mt-0.5">{stat.label}</div>
                   </div>
@@ -1020,13 +1020,13 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                   Ver avaliações no Google
                 </a>
               </div>
+              <p className="text-blue-100/50 text-sm mt-4">⚡ Resposta em até 2 horas · Visita gratuita · Orçamento no mesmo dia</p>
             </div>
 
               <div
-
               className="hidden lg:block relative"
             >
-              <div className="relative z-10 bg-white rounded-3xl p-8 shadow-2xl border border-white/10">
+              <div className="relative z-10 bg-white/95 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/20">
                 <div className="mb-8">
                   <h3 className="text-xl font-bold text-primary">Receba uma Proposta</h3>
                   <p className="text-sm text-slate-500">Preencha os dados e entraremos em contato.</p>
@@ -1055,14 +1055,10 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                   </button>
                 </form>
               </div>
-              {/* Decorative elements */}
-              <div className="absolute -top-6 -right-6 w-32 h-32 bg-accent rounded-full blur-3xl opacity-20" />
-              <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-blue-400 rounded-full blur-3xl opacity-10" />
             </div>
           </div>
         </div>
       </section>
-      
       {/* Brands Section */}
       <section className="bg-white py-8 border-b border-slate-100 relative z-20 overflow-hidden">
         <style>{`
