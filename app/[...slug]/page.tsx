@@ -815,6 +815,34 @@ const metaMap: Record<string, { title: string; description: string }> = {
     title: 'Ar Condicionado na Região Central de São Paulo | New Clima',
     description: 'Instalação e manutenção de ar condicionado em todos os bairros da Região Central de SP. (11) 96346-2516.',
   },
+  'manutencao-chiller-sao-paulo': {
+    title: 'Manutenção de Chiller em São Paulo | New Clima',
+    description: 'Manutenção preventiva e corretiva de chiller em SP e ABC. Carrier, Trane, Daikin, York. PMOC e atendimento emergencial. (11) 96346-2516.',
+  },
+  'manutencao-fan-coil-sao-paulo': {
+    title: 'Manutenção e Limpeza de Fan Coil em São Paulo | New Clima',
+    description: 'Manutenção preventiva, corretiva e higienização de fan coil em SP e ABC. PMOC e laudo para Vigilância Sanitária. (11) 96346-2516.',
+  },
+  'manutencao-self-contained-sao-paulo': {
+    title: 'Manutenção de Self Contained em São Paulo | New Clima',
+    description: 'Manutenção de ar condicionado self contained em SP e ABC. Data centers, shoppings e hospitais. (11) 96346-2516.',
+  },
+  'limpeza-fan-coil-sao-paulo': {
+    title: 'Limpeza e Higienização de Fan Coil em São Paulo | New Clima',
+    description: 'Higienização profunda de fan coil em SP e ABC. Laudo para Vigilância Sanitária incluído. (11) 96346-2516.',
+  },
+  'central-agua-gelada-sao-paulo': {
+    title: 'Central de Água Gelada em São Paulo — Instalação e Manutenção | New Clima',
+    description: 'Instalação, manutenção e PMOC de central de água gelada em SP e ABC. Chiller, fan coil e torres de resfriamento. (11) 96346-2516.',
+  },
+  'ar-condicionado-aquecimento-sp': {
+    title: 'Ar Condicionado para Aquecimento em São Paulo | New Clima',
+    description: 'Modo quente do split inverter — a forma mais econômica de aquecer no inverno de SP. Instalação e manutenção. (11) 96346-2516.',
+  },
+  'manutencao-preventiva-antes-do-verao-sp': {
+    title: 'Manutenção de Ar Condicionado Antes do Verão em SP | New Clima',
+    description: 'Revise seu ar condicionado agora e chegue ao verão sem susto. Manutenção preventiva completa em SP e ABC. (11) 96346-2516.',
+  },
   'instalacao-ar-condicionado-morumbi': {
     title: 'Instalação de Ar Condicionado no Morumbi SP | New Clima',
     description: 'Instalação e manutenção de ar condicionado no Morumbi. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
