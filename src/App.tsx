@@ -696,7 +696,7 @@ export default function App() {
                 <img
                   src="/images/logo-rodape.png"
                   alt="New Clima Ar Condicionado — Instalação e Manutenção de Ar Condicionado em SP"
-                  className="h-20 w-auto"
+                  className="h-28 w-auto invert"
                 />
                 <p className="text-blue-100/60 text-sm leading-relaxed">
                   Especialista em instalação, manutenção, higienização e PMOC de ar condicionado em São Paulo e ABC Paulista. Atendimento residencial, comercial e industrial.
