@@ -348,8 +348,8 @@ export default function App() {
   React.useEffect(() => { setMounted(true); }, []);
   if (!mounted) return null;
 
-  const navigate = (page: PageId) => {
-    const routes: Record<PageId, string> = {
+  const navigate = (page: string) => {
+    const routes: Record<string, string> = {
       'home': '/',
       'split-multisplit': '/instalacao-ar-condicionado-split-sao-paulo',
       'sistemas-comerciais': '/ar-condicionado-comercial-sao-paulo',
@@ -1005,13 +1005,13 @@ export default function App() {
 // --- Views ---
 
 // --- Regions Tabs Component ---
-function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
+function RegionsTabs({ navigate }: { navigate: (p: string) => void }) {
   const [activeTab, setActiveTab] = React.useState(0)
 
   const tabs = [
     {
       label: 'Zona Sul',
-      page: 'sao-paulo' as PageId,
+      page: 'sao-paulo',
       bairros: [
         'Vila Mariana', 'Moema', 'Saúde', 'Ipiranga', 'Jabaquara', 'Santo Amaro',
         'Campo Belo', 'Campo Grande', 'Brooklin', 'Cursino', 'Mirandópolis',
@@ -1022,7 +1022,7 @@ function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
     },
     {
       label: 'Zona Oeste',
-      page: 'sao-paulo' as PageId,
+      page: 'sao-paulo',
       bairros: [
         'Pinheiros', 'Vila Madalena', 'Perdizes', 'Lapa', 'Pompéia', 'Água Branca',
         'Alto de Pinheiros', 'Butantã', 'Vila Leopoldina', 'Jardins',
@@ -1032,7 +1032,7 @@ function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
     },
     {
       label: 'Zona Norte',
-      page: 'sao-paulo' as PageId,
+      page: 'sao-paulo',
       bairros: [
         'Santana', 'Tucuruvi', 'Vila Guilherme', 'Vila Maria', 'Casa Verde',
         'Mandaqui', 'Tremembé', 'Jaçanã', 'Vila Medeiros', 'Freguesia do Ó',
@@ -1042,7 +1042,7 @@ function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
     },
     {
       label: 'Zona Leste',
-      page: 'sao-paulo' as PageId,
+      page: 'sao-paulo',
       bairros: [
         'Tatuapé', 'Anália Franco', 'Mooca', 'Vila Prudente', 'Penha',
         'Aricanduva', 'Carrão', 'Água Rasa', 'Belém', 'Brás',
@@ -1052,7 +1052,7 @@ function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
     },
     {
       label: 'Região Central',
-      page: 'sao-paulo' as PageId,
+      page: 'sao-paulo',
       bairros: [
         'Centro', 'República', 'Sé', 'Liberdade', 'Bela Vista', 'Cambuci',
         'Consolação', 'Santa Cecília', 'Vila Buarque', 'Luz', 'Glicério',
@@ -1061,7 +1061,7 @@ function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
     },
     {
       label: 'Santo André',
-      page: 'santo-andre' as PageId,
+      page: 'santo-andre',
       bairros: [
         'Centro', 'Bairro Jardim', 'Campestre', 'Vila Assunção', 'Vila Gilda',
         'Vila Bastos', 'Utinga', 'Santa Teresinha', 'Parque das Nações',
@@ -1071,7 +1071,7 @@ function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
     },
     {
       label: 'São Bernardo',
-      page: 'sao-bernardo' as PageId,
+      page: 'sao-bernardo',
       bairros: [
         'Centro', 'Rudge Ramos', 'Jardim do Mar', 'Assunção', 'Nova Petrópolis',
         'Baeta Neves', 'Planalto', 'Demarchi', 'Alves Dias', 'Anchieta',
@@ -1081,7 +1081,7 @@ function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
     },
     {
       label: 'São Caetano',
-      page: 'sao-caetano' as PageId,
+      page: 'sao-caetano',
       bairros: [
         'Centro', 'Santa Paula', 'Barcelona', 'Santo Antônio', 'Olímpico',
         'Boa Vista', 'Cerâmica', 'Fundação', 'Nova Gerty', 'Jardim São Caetano',
@@ -1090,7 +1090,7 @@ function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
     },
     {
       label: 'Diadema',
-      page: 'diadema' as PageId,
+      page: 'diadema',
       bairros: [
         'Centro', 'Serraria', 'Taboão', 'Piraporinha', 'Canhema', 'Conceição',
         'Eldorado', 'Campanário', 'Inamar', 'Vila Nogueira', 'Casa Grande',
@@ -1099,7 +1099,7 @@ function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
     },
     {
       label: 'Mauá',
-      page: 'maua' as PageId,
+      page: 'maua',
       bairros: [
         'Centro', 'Jardim Zaíra', 'Parque São Vicente', 'Vila Assis', 'Guapituba',
         'Vila Vitória', 'Jardim Oratório', 'Capuava', 'Vila Cardoso',
@@ -1153,7 +1153,7 @@ function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
 }
 
 
-function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
+function HomeView({ navigate }: { navigate: (p: string) => void }) {
   return (
     <>
             {/* Hero Section */}
@@ -1368,42 +1368,42 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                 title: "Instalação de Ar Condicionado em São Paulo",
                 desc: "Split, multi-split, VRF e cassete em São Paulo e ABC. Projeto dimensionado, instalação limpa e teste de funcionamento antes de entregar.",
                 img: "/images/instalacao.png",
-                page: 'split-multisplit' as PageId,
+                page: 'split-multisplit',
               },
               {
                 tag: "MANUTENÇÃO",
                 title: "Manutenção Preventiva e Corretiva em São Paulo",
                 desc: "Planos mensais, trimestrais ou sob demanda em São Paulo e ABC. Atuamos antes do defeito aparecer — evita parada e conta de luz inflada.",
                 img: "/images/limpeza.png",
-                page: 'manutencao-preventiva' as PageId,
+                page: 'manutencao-preventiva',
               },
               {
                 tag: "LIMPEZA",
                 title: "Limpeza de Ar Condicionado em São Paulo",
                 desc: "Remove fungos, bactérias e poeira acumulados no aparelho em São Paulo e ABC. Ar mais limpo para respirar, menos cheiro ruim e equipamento que dura mais.",
                 img: "/images/higienizacao.png",
-                page: 'limpeza' as PageId,
+                page: 'limpeza',
               },
               {
                 tag: "MANUTENÇÃO EMPRESARIAL",
                 title: "Contrato de Manutenção para Empresas (PMOC)",
                 desc: "Obrigatório por lei para prédios, hospitais e shoppings com mais de 60.000 BTUs. Cuidamos de tudo: visitas, registros e documentação conforme a Lei 13.589/18.",
                 img: "/images/pmoc.png",
-                page: 'manutencao-preventiva' as PageId,
+                page: 'manutencao-preventiva',
               },
               {
                 tag: "MULTI AMBIENTES",
                 title: "Ar Condicionado para Vários Ambientes (VRF)",
                 desc: "Ideal para empresas, edifícios e casas grandes que precisam climatizar vários cômodos ao mesmo tempo, com economia de energia e controle individual.",
                 img: "/images/vrf.png",
-                page: 'vrf-mini-vrf' as PageId,
+                page: 'vrf-mini-vrf',
               },
               {
                 tag: "COMERCIAL",
                 title: "Ar Condicionado Comercial em São Paulo e ABC",
                 desc: "Cassete, Piso-Teto e Dutado para lojas, escritórios e restaurantes em São Paulo e ABC. Projeto técnico e execução completos.",
                 img: "/images/comercial.png",
-                page: 'sistemas-comerciais' as PageId,
+                page: 'sistemas-comerciais',
               },
             ].map((s, i) => (
               <div
@@ -1459,25 +1459,25 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                 icon: <Wind size={28} />,
                 title: "Residencial",
                 desc: "Instalamos e cuidamos do ar condicionado em apartamentos, casas e condomínios em São Paulo e ABC. Obra limpa, sem sujeira, com garantia de 1 ano por escrito.",
-                page: 'split-multisplit' as PageId,
+                page: 'split-multisplit',
               },
               {
                 icon: <Settings size={28} />,
                 title: "Empresas e Comércios",
                 desc: "Instalação e manutenção de ar condicionado para escritórios, clínicas, lojas e restaurantes. Sem barulho, sem parar a operação e com contrato de manutenção (PMOC).",
-                page: 'sistemas-comerciais' as PageId,
+                page: 'sistemas-comerciais',
               },
               {
                 icon: <Zap size={28} />,
                 title: "Industrial",
                 desc: "Galpões, fábricas e data centers. Sistemas dimensionados para funcionar 24h por dia, com manutenção preventiva que evita paradas inesperadas na produção.",
-                page: 'vrf-mini-vrf' as PageId,
+                page: 'vrf-mini-vrf',
               },
               {
                 icon: <ShieldCheck size={28} />,
                 title: "Contrato de Manutenção (PMOC)",
                 desc: "Para empresas obrigadas pela Lei 13.589/18. Assumimos toda a manutenção, documentação e responsabilidade técnica — você fica em dia com a Vigilância Sanitária.",
-                page: 'manutencao-preventiva' as PageId,
+                page: 'manutencao-preventiva',
               },
             ].map((seg, i) => (
               <div
@@ -1962,7 +1962,7 @@ function FaqItem({ question, answer }: { question: string, answer: string }) {
 
 // --- Placeholder Views (To be expanded) ---
 
-function ServiceDetailView({ service, navigate }: { service: string, navigate: (p: PageId) => void }) {
+function ServiceDetailView({ service, navigate }: { service: string, navigate: (p: string) => void }) {
   return (
     <div className="pt-10">
       {service === 'split' && <SplitMultiSplit />}
@@ -1980,7 +1980,7 @@ function ServiceDetailView({ service, navigate }: { service: string, navigate: (
   );
 }
 
-function BlogView({ navigate, postId }: { navigate: (p: PageId) => void, postId?: string }) {
+function BlogView({ navigate, postId }: { navigate: (p: string) => void, postId?: string }) {
   const BackButton = () => (
     <button onClick={() => navigate('blog')} className="mb-20 text-primary-light font-bold flex items-center gap-2 hover:gap-3 transition-all">
       <ArrowRight size={16} className="rotate-180" /> Voltar para Blog
@@ -2201,7 +2201,7 @@ function BlogCard({ title, desc, image, onClick }: { title: string, desc: string
   );
 }
 
-function AboutView({ navigate }: { navigate: (p: PageId) => void }) {
+function AboutView({ navigate }: { navigate: (p: string) => void }) {
   return (
     <div className="py-16 container mx-auto px-4">
       
@@ -2367,7 +2367,7 @@ function ContactView() {
   );
 }
 
-function RegionView({ region, navigate }: { region: string, navigate: (p: PageId) => void }) {
+function RegionView({ region, navigate }: { region: string, navigate: (p: string) => void }) {
   return (
     <div>
       {region === 'sao-paulo' && <SaoPauloRegion navigate={navigate} />}
@@ -2402,7 +2402,7 @@ function SegmentoView({ slug, title, tag, headline, desc, dor, servicos, faq, vi
   servicos: string[]
   faq: [string, string][]
   vizinhos: string
-  navigate: (p: PageId) => void
+  navigate: (p: string) => void
 }) {
   return (
     <div className="pt-10 pb-20">
@@ -2543,15 +2543,15 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
   slug: string
   zona: string
   vizinhos: string[]
-  navigate: (p: PageId) => void
+  navigate: (p: string) => void
 }) {
   const servicos = [
-    { tag: 'INSTALAÇÃO', title: `Instalação de Ar Condicionado em ${bairro}`, desc: `Split, multi-split e sistemas para vários cômodos em ${bairro}. Obra limpa, sem quebradeira e com garantia de 1 ano por escrito.`, page: 'split-multisplit' as PageId },
-    { tag: 'MANUTENÇÃO', title: `Manutenção de Ar Condicionado em ${bairro}`, desc: `Manutenção preventiva e corretiva em ${bairro}. Atendemos todas as marcas com peças originais e garantia de 90 dias.`, page: 'manutencao-preventiva' as PageId },
-    { tag: 'LIMPEZA', title: `Limpeza de Ar Condicionado em ${bairro}`, desc: `Limpeza profunda que elimina fungos, ácaros e mau cheiro em ${bairro}. Produto bactericida, ar mais limpo e aparelho que dura mais.`, page: 'limpeza' as PageId },
-    { tag: 'CONSERTO', title: `Conserto de Ar Condicionado em ${bairro}`, desc: `Ar condicionado parou de funcionar em ${bairro}? Diagnóstico rápido, conserto no mesmo dia na maioria dos casos e garantia de 90 dias.`, page: 'manutencao-corretiva' as PageId },
-    { tag: 'CONTRATO', title: `Contrato de Manutenção para Empresas em ${bairro}`, desc: `Contrato de manutenção (PMOC) para empresas, condomínios e clínicas em ${bairro}. Documentação completa conforme a Lei 13.589/18.`, page: 'manutencao-preventiva' as PageId },
-    { tag: 'APARTAMENTO', title: `Ar Condicionado em Apartamento em ${bairro}`, desc: `Instalamos em apartamentos e condomínios em ${bairro} respeitando as normas do regimento. Obra limpa, sem sujeira, aprovado pelo síndico.`, page: 'res-apartamento' as PageId },
+    { tag: 'INSTALAÇÃO', title: `Instalação de Ar Condicionado em ${bairro}`, desc: `Split, multi-split e sistemas para vários cômodos em ${bairro}. Obra limpa, sem quebradeira e com garantia de 1 ano por escrito.`, page: 'split-multisplit' },
+    { tag: 'MANUTENÇÃO', title: `Manutenção de Ar Condicionado em ${bairro}`, desc: `Manutenção preventiva e corretiva em ${bairro}. Atendemos todas as marcas com peças originais e garantia de 90 dias.`, page: 'manutencao-preventiva' },
+    { tag: 'LIMPEZA', title: `Limpeza de Ar Condicionado em ${bairro}`, desc: `Limpeza profunda que elimina fungos, ácaros e mau cheiro em ${bairro}. Produto bactericida, ar mais limpo e aparelho que dura mais.`, page: 'limpeza' },
+    { tag: 'CONSERTO', title: `Conserto de Ar Condicionado em ${bairro}`, desc: `Ar condicionado parou de funcionar em ${bairro}? Diagnóstico rápido, conserto no mesmo dia na maioria dos casos e garantia de 90 dias.`, page: 'manutencao-corretiva' },
+    { tag: 'CONTRATO', title: `Contrato de Manutenção para Empresas em ${bairro}`, desc: `Contrato de manutenção (PMOC) para empresas, condomínios e clínicas em ${bairro}. Documentação completa conforme a Lei 13.589/18.`, page: 'manutencao-preventiva' },
+    { tag: 'APARTAMENTO', title: `Ar Condicionado em Apartamento em ${bairro}`, desc: `Instalamos em apartamentos e condomínios em ${bairro} respeitando as normas do regimento. Obra limpa, sem sujeira, aprovado pelo síndico.`, page: 'res-apartamento' },
   ]
 
   return (
@@ -2742,7 +2742,7 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
   )
 }
 
-function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
+function ServicosView({ navigate }: { navigate: (p: string) => void }) {
   const servicos = [
     {
       num: '01',
@@ -2752,7 +2752,7 @@ function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
       img: '/images/instalacao.png',
       desc: 'Instalamos ar condicionado residencial e comercial em São Paulo e ABC. Fazemos toda a infraestrutura necessária — tubulação de cobre, dreno, ponto elétrico e suporte — com obra limpa, sem quebradeira e sem sujeira. O equipamento é testado na sua frente antes de finalizar. Atendemos split hi-wall, multi-split, cassete de teto, piso-teto e sistemas VRF.',
       quando: ['Equipamento novo comprado em loja ou online', 'Primeiro ar condicionado do apartamento ou casa', 'Instalação em obra ou reforma', 'Troca de equipamento antigo por novo', 'Multi-split para climatizar vários cômodos'],
-      page: 'split-multisplit' as PageId,
+      page: 'split-multisplit',
     },
     {
       num: '02',
@@ -2762,7 +2762,7 @@ function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
       img: '/images/limpeza.png',
       desc: 'A manutenção preventiva mantém o ar condicionado funcionando com eficiência máxima e evita quebras inesperadas. Realizamos limpeza de filtros, serpentina e dreno, verificação de nível de gás, teste dos componentes elétricos e medição de temperatura. Entregamos relatório técnico após cada visita. Oferecemos contratos mensais, trimestrais ou semestrais conforme a necessidade.',
       quando: ['Residência com uso diário — manutenção semestral', 'Escritório, loja ou clínica — manutenção trimestral', 'Restaurante, academia ou local de alta ocupação — manutenção bimensal', 'Empresa com PMOC obrigatório pela Lei 13.589/18', 'Equipamento que nunca passou por manutenção'],
-      page: 'manutencao-preventiva' as PageId,
+      page: 'manutencao-preventiva',
     },
     {
       num: '03',
@@ -2772,7 +2772,7 @@ function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
       img: '/images/manutencao-corretiva.png',
       desc: 'Atendemos todas as falhas de ar condicionado: não gela, não liga, vaza água, faz barulho, desliga sozinho, congela, tem cheiro ruim ou erro no display. O técnico identifica a causa, apresenta o orçamento e executa o reparo com peça original. Garantia de 90 dias no serviço. Respondemos em até 2 horas em São Paulo e ABC.',
       quando: ['Ar condicionado que não gela ou resfria mal', 'Vazamento de água dentro do ambiente', 'Barulho ou vibração incomum', 'Aparelho que desliga sozinho ou trava', 'Erro no display ou controle remoto sem resposta'],
-      page: 'manutencao-corretiva' as PageId,
+      page: 'manutencao-corretiva',
     },
     {
       num: '04',
@@ -2782,7 +2782,7 @@ function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
       img: '/images/higienizacao.png',
       desc: 'A limpeza profunda (higienização) vai além da troca de filtro. Limpamos a serpentina evaporadora, a turbina e o dreno com bactericida de registro na ANVISA — eliminando fungos, ácaros e bactérias invisíveis que o filtro não retém. Indicada para quem tem alergia, asma, crianças pequenas ou aparelho com mau cheiro. O resultado é imediato: ar mais limpo logo na primeira hora.',
       quando: ['Ar condicionado com cheiro de mofo ou queimado', 'Moradores com alergia, rinite ou asma', 'Crianças pequenas ou idosos no ambiente', 'Aparelho que não passou por limpeza há mais de 6 meses', 'Ambiente com muita poluição ou poeira'],
-      page: 'limpeza' as PageId,
+      page: 'limpeza',
     },
     {
       num: '05',
@@ -2792,7 +2792,7 @@ function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
       img: '/images/pmoc.png',
       desc: 'O PMOC é obrigatório para qualquer estabelecimento com sistema de ar condicionado acima de 60.000 BTUs — empresas, condomínios, clínicas, escolas, restaurantes e shoppings. Elaboramos o plano conforme a norma, executamos todas as manutenções preventivas, emitimos relatório técnico após cada visita e fornecemos ART. Documentação completa para a Vigilância Sanitária, sem risco de autuação.',
       quando: ['Empresa, condomínio ou clínica com AC acima de 60.000 BTUs', 'Estabelecimento fiscalizado pela Vigilância Sanitária', 'PMOC vencido ou irregular que precisa ser regularizado', 'Novo estabelecimento que precisa elaborar o plano', 'Prédio comercial que exige documentação para auditoria'],
-      page: 'manutencao-preventiva' as PageId,
+      page: 'manutencao-preventiva',
     },
     {
       num: '06',
@@ -2802,7 +2802,7 @@ function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
       img: '/images/vrf.png',
       desc: 'O sistema VRF (Variable Refrigerant Flow) é a solução para empresas, edifícios e residências de alto padrão que precisam climatizar vários ambientes ao mesmo tempo, com controle individual de temperatura por cômodo. Uma única condensadora externa atende múltiplas evaporadoras com altíssima eficiência energética. Fazemos projeto, instalação e manutenção de sistemas VRF e Mini VRF de todas as marcas.',
       quando: ['Empresa ou escritório com vários ambientes para climatizar', 'Edifício corporativo ou hotel com necessidade de controle individual', 'Residência de alto padrão que quer um sistema integrado e elegante', 'Retrofit de sistema antigo por solução mais eficiente', 'Projeto novo que exige máxima eficiência energética'],
-      page: 'vrf-mini-vrf' as PageId,
+      page: 'vrf-mini-vrf',
     },
     {
       num: '07',
@@ -2812,7 +2812,7 @@ function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
       img: '/images/chiller.png',
       desc: 'Para grandes edificações — shoppings, hospitais, hotéis, indústrias e edifícios corporativos — os sistemas centrais de climatização (Chiller, Self-Contained e Fan Coil) exigem manutenção especializada. Realizamos manutenção preventiva e corretiva, limpeza de torres de resfriamento, verificação de compressores e bombas, e elaboramos o PMOC conforme as normas aplicáveis. Equipe técnica com experiência em sistemas de grande porte.',
       quando: ['Shopping, hospital ou hotel com sistema central de climatização', 'Indústria ou galpão com Chiller ou Self-Contained', 'Manutenção preventiva de torre de resfriamento', 'Retrofit ou modernização de sistema central existente', 'PMOC para grandes edificações com sistema central'],
-      page: 'sistemas-comerciais' as PageId,
+      page: 'sistemas-comerciais',
     },
   ]
 
@@ -2952,9 +2952,9 @@ function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
 function ZonaView({ zona, bairros, navigate }: {
   zona: string
   bairros: string[]
-  navigate: (p: PageId) => void
+  navigate: (p: string) => void
 }) {
-  const bairroPageMap: Record<string, PageId> = {
+  const bairroPageMap: Record<string, string> = {
     'Vila Mariana': 'bairro-vila-mariana', 'Moema': 'bairro-moema', 'Brooklin': 'bairro-brooklin',
     'Campo Belo': 'bairro-campo-belo', 'Itaim Bibi': 'bairro-itaim-bibi', 'Santo Amaro': 'bairro-santo-amaro',
     'Jabaquara': 'bairro-jabaquara', 'Saúde': 'bairro-saude', 'Ipiranga': 'bairro-ipiranga',
@@ -3026,10 +3026,10 @@ function ZonaView({ zona, bairros, navigate }: {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
-              { tag: 'INSTALAÇÃO', title: `Instalação na ${zona}`, desc: 'Split, multi-split, cassete e VRF. Obra limpa e garantia de 1 ano.', page: 'split-multisplit' as PageId },
-              { tag: 'MANUTENÇÃO', title: `Manutenção na ${zona}`, desc: 'Preventiva e corretiva. Todas as marcas, peças originais.', page: 'manutencao-preventiva' as PageId },
-              { tag: 'LIMPEZA', title: `Limpeza na ${zona}`, desc: 'Higienização profunda com bactericida. Elimina fungos e mau cheiro.', page: 'limpeza' as PageId },
-              { tag: 'CONSERTO', title: `Conserto na ${zona}`, desc: 'Diagnóstico rápido e conserto no mesmo dia na maioria dos casos.', page: 'manutencao-corretiva' as PageId },
+              { tag: 'INSTALAÇÃO', title: `Instalação na ${zona}`, desc: 'Split, multi-split, cassete e VRF. Obra limpa e garantia de 1 ano.', page: 'split-multisplit' },
+              { tag: 'MANUTENÇÃO', title: `Manutenção na ${zona}`, desc: 'Preventiva e corretiva. Todas as marcas, peças originais.', page: 'manutencao-preventiva' },
+              { tag: 'LIMPEZA', title: `Limpeza na ${zona}`, desc: 'Higienização profunda com bactericida. Elimina fungos e mau cheiro.', page: 'limpeza' },
+              { tag: 'CONSERTO', title: `Conserto na ${zona}`, desc: 'Diagnóstico rápido e conserto no mesmo dia na maioria dos casos.', page: 'manutencao-corretiva' },
             ].map((s, i) => (
               <div key={i} onClick={() => navigate(s.page)} className="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-primary hover:shadow-xl hover:-translate-y-1 transition-all cursor-pointer group">
                 <span className={`inline-block text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-4 ${
@@ -3111,91 +3111,91 @@ function ZonaView({ zona, bairros, navigate }: {
   )
 }
 
-function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
+function SitemapView({ navigate }: { navigate: (p: string) => void }) {
   const serviceLinks = [
-    { label: 'Instalação de Ar Condicionado Split e Multi Split', page: 'split-multisplit' as PageId },
-    { label: 'Ar Condicionado Cassete e Piso-Teto para Empresas', page: 'sistemas-comerciais' as PageId },
-    { label: 'Sistemas VRF e Mini VRF', page: 'vrf-mini-vrf' as PageId },
-    { label: 'Manutenção Preventiva e PMOC', page: 'manutencao-preventiva' as PageId },
-    { label: 'Conserto e Manutenção Corretiva de Ar Condicionado', page: 'manutencao-corretiva' as PageId },
-    { label: 'Limpeza e Higienização de Ar Condicionado', page: 'limpeza' as PageId },
+    { label: 'Instalação de Ar Condicionado Split e Multi Split', page: 'split-multisplit' },
+    { label: 'Ar Condicionado Cassete e Piso-Teto para Empresas', page: 'sistemas-comerciais' },
+    { label: 'Sistemas VRF e Mini VRF', page: 'vrf-mini-vrf' },
+    { label: 'Manutenção Preventiva e PMOC', page: 'manutencao-preventiva' },
+    { label: 'Conserto e Manutenção Corretiva de Ar Condicionado', page: 'manutencao-corretiva' },
+    { label: 'Limpeza e Higienização de Ar Condicionado', page: 'limpeza' },
   ]
 
   const segmentLinks = [
-    { label: 'Ar Condicionado Residencial — Apartamentos e Casas', page: 'split-multisplit' as PageId },
-    { label: 'Ar Condicionado Comercial — Lojas, Escritórios e Restaurantes', page: 'sistemas-comerciais' as PageId },
-    { label: 'Ar Condicionado Industrial — Galpões e Indústrias', page: 'vrf-mini-vrf' as PageId },
-    { label: 'PMOC para Empresas — Conformidade com a Lei 13.589/18', page: 'manutencao-preventiva' as PageId },
+    { label: 'Ar Condicionado Residencial — Apartamentos e Casas', page: 'split-multisplit' },
+    { label: 'Ar Condicionado Comercial — Lojas, Escritórios e Restaurantes', page: 'sistemas-comerciais' },
+    { label: 'Ar Condicionado Industrial — Galpões e Indústrias', page: 'vrf-mini-vrf' },
+    { label: 'PMOC para Empresas — Conformidade com a Lei 13.589/18', page: 'manutencao-preventiva' },
   ]
 
   const bairroLinks = [
-    { label: 'Instalação de Ar Condicionado em Moema', page: 'bairro-moema' as PageId },
-    { label: 'Instalação de Ar Condicionado em Vila Mariana', page: 'bairro-vila-mariana' as PageId },
-    { label: 'Instalação de Ar Condicionado em Pinheiros', page: 'bairro-pinheiros' as PageId },
-    { label: 'Instalação de Ar Condicionado no Itaim Bibi', page: 'bairro-itaim-bibi' as PageId },
-    { label: 'Instalação de Ar Condicionado nos Jardins', page: 'bairro-jardins' as PageId },
-    { label: 'Instalação de Ar Condicionado no Tatuapé', page: 'bairro-tatuape' as PageId },
-    { label: 'Instalação de Ar Condicionado em Santana', page: 'bairro-santana' as PageId },
-    { label: 'Instalação de Ar Condicionado no Brooklin', page: 'bairro-brooklin' as PageId },
-    { label: 'Instalação de Ar Condicionado em Perdizes', page: 'bairro-perdizes' as PageId },
-    { label: 'Instalação de Ar Condicionado no Morumbi', page: 'bairro-morumbi' as PageId },
-    { label: 'Instalação de Ar Condicionado na Mooca', page: 'bairro-mooca' as PageId },
-    { label: 'Instalação de Ar Condicionado no Anália Franco', page: 'bairro-analia-franco' as PageId },
-    { label: 'Instalação de Ar Condicionado em Vila Madalena', page: 'bairro-vila-madalena' as PageId },
-    { label: 'Instalação de Ar Condicionado em Campo Belo', page: 'bairro-campo-belo' as PageId },
-    { label: 'Instalação de Ar Condicionado na Saúde', page: 'bairro-saude' as PageId },
-    { label: 'Instalação de Ar Condicionado em Higienópolis', page: 'bairro-higienopolis' as PageId },
-    { label: 'Instalação de Ar Condicionado na Lapa', page: 'bairro-lapa' as PageId },
-    { label: 'Instalação de Ar Condicionado em Santo Amaro', page: 'bairro-santo-amaro' as PageId },
-    { label: 'Instalação de Ar Condicionado no Tucuruvi', page: 'bairro-tucuruvi' as PageId },
-    { label: 'Instalação de Ar Condicionado no Ipiranga', page: 'bairro-ipiranga' as PageId },
-    { label: 'Instalação de Ar Condicionado em Vila Prudente', page: 'bairro-vila-prudente' as PageId },
-    { label: 'Instalação de Ar Condicionado em Jabaquara', page: 'bairro-jabaquara' as PageId },
-    { label: 'Instalação de Ar Condicionado em Campo Grande', page: 'bairro-campo-grande' as PageId },
-    { label: 'Instalação de Ar Condicionado em Penha', page: 'bairro-penha' as PageId },
-    { label: 'Instalação de Ar Condicionado em Cursino', page: 'bairro-cursino' as PageId },
-    { label: 'Instalação de Ar Condicionado em Água Rasa', page: 'bairro-agua-rasa' as PageId },
-    { label: 'Instalação de Ar Condicionado em Bela Vista', page: 'bairro-bela-vista' as PageId },
-    { label: 'Instalação de Ar Condicionado em Butantã', page: 'bairro-butanta' as PageId },
-    { label: 'Instalação de Ar Condicionado em Vila Olímpia', page: 'bairro-vila-olimpia' as PageId },
-    { label: 'Instalação de Ar Condicionado em Pompéia', page: 'bairro-pompeia' as PageId },
-    { label: 'Instalação de Ar Condicionado em Paraíso', page: 'bairro-paraiso' as PageId },
-    { label: 'Instalação de Ar Condicionado em Aclimação', page: 'bairro-aclimacao' as PageId },
-    { label: 'Instalação de Ar Condicionado em Mirandópolis', page: 'bairro-mirandopolis' as PageId },
-    { label: 'Instalação de Ar Condicionado em Planalto Paulista', page: 'bairro-planalto-paulista' as PageId },
-    { label: 'Instalação de Ar Condicionado em Vila Clementino', page: 'bairro-vila-clementino' as PageId },
-    { label: 'Instalação de Ar Condicionado em Chácara Klabin', page: 'bairro-chacara-klabin' as PageId },
-    { label: 'Instalação de Ar Condicionado em Cambuci', page: 'bairro-cambuci' as PageId },
-    { label: 'Instalação de Ar Condicionado em Liberdade', page: 'bairro-liberdade' as PageId },
+    { label: 'Instalação de Ar Condicionado em Moema', page: 'bairro-moema' },
+    { label: 'Instalação de Ar Condicionado em Vila Mariana', page: 'bairro-vila-mariana' },
+    { label: 'Instalação de Ar Condicionado em Pinheiros', page: 'bairro-pinheiros' },
+    { label: 'Instalação de Ar Condicionado no Itaim Bibi', page: 'bairro-itaim-bibi' },
+    { label: 'Instalação de Ar Condicionado nos Jardins', page: 'bairro-jardins' },
+    { label: 'Instalação de Ar Condicionado no Tatuapé', page: 'bairro-tatuape' },
+    { label: 'Instalação de Ar Condicionado em Santana', page: 'bairro-santana' },
+    { label: 'Instalação de Ar Condicionado no Brooklin', page: 'bairro-brooklin' },
+    { label: 'Instalação de Ar Condicionado em Perdizes', page: 'bairro-perdizes' },
+    { label: 'Instalação de Ar Condicionado no Morumbi', page: 'bairro-morumbi' },
+    { label: 'Instalação de Ar Condicionado na Mooca', page: 'bairro-mooca' },
+    { label: 'Instalação de Ar Condicionado no Anália Franco', page: 'bairro-analia-franco' },
+    { label: 'Instalação de Ar Condicionado em Vila Madalena', page: 'bairro-vila-madalena' },
+    { label: 'Instalação de Ar Condicionado em Campo Belo', page: 'bairro-campo-belo' },
+    { label: 'Instalação de Ar Condicionado na Saúde', page: 'bairro-saude' },
+    { label: 'Instalação de Ar Condicionado em Higienópolis', page: 'bairro-higienopolis' },
+    { label: 'Instalação de Ar Condicionado na Lapa', page: 'bairro-lapa' },
+    { label: 'Instalação de Ar Condicionado em Santo Amaro', page: 'bairro-santo-amaro' },
+    { label: 'Instalação de Ar Condicionado no Tucuruvi', page: 'bairro-tucuruvi' },
+    { label: 'Instalação de Ar Condicionado no Ipiranga', page: 'bairro-ipiranga' },
+    { label: 'Instalação de Ar Condicionado em Vila Prudente', page: 'bairro-vila-prudente' },
+    { label: 'Instalação de Ar Condicionado em Jabaquara', page: 'bairro-jabaquara' },
+    { label: 'Instalação de Ar Condicionado em Campo Grande', page: 'bairro-campo-grande' },
+    { label: 'Instalação de Ar Condicionado em Penha', page: 'bairro-penha' },
+    { label: 'Instalação de Ar Condicionado em Cursino', page: 'bairro-cursino' },
+    { label: 'Instalação de Ar Condicionado em Água Rasa', page: 'bairro-agua-rasa' },
+    { label: 'Instalação de Ar Condicionado em Bela Vista', page: 'bairro-bela-vista' },
+    { label: 'Instalação de Ar Condicionado em Butantã', page: 'bairro-butanta' },
+    { label: 'Instalação de Ar Condicionado em Vila Olímpia', page: 'bairro-vila-olimpia' },
+    { label: 'Instalação de Ar Condicionado em Pompéia', page: 'bairro-pompeia' },
+    { label: 'Instalação de Ar Condicionado em Paraíso', page: 'bairro-paraiso' },
+    { label: 'Instalação de Ar Condicionado em Aclimação', page: 'bairro-aclimacao' },
+    { label: 'Instalação de Ar Condicionado em Mirandópolis', page: 'bairro-mirandopolis' },
+    { label: 'Instalação de Ar Condicionado em Planalto Paulista', page: 'bairro-planalto-paulista' },
+    { label: 'Instalação de Ar Condicionado em Vila Clementino', page: 'bairro-vila-clementino' },
+    { label: 'Instalação de Ar Condicionado em Chácara Klabin', page: 'bairro-chacara-klabin' },
+    { label: 'Instalação de Ar Condicionado em Cambuci', page: 'bairro-cambuci' },
+    { label: 'Instalação de Ar Condicionado em Liberdade', page: 'bairro-liberdade' },
   ]
 
   const regionLinks = [
-    { label: 'Ar Condicionado em São Paulo (Capital)', page: 'sao-paulo' as PageId },
-    { label: 'Ar Condicionado em Santo André', page: 'santo-andre' as PageId },
-    { label: 'Ar Condicionado em São Bernardo do Campo', page: 'sao-bernardo' as PageId },
-    { label: 'Ar Condicionado em São Caetano do Sul', page: 'sao-caetano' as PageId },
-    { label: 'Ar Condicionado em Diadema', page: 'diadema' as PageId },
-    { label: 'Ar Condicionado em Mauá', page: 'maua' as PageId },
+    { label: 'Ar Condicionado em São Paulo (Capital)', page: 'sao-paulo' },
+    { label: 'Ar Condicionado em Santo André', page: 'santo-andre' },
+    { label: 'Ar Condicionado em São Bernardo do Campo', page: 'sao-bernardo' },
+    { label: 'Ar Condicionado em São Caetano do Sul', page: 'sao-caetano' },
+    { label: 'Ar Condicionado em Diadema', page: 'diadema' },
+    { label: 'Ar Condicionado em Mauá', page: 'maua' },
   ]
 
   const blogLinks = [
-    { label: 'PMOC: O Que É e Por Que Sua Empresa É Obrigada a Ter', page: 'blog-pmoc-obrigatorio' as PageId },
-    { label: 'Multa por Não Ter PMOC em SP: R$ 2.000 a R$ 1,5 Milhão', page: 'blog-multa-pmoc' as PageId },
-    { label: 'PMOC para Condomínios em SP: Guia para Síndicos', page: 'blog-pmoc-condominio' as PageId },
-    { label: 'Quanto Custa o PMOC em São Paulo?', page: 'blog-custo-pmoc' as PageId },
-    { label: 'Quanto Custa Instalar Ar Condicionado em SP em 2026?', page: 'blog-custo-instalacao' as PageId },
-    { label: 'Qual Ar Condicionado Comprar em 2026?', page: 'blog-qual-ac' as PageId },
-    { label: 'Split ou Multi Split para Apartamento em SP?', page: 'blog-split-multi-split' as PageId },
-    { label: 'O Que Acontece Sem Manutenção no Ar Condicionado?', page: 'blog-manutencao-consequencias' as PageId },
-    { label: 'Ar Condicionado Inverter: Vale a Pena?', page: 'blog-inverter' as PageId },
-    { label: 'Instalação em Apartamento em SP: Guia Completo', page: 'blog-apartamento' as PageId },
-    { label: 'Como Calcular os BTUs Ideais para Seu Ambiente', page: 'blog-btus' as PageId },
-    { label: 'PMOC Obrigatório: O Que Sua Empresa Precisa Saber', page: 'blog-pmoc' as PageId },
-    { label: 'LG Round Cassette: Climatização 360°', page: 'blog-round-cassette' as PageId },
-    { label: 'Obra Limpa: Instalação Sem Quebra-Quebra', page: 'blog-obra-limpa' as PageId },
-    { label: 'Como Instalar Ar Condicionado no Quarto', page: 'blog-quarto' as PageId },
-    { label: 'Split Convencional vs Inverter: Qual Escolher?', page: 'blog-convencional-inverter' as PageId },
-    { label: 'Ar Condicionado para Empresas: Do Split ao VRF', page: 'blog-empresas' as PageId },
+    { label: 'PMOC: O Que É e Por Que Sua Empresa É Obrigada a Ter', page: 'blog-pmoc-obrigatorio' },
+    { label: 'Multa por Não Ter PMOC em SP: R$ 2.000 a R$ 1,5 Milhão', page: 'blog-multa-pmoc' },
+    { label: 'PMOC para Condomínios em SP: Guia para Síndicos', page: 'blog-pmoc-condominio' },
+    { label: 'Quanto Custa o PMOC em São Paulo?', page: 'blog-custo-pmoc' },
+    { label: 'Quanto Custa Instalar Ar Condicionado em SP em 2026?', page: 'blog-custo-instalacao' },
+    { label: 'Qual Ar Condicionado Comprar em 2026?', page: 'blog-qual-ac' },
+    { label: 'Split ou Multi Split para Apartamento em SP?', page: 'blog-split-multi-split' },
+    { label: 'O Que Acontece Sem Manutenção no Ar Condicionado?', page: 'blog-manutencao-consequencias' },
+    { label: 'Ar Condicionado Inverter: Vale a Pena?', page: 'blog-inverter' },
+    { label: 'Instalação em Apartamento em SP: Guia Completo', page: 'blog-apartamento' },
+    { label: 'Como Calcular os BTUs Ideais para Seu Ambiente', page: 'blog-btus' },
+    { label: 'PMOC Obrigatório: O Que Sua Empresa Precisa Saber', page: 'blog-pmoc' },
+    { label: 'LG Round Cassette: Climatização 360°', page: 'blog-round-cassette' },
+    { label: 'Obra Limpa: Instalação Sem Quebra-Quebra', page: 'blog-obra-limpa' },
+    { label: 'Como Instalar Ar Condicionado no Quarto', page: 'blog-quarto' },
+    { label: 'Split Convencional vs Inverter: Qual Escolher?', page: 'blog-convencional-inverter' },
+    { label: 'Ar Condicionado para Empresas: Do Split ao VRF', page: 'blog-empresas' },
   ]
 
   const areas = [
@@ -3225,7 +3225,7 @@ function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
     },
   ]
 
-  const LinkList = ({ links }: { links: { label: string, page: PageId }[] }) => (
+  const LinkList = ({ links }: { links: { label: string, page: string }[] }) => (
     <ul className="space-y-2">
       {links.map((link, i) => (
         <li key={i}>
@@ -3260,11 +3260,11 @@ function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
         <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Páginas Principais</h2>
         <ul className="flex flex-wrap gap-x-8 gap-y-2">
           {[
-            { label: 'Início', page: 'home' as PageId },
-            { label: 'Serviços', page: 'servicos' as PageId },
-            { label: 'Quem Somos', page: 'sobre' as PageId },
-            { label: 'Blog', page: 'blog' as PageId },
-            { label: 'Contato', page: 'contato' as PageId },
+            { label: 'Início', page: 'home' },
+            { label: 'Serviços', page: 'servicos' },
+            { label: 'Quem Somos', page: 'sobre' },
+            { label: 'Blog', page: 'blog' },
+            { label: 'Contato', page: 'contato' },
           ].map((link, i) => (
             <li key={i}>
               <button onClick={() => navigate(link.page)} className="flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-primary-light transition-colors group">
@@ -3289,38 +3289,38 @@ function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
         <div>
           <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Páginas por Segmento</h2>
           <LinkList links={[
-            { label: 'Ar Condicionado para Clínicas Médicas', page: 'segmento-clinica' as PageId },
-            { label: 'Ar Condicionado para Escritórios', page: 'segmento-escritorio' as PageId },
-            { label: 'Ar Condicionado para Condomínios', page: 'segmento-condominio' as PageId },
-            { label: 'Ar Condicionado para Restaurantes', page: 'segmento-restaurante' as PageId },
-            { label: 'Ar Condicionado para Hotéis', page: 'segmento-hotel' as PageId },
-            { label: 'Ar Condicionado para Pousadas', page: 'segmento-pousada' as PageId },
-            { label: 'Ar Condicionado para Academias', page: 'segmento-academia' as PageId },
-            { label: 'Ar Condicionado para Escolas', page: 'segmento-escola' as PageId },
+            { label: 'Ar Condicionado para Clínicas Médicas', page: 'segmento-clinica' },
+            { label: 'Ar Condicionado para Escritórios', page: 'segmento-escritorio' },
+            { label: 'Ar Condicionado para Condomínios', page: 'segmento-condominio' },
+            { label: 'Ar Condicionado para Restaurantes', page: 'segmento-restaurante' },
+            { label: 'Ar Condicionado para Hotéis', page: 'segmento-hotel' },
+            { label: 'Ar Condicionado para Pousadas', page: 'segmento-pousada' },
+            { label: 'Ar Condicionado para Academias', page: 'segmento-academia' },
+            { label: 'Ar Condicionado para Escolas', page: 'segmento-escola' },
           ]} />
         </div>
         <div>
           <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Segmentos por Perfil de Cliente</h2>
           <LinkList links={[
-            { label: 'Ar Condicionado para Farmácias em São Paulo', page: 'seg-farmacia' as PageId },
-            { label: 'Ar Condicionado para Consultórios Odontológicos', page: 'seg-odonto' as PageId },
-            { label: 'Ar Condicionado para Salões de Beleza', page: 'seg-salao' as PageId },
-            { label: 'Ar Condicionado para Supermercados', page: 'seg-supermercado' as PageId },
-            { label: 'Ar Condicionado para Data Centers', page: 'seg-datacenter' as PageId },
-            { label: 'Ar Condicionado para Coworkings', page: 'seg-coworking' as PageId },
-            { label: 'Ar Condicionado para Igrejas e Templos', page: 'seg-igreja' as PageId },
-            { label: 'Ar Condicionado para Laboratórios', page: 'seg-laboratorio' as PageId },
-            { label: 'Ar Condicionado para Pet Shops e Clínicas Veterinárias', page: 'seg-petshop' as PageId },
-            { label: 'Ar Condicionado para Clínicas de Estética', page: 'seg-estetica' as PageId },
-            { label: 'Ar Condicionado para Lojas e Varejo', page: 'seg-loja' as PageId },
-            { label: 'Ar Condicionado para Bancos e Financeiras', page: 'seg-banco' as PageId },
-            { label: 'Ar Condicionado para Padarias e Confeitarias', page: 'seg-padaria' as PageId },
-            { label: 'Ar Condicionado para Concessionárias', page: 'seg-concessionaria' as PageId },
-            { label: 'Ar Condicionado para Escritórios de Advocacia', page: 'seg-advocacia' as PageId },
-            { label: 'Ar Condicionado para Consultórios de Psicologia', page: 'seg-psicologia' as PageId },
-            { label: 'Ar Condicionado para Clínicas de Fisioterapia', page: 'seg-fisioterapia' as PageId },
-            { label: 'Ar Condicionado para Creches e Berçários', page: 'seg-creche' as PageId },
-            { label: 'Ar Condicionado para Bares e Pubs', page: 'seg-bar' as PageId },
+            { label: 'Ar Condicionado para Farmácias em São Paulo', page: 'seg-farmacia' },
+            { label: 'Ar Condicionado para Consultórios Odontológicos', page: 'seg-odonto' },
+            { label: 'Ar Condicionado para Salões de Beleza', page: 'seg-salao' },
+            { label: 'Ar Condicionado para Supermercados', page: 'seg-supermercado' },
+            { label: 'Ar Condicionado para Data Centers', page: 'seg-datacenter' },
+            { label: 'Ar Condicionado para Coworkings', page: 'seg-coworking' },
+            { label: 'Ar Condicionado para Igrejas e Templos', page: 'seg-igreja' },
+            { label: 'Ar Condicionado para Laboratórios', page: 'seg-laboratorio' },
+            { label: 'Ar Condicionado para Pet Shops e Clínicas Veterinárias', page: 'seg-petshop' },
+            { label: 'Ar Condicionado para Clínicas de Estética', page: 'seg-estetica' },
+            { label: 'Ar Condicionado para Lojas e Varejo', page: 'seg-loja' },
+            { label: 'Ar Condicionado para Bancos e Financeiras', page: 'seg-banco' },
+            { label: 'Ar Condicionado para Padarias e Confeitarias', page: 'seg-padaria' },
+            { label: 'Ar Condicionado para Concessionárias', page: 'seg-concessionaria' },
+            { label: 'Ar Condicionado para Escritórios de Advocacia', page: 'seg-advocacia' },
+            { label: 'Ar Condicionado para Consultórios de Psicologia', page: 'seg-psicologia' },
+            { label: 'Ar Condicionado para Clínicas de Fisioterapia', page: 'seg-fisioterapia' },
+            { label: 'Ar Condicionado para Creches e Berçários', page: 'seg-creche' },
+            { label: 'Ar Condicionado para Bares e Pubs', page: 'seg-bar' },
           ]} />
         </div>
         <div>
@@ -3330,113 +3330,113 @@ function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
         <div>
           <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Manutenção por Cidade — ABC</h2>
           <LinkList links={[
-            { label: 'Manutenção de Ar Condicionado em Santo André', page: 'manutencao-santo-andre' as PageId },
-            { label: 'Manutenção de Ar Condicionado em São Bernardo do Campo', page: 'manutencao-sao-bernardo' as PageId },
-            { label: 'Manutenção de Ar Condicionado em São Caetano do Sul', page: 'manutencao-sao-caetano' as PageId },
-            { label: 'Manutenção de Ar Condicionado em Diadema', page: 'manutencao-diadema' as PageId },
-            { label: 'Manutenção de Ar Condicionado em Mauá', page: 'manutencao-maua' as PageId },
+            { label: 'Manutenção de Ar Condicionado em Santo André', page: 'manutencao-santo-andre' },
+            { label: 'Manutenção de Ar Condicionado em São Bernardo do Campo', page: 'manutencao-sao-bernardo' },
+            { label: 'Manutenção de Ar Condicionado em São Caetano do Sul', page: 'manutencao-sao-caetano' },
+            { label: 'Manutenção de Ar Condicionado em Diadema', page: 'manutencao-diadema' },
+            { label: 'Manutenção de Ar Condicionado em Mauá', page: 'manutencao-maua' },
           ]} />
         </div>
         <div>
           <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Limpeza por Cidade — ABC</h2>
           <LinkList links={[
-            { label: 'Limpeza de Ar Condicionado em Santo André', page: 'limpeza-santo-andre' as PageId },
-            { label: 'Limpeza de Ar Condicionado em São Bernardo do Campo', page: 'limpeza-sao-bernardo' as PageId },
-            { label: 'Limpeza de Ar Condicionado em São Caetano do Sul', page: 'limpeza-sao-caetano' as PageId },
-            { label: 'Limpeza de Ar Condicionado em Diadema', page: 'limpeza-diadema' as PageId },
-            { label: 'Limpeza de Ar Condicionado em Mauá', page: 'limpeza-maua' as PageId },
+            { label: 'Limpeza de Ar Condicionado em Santo André', page: 'limpeza-santo-andre' },
+            { label: 'Limpeza de Ar Condicionado em São Bernardo do Campo', page: 'limpeza-sao-bernardo' },
+            { label: 'Limpeza de Ar Condicionado em São Caetano do Sul', page: 'limpeza-sao-caetano' },
+            { label: 'Limpeza de Ar Condicionado em Diadema', page: 'limpeza-diadema' },
+            { label: 'Limpeza de Ar Condicionado em Mauá', page: 'limpeza-maua' },
           ]} />
         </div>
         <div>
           <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">PMOC por Cidade — ABC Paulista</h2>
           <LinkList links={[
-            { label: 'PMOC em Santo André — Contrato de Manutenção', page: 'pmoc-santo-andre' as PageId },
-            { label: 'PMOC em São Bernardo do Campo', page: 'pmoc-sao-bernardo' as PageId },
-            { label: 'PMOC em São Caetano do Sul', page: 'pmoc-sao-caetano' as PageId },
-            { label: 'PMOC em Diadema', page: 'pmoc-diadema' as PageId },
-            { label: 'PMOC em Mauá', page: 'pmoc-maua' as PageId },
+            { label: 'PMOC em Santo André — Contrato de Manutenção', page: 'pmoc-santo-andre' },
+            { label: 'PMOC em São Bernardo do Campo', page: 'pmoc-sao-bernardo' },
+            { label: 'PMOC em São Caetano do Sul', page: 'pmoc-sao-caetano' },
+            { label: 'PMOC em Diadema', page: 'pmoc-diadema' },
+            { label: 'PMOC em Mauá', page: 'pmoc-maua' },
           ]} />
         </div>
         <div>
           <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Instalação por Tipo de Equipamento</h2>
           <LinkList links={[
-            { label: 'Instalação de Ar Condicionado Split em São Paulo', page: 'inst-split' as PageId },
-            { label: 'Instalação de Ar Condicionado Cassete em São Paulo', page: 'inst-cassete' as PageId },
-            { label: 'Instalação de Ar Condicionado Piso-Teto em São Paulo', page: 'inst-piso-teto' as PageId },
-            { label: 'Instalação de Multi Split em São Paulo', page: 'inst-multi-split' as PageId },
-            { label: 'Instalação de Ar Condicionado Inverter em São Paulo', page: 'inst-inverter' as PageId },
+            { label: 'Instalação de Ar Condicionado Split em São Paulo', page: 'inst-split' },
+            { label: 'Instalação de Ar Condicionado Cassete em São Paulo', page: 'inst-cassete' },
+            { label: 'Instalação de Ar Condicionado Piso-Teto em São Paulo', page: 'inst-piso-teto' },
+            { label: 'Instalação de Multi Split em São Paulo', page: 'inst-multi-split' },
+            { label: 'Instalação de Ar Condicionado Inverter em São Paulo', page: 'inst-inverter' },
           ]} />
         </div>
         <div>
           <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Problemas Comuns — Conserto Rápido</h2>
           <LinkList links={[
-            { label: 'Ar Condicionado Não Gela em São Paulo', page: 'prob-nao-gela' as PageId },
-            { label: 'Ar Condicionado Vazando Água em São Paulo', page: 'prob-vazando' as PageId },
-            { label: 'Recarga de Gás de Ar Condicionado em SP', page: 'prob-gas' as PageId },
-            { label: 'Ar Condicionado com Mau Cheiro em São Paulo', page: 'prob-mau-cheiro' as PageId },
-            { label: 'Ar Condicionado Fazendo Barulho em São Paulo', page: 'prob-barulho' as PageId },
-            { label: 'Ar Condicionado Desligando Sozinho em São Paulo', page: 'prob-desliga' as PageId },
+            { label: 'Ar Condicionado Não Gela em São Paulo', page: 'prob-nao-gela' },
+            { label: 'Ar Condicionado Vazando Água em São Paulo', page: 'prob-vazando' },
+            { label: 'Recarga de Gás de Ar Condicionado em SP', page: 'prob-gas' },
+            { label: 'Ar Condicionado com Mau Cheiro em São Paulo', page: 'prob-mau-cheiro' },
+            { label: 'Ar Condicionado Fazendo Barulho em São Paulo', page: 'prob-barulho' },
+            { label: 'Ar Condicionado Desligando Sozinho em São Paulo', page: 'prob-desliga' },
           ]} />
         </div>
         <div>
           <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Limpeza, PMOC e Contratos</h2>
           <LinkList links={[
-            { label: 'Limpeza de Ar Condicionado em São Paulo', page: 'serv-limpeza-sp' as PageId },
-            { label: 'Higienização de Ar Condicionado em São Paulo', page: 'serv-higienizacao-sp' as PageId },
-            { label: 'PMOC em São Paulo — Contrato Obrigatório', page: 'serv-pmoc-sp' as PageId },
-            { label: 'Contrato de Manutenção de Ar Condicionado em SP', page: 'serv-contrato-sp' as PageId },
+            { label: 'Limpeza de Ar Condicionado em São Paulo', page: 'serv-limpeza-sp' },
+            { label: 'Higienização de Ar Condicionado em São Paulo', page: 'serv-higienizacao-sp' },
+            { label: 'PMOC em São Paulo — Contrato Obrigatório', page: 'serv-pmoc-sp' },
+            { label: 'Contrato de Manutenção de Ar Condicionado em SP', page: 'serv-contrato-sp' },
           ]} />
         </div>
         <div>
           <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Equipamentos Grandes e Sistemas Centrais</h2>
           <LinkList links={[
-            { label: 'Manutenção de Chiller em São Paulo', page: 'manutencao-chiller' as PageId },
-            { label: 'Manutenção e Limpeza de Fan Coil em São Paulo', page: 'manutencao-fan-coil' as PageId },
-            { label: 'Manutenção de Self Contained em São Paulo', page: 'manutencao-self-contained' as PageId },
-            { label: 'Limpeza e Higienização de Fan Coil em São Paulo', page: 'limpeza-fan-coil' as PageId },
-            { label: 'Central de Água Gelada em São Paulo', page: 'central-agua-gelada' as PageId },
+            { label: 'Manutenção de Chiller em São Paulo', page: 'manutencao-chiller' },
+            { label: 'Manutenção e Limpeza de Fan Coil em São Paulo', page: 'manutencao-fan-coil' },
+            { label: 'Manutenção de Self Contained em São Paulo', page: 'manutencao-self-contained' },
+            { label: 'Limpeza e Higienização de Fan Coil em São Paulo', page: 'limpeza-fan-coil' },
+            { label: 'Central de Água Gelada em São Paulo', page: 'central-agua-gelada' },
           ]} />
         </div>
         <div>
           <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Sazonais e Oportunidades</h2>
           <LinkList links={[
-            { label: 'Ar Condicionado para Aquecimento em São Paulo', page: 'aquecimento-sp' as PageId },
-            { label: 'Manutenção Preventiva Antes do Verão em SP', page: 'manutencao-preventiva-verao' as PageId },
+            { label: 'Ar Condicionado para Aquecimento em São Paulo', page: 'aquecimento-sp' },
+            { label: 'Manutenção Preventiva Antes do Verão em SP', page: 'manutencao-preventiva-verao' },
           ]} />
         </div>
         <div>
           <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Regiões por Zona</h2>
           <LinkList links={[
-            { label: 'Ar Condicionado na Zona Sul de São Paulo', page: 'zona-sul' as PageId },
-            { label: 'Ar Condicionado na Zona Norte de São Paulo', page: 'zona-norte' as PageId },
-            { label: 'Ar Condicionado na Zona Leste de São Paulo', page: 'zona-leste' as PageId },
-            { label: 'Ar Condicionado na Zona Oeste de São Paulo', page: 'zona-oeste' as PageId },
-            { label: 'Ar Condicionado na Região Central de São Paulo', page: 'zona-central' as PageId },
+            { label: 'Ar Condicionado na Zona Sul de São Paulo', page: 'zona-sul' },
+            { label: 'Ar Condicionado na Zona Norte de São Paulo', page: 'zona-norte' },
+            { label: 'Ar Condicionado na Zona Leste de São Paulo', page: 'zona-leste' },
+            { label: 'Ar Condicionado na Zona Oeste de São Paulo', page: 'zona-oeste' },
+            { label: 'Ar Condicionado na Região Central de São Paulo', page: 'zona-central' },
           ]} />
         </div>
         <div>
           <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Instalação por Marca</h2>
           <LinkList links={[
-            { label: 'Instalação de Ar Condicionado LG em São Paulo', page: 'marca-lg' as PageId },
-            { label: 'Instalação de Ar Condicionado Samsung em São Paulo', page: 'marca-samsung' as PageId },
-            { label: 'Instalação de Ar Condicionado Daikin em São Paulo', page: 'marca-daikin' as PageId },
-            { label: 'Instalação de Ar Condicionado Midea em São Paulo', page: 'marca-midea' as PageId },
-            { label: 'Instalação de Ar Condicionado Fujitsu em São Paulo', page: 'marca-fujitsu' as PageId },
-            { label: 'Instalação de Ar Condicionado Carrier em São Paulo', page: 'marca-carrier' as PageId },
-            { label: 'Instalação de Ar Condicionado Elgin em São Paulo', page: 'marca-elgin' as PageId },
-            { label: 'Instalação de Ar Condicionado Gree em São Paulo', page: 'marca-gree' as PageId },
-            { label: 'Instalação de Ar Condicionado Springer Carrier em SP', page: 'marca-springer' as PageId },
-            { label: 'Instalação de Ar Condicionado Komeco em São Paulo', page: 'marca-komeco' as PageId },
-            { label: 'Instalação de Ar Condicionado Philco em São Paulo', page: 'marca-philco' as PageId },
-            { label: 'Instalação de Ar Condicionado Electrolux em São Paulo', page: 'marca-electrolux' as PageId },
-            { label: 'Instalação de Ar Condicionado Trane em São Paulo', page: 'marca-trane' as PageId },
-            { label: 'Instalação de Ar Condicionado York em São Paulo', page: 'marca-york' as PageId },
-            { label: 'Instalação de Ar Condicionado Hitachi em São Paulo', page: 'marca-hitachi' as PageId },
-            { label: 'Instalação de Ar Condicionado Panasonic em São Paulo', page: 'marca-panasonic' as PageId },
-            { label: 'Instalação de Ar Condicionado Bosch em São Paulo', page: 'marca-bosch' as PageId },
-            { label: 'Instalação de Ar Condicionado TCL em São Paulo', page: 'marca-tcl' as PageId },
-            { label: 'Instalação de Ar Condicionado Agratto em São Paulo', page: 'marca-agratto' as PageId },
-            { label: 'Instalação de Ar Condicionado Consul em São Paulo', page: 'marca-consul' as PageId },
+            { label: 'Instalação de Ar Condicionado LG em São Paulo', page: 'marca-lg' },
+            { label: 'Instalação de Ar Condicionado Samsung em São Paulo', page: 'marca-samsung' },
+            { label: 'Instalação de Ar Condicionado Daikin em São Paulo', page: 'marca-daikin' },
+            { label: 'Instalação de Ar Condicionado Midea em São Paulo', page: 'marca-midea' },
+            { label: 'Instalação de Ar Condicionado Fujitsu em São Paulo', page: 'marca-fujitsu' },
+            { label: 'Instalação de Ar Condicionado Carrier em São Paulo', page: 'marca-carrier' },
+            { label: 'Instalação de Ar Condicionado Elgin em São Paulo', page: 'marca-elgin' },
+            { label: 'Instalação de Ar Condicionado Gree em São Paulo', page: 'marca-gree' },
+            { label: 'Instalação de Ar Condicionado Springer Carrier em SP', page: 'marca-springer' },
+            { label: 'Instalação de Ar Condicionado Komeco em São Paulo', page: 'marca-komeco' },
+            { label: 'Instalação de Ar Condicionado Philco em São Paulo', page: 'marca-philco' },
+            { label: 'Instalação de Ar Condicionado Electrolux em São Paulo', page: 'marca-electrolux' },
+            { label: 'Instalação de Ar Condicionado Trane em São Paulo', page: 'marca-trane' },
+            { label: 'Instalação de Ar Condicionado York em São Paulo', page: 'marca-york' },
+            { label: 'Instalação de Ar Condicionado Hitachi em São Paulo', page: 'marca-hitachi' },
+            { label: 'Instalação de Ar Condicionado Panasonic em São Paulo', page: 'marca-panasonic' },
+            { label: 'Instalação de Ar Condicionado Bosch em São Paulo', page: 'marca-bosch' },
+            { label: 'Instalação de Ar Condicionado TCL em São Paulo', page: 'marca-tcl' },
+            { label: 'Instalação de Ar Condicionado Agratto em São Paulo', page: 'marca-agratto' },
+            { label: 'Instalação de Ar Condicionado Consul em São Paulo', page: 'marca-consul' },
           ]} />
         </div>
         <div>
