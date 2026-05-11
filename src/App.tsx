@@ -458,6 +458,9 @@ export default function App() {
               <a href="tel:+5511963462516" className="flex items-center gap-2 hover:text-blue-200 transition-colors">
                 <Phone size={14} /> (11) 96346-2516
               </a>
+              <a href="mailto:contato@newclimaar.com.br" className="flex items-center gap-2 hover:text-blue-200 transition-colors opacity-80">
+                <MessageSquare size={14} /> contato@newclimaar.com.br
+              </a>
               <span className="flex items-center gap-2 opacity-80">
                 <Clock size={14} /> Seg–Sex 8h–18h
               </span>
@@ -722,6 +725,10 @@ export default function App() {
                   <li className="flex items-center gap-3 text-blue-100/70">
                     <div className="shrink-0 text-primary-light"><WhatsAppIcon size={15} /></div>
                     <a href="https://wa.me/5511963462516" rel="noopener noreferrer" className="hover:text-white transition-colors">WhatsApp — resposta em até 2h</a>
+                  </li>
+                  <li className="flex items-center gap-3 text-blue-100/70">
+                    <MessageSquare size={15} className="text-primary-light shrink-0" />
+                    <a href="mailto:contato@newclimaar.com.br" className="hover:text-white transition-colors">contato@newclimaar.com.br</a>
                   </li>
                   <li className="flex items-start gap-3 text-blue-100/70">
                     <MapPin size={15} className="text-primary-light shrink-0 mt-0.5" />
