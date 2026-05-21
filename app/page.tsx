@@ -1,9 +1,5 @@
-'use client'
-
-import dynamic from 'next/dynamic'
-
-const App = dynamic(() => import('../src/App'), { ssr: false })
+import SlugClient from './[[...slug]]/SlugClient'
 
 export default function Home() {
-  return <App />
+  return <SlugClient pathname="/" />
 }
