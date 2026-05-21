@@ -1,7 +1,3 @@
-'use client'
-
-import { usePathname } from 'next/navigation'
-
 const BASE_URL = 'https://www.newclimaar.com.br'
 
 const localBusinessSchema = {
@@ -157,9 +153,7 @@ const faqSchemas: Record<string, object> = {
   },
 }
 
-export default function SchemaOrg() {
-  const pathname = usePathname()
-
+export default function SchemaOrg({ pathname = '/' }: { pathname?: string }) {
   const schemas = [
     localBusinessSchema,
     serviceSchemas[pathname],
