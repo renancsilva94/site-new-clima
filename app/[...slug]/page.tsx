@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import SlugClient from './SlugClient'
+import App from '../../src/App'
 
 type Props = {
   params: { slug?: string[] }
@@ -310,11 +310,6 @@ const metaMap: Record<string, { title: string; description: string }> = {
     title: 'Ar Condicionado para Escolas em São Paulo | New Clima',
     description: 'Instalação e PMOC para escolas, creches e universidades em SP. Qualidade do ar para alunos e professores. (11) 96346-2516.',
   },
-
-
-
-
-
   'instalacao-ar-condicionado-sp': {
     title: 'Instalação de Ar Condicionado em São Paulo | New Clima',
     description: 'Serviço completo de instalação de ar condicionado em São Paulo e ABC. Split, multi-split, VRF e cassete. Técnicos certificados e garantia por escrito. (11) 96346-2516.',
@@ -455,406 +450,106 @@ const metaMap: Record<string, { title: string; description: string }> = {
     title: 'PMOC em Mauá — Contrato de Manutenção Obrigatório | New Clima',
     description: 'PMOC em Mauá conforme a Lei 13.589/18. Elaboração, execução e documentação completa para empresas, condomínios e clínicas. (11) 96346-2516.',
   },
-  'ar-condicionado-farmacia-sao-paulo': {
-    title: 'Ar Condicionado para Farmácias em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado para farmácias em SP. Temperatura controlada para medicamentos, PMOC conforme ANVISA. (11) 96346-2516.',
-  },
-  'ar-condicionado-consultorio-odontologico-sao-paulo': {
-    title: 'Ar Condicionado para Consultório Odontológico em SP | New Clima',
-    description: 'Ar condicionado silencioso para consultórios odontológicos em São Paulo. PMOC, limpeza com bactericida e instalação fora do horário. (11) 96346-2516.',
-  },
-  'ar-condicionado-salao-beleza-sao-paulo': {
-    title: 'Ar Condicionado para Salão de Beleza em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado para salões de beleza e barbearias em SP e ABC. Projeto correto para secadores e químicas. (11) 96346-2516.',
-  },
-  'ar-condicionado-supermercado-sao-paulo': {
-    title: 'Ar Condicionado para Supermercados em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado para supermercados em SP. PMOC, atendimento emergencial e manutenção fora do horário. (11) 96346-2516.',
-  },
-  'ar-condicionado-data-center-sao-paulo': {
-    title: 'Ar Condicionado para Data Center e Sala de Servidor em SP | New Clima',
-    description: 'Ar condicionado de precisão para data centers e salas de servidor em São Paulo. Sistemas redundantes e atendimento emergencial. (11) 96346-2516.',
-  },
-  'ar-condicionado-coworking-sao-paulo': {
-    title: 'Ar Condicionado para Coworking em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado para coworkings e escritórios flexíveis em SP. Silencioso, PMOC e contrato de manutenção. (11) 96346-2516.',
-  },
-  'ar-condicionado-igreja-sao-paulo': {
-    title: 'Ar Condicionado para Igrejas e Templos em São Paulo | New Clima',
-    description: 'Instalação de ar condicionado para igrejas e templos em SP e ABC. Sistemas silenciosos, pé-direito alto e projeto específico. (11) 96346-2516.',
-  },
-  'ar-condicionado-laboratorio-sao-paulo': {
-    title: 'Ar Condicionado para Laboratórios em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado para laboratórios em SP. Temperatura controlada, PMOC conforme ANVISA e documentação. (11) 96346-2516.',
-  },
-  'ar-condicionado-pet-shop-sao-paulo': {
-    title: 'Ar Condicionado para Pet Shops e Clínicas Veterinárias em SP | New Clima',
-    description: 'Ar condicionado para pet shops e clínicas veterinárias em São Paulo. Temperatura ideal para animais e limpeza frequente. (11) 96346-2516.',
-  },
-  'ar-condicionado-clinica-estetica-sao-paulo': {
-    title: 'Ar Condicionado para Clínicas de Estética em São Paulo | New Clima',
-    description: 'Instalação silenciosa de ar condicionado para clínicas de estética em SP. PMOC, instalação discreta e conforto premium. (11) 96346-2516.',
-  },
-  'ar-condicionado-loja-varejo-sao-paulo': {
-    title: 'Ar Condicionado para Lojas e Varejo em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado para lojas e varejo em SP. Ambiente fresco que convida o cliente a entrar. (11) 96346-2516.',
-  },
-  'ar-condicionado-banco-financeira-sao-paulo': {
-    title: 'Ar Condicionado para Bancos e Financeiras em São Paulo | New Clima',
-    description: 'Instalação e PMOC para agências bancárias em SP. Manutenção fora do horário bancário e documentação completa. (11) 96346-2516.',
-  },
-  'ar-condicionado-padaria-sao-paulo': {
-    title: 'Ar Condicionado para Padarias e Confeitarias em São Paulo | New Clima',
-    description: 'Ar condicionado para padarias em SP com projeto correto para o calor dos fornos. Limpeza frequente e manutenção especializada. (11) 96346-2516.',
-  },
-  'ar-condicionado-concessionaria-sao-paulo': {
-    title: 'Ar Condicionado para Concessionárias em São Paulo | New Clima',
-    description: 'Instalação de ar condicionado para showrooms e concessionárias em SP e ABC. Projeto para grandes salões de exposição. (11) 96346-2516.',
-  },
-  'ar-condicionado-escritorio-advocacia-sao-paulo': {
-    title: 'Ar Condicionado para Escritório de Advocacia em SP | New Clima',
-    description: 'Ar condicionado silencioso para escritórios de advocacia em São Paulo. PMOC, controle por sala e instalação fora do expediente. (11) 96346-2516.',
-  },
-  'ar-condicionado-consultorio-psicologia-sao-paulo': {
-    title: 'Ar Condicionado para Consultório de Psicologia em SP | New Clima',
-    description: 'Ar condicionado ultrasilencioso para consultórios de psicologia em São Paulo. Até 19dB — não interfere nas sessões. (11) 96346-2516.',
-  },
-  'ar-condicionado-clinica-fisioterapia-sao-paulo': {
-    title: 'Ar Condicionado para Clínicas de Fisioterapia em SP | New Clima',
-    description: 'Instalação e PMOC para clínicas de fisioterapia em São Paulo. Temperatura ideal para tratamentos e documentação para Vigilância Sanitária. (11) 96346-2516.',
-  },
-  'ar-condicionado-creche-sao-paulo': {
-    title: 'Ar Condicionado para Creches e Berçários em São Paulo | New Clima',
-    description: 'Instalação de ar condicionado para creches e berçários em SP. Produtos seguros para bebês, PMOC e temperatura controlada. (11) 96346-2516.',
-  },
-  'ar-condicionado-bar-pub-sao-paulo': {
-    title: 'Ar Condicionado para Bares e Pubs em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado para bares e pubs em SP. Projeto correto para alta ocupação noturna. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-split-sp': {
-    title: 'Instalação de Ar Condicionado Split em São Paulo | New Clima',
-    description: 'Instalação de split em SP com obra limpa, infraestrutura completa e garantia de 1 ano. Todas as marcas. Visita gratuita. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-cassete-sp': {
-    title: 'Instalação de Ar Condicionado Cassete em São Paulo | New Clima',
-    description: 'Instalação de cassete de teto em SP e ABC. Ideal para escritórios e lojas. Projeto, infraestrutura e garantia inclusos. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-piso-teto-sp': {
-    title: 'Instalação de Ar Condicionado Piso-Teto em São Paulo | New Clima',
-    description: 'Instalação de piso-teto em SP. Ideal para pé-direito alto, igrejas e ambientes especiais. Garantia de 1 ano. (11) 96346-2516.',
-  },
-  'instalacao-multi-split-sp': {
-    title: 'Instalação de Multi Split em São Paulo | New Clima',
-    description: 'Instalação de multi split em SP — vários cômodos, uma condensadora. Projeto correto e garantia de 1 ano. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-inverter-sp': {
-    title: 'Instalação de Ar Condicionado Inverter em São Paulo | New Clima',
-    description: 'Instalação de inverter em SP com infraestrutura adequada para máxima eficiência. Todas as marcas. (11) 96346-2516.',
-  },
-  'ar-condicionado-nao-gela-sp': {
-    title: 'Ar Condicionado Não Gela em São Paulo — Conserto Rápido | New Clima',
-    description: 'Ar condicionado ligado mas não gela em SP? Diagnóstico gratuito, conserto no mesmo dia e garantia de 90 dias. (11) 96346-2516.',
-  },
-  'ar-condicionado-vazando-agua-sp': {
-    title: 'Ar Condicionado Vazando Água em São Paulo | New Clima',
-    description: 'Ar condicionado pingando em SP? Dreno entupido resolvemos na hora. Atendimento em até 2 horas. (11) 96346-2516.',
-  },
-  'recarga-gas-ar-condicionado-sp': {
-    title: 'Recarga de Gás de Ar Condicionado em São Paulo | New Clima',
-    description: 'Recarga de gás R410A e R32 em SP com verificação de vazamento. Técnicos certificados. (11) 96346-2516.',
-  },
-  'ar-condicionado-com-mau-cheiro-sp': {
-    title: 'Ar Condicionado com Mau Cheiro em São Paulo | New Clima',
-    description: 'Ar condicionado com cheiro de mofo em SP? Limpeza profunda com bactericida elimina a causa. (11) 96346-2516.',
-  },
-  'ar-condicionado-fazendo-barulho-sp': {
-    title: 'Ar Condicionado Fazendo Barulho em São Paulo | New Clima',
-    description: 'Ar condicionado barulhento em SP? Diagnóstico gratuito e conserto com garantia de 90 dias. (11) 96346-2516.',
-  },
-  'ar-condicionado-desligando-sozinho-sp': {
-    title: 'Ar Condicionado Desligando Sozinho em São Paulo | New Clima',
-    description: 'Ar condicionado que desliga sozinho em SP? Diagnóstico gratuito e conserto rápido. (11) 96346-2516.',
-  },
-  'limpeza-ar-condicionado-sp': {
-    title: 'Limpeza de Ar Condicionado em São Paulo | New Clima',
-    description: 'Limpeza profunda de ar condicionado em SP. Remove fungos, ácaros e mau cheiro. A partir de R$ 120. (11) 96346-2516.',
-  },
-  'higienizacao-ar-condicionado-sp': {
-    title: 'Higienização de Ar Condicionado em São Paulo | New Clima',
-    description: 'Higienização profissional com bactericida certificado em SP. Ar limpo, sem fungos, sem cheiro ruim. (11) 96346-2516.',
-  },
-  'pmoc-sao-paulo': {
-    title: 'PMOC em São Paulo — Contrato de Manutenção Obrigatório | New Clima',
-    description: 'PMOC em São Paulo conforme a Lei 13.589/18. Elaboração, execução e documentação para empresas, condomínios e clínicas.',
-  },
-  'contrato-manutencao-ar-condicionado-sp': {
-    title: 'Contrato de Manutenção de Ar Condicionado em São Paulo | New Clima',
-    description: 'Contratos mensais, trimestrais ou semestrais de manutenção de ar condicionado em SP. A partir de R$ 120. (11) 96346-2516.',
-  },
-  'servicos': {
-    title: 'Serviços de Ar Condicionado em São Paulo e ABC | New Clima',
-    description: 'Instalação, manutenção, limpeza e conserto de ar condicionado em SP e ABC. PMOC para empresas. Visita gratuita. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-lg-sao-paulo': {
-    title: 'Instalação de Ar Condicionado LG em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado LG em SP e ABC. Técnicos certificados, garantia de fábrica mantida. Visita gratuita. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-samsung-sao-paulo': {
-    title: 'Instalação de Ar Condicionado Samsung em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado Samsung em SP e ABC. Wind-Free, inverter e sistemas comerciais. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-daikin-sao-paulo': {
-    title: 'Instalação de Ar Condicionado Daikin em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado Daikin em SP e ABC. Splits inverter, VRF e sistemas de precisão. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-midea-sao-paulo': {
-    title: 'Instalação de Ar Condicionado Midea em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado Midea em SP e ABC. Técnicos certificados e garantia por escrito. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-fujitsu-sao-paulo': {
-    title: 'Instalação de Ar Condicionado Fujitsu em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado Fujitsu em SP e ABC. Splits, cassetes e VRF. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-carrier-sao-paulo': {
-    title: 'Instalação de Ar Condicionado Carrier em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado Carrier em SP e ABC. Splits, dutados e VRF. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-elgin-sao-paulo': {
-    title: 'Instalação de Ar Condicionado Elgin em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado Elgin em SP e ABC. Garantia de fábrica mantida. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-gree-sao-paulo': {
-    title: 'Instalação de Ar Condicionado Gree em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado Gree em SP e ABC. Técnicos certificados. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-springer-carrier-sao-paulo': {
-    title: 'Instalação de Ar Condicionado Springer Carrier em SP | New Clima',
-    description: 'Instalação e manutenção de ar condicionado Springer Carrier em SP e ABC. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-komeco-sao-paulo': {
-    title: 'Instalação de Ar Condicionado Komeco em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado Komeco em SP e ABC. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-philco-sao-paulo': {
-    title: 'Instalação de Ar Condicionado Philco em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado Philco em SP e ABC. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-electrolux-sao-paulo': {
-    title: 'Instalação de Ar Condicionado Electrolux em SP | New Clima',
-    description: 'Instalação e manutenção de ar condicionado Electrolux em SP e ABC. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-trane-sao-paulo': {
-    title: 'Instalação de Ar Condicionado Trane em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado Trane em SP. VRF, chillers e climatização industrial. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-york-sao-paulo': {
-    title: 'Instalação de Ar Condicionado York em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado York em SP e ABC. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-hitachi-sao-paulo': {
-    title: 'Instalação de Ar Condicionado Hitachi em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado Hitachi em SP e ABC. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-panasonic-sao-paulo': {
-    title: 'Instalação de Ar Condicionado Panasonic em SP | New Clima',
-    description: 'Instalação e manutenção de ar condicionado Panasonic em SP e ABC. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-bosch-sao-paulo': {
-    title: 'Instalação de Ar Condicionado Bosch em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado Bosch em SP e ABC. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-tcl-sao-paulo': {
-    title: 'Instalação de Ar Condicionado TCL em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado TCL em SP e ABC. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-agratto-sao-paulo': {
-    title: 'Instalação de Ar Condicionado Agratto em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado Agratto em SP e ABC. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-consul-sao-paulo': {
-    title: 'Instalação de Ar Condicionado Consul em São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado Consul em SP e ABC. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-jardim-paulista': {
-    title: 'Instalação de Ar Condicionado no Jardim Paulista | New Clima',
-    description: 'Instalação e manutenção de ar condicionado no Jardim Paulista, SP. Técnicos certificados e garantia por escrito. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-jardim-europa': {
-    title: 'Instalação de Ar Condicionado no Jardim Europa | New Clima',
-    description: 'Instalação e manutenção de ar condicionado no Jardim Europa, SP. Visita gratuita. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-vila-andrade': {
-    title: 'Instalação de Ar Condicionado em Vila Andrade | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em Vila Andrade, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-campo-limpo': {
-    title: 'Instalação de Ar Condicionado em Campo Limpo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em Campo Limpo, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-interlagos': {
-    title: 'Instalação de Ar Condicionado em Interlagos | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em Interlagos, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-cerqueira-cesar': {
-    title: 'Instalação de Ar Condicionado em Cerqueira César | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em Cerqueira César, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-pacaembu': {
-    title: 'Instalação de Ar Condicionado no Pacaembu | New Clima',
-    description: 'Instalação e manutenção de ar condicionado no Pacaembu, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-sumare': {
-    title: 'Instalação de Ar Condicionado no Sumaré | New Clima',
-    description: 'Instalação e manutenção de ar condicionado no Sumaré, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-vila-leopoldina': {
-    title: 'Instalação de Ar Condicionado em Vila Leopoldina | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em Vila Leopoldina, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-barra-funda': {
-    title: 'Instalação de Ar Condicionado na Barra Funda | New Clima',
-    description: 'Instalação e manutenção de ar condicionado na Barra Funda, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-alto-de-pinheiros': {
-    title: 'Instalação de Ar Condicionado em Alto de Pinheiros | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em Alto de Pinheiros, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-consolacao': {
-    title: 'Instalação de Ar Condicionado na Consolação | New Clima',
-    description: 'Instalação e manutenção de ar condicionado na Consolação, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-vila-guilherme': {
-    title: 'Instalação de Ar Condicionado em Vila Guilherme | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em Vila Guilherme, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-vila-maria': {
-    title: 'Instalação de Ar Condicionado em Vila Maria | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em Vila Maria, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-casa-verde': {
-    title: 'Instalação de Ar Condicionado em Casa Verde | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em Casa Verde, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-mandaqui': {
-    title: 'Instalação de Ar Condicionado em Mandaqui | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em Mandaqui, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-tremembe': {
-    title: 'Instalação de Ar Condicionado em Tremembé | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em Tremembé, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-freguesia-do-o': {
-    title: 'Instalação de Ar Condicionado na Freguesia do Ó | New Clima',
-    description: 'Instalação e manutenção de ar condicionado na Freguesia do Ó, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-limao': {
-    title: 'Instalação de Ar Condicionado no Limão | New Clima',
-    description: 'Instalação e manutenção de ar condicionado no Limão, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-belem': {
-    title: 'Instalação de Ar Condicionado em Belém | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em Belém, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-bras': {
-    title: 'Instalação de Ar Condicionado no Brás | New Clima',
-    description: 'Instalação e manutenção de ar condicionado no Brás, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-carrao': {
-    title: 'Instalação de Ar Condicionado no Carrão | New Clima',
-    description: 'Instalação e manutenção de ar condicionado no Carrão, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-vila-formosa': {
-    title: 'Instalação de Ar Condicionado em Vila Formosa | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em Vila Formosa, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-sapopemba': {
-    title: 'Instalação de Ar Condicionado em Sapopemba | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em Sapopemba, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-penha-de-franca': {
-    title: 'Instalação de Ar Condicionado na Penha de França | New Clima',
-    description: 'Instalação e manutenção de ar condicionado na Penha de França, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-jardim-analia': {
-    title: 'Instalação de Ar Condicionado no Jardim Anália | New Clima',
-    description: 'Instalação e manutenção de ar condicionado no Jardim Anália, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-aricanduva': {
-    title: 'Instalação de Ar Condicionado em Aricanduva | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em Aricanduva, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-republica': {
-    title: 'Instalação de Ar Condicionado na República | New Clima',
-    description: 'Instalação e manutenção de ar condicionado na República, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-santa-cecilia': {
-    title: 'Instalação de Ar Condicionado em Santa Cecília | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em Santa Cecília, SP. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-bom-retiro': {
-    title: 'Instalação de Ar Condicionado no Bom Retiro | New Clima',
-    description: 'Instalação e manutenção de ar condicionado no Bom Retiro, SP. (11) 96346-2516.',
-  },
-  'ar-condicionado-zona-sul-sp': {
-    title: 'Ar Condicionado na Zona Sul de São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em todos os bairros da Zona Sul de SP. Visita gratuita. (11) 96346-2516.',
-  },
-  'ar-condicionado-zona-norte-sp': {
-    title: 'Ar Condicionado na Zona Norte de São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em todos os bairros da Zona Norte de SP. (11) 96346-2516.',
-  },
-  'ar-condicionado-zona-leste-sp': {
-    title: 'Ar Condicionado na Zona Leste de São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em todos os bairros da Zona Leste de SP. (11) 96346-2516.',
-  },
-  'ar-condicionado-zona-oeste-sp': {
-    title: 'Ar Condicionado na Zona Oeste de São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em todos os bairros da Zona Oeste de SP. (11) 96346-2516.',
-  },
-  'ar-condicionado-zona-central-sp': {
-    title: 'Ar Condicionado na Região Central de São Paulo | New Clima',
-    description: 'Instalação e manutenção de ar condicionado em todos os bairros da Região Central de SP. (11) 96346-2516.',
-  },
-  'manutencao-chiller-sao-paulo': {
-    title: 'Manutenção de Chiller em São Paulo | New Clima',
-    description: 'Manutenção preventiva e corretiva de chiller em SP e ABC. Carrier, Trane, Daikin, York. PMOC e atendimento emergencial. (11) 96346-2516.',
-  },
-  'manutencao-fan-coil-sao-paulo': {
-    title: 'Manutenção e Limpeza de Fan Coil em São Paulo | New Clima',
-    description: 'Manutenção preventiva, corretiva e higienização de fan coil em SP e ABC. PMOC e laudo para Vigilância Sanitária. (11) 96346-2516.',
-  },
-  'manutencao-self-contained-sao-paulo': {
-    title: 'Manutenção de Self Contained em São Paulo | New Clima',
-    description: 'Manutenção de ar condicionado self contained em SP e ABC. Data centers, shoppings e hospitais. (11) 96346-2516.',
-  },
-  'limpeza-fan-coil-sao-paulo': {
-    title: 'Limpeza e Higienização de Fan Coil em São Paulo | New Clima',
-    description: 'Higienização profunda de fan coil em SP e ABC. Laudo para Vigilância Sanitária incluído. (11) 96346-2516.',
-  },
-  'central-agua-gelada-sao-paulo': {
-    title: 'Central de Água Gelada em São Paulo — Instalação e Manutenção | New Clima',
-    description: 'Instalação, manutenção e PMOC de central de água gelada em SP e ABC. Chiller, fan coil e torres de resfriamento. (11) 96346-2516.',
-  },
-  'ar-condicionado-aquecimento-sp': {
-    title: 'Ar Condicionado para Aquecimento em São Paulo | New Clima',
-    description: 'Modo quente do split inverter — a forma mais econômica de aquecer no inverno de SP. Instalação e manutenção. (11) 96346-2516.',
-  },
-  'manutencao-preventiva-antes-do-verao-sp': {
-    title: 'Manutenção de Ar Condicionado Antes do Verão em SP | New Clima',
-    description: 'Revise seu ar condicionado agora e chegue ao verão sem susto. Manutenção preventiva completa em SP e ABC. (11) 96346-2516.',
-  },
-  'instalacao-ar-condicionado-morumbi': {
-    title: 'Instalação de Ar Condicionado no Morumbi SP | New Clima',
-    description: 'Instalação e manutenção de ar condicionado no Morumbi. Técnicos certificados, obra limpa e garantia por escrito. Visita técnica gratuita. (11) 96346-2516.',
-  },
-  'mapa-site': {
-    title: 'Mapa do Site | New Clima Ar Condicionado SP e ABC',
-    description: 'Todas as páginas do site da New Clima Ar Condicionado organizadas por categoria: serviços, regiões e blog.',
-  },
-  'blog/ar-condicionado-empresas-vrf': {
-    title: 'Ar Condicionado para Empresas: Split ao VRF | New Clima Blog',
-    description: 'Soluções de climatização corporativa com foco em ROI. Do split ao VRF.',
-  },
+  'ar-condicionado-farmacia-sao-paulo': { title: 'Ar Condicionado para Farmácias em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado para farmácias em SP. Temperatura controlada para medicamentos, PMOC conforme ANVISA. (11) 96346-2516.' },
+  'ar-condicionado-consultorio-odontologico-sao-paulo': { title: 'Ar Condicionado para Consultório Odontológico em SP | New Clima', description: 'Ar condicionado silencioso para consultórios odontológicos em São Paulo. PMOC, limpeza com bactericida e instalação fora do horário. (11) 96346-2516.' },
+  'ar-condicionado-salao-beleza-sao-paulo': { title: 'Ar Condicionado para Salão de Beleza em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado para salões de beleza e barbearias em SP e ABC. (11) 96346-2516.' },
+  'ar-condicionado-supermercado-sao-paulo': { title: 'Ar Condicionado para Supermercados em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado para supermercados em SP. PMOC, atendimento emergencial. (11) 96346-2516.' },
+  'ar-condicionado-data-center-sao-paulo': { title: 'Ar Condicionado para Data Center e Sala de Servidor em SP | New Clima', description: 'Ar condicionado de precisão para data centers e salas de servidor em São Paulo. (11) 96346-2516.' },
+  'ar-condicionado-coworking-sao-paulo': { title: 'Ar Condicionado para Coworking em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado para coworkings em SP. Silencioso, PMOC e contrato de manutenção. (11) 96346-2516.' },
+  'ar-condicionado-igreja-sao-paulo': { title: 'Ar Condicionado para Igrejas e Templos em São Paulo | New Clima', description: 'Instalação de ar condicionado para igrejas e templos em SP e ABC. Sistemas silenciosos. (11) 96346-2516.' },
+  'ar-condicionado-laboratorio-sao-paulo': { title: 'Ar Condicionado para Laboratórios em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado para laboratórios em SP. PMOC conforme ANVISA. (11) 96346-2516.' },
+  'ar-condicionado-pet-shop-sao-paulo': { title: 'Ar Condicionado para Pet Shops e Clínicas Veterinárias em SP | New Clima', description: 'Ar condicionado para pet shops e clínicas veterinárias em São Paulo. (11) 96346-2516.' },
+  'ar-condicionado-clinica-estetica-sao-paulo': { title: 'Ar Condicionado para Clínicas de Estética em São Paulo | New Clima', description: 'Instalação silenciosa de ar condicionado para clínicas de estética em SP. (11) 96346-2516.' },
+  'ar-condicionado-loja-varejo-sao-paulo': { title: 'Ar Condicionado para Lojas e Varejo em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado para lojas e varejo em SP. (11) 96346-2516.' },
+  'ar-condicionado-banco-financeira-sao-paulo': { title: 'Ar Condicionado para Bancos e Financeiras em São Paulo | New Clima', description: 'Instalação e PMOC para agências bancárias em SP. (11) 96346-2516.' },
+  'ar-condicionado-padaria-sao-paulo': { title: 'Ar Condicionado para Padarias e Confeitarias em São Paulo | New Clima', description: 'Ar condicionado para padarias em SP com projeto correto para o calor dos fornos. (11) 96346-2516.' },
+  'ar-condicionado-concessionaria-sao-paulo': { title: 'Ar Condicionado para Concessionárias em São Paulo | New Clima', description: 'Instalação de ar condicionado para showrooms e concessionárias em SP e ABC. (11) 96346-2516.' },
+  'ar-condicionado-escritorio-advocacia-sao-paulo': { title: 'Ar Condicionado para Escritório de Advocacia em SP | New Clima', description: 'Ar condicionado silencioso para escritórios de advocacia em São Paulo. (11) 96346-2516.' },
+  'ar-condicionado-consultorio-psicologia-sao-paulo': { title: 'Ar Condicionado para Consultório de Psicologia em SP | New Clima', description: 'Ar condicionado ultrasilencioso para consultórios de psicologia em São Paulo. (11) 96346-2516.' },
+  'ar-condicionado-clinica-fisioterapia-sao-paulo': { title: 'Ar Condicionado para Clínicas de Fisioterapia em SP | New Clima', description: 'Instalação e PMOC para clínicas de fisioterapia em São Paulo. (11) 96346-2516.' },
+  'ar-condicionado-creche-sao-paulo': { title: 'Ar Condicionado para Creches e Berçários em São Paulo | New Clima', description: 'Instalação de ar condicionado para creches e berçários em SP. (11) 96346-2516.' },
+  'ar-condicionado-bar-pub-sao-paulo': { title: 'Ar Condicionado para Bares e Pubs em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado para bares e pubs em SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-split-sp': { title: 'Instalação de Ar Condicionado Split em São Paulo | New Clima', description: 'Instalação de split em SP com obra limpa, infraestrutura completa e garantia de 1 ano. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-cassete-sp': { title: 'Instalação de Ar Condicionado Cassete em São Paulo | New Clima', description: 'Instalação de cassete de teto em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-piso-teto-sp': { title: 'Instalação de Ar Condicionado Piso-Teto em São Paulo | New Clima', description: 'Instalação de piso-teto em SP. (11) 96346-2516.' },
+  'instalacao-multi-split-sp': { title: 'Instalação de Multi Split em São Paulo | New Clima', description: 'Instalação de multi split em SP — vários cômodos, uma condensadora. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-inverter-sp': { title: 'Instalação de Ar Condicionado Inverter em São Paulo | New Clima', description: 'Instalação de inverter em SP com infraestrutura adequada para máxima eficiência. (11) 96346-2516.' },
+  'ar-condicionado-nao-gela-sp': { title: 'Ar Condicionado Não Gela em São Paulo — Conserto Rápido | New Clima', description: 'Ar condicionado ligado mas não gela em SP? Diagnóstico gratuito, conserto no mesmo dia. (11) 96346-2516.' },
+  'ar-condicionado-vazando-agua-sp': { title: 'Ar Condicionado Vazando Água em São Paulo | New Clima', description: 'Ar condicionado pingando em SP? Atendimento em até 2 horas. (11) 96346-2516.' },
+  'recarga-gas-ar-condicionado-sp': { title: 'Recarga de Gás de Ar Condicionado em São Paulo | New Clima', description: 'Recarga de gás R410A e R32 em SP com verificação de vazamento. (11) 96346-2516.' },
+  'ar-condicionado-com-mau-cheiro-sp': { title: 'Ar Condicionado com Mau Cheiro em São Paulo | New Clima', description: 'Ar condicionado com cheiro de mofo em SP? Limpeza profunda elimina a causa. (11) 96346-2516.' },
+  'ar-condicionado-fazendo-barulho-sp': { title: 'Ar Condicionado Fazendo Barulho em São Paulo | New Clima', description: 'Ar condicionado barulhento em SP? Diagnóstico gratuito e conserto com garantia. (11) 96346-2516.' },
+  'ar-condicionado-desligando-sozinho-sp': { title: 'Ar Condicionado Desligando Sozinho em São Paulo | New Clima', description: 'Ar condicionado que desliga sozinho em SP? Diagnóstico gratuito e conserto rápido. (11) 96346-2516.' },
+  'limpeza-ar-condicionado-sp': { title: 'Limpeza de Ar Condicionado em São Paulo | New Clima', description: 'Limpeza profunda de ar condicionado em SP. Remove fungos, ácaros e mau cheiro. (11) 96346-2516.' },
+  'higienizacao-ar-condicionado-sp': { title: 'Higienização de Ar Condicionado em São Paulo | New Clima', description: 'Higienização profissional com bactericida certificado em SP. (11) 96346-2516.' },
+  'pmoc-sao-paulo': { title: 'PMOC em São Paulo — Contrato de Manutenção Obrigatório | New Clima', description: 'PMOC em São Paulo conforme a Lei 13.589/18. Elaboração, execução e documentação para empresas, condomínios e clínicas.' },
+  'contrato-manutencao-ar-condicionado-sp': { title: 'Contrato de Manutenção de Ar Condicionado em São Paulo | New Clima', description: 'Contratos mensais, trimestrais ou semestrais de manutenção de ar condicionado em SP. (11) 96346-2516.' },
+  'servicos': { title: 'Serviços de Ar Condicionado em São Paulo e ABC | New Clima', description: 'Instalação, manutenção, limpeza e conserto de ar condicionado em SP e ABC. PMOC para empresas. Visita gratuita. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-lg-sao-paulo': { title: 'Instalação de Ar Condicionado LG em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado LG em SP e ABC. Técnicos certificados, garantia de fábrica mantida. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-samsung-sao-paulo': { title: 'Instalação de Ar Condicionado Samsung em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado Samsung em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-daikin-sao-paulo': { title: 'Instalação de Ar Condicionado Daikin em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado Daikin em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-midea-sao-paulo': { title: 'Instalação de Ar Condicionado Midea em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado Midea em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-fujitsu-sao-paulo': { title: 'Instalação de Ar Condicionado Fujitsu em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado Fujitsu em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-carrier-sao-paulo': { title: 'Instalação de Ar Condicionado Carrier em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado Carrier em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-elgin-sao-paulo': { title: 'Instalação de Ar Condicionado Elgin em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado Elgin em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-gree-sao-paulo': { title: 'Instalação de Ar Condicionado Gree em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado Gree em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-springer-carrier-sao-paulo': { title: 'Instalação de Ar Condicionado Springer Carrier em SP | New Clima', description: 'Instalação e manutenção de ar condicionado Springer Carrier em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-komeco-sao-paulo': { title: 'Instalação de Ar Condicionado Komeco em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado Komeco em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-philco-sao-paulo': { title: 'Instalação de Ar Condicionado Philco em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado Philco em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-electrolux-sao-paulo': { title: 'Instalação de Ar Condicionado Electrolux em SP | New Clima', description: 'Instalação e manutenção de ar condicionado Electrolux em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-trane-sao-paulo': { title: 'Instalação de Ar Condicionado Trane em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado Trane em SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-york-sao-paulo': { title: 'Instalação de Ar Condicionado York em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado York em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-hitachi-sao-paulo': { title: 'Instalação de Ar Condicionado Hitachi em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado Hitachi em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-panasonic-sao-paulo': { title: 'Instalação de Ar Condicionado Panasonic em SP | New Clima', description: 'Instalação e manutenção de ar condicionado Panasonic em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-bosch-sao-paulo': { title: 'Instalação de Ar Condicionado Bosch em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado Bosch em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-tcl-sao-paulo': { title: 'Instalação de Ar Condicionado TCL em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado TCL em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-agratto-sao-paulo': { title: 'Instalação de Ar Condicionado Agratto em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado Agratto em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-consul-sao-paulo': { title: 'Instalação de Ar Condicionado Consul em São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado Consul em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-jardim-paulista': { title: 'Instalação de Ar Condicionado no Jardim Paulista | New Clima', description: 'Instalação e manutenção de ar condicionado no Jardim Paulista, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-jardim-europa': { title: 'Instalação de Ar Condicionado no Jardim Europa | New Clima', description: 'Instalação e manutenção de ar condicionado no Jardim Europa, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-vila-andrade': { title: 'Instalação de Ar Condicionado em Vila Andrade | New Clima', description: 'Instalação e manutenção de ar condicionado em Vila Andrade, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-campo-limpo': { title: 'Instalação de Ar Condicionado em Campo Limpo | New Clima', description: 'Instalação e manutenção de ar condicionado em Campo Limpo, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-interlagos': { title: 'Instalação de Ar Condicionado em Interlagos | New Clima', description: 'Instalação e manutenção de ar condicionado em Interlagos, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-cerqueira-cesar': { title: 'Instalação de Ar Condicionado em Cerqueira César | New Clima', description: 'Instalação e manutenção de ar condicionado em Cerqueira César, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-pacaembu': { title: 'Instalação de Ar Condicionado no Pacaembu | New Clima', description: 'Instalação e manutenção de ar condicionado no Pacaembu, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-sumare': { title: 'Instalação de Ar Condicionado no Sumaré | New Clima', description: 'Instalação e manutenção de ar condicionado no Sumaré, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-vila-leopoldina': { title: 'Instalação de Ar Condicionado em Vila Leopoldina | New Clima', description: 'Instalação e manutenção de ar condicionado em Vila Leopoldina, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-barra-funda': { title: 'Instalação de Ar Condicionado na Barra Funda | New Clima', description: 'Instalação e manutenção de ar condicionado na Barra Funda, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-alto-de-pinheiros': { title: 'Instalação de Ar Condicionado em Alto de Pinheiros | New Clima', description: 'Instalação e manutenção de ar condicionado em Alto de Pinheiros, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-consolacao': { title: 'Instalação de Ar Condicionado na Consolação | New Clima', description: 'Instalação e manutenção de ar condicionado na Consolação, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-vila-guilherme': { title: 'Instalação de Ar Condicionado em Vila Guilherme | New Clima', description: 'Instalação e manutenção de ar condicionado em Vila Guilherme, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-vila-maria': { title: 'Instalação de Ar Condicionado em Vila Maria | New Clima', description: 'Instalação e manutenção de ar condicionado em Vila Maria, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-casa-verde': { title: 'Instalação de Ar Condicionado em Casa Verde | New Clima', description: 'Instalação e manutenção de ar condicionado em Casa Verde, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-mandaqui': { title: 'Instalação de Ar Condicionado em Mandaqui | New Clima', description: 'Instalação e manutenção de ar condicionado em Mandaqui, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-tremembe': { title: 'Instalação de Ar Condicionado em Tremembé | New Clima', description: 'Instalação e manutenção de ar condicionado em Tremembé, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-freguesia-do-o': { title: 'Instalação de Ar Condicionado na Freguesia do Ó | New Clima', description: 'Instalação e manutenção de ar condicionado na Freguesia do Ó, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-limao': { title: 'Instalação de Ar Condicionado no Limão | New Clima', description: 'Instalação e manutenção de ar condicionado no Limão, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-belem': { title: 'Instalação de Ar Condicionado em Belém | New Clima', description: 'Instalação e manutenção de ar condicionado em Belém, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-bras': { title: 'Instalação de Ar Condicionado no Brás | New Clima', description: 'Instalação e manutenção de ar condicionado no Brás, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-carrao': { title: 'Instalação de Ar Condicionado no Carrão | New Clima', description: 'Instalação e manutenção de ar condicionado no Carrão, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-vila-formosa': { title: 'Instalação de Ar Condicionado em Vila Formosa | New Clima', description: 'Instalação e manutenção de ar condicionado em Vila Formosa, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-sapopemba': { title: 'Instalação de Ar Condicionado em Sapopemba | New Clima', description: 'Instalação e manutenção de ar condicionado em Sapopemba, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-penha-de-franca': { title: 'Instalação de Ar Condicionado na Penha de França | New Clima', description: 'Instalação e manutenção de ar condicionado na Penha de França, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-jardim-analia': { title: 'Instalação de Ar Condicionado no Jardim Anália | New Clima', description: 'Instalação e manutenção de ar condicionado no Jardim Anália, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-aricanduva': { title: 'Instalação de Ar Condicionado em Aricanduva | New Clima', description: 'Instalação e manutenção de ar condicionado em Aricanduva, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-republica': { title: 'Instalação de Ar Condicionado na República | New Clima', description: 'Instalação e manutenção de ar condicionado na República, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-santa-cecilia': { title: 'Instalação de Ar Condicionado em Santa Cecília | New Clima', description: 'Instalação e manutenção de ar condicionado em Santa Cecília, SP. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-bom-retiro': { title: 'Instalação de Ar Condicionado no Bom Retiro | New Clima', description: 'Instalação e manutenção de ar condicionado no Bom Retiro, SP. (11) 96346-2516.' },
+  'ar-condicionado-zona-sul-sp': { title: 'Ar Condicionado na Zona Sul de São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado em todos os bairros da Zona Sul de SP. (11) 96346-2516.' },
+  'ar-condicionado-zona-norte-sp': { title: 'Ar Condicionado na Zona Norte de São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado em todos os bairros da Zona Norte de SP. (11) 96346-2516.' },
+  'ar-condicionado-zona-leste-sp': { title: 'Ar Condicionado na Zona Leste de São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado em todos os bairros da Zona Leste de SP. (11) 96346-2516.' },
+  'ar-condicionado-zona-oeste-sp': { title: 'Ar Condicionado na Zona Oeste de São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado em todos os bairros da Zona Oeste de SP. (11) 96346-2516.' },
+  'ar-condicionado-zona-central-sp': { title: 'Ar Condicionado na Região Central de São Paulo | New Clima', description: 'Instalação e manutenção de ar condicionado em todos os bairros da Região Central de SP. (11) 96346-2516.' },
+  'manutencao-chiller-sao-paulo': { title: 'Manutenção de Chiller em São Paulo | New Clima', description: 'Manutenção preventiva e corretiva de chiller em SP e ABC. PMOC e atendimento emergencial. (11) 96346-2516.' },
+  'manutencao-fan-coil-sao-paulo': { title: 'Manutenção e Limpeza de Fan Coil em São Paulo | New Clima', description: 'Manutenção preventiva, corretiva e higienização de fan coil em SP e ABC. (11) 96346-2516.' },
+  'manutencao-self-contained-sao-paulo': { title: 'Manutenção de Self Contained em São Paulo | New Clima', description: 'Manutenção de ar condicionado self contained em SP e ABC. (11) 96346-2516.' },
+  'limpeza-fan-coil-sao-paulo': { title: 'Limpeza e Higienização de Fan Coil em São Paulo | New Clima', description: 'Higienização profunda de fan coil em SP e ABC. Laudo para Vigilância Sanitária incluído. (11) 96346-2516.' },
+  'central-agua-gelada-sao-paulo': { title: 'Central de Água Gelada em São Paulo — Instalação e Manutenção | New Clima', description: 'Instalação, manutenção e PMOC de central de água gelada em SP e ABC. (11) 96346-2516.' },
+  'ar-condicionado-aquecimento-sp': { title: 'Ar Condicionado para Aquecimento em São Paulo | New Clima', description: 'Modo quente do split inverter — a forma mais econômica de aquecer no inverno de SP. (11) 96346-2516.' },
+  'manutencao-preventiva-antes-do-verao-sp': { title: 'Manutenção de Ar Condicionado Antes do Verão em SP | New Clima', description: 'Revise seu ar condicionado agora e chegue ao verão sem susto. Manutenção preventiva completa em SP e ABC. (11) 96346-2516.' },
+  'instalacao-ar-condicionado-morumbi': { title: 'Instalação de Ar Condicionado no Morumbi SP | New Clima', description: 'Instalação e manutenção de ar condicionado no Morumbi. Técnicos certificados, obra limpa e garantia por escrito. (11) 96346-2516.' },
+  'mapa-site': { title: 'Mapa do Site | New Clima Ar Condicionado SP e ABC', description: 'Todas as páginas do site da New Clima Ar Condicionado organizadas por categoria: serviços, regiões e blog.' },
+  'blog/ar-condicionado-empresas-vrf': { title: 'Ar Condicionado para Empresas: Split ao VRF | New Clima Blog', description: 'Soluções de climatização corporativa com foco em ROI. Do split ao VRF.' },
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -862,12 +557,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const key = slugArr.join('/')
   const meta = metaMap[key]
   const base = 'https://www.newclimaar.com.br'
-  const canonical = `${base}/${key}`
+  const canonical = key ? `${base}/${key}` : base
 
   if (!meta) {
     return {
       title: 'New Clima Ar | Instalação e Manutenção de Ar Condicionado em SP e ABC Paulista',
       description: 'Instalação e manutenção de ar condicionado em São Paulo e ABC. 7 anos de experiência, técnicos certificados. Ligue (11) 96346-2516.',
+      alternates: { canonical },
     }
   }
 
@@ -891,12 +587,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default function SlugPage({ params }: Props) {
-  const slug = params?.slug?.[0] ?? ''
-  const isHome = !slug
+  const slugArr = params.slug ?? []
+  const key = slugArr.join('/')
+  const pathname = key ? `/${key}` : '/'
 
   return (
     <>
-      {isHome && (
+      {pathname === '/' && (
         <link
           rel="preload"
           as="image"
@@ -904,7 +601,7 @@ export default function SlugPage({ params }: Props) {
           fetchPriority="high"
         />
       )}
-      <SlugClient />
+      <App pathname={pathname} />
     </>
   )
 }
