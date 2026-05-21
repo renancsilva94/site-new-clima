@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import App from '../../src/App'
+import SlugClient from './SlugClient'
 
 type Props = {
   params: { slug?: string[] }
@@ -601,7 +601,7 @@ export default function SlugPage({ params }: Props) {
           fetchPriority="high"
         />
       )}
-      <App pathname={pathname} />
+      <SlugClient pathname={pathname} />
     </>
   )
 }
