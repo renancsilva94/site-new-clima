@@ -33,7 +33,7 @@ import {
 } from 'lucide-react';
 
 
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 
 import { 
   SplitMultiSplit, 
@@ -333,13 +333,9 @@ const SectionHeading = ({ tag, title, subtitle, centered = false, asH1 = false }
   </div>
 );
 
-export default function App() {
+export default function App({ pathname = '/' }: { pathname?: string }) {
   const router = useRouter();
-  const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-  const [mounted, setMounted] = React.useState(false);
-  React.useEffect(() => { setMounted(true); }, []);
-  if (!mounted) return null;
 
   const navigate = (page: PageId) => {
     const routes: Record<PageId, string> = {
@@ -552,12 +548,14 @@ export default function App() {
     const path = routes[page] || '/'
     router.push(path)
     setIsMobileMenuOpen(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
   }
 
   return (
     <>
-      <SchemaOrg />
+      <SchemaOrg pathname={pathname} />
       <div className="min-h-screen font-sans text-slate-900 bg-white selection:bg-primary/10 selection:text-primary">
         
 
