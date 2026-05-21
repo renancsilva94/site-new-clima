@@ -129,7 +129,7 @@ const SectionHeading = ({ tag, title, subtitle, centered = false, asH1 = false }
   </div>
 );
 
-export default function App() {
+export default function App({ pathname = '/' }: { pathname?: string }) {
   const router = useRouter();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
