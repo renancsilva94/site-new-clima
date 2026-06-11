@@ -730,7 +730,7 @@ export const VRFMiniVRF = () => (
 
 export const ManutencaoPreventiva = () => (
   <div className="space-y-16 pb-20">
-    <ServiceLayout tag="Saúde & Economia" title="Manutenção Preventiva de Ar Condicionado e PMOC em SP" icon={<ShieldCheck />} imageUrl= "public/images/manutencao-preventiva-hero.png" imageAlt="Técnico realizando manutenção preventiva de ar condicionado em São Paulo">
+    <ServiceLayout tag="Saúde & Economia" title="Manutenção Preventiva de Ar Condicionado e PMOC em SP" icon={<ShieldCheck />} imageUrl= "/images/manutencao-preventiva-hero.png" imageAlt="Técnico realizando manutenção preventiva de ar condicionado em São Paulo">
       <p>A <strong>manutenção preventiva de ar condicionado</strong> é essencial para garantir a qualidade do ar e a vida útil do seu aparelho.</p>
       <p>Para empresas, implementamos o <strong>PMOC (Plano de Manutenção, Operação e Controle)</strong>, garantindo conformidade com a Lei 13.589/2018.</p>
       <h3 className="text-xl font-bold text-primary">Benefícios da Manutenção Preventiva em SP e ABC</h3>
