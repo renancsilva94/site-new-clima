@@ -145,7 +145,10 @@ export async function generateMetadata(): Promise<Metadata> {
     '/'
 
   // Normalizar o pathname (remover trailing slash exceto na home)
-  const normalizedPath = pathname === '/' ? '/' : pathname.replace(/\/$/, '')
+  const normalizedPath =
+  pathname === '/' || pathname === '/index.html'
+    ? '/'
+    : pathname.replace(/\/$/, '').replace(/\/index\.html$/, '')
   const meta = metaMap[normalizedPath]
   const canonical = normalizedPath === '/' ? base : `${base}${normalizedPath}`
 
