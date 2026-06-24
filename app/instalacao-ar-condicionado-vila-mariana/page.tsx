@@ -1,6 +1,6 @@
 
 import { Metadata } from 'next'
-import BairroView from '../../../src/components/BairroView'
+import BairroView from '../../src/components/BairroView'
 
 export const metadata: Metadata = {
   title: 'Instalação de Ar Condicionado em Vila Mariana SP | New Clima',
