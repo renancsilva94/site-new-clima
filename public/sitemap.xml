@@ -4,7 +4,7 @@
   <!-- Home -->
   <url>
     <loc>https://www.newclimaar.com.br/</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,25 +12,25 @@
   <!-- Páginas Principais -->
     <url>
     <loc>https://www.newclimaar.com.br/servicos</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/sobre</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/contato</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/mapa-site</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
@@ -38,37 +38,37 @@
   <!-- Páginas de Serviço -->
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-split-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-comercial-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-vrf-mini-vrf-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/manutencao-preventiva-ar-condicionado-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/manutencao-corretiva-ar-condicionado-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/limpeza-higienizacao-ar-condicionado-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -76,37 +76,37 @@
   <!-- Páginas de Região -->
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-santo-andre</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-sao-bernardo-do-campo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-sao-caetano-do-sul</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-diadema</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-maua</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -114,7 +114,7 @@
   <!-- Blog Index -->
   <url>
     <loc>https://www.newclimaar.com.br/blog</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -122,103 +122,103 @@
   <!-- Posts do Blog -->
   <url>
     <loc>https://www.newclimaar.com.br/blog/pmoc-obrigatorio-sao-paulo-lei</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/multa-pmoc-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/pmoc-condominios-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/quanto-custa-pmoc-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/quanto-custa-instalar-ar-condicionado-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/qual-ar-condicionado-comprar-2026</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/split-vs-multi-split-apartamento-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/manutencao-ar-condicionado-consequencias</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/ar-condicionado-inverter</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/instalacao-ar-condicionado-apartamento-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/como-calcular-btus-ar-condicionado</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/pmoc-obrigatorio-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/lg-round-cassette</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/instalacao-ar-condicionado-obra-limpa</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/ar-condicionado-quarto</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/split-convencional-vs-inverter</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/ar-condicionado-empresas-vrf</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -226,231 +226,231 @@
   <!-- Páginas por Bairro -->
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-moema</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-vila-mariana</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-pinheiros</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-itaim-bibi</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-jardins</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-tatuape</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-santana</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-brooklin</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-perdizes</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-mooca</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-analia-franco</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-vila-madalena</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-campo-belo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-saude</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-higienopolis</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-lapa</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-santo-amaro</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-tucuruvi</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-ipiranga</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-morumbi</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-vila-prudente</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-jabaquara</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-campo-grande</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-penha</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-cursino</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-agua-rasa</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-bela-vista</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-butanta</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-vila-olimpia</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-pompeia</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-paraiso</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-aclimacao</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-mirandopolis</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-planalto-paulista</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-vila-clementino</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-chacara-klabin</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-cambuci</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-liberdade</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -459,49 +459,49 @@
   <!-- Páginas por Segmento -->
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-clinica-medica-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-escritorio-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-condominio-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-restaurante-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-hotel-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-pousada-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-academia-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-escola-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -518,37 +518,37 @@
   <!-- Páginas Semânticas Gerais -->
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/manutencao-ar-condicionado-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/tecnico-ar-condicionado-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/conserto-ar-condicionado-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/empresa-ar-condicionado-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/assistencia-tecnica-ar-condicionado-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -557,61 +557,61 @@
   <!-- Novos Posts Blog -->
   <url>
     <loc>https://www.newclimaar.com.br/blog/ar-condicionado-faz-mal-saude</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/dormir-com-ar-condicionado-faz-mal</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/ar-condicionado-gasta-mais-dia-ou-noite</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/quanto-gasta-ar-condicionado-inverter</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/mau-cheiro-ar-condicionado</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/ar-condicionado-desliga-sozinho</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/vida-util-ar-condicionado</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/temperatura-ideal-ar-condicionado</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/funcao-dry-ar-condicionado</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/blog/gas-r32-r410a-ar-condicionado</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -620,25 +620,25 @@
   <!-- Páginas Residencial -->
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-apartamento-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-residencial-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-casa-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-condominio-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -647,91 +647,91 @@
   <!-- ABC Paulista — Manutenção, Limpeza e PMOC por cidade -->
   <url>
     <loc>https://www.newclimaar.com.br/manutencao-ar-condicionado-santo-andre</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/limpeza-ar-condicionado-santo-andre</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/pmoc-santo-andre</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/manutencao-ar-condicionado-sao-bernardo-do-campo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/limpeza-ar-condicionado-sao-bernardo-do-campo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/pmoc-sao-bernardo-do-campo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/manutencao-ar-condicionado-sao-caetano-do-sul</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/limpeza-ar-condicionado-sao-caetano-do-sul</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/pmoc-sao-caetano-do-sul</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/manutencao-ar-condicionado-diadema</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/limpeza-ar-condicionado-diadema</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/pmoc-diadema</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/manutencao-ar-condicionado-maua</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/limpeza-ar-condicionado-maua</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/pmoc-maua</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -740,115 +740,115 @@
   <!-- Segmentos por Perfil de Cliente -->
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-farmacia-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-consultorio-odontologico-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-salao-beleza-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-supermercado-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-data-center-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-coworking-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-igreja-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-laboratorio-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-pet-shop-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-clinica-estetica-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-loja-varejo-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-banco-financeira-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-padaria-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-concessionaria-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-escritorio-advocacia-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-consultorio-psicologia-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-clinica-fisioterapia-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-creche-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-bar-pub-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -857,91 +857,91 @@
   <!-- Páginas de Alta Prioridade -->
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-split-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-cassete-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-piso-teto-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-multi-split-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-inverter-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-nao-gela-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-vazando-agua-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/recarga-gas-ar-condicionado-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-com-mau-cheiro-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-fazendo-barulho-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-desligando-sozinho-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/limpeza-ar-condicionado-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/higienizacao-ar-condicionado-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/pmoc-sao-paulo</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/contrato-manutencao-ar-condicionado-sp</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -950,121 +950,121 @@
   <!-- Páginas por Marca -->
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-lg-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-samsung-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-daikin-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-midea-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-fujitsu-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-carrier-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-elgin-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-gree-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-springer-carrier-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-komeco-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-philco-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-electrolux-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-trane-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-york-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-hitachi-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-panasonic-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-bosch-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-tcl-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-agratto-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-consul-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1073,181 +1073,181 @@
   <!-- Novos Bairros SP -->
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-jardim-paulista</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-jardim-europa</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-vila-andrade</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-campo-limpo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-interlagos</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-cerqueira-cesar</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-pacaembu</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-sumare</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-vila-leopoldina</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-barra-funda</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-alto-de-pinheiros</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-consolacao</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-vila-guilherme</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-vila-maria</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-casa-verde</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-mandaqui</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-tremembe</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-freguesia-do-o</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-limao</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-belem</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-bras</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-carrao</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-vila-formosa</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-sapopemba</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-penha-de-franca</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-jardim-analia</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-aricanduva</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-republica</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-santa-cecilia</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/instalacao-ar-condicionado-bom-retiro</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1255,31 +1255,31 @@
   <!-- Páginas por Zona -->
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-zona-sul-sp</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-zona-norte-sp</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-zona-leste-sp</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-zona-oeste-sp</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-zona-central-sp</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1288,43 +1288,43 @@
   <!-- Equipamentos Grandes, Aquecimento e Pré-Verão -->
   <url>
     <loc>https://www.newclimaar.com.br/manutencao-chiller-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/manutencao-fan-coil-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/manutencao-self-contained-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/limpeza-fan-coil-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/central-agua-gelada-sao-paulo</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/ar-condicionado-aquecimento-sp</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.newclimaar.com.br/manutencao-preventiva-antes-do-verao-sp</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
