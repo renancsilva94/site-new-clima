@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import Header from '@/src/components/Header'
-import Footer from '@/src/components/Footer'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.newclimaar.com.br'),
@@ -91,11 +89,7 @@ export default function RootLayout({
           __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDWKVBVP"
           height="0" width="0" style="display:none;visibility:hidden"></iframe>`
         }}/>
-        <Header />
-        <main>
-          {children}
-        </main>
-        <Footer />
+        {children}
       </body>
     </html>
   )
