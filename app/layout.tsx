@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Header from '@/src/components/Header'
+import Footer from '@/src/components/Footer'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.newclimaar.com.br'),
@@ -12,7 +14,7 @@ const schemaOrg = {
   url: 'https://www.newclimaar.com.br',
   logo: 'https://www.newclimaar.com.br/images/logo-new-clima.png',
   image: 'https://www.newclimaar.com.br/images/logo-new-clima.png',
-  description: 'Instalação, manutenção, limpeza e conserto de ar condicionado em São Paulo e ABC Paulista. Técnicos certificados, visita gratuita e garantia por escrito.',
+  description: 'Instalação, manutenção, limpeza e conserto de ar condicionado em São Paulo e ABC Paulista.',
   telephone: '+55-11-96346-2516',
   email: 'contato@newclimaar.com.br',
   address: {
@@ -45,8 +47,6 @@ const schemaOrg = {
     { '@type': 'City', name: 'Mauá' },
   ],
   priceRange: '$$',
-  currenciesAccepted: 'BRL',
-  paymentAccepted: 'Cash, Credit Card, PIX',
   sameAs: [
     'https://www.instagram.com/newclimaar',
     'https://www.facebook.com/newclimaar',
@@ -91,7 +91,11 @@ export default function RootLayout({
           __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDWKVBVP"
           height="0" width="0" style="display:none;visibility:hidden"></iframe>`
         }}/>
-        {children}
+        <Header />
+        <main>
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   )
