@@ -5,6 +5,54 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.newclimaar.com.br'),
 }
 
+const schemaOrg = {
+  '@context': 'https://schema.org',
+  '@type': 'HVACBusiness',
+  name: 'New Clima Ar Condicionado',
+  url: 'https://www.newclimaar.com.br',
+  logo: 'https://www.newclimaar.com.br/images/logo-new-clima.png',
+  image: 'https://www.newclimaar.com.br/images/logo-new-clima.png',
+  description: 'Instalação, manutenção, limpeza e conserto de ar condicionado em São Paulo e ABC Paulista. Técnicos certificados, visita gratuita e garantia por escrito.',
+  telephone: '+55-11-96346-2516',
+  email: 'contato@newclimaar.com.br',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'R. Santa Cruz, 2187 - Sala 10',
+    addressLocality: 'São Paulo',
+    addressRegion: 'SP',
+    postalCode: '04121-002',
+    addressCountry: 'BR',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: -23.5955,
+    longitude: -46.6394,
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '08:00',
+      closes: '18:00',
+    },
+  ],
+  areaServed: [
+    { '@type': 'City', name: 'São Paulo' },
+    { '@type': 'City', name: 'Santo André' },
+    { '@type': 'City', name: 'São Bernardo do Campo' },
+    { '@type': 'City', name: 'São Caetano do Sul' },
+    { '@type': 'City', name: 'Diadema' },
+    { '@type': 'City', name: 'Mauá' },
+  ],
+  priceRange: '$$',
+  currenciesAccepted: 'BRL',
+  paymentAccepted: 'Cash, Credit Card, PIX',
+  sameAs: [
+    'https://www.instagram.com/newclimaar',
+    'https://www.facebook.com/newclimaar',
+  ],
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -31,6 +79,11 @@ export default function RootLayout({
             gtag('config', 'G-S26Q4YLC2R');
           `
         }}/>
+        {/* Schema.org LocalBusiness */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
+        />
       </head>
       <body>
         {/* Google Tag Manager (noscript) */}
