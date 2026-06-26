@@ -361,7 +361,7 @@ export default function App({ pathname: initialPathname = '/' }: { pathname?: st
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   const navigate = (page: PageId) => {
-    const routes: Record<PageId, string> = {
+    const routes: Partial<Record<PageId, string>> = {
       'home': '/',
       'split-multisplit': '/instalacao-ar-condicionado-split-sao-paulo',
       'sistemas-comerciais': '/ar-condicionado-comercial-sao-paulo',
