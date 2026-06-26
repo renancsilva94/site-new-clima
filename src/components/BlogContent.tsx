@@ -37,47 +37,171 @@ const BlogPostLayout = ({ title, date, author, tag, children }: { title: string,
 );
 
 export const BlogInverter = () => (
-  <BlogPostLayout tag="Guia de Compra" title="Ar Condicionado Inverter: Vale a Pena? Economia e Vantagens Reais" date="15 de Março, 2026" author="Ricardo Carvalho">
-    <p>Uma das dúvidas mais comuns na <strong>New Clima Ar Condicionado</strong> é se a tecnologia Inverter realmente compensa. Se você busca <strong>economia de energia</strong> e conforto, a resposta é um sim absoluto.</p>
-    <h2 className="text-2xl font-bold text-primary">O que é a Tecnologia Inverter?</h2>
-    <p>Ao contrário dos modelos convencionais, o <strong>ar condicionado inverter</strong> não desliga o compressor. Ele ajusta a velocidade de rotação para manter a temperatura constante, evitando picos de consumo elétrico.</p>
-    <h2 className="text-2xl font-bold text-primary">Principais Benefícios</h2>
-    <ul className="list-disc pl-6 space-y-2">
-      <li><strong>Economia Real:</strong> Redução de até 60% no consumo de energia elétrica.</li>
-      <li><strong>Silêncio:</strong> Operação muito mais silenciosa, ideal para quartos e escritórios.</li>
-      <li><strong>Conforto Térmico:</strong> Mantém a temperatura estável, sem oscilações incômodas.</li>
-      <li><strong>Durabilidade:</strong> Menor desgaste do compressor, aumentando a vida útil do aparelho.</li>
+  <BlogPostLayout tag="Guia Técnico" title="Ar Condicionado Inverter: O Que É, Vantagens e Vale a Pena em SP?" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>O ar condicionado Inverter já representa mais de 70% das vendas em São Paulo — e não é por acaso. A tecnologia promete economia de energia de até 60% em relação ao modelo convencional. Mas vale a pena pagar mais por um Inverter? Neste guia explicamos tudo.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que é o ar condicionado Inverter?</h2>
+    <p>O ar condicionado Inverter tem um compressor de velocidade variável. Em vez de ligar e desligar para controlar a temperatura (como o convencional), ele ajusta a velocidade do compressor continuamente — mantendo a temperatura estável com muito menos gasto de energia.</p>
+    <p>O modelo <strong>convencional</strong> funciona assim: liga no máximo, resfria o ambiente, desliga, o ambiente esquenta, liga de novo. Esse ciclo de liga e desliga consome muita energia e gera variações de temperatura.</p>
+    <p>O modelo <strong>Inverter</strong> funciona assim: liga e vai reduzindo a velocidade conforme o ambiente atinge a temperatura desejada — mantendo tudo estável sem desligar o compressor.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Comparação: Inverter x Convencional</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Critério</th><th className="p-3 text-left border border-primary">Convencional</th><th className="p-3 text-left border border-primary">Inverter</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Consumo de energia</td><td className="p-3 border border-slate-200">Alto (picos na partida)</td><td className="p-3 border border-slate-200 font-bold text-success">30% a 60% menor</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Controle de temperatura</td><td className="p-3 border border-slate-200">Variação de ±2°C</td><td className="p-3 border border-slate-200 font-bold text-success">Estável (±0,5°C)</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Nível de ruído</td><td className="p-3 border border-slate-200">Mais ruidoso (partidas)</td><td className="p-3 border border-slate-200 font-bold text-success">Mais silencioso</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Preço inicial</td><td className="p-3 border border-slate-200 font-bold text-success">Menor</td><td className="p-3 border border-slate-200">15% a 30% mais caro</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Vida útil do compressor</td><td className="p-3 border border-slate-200">Menor (desgaste por partidas)</td><td className="p-3 border border-slate-200 font-bold text-success">Maior</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Tempo para resfriar</td><td className="p-3 border border-slate-200">Mais lento</td><td className="p-3 border border-slate-200 font-bold text-success">Mais rápido</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quanto economiza na conta de luz em SP?</h2>
+    <p>Em São Paulo, onde o ar condicionado fica ligado em média 6 a 8 horas por dia durante o verão, a economia do Inverter é significativa. Um split 12.000 BTUs convencional consome em média 1.200W. O mesmo equipamento Inverter consome em regime de manutenção entre 300W e 600W.</p>
+    <p>Calculando com a tarifa média da Enel SP (R$ 0,85/kWh em 2026):</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Convencional: ~R$ 180/mês ligado 8h/dia</li>
+      <li>Inverter: ~R$ 80/mês nas mesmas condições</li>
+      <li><strong>Economia: ~R$ 100/mês ou R$ 1.200/ano</strong></li>
     </ul>
-    <p>Para quem utiliza o aparelho por longos períodos em São Paulo ou no ABC, o investimento em um modelo Inverter se paga rapidamente através da economia mensal.</p>
+    <p>A diferença de preço entre um convencional e um Inverter é de R$ 400 a R$ 800. Com a economia gerada, o Inverter se paga em 4 a 8 meses de uso.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Inverter vale a pena para quem usa pouco?</h2>
+    <p>Se você usa o ar condicionado menos de 2 horas por dia, a economia do Inverter é menor e o retorno leva mais tempo. Para esse perfil, o convencional pode ser mais vantajoso pelo menor preço inicial.</p>
+    <p>Para uso acima de 4 horas diárias — especialmente à noite no quarto ou em home office — o Inverter é sempre a melhor escolha a longo prazo.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Manutenção do Inverter é diferente?</h2>
+    <p>A frequência de manutenção é a mesma — semestral para uso residencial. Porém, o Inverter tem placa eletrônica mais sofisticada, e o conserto em caso de queima é mais caro. Por isso, a manutenção preventiva é ainda mais importante para proteger o investimento.</p>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Quer instalar um Inverter em SP?</h3>
+      <p className="text-slate-600 text-sm mb-4">Indicamos o modelo certo para o seu ambiente · Visita gratuita · Garantia de 1 ano</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Tenho%20interesse%20em%20instalar%20um%20ar%20condicionado%20Inverter." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Falar com Especialista</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Inverter funciona em 110V e 220V?</h3>
+    <p>A maioria dos modelos Inverter disponíveis no Brasil é bivolt — funciona em 110V e 220V automaticamente. Verifique sempre a etiqueta do equipamento antes da instalação.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Posso trocar um convencional por Inverter na mesma instalação?</h3>
+    <p>Sim, desde que a bitola do cabo elétrico e o disjuntor sejam compatíveis com a carga do novo equipamento. Nossa equipe verifica tudo na visita técnica gratuita.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Quais marcas de Inverter são mais recomendadas em SP?</h3>
+    <p>LG, Samsung, Daikin, Midea e Fujitsu são as mais vendidas e com melhor assistência técnica em São Paulo. A New Clima instala e faz manutenção em todas essas marcas.</p>
   </BlogPostLayout>
 );
 
 export const BlogApartamento = () => (
-  <BlogPostLayout tag="Instalação" title="Instalação de Ar Condicionado em Apartamento em SP: Guia Completo" date="10 de Março, 2026" author="Equipe Técnica New Clima">
-    <p>Instalar <strong>ar condicionado em apartamento em São Paulo</strong> requer atenção a detalhes que vão além da escolha do aparelho. É fundamental respeitar as normas do condomínio e garantir uma instalação segura e estética.</p>
-    <h2 className="text-2xl font-bold text-primary">Normas e Varanda Técnica</h2>
-    <p>A maioria dos prédios novos em SP e no ABC já possui varanda técnica. Nossa equipe é especialista em otimizar o espaço e garantir conformidade com o regimento interno.</p>
-    <h2 className="text-2xl font-bold text-primary">Drenagem e Elétrica</h2>
-    <p>Um dos maiores desafios em apartamentos é o dreno. Projetamos soluções que evitam infiltrações e garantem o escoamento correto da água.</p>
-    <div className="bg-ice p-6 rounded-2xl border border-primary-light/10">
-      <p className="font-bold text-primary mb-2">Atenção:</p>
-      <p className="text-sm">Sempre exija a ART (Anotação de Responsabilidade Técnica) para instalações em condomínios.</p>
+  <BlogPostLayout tag="Instalação" title="Instalação de Ar Condicionado em Apartamento em SP: Tudo o Que Você Precisa Saber" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>Instalar ar condicionado em apartamento em São Paulo tem particularidades que não existem em casas. Normas de condomínio, restrições de fachada e regras de obra tornam o processo mais delicado — e escolher uma empresa sem experiência pode gerar problemas com o síndico e até multas do condomínio.</p>
+    <p>Neste guia, explicamos tudo o que você precisa saber antes de instalar ar condicionado no seu apartamento em SP.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que verificar antes de instalar em apartamento</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Regulamento interno do condomínio:</strong> alguns proíbem condensadoras na fachada frontal ou exigem aprovação prévia do síndico</li>
+      <li><strong>Varanda técnica:</strong> verifique se o prédio tem área específica para condensadoras e quais são as dimensões permitidas</li>
+      <li><strong>Circuito elétrico:</strong> o apartamento precisa ter ponto elétrico dedicado com disjuntor dimensionado para o equipamento</li>
+      <li><strong>Impermeabilização:</strong> furos na laje ou paredes externas exigem impermeabilização adequada para evitar infiltrações</li>
+      <li><strong>Vizinho de baixo:</strong> a instalação do dreno deve direcionar a água corretamente para evitar gotejamento no apartamento do andar inferior</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Split ou Multi Split para apartamento?</h2>
+    <p>Para apartamentos com restrição de fachada — que é a maioria dos condomínios novos em SP — o <strong>Multi Split</strong> é a solução mais indicada. Uma única condensadora na varanda técnica atende todos os cômodos, sem impactar a fachada.</p>
+    <p>Para apartamentos que permitem múltiplas condensadoras ou onde você quer climatizar apenas um cômodo, o <strong>Split individual</strong> é mais econômico e simples.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Onde instalar a condensadora em apartamento?</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Varanda técnica:</strong> local ideal — arejado, sem exposição solar direta e aprovado pela maioria dos condomínios</li>
+      <li><strong>Varanda da sala ou quarto:</strong> possível se o condomínio permitir e houver espaço adequado</li>
+      <li><strong>Shaft ou duto técnico:</strong> em alguns prédios existe espaço específico para condensadoras — verifique com a administradora</li>
+    </ul>
+    <p><strong>Evite:</strong> instalar a condensadora em locais sem ventilação adequada, muito próximo de janelas de vizinhos (barulho e calor) ou em posições que comprometam a fachada sem aprovação do condomínio.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Obra limpa: o que significa na prática?</h2>
+    <p>Obra limpa não é apenas uma promessa — é um processo que inclui:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Proteção do piso e móveis com lona antes de qualquer perfuração</li>
+      <li>Uso de aspirador industrial durante as perfurações para capturar o pó</li>
+      <li>Infraestrutura embutida na parede sempre que possível</li>
+      <li>Acabamento nas saídas de tubulação com passa-fio ou saia</li>
+      <li>Remoção de todo o entulho e limpeza completa ao término</li>
+    </ul>
+    <p>A New Clima garante obra limpa em todos os apartamentos de São Paulo — aprovada pelo síndico e sem reclamações dos vizinhos.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quanto custa instalar em apartamento em SP?</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Tipo</th><th className="p-3 text-left border border-primary">Custo de instalação</th><th className="p-3 text-left border border-primary">Observação</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Split simples (1 cômodo)</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 350 a R$ 700</td><td className="p-3 border border-slate-200">Infraestrutura aparente</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Split com infra embutida</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 600 a R$ 1.200</td><td className="p-3 border border-slate-200">Tubulação dentro da parede</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Multi Split 2 cômodos</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 900 a R$ 1.800</td><td className="p-3 border border-slate-200">1 condensadora externa</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Multi Split 3 cômodos</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 1.400 a R$ 2.500</td><td className="p-3 border border-slate-200">Ideal para aptos 2/3 quartos</td></tr>
+        </tbody>
+      </table>
     </div>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Instale com quem conhece os condomínios de SP</h3>
+      <p className="text-slate-600 text-sm mb-4">Obra limpa · Aprovada pelo síndico · Visita gratuita · Garantia de 1 ano</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Quero%20instalar%20ar%20condicionado%20no%20meu%20apartamento." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Solicitar Orçamento</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Preciso de autorização do condomínio para instalar?</h3>
+    <p>Sim. A maioria dos condomínios exige comunicação prévia ou aprovação formal. A New Clima orienta sobre os documentos necessários e, se solicitado, emite declaração de responsabilidade técnica para o condomínio.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">E se o condomínio não permitir condensadora na fachada?</h3>
+    <p>Existem alternativas: condensadora na varanda técnica, shaft ou duto interno. Em último caso, alguns modelos de cassete ou piso-teto não precisam de condensadora externa. Avaliamos a melhor solução na visita técnica gratuita.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">A instalação pode causar infiltração no apartamento de baixo?</h3>
+    <p>Não, desde que o dreno seja instalado corretamente. A tubulação de drenagem deve ser direcionada para o ralo mais próximo ou para fora do prédio conforme as normas do condomínio. A New Clima garante instalação de dreno sem vazamentos.</p>
   </BlogPostLayout>
 );
 
 export const BlogBTUs = () => (
-  <BlogPostLayout tag="Guia Técnico" title="Como Calcular os BTUs Ideais Para Seu Ambiente: Não Erre na Escolha" date="05 de Março, 2026" author="Ricardo Carvalho">
-    <p>Escolher um ar condicionado com capacidade insuficiente fará com que ele nunca gele o ambiente. Escolher um muito potente é desperdício de dinheiro.</p>
-    <h2 className="text-2xl font-bold text-primary">A Regra de Ouro do Cálculo</h2>
-    <ul className="list-disc pl-6 space-y-2">
-      <li><strong>600 BTUs</strong> por metro quadrado (m²).</li>
-      <li><strong>+ 600 BTUs</strong> por pessoa adicional.</li>
-      <li><strong>+ 600 BTUs</strong> por cada eletrônico que gere calor.</li>
-      <li><strong>+ 800 BTUs</strong> se o ambiente tiver muita incidência de sol à tarde.</li>
+  <BlogPostLayout tag="Guia Técnico" title="Como Calcular BTUs: Tabela Completa para Escolher o Ar Condicionado Certo" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>Escolher o ar condicionado com a potência errada é um dos erros mais comuns em São Paulo. Um equipamento com BTUs insuficientes não consegue resfriar o ambiente e fica ligado o tempo todo. Um equipamento superdimensionado liga e desliga com muita frequência, consumindo mais energia e reduzindo a vida útil.</p>
+    <p>Neste guia, mostramos como calcular os BTUs certos para qualquer ambiente.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que é BTU?</h2>
+    <p>BTU (British Thermal Unit) é a unidade de medida da capacidade de resfriamento de um ar condicionado. Quanto maior o BTU, mais potente o equipamento e maior sua capacidade de resfriar ambientes grandes.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Tabela de BTUs por tamanho de ambiente</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Área do ambiente</th><th className="p-3 text-left border border-primary">BTUs recomendados</th><th className="p-3 text-left border border-primary">Uso típico</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Até 10m²</td><td className="p-3 border border-slate-200 font-bold text-primary">7.000 a 9.000 BTUs</td><td className="p-3 border border-slate-200">Quarto solteiro, escritório pequeno</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">10m² a 15m²</td><td className="p-3 border border-slate-200 font-bold text-primary">9.000 BTUs</td><td className="p-3 border border-slate-200">Quarto casal pequeno</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">15m² a 20m²</td><td className="p-3 border border-slate-200 font-bold text-primary">12.000 BTUs</td><td className="p-3 border border-slate-200">Quarto casal, sala pequena</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">20m² a 30m²</td><td className="p-3 border border-slate-200 font-bold text-primary">18.000 BTUs</td><td className="p-3 border border-slate-200">Sala de estar, quarto grande</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">30m² a 40m²</td><td className="p-3 border border-slate-200 font-bold text-primary">24.000 BTUs</td><td className="p-3 border border-slate-200">Sala ampla, escritório médio</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">40m² a 60m²</td><td className="p-3 border border-slate-200 font-bold text-primary">30.000 a 36.000 BTUs</td><td className="p-3 border border-slate-200">Sala grande, ambiente comercial</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Acima de 60m²</td><td className="p-3 border border-slate-200 font-bold text-primary">Multi Split ou VRF</td><td className="p-3 border border-slate-200">Ambiente comercial, open space</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Fatores que aumentam a necessidade de BTUs</h2>
+    <p>A tabela acima é uma referência base. Alguns fatores exigem acréscimo de BTUs:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Exposição solar intensa (especialmente oeste):</strong> acrescente 10% a 20%</li>
+      <li><strong>Muitas janelas ou vidros sem película:</strong> acrescente 10%</li>
+      <li><strong>Mais de 3 pessoas no ambiente:</strong> acrescente 600 BTUs por pessoa extra</li>
+      <li><strong>Equipamentos eletrônicos gerando calor (servidores, TVs, computadores):</strong> acrescente 10% a 15%</li>
+      <li><strong>Pé direito acima de 2,80m:</strong> acrescente 10% a 20%</li>
+      <li><strong>Cozinha ou ambiente com fogão próximo:</strong> acrescente 20% a 30%</li>
     </ul>
-    <h2 className="text-2xl font-bold text-primary">Exemplo Prático</h2>
-    <p>Um quarto de 15m², com sol à tarde, 2 pessoas e 1 TV: (15m² x 800) + 600 + 600 = <strong>13.200 BTUs</strong>. O ideal seria um aparelho de <strong>12.000 ou 18.000 BTUs</strong>.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Fórmula simplificada de cálculo de BTUs</h2>
+    <p>Uma fórmula usada por técnicos para ambientes residenciais padrão em São Paulo:</p>
+    <div className="bg-slate-100 rounded-xl p-4 my-4 font-mono text-sm">
+      BTUs = Área (m²) × 600
+    </div>
+    <p>Exemplo: quarto de 15m² → 15 × 600 = 9.000 BTUs</p>
+    <p>Para ambientes comerciais ou com alta carga térmica, o cálculo é mais complexo e deve ser feito por um técnico — a New Clima realiza esse cálculo gratuitamente na visita técnica.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Erros comuns na escolha de BTUs em SP</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Subestimar o ambiente:</strong> comprar 9.000 BTUs para um quarto de 20m² — o aparelho não consegue resfriar e fica em sobrecarga constante</li>
+      <li><strong>Superdimensionar:</strong> comprar 18.000 BTUs para um quarto de 12m² — o equipamento liga e desliga com muita frequência, gerando umidade e consumindo mais energia</li>
+      <li><strong>Ignorar a exposição solar:</strong> apartamentos voltados para o oeste em SP recebem sol da tarde intenso e precisam de mais BTUs</li>
+      <li><strong>Não considerar o pé direito:</strong> lofts e ambientes com pé direito alto precisam de potência maior</li>
+    </ul>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Não sabe quantos BTUs precisa? A gente calcula.</h3>
+      <p className="text-slate-600 text-sm mb-4">Visita técnica gratuita · Cálculo personalizado · Indicação do modelo ideal</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Preciso%20de%20ajuda%20para%20calcular%20os%20BTUs%20do%20meu%20ambiente." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Calcular Grátis pelo WhatsApp</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Posso usar 9.000 BTUs em uma sala de 25m²?</h3>
+    <p>Não é recomendado. Para uma sala de 25m², o mínimo recomendado é 12.000 BTUs. Um aparelho subdimensionado trabalha em sobrecarga e pode durar metade do tempo esperado.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">BTU maior sempre é melhor?</h3>
+    <p>Não. Um equipamento superdimensionado resfria o ambiente muito rápido e desliga — o ciclo curto de liga e desliga aumenta o consumo de energia e não remove a umidade adequadamente, deixando o ambiente frio mas úmido.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Como calcular BTU para um ambiente com mezanino?</h3>
+    <p>Some a área do nível inferior com o superior e aplique o fator de pé direito alto (+20%). Em ambientes com mezanino, geralmente é melhor ter dois equipamentos menores — um em cada nível — do que um grande concentrado.</p>
   </BlogPostLayout>
 );
 
@@ -240,20 +364,68 @@ export const BlogEmpresas = () => (
 );
 
 export const BlogPMOCObrigatorio = () => (
-  <BlogPostLayout tag="Legislação" title="PMOC: O Que É e Por Que Sua Empresa em SP É Obrigada a Ter" date="02 de Maio, 2026" author="Equipe Técnica New Clima">
-    <p>Se sua empresa em São Paulo possui sistema de ar condicionado com capacidade total acima de 60.000 BTUs, você é obrigado por lei a ter um <strong>PMOC</strong>. Multas chegam a R$ 1,5 milhão.</p>
-    <h2 className="text-2xl font-bold text-primary">O Que É o PMOC?</h2>
-    <p>Documento técnico obrigatório estabelecido pela <strong>Lei Federal 13.589/2018</strong>, que define todas as atividades de manutenção dos sistemas de climatização.</p>
-    <h2 className="text-2xl font-bold text-primary">Quem É Obrigado a Ter PMOC em São Paulo?</h2>
-    <ul className="list-disc pl-6 space-y-2">
-      <li>Escritórios e edifícios corporativos</li>
-      <li>Clínicas médicas, consultórios e hospitais</li>
-      <li>Shoppings, lojas e centros comerciais</li>
-      <li>Restaurantes, hotéis e bares com ar central</li>
-      <li>Condomínios com áreas comuns climatizadas</li>
+  <BlogPostLayout tag="PMOC" title="PMOC Obrigatório em São Paulo: Quem Deve Ter, Prazos e Como Regularizar" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>O PMOC — Plano de Manutenção, Operação e Controle — é obrigatório por lei federal desde 1998 e tem fiscalização cada vez mais rigorosa em São Paulo. Empresas, condomínios e clínicas que não têm o plano em vigor podem ser multadas em até R$ 1,5 milhão pela Vigilância Sanitária.</p>
+    <p>Neste guia explicamos quem é obrigado, quais são os prazos e como regularizar a situação da sua empresa em SP.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Qual a lei que exige o PMOC?</h2>
+    <p>O PMOC é regulamentado por duas normas principais:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Lei Federal 13.589/18:</strong> institui a obrigatoriedade do PMOC para todos os sistemas de ar condicionado de uso público ou coletivo</li>
+      <li><strong>Portaria MS 3.523/98:</strong> estabelece os requisitos técnicos mínimos para a qualidade do ar em ambientes climatizados</li>
+      <li><strong>Resolução RE 9/2003 da ANVISA:</strong> define os padrões de qualidade do ar interior</li>
     </ul>
-    <h2 className="text-2xl font-bold text-primary">Como a New Clima Pode Ajudar?</h2>
-    <p>A <strong>New Clima Ar Condicionado</strong> elabora e executa o PMOC completo para empresas em São Paulo e ABC. Entre em contato pelo WhatsApp (11) 96346-2516.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quem é obrigado a ter PMOC em SP?</h2>
+    <p>Todo estabelecimento com sistema de ar condicionado de <strong>uso público ou coletivo</strong> com capacidade acima de 60.000 BTUs. Na prática, isso inclui:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Empresas e escritórios com ar condicionado central ou múltiplos splits</li>
+      <li>Condomínios comerciais e mistos com ar nas áreas comuns</li>
+      <li>Clínicas médicas, odontológicas e laboratórios</li>
+      <li>Restaurantes, bares, hotéis e pousadas</li>
+      <li>Farmácias e drogarias</li>
+      <li>Academias, escolas e creches</li>
+      <li>Shopping centers e estabelecimentos de grande porte</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que deve conter o PMOC?</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Identificação do responsável técnico com ART (Anotação de Responsabilidade Técnica)</li>
+      <li>Descrição de todos os equipamentos do sistema</li>
+      <li>Cronograma de manutenções preventivas</li>
+      <li>Procedimentos de limpeza e higienização</li>
+      <li>Registro de todas as manutenções realizadas</li>
+      <li>Laudo de qualidade do ar (em alguns casos exigido pela ANVISA)</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quais são as multas por não ter PMOC em SP?</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Infração</th><th className="p-3 text-left border border-primary">Penalidade</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Ausência do PMOC</td><td className="p-3 border border-slate-200 font-bold text-red-600">Multa de R$ 2.000 a R$ 75.000</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">PMOC desatualizado ou incompleto</td><td className="p-3 border border-slate-200 font-bold text-red-600">Multa de R$ 2.000 a R$ 75.000</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Reincidência</td><td className="p-3 border border-slate-200 font-bold text-red-600">Multa em dobro</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Risco à saúde pública</td><td className="p-3 border border-slate-200 font-bold text-red-600">Até R$ 1.500.000 + interdição</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Como regularizar o PMOC da sua empresa em SP?</h2>
+    <ol className="list-decimal pl-6 space-y-3 my-4">
+      <li><strong>Contrate uma empresa especializada:</strong> deve ter engenheiro responsável com ART registrada no CREA</li>
+      <li><strong>Levantamento técnico:</strong> técnico visita o estabelecimento e cadastra todos os equipamentos</li>
+      <li><strong>Elaboração do plano:</strong> documento com cronograma, procedimentos e responsabilidades</li>
+      <li><strong>Execução das manutenções:</strong> visitas periódicas conforme o cronograma do plano</li>
+      <li><strong>Registro e arquivo:</strong> manter toda a documentação disponível para apresentar à Vigilância Sanitária</li>
+    </ol>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Regularize o PMOC da sua empresa agora</h3>
+      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta no mesmo dia · ART inclusa · Documentação completa para a Vigilância Sanitária</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Preciso%20regularizar%20o%20PMOC%20da%20minha%20empresa%20em%20SP." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Falar com Especialista</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Com que frequência o PMOC deve ser atualizado?</h3>
+    <p>O PMOC deve ser atualizado sempre que houver mudança nos equipamentos (adição, remoção ou substituição) ou quando o cronograma de manutenções for alterado. Recomendamos revisão anual do documento.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">A Vigilância Sanitária avisa antes de fiscalizar?</h3>
+    <p>Não necessariamente. As fiscalizações podem ser programadas ou por denúncia. Estar regularizado a qualquer momento é a única garantia de evitar multas.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">PMOC e manutenção preventiva são a mesma coisa?</h3>
+    <p>Não. O PMOC é o plano documentado. A manutenção preventiva é a execução prática do plano. Os dois são obrigatórios e complementares — ter o documento sem executar as manutenções também configura irregularidade.</p>
   </BlogPostLayout>
 );
 
@@ -567,20 +739,58 @@ export const BlogCustoInstalacao = () => (
 );
 
 export const BlogQualAC = () => (
-  <BlogPostLayout tag="Guia de Compra" title="Qual Ar Condicionado Comprar em 2026? Guia Completo para São Paulo" date="07 de Maio, 2026" author="Ricardo Carvalho">
-    <p>Escolher o ar condicionado certo para o clima de São Paulo exige atenção a fatores além da potência.</p>
-    <h2 className="text-2xl font-bold text-primary">Inverter ou Convencional?</h2>
-    <p>Para São Paulo, a tecnologia <strong>Inverter é a única que faz sentido financeiro</strong>. Consome até 60% menos energia e mantém temperatura estável.</p>
-    <h2 className="text-2xl font-bold text-primary">Melhores Marcas em 2026</h2>
-    <ul className="list-disc pl-6 space-y-2">
-      <li><strong>Daikin:</strong> melhor custo-benefício para uso intenso</li>
-      <li><strong>LG Dual Inverter:</strong> excelente silêncio e eficiência</li>
-      <li><strong>Samsung WindFree:</strong> melhor para quartos</li>
-      <li><strong>Fujitsu:</strong> premium, alto padrão</li>
-      <li><strong>Midea:</strong> melhor custo para uso esporádico</li>
+  <BlogPostLayout tag="Guia de Compra" title="Qual Ar Condicionado Comprar em 2026? Guia Completo para São Paulo" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>Com tantos modelos, marcas e tecnologias disponíveis, escolher o ar condicionado certo para São Paulo pode parecer difícil. Neste guia, mostramos o que avaliar antes de comprar e quais modelos são mais indicados para cada perfil.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Inverter ou convencional?</h2>
+    <p>Para uso residencial em SP com mais de 4 horas diárias, o <strong>Inverter sempre é a melhor escolha</strong>. A economia de energia em 1 ano paga a diferença de preço. O convencional só faz sentido para ambientes de uso esporádico (menos de 2 horas por dia).</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">As melhores marcas de ar condicionado em 2026</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Marca</th><th className="p-3 text-left border border-primary">Ponto forte</th><th className="p-3 text-left border border-primary">Melhor para</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200 font-bold">LG</td><td className="p-3 border border-slate-200">Tecnologia Dual Inverter, eficiência energética</td><td className="p-3 border border-slate-200">Residencial e comercial</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200 font-bold">Samsung</td><td className="p-3 border border-slate-200">Wind-Free, distribuição de ar sem corrente direta</td><td className="p-3 border border-slate-200">Quartos e salas</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200 font-bold">Daikin</td><td className="p-3 border border-slate-200">Qualidade japonesa, durabilidade e silêncio</td><td className="p-3 border border-slate-200">Comercial e premium</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200 font-bold">Midea</td><td className="p-3 border border-slate-200">Melhor custo-benefício do mercado</td><td className="p-3 border border-slate-200">Quem quer economia</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200 font-bold">Fujitsu</td><td className="p-3 border border-slate-200">Baixíssimo nível de ruído, filtragem avançada</td><td className="p-3 border border-slate-200">Quartos e ambientes sensíveis</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200 font-bold">Electrolux</td><td className="p-3 border border-slate-200">Assistência ampla, boa relação preço-qualidade</td><td className="p-3 border border-slate-200">Residencial em geral</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que avaliar antes de comprar</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>BTUs corretos para o ambiente:</strong> o erro mais comum — veja nossa calculadora de BTUs</li>
+      <li><strong>Tecnologia Inverter:</strong> economiza até 60% de energia em uso contínuo</li>
+      <li><strong>Eficiência energética (Selo Procel):</strong> prefira equipamentos com selo A ou A+</li>
+      <li><strong>Nível de ruído:</strong> para quartos, prefira modelos abaixo de 40 dB(A)</li>
+      <li><strong>Wi-Fi integrado:</strong> permite controle pelo celular — conforto e economia</li>
+      <li><strong>Filtros antibacterianos:</strong> importante para quem tem alergias ou crianças pequenas</li>
+      <li><strong>Assistência técnica na sua região:</strong> verifique se há autorizada próxima em SP</li>
     </ul>
-    <h2 className="text-2xl font-bold text-primary">Qual Potência (BTUs) Escolher?</h2>
-    <p>Em São Paulo, recomendamos <strong>800 BTUs por m²</strong> para ambientes com sol da tarde, e 600 BTUs/m² para ambientes com sombra.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Faixa de preço dos modelos mais vendidos em SP (2026)</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Tipo</th><th className="p-3 text-left border border-primary">BTUs</th><th className="p-3 text-left border border-primary">Faixa de preço (equipamento)</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Split Inverter entrada</td><td className="p-3 border border-slate-200">9.000</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 1.400 a R$ 2.000</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Split Inverter intermediário</td><td className="p-3 border border-slate-200">12.000</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 1.800 a R$ 2.800</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Split Inverter premium</td><td className="p-3 border border-slate-200">18.000</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 2.500 a R$ 4.000</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Multi Split 2x12.000</td><td className="p-3 border border-slate-200">2 ambientes</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 4.500 a R$ 7.000</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Não sabe qual modelo comprar? Consultamos gratuitamente.</h3>
+      <p className="text-slate-600 text-sm mb-4">Indicamos o modelo ideal para o seu ambiente e orçamento · Sem compromisso</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Preciso%20de%20ajuda%20para%20escolher%20o%20ar%20condicionado%20certo." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Consultar pelo WhatsApp</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Comprar com ou sem instalação?</h3>
+    <p>Comprar separado da instalação costuma ser mais econômico — você escolhe o equipamento na loja e contrata a instalação com uma empresa especializada. Pacotes de loja geralmente têm margem maior na instalação.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Vale a pena comprar ar condicionado usado?</h3>
+    <p>Somente se vier com procedência comprovada, nota fiscal e ainda na garantia. Ar condicionado usado sem histórico de manutenção pode ter gás baixo, compressor desgastado e custo de manutenção imediato que supera o desconto.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Qual marca tem melhor assistência técnica em SP?</h3>
+    <p>LG, Samsung e Midea têm a maior rede de autorizadas em São Paulo. Daikin e Fujitsu têm menos pontos mas melhor nível técnico das autorizadas. A New Clima atende todas as marcas com técnicos certificados.</p>
   </BlogPostLayout>
 );
 
