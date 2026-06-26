@@ -2700,6 +2700,44 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
         </div>
       </section>
 
+
+      {/* Depoimentos */}
+      <section className="py-14 bg-slate-50">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-extrabold text-primary mb-2 text-center">O que dizem os clientes da New Clima</h2>
+          <p className="text-slate-500 text-center text-sm mb-8">Avaliações reais do Google Meu Negócio · Nota 4.9 ★</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            {[
+              { nome: 'Samuel Carvalho', texto: 'Contratei o profissional José Erivaldo para instalação, manutenção preventiva, conserto e limpeza do meu ar-condicionado. O trabalho foi muito ótimo! Pontual, atencioso, caprichoso e explica tudo o que está fazendo. Recomendo muito!', servico: 'Instalação + Manutenção' },
+              { nome: 'Eliana Costa', texto: 'Excelente serviço, cumpriu certinho horários e dia agendado. E principalmente o capricho na instalação. Indico esse serviço. Obrigada Sr. Eri', servico: 'Instalação' },
+              { nome: 'Andreia Lira', texto: 'Contratei para instalação de ar-condicionado e gostei muito. Serviço limpo, rápido e bem executado!', servico: 'Instalação' },
+              { nome: 'Vera Martins', texto: 'Excelente serviço! Instalação de ar-condicionado feita com muito capricho e profissionalismo. Super recomendo!', servico: 'Instalação' },
+            ].map((d) => (
+              <div key={d.nome} className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+                <div className="flex gap-0.5 mb-3">
+                  {[1,2,3,4,5].map((s) => (
+                    <Star key={s} size={14} className="fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
+                <p className="text-slate-600 text-sm leading-relaxed mb-4">"{d.texto}"</p>
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0">{d.nome[0]}</div>
+                  <div>
+                    <div className="font-bold text-primary text-sm">{d.nome}</div>
+                    <div className="text-slate-400 text-xs">{d.servico}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-6">
+            <a href="https://maps.app.goo.gl/kHeynjnXoG943iG3A" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-primary-light font-semibold text-sm hover:underline">
+              Ver todas as avaliações no Google <ArrowRight size={14} />
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Bairros vizinhos */}
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
