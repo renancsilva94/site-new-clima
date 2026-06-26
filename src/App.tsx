@@ -43,45 +43,47 @@ import {
   ManutencaoCorretiva, 
   LimpezaHigienizacao 
 } from './components/ServiceDetails';
-import { 
-  BlogInverter, 
-  BlogApartamento, 
-  BlogBTUs, 
-  BlogPMOC,
-  BlogRoundCassette,
-  BlogObraLimpa,
-  BlogQuarto,
-  BlogConvencionalInverter,
-  BlogEmpresas,
-  BlogPMOCObrigatorio,
-  BlogMultaPMOC,
-  BlogPMOCCondominio,
-  BlogCustoPMOC,
-  BlogCustoInstalacao,
-  BlogQualAC,
-  BlogSplitMultiSplitApartamento,
-  BlogManutencaoConsequencias,
-  BlogSaude,
-  BlogDormir,
-  BlogConsumo,
-  BlogQuantoGasta,
-  BlogMauCheiro,
-  BlogDesligaSozinho,
-  BlogVidaUtil,
-  BlogTemperatura,
-  BlogFuncaoDry,
-  BlogGas,
-  BlogNaoGela,
-  BlogPingandoAgua,
-  BlogLimpezaSP,
-  BlogConsertoSP,
-  BlogManutencaoPreventivaSP,
-  BlogArCondicionadoSala,
-  BlogEscritorioSP,
-  BlogQuantoCustaLimpeza,
-  BlogBarulhento,
-  BlogNaoLiga
-} from './components/BlogContent';
+import dynamic from 'next/dynamic';
+
+// Blog components — lazy loaded para performance
+const BlogInverter = dynamic(() => import('./components/blog/BlogInverter'));
+const BlogApartamento = dynamic(() => import('./components/blog/BlogApartamento'));
+const BlogBTUs = dynamic(() => import('./components/blog/BlogBTUs'));
+const BlogPMOC = dynamic(() => import('./components/blog/BlogPMOC'));
+const BlogRoundCassette = dynamic(() => import('./components/blog/BlogRoundCassette'));
+const BlogObraLimpa = dynamic(() => import('./components/blog/BlogObraLimpa'));
+const BlogQuarto = dynamic(() => import('./components/blog/BlogQuarto'));
+const BlogConvencionalInverter = dynamic(() => import('./components/blog/BlogConvencionalInverter'));
+const BlogEmpresas = dynamic(() => import('./components/blog/BlogEmpresas'));
+const BlogPMOCObrigatorio = dynamic(() => import('./components/blog/BlogPMOCObrigatorio'));
+const BlogMultaPMOC = dynamic(() => import('./components/blog/BlogMultaPMOC'));
+const BlogPMOCCondominio = dynamic(() => import('./components/blog/BlogPMOCCondominio'));
+const BlogCustoPMOC = dynamic(() => import('./components/blog/BlogCustoPMOC'));
+const BlogCustoInstalacao = dynamic(() => import('./components/blog/BlogCustoInstalacao'));
+const BlogQualAC = dynamic(() => import('./components/blog/BlogQualAC'));
+const BlogSplitMultiSplitApartamento = dynamic(() => import('./components/blog/BlogSplitMultiSplitApartamento'));
+const BlogManutencaoConsequencias = dynamic(() => import('./components/blog/BlogManutencaoConsequencias'));
+const BlogSaude = dynamic(() => import('./components/blog/BlogSaude'));
+const BlogDormir = dynamic(() => import('./components/blog/BlogDormir'));
+const BlogConsumo = dynamic(() => import('./components/blog/BlogConsumo'));
+const BlogQuantoGasta = dynamic(() => import('./components/blog/BlogQuantoGasta'));
+const BlogMauCheiro = dynamic(() => import('./components/blog/BlogMauCheiro'));
+const BlogDesligaSozinho = dynamic(() => import('./components/blog/BlogDesligaSozinho'));
+const BlogVidaUtil = dynamic(() => import('./components/blog/BlogVidaUtil'));
+const BlogTemperatura = dynamic(() => import('./components/blog/BlogTemperatura'));
+const BlogFuncaoDry = dynamic(() => import('./components/blog/BlogFuncaoDry'));
+const BlogGas = dynamic(() => import('./components/blog/BlogGas'));
+const BlogNaoGela = dynamic(() => import('./components/blog/BlogNaoGela'));
+const BlogPingandoAgua = dynamic(() => import('./components/blog/BlogPingandoAgua'));
+const BlogLimpezaSP = dynamic(() => import('./components/blog/BlogLimpezaSP'));
+const BlogConsertoSP = dynamic(() => import('./components/blog/BlogConsertoSP'));
+const BlogManutencaoPreventivaSP = dynamic(() => import('./components/blog/BlogManutencaoPreventivaSP'));
+const BlogArCondicionadoSala = dynamic(() => import('./components/blog/BlogArCondicionadoSala'));
+const BlogEscritorioSP = dynamic(() => import('./components/blog/BlogEscritorioSP'));
+const BlogQuantoCustaLimpeza = dynamic(() => import('./components/blog/BlogQuantoCustaLimpeza'));
+const BlogBarulhento = dynamic(() => import('./components/blog/BlogBarulhento'));
+const BlogNaoLiga = dynamic(() => import('./components/blog/BlogNaoLiga'));
+
 import SchemaOrg from './components/SchemaOrg';
 import { 
   SaoPauloRegion, 
