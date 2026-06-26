@@ -1012,39 +1012,85 @@ export const BlogManutencaoConsequencias = () => (
 );
 
 export const BlogSaude = () => (
-  <BlogPostLayout tag="Saúde" title="Ar Condicionado Faz Mal à Saúde? Verdades e Mitos" date="9 de Maio, 2026" author="José Erivaldo">
-    <p>Uma dúvida muito comum entre nossos clientes em São Paulo é: <strong>ar condicionado faz mal à saúde?</strong> A resposta depende de como o equipamento é usado e mantido. Sem manutenção regular, sim, pode causar problemas. Com higienização em dia, é aliado da saúde.</p>
-    <h2 className="text-2xl font-bold text-primary">Por que o ar condicionado pode fazer mal?</h2>
-    <p>Quando o ar condicionado fica longos períodos sem limpeza, o filtro acumula <strong>fungos, ácaros, bactérias e poeira</strong>. Ao ligar o aparelho, essas partículas são expelidas no ar do ambiente, podendo causar:</p>
-    <ul className="space-y-2 list-disc pl-6">
-      <li><strong>Rinite e sinusite:</strong> irritação das mucosas nasais</li>
-      <li><strong>Asma:</strong> especialmente em crianças e idosos</li>
-      <li><strong>Alergias:</strong> coceira nos olhos, espirros frequentes</li>
-      <li><strong>Ressecamento:</strong> ar seco irrita garganta e pele</li>
+  <BlogPostLayout tag="Saúde" title="Ar Condicionado Faz Mal à Saúde? A Verdade Sobre os Riscos e Como Evitá-los" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>A dúvida é comum: o ar condicionado faz mal à saúde? A resposta curta é: <strong>não, quando bem instalado e com manutenção em dia</strong>. O problema ocorre quando o equipamento fica sem limpeza — transformando-se em um reservatório de fungos, bactérias e ácaros que são espalhados pelo ar.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quais são os riscos reais do ar condicionado?</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Fungos e bactérias nos filtros sujos:</strong> filtros sem limpeza acumulam microorganismos que causam rinite, sinusite e infecções respiratórias</li>
+      <li><strong>Ressecamento do ar:</strong> o ar condicionado reduz a umidade do ambiente — abaixo de 30% pode causar irritação nos olhos, nariz e garganta</li>
+      <li><strong>Corrente de ar direta:</strong> fluxo de ar frio apontado diretamente para o corpo causa dores musculares e cervicalgias</li>
+      <li><strong>Legionella:</strong> bactéria que pode se proliferar em sistemas de ar condicionado central sem manutenção adequada — causa a Doença dos Legionários</li>
+      <li><strong>Temperatura muito baixa:</strong> ambientes abaixo de 18°C podem causar hipotermia leve e piorar problemas respiratórios</li>
     </ul>
-    <h2 className="text-2xl font-bold text-primary">Como evitar os problemas de saúde?</h2>
-    <p>A solução é simples: <strong>manutenção preventiva a cada 6 meses</strong> para uso residencial e a cada 3 meses para uso comercial. A higienização profunda elimina todos os agentes causadores de doenças respiratórias.</p>
-    <p>Além disso, manter a temperatura entre <strong>23°C e 25°C</strong> e não apontar o fluxo de ar diretamente para as pessoas reduz muito os desconfortos. Em São Paulo, com a qualidade do ar já comprometida pela poluição, um ar condicionado limpo filtra partículas e melhora o ar interior.</p>
-    <h2 className="text-2xl font-bold text-primary">Conclusão</h2>
-    <p>Ar condicionado não faz mal à saúde — <strong>ar condicionado sujo faz</strong>. Com higienização regular, o equipamento melhora a qualidade do ar e o conforto de quem vive e trabalha no ambiente. Agende sua higienização com a New Clima: <strong>(11) 96346-2516</strong>.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Como usar o ar condicionado sem prejudicar a saúde?</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Mantenha a temperatura entre <strong>22°C e 24°C</strong> — conforto sem ressecamento excessivo</li>
+      <li>Direcione as aletas para o teto, nunca para as pessoas</li>
+      <li>Limpe os filtros a cada 15 dias em uso intenso</li>
+      <li>Faça manutenção preventiva semestral com técnico certificado</li>
+      <li>Mantenha uma fonte de umidade no ambiente — plantas ou umidificador</li>
+      <li>Ventile o ambiente por alguns minutos por dia abrindo janelas</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Ar condicionado e rinite: mito ou verdade?</h2>
+    <p>O ar condicionado <strong>não causa rinite</strong> — mas pode piorar rinite pré-existente quando os filtros estão sujos. O verdadeiro vilão é o acúmulo de ácaros, fungos e poeira nos filtros que são então espalhados pelo ar. Com limpeza regular, o ar condicionado pode até ajudar quem tem rinite — filtrando partículas do ambiente.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Ar condicionado é prejudicial para crianças?</h2>
+    <p>Não, desde que usado corretamente. A temperatura recomendada para crianças é entre 23°C e 25°C. O ar não deve ser direcionado diretamente para o berço ou cama. E a limpeza dos filtros deve ser mais frequente em ambientes com crianças — a cada 2 semanas.</p>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Mantenha o ar do seu ambiente saudável</h3>
+      <p className="text-slate-600 text-sm mb-4">Higienização profissional com bactericida · Remove fungos e ácaros · A partir de R$ 150</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Gostaria%20de%20agendar%20uma%20higienização%20do%20meu%20ar%20condicionado." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Agendar Higienização</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Com que frequência devo limpar o filtro?</h3>
+    <p>A cada 15 dias para uso diário intenso. A cada mês para uso moderado. A limpeza do filtro externo pode ser feita em casa com aspirador e água. A higienização interna (evaporador) deve ser feita por técnico a cada 6 meses.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Ar condicionado pode transmitir vírus?</h3>
+    <p>O ar condicionado convencional (split) recircula o ar do ambiente — não aspira ar externo. Ele pode circular vírus que já estão no ambiente, mas não os introduz de fora. Ventilação adequada e filtros limpos reduzem esse risco.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Qual a umidade ideal do ambiente com ar condicionado?</h3>
+    <p>Entre 40% e 60% de umidade relativa. Abaixo de 30% causa ressecamento das mucosas. Acima de 70% favorece o crescimento de fungos. Um termohigrômetro (menos de R$ 50 em lojas online) ajuda a monitorar.</p>
   </BlogPostLayout>
 );
 
 export const BlogDormir = () => (
-  <BlogPostLayout tag="Uso do Ar Condicionado" title="Dormir com Ar Condicionado Faz Mal? Saiba a Verdade" date="9 de Maio, 2026" author="José Erivaldo">
-    <p>Com o calor de São Paulo, dormir com ar condicionado ligado virou rotina para milhões de pessoas. Mas afinal, <strong>dormir com ar condicionado faz mal?</strong> Não necessariamente — desde que você siga algumas boas práticas.</p>
-    <h2 className="text-2xl font-bold text-primary">O que pode causar desconforto à noite</h2>
-    <ul className="space-y-2 list-disc pl-6">
-      <li><strong>Temperatura muito baixa:</strong> abaixo de 20°C resseca as vias aéreas e causa desconforto</li>
-      <li><strong>Ar direcionado ao corpo:</strong> pode causar torcicolos e ressecamento</li>
-      <li><strong>Filtros sujos:</strong> expelem alérgenos que prejudicam o sono</li>
-      <li><strong>Ruído excessivo:</strong> sinal de manutenção atrasada</li>
+  <BlogPostLayout tag="Saúde" title="Dormir com Ar Condicionado Faz Mal? Temperatura Ideal e Cuidados" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>Em São Paulo, onde as noites de verão ultrapassam os 28°C, dormir com ar condicionado é uma necessidade para muitas pessoas. Mas dormir com o aparelho ligado faz mal? <strong>A resposta é não — desde que você use corretamente</strong>.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Qual a temperatura ideal para dormir com ar condicionado?</h2>
+    <p>A faixa ideal é entre <strong>20°C e 23°C</strong>. Estudos do sono mostram que o corpo precisa reduzir sua temperatura central para entrar em sono profundo — e um ambiente entre 20°C e 23°C facilita esse processo.</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Abaixo de 18°C:</strong> pode causar hipotermia leve, dores musculares e piorar problemas respiratórios</li>
+      <li><strong>Entre 20°C e 23°C:</strong> faixa ideal para adultos saudáveis</li>
+      <li><strong>Entre 23°C e 25°C:</strong> recomendado para crianças, idosos e pessoas com problemas respiratórios</li>
+      <li><strong>Acima de 26°C:</strong> o sono tende a ser mais leve e interrompido</li>
     </ul>
-    <h2 className="text-2xl font-bold text-primary">Como dormir bem com ar condicionado</h2>
-    <p>Configure o <strong>timer (sleep mode)</strong> para desligar automaticamente após 2 a 3 horas. Mantenha a temperatura entre <strong>23°C e 26°C</strong>. Não aponte a saída de ar diretamente para a cama. Mantenha a higienização em dia — especialmente no quarto, onde você passa 8 horas respirando o ar filtrado pelo aparelho.</p>
-    <p>Um dado importante: o modo <strong>Sleep</strong> presente na maioria dos inverter aumenta gradualmente a temperatura durante a noite, simulando a queda natural da temperatura corporal durante o sono — muito mais confortável e econômico.</p>
-    <h2 className="text-2xl font-bold text-primary">Conclusão</h2>
-    <p>Dormir com ar condicionado <strong>não faz mal</strong> quando o equipamento está limpo e a temperatura está regulada corretamente. O segredo é manutenção em dia e configuração adequada. Dúvidas? Fale com a New Clima: <strong>(11) 96346-2516</strong>.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Como dormir com ar condicionado sem prejudicar a saúde?</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Use o modo Sleep:</strong> aumenta a temperatura gradualmente durante a madrugada, economizando energia e evitando que o ambiente fique frio demais</li>
+      <li><strong>Direcione as aletas para o teto:</strong> nunca deixe o ar apontado diretamente para a cama</li>
+      <li><strong>Mantenha os filtros limpos:</strong> filtros sujos espalham fungos e bactérias durante o sono</li>
+      <li><strong>Use um copo d'água na mesa de cabeceira:</strong> combate o ressecamento da garganta</li>
+      <li><strong>Mantenha uma fresta de janela:</strong> renova o ar sem comprometer o resfriamento</li>
+      <li><strong>Cubra-se com um lençol leve:</strong> protege contra correntes de ar sem perder o conforto</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Problemas comuns de quem dorme com ar condicionado</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Nariz entupido de manhã:</strong> geralmente causado por filtros sujos ou temperatura muito baixa — não pelo ar condicionado em si</li>
+      <li><strong>Garganta seca:</strong> ressecamento causado pela baixa umidade — solução: umidificador ou copo d'água</li>
+      <li><strong>Dor no pescoço:</strong> corrente de ar direta na região — solução: redirecionar as aletas</li>
+      <li><strong>Pele ressecada:</strong> umidade muito baixa no ambiente — solução: temperatura mais alta e planta no quarto</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Vale a pena deixar ligado a noite toda?</h2>
+    <p>Sim, com o modo Sleep ativado. Os aparelhos Inverter modernos consumem entre 100W e 300W em modo de manutenção — comparável a uma lâmpada de LED. O gasto mensal para uma noite inteira com Inverter 12.000 BTUs fica em torno de R$ 50 a R$ 80.</p>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Ar condicionado com mau cheiro à noite? Hora de higienizar.</h3>
+      <p className="text-slate-600 text-sm mb-4">Higienização profissional · Remove fungos e ácaros · Garantia de 90 dias</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Meu%20ar%20condicionado%20está%20com%20mau%20cheiro%20e%20gostaria%20de%20uma%20higienização." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Agendar Higienização</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Posso deixar o ar condicionado ligado enquanto durmo com a janela fechada?</h3>
+    <p>Sim. O split recircula o ar do ambiente e não precisa de entrada de ar externo para funcionar. Janelas fechadas até melhoram a eficiência do equipamento.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">É melhor desligar o ar condicionado antes de dormir?</h3>
+    <p>Não. Desligar e religar gasta mais energia do que manter ligado em modo Sleep. O modo Sleep é projetado exatamente para uso noturno — mantém o conforto com menor consumo.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Criança pode dormir com ar condicionado?</h3>
+    <p>Sim, com temperatura entre 23°C e 25°C, aletas direcionadas para longe da cama e filtros sempre limpos. O modo Sleep também é recomendado para ambientes de crianças.</p>
   </BlogPostLayout>
 );
 
@@ -1087,38 +1133,101 @@ export const BlogQuantoGasta = () => (
 );
 
 export const BlogMauCheiro = () => (
-  <BlogPostLayout tag="Problemas" title="Mau Cheiro no Ar Condicionado: Causas e Como Eliminar" date="9 de Maio, 2026" author="José Erivaldo">
-    <p>Se o seu ar condicionado está soltando <strong>mau cheiro</strong>, é sinal de que precisa de atenção imediata. O odor ruim indica acúmulo de fungos, bactérias ou sujeira — o que também prejudica a qualidade do ar que você respira.</p>
-    <h2 className="text-2xl font-bold text-primary">Principais causas do mau cheiro</h2>
-    <ul className="space-y-2 list-disc pl-6">
-      <li><strong>Fungos e mofo:</strong> crescem na umidade do evaporador e na bandeja de dreno</li>
-      <li><strong>Dreno entupido:</strong> água parada cria ambiente ideal para bactérias</li>
-      <li><strong>Filtros sujos:</strong> retêm sujeira orgânica que apodrece com o calor</li>
-      <li><strong>Cheiro de queimado:</strong> pode ser poeira acumulada nos resistores ou problema elétrico</li>
-      <li><strong>Cheiro de plástico:</strong> pode ser equipamento novo aquecendo ou problema no motor</li>
+  <BlogPostLayout tag="Manutenção" title="Ar Condicionado com Mau Cheiro: Causas, Riscos e Como Resolver" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>O ar condicionado com mau cheiro é um dos problemas mais comuns em São Paulo — e também um dos mais ignorados. O cheiro ruim não é apenas desconfortável: é um sinal de que o aparelho está cheio de fungos, bactérias e matéria orgânica que estão sendo expelidos no ar que você respira.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Por que o ar condicionado fica com mau cheiro?</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Fungos no evaporador:</strong> a principal causa — o evaporador (serpentina interna) fica úmido e acumula fungos que causam cheiro de mofo</li>
+      <li><strong>Dreno entupido:</strong> água parada no dreno cria ambiente para bactérias anaeróbias que causam cheiro de esgoto</li>
+      <li><strong>Filtros sujos:</strong> poeira, pêlos de animais e partículas orgânicas acumuladas nos filtros</li>
+      <li><strong>Bandeja de condensado suja:</strong> acúmulo de limo e bactérias na bandeja de água</li>
+      <li><strong>Roedor ou animal morto:</strong> em casos raros, animais entram na condensadora e morrem — cheiro intenso e repentino</li>
     </ul>
-    <h2 className="text-2xl font-bold text-primary">Como eliminar o mau cheiro</h2>
-    <p>A solução definitiva é a <strong>higienização profunda</strong> com produto bactericida. O processo inclui limpeza da serpentina evaporadora, turbina, filtros e desobstrução do dreno. Em São Paulo, a umidade alta favorece o crescimento de fungos — recomendamos higienização a cada 6 meses para residências.</p>
-    <p><strong>Não use produtos caseiros</strong> como vinagre ou desinfetante diretamente no aparelho — podem danificar componentes e anular a garantia. Chame um técnico certificado. Agende com a New Clima: <strong>(11) 96346-2516</strong>.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Tipos de cheiro e o que cada um indica</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Tipo de cheiro</th><th className="p-3 text-left border border-primary">Causa provável</th><th className="p-3 text-left border border-primary">Solução</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Mofo / bolor</td><td className="p-3 border border-slate-200">Fungos no evaporador</td><td className="p-3 border border-slate-200">Higienização profissional</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Esgoto / podre</td><td className="p-3 border border-slate-200">Dreno entupido com bactérias</td><td className="p-3 border border-slate-200">Limpeza do dreno</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Queimado / elétrico</td><td className="p-3 border border-slate-200">Problema elétrico ou motor</td><td className="p-3 border border-slate-200">Desligar e chamar técnico urgente</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Cigarro / fumaça</td><td className="p-3 border border-slate-200">Contaminação dos filtros</td><td className="p-3 border border-slate-200">Troca de filtros + higienização</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Doce / adocicado</td><td className="p-3 border border-slate-200">Vazamento de gás refrigerante</td><td className="p-3 border border-slate-200">Verificação de gás pelo técnico</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Cheiro de queimado: quando desligar imediatamente</h2>
+    <p>Se o ar condicionado emitir cheiro de queimado ou elétrico, <strong>desligue imediatamente</strong> no interruptor e na chave geral. Esse cheiro indica problema elétrico — motor com rolamento travado, curto na placa ou fiação danificada — que pode causar incêndio se ignorado.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Como resolver o mau cheiro?</h2>
+    <p>A solução depende da causa:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Cheiro de mofo:</strong> higienização profissional com produto bactericida no evaporador — não resolve limpar apenas o filtro</li>
+      <li><strong>Cheiro de esgoto:</strong> desentupimento do dreno e limpeza da bandeja de condensado</li>
+      <li><strong>Cheiro elétrico:</strong> inspeção técnica urgente — não tente resolver sozinho</li>
+      <li><strong>Prevenção:</strong> manutenção semestral evita o acúmulo de fungos e entupimento do dreno</li>
+    </ul>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Seu ar condicionado está com mau cheiro?</h3>
+      <p className="text-slate-600 text-sm mb-4">Atendemos em até 2 horas · Higienização com bactericida certificado · Garantia de 90 dias</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Meu%20ar%20condicionado%20está%20com%20mau%20cheiro%20e%20preciso%20de%20atendimento." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Resolver Agora pelo WhatsApp</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Posso usar aromatizador para mascarar o cheiro?</h3>
+    <p>Não é recomendado. O aromatizador mascara o sintoma sem tratar a causa — os fungos e bactérias continuam se proliferando e sendo expelidos no ar. A solução é a higienização do evaporador.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Quanto custa a higienização em SP?</h3>
+    <p>A higienização profissional de um split residencial em São Paulo custa em média R$ 150 a R$ 250. O preço varia conforme o tamanho do equipamento e o grau de contaminação.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Limpar o filtro resolve o mau cheiro?</h3>
+    <p>Parcialmente. A limpeza do filtro remove parte da poeira e ácaros, mas o cheiro de mofo vem do evaporador (serpentina) — que fica atrás do filtro e só pode ser limpo com equipamento profissional e produto bactericida adequado.</p>
   </BlogPostLayout>
 );
 
 export const BlogDesligaSozinho = () => (
-  <BlogPostLayout tag="Problemas" title="Ar Condicionado Desliga Sozinho: 7 Causas e Como Resolver" date="9 de Maio, 2026" author="José Erivaldo">
-    <p>Se o seu <strong>ar condicionado desliga sozinho</strong>, não ignore. Pode ser algo simples como o timer ativado ou um sinal de alerta de um problema mais sério. Veja as causas mais comuns e como resolver.</p>
-    <h2 className="text-2xl font-bold text-primary">7 razões para o ar condicionado desligar sozinho</h2>
-    <ul className="space-y-2 list-disc pl-6">
-      <li><strong>1. Timer ativado:</strong> verifique as configurações do controle remoto</li>
-      <li><strong>2. Proteção contra superaquecimento:</strong> o compressor desliga para se proteger quando está muito quente — geralmente por falta de gás ou filtro sujo</li>
-      <li><strong>3. Falta de gás refrigerante:</strong> o aparelho não consegue resfriar e entra em proteção</li>
-      <li><strong>4. Filtro muito sujo:</strong> restringe o fluxo de ar e causa superaquecimento</li>
-      <li><strong>5. Problema elétrico:</strong> tensão instável ou disjuntor fraco</li>
-      <li><strong>6. Placa eletrônica com defeito:</strong> causa desligamentos aleatórios</li>
-      <li><strong>7. Sensor de temperatura com defeito:</strong> lê temperatura errada e desliga indevidamente</li>
+  <BlogPostLayout tag="Problemas" title="Ar Condicionado Desliga Sozinho: 8 Causas e Como Resolver" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>O ar condicionado ligar e desligar sozinho é um problema comum em São Paulo e pode ter diversas causas — da mais simples (filtro sujo) à mais grave (compressor com defeito). Entender a causa certa evita gastar com consertos desnecessários.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">As 8 causas mais comuns para o ar condicionado desligar sozinho</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>1. Filtro entupido:</strong> o filtro sujo restringe o fluxo de ar, causando superaquecimento do compressor — o sistema de proteção desliga o equipamento automaticamente</li>
+      <li><strong>2. Gás refrigerante baixo:</strong> sem gás suficiente, a pressão do sistema cai e o presostato de baixa pressão desliga o compressor</li>
+      <li><strong>3. Condensadora bloqueada:</strong> se a unidade externa não tem ventilação adequada (muito próxima de paredes ou coberta), o compressor superaquece e desliga</li>
+      <li><strong>4. Problema elétrico:</strong> tensão instável, disjuntor subdimensionado ou fiação com mau contato causam desligamentos intermitentes</li>
+      <li><strong>5. Placa eletrônica com defeito:</strong> falha no controlador do sistema pode causar desligamentos aleatórios</li>
+      <li><strong>6. Sensor de temperatura com defeito:</strong> o termistor com problema envia leituras erradas para a placa — o sistema interpreta que a temperatura foi atingida e desliga</li>
+      <li><strong>7. Compressor superaquecido:</strong> compressor com desgaste ou com óleo vencido superaquece e desliga pelo termostato interno de proteção</li>
+      <li><strong>8. Timer ativado acidentalmente:</strong> muitos aparelhos têm timer que pode ser ativado sem querer pelo controle remoto</li>
     </ul>
-    <h2 className="text-2xl font-bold text-primary">O que fazer</h2>
-    <p>Primeiro, verifique se o timer está ativado. Se o aparelho desliga após alguns minutos de funcionamento, o mais provável é falta de gás ou filtro muito sujo — ambos resolvidos com uma visita técnica. Não tente recarregar o gás sozinho: exige equipamento específico e técnico habilitado.</p>
-    <p>A New Clima atende em São Paulo e ABC com <strong>resposta em até 2 horas</strong>. Ligue: <strong>(11) 96346-2516</strong>.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Como identificar a causa?</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Sintoma adicional</th><th className="p-3 text-left border border-primary">Causa provável</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Desliga após 10-15 min, gerou pouco frio</td><td className="p-3 border border-slate-200">Filtro sujo ou gás baixo</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Condensadora muito quente ao toque</td><td className="p-3 border border-slate-200">Ventilação insuficiente ou compressor com defeito</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Disjuntor cai junto</td><td className="p-3 border border-slate-200">Problema elétrico — curto ou sobrecarga</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Desliga em horário fixo</td><td className="p-3 border border-slate-200">Timer ativado — verifique o controle remoto</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Código de erro no display</td><td className="p-3 border border-slate-200">Falha específica — anote o código e chame técnico</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que fazer antes de chamar o técnico</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Limpe o filtro — retire, lave com água e deixe secar completamente antes de recolocar</li>
+      <li>Verifique se a condensadora externa está livre de obstáculos e com ventilação adequada</li>
+      <li>Confirme se o timer não está ativado no controle remoto</li>
+      <li>Verifique o disjuntor dedicado — se estiver esquentando, pode estar subdimensionado</li>
+    </ul>
+    <p>Se o problema persistir após essas verificações, é hora de chamar um técnico. Continuar forçando o equipamento pode transformar um conserto simples em substituição de compressor.</p>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Diagnóstico gratuito em São Paulo</h3>
+      <p className="text-slate-600 text-sm mb-4">Atendemos em até 2 horas · Diagnóstico sem custo · Orçamento antes de qualquer serviço</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Meu%20ar%20condicionado%20está%20desligando%20sozinho%20e%20preciso%20de%20diagnóstico." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Diagnóstico Gratuito</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Ar condicionado desligando sozinho pode pegar fogo?</h3>
+    <p>Em casos de problema elétrico (curto na placa ou fiação), existe risco. Se o desligamento vier acompanhado de cheiro de queimado, desligue imediatamente na chave geral e chame um técnico.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Quanto custa consertar ar condicionado que desliga sozinho?</h3>
+    <p>Depende da causa. Limpeza de filtro: R$ 0 (pode fazer em casa). Recarga de gás: R$ 200 a R$ 400. Troca de sensor: R$ 150 a R$ 350. Troca de placa: R$ 400 a R$ 1.200. Troca de compressor: R$ 800 a R$ 2.500.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Posso usar o ar condicionado enquanto ele desliga sozinho?</h3>
+    <p>Não recomendamos. Continuar usando enquanto o problema persiste pode agravar a situação — especialmente se a causa for superaquecimento do compressor ou problema elétrico.</p>
   </BlogPostLayout>
 );
 
@@ -1146,21 +1255,50 @@ export const BlogVidaUtil = () => (
 );
 
 export const BlogTemperatura = () => (
-  <BlogPostLayout tag="Dicas de Uso" title="Qual a Temperatura Ideal do Ar Condicionado? Conforto e Economia" date="9 de Maio, 2026" author="José Erivaldo">
-    <p>Escolher a <strong>temperatura ideal do ar condicionado</strong> impacta diretamente no seu conforto, na conta de luz e na saúde. Em São Paulo, onde o calor pode passar dos 35°C no verão, a tentação é colocar na mínima — mas isso não é recomendado.</p>
-    <h2 className="text-2xl font-bold text-primary">Qual temperatura usar?</h2>
-    <p>Para <strong>conforto e economia</strong>, a recomendação dos especialistas é entre <strong>23°C e 25°C</strong>. O INMETRO recomenda 23°C como temperatura de referência para ambientes climatizados no Brasil.</p>
-    <ul className="space-y-2 list-disc pl-6">
-      <li><strong>Quarto (dormir):</strong> 23°C a 26°C</li>
-      <li><strong>Sala e escritório:</strong> 22°C a 24°C</li>
-      <li><strong>Academia:</strong> 19°C a 22°C</li>
-      <li><strong>Servidor/datacenter:</strong> 18°C a 21°C</li>
+  <BlogPostLayout tag="Uso" title="Temperatura Ideal do Ar Condicionado: Por Saúde, Economia e Conforto" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>Qual a temperatura ideal para o ar condicionado? A resposta varia conforme o ambiente, o horário e o perfil de quem usa — mas existe uma faixa que combina conforto, saúde e economia para a maioria das situações em São Paulo.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Temperatura ideal por tipo de ambiente</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Ambiente</th><th className="p-3 text-left border border-primary">Temperatura ideal</th><th className="p-3 text-left border border-primary">Motivo</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Sala de estar</td><td className="p-3 border border-slate-200 font-bold text-primary">22°C a 24°C</td><td className="p-3 border border-slate-200">Conforto para atividades normais</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Quarto (adulto)</td><td className="p-3 border border-slate-200 font-bold text-primary">20°C a 23°C</td><td className="p-3 border border-slate-200">Favorece o sono profundo</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Quarto (criança)</td><td className="p-3 border border-slate-200 font-bold text-primary">23°C a 25°C</td><td className="p-3 border border-slate-200">Mais seguro para crianças</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Escritório</td><td className="p-3 border border-slate-200 font-bold text-primary">22°C a 24°C</td><td className="p-3 border border-slate-200">Produtividade e conforto</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Academia / espaço esportivo</td><td className="p-3 border border-slate-200 font-bold text-primary">18°C a 21°C</td><td className="p-3 border border-slate-200">Corpo em atividade gera mais calor</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Servidor / datacenter</td><td className="p-3 border border-slate-200 font-bold text-primary">18°C a 20°C</td><td className="p-3 border border-slate-200">Proteção dos equipamentos</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Temperatura e economia de energia</h2>
+    <p>Cada grau a menos no ar condicionado aumenta o consumo de energia em aproximadamente <strong>8%</strong>. Ou seja:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Usar 18°C em vez de 24°C aumenta o consumo em até 50%</li>
+      <li>Subir de 22°C para 24°C economiza cerca de 16% na conta de luz</li>
+      <li>O PROCEL e o INMETRO recomendam 23°C como temperatura de referência para escritórios</li>
     </ul>
-    <h2 className="text-2xl font-bold text-primary">Impacto na conta de luz</h2>
-    <p>Cada grau a menos na temperatura configurada representa cerca de <strong>5% a 8% a mais no consumo de energia</strong>. Ou seja, colocar em 18°C em vez de 23°C aumenta o consumo em cerca de 25% a 40% sem trazer conforto proporcional.</p>
-    <h2 className="text-2xl font-bold text-primary">Choque térmico e saúde</h2>
-    <p>Temperaturas muito baixas causam <strong>choque térmico</strong> ao entrar e sair do ambiente — especialmente problemático em dias quentes de São Paulo. Para evitar, mantenha a diferença entre temperatura interna e externa em no máximo <strong>8°C a 10°C</strong>.</p>
-    <p>Dúvidas sobre qual equipamento escolher para seu ambiente? Fale com a New Clima: <strong>(11) 96346-2516</strong>.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Por que temperatura muito baixa faz mal?</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Abaixo de 18°C pode causar hipotermia leve e dores musculares</li>
+      <li>A diferença grande entre o ambiente interno e o externo (que em SP pode chegar a 15°C) causa choque térmico ao entrar e sair</li>
+      <li>Ar muito frio resseca as mucosas do nariz e garganta, facilitando infecções</li>
+      <li>Ambientes muito frios reduzem a produtividade e aumentam o desconforto</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Diferença de temperatura máxima recomendada</h2>
+    <p>A diferença entre a temperatura interna e a temperatura externa não deve ultrapassar <strong>7°C a 10°C</strong>. Em dias muito quentes em São Paulo (35°C+), o ideal é manter o ambiente em torno de 25°C a 27°C — não em 18°C, que gera um choque de 17°C ao sair para a rua.</p>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Seu ar condicionado não mantém a temperatura certa?</h3>
+      <p className="text-slate-600 text-sm mb-4">Pode ser falta de gás, filtro sujo ou equipamento subdimensionado · Diagnóstico gratuito</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Meu%20ar%20condicionado%20não%20está%20mantendo%20a%20temperatura%20certa." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Diagnóstico Gratuito</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Qual temperatura o governo recomenda para empresas?</h3>
+    <p>A NR-17 (Norma Regulamentadora do Trabalho) estabelece que em escritórios a temperatura deve ficar entre 20°C e 23°C. O INMETRO recomenda 23°C como padrão para economia de energia.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">O ar condicionado realmente atinge a temperatura configurada?</h3>
+    <p>Depende do dimensionamento. Um equipamento subdimensionado para o ambiente nunca atingirá temperaturas muito baixas em dias quentes. Se o ar condicionado não atinge a temperatura configurada, pode ser BTU insuficiente, gás baixo ou filtro sujo.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Posso usar 16°C (temperatura mínima) para resfriar mais rápido?</h3>
+    <p>O ar condicionado resfria na mesma velocidade independente da temperatura configurada — o compressor trabalha na mesma intensidade. Configurar 16°C não resfria mais rápido, apenas mantém o compressor ligado por mais tempo, gastando mais energia.</p>
   </BlogPostLayout>
 );
 
