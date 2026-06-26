@@ -1782,3 +1782,435 @@ export const BlogGas = () => (
   </BlogPostLayout>
 );
 
+
+// ── NOVOS ARTIGOS ────────────────────────────────────────────────────────────
+
+export const BlogNaoGela = () => (
+  <BlogPostLayout tag="Problemas" title="Ar Condicionado Não Gela: 7 Causas e Como Resolver em SP" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>Ligar o ar condicionado e ele não gelar é um dos problemas mais frustrantes — especialmente no verão em São Paulo. A boa notícia é que na maioria dos casos o problema tem solução rápida e sem alto custo.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">1. Filtro sujo ou entupido</h2>
+    <p>A causa mais comum. O filtro sujo restringe o fluxo de ar — o aparelho fica ligado mas não consegue resfriar o ambiente. <strong>Solução:</strong> retire, lave com água, seque completamente e recoloque.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">2. Gás refrigerante baixo</h2>
+    <p>O gás é responsável pelo resfriamento. Com vazamento, o sistema perde capacidade gradualmente. <strong>Solução:</strong> recarga de gás com verificação e reparo do vazamento. Sem corrigir o vazamento a recarga não resolve.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">3. Compressor com defeito</h2>
+    <p>Quando o compressor falha, o aparelho não circula o gás e para de gelar. <strong>Como identificar:</strong> a condensadora não vibra quando ligada. <strong>Custo:</strong> R$ 800 a R$ 2.500.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">4. Condensadora sem ventilação</h2>
+    <p>Unidade externa bloqueada superaquece e corta o resfriamento. <strong>Solução:</strong> garantir 30cm de espaço ao redor da condensadora.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">5. Capacitor com defeito</h2>
+    <p>O capacitor ajuda o compressor a dar partida. Com defeito, o sistema não resfria bem. <strong>Custo:</strong> R$ 100 a R$ 250 — peça barata, serviço rápido.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">6. Sensor de temperatura com defeito</h2>
+    <p>O termistor com defeito envia leituras erradas à placa — o sistema entende que a temperatura foi atingida e para de gelar. <strong>Custo:</strong> R$ 150 a R$ 300.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">7. Ambiente maior do que o BTU do equipamento</h2>
+    <p>Um equipamento subdimensionado nunca consegue gelar adequadamente em dias de calor intenso. <strong>Solução:</strong> segundo equipamento ou troca por maior capacidade.</p>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Causa</th><th className="p-3 text-left border border-primary">Custo estimado</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Filtro sujo</td><td className="p-3 border border-slate-200 font-bold text-success">Gratuito</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Recarga de gás + reparo</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 200 a R$ 500</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Capacitor</td><td className="p-3 border border-slate-200 font-bold text-success">R$ 100 a R$ 250</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Sensor/termistor</td><td className="p-3 border border-slate-200 font-bold text-success">R$ 150 a R$ 300</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Compressor</td><td className="p-3 border border-slate-200 font-bold text-red-600">R$ 800 a R$ 2.500</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Ar condicionado não está gelando em SP?</h3>
+      <p className="text-slate-600 text-sm mb-4">Diagnóstico gratuito · Atendimento em até 2h · Conserto no mesmo dia · Garantia de 90 dias</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Meu%20ar%20condicionado%20não%20está%20gelando." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Diagnóstico Gratuito</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Ar condicionado novo não gela — é normal?</h3>
+    <p>Não. Um aparelho novo deve gelar imediatamente. Pode ser instalação incorreta ou defeito de fábrica — acione a garantia.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Posso usar o aparelho que não gela?</h3>
+    <p>Não recomendamos. O compressor em sobrecarga pode transformar um conserto simples em troca de compressor.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Gela pouco em dia muito quente — é problema?</h3>
+    <p>Pode ser normal se o ambiente for maior que o BTU do equipamento. Se sempre gelou bem e parou, é problema técnico.</p>
+  </BlogPostLayout>
+);
+
+export const BlogPingandoAgua = () => (
+  <BlogPostLayout tag="Problemas" title="Ar Condicionado Pingando Água: Causas, Riscos e Como Resolver" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>Água pingando do ar condicionado dentro de casa não deve ser ignorado. Além do desconforto, o vazamento pode causar manchas no teto, mofo na parede e infiltração no apartamento do vizinho de baixo.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Por que o ar condicionado pinga água?</h2>
+    <p>É normal produzir água — é um subproduto do resfriamento. O evaporador condensa a umidade do ar em forma de água, que deve ser drenada para fora pelo dreno. O problema ocorre quando esse sistema falha.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Causas mais comuns</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Dreno entupido:</strong> causa mais comum — limo e fungos bloqueiam o escoamento. Água transborda pela unidade interna.</li>
+      <li><strong>Bandeja de condensado suja ou trincada:</strong> acúmulo de limo ou rachadura na bandeja causa vazamento lateral.</li>
+      <li><strong>Filtro muito sujo:</strong> restringe o ar, o evaporador gela, e no degelo a água transborda.</li>
+      <li><strong>Gás baixo:</strong> evaporador fica frio demais, forma gelo — no degelo gera excesso de água.</li>
+      <li><strong>Inclinação errada na instalação:</strong> a unidade interna deve ter leve inclinação para drenar. Se instalada reta, a água acumula.</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Riscos de ignorar o vazamento</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Manchas de umidade no teto ou parede</li>
+      <li>Crescimento de mofo na estrutura</li>
+      <li>Infiltração no apartamento do vizinho de baixo — responsabilidade civil</li>
+      <li>Danos elétricos se a água atingir a fiação</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que fazer enquanto espera o técnico</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Desligue o ar condicionado no interruptor</li>
+      <li>Coloque recipiente ou toalhas para conter a água</li>
+      <li>Não ligue novamente até o problema ser resolvido</li>
+      <li>Fotografe o vazamento para documentar</li>
+    </ul>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Ar condicionado pingando em SP? Resolvemos em até 2 horas.</h3>
+      <p className="text-slate-600 text-sm mb-4">Diagnóstico gratuito · Desentupimento de dreno · Garantia de 90 dias · SP e ABC</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Meu%20ar%20condicionado%20está%20pingando%20água." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Resolver Agora</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">É normal pingar um pouco de água?</h3>
+    <p>Não dentro de casa. A água deve ser drenada para fora. Qualquer gotejamento interno indica problema no sistema de drenagem.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Quanto custa desentupir o dreno?</h3>
+    <p>Em média R$ 80 a R$ 150 isoladamente, ou incluso na manutenção preventiva (R$ 180 a R$ 300).</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Posso desentupir o dreno sozinho?</h3>
+    <p>Com pera de borracha na saída do dreno é possível em alguns casos. Entupimento interno requer técnico com equipamento adequado.</p>
+  </BlogPostLayout>
+);
+
+export const BlogLimpezaSP = () => (
+  <BlogPostLayout tag="Limpeza" title="Limpeza de Ar Condicionado em SP: Preços, Frequência e Como Funciona" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>A limpeza do ar condicionado é um dos serviços mais importantes e mais negligenciados em São Paulo. Um aparelho sem limpeza regular acumula fungos, ácaros e bactérias que são expelidos no ar que você respira — causando alergias, rinite e infecções respiratórias.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Qual a diferença entre limpeza e higienização profissional?</h2>
+    <p><strong>Limpeza de filtros (usuário):</strong> retira poeira dos filtros externos a cada 15 dias. Não inclui o evaporador interno onde os fungos realmente proliferam.</p>
+    <p><strong>Higienização profissional:</strong> inclui limpeza do evaporador com bactericida, bandeja de condensado, dreno e todas as partes internas. Resolve mau cheiro e elimina fungos na raiz.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quanto custa a limpeza em SP em 2026?</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Serviço</th><th className="p-3 text-left border border-primary">Preço médio SP</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Limpeza de filtros (usuário)</td><td className="p-3 border border-slate-200 font-bold text-success">Gratuito</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Higienização profissional</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 150 a R$ 250</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Manutenção preventiva completa</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 180 a R$ 350</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Higienização para clínicas (ANVISA)</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 200 a R$ 400</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Com que frequência fazer em SP?</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Filtros (usuário):</strong> a cada 15 dias em uso intenso</li>
+      <li><strong>Higienização residencial:</strong> a cada 6 meses</li>
+      <li><strong>Escritórios e comércios:</strong> a cada 3 meses</li>
+      <li><strong>Clínicas e restaurantes:</strong> mensalmente ou conforme PMOC</li>
+      <li><strong>Ambientes com pets:</strong> a cada 3 meses</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Sinais de que precisa de limpeza urgente</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Mau cheiro quando liga o aparelho</li>
+      <li>Mais rinite, tosse ou alergias do que o normal</li>
+      <li>Ar saindo com pouca força no máximo</li>
+      <li>Água pingando da unidade interna</li>
+      <li>Mais de 6 meses sem manutenção</li>
+    </ul>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Agende a limpeza do seu ar condicionado em SP</h3>
+      <p className="text-slate-600 text-sm mb-4">Higienização com bactericida · Todas as marcas · A partir de R$ 150 · Garantia de 90 dias</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Gostaria%20de%20agendar%20a%20limpeza%20do%20meu%20ar%20condicionado." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Agendar Limpeza</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Limpeza de filtro resolve o mau cheiro?</h3>
+    <p>Parcialmente. O mau cheiro vem do evaporador interno — apenas a higienização profissional com bactericida resolve definitivamente.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Posso usar logo após a limpeza?</h3>
+    <p>Sim, após secagem dos componentes — geralmente 30 a 60 minutos após o término.</p>
+  </BlogPostLayout>
+);
+
+export const BlogConsertoSP = () => (
+  <BlogPostLayout tag="Conserto" title="Conserto de Ar Condicionado em SP: Diagnóstico Gratuito e Atendimento em 2h" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>O ar condicionado quebrou? A New Clima atende em até 2 horas com diagnóstico gratuito em São Paulo e ABC. Identificamos o problema e apresentamos o orçamento antes de qualquer serviço.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Defeitos mais comuns e custos</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Defeito</th><th className="p-3 text-left border border-primary">Sintoma</th><th className="p-3 text-left border border-primary">Custo estimado</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Dreno entupido</td><td className="p-3 border border-slate-200">Água pingando</td><td className="p-3 border border-slate-200 font-bold text-success">R$ 80 a R$ 150</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Recarga de gás</td><td className="p-3 border border-slate-200">Não gela</td><td className="p-3 border border-slate-200 font-bold text-success">R$ 200 a R$ 400</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Troca de capacitor</td><td className="p-3 border border-slate-200">Não liga ou desliga sozinho</td><td className="p-3 border border-slate-200 font-bold text-success">R$ 100 a R$ 250</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Troca de placa eletrônica</td><td className="p-3 border border-slate-200">Erros no display</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 400 a R$ 1.200</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Troca de compressor</td><td className="p-3 border border-slate-200">Não gela, compressor não liga</td><td className="p-3 border border-slate-200 font-bold text-red-600">R$ 800 a R$ 2.500</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Como funciona o atendimento</h2>
+    <ol className="list-decimal pl-6 space-y-2 my-4">
+      <li>Contato pelo WhatsApp — descreva o problema e informe o endereço</li>
+      <li>Agendamento no horário mais conveniente</li>
+      <li>Visita técnica com diagnóstico gratuito</li>
+      <li>Orçamento apresentado antes de qualquer serviço</li>
+      <li>Conserto no mesmo dia na maioria dos casos</li>
+      <li>Garantia de 90 dias no serviço e nas peças</li>
+    </ol>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Conserto ou troca? Como decidir</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Menos de 5 anos:</strong> sempre vale consertar</li>
+      <li><strong>5 a 10 anos com defeito simples:</strong> vale consertar</li>
+      <li><strong>Acima de 10 anos com compressor ou placa:</strong> avalie a troca por Inverter</li>
+    </ul>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Precisa de conserto em SP?</h3>
+      <p className="text-slate-600 text-sm mb-4">Diagnóstico gratuito · Até 2 horas · Conserto no mesmo dia · Garantia 90 dias · SP e ABC</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Preciso%20de%20conserto%20de%20ar%20condicionado." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Solicitar Conserto</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">O diagnóstico é realmente gratuito?</h3>
+    <p>Sim. Você só paga se aprovar o orçamento e quiser prosseguir com o conserto.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Consertam todas as marcas?</h3>
+    <p>Sim. LG, Samsung, Daikin, Midea, Fujitsu, Electrolux, Carrier, Springer e todas as demais marcas.</p>
+  </BlogPostLayout>
+);
+
+export const BlogManutencaoPreventivaSP = () => (
+  <BlogPostLayout tag="Manutenção" title="Manutenção Preventiva de Ar Condicionado em SP: O Que É e Por Que Fazer" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>A manutenção preventiva é o conjunto de verificações e procedimentos realizados periodicamente para manter o ar condicionado funcionando com eficiência, prevenir defeitos e prolongar a vida útil. Em São Paulo, com alta poluição e uso intenso, é ainda mais importante.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que está incluso na preventiva completa?</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Higienização do evaporador com bactericida</li>
+      <li>Limpeza dos filtros, bandeja e dreno</li>
+      <li>Verificação do nível de gás refrigerante</li>
+      <li>Verificação de componentes elétricos e capacitor</li>
+      <li>Lubrificação dos rolamentos do ventilador</li>
+      <li>Verificação da temperatura de saída de ar</li>
+      <li>Relatório técnico com as condições do equipamento</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Preventiva x corretiva: a diferença de custo</h2>
+    <p>A preventiva é como a revisão do carro — muito mais barata do que o conserto após a quebra. Um filtro sujo aumenta 30% o consumo de energia. Sem manutenção por 12 meses o compressor pode falhar — custo de R$ 800 a R$ 2.500 vs R$ 180 a R$ 300 da preventiva.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Preços em SP em 2026</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Atendimento</th><th className="p-3 text-left border border-primary">Frequência</th><th className="p-3 text-left border border-primary">Custo</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Residencial (1 equipamento)</td><td className="p-3 border border-slate-200">Semestral</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 180 a R$ 300</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Residencial (2 a 4 equipamentos)</td><td className="p-3 border border-slate-200">Semestral</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 280 a R$ 500</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Comercial (até 5 equipamentos)</td><td className="p-3 border border-slate-200">Trimestral</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 400 a R$ 800/visita</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Contrato anual empresa</td><td className="p-3 border border-slate-200">Mensal ou trimestral</td><td className="p-3 border border-slate-200 font-bold text-success">A partir de R$ 350/mês</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Agende a manutenção preventiva em SP</h3>
+      <p className="text-slate-600 text-sm mb-4">A partir de R$ 180 · Todas as marcas · Relatório técnico incluso · Garantia 90 dias</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Gostaria%20de%20agendar%20manutenção%20preventiva%20de%20ar%20condicionado." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Agendar Manutenção Preventiva</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Aparelho funcionando bem precisa de manutenção?</h3>
+    <p>Sim. Um aparelho sem sintomas pode ter filtros sujos aumentando 20% o consumo, fungos no evaporador e dreno parcialmente entupido — tudo sem sintomas visíveis ainda.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">A preventiva inclui recarga de gás?</h3>
+    <p>A verificação do nível de gás está inclusa. A recarga, se necessária, é cobrada à parte com orçamento aprovado por você.</p>
+  </BlogPostLayout>
+);
+
+export const BlogArCondicionadoSala = () => (
+  <BlogPostLayout tag="Guia de Compra" title="Ar Condicionado para Sala: Qual BTU, Onde Instalar e Qual Modelo Escolher" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>A sala de estar é geralmente o ambiente maior e mais desafiador de climatizar em um apartamento ou casa em São Paulo. Escolher o equipamento certo — em BTUs, modelo e posição de instalação — faz toda a diferença no conforto e na conta de luz.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quantos BTUs para a sala?</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Tamanho da sala</th><th className="p-3 text-left border border-primary">BTUs recomendados</th><th className="p-3 text-left border border-primary">Modelo</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Até 20m²</td><td className="p-3 border border-slate-200 font-bold text-primary">12.000 BTUs</td><td className="p-3 border border-slate-200">Split Hi-Wall</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">20m² a 30m²</td><td className="p-3 border border-slate-200 font-bold text-primary">18.000 BTUs</td><td className="p-3 border border-slate-200">Split Hi-Wall</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">30m² a 45m²</td><td className="p-3 border border-slate-200 font-bold text-primary">24.000 BTUs</td><td className="p-3 border border-slate-200">Split Hi-Wall ou Cassete</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Acima de 45m²</td><td className="p-3 border border-slate-200 font-bold text-primary">30.000+ BTUs ou Multi Split</td><td className="p-3 border border-slate-200">Multi Split ou Cassete</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p className="text-sm text-slate-500 italic">* Salas com muitas janelas, exposição solar intensa ou pé direito alto precisam de 10% a 20% a mais de BTUs.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Onde instalar o ar condicionado na sala?</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Parede oposta ao sofá:</strong> distribui o ar por toda a sala sem apontar diretamente para quem está sentado</li>
+      <li><strong>Parede lateral:</strong> boa opção quando não há parede oposta adequada</li>
+      <li><strong>Evite paredes com janelas:</strong> variação de temperatura reduz eficiência</li>
+      <li><strong>Altura ideal:</strong> 2,10m a 2,30m do piso</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Split ou Cassete para sala?</h2>
+    <p><strong>Split Hi-Wall:</strong> mais econômico, instalação mais simples. Ideal para salas até 30m².</p>
+    <p><strong>Cassete:</strong> distribuição de ar em 4 direções, estética mais elegante, instalado no teto. Ideal para salas acima de 30m² ou ambientes onde a estética é prioridade. Requer forro de gesso.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Sala com cozinha integrada: o que considerar</h2>
+    <p>Salas integradas com cozinha (open concept) têm carga térmica muito maior — o fogão e eletrodomésticos geram calor constantemente. Nesses casos, acrescente 20% a 30% nos BTUs calculados e considere posicionar o ar condicionado na parte da sala, longe da cozinha.</p>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Instale o ar condicionado ideal para sua sala em SP</h3>
+      <p className="text-slate-600 text-sm mb-4">Calculamos o BTU certo · Indicamos o modelo ideal · Visita gratuita · Garantia de 1 ano</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Quero%20instalar%20ar%20condicionado%20na%20minha%20sala%20em%20SP." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Solicitar Instalação</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Um ar condicionado resolve a sala toda?</h3>
+    <p>Para salas até 35m² com um ponto de instalação bem posicionado, sim. Para salas maiores ou em L, pode ser necessário dois equipamentos ou um cassete com distribuição em 4 direções.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Inverter vale para sala?</h3>
+    <p>Sim, especialmente em salas usadas por muitas horas ao dia. A economia no consumo se paga em poucos meses de uso.</p>
+  </BlogPostLayout>
+);
+
+export const BlogEscritorioSP = () => (
+  <BlogPostLayout tag="Empresarial" title="Ar Condicionado para Escritório em SP: Como Escolher e Quanto Custa" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>Escolher o ar condicionado certo para um escritório em São Paulo vai além do BTU — envolve nível de ruído, eficiência para uso contínuo, cumprimento do PMOC e impacto na produtividade da equipe.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Tipos de sistema para escritório</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Split Hi-Wall:</strong> ideal para salas individuais e escritórios até 25m²</li>
+      <li><strong>Multi Split:</strong> uma condensadora atende várias salas — ideal para escritórios de 50m² a 200m²</li>
+      <li><strong>Cassete:</strong> instalado no teto, distribuição de ar em 4 direções — ideal para open space e salas de reunião</li>
+      <li><strong>VRF / Mini VRF:</strong> sistema central para escritórios acima de 200m² — controle individual por zona, altamente eficiente</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Cálculo de BTU para escritório</h2>
+    <p>Escritórios têm carga térmica maior do que residências — computadores, servidores, impressoras e o calor humano de várias pessoas aumentam significativamente a necessidade de BTUs.</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Use a fórmula base: Área (m²) × 600 BTUs</li>
+      <li>Acrescente 600 BTUs por pessoa acima de 2</li>
+      <li>Acrescente 10% por computador ou monitor adicional</li>
+      <li>Se houver servidor no ambiente, acrescente 20% a 30%</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">PMOC é obrigatório para escritórios?</h2>
+    <p>Sim, para escritórios com sistema de ar condicionado acima de 60.000 BTUs de uso coletivo. A maioria dos escritórios comerciais em São Paulo se enquadra nessa obrigatoriedade. A New Clima elabora e executa o PMOC com ART inclusa.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quanto custa para escritório em SP?</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Porte do escritório</th><th className="p-3 text-left border border-primary">Sistema indicado</th><th className="p-3 text-left border border-primary">Investimento estimado</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Sala individual (até 25m²)</td><td className="p-3 border border-slate-200">Split 12.000-18.000 BTUs</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 2.000 a R$ 4.000</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Escritório médio (50-150m²)</td><td className="p-3 border border-slate-200">Multi Split ou Cassete</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 8.000 a R$ 20.000</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Open space (150-300m²)</td><td className="p-3 border border-slate-200">Mini VRF + Cassetes</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 20.000 a R$ 50.000</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Solicite proposta para seu escritório em SP</h3>
+      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Projeto técnico · PMOC incluso · Garantia por escrito</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Preciso%20de%20ar%20condicionado%20para%20meu%20escritório%20em%20SP." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Solicitar Proposta</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Qual temperatura regulamentar para escritórios em SP?</h3>
+    <p>A NR-17 estabelece entre 20°C e 23°C. O INMETRO recomenda 23°C como referência para economia de energia.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Manutenção pode ser feita fora do horário comercial?</h3>
+    <p>Sim. A New Clima agenda manutenções em horários que minimizam o impacto nas atividades — incluindo fins de semana.</p>
+  </BlogPostLayout>
+);
+
+export const BlogQuantoCustaLimpeza = () => (
+  <BlogPostLayout tag="Preços" title="Quanto Custa a Limpeza de Ar Condicionado em SP em 2026?" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>A limpeza de ar condicionado em São Paulo tem preços que variam bastante conforme o tipo de serviço, o número de equipamentos e o tipo de ambiente. Neste artigo, mostramos os preços reais praticados em 2026 e o que está incluso em cada serviço.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Tabela de preços de limpeza em SP (2026)</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Serviço</th><th className="p-3 text-left border border-primary">O que inclui</th><th className="p-3 text-left border border-primary">Preço médio</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Limpeza de filtros (usuário)</td><td className="p-3 border border-slate-200">Filtros externos</td><td className="p-3 border border-slate-200 font-bold text-success">Gratuito</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Higienização split 9.000 BTUs</td><td className="p-3 border border-slate-200">Evaporador + bandeja + dreno</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 150 a R$ 200</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Higienização split 12.000-18.000 BTUs</td><td className="p-3 border border-slate-200">Evaporador + bandeja + dreno</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 180 a R$ 250</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Higienização cassete</td><td className="p-3 border border-slate-200">Limpeza completa interna</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 250 a R$ 400</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Higienização para clínica (ANVISA)</td><td className="p-3 border border-slate-200">Normas sanitárias + certificado</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 200 a R$ 400</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Pacote 3+ equipamentos</td><td className="p-3 border border-slate-200">Desconto por volume</td><td className="p-3 border border-slate-200 font-bold text-success">A partir de R$ 130/unid.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que está incluso na higienização profissional?</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Proteção do piso e móveis próximos</li>
+      <li>Remoção e limpeza dos filtros externos</li>
+      <li>Aplicação de bactericida no evaporador (serpentina)</li>
+      <li>Limpeza da bandeja de condensado</li>
+      <li>Desentupimento e limpeza do dreno</li>
+      <li>Limpeza da carcaça e grelhas</li>
+      <li>Teste de funcionamento ao término</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que NÃO está incluso (e cobra à parte)</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Recarga de gás refrigerante — cobrado se necessário após verificação</li>
+      <li>Troca de peças defeituosas identificadas durante o serviço</li>
+      <li>Desentupimento de dreno com obstrução severa — pode ter custo adicional</li>
+    </ul>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Agende a limpeza do seu ar condicionado em SP</h3>
+      <p className="text-slate-600 text-sm mb-4">A partir de R$ 150 · Bactericida certificado · Todas as marcas · Garantia de 90 dias</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Gostaria%20de%20saber%20o%20preço%20da%20limpeza%20do%20meu%20ar%20condicionado." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Solicitar Orçamento</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Vale a pena pagar mais pela higienização profissional?</h3>
+    <p>Sim. A limpeza de filtro não remove fungos do evaporador — apenas a higienização profissional resolve o mau cheiro e elimina microrganismos prejudiciais à saúde.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Com que frequência fazer em SP?</h3>
+    <p>Residencial a cada 6 meses. Comercial a cada 3 meses. Ambientes com pets ou muita poeira a cada 3 meses.</p>
+  </BlogPostLayout>
+);
+
+export const BlogBarulhento = () => (
+  <BlogPostLayout tag="Problemas" title="Ar Condicionado Fazendo Barulho: Causas e Como Resolver" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>Ar condicionado barulhento é um problema comum — especialmente em aparelhos com mais de 3 anos sem manutenção. O barulho pode ir de um leve zumbido até um estrondo que acorda o vizinho. Cada tipo de ruído indica uma causa diferente.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Tipos de barulho e o que cada um indica</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Tipo de barulho</th><th className="p-3 text-left border border-primary">Causa provável</th><th className="p-3 text-left border border-primary">Urgência</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Vibração / chacoalhando</td><td className="p-3 border border-slate-200">Parafusos soltos, suporte fraco ou peça solta interna</td><td className="p-3 border border-slate-200 font-bold text-primary">Média</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Zumbido elétrico</td><td className="p-3 border border-slate-200">Capacitor ou componente elétrico com defeito</td><td className="p-3 border border-slate-200 font-bold text-primary">Média</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Ranger / chiado</td><td className="p-3 border border-slate-200">Rolamento do motor do ventilador desgastado</td><td className="p-3 border border-slate-200 font-bold text-red-600">Alta</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Bater / traque</td><td className="p-3 border border-slate-200">Objeto dentro do equipamento ou pá do ventilador quebrada</td><td className="p-3 border border-slate-200 font-bold text-red-600">Alta — desligar imediatamente</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Borbulhar / gorgolejar</td><td className="p-3 border border-slate-200">Gás refrigerante baixo ou ar no sistema</td><td className="p-3 border border-slate-200 font-bold text-primary">Média</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Barulho ao ligar e depois some</td><td className="p-3 border border-slate-200">Normal — é o compressor dando partida</td><td className="p-3 border border-slate-200 font-bold text-success">Nenhuma</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quando desligar imediatamente</h2>
+    <p>Se o barulho for de batida, traque ou pancada — desligue na chave geral e chame técnico. Pás de ventilador quebradas ou objetos dentro do equipamento podem causar danos graves ao motor e ao compressor.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Condensadora barulhenta: o que fazer</h2>
+    <p>A condensadora (unidade externa) normalmente faz mais barulho do que a interna. Barulho excessivo na condensadora pode indicar:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Suporte de fixação frouxo — aperte os parafusos</li>
+      <li>Vibração sendo transmitida pela parede — use borrachas anti-vibração</li>
+      <li>Rolamento do motor do ventilador externo desgastado — troca necessária</li>
+      <li>Compressor com desgaste — diagnóstico técnico obrigatório</li>
+    </ul>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Ar condicionado barulhento em SP?</h3>
+      <p className="text-slate-600 text-sm mb-4">Diagnóstico gratuito · Atendimento em até 2h · Garantia de 90 dias · SP e ABC</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Meu%20ar%20condicionado%20está%20fazendo%20barulho%20e%20preciso%20de%20diagnóstico." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Diagnóstico Gratuito</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Ar condicionado novo faz barulho — é normal?</h3>
+    <p>Um leve zumbido do compressor é normal. Vibração, ranger ou chiado em aparelho novo não é normal — verifique se os parafusos de fixação estão bem apertados e se a instalação está correta. Se persistir, acione a garantia.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Barulho de borbulhar é perigoso?</h3>
+    <p>Não é perigoso, mas indica gás baixo ou ar no sistema — o que reduz a eficiência e pode danificar o compressor a médio prazo. Vale chamar técnico para verificar.</p>
+  </BlogPostLayout>
+);
+
+export const BlogNaoLiga = () => (
+  <BlogPostLayout tag="Problemas" title="Ar Condicionado Não Liga: O Que Verificar Antes de Chamar o Técnico" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>Ar condicionado que não liga pode ter desde uma causa simples — que você mesmo resolve em minutos — até um defeito elétrico que exige técnico especializado. Siga este guia antes de chamar a assistência.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Verificações básicas (faça primeiro)</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Verifique o disjuntor:</strong> vá ao quadro elétrico e confirme se o disjuntor do ar condicionado não desarmou. Se estiver desarmado, ligue novamente — se cair de novo, é problema elétrico.</li>
+      <li><strong>Verifique a tomada:</strong> alguns aparelhos têm tomada própria — confirme se está bem encaixada e se tem energia.</li>
+      <li><strong>Baterias do controle remoto:</strong> troque as pilhas do controle e tente novamente. Parece óbvio, mas é causa frequente.</li>
+      <li><strong>Modo de operação:</strong> confirme se o controle está no modo correto (Cool, não Fan ou Dry).</li>
+      <li><strong>Timer ativado:</strong> verifique se não há timer programado impedindo a partida.</li>
+      <li><strong>Temperatura configurada:</strong> se configurado acima da temperatura ambiente, o compressor não liga — é comportamento normal.</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Causas técnicas que exigem técnico</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Causa</th><th className="p-3 text-left border border-primary">Sintoma adicional</th><th className="p-3 text-left border border-primary">Custo estimado</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Capacitor de partida com defeito</td><td className="p-3 border border-slate-200">Zumbido mas não liga</td><td className="p-3 border border-slate-200 font-bold text-success">R$ 100 a R$ 250</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Placa eletrônica com defeito</td><td className="p-3 border border-slate-200">Nenhuma reação ao comando</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 400 a R$ 1.200</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Fusível queimado</td><td className="p-3 border border-slate-200">Sem nenhuma indicação</td><td className="p-3 border border-slate-200 font-bold text-success">R$ 50 a R$ 150</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Compressor travado</td><td className="p-3 border border-slate-200">Disjuntor cai ao ligar</td><td className="p-3 border border-slate-200 font-bold text-red-600">R$ 800 a R$ 2.500</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Problema na fiação</td><td className="p-3 border border-slate-200">Cheiro de queimado</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 150 a R$ 400</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Disjuntor cai toda vez que liga — o que fazer</h2>
+    <p>Se o disjuntor desarma toda vez que você tenta ligar o ar condicionado, pode ser curto no compressor, compressor travado ou disjuntor subdimensionado. <strong>Não force religar várias vezes</strong> — isso pode queimar o compressor ou a fiação. Chame um técnico.</p>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Ar condicionado não liga em SP?</h3>
+      <p className="text-slate-600 text-sm mb-4">Diagnóstico gratuito · Atendimento em até 2h · Conserto no mesmo dia · Garantia 90 dias</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Meu%20ar%20condicionado%20não%20liga%20e%20preciso%20de%20diagnóstico." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Diagnóstico Gratuito</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Ar condicionado não liga após queda de energia — é normal?</h3>
+    <p>Sim. Muitos aparelhos têm proteção que impede a partida automática após queda de energia. Aguarde 3 minutos e tente ligar novamente pelo controle remoto.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Posso resetar o ar condicionado?</h3>
+    <p>Sim — desligue o disjuntor por 5 minutos e religue. Alguns aparelhos têm botão de reset na unidade interna. Consulte o manual da sua marca.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Cheiro de queimado ao tentar ligar — o que fazer?</h3>
+    <p>Desligue imediatamente na chave geral. Cheiro de queimado indica problema elétrico — pode ser risco de incêndio. Chame técnico antes de tentar ligar novamente.</p>
+  </BlogPostLayout>
+);
