@@ -206,31 +206,126 @@ export const BlogBTUs = () => (
 );
 
 export const BlogPMOC = () => (
-  <BlogPostLayout tag="Legislação" title="PMOC Obrigatório: O Que Sua Empresa Precisa Saber Para Evitar Multas" date="01 de Março, 2026" author="Equipe Técnica New Clima">
-    <p>Desde 2018, a Lei Federal 13.589 tornou obrigatório o <strong>PMOC</strong> para todos os edifícios que possuem sistemas de ar condicionado acima de 60.000 BTUs.</p>
-    <h2 className="text-2xl font-bold text-primary">Por que o PMOC é importante?</h2>
-    <p>A falta do PMOC pode gerar multas que variam de <strong>R$ 2.000,00 a R$ 1.500.000,00</strong>, aplicadas pela Vigilância Sanitária.</p>
-    <h2 className="text-2xl font-bold text-primary">O que deve constar no seu PMOC?</h2>
-    <ul className="list-disc pl-6 space-y-2">
-      <li>Identificação do imóvel e do responsável técnico.</li>
-      <li>Relação de todos os equipamentos de climatização.</li>
-      <li>Cronograma mensal de atividades de manutenção e limpeza.</li>
-      <li>Relatórios de análise da qualidade do ar (semestral).</li>
+  <BlogPostLayout tag="PMOC" title="O Que é PMOC? Guia Completo Sobre o Plano de Manutenção de Ar Condicionado" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>PMOC é a sigla para <strong>Plano de Manutenção, Operação e Controle</strong> — um documento técnico obrigatório por lei federal que estabelece os procedimentos de manutenção para sistemas de ar condicionado em uso público ou coletivo. Se você tem uma empresa, clínica ou condomínio em São Paulo com ar condicionado, provavelmente precisa ter um PMOC em vigor.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que é o PMOC na prática?</h2>
+    <p>O PMOC é um documento que define:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Quais equipamentos de ar condicionado existem no estabelecimento</li>
+      <li>Quais procedimentos de manutenção devem ser realizados em cada um</li>
+      <li>Com que frequência cada manutenção deve ocorrer</li>
+      <li>Quem é o responsável técnico (engenheiro com ART)</li>
+      <li>Registro de todas as manutenções realizadas</li>
     </ul>
+    <p>Na prática, o PMOC é a "agenda de manutenção" do seu sistema de ar condicionado — com a diferença de que é um documento legal, assinado por engenheiro, e que comprova para a Vigilância Sanitária que os equipamentos estão sendo mantidos adequadamente.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Qual a lei que exige o PMOC?</h2>
+    <p>O PMOC é exigido por:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Lei Federal 13.589/18</strong> — institui a obrigatoriedade para todos os sistemas de ar condicionado de uso público ou coletivo</li>
+      <li><strong>Portaria MS 3.523/98</strong> — do Ministério da Saúde, que estabelece os requisitos técnicos mínimos</li>
+      <li><strong>Resolução RE 9/2003 da ANVISA</strong> — define os padrões de qualidade do ar interior</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quem precisa ter PMOC?</h2>
+    <p>Todo estabelecimento com sistema de ar condicionado de <strong>uso público ou coletivo com capacidade acima de 60.000 BTUs</strong>. Exemplos práticos em São Paulo:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Escritórios e empresas comerciais</li>
+      <li>Clínicas médicas e odontológicas</li>
+      <li>Restaurantes, hotéis e bares</li>
+      <li>Farmácias e drogarias</li>
+      <li>Academias, escolas e creches</li>
+      <li>Condomínios com ar nas áreas comuns</li>
+      <li>Shopping centers e estabelecimentos de grande porte</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que diferencia um PMOC completo de um incompleto?</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Item</th><th className="p-3 text-left border border-primary">PMOC completo</th><th className="p-3 text-left border border-primary">PMOC incompleto</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">ART do engenheiro</td><td className="p-3 border border-slate-200 font-bold text-success">✅ Inclusa</td><td className="p-3 border border-slate-200 font-bold text-red-600">❌ Ausente</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Cadastro dos equipamentos</td><td className="p-3 border border-slate-200 font-bold text-success">✅ Todos listados</td><td className="p-3 border border-slate-200 font-bold text-red-600">❌ Parcial</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Cronograma de manutenções</td><td className="p-3 border border-slate-200 font-bold text-success">✅ Com datas e frequências</td><td className="p-3 border border-slate-200 font-bold text-red-600">❌ Genérico</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Registros de execução</td><td className="p-3 border border-slate-200 font-bold text-success">✅ Laudo após cada visita</td><td className="p-3 border border-slate-200 font-bold text-red-600">❌ Inexistente</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Validade perante a VISA-SP</td><td className="p-3 border border-slate-200 font-bold text-success">✅ Aceito na fiscalização</td><td className="p-3 border border-slate-200 font-bold text-red-600">❌ Pode gerar multa</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quanto custa elaborar o PMOC em SP?</h2>
+    <p>O custo varia conforme o número de equipamentos e se inclui apenas a elaboração do documento ou também a execução das manutenções:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Elaboração do documento (sem execução): R$ 500 a R$ 1.500 (taxa única)</li>
+      <li>Contrato completo (documento + manutenções): R$ 350 a R$ 4.500/mês</li>
+    </ul>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Precisa de PMOC para sua empresa em SP?</h3>
+      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta no mesmo dia · ART inclusa · Documentação completa</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Preciso%20elaborar%20o%20PMOC%20para%20minha%20empresa%20em%20SP." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Solicitar Proposta</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">PMOC e manutenção preventiva são a mesma coisa?</h3>
+    <p>Não. O PMOC é o plano documentado que define o que deve ser feito. A manutenção preventiva é a execução prática do plano. Os dois são necessários — ter apenas o documento sem executar as manutenções também configura irregularidade.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Por quanto tempo devo guardar o PMOC?</h3>
+    <p>A Portaria MS 3.523/98 recomenda manter os registros por no mínimo 5 anos. Em caso de fiscalização ou processo administrativo, ter o histórico completo é fundamental.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Posso fazer o PMOC eu mesmo?</h3>
+    <p>Não. O PMOC exige a assinatura de um engenheiro mecânico ou habilitado com ART registrada no CREA. A elaboração por não-habilitado não tem validade legal e não será aceita pela Vigilância Sanitária.</p>
   </BlogPostLayout>
 );
 
 export const BlogRoundCassette = () => (
-  <BlogPostLayout tag="Tecnologia" title="LG Round Cassette: Climatização Circular Para Quem Não Aceita Ponto Quente" date="28 de Março, 2026" author="Ricardo Carvalho">
-    <p>O <strong>LG Round Cassette</strong> é a revolução estética e funcional no mercado de climatização. O design circular permite uma distribuição de ar em 360 graus.</p>
-    <h2 className="text-2xl font-bold text-primary">Design que Valoriza o Projeto</h2>
-    <p>Com perfil ultra-fino, ele se integra perfeitamente a tetos modernos, sendo a escolha preferida de arquitetos em bairros como <strong>Vila Madalena e Pinheiros</strong>.</p>
-    <h2 className="text-2xl font-bold text-primary">Vantagens Técnicas</h2>
-    <ul className="list-disc pl-6 space-y-2">
-      <li><strong>Fluxo de Ar 360°:</strong> Elimina correntes de ar diretas desconfortáveis.</li>
-      <li><strong>Instalação Flexível:</strong> Ideal para ambientes com pé-direito alto.</li>
-      <li><strong>Eficiência Inverter:</strong> Máxima economia com o selo de qualidade LG.</li>
+  <BlogPostLayout tag="Equipamentos" title="LG Round Cassette: O Que É, Vantagens e Para Quais Ambientes É Indicado" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>O LG Round Cassette é um dos modelos de ar condicionado mais sofisticados disponíveis no mercado brasileiro — e também um dos mais elegantes. Se você já viu aquele ar condicionado redondo instalado no teto de um escritório ou hotel em São Paulo, provavelmente era um Round Cassette.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que é o LG Round Cassette?</h2>
+    <p>O Round Cassette é um modelo de ar condicionado cassete (instalado no teto) com design circular exclusivo da LG. Ao contrário dos cassetes tradicionais que têm formato retangular, o Round Cassette tem formato redondo e distribui o ar em 360° — cobrindo uniformemente o ambiente em todas as direções.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Vantagens do LG Round Cassette</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Distribuição de ar em 360°:</strong> elimina pontos quentes no ambiente — todos os cantos recebem ar na mesma intensidade</li>
+      <li><strong>Design elegante:</strong> o formato circular e o acabamento branco ou espelhado se integra melhor ao teto do que os cassetes retangulares tradicionais</li>
+      <li><strong>Tecnologia Dual Inverter:</strong> economia de energia de até 70% em comparação com modelos convencionais</li>
+      <li><strong>Controle individual de aletas:</strong> cada uma das 4 aletas pode ser ajustada independentemente</li>
+      <li><strong>Sensor de presença:</strong> detecta onde as pessoas estão no ambiente e direciona o ar para onde é necessário</li>
+      <li><strong>Nível de ruído baixo:</strong> a partir de 30 dB(A) — ideal para ambientes de trabalho e reuniões</li>
+      <li><strong>Controle Wi-Fi:</strong> compatível com o app LG ThinQ para controle pelo celular</li>
     </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Para quais ambientes o Round Cassette é indicado?</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Salas de reunião:</strong> distribuição uniforme e baixo ruído são essenciais</li>
+      <li><strong>Recepções e lobbies:</strong> o design elegante valoriza o ambiente</li>
+      <li><strong>Restaurantes e cafés:</strong> cobertura uniforme sem corrente de ar direta nos clientes</li>
+      <li><strong>Escritórios open space:</strong> uma unidade pode atender grandes áreas sem criar zonas quentes</li>
+      <li><strong>Clínicas e consultórios:</strong> baixo ruído e distribuição uniforme são ideais</li>
+      <li><strong>Lojas e showrooms:</strong> design discreto que não compete visualmente com o produto</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Capacidades disponíveis no Brasil</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Capacidade</th><th className="p-3 text-left border border-primary">Área recomendada</th><th className="p-3 text-left border border-primary">Faixa de preço (equipamento)</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">18.000 BTUs</td><td className="p-3 border border-slate-200">Até 25m²</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 4.500 a R$ 6.000</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">24.000 BTUs</td><td className="p-3 border border-slate-200">Até 35m²</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 5.500 a R$ 7.500</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">36.000 BTUs</td><td className="p-3 border border-slate-200">Até 50m²</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 7.000 a R$ 10.000</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">48.000 BTUs</td><td className="p-3 border border-slate-200">Até 70m²</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 9.000 a R$ 13.000</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Instalação do Round Cassette: o que considerar</h2>
+    <p>A instalação do Round Cassette exige forro de gesso ou forro modular para embutir a unidade interna. Os pontos de atenção são:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Altura do pé direito: mínimo de 2,60m para instalação adequada</li>
+      <li>Espaço acima do forro: necessário pelo menos 30cm para a unidade interna e a tubulação</li>
+      <li>Acesso para manutenção: é essencial deixar um painel removível acima da unidade</li>
+      <li>Drenagem: o dreno deve ser direcionado para um ralo ou para fora</li>
+    </ul>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Instale o Round Cassette com quem tem experiência</h3>
+      <p className="text-slate-600 text-sm mb-4">Instalação e manutenção de cassetes em SP e ABC · Visita técnica gratuita · Garantia de 1 ano</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Tenho%20interesse%20na%20instalação%20do%20LG%20Round%20Cassette." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Solicitar Instalação</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Round Cassette pode ser instalado em residência?</h3>
+    <p>Sim, mas é mais comum em ambiente comercial. Em residências, é indicado para salas grandes (acima de 30m²) com forro de gesso. O resultado estético é premium — parece com os sistemas de hotéis 5 estrelas.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Manutenção do Round Cassette é diferente?</h3>
+    <p>A frequência é a mesma — semestral para uso comercial padrão, trimestral para uso intenso. O acesso à unidade interna requer abertura do painel de forro, o que exige técnico experiente com cassetes.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Round Cassette é mais eficiente que split convencional?</h3>
+    <p>Para ambientes acima de 25m², sim. A distribuição em 360° é mais eficiente do que o fluxo unidirecional do split, pois elimina pontos quentes e reduz o tempo que o compressor precisa trabalhar em alta potência.</p>
   </BlogPostLayout>
 );
 
