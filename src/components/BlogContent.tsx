@@ -235,12 +235,51 @@ export const BlogRoundCassette = () => (
 );
 
 export const BlogObraLimpa = () => (
-  <BlogPostLayout tag="Instalação" title="Obra Limpa: Como Instalar Ar-Condicionado Sem Quebra-Quebra" date="25 de Março, 2026" author="Equipe Técnica New Clima">
-    <p>Na <strong>New Clima Ar</strong>, desenvolvemos o método de <strong>Obra Limpa</strong>, focado em precisão e organização.</p>
-    <h2 className="text-2xl font-bold text-primary">Tecnologia a Favor da Limpeza</h2>
-    <p>Utilizamos ferramentas de perfuração com sistema de vácuo integrado, que capturam 99% da poeira no momento do furo.</p>
-    <h2 className="text-2xl font-bold text-primary">Planejamento Estratégico</h2>
-    <p>Nosso objetivo é entregar o conforto do ar condicionado com a casa exatamente como a encontramos: limpa e intacta.</p>
+  <BlogPostLayout tag="Instalação" title="Instalação de Ar Condicionado com Obra Limpa: O Que É e Por Que Importa" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>Obra limpa não é um diferencial de luxo — é o padrão mínimo que qualquer instalação de ar condicionado deveria seguir. Em São Paulo, onde a maioria das instalações acontece em apartamentos com regras rígidas de condomínio, a obra limpa é muitas vezes a condição para que o serviço seja feito.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que é obra limpa na instalação de ar condicionado?</h2>
+    <p>Obra limpa é o conjunto de práticas que garantem que a instalação do ar condicionado seja feita sem danificar o imóvel, sem sujar as áreas comuns e sem deixar entulho. Na prática, inclui:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Proteção do piso e móveis com lona antes de qualquer perfuração</li>
+      <li>Uso de aspirador industrial durante as perfurações para capturar pó e resíduos</li>
+      <li>Infraestrutura embutida na parede sempre que possível</li>
+      <li>Acabamento nas saídas de tubulação com passa-fio ou acabamento de gesso</li>
+      <li>Proteção de corredores e elevadores durante o transporte de material</li>
+      <li>Remoção completa de entulho, embalagens e resíduos ao término</li>
+      <li>Limpeza final do ambiente com pano úmido</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Por que obra limpa é essencial em apartamentos de SP?</h2>
+    <p>Em São Paulo, a maioria dos condomínios tem regras rígidas sobre obras:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Horário restrito (geralmente 8h às 17h em dias úteis)</li>
+      <li>Proibição de sujeira nas áreas comuns</li>
+      <li>Responsabilidade do morador por danos causados durante a obra</li>
+      <li>Alguns síndicos pedem declaração de responsabilidade da empresa</li>
+    </ul>
+    <p>Uma instalação com sujeira excessiva pode resultar em advertência ou multa do condomínio para o morador — e em má reputação para a empresa instaladora.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Infraestrutura aparente x embutida</h2>
+    <p><strong>Infraestrutura aparente:</strong> a tubulação de cobre e os cabos ficam à vista, protegidos por canaletas plásticas. É mais rápida e barata, mas esteticamente menos elegante.</p>
+    <p><strong>Infraestrutura embutida:</strong> a tubulação passa dentro da parede — o resultado é mais limpo visualmente, sem canaletas aparentes. Exige mais trabalho e tempo, mas é o padrão em apartamentos novos e em reformas planejadas.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Como identificar uma empresa que faz obra limpa?</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Pergunta sobre as regras do condomínio antes de começar</li>
+      <li>Chega com equipamentos de proteção (lona, aspirador industrial)</li>
+      <li>Apresenta os materiais que serão usados antes de começar</li>
+      <li>Não cobra extra por limpeza — já está incluso no preço</li>
+      <li>Tem avaliações positivas no Google mencionando obra limpa</li>
+    </ul>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Instalação com obra limpa garantida em SP</h3>
+      <p className="text-slate-600 text-sm mb-4">Aprovada pelo síndico · Sem sujeira · Sem danos ao imóvel · Garantia de 1 ano por escrito</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Preciso%20de%20instalação%20de%20ar%20condicionado%20com%20obra%20limpa%20no%20meu%20apartamento." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Solicitar Instalação</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Obra limpa custa mais caro?</h3>
+    <p>Não necessariamente. A New Clima inclui obra limpa no preço padrão de todas as instalações — não é cobrado como adicional. Desconfie de empresas que cobram separado pela "proteção do imóvel".</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Preciso avisar o síndico antes da instalação?</h3>
+    <p>Sim. A maioria dos condomínios exige comunicação prévia de obra — mesmo que seja apenas para instalar um ar condicionado. A New Clima orienta sobre os documentos necessários e, se pedido, emite declaração de responsabilidade técnica.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Quanto tempo dura a instalação com obra limpa?</h3>
+    <p>A instalação com obra limpa leva um pouco mais de tempo do que uma instalação rápida — geralmente 30 a 60 minutos a mais. Mas o resultado final não tem sujeira e não gera problemas com o condomínio.</p>
   </BlogPostLayout>
 );
 
@@ -340,26 +379,94 @@ export const BlogQuarto = () => (
 );
 
 export const BlogConvencionalInverter = () => (
-  <BlogPostLayout tag="Comparativo" title="Split Convencional vs Inverter: Qual Escolher Para Sua Realidade?" date="18 de Março, 2026" author="Ricardo Carvalho">
-    <p>Embora o Inverter seja a tecnologia superior, entender as diferenças ajuda a decidir onde investir seu dinheiro.</p>
-    <h2 className="text-2xl font-bold text-primary">Convencional (On/Off)</h2>
-    <p>Funciona como uma lâmpada: ou está ligado no máximo, ou desligado. Gera picos de consumo e oscilação de temperatura de até 3°C.</p>
-    <h2 className="text-2xl font-bold text-primary">Inverter</h2>
-    <p>Funciona como um acelerador de carro: ajusta a potência conforme a necessidade. É até 60% mais econômico e muito mais silencioso.</p>
-    <div className="bg-ice p-6 rounded-2xl border border-primary-light/10">
-      <p className="font-bold text-primary">Veredito:</p>
-      <p>Para o dia a dia em São Paulo, o Inverter é o único que faz sentido financeiro e técnico a longo prazo.</p>
+  <BlogPostLayout tag="Guia Técnico" title="Split Convencional x Inverter: Qual Vale Mais a Pena em 2026?" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>A escolha entre split convencional e Inverter é uma das decisões mais importantes ao comprar um ar condicionado. A diferença de preço inicial pode parecer o fator decisivo — mas o custo total ao longo dos anos conta uma história diferente.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Diferença técnica: como cada um funciona</h2>
+    <p>O <strong>convencional</strong> tem compressor de velocidade fixa: liga no máximo, resfria o ambiente e desliga. Quando a temperatura sobe, liga de novo no máximo. Esse ciclo gera picos de consumo e variações de temperatura.</p>
+    <p>O <strong>Inverter</strong> tem compressor de velocidade variável: liga, atinge a temperatura e reduz a velocidade para manter — sem desligar. Muito mais eficiente em uso contínuo.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Comparação completa</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Critério</th><th className="p-3 text-left border border-primary">Convencional</th><th className="p-3 text-left border border-primary">Inverter</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Preço do equipamento</td><td className="p-3 border border-slate-200 font-bold text-success">Menor (R$ 800-1.500)</td><td className="p-3 border border-slate-200">Maior (R$ 1.400-3.000)</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Consumo de energia</td><td className="p-3 border border-slate-200 font-bold text-red-600">Alto</td><td className="p-3 border border-slate-200 font-bold text-success">30-60% menor</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Velocidade de resfriamento</td><td className="p-3 border border-slate-200">Normal</td><td className="p-3 border border-slate-200 font-bold text-success">Mais rápido</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Controle de temperatura</td><td className="p-3 border border-slate-200">Variação ±2°C</td><td className="p-3 border border-slate-200 font-bold text-success">Preciso (±0,5°C)</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Nível de ruído</td><td className="p-3 border border-slate-200">Mais alto (partidas)</td><td className="p-3 border border-slate-200 font-bold text-success">Mais silencioso</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Vida útil do compressor</td><td className="p-3 border border-slate-200">Menor</td><td className="p-3 border border-slate-200 font-bold text-success">Maior</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Manutenção</td><td className="p-3 border border-slate-200">Mais simples</td><td className="p-3 border border-slate-200">Placa mais sofisticada</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Payback (retorno do investimento)</td><td className="p-3 border border-slate-200">—</td><td className="p-3 border border-slate-200 font-bold text-success">4 a 8 meses de economia</td></tr>
+        </tbody>
+      </table>
     </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quando o convencional ainda faz sentido?</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Uso muito esporádico — menos de 2 horas por dia</li>
+      <li>Orçamento muito limitado e necessidade imediata</li>
+      <li>Ambiente temporário (aluguel de curto prazo)</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Para todos os outros casos: Inverter</h2>
+    <p>Para uso residencial acima de 4 horas diárias, home office, quartos e salas em São Paulo, o Inverter é sempre a melhor escolha a médio e longo prazo. A economia na conta de luz paga a diferença de preço em menos de um ano.</p>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Instale seu Inverter com quem entende do assunto</h3>
+      <p className="text-slate-600 text-sm mb-4">Instalação profissional em SP · Obra limpa · Garantia de 1 ano</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Quero%20instalar%20um%20ar%20condicionado%20Inverter%20em%20SP." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Solicitar Instalação</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Inverter funciona em 110V?</h3>
+    <p>A maioria dos Inverters disponíveis no Brasil é bivolt (110V/220V). Verifique sempre a etiqueta do equipamento antes da instalação.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Posso trocar apenas o compressor convencional por Inverter?</h3>
+    <p>Não. O sistema Inverter exige compressor, placa eletrônica e circuito de controle compatíveis — não é possível converter um equipamento convencional. A troca é sempre do equipamento completo.</p>
   </BlogPostLayout>
 );
 
 export const BlogEmpresas = () => (
-  <BlogPostLayout tag="Corporativo" title="Ar Condicionado para Empresas: Do Split ao VRF com Foco em ROI" date="12 de Março, 2026" author="Equipe Técnica New Clima">
-    <p>Climatização corporativa não é custo, é investimento em produtividade. Funcionários em ambientes com temperatura controlada produzem até 15% mais.</p>
-    <h2 className="text-2xl font-bold text-primary">Escalabilidade</h2>
-    <p>Para andares inteiros ou edifícios, o sistema <strong>VRF</strong> é a solução definitiva, permitindo controle centralizado e economia de escala.</p>
-    <h2 className="text-2xl font-bold text-primary">Conformidade Legal</h2>
-    <p>Toda empresa com sistema de climatização coletiva deve possuir o <strong>PMOC</strong>. A New Clima Ar cuida de toda a parte técnica e documentação.</p>
+  <BlogPostLayout tag="Empresarial" title="Ar Condicionado para Empresas em SP: VRF, Cassete e PMOC — Guia Completo" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>Escolher o sistema de ar condicionado para uma empresa em São Paulo envolve variáveis que não existem na instalação residencial: capacidade para ambientes maiores, eficiência energética em uso contínuo, manutenção com o mínimo de interrupção das atividades e cumprimento do PMOC.</p>
+    <p>Neste guia, explicamos os principais sistemas comerciais e como a New Clima atende empresas em São Paulo e ABC.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Principais sistemas de ar condicionado para empresas</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-4 mb-2">Multi Split comercial</h3>
+    <p>Indicado para escritórios pequenos e médios (até 300m²). Uma condensadora externa atende múltiplos ambientes. Instalação mais simples e custo inicial menor.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-4 mb-2">VRF / Mini VRF (Volume de Refrigerante Variável)</h3>
+    <p>Ideal para empresas acima de 300m² ou com múltiplos andares. Sistema central com condensadora(s) externa(s) de alta capacidade e múltiplas unidades internas (fan coils). Altamente eficiente, controle individual por zona e manutenção centralizada.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-4 mb-2">Cassete</h3>
+    <p>Unidade interna instalada no teto, com distribuição de ar em 4 direções. Ideal para salas de reunião, lobbies e open spaces. Estética mais profissional e distribuição de ar mais uniforme.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-4 mb-2">Piso-Teto</h3>
+    <p>Unidade versátil que pode ser instalada no piso ou no teto. Indicada para salas com pé direito alto ou locais sem forro para cassete.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Comparativo por tamanho de empresa</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Porte</th><th className="p-3 text-left border border-primary">Área</th><th className="p-3 text-left border border-primary">Sistema indicado</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Pequena empresa / sala comercial</td><td className="p-3 border border-slate-200">Até 100m²</td><td className="p-3 border border-slate-200">Multi Split ou splits individuais</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Empresa média / escritório</td><td className="p-3 border border-slate-200">100m² a 300m²</td><td className="p-3 border border-slate-200">Multi Split comercial ou Mini VRF</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Empresa grande / open space</td><td className="p-3 border border-slate-200">300m² a 1.000m²</td><td className="p-3 border border-slate-200">VRF + Cassete</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Corporativo / multi-andar</td><td className="p-3 border border-slate-200">Acima de 1.000m²</td><td className="p-3 border border-slate-200">VRF com múltiplas condensadoras</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">PMOC: obrigação para todas as empresas</h2>
+    <p>Toda empresa com sistema de ar condicionado acima de 60.000 BTUs de uso coletivo é obrigada a ter o PMOC. A New Clima elabora e executa o PMOC com ART inclusa e documentação completa para a Vigilância Sanitária de SP.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Contrato de manutenção para empresas em SP</h2>
+    <p>A New Clima oferece contratos de manutenção personalizados para empresas, incluindo:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Visitas preventivas mensais ou trimestrais</li>
+      <li>Atendimento de emergência com SLA definido em contrato</li>
+      <li>Relatórios técnicos após cada visita</li>
+      <li>PMOC incluso com ART</li>
+      <li>Desconto em peças e serviços corretivos</li>
+    </ul>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Solicite uma proposta para sua empresa em SP</h3>
+      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta personalizada · PMOC incluso · Contrato com SLA</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Preciso%20de%20uma%20proposta%20de%20manutenção%20de%20ar%20condicionado%20para%20minha%20empresa%20em%20SP." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Solicitar Proposta Empresarial</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">VRF vale a pena para empresas pequenas?</h3>
+    <p>Para empresas com menos de 200m², o Multi Split geralmente é mais custo-eficiente. O VRF se justifica a partir de 300m² ou quando há necessidade de controle individual por zona e maior eficiência energética em uso contínuo.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">A manutenção pode ser feita fora do horário comercial?</h3>
+    <p>Sim. A New Clima oferece agendamento em horários que minimizam o impacto nas atividades da empresa — incluindo fins de semana e períodos de baixa demanda operacional.</p>
   </BlogPostLayout>
 );
 
@@ -430,35 +537,112 @@ export const BlogPMOCObrigatorio = () => (
 );
 
 export const BlogMultaPMOC = () => (
-  <BlogPostLayout tag="Legislação" title="Multa por Não Ter PMOC em São Paulo: Valores de R$ 2.000 a R$ 1,5 Milhão" date="03 de Maio, 2026" author="Equipe Técnica New Clima">
-    <p>Empresas em São Paulo sem PMOC estão sujeitas a multas de <strong>R$ 2.000 a R$ 1.500.000</strong>, aplicadas pela Vigilância Sanitária.</p>
-    <h2 className="text-2xl font-bold text-primary">Valores das Multas por Falta de PMOC</h2>
-    <ul className="list-disc pl-6 space-y-2">
-      <li><strong>Infração leve:</strong> R$ 2.000 a R$ 75.000</li>
-      <li><strong>Infração grave:</strong> R$ 75.000 a R$ 200.000</li>
-      <li><strong>Infração gravíssima:</strong> R$ 200.000 a R$ 1.500.000</li>
-      <li><strong>Reincidência:</strong> multa em dobro</li>
+  <BlogPostLayout tag="PMOC" title="Multa por Falta de PMOC em SP: Valores, Como Evitar e O Que Fazer se for Autuado" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>A falta de PMOC em São Paulo pode resultar em multas que vão de <strong>R$ 2.000 a R$ 1,5 milhão</strong>. Com a Vigilância Sanitária intensificando as fiscalizações desde 2023, estar regularizado deixou de ser opcional — é uma necessidade real para qualquer negócio com ar condicionado em SP.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quais são os valores das multas por PMOC irregular em SP?</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Infração</th><th className="p-3 text-left border border-primary">Base legal</th><th className="p-3 text-left border border-primary">Penalidade</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Ausência do PMOC</td><td className="p-3 border border-slate-200">Lei 13.589/18</td><td className="p-3 border border-slate-200 font-bold text-red-600">R$ 2.000 a R$ 75.000</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">PMOC sem ART do responsável técnico</td><td className="p-3 border border-slate-200">Portaria MS 3.523/98</td><td className="p-3 border border-slate-200 font-bold text-red-600">R$ 2.000 a R$ 75.000</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Manutenções não realizadas conforme o plano</td><td className="p-3 border border-slate-200">RE ANVISA 9/2003</td><td className="p-3 border border-slate-200 font-bold text-red-600">R$ 2.000 a R$ 75.000</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Reincidência</td><td className="p-3 border border-slate-200">Lei 6.437/77</td><td className="p-3 border border-slate-200 font-bold text-red-600">Multa em dobro</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Risco comprovado à saúde pública</td><td className="p-3 border border-slate-200">Lei 6.437/77</td><td className="p-3 border border-slate-200 font-bold text-red-600">Até R$ 1.500.000 + interdição</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quem fiscaliza o PMOC em São Paulo?</h2>
+    <p>A fiscalização é realizada pela <strong>Vigilância Sanitária Municipal de São Paulo (VISA-SP)</strong>, subordinada à Secretaria Municipal de Saúde. A VISA-SP realiza:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Vistorias programadas por setor (clínicas, restaurantes, academias)</li>
+      <li>Vistorias por denúncia (qualquer pessoa pode denunciar)</li>
+      <li>Ações coordenadas com a ANVISA em estabelecimentos de saúde</li>
+      <li>Fiscalizações em prédios comerciais após reclamações de trabalhadores</li>
     </ul>
-    <h2 className="text-2xl font-bold text-primary">Como Regularizar Antes de Ser Fiscalizado?</h2>
-    <p>Contrate a <strong>New Clima Ar Condicionado</strong> para elaborar e executar o PMOC. Em menos de 30 dias sua empresa estará em conformidade. WhatsApp: <strong>(11) 96346-2516</strong>.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que o fiscal verifica na vistoria?</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Existência do documento PMOC físico ou digital disponível no local</li>
+      <li>ART do responsável técnico assinada e registrada</li>
+      <li>Registros de manutenções realizadas com datas e assinaturas</li>
+      <li>Condições gerais dos equipamentos — filtros, drenos e unidades</li>
+      <li>Em alguns casos, laudo de qualidade do ar interior</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que fazer se receber uma notificação da Vigilância Sanitária?</h2>
+    <ol className="list-decimal pl-6 space-y-3 my-4">
+      <li>Não ignore — o prazo para regularização na notificação é geralmente de 30 a 60 dias</li>
+      <li>Contrate imediatamente uma empresa para elaborar e executar o PMOC</li>
+      <li>Solicite a ART do engenheiro responsável</li>
+      <li>Apresente a documentação dentro do prazo para evitar a multa efetiva</li>
+      <li>Mantenha o PMOC atualizado para as próximas vistorias</li>
+    </ol>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Recebeu notificação ou quer regularizar antes da vistoria?</h3>
+      <p className="text-slate-600 text-sm mb-4">Atendemos com urgência · PMOC completo com ART · Documentação pronta para a Vigilância Sanitária</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Recebi%20uma%20notificação%20da%20Vigilância%20Sanitária%20sobre%20PMOC%20e%20preciso%20de%20ajuda%20urgente." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Urgente — Falar Agora</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">A multa pode ser contestada?</h3>
+    <p>Sim. Multas administrativas podem ser contestadas em até 20 dias da notificação. O argumento mais comum é a demonstração de que o PMOC existia mas houve falha na apresentação. Regularizar antes de contestar é sempre mais estratégico.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">O responsável pessoal responde pela multa?</h3>
+    <p>Sim. O gestor ou sócio administrador pode ser responsabilizado pessoalmente — especialmente se a irregularidade tiver causado dano à saúde de funcionários ou clientes.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Empresa pequena com 1 ar condicionado precisa de PMOC?</h3>
+    <p>Se a capacidade total dos equipamentos for inferior a 60.000 BTUs, não há obrigatoriedade legal federal. Porém, a Vigilância Sanitária de SP pode exigir documentação em qualquer estabelecimento de saúde, alimentação ou que atenda o público — independente do BTU total.</p>
   </BlogPostLayout>
 );
 
 export const BlogPMOCCondominio = () => (
-  <BlogPostLayout tag="Legislação" title="PMOC para Condomínios em SP: Guia Completo para Síndicos" date="04 de Maio, 2026" author="Equipe Técnica New Clima">
-    <p>Síndicos de condomínios em São Paulo: se as áreas comuns têm mais de 60.000 BTUs de climatização, o <strong>PMOC é obrigatório</strong>. Multa pode chegar a R$ 1,5 milhão.</p>
-    <h2 className="text-2xl font-bold text-primary">Responsabilidade do Síndico</h2>
-    <p>O síndico é o responsável legal pelo cumprimento do PMOC. Em caso de fiscalização, o auto de infração é lavrado em nome do condomínio.</p>
-    <h2 className="text-2xl font-bold text-primary">Quanto Custa o PMOC para Condomínios em SP?</h2>
-    <p>Para condomínios de médio porte, o valor varia entre R$ 800 e R$ 2.500 mensais. A <strong>New Clima</strong> oferece orçamento gratuito: (11) 96346-2516.</p>
-    <h2 className="text-2xl font-bold text-primary">Passo a Passo Para Regularizar</h2>
-    <ul className="list-disc pl-6 space-y-2">
-      <li><strong>1. Inventário:</strong> levantar todos os equipamentos das áreas comuns</li>
-      <li><strong>2. Responsável técnico:</strong> contratar empresa habilitada</li>
-      <li><strong>3. Elaboração do PMOC:</strong> documento com cronograma e procedimentos</li>
-      <li><strong>4. Execução:</strong> início das manutenções conforme cronograma</li>
-      <li><strong>5. Registros:</strong> manter arquivo de todas as manutenções</li>
+  <BlogPostLayout tag="PMOC" title="PMOC para Condomínios em São Paulo: Obrigações do Síndico e Como Contratar" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>O síndico de condomínio em São Paulo tem responsabilidade direta pelo cumprimento do PMOC nas áreas comuns. A falta do plano pode resultar em multas para o condomínio — e o síndico pode responder pessoalmente em casos de dano à saúde dos moradores ou funcionários.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quais condomínios precisam de PMOC em SP?</h2>
+    <p>Condomínios com sistema de ar condicionado nas <strong>áreas comuns</strong> com capacidade acima de 60.000 BTUs. Na prática, isso inclui:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Condomínios comerciais com ar nas recepções, lobbies e salas de reunião</li>
+      <li>Condomínios mistos (residencial + comercial) com ar nas áreas comerciais</li>
+      <li>Condomínios residenciais com ar central na academia, salão de festas ou coworking</li>
+      <li>Condomínios com sistema VRF ou ar central que sirva áreas comuns</li>
     </ul>
+    <p>Apartamentos residenciais com split individual em cada unidade <strong>não precisam</strong> de PMOC — a responsabilidade é do morador, não do condomínio.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Responsabilidade do síndico no PMOC</h2>
+    <p>O síndico, como representante legal do condomínio, é responsável por:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Contratar empresa habilitada para elaborar e executar o PMOC</li>
+      <li>Garantir que as manutenções sejam realizadas conforme o cronograma</li>
+      <li>Manter a documentação disponível para fiscalização</li>
+      <li>Comunicar a mudança de equipamentos para atualização do PMOC</li>
+      <li>Responder pessoalmente em caso de irregularidade comprovada</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Como funciona o contrato de PMOC para condomínio?</h2>
+    <ol className="list-decimal pl-6 space-y-3 my-4">
+      <li><strong>Levantamento técnico:</strong> técnico visita o condomínio e cadastra todos os equipamentos das áreas comuns</li>
+      <li><strong>Elaboração do plano:</strong> documento com cronograma, procedimentos e responsável técnico com ART</li>
+      <li><strong>Aprovação em assembleia:</strong> recomendado formalizar a contratação em ata de assembleia</li>
+      <li><strong>Execução:</strong> visitas periódicas conforme o cronograma — mensal, trimestral ou semestral</li>
+      <li><strong>Relatórios:</strong> laudo técnico após cada visita, arquivado e disponível para síndico e moradores</li>
+    </ol>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quanto custa o PMOC para condomínio em SP?</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Porte do condomínio</th><th className="p-3 text-left border border-primary">Equipamentos</th><th className="p-3 text-left border border-primary">Custo mensal</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Pequeno (academia + lobby)</td><td className="p-3 border border-slate-200">3 a 8 equipamentos</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 400 a R$ 800/mês</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Médio (academia + salão + coworking)</td><td className="p-3 border border-slate-200">8 a 20 equipamentos</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 800 a R$ 1.800/mês</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Grande (múltiplas áreas comuns)</td><td className="p-3 border border-slate-200">Acima de 20 equipamentos</td><td className="p-3 border border-slate-200 font-bold text-primary">A partir de R$ 1.800/mês</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">PMOC para o seu condomínio em SP</h3>
+      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta para apresentar em assembleia · ART inclusa · Relatórios mensais</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Sou%20síndico%20e%20preciso%20de%20PMOC%20para%20o%20meu%20condomínio%20em%20SP." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Solicitar Proposta</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">O PMOC do condomínio precisa ser aprovado em assembleia?</h3>
+    <p>Não é obrigatório por lei, mas é uma boa prática. Formalizar em ata protege o síndico de questionamentos futuros sobre a despesa e demonstra transparência na gestão.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Quem paga o PMOC — o condomínio ou os moradores?</h3>
+    <p>O PMOC das áreas comuns é despesa do condomínio — rateada entre os condôminos conforme a fração ideal, como qualquer outra despesa de manutenção.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Se o condomínio não tem PMOC, o síndico pode ser demitido?</h3>
+    <p>Sim. Descumprir obrigações legais é motivo para destituição do síndico em assembleia, além da responsabilidade civil e pessoal pelas multas aplicadas.</p>
   </BlogPostLayout>
 );
 
@@ -1095,40 +1279,106 @@ export const BlogDormir = () => (
 );
 
 export const BlogConsumo = () => (
-  <BlogPostLayout tag="Economia de Energia" title="Ar Condicionado Gasta Mais de Dia ou à Noite? Descubra Agora" date="9 de Maio, 2026" author="José Erivaldo">
-    <p>Uma dúvida frequente de quem quer economizar na conta de luz em São Paulo: <strong>ar condicionado gasta mais de dia ou à noite?</strong> A resposta envolve temperatura externa, tipo de equipamento e como você usa o aparelho.</p>
-    <h2 className="text-2xl font-bold text-primary">Por que o período faz diferença</h2>
-    <p>O ar condicionado trabalha comparando a temperatura interna desejada com a temperatura externa. Quanto maior a diferença, mais esforço — e mais energia consumida. Em São Paulo, durante o dia o calor pode chegar a <strong>35°C ou mais</strong>. À noite, a temperatura cai para 20°C a 22°C.</p>
-    <p>Resultado: <strong>de dia o ar condicionado consome mais</strong>, pois precisa trabalhar mais para atingir os 23°C desejados. À noite, o esforço é menor e o consumo cai significativamente.</p>
-    <h2 className="text-2xl font-bold text-primary">Dicas para economizar independente do horário</h2>
-    <ul className="space-y-2 list-disc pl-6">
-      <li>Use o <strong>modo Inverter</strong> — ele ajusta a potência automaticamente</li>
-      <li>Mantenha portas e janelas fechadas</li>
-      <li>Use o <strong>timer</strong> para não deixar ligado sem necessidade</li>
-      <li>Faça manutenção regular — aparelho limpo consome até <strong>30% menos</strong></li>
-      <li>Mantenha a temperatura em <strong>23°C</strong> — cada grau a mais economiza 5% de energia</li>
+  <BlogPostLayout tag="Economia" title="Ar Condicionado Gasta Mais de Dia ou à Noite? Verdade e Mitos" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>Uma dúvida muito comum: o ar condicionado gasta mais energia de dia ou à noite? A resposta depende da temperatura externa, do tipo de equipamento e do comportamento de uso — mas vamos desvendar cada cenário.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que determina o consumo do ar condicionado?</h2>
+    <p>O consumo do ar condicionado é proporcional ao trabalho que o compressor precisa fazer para atingir e manter a temperatura configurada. Quanto maior a diferença entre a temperatura externa e a temperatura desejada, mais o compressor trabalha e mais energia consome.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">De dia x à noite: qual gasta mais?</h2>
+    <p>Em São Paulo, especialmente no verão, o dia é mais quente — com temperaturas que podem ultrapassar 35°C. À noite, a temperatura cai para 22°C a 26°C. Isso significa que:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>De dia:</strong> o ar condicionado trabalha mais para vencer o calor externo — maior consumo</li>
+      <li><strong>À noite:</strong> a temperatura externa já é menor, o compressor trabalha menos — menor consumo</li>
+      <li><strong>Com Inverter à noite:</strong> em modo Sleep, o consumo pode cair para 100-200W — extremamente econômico</li>
     </ul>
-    <h2 className="text-2xl font-bold text-primary">Tarifa de energia em SP</h2>
-    <p>Na ENEL São Paulo, a <strong>tarifa branca</strong> cobra mais nos horários de pico (18h às 21h). Se você tem tarifa convencional, o horário não impacta o custo direto — mas o consumo físico é maior durante o dia pelo calor externo. Consulte a New Clima para escolher o equipamento mais eficiente: <strong>(11) 96346-2516</strong>.</p>
+    <p>Conclusão: <strong>de dia gasta mais</strong> na maioria dos casos em São Paulo.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quanto gasta o ar condicionado por hora?</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Equipamento</th><th className="p-3 text-left border border-primary">Consumo médio</th><th className="p-3 text-left border border-primary">Custo/hora (R$ 0,85/kWh)</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Split convencional 9.000 BTUs</td><td className="p-3 border border-slate-200">900W</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 0,77/hora</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Split convencional 12.000 BTUs</td><td className="p-3 border border-slate-200">1.200W</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 1,02/hora</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Split Inverter 12.000 BTUs (partida)</td><td className="p-3 border border-slate-200">1.200W</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 1,02/hora</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Split Inverter 12.000 BTUs (manutenção)</td><td className="p-3 border border-slate-200">300-500W</td><td className="p-3 border border-slate-200 font-bold text-success">R$ 0,26 a R$ 0,43/hora</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Split Inverter 18.000 BTUs (manutenção)</td><td className="p-3 border border-slate-200">400-700W</td><td className="p-3 border border-slate-200 font-bold text-success">R$ 0,34 a R$ 0,60/hora</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Como reduzir o consumo sem abrir mão do conforto</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Use temperatura entre 23°C e 24°C — cada grau a menos aumenta o consumo em 8%</li>
+      <li>Mantenha filtros limpos — filtro sujo aumenta o consumo em até 30%</li>
+      <li>Use o modo Sleep à noite — reduz a temperatura gradualmente e economiza energia</li>
+      <li>Feche portas e janelas durante o uso — evita entrada de calor externo</li>
+      <li>Use película solar nas janelas — reduz a carga térmica do ambiente em até 40%</li>
+      <li>Troque por Inverter se ainda tiver convencional — economia de até 60% em uso contínuo</li>
+    </ul>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Conta de luz alta? Pode ser o ar condicionado sem manutenção.</h3>
+      <p className="text-slate-600 text-sm mb-4">Manutenção preventiva reduz o consumo em até 30% · A partir de R$ 180</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Minha%20conta%20de%20luz%20aumentou%20e%20quero%20verificar%20o%20ar%20condicionado." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Agendar Manutenção</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Deixar ligado o dia todo gasta mais do que ligar e desligar?</h3>
+    <p>Para Inverter: deixar ligado gasta menos — o compressor fica em modo econômico. Para convencional: depende; ligar e desligar gera picos de consumo na partida, mas desligar por horas longas pode compensar. Em geral, para uso acima de 4 horas, manter ligado o dia todo com Inverter é mais econômico.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">O ar condicionado aumentou minha conta de luz. O que fazer?</h3>
+    <p>Primeiro, verifique se o filtro está limpo. Segundo, se for convencional, considere trocar por Inverter. Terceiro, agende uma manutenção preventiva — filtro sujo e gás baixo aumentam significativamente o consumo.</p>
   </BlogPostLayout>
 );
 
 export const BlogQuantoGasta = () => (
-  <BlogPostLayout tag="Economia de Energia" title="Quanto Gasta um Ar Condicionado Inverter por Mês? Conta Exata" date="9 de Maio, 2026" author="José Erivaldo">
-    <p>Antes de comprar ou instalar, a dúvida é sempre: <strong>quanto gasta um ar condicionado inverter por mês?</strong> A resposta depende da potência, horas de uso e tarifa local. Vamos aos números reais para São Paulo.</p>
-    <h2 className="text-2xl font-bold text-primary">Como calcular o consumo</h2>
-    <p>A fórmula básica: <strong>Consumo (kWh) = Potência (kW) × Horas de uso × Dias</strong>. Um split inverter de 9.000 BTUs tem potência média de 0,85 kW. Usando 8 horas por dia durante 30 dias: <strong>0,85 × 8 × 30 = 204 kWh/mês</strong>.</p>
-    <p>Com a tarifa média da ENEL SP de <strong>R$ 0,85/kWh</strong>, o custo seria: <strong>204 × 0,85 = R$ 173/mês</strong>.</p>
-    <h2 className="text-2xl font-bold text-primary">Tabela de consumo estimado em SP</h2>
-    <ul className="space-y-2 list-disc pl-6">
-      <li><strong>9.000 BTUs inverter (8h/dia):</strong> ~R$ 130 a R$ 180/mês</li>
-      <li><strong>12.000 BTUs inverter (8h/dia):</strong> ~R$ 170 a R$ 230/mês</li>
-      <li><strong>18.000 BTUs inverter (8h/dia):</strong> ~R$ 250 a R$ 320/mês</li>
-      <li><strong>24.000 BTUs inverter (8h/dia):</strong> ~R$ 320 a R$ 420/mês</li>
+  <BlogPostLayout tag="Economia" title="Quanto Gasta um Ar Condicionado Inverter por Mês? Cálculo Real para SP" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>A dúvida de quem está comprando um ar condicionado Inverter é sempre a mesma: <strong>quanto vai custar na conta de luz?</strong> Neste artigo, fazemos o cálculo real com os valores de energia de São Paulo em 2026.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Como calcular o gasto do ar condicionado?</h2>
+    <p>A fórmula é simples:</p>
+    <div className="bg-slate-100 rounded-xl p-4 my-4 font-mono text-sm">
+      Custo = Potência (kW) × Horas de uso × Tarifa (R$/kWh)
+    </div>
+    <p>A tarifa média da Enel SP em 2026 é de aproximadamente <strong>R$ 0,85/kWh</strong> (bandeira verde). Em bandeira vermelha, pode chegar a R$ 1,05/kWh.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Tabela de gasto mensal por modelo (30 dias, 8h/dia)</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Modelo</th><th className="p-3 text-left border border-primary">Potência média</th><th className="p-3 text-left border border-primary">Gasto mensal</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Inverter 9.000 BTUs</td><td className="p-3 border border-slate-200">~350W médio</td><td className="p-3 border border-slate-200 font-bold text-success">~R$ 71/mês</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Inverter 12.000 BTUs</td><td className="p-3 border border-slate-200">~450W médio</td><td className="p-3 border border-slate-200 font-bold text-success">~R$ 92/mês</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Inverter 18.000 BTUs</td><td className="p-3 border border-slate-200">~650W médio</td><td className="p-3 border border-slate-200 font-bold text-success">~R$ 132/mês</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Convencional 12.000 BTUs</td><td className="p-3 border border-slate-200">~1.200W médio</td><td className="p-3 border border-slate-200 font-bold text-red-600">~R$ 244/mês</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Convencional 18.000 BTUs</td><td className="p-3 border border-slate-200">~1.800W médio</td><td className="p-3 border border-slate-200 font-bold text-red-600">~R$ 367/mês</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p className="text-sm text-slate-500 italic">* Estimativas baseadas em uso de 8h/dia, 30 dias, tarifa R$ 0,85/kWh. A potência média do Inverter considera alternância entre carga máxima (partida) e mínima (manutenção).</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Gasto real para diferentes perfis de uso</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Perfil de uso</th><th className="p-3 text-left border border-primary">Horas/dia</th><th className="p-3 text-left border border-primary">Custo mensal (Inverter 12.000)</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Uso leve (só à noite)</td><td className="p-3 border border-slate-200">6h</td><td className="p-3 border border-slate-200 font-bold text-success">~R$ 69/mês</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Uso moderado (tarde + noite)</td><td className="p-3 border border-slate-200">8h</td><td className="p-3 border border-slate-200 font-bold text-primary">~R$ 92/mês</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Home office + noite</td><td className="p-3 border border-slate-200">12h</td><td className="p-3 border border-slate-200 font-bold text-primary">~R$ 138/mês</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Uso intenso (dia todo)</td><td className="p-3 border border-slate-200">16h</td><td className="p-3 border border-slate-200 font-bold text-red-600">~R$ 184/mês</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que aumenta o gasto além do esperado?</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Filtro sujo:</strong> aumenta o consumo em até 30%</li>
+      <li><strong>Temperatura configurada muito baixa:</strong> cada grau a menos = 8% mais consumo</li>
+      <li><strong>Gás refrigerante baixo:</strong> compressor trabalha mais para atingir a temperatura</li>
+      <li><strong>Ambiente muito grande para o BTU do equipamento:</strong> compressor nunca descansa</li>
+      <li><strong>Sol direto no ambiente:</strong> carga térmica alta força o compressor</li>
     </ul>
-    <h2 className="text-2xl font-bold text-primary">Inverter vs Convencional — diferença real</h2>
-    <p>Um modelo convencional de mesma potência consome em média <strong>35% a 60% mais</strong> do que o inverter, pois funciona em liga/desliga constante. O inverter ajusta a rotação do compressor — muito mais eficiente.</p>
-    <p>A manutenção em dia também impacta diretamente: um aparelho com filtro sujo consome até <strong>30% mais energia</strong>. Agende com a New Clima: <strong>(11) 96346-2516</strong>.</p>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Conta de luz alta? Manutenção resolve.</h3>
+      <p className="text-slate-600 text-sm mb-4">Limpeza e regulagem reduzem o consumo em até 30% · A partir de R$ 180 · São Paulo e ABC</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Quero%20reduzir%20o%20gasto%20do%20meu%20ar%20condicionado%20na%20conta%20de%20luz." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Agendar Manutenção</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Como saber quanto o ar condicionado está gastando de verdade?</h3>
+    <p>A forma mais precisa é usar um medidor de energia (wattímetro plug-in — menos de R$ 50 online). Conecte entre a tomada e o aparelho e monitore o consumo real em diferentes situações de uso.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Vale a pena trocar convencional por Inverter apenas pela economia?</h3>
+    <p>Para uso acima de 6 horas diárias, sim. A economia média de R$ 100 a R$ 150/mês paga a diferença de preço entre convencional e Inverter em 4 a 8 meses.</p>
   </BlogPostLayout>
 );
 
@@ -1232,25 +1482,54 @@ export const BlogDesligaSozinho = () => (
 );
 
 export const BlogVidaUtil = () => (
-  <BlogPostLayout tag="Dicas" title="Qual a Vida Útil do Ar Condicionado? Como Prolongar" date="9 de Maio, 2026" author="José Erivaldo">
-    <p>Você sabe qual é a <strong>vida útil do ar condicionado</strong>? Em média, um split bem mantido dura entre <strong>10 e 15 anos</strong>. Sem manutenção, esse prazo cai para 5 a 7 anos. Entenda o que faz a diferença.</p>
-    <h2 className="text-2xl font-bold text-primary">Vida útil por tipo de equipamento</h2>
-    <ul className="space-y-2 list-disc pl-6">
-      <li><strong>Split hi-wall residencial:</strong> 10 a 15 anos com manutenção</li>
-      <li><strong>Multi-split:</strong> 12 a 15 anos</li>
-      <li><strong>Cassete comercial:</strong> 10 a 15 anos</li>
-      <li><strong>VRF:</strong> 15 a 20 anos com manutenção preventiva</li>
+  <BlogPostLayout tag="Manutenção" title="Vida Útil do Ar Condicionado: Quanto Dura e Como Prolongar" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>Um ar condicionado bem cuidado dura entre <strong>12 e 15 anos</strong>. Sem manutenção adequada, esse tempo pode cair para 5 a 7 anos — uma diferença de até R$ 3.000 em substituições antecipadas.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Vida útil por tipo de equipamento</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Tipo</th><th className="p-3 text-left border border-primary">Vida útil com manutenção</th><th className="p-3 text-left border border-primary">Sem manutenção</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Split convencional</td><td className="p-3 border border-slate-200 font-bold text-success">10 a 12 anos</td><td className="p-3 border border-slate-200 font-bold text-red-600">5 a 7 anos</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Split Inverter</td><td className="p-3 border border-slate-200 font-bold text-success">12 a 15 anos</td><td className="p-3 border border-slate-200 font-bold text-red-600">6 a 8 anos</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Multi Split</td><td className="p-3 border border-slate-200 font-bold text-success">12 a 15 anos</td><td className="p-3 border border-slate-200 font-bold text-red-600">5 a 7 anos</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Cassete / VRF comercial</td><td className="p-3 border border-slate-200 font-bold text-success">15 a 20 anos</td><td className="p-3 border border-slate-200 font-bold text-red-600">8 a 10 anos</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que mais desgasta o ar condicionado?</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Falta de limpeza dos filtros:</strong> causa superaquecimento do compressor por restrição de fluxo de ar</li>
+      <li><strong>Gás refrigerante baixo:</strong> compressor trabalha em sobrecarga para compensar a perda de eficiência</li>
+      <li><strong>Instalação incorreta:</strong> inclinação errada da unidade interna causa acúmulo de água; condensadora sem ventilação adequada superaquece</li>
+      <li><strong>Tensão elétrica instável:</strong> variações de tensão danificam a placa eletrônica e o motor do compressor</li>
+      <li><strong>Uso contínuo sem descanso:</strong> principalmente em verões intensos de SP</li>
     </ul>
-    <h2 className="text-2xl font-bold text-primary">O que reduz a vida útil</h2>
-    <ul className="space-y-2 list-disc pl-6">
-      <li>Falta de limpeza dos filtros — aumenta esforço do compressor</li>
-      <li>Uso sem manutenção preventiva semestral</li>
-      <li>Instalação mal feita — vibração e vazamentos destroem componentes</li>
-      <li>Recarga de gás feita por não habilitados — pode causar danos irreversíveis</li>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Como prolongar a vida útil do seu ar condicionado</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Limpe os filtros a cada 15 dias em uso intenso</li>
+      <li>Faça manutenção preventiva semestral com técnico certificado</li>
+      <li>Instale um estabilizador ou use circuito elétrico dedicado com DPS (Dispositivo de Proteção contra Surtos)</li>
+      <li>Nunca bloqueie a ventilação da condensadora externa</li>
+      <li>Verifique o nível de gás anualmente</li>
+      <li>Não deixe o aparelho ligado em ambiente fechado sem retorno de ar</li>
     </ul>
-    <h2 className="text-2xl font-bold text-primary">Como prolongar a vida do seu ar condicionado</h2>
-    <p>O segredo é simples: <strong>manutenção preventiva semestral</strong>. Inclui limpeza completa, verificação de gás, inspeção elétrica e lubrificação. O custo de uma manutenção preventiva é de R$ 120 a R$ 200 — muito menos do que um conserto de compressor (R$ 800 a R$ 2.500) ou um aparelho novo.</p>
-    <p>Agende manutenção com a New Clima em SP e ABC: <strong>(11) 96346-2516</strong>.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quando vale a pena consertar x trocar?</h2>
+    <p>A regra geral: se o custo do conserto supera <strong>50% do valor de um equipamento novo equivalente</strong>, a troca é mais vantajosa. Guia rápido:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Aparelho com menos de 5 anos:</strong> sempre vale consertar</li>
+      <li><strong>5 a 10 anos:</strong> depende do problema — peças menores (capacitor, sensor) vale; compressor ou placa, avalie</li>
+      <li><strong>Acima de 10 anos com problema no compressor:</strong> geralmente mais vantajoso trocar por Inverter novo</li>
+    </ul>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Seu ar condicionado tem mais de 5 anos sem manutenção?</h3>
+      <p className="text-slate-600 text-sm mb-4">Manutenção preventiva agora evita problemas maiores · A partir de R$ 180 · São Paulo e ABC</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Quero%20fazer%20manutenção%20preventiva%20no%20meu%20ar%20condicionado." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Agendar Manutenção</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Ar condicionado de 15 anos ainda vale a pena usar?</h3>
+    <p>Se estiver funcionando bem e com manutenção em dia, pode continuar. Mas considere que os modelos mais antigos consomem muito mais energia que os Inverter atuais — a troca pode se pagar rapidamente pela economia na conta de luz.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Qual marca dura mais?</h3>
+    <p>Daikin e Fujitsu têm reputação de maior durabilidade. LG e Samsung têm boa durabilidade com manutenção adequada. A diferença de vida útil entre marcas é menor do que a diferença entre ter ou não ter manutenção preventiva regular.</p>
   </BlogPostLayout>
 );
 
@@ -1303,33 +1582,108 @@ export const BlogTemperatura = () => (
 );
 
 export const BlogFuncaoDry = () => (
-  <BlogPostLayout tag="Dicas de Uso" title="Função Dry no Ar Condicionado: Para que Serve e Quando Usar" date="9 de Maio, 2026" author="José Erivaldo">
-    <p>Você já viu o símbolo de gota no controle remoto e ficou sem saber o que é? A <strong>função Dry</strong> (ou modo desumidificação) é um dos recursos mais úteis e menos usados dos ar condicionados — especialmente em São Paulo, onde a umidade pode chegar a 90%.</p>
-    <h2 className="text-2xl font-bold text-primary">O que é a função Dry?</h2>
-    <p>O modo Dry <strong>remove o excesso de umidade do ar</strong> sem resfriar tanto o ambiente. O compressor funciona em ciclos menores, priorizando a desumidificação. O resultado é um ar mais seco e confortável, sem aquela sensação de abafamento.</p>
-    <h2 className="text-2xl font-bold text-primary">Quando usar o modo Dry?</h2>
-    <ul className="space-y-2 list-disc pl-6">
-      <li><strong>Dias nublados e chuvosos</strong> em São Paulo, quando a umidade está alta mas não está quente</li>
-      <li><strong>Transição de estações</strong> — outono e primavera paulistana</li>
-      <li><strong>Ambientes com mofo</strong> — reduz a umidade que favorece o crescimento de fungos</li>
-      <li><strong>Quarto à noite</strong> — quando você quer conforto sem frio excessivo</li>
+  <BlogPostLayout tag="Uso" title="Função Dry do Ar Condicionado: Para Que Serve e Quando Usar" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>A função Dry (ou modo seco) está presente na maioria dos ares condicionados modernos, mas poucos usuários sabem para que serve e quando usar. Entender essa função pode melhorar o conforto e reduzir o consumo de energia em São Paulo — especialmente nos dias chuvosos e úmidos.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que é a função Dry?</h2>
+    <p>O modo Dry (seco) é projetado para <strong>reduzir a umidade do ar</strong> sem necessariamente resfriar muito o ambiente. Nesse modo, o ventilador funciona em velocidade baixa e o compressor liga e desliga em ciclos curtos — removendo a umidade do ar sem causar muito resfriamento.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Dry x Modo Refrigeração: qual a diferença?</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Característica</th><th className="p-3 text-left border border-primary">Modo Refrigeração</th><th className="p-3 text-left border border-primary">Modo Dry</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Objetivo principal</td><td className="p-3 border border-slate-200">Reduzir temperatura</td><td className="p-3 border border-slate-200">Reduzir umidade</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Velocidade do ventilador</td><td className="p-3 border border-slate-200">Conforme configurado</td><td className="p-3 border border-slate-200">Sempre baixa</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Compressor</td><td className="p-3 border border-slate-200">Ligado continuamente</td><td className="p-3 border border-slate-200">Liga/desliga em ciclos</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Consumo de energia</td><td className="p-3 border border-slate-200">Maior</td><td className="p-3 border border-slate-200">Menor</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Resfriamento</td><td className="p-3 border border-slate-200">Intenso</td><td className="p-3 border border-slate-200">Leve</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quando usar o modo Dry em SP?</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Dias chuvosos e abafados:</strong> temperatura amena mas umidade alta — o Dry remove o "bafão" sem esfriar demais</li>
+      <li><strong>Período de transição (outono/inverno em SP):</strong> quando não está quente o suficiente para o modo frio mas a umidade está alta</li>
+      <li><strong>Ambientes com mofo:</strong> umidade reduzida inibe o crescimento de fungos</li>
+      <li><strong>Noites de verão com chuva:</strong> temperatura cai mas a umidade permanece alta</li>
     </ul>
-    <h2 className="text-2xl font-bold text-primary">Dry vs Cool — qual a diferença?</h2>
-    <p>No modo <strong>Cool</strong>, o objetivo é resfriar. No modo <strong>Dry</strong>, o objetivo é desumidificar — com temperatura mais próxima do ambiente. O consumo de energia no Dry é geralmente <strong>menor</strong> que no Cool para o mesmo período de uso.</p>
-    <p>Para melhor eficiência de qualquer modo, mantenha a manutenção em dia. Agende com a New Clima em SP e ABC: <strong>(11) 96346-2516</strong>.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Dry economiza energia?</h2>
+    <p>Sim. O modo Dry consome aproximadamente <strong>30% a 50% menos</strong> do que o modo refrigeração, pois o compressor trabalha em ciclos curtos. Para dias em que a temperatura está suportável mas a umidade está alta — o que é comum em São Paulo — o Dry é a opção mais econômica e confortável.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Dry pode substituir o desumidificador?</h2>
+    <p>Para uso doméstico em São Paulo, o modo Dry do ar condicionado é suficiente para a maioria das situações. Desumidificadores dedicados são indicados para ambientes com umidade muito alta e persistente — como subsolos, adegas ou locais com problema de infiltração.</p>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Seu ar condicionado não tem modo Dry ou está com problema?</h3>
+      <p className="text-slate-600 text-sm mb-4">Verificamos o funcionamento de todos os modos · Manutenção a partir de R$ 180</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Gostaria%20de%20verificar%20o%20funcionamento%20do%20meu%20ar%20condicionado." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Falar com Técnico</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">O modo Dry esfria o ambiente?</h3>
+    <p>Sim, levemente — como efeito secundário da remoção de umidade. Mas o resfriamento é muito menor do que no modo refrigeração. Se o objetivo é resfriar, use o modo Cool (refrigeração).</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Posso deixar o Dry ligado a noite toda?</h3>
+    <p>Sim. O modo Dry tem consumo baixo e pode ser usado durante a noite em dias úmidos. Em noites frias, combine com temperatura mais alta para evitar ressecamento excessivo do ar.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">O modo Dry ajuda a combater o mofo no ambiente?</h3>
+    <p>Sim. Fungos se proliferam em umidade acima de 60-70%. O uso regular do modo Dry mantém a umidade em faixas que inibem o crescimento de mofo — especialmente útil em quartos e salas de apartamentos em SP durante o inverno úmido.</p>
   </BlogPostLayout>
 );
 
 export const BlogGas = () => (
-  <BlogPostLayout tag="Técnico" title="Gás R32 e R410A: Qual a Diferença e Qual é Melhor?" date="9 de Maio, 2026" author="José Erivaldo">
-    <p>Se você está comprando um ar condicionado novo ou foi informado que precisa recarregar o gás, provavelmente ouviu falar em <strong>R32 ou R410A</strong>. Entenda a diferença e por que isso importa para sua escolha.</p>
-    <h2 className="text-2xl font-bold text-primary">O que é o gás refrigerante?</h2>
-    <p>O gás refrigerante é o fluido que circula pelo sistema e realiza a troca térmica — é ele quem "faz o frio". Sem gás ou com nível baixo, o ar condicionado não resfria adequadamente e pode danificar o compressor.</p>
-    <h2 className="text-2xl font-bold text-primary">R410A — o mais comum no Brasil</h2>
-    <p>Durante anos foi o padrão. Não é inflamável e tem boa eficiência. Porém, seu <strong>GWP (potencial de aquecimento global) é alto</strong> — 2.088 vezes maior que o CO₂. Por isso está sendo gradualmente substituído.</p>
-    <h2 className="text-2xl font-bold text-primary">R32 — o novo padrão</h2>
-    <p>O R32 tem <strong>GWP de 675</strong> — muito menor que o R410A. É mais eficiente energeticamente, usa menor quantidade de carga e está presente na maioria dos inverter novos das marcas LG, Daikin, Midea e Samsung. A desvantagem: é levemente inflamável, exigindo técnico certificado para manuseio.</p>
-    <h2 className="text-2xl font-bold text-primary">Posso misturar os gases?</h2>
-    <p><strong>Nunca</strong>. R32 e R410A são incompatíveis e não podem ser misturados. Sempre informe o modelo do aparelho ao técnico para que ele use o gás correto. A New Clima trabalha com ambos os tipos em São Paulo e ABC: <strong>(11) 96346-2516</strong>.</p>
+  <BlogPostLayout tag="Técnico" title="Gás R32 x R410A: Diferenças, Vantagens e Qual Está no Seu Ar Condicionado" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+    <p>Se o seu ar condicionado parou de gelar ou está gelando menos do que antes, pode ser que o gás refrigerante esteja baixo. Mas afinal, que gás é esse? Quais são as diferenças entre R32 e R410A? E quanto custa fazer a recarga em São Paulo?</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que é o gás refrigerante?</h2>
+    <p>O gás refrigerante é o fluido que circula entre as unidades interna e externa do ar condicionado, absorvendo o calor do ambiente interno e liberando-o no externo. Sem gás suficiente, o sistema perde capacidade de resfriamento.</p>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">R32 x R410A: comparação completa</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Característica</th><th className="p-3 text-left border border-primary">R410A</th><th className="p-3 text-left border border-primary">R32</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Uso</td><td className="p-3 border border-slate-200">Padrão até 2020</td><td className="p-3 border border-slate-200 font-bold text-success">Padrão atual (2020+)</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Potencial de aquecimento global (GWP)</td><td className="p-3 border border-slate-200 font-bold text-red-600">2.088</td><td className="p-3 border border-slate-200 font-bold text-success">675 (3x menor)</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Eficiência energética</td><td className="p-3 border border-slate-200">Boa</td><td className="p-3 border border-slate-200 font-bold text-success">Melhor (+10%)</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Quantidade necessária</td><td className="p-3 border border-slate-200">Maior</td><td className="p-3 border border-slate-200 font-bold text-success">30% menos</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Inflamabilidade</td><td className="p-3 border border-slate-200 font-bold text-success">Não inflamável</td><td className="p-3 border border-slate-200">Levemente inflamável (classe A2L)</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Custo do gás</td><td className="p-3 border border-slate-200">Mais caro (em desuso)</td><td className="p-3 border border-slate-200 font-bold text-success">Mais acessível</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Qual gás está no meu ar condicionado?</h2>
+    <p>Você encontra essa informação na <strong>etiqueta da unidade externa</strong> (condensadora) ou no manual do equipamento. Como referência:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Equipamentos fabricados até 2019: geralmente R410A</li>
+      <li>Equipamentos fabricados de 2020 em diante: geralmente R32</li>
+      <li>Equipamentos mais antigos (anterior a 2010): podem usar R22 (em desuso e ilegal para novos equipamentos)</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Sinais de que o gás está baixo</h2>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Ar condicionado liga mas não gela ou gela pouco</li>
+      <li>Unidade interna fica com gelo na serpentina</li>
+      <li>Compressor fica ligado continuamente sem atingir a temperatura</li>
+      <li>Consumo de energia aumentou sem mudança de uso</li>
+      <li>Água pingando mais do que o normal da unidade interna</li>
+    </ul>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quanto custa a recarga de gás em SP?</h2>
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Serviço</th><th className="p-3 text-left border border-primary">Preço médio em SP (2026)</th></tr></thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Verificação de gás (diagnóstico)</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 80 a R$ 150</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Recarga R32 (split 9.000-12.000 BTUs)</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 200 a R$ 350</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Recarga R410A (split 9.000-12.000 BTUs)</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 250 a R$ 400</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Detecção de vazamento + recarga</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 350 a R$ 600</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>Atenção:</strong> se o gás acabou, existe um vazamento no sistema. Apenas recarregar sem localizar e reparar o vazamento é jogo perdido — em poucos meses o gás acaba de novo.</p>
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Ar condicionado não está gelando em SP?</h3>
+      <p className="text-slate-600 text-sm mb-4">Diagnóstico gratuito · Verificamos o gás e identificamos vazamentos · Garantia de 90 dias</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Meu%20ar%20condicionado%20não%20está%20gelando%20e%20pode%20ser%20problema%20de%20gás." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Diagnóstico Gratuito</a>
+    </div>
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Posso misturar R32 com R410A?</h3>
+    <p>Não. Os gases têm propriedades diferentes e não são compatíveis. Misturar gases diferentes danifica o compressor e invalida a garantia do equipamento.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">O gás do ar condicionado acaba naturalmente?</h3>
+    <p>Não. O sistema de refrigeração é fechado — o gás não se consome. Se o gás está baixo, existe um vazamento que precisa ser localizado e reparado antes da recarga.</p>
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Com que frequência verificar o gás?</h3>
+    <p>A verificação do nível de gás faz parte da manutenção preventiva semestral. Se o aparelho está gelando normalmente, não há necessidade de recarga — o gás não é consumido em operação normal.</p>
   </BlogPostLayout>
 );
+
