@@ -121,12 +121,97 @@ export const BlogObraLimpa = () => (
 );
 
 export const BlogQuarto = () => (
-  <BlogPostLayout tag="Guia Prático" title="Como Instalar Ar Condicionado no Quarto: O Guia Para Noites Perfeitas" date="20 de Março, 2026" author="Paulo Souza">
-    <p>A posição do ar condicionado no quarto é decisiva para a qualidade do seu sono. Um erro comum é instalar o aparelho diretamente acima da cabeceira.</p>
-    <h2 className="text-2xl font-bold text-primary">Onde Instalar?</h2>
-    <p>O ideal é que a unidade evaporadora fique em uma parede lateral à cama, permitindo que o ar circule pelo ambiente antes de atingir as pessoas.</p>
-    <h2 className="text-2xl font-bold text-primary">Silêncio é Fundamental</h2>
-    <p>Para quartos, sempre recomendamos a tecnologia <strong>Inverter</strong>. Além da economia, esses aparelhos são extremamente silenciosos.</p>
+  <BlogPostLayout tag="Guia Prático" title="Ar Condicionado no Quarto: Posição Ideal, BTUs e Cuidados para Dormir Melhor" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+
+    <p>A posição do ar condicionado no quarto é uma das decisões mais importantes para garantir noites confortáveis em São Paulo. Um equipamento mal posicionado pode gerar corrente de ar direta, barulho excessivo e consumo desnecessário de energia.</p>
+
+    <p>Neste guia, explicamos onde instalar, qual BTU escolher e quais cuidados tomar para dormir melhor com ar condicionado.</p>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Onde instalar o ar condicionado no quarto?</h2>
+
+    <p>A regra mais importante: <strong>nunca instale o ar condicionado diretamente acima da cabeceira da cama</strong>. O fluxo de ar frio direto sobre quem dorme causa ressecamento das vias respiratórias, dores musculares e piora de rinite e sinusite.</p>
+
+    <p>As melhores posições são:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Parede lateral à cama:</strong> o ar é direcionado para o ambiente, não diretamente para quem dorme — posição ideal</li>
+      <li><strong>Parede oposta à cama:</strong> o ar percorre todo o quarto antes de chegar a você — boa opção para quartos maiores</li>
+      <li><strong>Acima da porta:</strong> funciona bem em quartos pequenos, onde o ar circula rapidamente</li>
+    </ul>
+
+    <p><strong>Evite:</strong> paredes com janelas (variação de temperatura atrapalha o desempenho), paredes opostas a janelas com incidência solar direta e posições onde o fluxo aponte diretamente para a cama.</p>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Qual BTU para quarto de dormir?</h2>
+
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead>
+          <tr className="bg-primary text-white">
+            <th className="p-3 text-left border border-primary">Tamanho do quarto</th>
+            <th className="p-3 text-left border border-primary">BTUs recomendados</th>
+            <th className="p-3 text-left border border-primary">Observação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Até 10m²</td><td className="p-3 border border-slate-200 font-bold text-primary">7.000 a 9.000 BTUs</td><td className="p-3 border border-slate-200">Quarto solteiro padrão</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">10m² a 18m²</td><td className="p-3 border border-slate-200 font-bold text-primary">9.000 a 12.000 BTUs</td><td className="p-3 border border-slate-200">Quarto casal padrão</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">18m² a 25m²</td><td className="p-3 border border-slate-200 font-bold text-primary">12.000 a 18.000 BTUs</td><td className="p-3 border border-slate-200">Quarto casal grande / suíte</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Acima de 25m²</td><td className="p-3 border border-slate-200 font-bold text-primary">18.000 a 24.000 BTUs</td><td className="p-3 border border-slate-200">Suíte master com closet</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>Importante:</strong> quartos com exposição solar direta (especialmente oeste), muitas janelas ou andares altos precisam de 10% a 20% a mais de BTUs do que a tabela indica.</p>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Split ou Multi Split para o quarto?</h2>
+
+    <p>Para climatizar apenas o quarto, o <strong>Split Hi-Wall</strong> é a opção mais econômica e prática. O Multi Split faz sentido quando você quer climatizar o quarto e mais um ou dois cômodos com uma única condensadora externa — ideal para apartamentos com restrição de fachada.</p>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Temperatura ideal para dormir com ar condicionado</h2>
+
+    <p>A temperatura ideal para dormir varia entre <strong>20°C e 23°C</strong> para a maioria das pessoas. Temperaturas abaixo de 18°C podem causar hipotermia leve e piorar problemas respiratórios. Acima de 24°C, o sono tende a ser mais superficial e interrompido.</p>
+
+    <p>Dicas práticas:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Use o modo <strong>Sleep</strong> (disponível na maioria dos aparelhos): aumenta a temperatura gradualmente ao longo da noite, economizando energia sem comprometer o conforto</li>
+      <li>Direcione as aletas para o teto, não para a cama</li>
+      <li>Mantenha o quarto com alguma umidade — aparelhos inversores com função Dry ajudam a controlar</li>
+      <li>Deixe uma fresta de janela aberta se o apartamento permitir — renova o ar sem comprometer o resfriamento</li>
+    </ul>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Ar condicionado no quarto faz mal?</h2>
+
+    <p>O ar condicionado <strong>não faz mal</strong> quando instalado corretamente e com manutenção em dia. O problema ocorre quando:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>O fluxo de ar aponta diretamente para quem dorme</li>
+      <li>Os filtros estão sujos — espalhando fungos e bactérias pelo ambiente</li>
+      <li>A temperatura está muito baixa (abaixo de 18°C)</li>
+      <li>O ambiente fica muito seco sem nenhuma fonte de umidade</li>
+    </ul>
+
+    <p>Com instalação correta, filtros limpos e temperatura adequada, o ar condicionado melhora significativamente a qualidade do sono — especialmente em São Paulo, onde as noites de verão ultrapassam os 28°C.</p>
+
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Instale o ar condicionado do seu quarto com segurança</h3>
+      <p className="text-slate-600 text-sm mb-4">Visita técnica gratuita · Indicamos a posição ideal · Obra limpa · Garantia de 1 ano</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Quero%20instalar%20ar%20condicionado%20no%20meu%20quarto%20e%20gostaria%20de%20orientação." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">
+        Falar com Especialista pelo WhatsApp
+      </a>
+    </div>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Posso deixar o ar condicionado ligado a noite toda?</h3>
+    <p>Sim, desde que use o modo Sleep e configure a temperatura entre 21°C e 23°C. Os aparelhos modernos com tecnologia Inverter são projetados para funcionar continuamente com baixo consumo de energia.</p>
+
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Qual a altura ideal para instalar no quarto?</h3>
+    <p>Entre 2,10m e 2,30m do piso. Muito baixo compromete a distribuição do ar pelo ambiente. Muito alto dificulta a manutenção e pode gerar ruído excessivo.</p>
+
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Com que frequência limpar o filtro do quarto?</h3>
+    <p>A limpeza dos filtros externos deve ser feita a cada 15 dias em quartos com uso diário. A manutenção preventiva completa deve ser feita a cada 6 meses por um técnico certificado.</p>
+
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Ar condicionado inverter vale a pena para o quarto?</h3>
+    <p>Sim, especialmente para uso noturno. O Inverter mantém a temperatura constante sem ligar e desligar o compressor — gerando menos ruído e consumindo até 60% menos energia do que o convencional em uso contínuo.</p>
+
   </BlogPostLayout>
 );
 
@@ -376,19 +461,108 @@ export const BlogCustoPMOC = () => (
 );
 
 export const BlogCustoInstalacao = () => (
-  <BlogPostLayout tag="Preços" title="Quanto Custa Instalar Ar Condicionado em São Paulo em 2026?" date="06 de Maio, 2026" author="Equipe Técnica New Clima">
-    <p>O custo de instalação em São Paulo varia conforme o tipo de sistema e a complexidade da infraestrutura.</p>
-    <h2 className="text-2xl font-bold text-primary">Tabela de Preços de Instalação em SP (2026)</h2>
-    <ul className="list-disc pl-6 space-y-2">
-      <li><strong>Split Hi-Wall 9.000 BTUs:</strong> R$ 350 a R$ 500</li>
-      <li><strong>Split Hi-Wall 12.000 a 18.000 BTUs:</strong> R$ 400 a R$ 700</li>
-      <li><strong>Split Hi-Wall 24.000 BTUs:</strong> R$ 500 a R$ 900</li>
-      <li><strong>Multi Split (2 ambientes):</strong> R$ 900 a R$ 1.600</li>
-      <li><strong>Multi Split (3 a 4 ambientes):</strong> R$ 1.400 a R$ 2.500</li>
-      <li><strong>Cassete (por unidade):</strong> R$ 800 a R$ 1.500</li>
+  <BlogPostLayout tag="Preços" title="Quanto Custa Instalar Ar Condicionado em São Paulo em 2026?" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+
+    <p>Instalar ar condicionado em São Paulo é um investimento que vale a pena — mas saber o preço certo antes de contratar evita surpresas. O custo de instalação em SP varia entre <strong>R$ 350 e R$ 2.500</strong>, dependendo do tipo de equipamento, da complexidade da obra e do bairro.</p>
+
+    <p>Neste guia completo, mostramos os preços reais praticados em São Paulo em 2026, o que está incluso em cada orçamento e como evitar cobranças extras.</p>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Tabela de preços de instalação de ar condicionado em SP (2026)</h2>
+
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead>
+          <tr className="bg-primary text-white">
+            <th className="p-3 text-left border border-primary">Tipo de equipamento</th>
+            <th className="p-3 text-left border border-primary">BTUs</th>
+            <th className="p-3 text-left border border-primary">Preço de instalação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Split Hi-Wall</td><td className="p-3 border border-slate-200">9.000 BTUs</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 350 a R$ 500</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Split Hi-Wall</td><td className="p-3 border border-slate-200">12.000 a 18.000 BTUs</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 400 a R$ 700</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Split Hi-Wall</td><td className="p-3 border border-slate-200">24.000 BTUs</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 500 a R$ 900</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Multi Split</td><td className="p-3 border border-slate-200">2 ambientes</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 900 a R$ 1.600</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Multi Split</td><td className="p-3 border border-slate-200">3 a 4 ambientes</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 1.400 a R$ 2.500</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Cassete / Piso-Teto</td><td className="p-3 border border-slate-200">18.000 a 36.000 BTUs</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 800 a R$ 1.800</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p className="text-sm text-slate-500 italic">* Valores de mão de obra em São Paulo em 2026. Não incluem o equipamento. Podem variar conforme complexidade da obra.</p>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que está incluso no preço de instalação?</h2>
+
+    <p>Um orçamento de instalação completo em SP deve incluir:</p>
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Fixação da unidade evaporadora (interna) e condensadora (externa)</li>
+      <li>Interligação elétrica e de refrigeração entre as unidades</li>
+      <li>Tubulação de cobre e drenagem do condensado</li>
+      <li>Vácuo e carga de gás refrigerante (quando necessário)</li>
+      <li>Teste de funcionamento e configuração do controle remoto</li>
+      <li>Limpeza do ambiente ao término da obra</li>
     </ul>
-    <h2 className="text-2xl font-bold text-primary">Como Solicitar Orçamento Gratuito?</h2>
-    <p>Entre em contato pelo WhatsApp <strong>(11) 96346-2516</strong>. Visita técnica gratuita e orçamento no mesmo dia.</p>
+
+    <p><strong>Atenção:</strong> infraestrutura embutida (passar tubulação dentro da parede), suporte reforçado para condensadora em fachada e instalação em altura acima de 3 metros podem gerar cobranças adicionais — peça sempre orçamento detalhado antes.</p>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que encarece a instalação em São Paulo?</h2>
+
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Apartamentos em condomínio:</strong> regras de fachada e obra limpa aumentam o tempo e o custo</li>
+      <li><strong>Infraestrutura embutida:</strong> passar tubulação dentro de paredes custa mais, mas fica esteticamente melhor</li>
+      <li><strong>Distância entre as unidades:</strong> quanto maior a distância entre a unidade interna e a externa, mais tubulação é necessária</li>
+      <li><strong>Instalação em altura:</strong> andares altos ou equipamentos em locais de difícil acesso exigem equipamentos especiais</li>
+      <li><strong>Elétrica sem ponto dedicado:</strong> se o imóvel não tem circuito elétrico dedicado para o ar condicionado, é necessário instalar um</li>
+    </ul>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Instalação em apartamento em São Paulo: cuidados especiais</h2>
+
+    <p>A maioria dos apartamentos em São Paulo tem regras específicas de condomínio para instalação de ar condicionado. Os principais pontos são:</p>
+
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Aprovação prévia do síndico ou administradora</li>
+      <li>Proibição de furos na fachada em alguns condomínios</li>
+      <li>Uso obrigatório de bandeja de drenagem em algumas edificações</li>
+      <li>Horário restrito para obras (geralmente 8h às 17h em dias úteis)</li>
+      <li>Proteção de áreas comuns durante o serviço</li>
+    </ul>
+
+    <p>A New Clima conhece as normas dos principais condomínios de São Paulo e garante obra limpa, aprovada pelo síndico, sem danos à fachada ou às áreas comuns.</p>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Qual o BTU certo para o meu ambiente?</h2>
+
+    <p>O cálculo de BTUs depende do tamanho do ambiente, quantidade de pessoas, número de janelas e exposição solar. Como referência rápida:</p>
+
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Até 15m²:</strong> 9.000 BTUs</li>
+      <li><strong>15m² a 25m²:</strong> 12.000 BTUs</li>
+      <li><strong>25m² a 35m²:</strong> 18.000 BTUs</li>
+      <li><strong>35m² a 50m²:</strong> 24.000 BTUs</li>
+      <li><strong>Acima de 50m²:</strong> Multi Split ou sistema VRF</li>
+    </ul>
+
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Orçamento gratuito de instalação em SP</h3>
+      <p className="text-slate-600 text-sm mb-4">Visita técnica gratuita · Orçamento no mesmo dia · Obra limpa · Garantia por escrito</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Gostaria%20de%20um%20orçamento%20de%20instalação%20de%20ar%20condicionado." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">
+        Solicitar Orçamento pelo WhatsApp
+      </a>
+    </div>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes sobre instalação em SP</h2>
+
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">A instalação inclui o equipamento?</h3>
+    <p>Não. Os preços acima são apenas de mão de obra. O equipamento (unidade interna + externa) é comprado separadamente e os preços variam conforme marca e capacidade.</p>
+
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Quanto tempo leva a instalação?</h3>
+    <p>Uma instalação padrão de split simples leva entre 2 e 4 horas. Multi Split com 3 ou mais unidades pode levar um dia inteiro. Instalações com infraestrutura embutida podem levar 2 dias.</p>
+
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Qual a garantia da instalação?</h3>
+    <p>A New Clima oferece garantia de 1 ano na instalação, com certificado por escrito. Problemas relacionados à instalação — vazamento de gás, queda de unidade, mal contato elétrico — são resolvidos sem custo adicional dentro do período de garantia.</p>
+
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Preciso de ponto elétrico dedicado?</h3>
+    <p>Sim. Todo ar condicionado precisa de um circuito elétrico exclusivo com disjuntor dimensionado para a carga do equipamento. Se o imóvel não tiver, é necessário instalar — o que pode ser feito pela nossa equipe no mesmo dia.</p>
+
   </BlogPostLayout>
 );
 
@@ -411,39 +585,221 @@ export const BlogQualAC = () => (
 );
 
 export const BlogSplitMultiSplitApartamento = () => (
-  <BlogPostLayout tag="Guia Técnico" title="Split ou Multi Split: Qual a Melhor Opção para Apartamento em SP?" date="08 de Maio, 2026" author="Equipe Técnica New Clima">
-    <p>A dúvida mais comum: <strong>splits individuais em cada cômodo ou um sistema Multi Split?</strong></p>
-    <h2 className="text-2xl font-bold text-primary">Quando Escolher Split Individual?</h2>
-    <ul className="list-disc pl-6 space-y-2">
-      <li>Quando você só precisa climatizar 1 ou 2 ambientes</li>
-      <li>Quando o orçamento inicial é mais restrito</li>
-      <li>Quando há espaço suficiente para múltiplas condensadoras</li>
+  <BlogPostLayout tag="Guia Técnico" title="Split ou Multi Split: Qual a Melhor Opção para Apartamento em SP?" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+
+    <p>Essa é a dúvida mais comum de quem vai climatizar um apartamento em São Paulo: vale mais a pena instalar <strong>splits individuais em cada cômodo ou um único sistema Multi Split</strong> para o apartamento inteiro?</p>
+
+    <p>A resposta depende do layout do seu apartamento, do número de cômodos que você quer climatizar e do seu orçamento. Neste guia, explicamos as diferenças, vantagens e desvantagens de cada opção para ajudar você a tomar a decisão certa.</p>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">O que é Split Hi-Wall e o que é Multi Split?</h2>
+
+    <p><strong>Split Hi-Wall</strong> é o ar condicionado tradicional — uma unidade interna (evaporadora) conectada a uma unidade externa (condensadora) por meio de tubulação de cobre. Cada ambiente tem seu próprio equipamento completo e independente.</p>
+
+    <p><strong>Multi Split</strong> é um sistema onde uma única unidade externa (condensadora) alimenta duas ou mais unidades internas em cômodos diferentes. É como ter vários ares condicionados com um único compressor externo.</p>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Comparação: Split x Multi Split para apartamentos em SP</h2>
+
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead>
+          <tr className="bg-primary text-white">
+            <th className="p-3 text-left border border-primary">Critério</th>
+            <th className="p-3 text-left border border-primary">Split Individual</th>
+            <th className="p-3 text-left border border-primary">Multi Split</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200 font-medium">Custo inicial</td><td className="p-3 border border-slate-200">Menor (por ambiente)</td><td className="p-3 border border-slate-200">Maior (sistema completo)</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200 font-medium">Unidades externas</td><td className="p-3 border border-slate-200">Uma por ambiente</td><td className="p-3 border border-slate-200">Uma para todos</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200 font-medium">Impacto na fachada</td><td className="p-3 border border-slate-200">Maior (mais condensadoras)</td><td className="p-3 border border-slate-200">Menor (1 condensadora)</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200 font-medium">Independência de uso</td><td className="p-3 border border-slate-200">Total (cada um no seu ritmo)</td><td className="p-3 border border-slate-200">Dependente (condensadora compartilhada)</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200 font-medium">Manutenção</td><td className="p-3 border border-slate-200">Mais simples por unidade</td><td className="p-3 border border-slate-200">Uma visita resolve tudo</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200 font-medium">Aprovação em condomínio</td><td className="p-3 border border-slate-200">Mais difícil (várias condensadoras)</td><td className="p-3 border border-slate-200">Mais fácil (1 condensadora)</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200 font-medium">Expansão futura</td><td className="p-3 border border-slate-200">Fácil (instala novo split)</td><td className="p-3 border border-slate-200">Limitada (capacidade da condensadora)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quando escolher Split Individual?</h2>
+
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Quando você quer climatizar apenas 1 ou 2 cômodos</li>
+      <li>Quando o orçamento é mais restrito e você quer climatizar por etapas</li>
+      <li>Quando os cômodos têm horários de uso muito diferentes (ex: sala de dia, quarto à noite)</li>
+      <li>Quando não há restrição de fachada para múltiplas condensadoras</li>
+      <li>Quando a instalação precisa ser feita rapidamente</li>
     </ul>
-    <h2 className="text-2xl font-bold text-primary">Quando Escolher Multi Split?</h2>
-    <ul className="list-disc pl-6 space-y-2">
-      <li>Quando você quer climatizar 3 ou mais ambientes</li>
-      <li>Quando o condomínio restringe o número de condensadoras na fachada</li>
-      <li>Quando você prioriza estética e menor poluição visual</li>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quando escolher Multi Split?</h2>
+
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Quando você quer climatizar 3 ou mais cômodos ao mesmo tempo</li>
+      <li>Quando o condomínio tem restrições de fachada (apenas 1 condensadora permitida)</li>
+      <li>Quando o apartamento tem varanda técnica pequena ou limitada</li>
+      <li>Quando a estética é prioridade — apenas 1 condensadora visível</li>
+      <li>Quando você quer uma solução integrada e planejada para o apartamento inteiro</li>
     </ul>
-    <p>A <strong>New Clima Ar Condicionado</strong> faz visita técnica gratuita para avaliar o melhor sistema. Ligue: (11) 96346-2516.</p>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Condomínios em SP: a questão da fachada</h2>
+
+    <p>Em São Paulo, muitos condomínios — especialmente os mais novos — têm regras rígidas sobre instalação de ar condicionado. As mais comuns são:</p>
+
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Proibição de condensadoras na varanda frontal (fachada principal)</li>
+      <li>Limitação ao número de condensadoras por apartamento</li>
+      <li>Obrigatoriedade de bandeja de drenagem</li>
+      <li>Aprovação prévia do síndico para qualquer instalação</li>
+    </ul>
+
+    <p>Nesses casos, o Multi Split é a solução mais indicada — uma única condensadora na varanda técnica ou área de serviço atende todos os cômodos sem impactar a fachada.</p>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Preços comparativos em São Paulo (2026)</h2>
+
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead>
+          <tr className="bg-primary text-white">
+            <th className="p-3 text-left border border-primary">Solução</th>
+            <th className="p-3 text-left border border-primary">Cômodos</th>
+            <th className="p-3 text-left border border-primary">Custo total (equipamento + instalação)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">2 Splits individuais 12.000 BTUs</td><td className="p-3 border border-slate-200">2</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 4.000 a R$ 6.000</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Multi Split 2x12.000 BTUs</td><td className="p-3 border border-slate-200">2</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 5.500 a R$ 8.000</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">3 Splits individuais</td><td className="p-3 border border-slate-200">3</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 6.000 a R$ 9.000</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Multi Split 3x12.000 BTUs</td><td className="p-3 border border-slate-200">3</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 7.500 a R$ 11.000</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Não sabe qual escolher? A gente te ajuda.</h3>
+      <p className="text-slate-600 text-sm mb-4">Visita técnica gratuita · Projeto personalizado · Respeitamos as normas do seu condomínio</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Quero%20instalar%20ar%20condicionado%20no%20meu%20apartamento%20e%20gostaria%20de%20uma%20orientação." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">
+        Falar com Especialista pelo WhatsApp
+      </a>
+    </div>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Multi Split gasta mais energia que split individual?</h3>
+    <p>Depende do uso. Se você usa todos os cômodos ao mesmo tempo, o Multi Split pode ser mais eficiente. Se usa os cômodos em horários diferentes, os splits individuais permitem ligar apenas o necessário.</p>
+
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Se a condensadora do Multi Split quebrar, fico sem ar em todos os cômodos?</h3>
+    <p>Sim, esse é o principal ponto de atenção do Multi Split. Se a condensadora apresentar problema, todas as unidades internas ficam sem funcionar até o conserto. Por isso, a manutenção preventiva é ainda mais importante em sistemas Multi Split.</p>
+
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Posso misturar marcas no Multi Split?</h3>
+    <p>Não. Todas as unidades internas devem ser da mesma marca e compatíveis com a condensadora. Misturar marcas invalida a garantia e pode danificar o sistema.</p>
+
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Qual é a marca mais indicada para apartamento em SP?</h3>
+    <p>LG, Samsung, Daikin e Midea são as mais utilizadas em apartamentos em São Paulo. A escolha deve considerar a assistência técnica disponível na sua região e a garantia oferecida pelo fabricante.</p>
+
   </BlogPostLayout>
 );
 
 export const BlogManutencaoConsequencias = () => (
-  <BlogPostLayout tag="Manutenção" title="O Que Acontece se Você Não Fizer Manutenção no Ar Condicionado?" date="09 de Maio, 2026" author="Equipe Técnica New Clima">
-    <p>Ignorar a manutenção do ar condicionado é um dos erros mais caros em São Paulo. Uma economia de R$ 200 por semestre pode resultar em conserto de R$ 2.000.</p>
-    <h2 className="text-2xl font-bold text-primary">Mês 1 a 3: Queda de Eficiência</h2>
-    <p>Com filtros sujos, o consumo de energia aumenta 20 a 30% sem você perceber.</p>
-    <h2 className="text-2xl font-bold text-primary">Mês 3 a 6: Proliferação de Fungos</h2>
-    <p>A serpentina suja torna-se ambiente perfeito para fungos e bactérias que causam rinite e asma.</p>
-    <h2 className="text-2xl font-bold text-primary">Mês 6 a 12: Problemas Mecânicos</h2>
-    <p>Sem verificação de gás e limpeza do dreno, o compressor trabalha sobrecarregado. Conserto: R$ 500 a R$ 2.000.</p>
-    <h2 className="text-2xl font-bold text-primary">Acima de 12 Meses: Morte Prematura do Compressor</h2>
-    <p>Substituição do compressor: R$ 800 a R$ 3.000. Tudo isso evitado com manutenção semestral de R$ 180 a R$ 300. Agende pelo WhatsApp <strong>(11) 96346-2516</strong>.</p>
+  <BlogPostLayout tag="Manutenção" title="O Que Acontece se Você Não Fizer Manutenção no Ar Condicionado?" date="26 de Junho, 2026" author="Equipe Técnica New Clima">
+
+    <p>Deixar o ar condicionado sem manutenção parece uma economia — mas na prática é um dos erros mais caros que você pode cometer. Uma manutenção preventiva semestral custa em média <strong>R$ 180 a R$ 300</strong>. Um conserto por falta de manutenção pode custar <strong>R$ 800 a R$ 3.000</strong>.</p>
+
+    <p>Entenda o que acontece, mês a mês, quando o ar condicionado fica sem manutenção em São Paulo.</p>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Meses 1 a 3: queda de eficiência</h2>
+
+    <p>Com os filtros acumulando poeira e sujeira, o ar condicionado começa a trabalhar mais para entregar o mesmo resultado. O compressor força mais, o consumo de energia sobe e o ambiente demora mais para atingir a temperatura desejada.</p>
+
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Aumento de 10% a 15% no consumo de energia</li>
+      <li>Redução na capacidade de resfriamento</li>
+      <li>Início do acúmulo de fungos e bactérias nos filtros</li>
+    </ul>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Meses 3 a 6: problemas de saúde e mau cheiro</h2>
+
+    <p>Os filtros sujos se tornam um ambiente perfeito para o crescimento de fungos, ácaros e bactérias. O ar que circula pelo ambiente começa a carregar esses microorganismos — causando problemas respiratórios, alergias e rinite, especialmente em crianças e idosos.</p>
+
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Mau cheiro no ar expelido pelo aparelho</li>
+      <li>Piora de rinite, asma e alergias</li>
+      <li>Aumento de 20% a 30% no consumo de energia</li>
+      <li>Possível início de gotejamento de água</li>
+    </ul>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Meses 6 a 12: danos mecânicos</h2>
+
+    <p>Com o compressor trabalhando em sobrecarga contínua, as peças mecânicas começam a se desgastar. O dreno entupido causa acúmulo de água que pode vazar para o teto ou paredes. O gás refrigerante começa a vazar pelos pontos de pressão mais fraca.</p>
+
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Dreno entupido — água pingando no teto ou parede</li>
+      <li>Vazamento de gás — aparelho para de gelar</li>
+      <li>Rolamentos e ventiladores com desgaste acelerado</li>
+      <li>Consumo de energia até 35% mais alto</li>
+      <li>Ruídos e vibrações durante o funcionamento</li>
+    </ul>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Acima de 12 meses: risco de quebra total</h2>
+
+    <p>Um compressor que trabalhou em sobrecarga por mais de 12 meses tem grande chance de falhar completamente. A troca de compressor pode custar de R$ 800 a R$ 2.500 — e em muitos casos o custo do conserto supera o valor de um aparelho novo.</p>
+
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li>Queima do compressor — conserto R$ 800 a R$ 2.500</li>
+      <li>Queima da placa eletrônica — R$ 400 a R$ 1.200</li>
+      <li>Danos estruturais por acúmulo de água</li>
+      <li>Vida útil reduzida de 12-15 anos para 5-7 anos</li>
+    </ul>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Comparativo de custo: manutenção x conserto</h2>
+
+    <div className="overflow-x-auto my-6">
+      <table className="w-full border-collapse text-sm">
+        <thead>
+          <tr className="bg-primary text-white">
+            <th className="p-3 text-left border border-primary">Cenário</th>
+            <th className="p-3 text-left border border-primary">Custo em 3 anos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Manutenção semestral (6 visitas)</td><td className="p-3 border border-slate-200 font-bold text-success">R$ 1.080 a R$ 1.800</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Sem manutenção + 1 conserto de compressor</td><td className="p-3 border border-slate-200 font-bold text-red-600">R$ 800 a R$ 2.500</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">Sem manutenção + danos por vazamento de água</td><td className="p-3 border border-slate-200 font-bold text-red-600">R$ 2.000 a R$ 8.000</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Economia de energia com manutenção (30%)</td><td className="p-3 border border-slate-200 font-bold text-success">- R$ 900 a R$ 1.500</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Na maioria dos casos, a <strong>manutenção preventiva se paga sozinha</strong> pela economia de energia gerada — sem contar a prevenção de consertos caros.</p>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Com que frequência fazer manutenção em SP?</h2>
+
+    <ul className="list-disc pl-6 space-y-2 my-4">
+      <li><strong>Uso residencial:</strong> a cada 6 meses (semestral)</li>
+      <li><strong>Escritórios e comércios:</strong> a cada 3 meses (trimestral)</li>
+      <li><strong>Clínicas e restaurantes:</strong> a cada 1 a 2 meses</li>
+      <li><strong>Ambientes com muita poeira ou fumaça:</strong> mensalmente</li>
+    </ul>
+
+    <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
+      <h3 className="text-lg font-bold text-primary mb-2">Agende sua manutenção preventiva em SP</h3>
+      <p className="text-slate-600 text-sm mb-4">Manutenção a partir de R$ 180 · Todas as marcas · Garantia de 90 dias · Resposta em até 2h</p>
+      <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Gostaria%20de%20agendar%20uma%20manutenção%20preventiva%20de%20ar%20condicionado." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">
+        Agendar Manutenção pelo WhatsApp
+      </a>
+    </div>
+
+    <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
+
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Posso limpar o filtro em casa?</h3>
+    <p>Sim. A limpeza dos filtros externos pode ser feita em casa com aspirador e água. Mas a manutenção preventiva completa — que inclui verificação de gás, dreno, componentes elétricos e limpeza interna do evaporador — precisa ser feita por técnico certificado.</p>
+
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Meu ar condicionado ainda gela bem. Precisa de manutenção?</h3>
+    <p>Sim. O aparelho pode gelar bem e ainda ter filtros cheios de fungos, dreno parcialmente entupido e consumir 20% mais energia do que deveria. A manutenção preventiva resolve problemas antes que eles apareçam.</p>
+
+    <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Quanto tempo leva uma manutenção preventiva?</h3>
+    <p>Uma manutenção preventiva completa de um split residencial leva entre 1h30 e 2h30. Sistemas com múltiplas unidades podem levar o dia todo.</p>
+
   </BlogPostLayout>
 );
-
-// --- 10 Novos Posts ---
 
 export const BlogSaude = () => (
   <BlogPostLayout tag="Saúde" title="Ar Condicionado Faz Mal à Saúde? Verdades e Mitos" date="9 de Maio, 2026" author="José Erivaldo">
