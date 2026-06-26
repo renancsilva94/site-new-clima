@@ -1,5 +1,55 @@
 {
+  "redirects": [
+    {
+      "source": "/instala%C3%A7%C3%A3o-de-ar-condicionado",
+      "destination": "/instalacao-ar-condicionado-split-sao-paulo",
+      "permanent": true
+    },
+    {
+      "source": "/instalação-de-ar-condicionado",
+      "destination": "/instalacao-ar-condicionado-split-sao-paulo",
+      "permanent": true
+    },
+    {
+      "source": "/or%C3%A7amento",
+      "destination": "/contato",
+      "permanent": true
+    },
+    {
+      "source": "/orçamento",
+      "destination": "/contato",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-higieniza%C3%A7%C3%A3o",
+      "destination": "/limpeza-ar-condicionado-sp",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-higienização",
+      "destination": "/limpeza-ar-condicionado-sp",
+      "permanent": true
+    },
+    {
+      "source": "/manuten%C3%A7%C3%A3o-corretiva",
+      "destination": "/manutencao-corretiva-ar-condicionado-sp",
+      "permanent": true
+    },
+    {
+      "source": "/manutenção-corretiva",
+      "destination": "/manutencao-corretiva-ar-condicionado-sp",
+      "permanent": true
+    },
+    {
+      "source": "/quem-somos",
+      "destination": "/sobre",
+      "permanent": true
+    }
+  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
   ]
 }
