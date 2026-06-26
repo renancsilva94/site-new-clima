@@ -1,34 +1,3 @@
-# New Clima Ar Condicionado - Oferta Especial
+# New Clima Ar Condicionado
 
-## Nome da Oferta
-Instalação e Manutenção de Ar Condicionado Premium - New Clima Ar
-
-## Proposta Principal
-Oferecer climatização de alta performance com foco em eficiência energética, saúde e conforto térmico para residências e empresas em São Paulo e no ABC Paulista, utilizando técnicos certificados e materiais de primeira linha.
-
-## Público-Alvo
-- Proprietários de residências (casas e apartamentos) em São Paulo e ABC.
-- Empresas, escritórios e lojas que buscam conformidade com o PMOC e eficiência térmica.
-- Pessoas que buscam instalação técnica de marcas como Daikin, LG, Samsung e Fujitsu.
-
-## Benefícios
-- Técnicos certificados (NR-10, NR-35) e treinados pelos fabricantes.
-- Garantia por escrito e nota fiscal em todos os serviços.
-- Infraestrutura completa (Cobre de alta pureza, gesso e pintura inclusos).
-- Atendimento rápido com foco em limpeza e organização ("Obra Limpa").
-- Redução de custos de energia com dimensionamento correto (BTUs).
-
-## O que está incluso
-- Instalação de Split, Multi Split e sistemas VRF.
-- Manutenção Preventiva e Corretiva.
-- Higienização profunda bactericida.
-- Implementação de PMOC para empresas.
-
-## FAQ Resumido
-1. **Frequência de limpeza?** Residencial a cada 6 meses; Comercial via PMOC mensal ou trimestral.
-2. **Instalação de terceiros?** Sim, instalamos aparelhos comprados em qualquer loja mantendo a garantia.
-3. **Cálculo de BTUs?** Nossos técnicos realizam o cálculo preciso baseado no seu ambiente.
-
-## CTA Principal
-Garanta sua vaga para um orçamento exclusivo agora mesmo!
-Link: https://kit.cursodescomplicandosites.com.br/
+Este arquivo foi movido para: https://www.newclimaar.com.br/llms.txt
