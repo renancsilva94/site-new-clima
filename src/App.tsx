@@ -704,6 +704,26 @@ export default function App({ pathname: initialPathname = '/' }: { pathname?: st
             if (p === '/blog/qual-ar-condicionado-comprar-2026') return <BlogView navigate={navigate} postId="qual-ac" />;
             if (p === '/blog/split-vs-multi-split-apartamento-sp') return <BlogView navigate={navigate} postId="split-multi-split" />;
             if (p === '/blog/manutencao-ar-condicionado-consequencias') return <BlogView navigate={navigate} postId="manutencao-consequencias" />;
+            if (p === '/blog/ar-condicionado-faz-mal-saude') return <BlogView navigate={navigate} postId="saude" />;
+            if (p === '/blog/dormir-com-ar-condicionado-faz-mal') return <BlogView navigate={navigate} postId="dormir" />;
+            if (p === '/blog/ar-condicionado-gasta-mais-dia-ou-noite') return <BlogView navigate={navigate} postId="consumo" />;
+            if (p === '/blog/quanto-gasta-ar-condicionado-inverter') return <BlogView navigate={navigate} postId="quanto-gasta" />;
+            if (p === '/blog/mau-cheiro-ar-condicionado') return <BlogView navigate={navigate} postId="mau-cheiro" />;
+            if (p === '/blog/ar-condicionado-desliga-sozinho') return <BlogView navigate={navigate} postId="desliga-sozinho" />;
+            if (p === '/blog/vida-util-ar-condicionado') return <BlogView navigate={navigate} postId="vida-util" />;
+            if (p === '/blog/temperatura-ideal-ar-condicionado') return <BlogView navigate={navigate} postId="temperatura" />;
+            if (p === '/blog/funcao-dry-ar-condicionado') return <BlogView navigate={navigate} postId="funcao-dry" />;
+            if (p === '/blog/gas-r32-r410a-ar-condicionado') return <BlogView navigate={navigate} postId="gas" />;
+            if (p === '/blog/ar-condicionado-nao-gela') return <BlogView navigate={navigate} postId="nao-gela" />;
+            if (p === '/blog/ar-condicionado-pingando-agua') return <BlogView navigate={navigate} postId="pingando-agua" />;
+            if (p === '/blog/limpeza-ar-condicionado-sp') return <BlogView navigate={navigate} postId="limpeza-sp" />;
+            if (p === '/blog/conserto-ar-condicionado-sp') return <BlogView navigate={navigate} postId="conserto-sp" />;
+            if (p === '/blog/manutencao-preventiva-ar-condicionado-sp') return <BlogView navigate={navigate} postId="manutencao-preventiva-sp" />;
+            if (p === '/blog/ar-condicionado-sala-de-estar') return <BlogView navigate={navigate} postId="sala" />;
+            if (p === '/blog/ar-condicionado-escritorio-sp') return <BlogView navigate={navigate} postId="escritorio-sp" />;
+            if (p === '/blog/quanto-custa-limpeza-ar-condicionado') return <BlogView navigate={navigate} postId="custo-limpeza" />;
+            if (p === '/blog/ar-condicionado-barulhento') return <BlogView navigate={navigate} postId="barulhento" />;
+            if (p === '/blog/ar-condicionado-nao-liga') return <BlogView navigate={navigate} postId="nao-liga" />;
             if (p === '/blog') return <BlogView navigate={navigate} />;
             if (p === '/sobre') return <AboutView navigate={navigate} />;
             if (p === '/contato') return <ContactView />;
@@ -2014,6 +2034,26 @@ function BlogView({ navigate, postId }: { navigate: (p: PageId) => void, postId?
   if (postId === 'qual-ac') return <div className="container mx-auto px-4"><BlogQualAC /><BackButton /></div>;
   if (postId === 'split-multi-split') return <div className="container mx-auto px-4"><BlogSplitMultiSplitApartamento /><BackButton /></div>;
   if (postId === 'manutencao-consequencias') return <div className="container mx-auto px-4"><BlogManutencaoConsequencias /><BackButton /></div>;
+  if (postId === 'saude') return <div className="container mx-auto px-4"><BlogSaude /><BackButton /></div>;
+  if (postId === 'dormir') return <div className="container mx-auto px-4"><BlogDormir /><BackButton /></div>;
+  if (postId === 'consumo') return <div className="container mx-auto px-4"><BlogConsumo /><BackButton /></div>;
+  if (postId === 'quanto-gasta') return <div className="container mx-auto px-4"><BlogQuantoGasta /><BackButton /></div>;
+  if (postId === 'mau-cheiro') return <div className="container mx-auto px-4"><BlogMauCheiro /><BackButton /></div>;
+  if (postId === 'desliga-sozinho') return <div className="container mx-auto px-4"><BlogDesligaSozinho /><BackButton /></div>;
+  if (postId === 'vida-util') return <div className="container mx-auto px-4"><BlogVidaUtil /><BackButton /></div>;
+  if (postId === 'temperatura') return <div className="container mx-auto px-4"><BlogTemperatura /><BackButton /></div>;
+  if (postId === 'funcao-dry') return <div className="container mx-auto px-4"><BlogFuncaoDry /><BackButton /></div>;
+  if (postId === 'gas') return <div className="container mx-auto px-4"><BlogGas /><BackButton /></div>;
+  if (postId === 'nao-gela') return <div className="container mx-auto px-4"><BlogNaoGela /><BackButton /></div>;
+  if (postId === 'pingando-agua') return <div className="container mx-auto px-4"><BlogPingandoAgua /><BackButton /></div>;
+  if (postId === 'limpeza-sp') return <div className="container mx-auto px-4"><BlogLimpezaSP /><BackButton /></div>;
+  if (postId === 'conserto-sp') return <div className="container mx-auto px-4"><BlogConsertoSP /><BackButton /></div>;
+  if (postId === 'manutencao-preventiva-sp') return <div className="container mx-auto px-4"><BlogManutencaoPreventivaSP /><BackButton /></div>;
+  if (postId === 'sala') return <div className="container mx-auto px-4"><BlogArCondicionadoSala /><BackButton /></div>;
+  if (postId === 'escritorio-sp') return <div className="container mx-auto px-4"><BlogEscritorioSP /><BackButton /></div>;
+  if (postId === 'custo-limpeza') return <div className="container mx-auto px-4"><BlogQuantoCustaLimpeza /><BackButton /></div>;
+  if (postId === 'barulhento') return <div className="container mx-auto px-4"><BlogBarulhento /><BackButton /></div>;
+  if (postId === 'nao-liga') return <div className="container mx-auto px-4"><BlogNaoLiga /><BackButton /></div>;
 
   return (
     <div className="py-16 container mx-auto px-4">
