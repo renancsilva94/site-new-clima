@@ -89,6 +89,61 @@
       "source": "/limpeza-fan-coil-sao-paulo",
       "destination": "/limpeza-ar-condicionado-sp",
       "permanent": true
+    },
+    {
+      "source": "/servi%C3%A7os-em-grandes-equipamentos",
+      "destination": "/servicos",
+      "permanent": true
+    },
+    {
+      "source": "/serviços-em-grandes-equipamentos",
+      "destination": "/servicos",
+      "permanent": true
+    },
+    {
+      "source": "/contrato-de-manuten%C3%A7%C3%A3o-e-pmoc",
+      "destination": "/pmoc-sao-paulo",
+      "permanent": true
+    },
+    {
+      "source": "/contrato-de-manutenção-e-pmoc",
+      "destination": "/pmoc-sao-paulo",
+      "permanent": true
+    },
+    {
+      "source": "/empresa",
+      "destination": "/sobre",
+      "permanent": true
+    },
+    {
+      "source": "/ar-condicionado-fazendo-barulho-sp",
+      "destination": "/blog/ar-condicionado-barulhento",
+      "permanent": true
+    },
+    {
+      "source": "/ar-condicionado-vazando-agua-sp",
+      "destination": "/blog/ar-condicionado-pingando-agua",
+      "permanent": true
+    },
+    {
+      "source": "/ar-condicionado-pousada-sp",
+      "destination": "/ar-condicionado-comercial-sp",
+      "permanent": true
+    },
+    {
+      "source": "/ar-condicionado-concessionaria-sao-paulo",
+      "destination": "/ar-condicionado-comercial-sp",
+      "permanent": true
+    },
+    {
+      "source": "/ar-condicionado-consultorio-odontologico-sao-paulo",
+      "destination": "/ar-condicionado-comercial-sp",
+      "permanent": true
+    },
+    {
+      "source": "/_api/v1/access-tokens",
+      "destination": "/",
+      "permanent": true
     }
   ],
   "rewrites": [
