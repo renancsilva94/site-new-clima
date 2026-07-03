@@ -44,6 +44,51 @@
       "source": "/quem-somos",
       "destination": "/sobre",
       "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/manutencao-ar-condicionado-santo-andr",
+      "destination": "/manutencao-ar-condicionado-santo-andre",
+      "permanent": true
+    },
+    {
+      "source": "/orcamento",
+      "destination": "/contato",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-e-higienizacao-em-sp",
+      "destination": "/limpeza-ar-condicionado-sp",
+      "permanent": true
+    },
+    {
+      "source": "/servicos-em-grandes-equipamentos",
+      "destination": "/servicos",
+      "permanent": true
+    },
+    {
+      "source": "/contrato-pmoc-em-sp",
+      "destination": "/pmoc-sao-paulo",
+      "permanent": true
+    },
+    {
+      "source": "/instalacao-de-ar-condicionado-em-sp",
+      "destination": "/instalacao-ar-condicionado-split-sao-paulo",
+      "permanent": true
+    },
+    {
+      "source": "/limpeza-fan-coil-sao-paulo",
+      "destination": "/limpeza-ar-condicionado-sp",
+      "permanent": true
     }
   ],
   "rewrites": [
