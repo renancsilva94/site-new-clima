@@ -126,21 +126,6 @@
       "permanent": true
     },
     {
-      "source": "/ar-condicionado-pousada-sp",
-      "destination": "/ar-condicionado-comercial-sp",
-      "permanent": true
-    },
-    {
-      "source": "/ar-condicionado-concessionaria-sao-paulo",
-      "destination": "/ar-condicionado-comercial-sp",
-      "permanent": true
-    },
-    {
-      "source": "/ar-condicionado-consultorio-odontologico-sao-paulo",
-      "destination": "/ar-condicionado-comercial-sp",
-      "permanent": true
-    },
-    {
       "source": "/_api/v1/access-tokens",
       "destination": "/",
       "permanent": true
