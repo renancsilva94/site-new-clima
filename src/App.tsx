@@ -602,6 +602,42 @@ export const BAIRRO_PAGE_MAP: Record<string, PageId> = {
   'Santa Cecília': 'bairro-santa-cecilia', 'Bom Retiro': 'bairro-bom-retiro',
 }
 
+// Conteúdo único por bairro (prioridade: bairros de maior valor comercial).
+// Usado para diferenciar as páginas de bairro, que por padrão compartilham o mesmo template.
+export const BAIRRO_CONTENT: Record<string, {
+  intro: string
+  testimonial?: { name: string; service: string; content: string }
+}> = {
+  'vila-mariana': {
+    intro: 'Vila Mariana é onde fica a sede da New Clima — nascemos e crescemos atendendo o bairro. É uma região com forte presença de clínicas, consultórios e prédios residenciais mais antigos, onde a passagem de tubulação e o projeto elétrico costumam pesar mais no orçamento do que em construções novas.',
+    testimonial: { name: 'Samuel Carvalho', service: 'Instalação + Manutenção — Vila Mariana', content: 'Contratei o profissional José Erivaldo para serviços de instalação, manutenção preventiva, conserto e limpeza do meu ar-condicionado. O trabalho foi muito ótimo! Ele é pontual, atencioso, caprichoso e explica tudo o que está fazendo. O ambiente ficou limpo e o ar-condicionado funcionando perfeitamente. Recomendo muito e com certeza voltarei a contratar!' },
+  },
+  'moema': {
+    intro: 'Moema é dominado por prédios residenciais de médio e alto padrão perto do Parque Ibirapuera. Boa parte dos condomínios da região exige projeto técnico documentado e agendamento com a portaria antes da obra — por isso entregamos sempre o projeto e o orçamento por escrito antes de começar qualquer serviço.',
+    testimonial: { name: 'Victor Peres', service: 'Instalação Multi Split — Moema', content: 'Contratei esta empresa para instalação de 3 Ar Condicionado na minha residência. O Sr. Erivaldo é um ótimo profissional e atencioso, me explicou como seria feito todo serviço. Muito obrigado!' },
+  },
+  'pinheiros': {
+    intro: 'Pinheiros mistura prédios residenciais antigos, sedes de empresas menores e comércio de rua — o que exige soluções diferentes lado a lado: do split convencional em apartamentos de prédio antigo ao sistema comercial em lojas e escritórios.',
+    testimonial: { name: 'Rosemeire Fonseca', service: 'Manutenção Preventiva — Pinheiros', content: 'Indico muito a empresa New Clima. Ótimo trabalho, técnico muito atencioso.' },
+  },
+  'brooklin': {
+    intro: 'Brooklin concentra torres corporativas e conjuntos comerciais na região da Marginal Pinheiros e Avenida Berrini, onde sistemas comerciais (cassete, piso-teto e VRF) são mais comuns que instalação residencial simples.',
+    testimonial: { name: 'Matheus Santos', service: 'Instalação + Limpeza — Brooklin', content: 'Empresa com muita experiência e trabalho de qualidade. Os melhores profissionais que já trabalhei.' },
+  },
+  'itaim-bibi': {
+    intro: 'Itaim Bibi é um dos bairros com maior densidade de escritórios corporativos de São Paulo, na região da Faria Lima. Para clientes comerciais do bairro, priorizamos instalação e manutenção fora do horário de expediente para não impactar a operação.',
+  },
+  'jardins': {
+    intro: 'Jardins reúne clínicas, consultórios e lojas de alto padrão ao lado de prédios residenciais, na região da Avenida Paulista e imediações. Trabalhamos com discrição e sem interromper o funcionamento do estabelecimento durante o horário de atendimento ao público.',
+  },
+  'vila-olimpia': {
+    intro: 'Vila Olímpia concentra torres corporativas e coworkings entre a Marginal Pinheiros e a Avenida Faria Lima, com demanda forte por sistemas VRF e manutenção programada fora do horário comercial.',
+  },
+  'tatuape': {
+    intro: 'Tatuapé é um dos maiores polos comerciais e residenciais da Zona Leste, com grande concentração de apartamentos e lojas de rua ao redor da região do Shopping Metrô Tatuapé.',
+  },
+}
+
 export default function App({ pathname: initialPathname = '/' }: { pathname?: string }) {
   const router = useRouter();
   const currentPathname = usePathname();
@@ -2738,6 +2774,30 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
           </div>
         </div>
       </section>
+
+      {/* Conteúdo único do bairro (quando disponível) */}
+      {BAIRRO_CONTENT[slug] && (
+        <section className="py-16 bg-white border-t border-slate-100">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className={`grid grid-cols-1 ${BAIRRO_CONTENT[slug].testimonial ? 'md:grid-cols-3' : ''} gap-8 items-start`}>
+              <div className={BAIRRO_CONTENT[slug].testimonial ? 'md:col-span-2' : ''}>
+                <h2 className="text-xl md:text-2xl font-extrabold text-primary mb-3">Ar Condicionado em {bairro}: o que você precisa saber</h2>
+                <p className="text-slate-600 leading-relaxed">{BAIRRO_CONTENT[slug].intro}</p>
+              </div>
+              {BAIRRO_CONTENT[slug].testimonial && (
+                <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                  <div className="flex items-center gap-1 text-amber-400 mb-3">
+                    {[1,2,3,4,5].map(i => <Star key={i} size={14} fill="currentColor" />)}
+                  </div>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">"{BAIRRO_CONTENT[slug].testimonial!.content}"</p>
+                  <p className="text-primary font-bold text-sm">{BAIRRO_CONTENT[slug].testimonial!.name}</p>
+                  <p className="text-slate-400 text-xs">{BAIRRO_CONTENT[slug].testimonial!.service}</p>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Por que New Clima */}
       <section className="py-16 bg-slate-50">
