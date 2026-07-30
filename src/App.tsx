@@ -34,6 +34,7 @@ import {
 
 
 import { useRouter, usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 import { 
   SplitMultiSplit, 
@@ -354,6 +355,253 @@ const SectionHeading = ({ tag, title, subtitle, centered = false, asH1 = false }
   </div>
 );
 
+export function pageToPath(page: PageId): string {
+  const routes: Partial<Record<PageId, string>> = {
+    'home': '/',
+    'split-multisplit': '/instalacao-ar-condicionado-split-sao-paulo',
+    'sistemas-comerciais': '/ar-condicionado-comercial-sao-paulo',
+    'vrf-mini-vrf': '/instalacao-vrf-mini-vrf-sao-paulo',
+    'manutencao-preventiva': '/manutencao-preventiva-ar-condicionado-sp',
+    'manutencao-corretiva': '/manutencao-corretiva-ar-condicionado-sp',
+    'limpeza': '/limpeza-higienizacao-ar-condicionado-sp',
+    'blog': '/blog',
+    'sobre': '/sobre',
+    'contato': '/contato',
+    'mapa-site': '/mapa-site',
+    'bairro-moema': '/instalacao-ar-condicionado-moema',
+    'bairro-vila-mariana': '/instalacao-ar-condicionado-vila-mariana',
+    'bairro-pinheiros': '/instalacao-ar-condicionado-pinheiros',
+    'bairro-itaim-bibi': '/instalacao-ar-condicionado-itaim-bibi',
+    'bairro-jardins': '/instalacao-ar-condicionado-jardins',
+    'bairro-tatuape': '/instalacao-ar-condicionado-tatuape',
+    'bairro-santana': '/instalacao-ar-condicionado-santana',
+    'bairro-brooklin': '/instalacao-ar-condicionado-brooklin',
+    'bairro-perdizes': '/instalacao-ar-condicionado-perdizes',
+    'bairro-morumbi': '/instalacao-ar-condicionado-morumbi',
+    'bairro-mooca': '/instalacao-ar-condicionado-mooca',
+    'bairro-analia-franco': '/instalacao-ar-condicionado-analia-franco',
+    'bairro-vila-madalena': '/instalacao-ar-condicionado-vila-madalena',
+    'bairro-campo-belo': '/instalacao-ar-condicionado-campo-belo',
+    'bairro-saude': '/instalacao-ar-condicionado-saude',
+    'bairro-higienopolis': '/instalacao-ar-condicionado-higienopolis',
+    'bairro-lapa': '/instalacao-ar-condicionado-lapa',
+    'bairro-santo-amaro': '/instalacao-ar-condicionado-santo-amaro',
+    'bairro-tucuruvi': '/instalacao-ar-condicionado-tucuruvi',
+    'bairro-ipiranga': '/instalacao-ar-condicionado-ipiranga',
+    'bairro-vila-prudente': '/instalacao-ar-condicionado-vila-prudente',
+    'bairro-jabaquara': '/instalacao-ar-condicionado-jabaquara',
+    'bairro-campo-grande': '/instalacao-ar-condicionado-campo-grande',
+    'bairro-penha': '/instalacao-ar-condicionado-penha',
+    'bairro-cursino': '/instalacao-ar-condicionado-cursino',
+    'bairro-agua-rasa': '/instalacao-ar-condicionado-agua-rasa',
+    'bairro-bela-vista': '/instalacao-ar-condicionado-bela-vista',
+    'bairro-butanta': '/instalacao-ar-condicionado-butanta',
+    'bairro-vila-olimpia': '/instalacao-ar-condicionado-vila-olimpia',
+    'bairro-pompeia': '/instalacao-ar-condicionado-pompeia',
+    'bairro-paraiso': '/instalacao-ar-condicionado-paraiso',
+    'bairro-aclimacao': '/instalacao-ar-condicionado-aclimacao',
+    'bairro-mirandopolis': '/instalacao-ar-condicionado-mirandopolis',
+    'bairro-planalto-paulista': '/instalacao-ar-condicionado-planalto-paulista',
+    'bairro-vila-clementino': '/instalacao-ar-condicionado-vila-clementino',
+    'bairro-chacara-klabin': '/instalacao-ar-condicionado-chacara-klabin',
+    'bairro-cambuci': '/instalacao-ar-condicionado-cambuci',
+    'bairro-liberdade': '/instalacao-ar-condicionado-liberdade',
+    'segmento-clinica': '/ar-condicionado-clinica-medica-sp',
+    'segmento-escritorio': '/ar-condicionado-escritorio-sao-paulo',
+    'segmento-condominio': '/ar-condicionado-condominio-sp',
+    'segmento-restaurante': '/ar-condicionado-restaurante-sp',
+    'segmento-hotel': '/ar-condicionado-hotel-sp',
+    'segmento-pousada': '/ar-condicionado-pousada-sp',
+    'segmento-academia': '/ar-condicionado-academia-sp',
+    'segmento-escola': '/ar-condicionado-escola-sp',
+    'sem-instalacao': '/instalacao-ar-condicionado-sp',
+    'sem-manutencao': '/manutencao-ar-condicionado-sp',
+    'sem-tecnico': '/tecnico-ar-condicionado-sp',
+    'sem-conserto': '/conserto-ar-condicionado-sp',
+    'sem-empresa': '/empresa-ar-condicionado-sp',
+    'sem-assistencia': '/assistencia-tecnica-ar-condicionado-sp',
+    'res-apartamento': '/ar-condicionado-apartamento-sp',
+    'res-residencial': '/ar-condicionado-residencial-sp',
+    'res-casa': '/ar-condicionado-casa-sp',
+    'res-condominio-inst': '/instalacao-ar-condicionado-condominio-sp',
+    'sao-paulo': '/ar-condicionado-sao-paulo',
+    'santo-andre': '/ar-condicionado-santo-andre',
+    'sao-bernardo': '/ar-condicionado-sao-bernardo-do-campo',
+    'sao-caetano': '/ar-condicionado-sao-caetano-do-sul',
+    'diadema': '/ar-condicionado-diadema',
+    'maua': '/ar-condicionado-maua',
+    'blog-inverter': '/blog/ar-condicionado-inverter',
+    'blog-apartamento': '/blog/instalacao-ar-condicionado-apartamento-sp',
+    'blog-btus': '/blog/como-calcular-btus-ar-condicionado',
+    'blog-pmoc': '/blog/pmoc-obrigatorio-sao-paulo',
+    'blog-round-cassette': '/blog/lg-round-cassette',
+    'blog-obra-limpa': '/blog/instalacao-ar-condicionado-obra-limpa',
+    'blog-quarto': '/blog/ar-condicionado-quarto',
+    'blog-convencional-inverter': '/blog/split-convencional-vs-inverter',
+    'blog-empresas': '/blog/ar-condicionado-empresas-vrf',
+    'blog-pmoc-obrigatorio': '/blog/pmoc-obrigatorio-sao-paulo-lei',
+    'blog-multa-pmoc': '/blog/multa-pmoc-sao-paulo',
+    'blog-pmoc-condominio': '/blog/pmoc-condominios-sao-paulo',
+    'blog-custo-pmoc': '/blog/quanto-custa-pmoc-sao-paulo',
+    'blog-custo-instalacao': '/blog/quanto-custa-instalar-ar-condicionado-sp',
+    'blog-qual-ac': '/blog/qual-ar-condicionado-comprar-2026',
+    'blog-split-multi-split': '/blog/split-vs-multi-split-apartamento-sp',
+    'blog-manutencao-consequencias': '/blog/manutencao-ar-condicionado-consequencias',
+    'blog-saude': '/blog/ar-condicionado-faz-mal-saude',
+    'blog-dormir': '/blog/dormir-com-ar-condicionado-faz-mal',
+    'blog-consumo': '/blog/ar-condicionado-gasta-mais-dia-ou-noite',
+    'blog-quanto-gasta': '/blog/quanto-gasta-ar-condicionado-inverter',
+    'blog-mau-cheiro': '/blog/mau-cheiro-ar-condicionado',
+    'blog-desliga-sozinho': '/blog/ar-condicionado-desliga-sozinho',
+    'blog-vida-util': '/blog/vida-util-ar-condicionado',
+    'blog-temperatura': '/blog/temperatura-ideal-ar-condicionado',
+    'blog-funcao-dry': '/blog/funcao-dry-ar-condicionado',
+    'blog-gas': '/blog/gas-r32-r410a-ar-condicionado',
+    'blog-nao-gela': '/blog/ar-condicionado-nao-gela',
+    'blog-pingando-agua': '/blog/ar-condicionado-pingando-agua',
+    'blog-limpeza-sp': '/blog/limpeza-ar-condicionado-sp',
+    'blog-conserto-sp': '/blog/conserto-ar-condicionado-sp',
+    'blog-manutencao-preventiva-sp': '/blog/manutencao-preventiva-ar-condicionado-sp',
+    'blog-sala': '/blog/ar-condicionado-sala-de-estar',
+    'blog-escritorio-sp': '/blog/ar-condicionado-escritorio-sp',
+    'blog-custo-limpeza': '/blog/quanto-custa-limpeza-ar-condicionado',
+    'blog-barulhento': '/blog/ar-condicionado-barulhento',
+    'blog-nao-liga': '/blog/ar-condicionado-nao-liga',
+    'manutencao-santo-andre': '/manutencao-ar-condicionado-santo-andre',
+    'limpeza-santo-andre': '/limpeza-ar-condicionado-santo-andre',
+    'pmoc-santo-andre': '/pmoc-santo-andre',
+    'manutencao-sao-bernardo': '/manutencao-ar-condicionado-sao-bernardo-do-campo',
+    'limpeza-sao-bernardo': '/limpeza-ar-condicionado-sao-bernardo-do-campo',
+    'pmoc-sao-bernardo': '/pmoc-sao-bernardo-do-campo',
+    'manutencao-sao-caetano': '/manutencao-ar-condicionado-sao-caetano-do-sul',
+    'limpeza-sao-caetano': '/limpeza-ar-condicionado-sao-caetano-do-sul',
+    'pmoc-sao-caetano': '/pmoc-sao-caetano-do-sul',
+    'manutencao-diadema': '/manutencao-ar-condicionado-diadema',
+    'limpeza-diadema': '/limpeza-ar-condicionado-diadema',
+    'pmoc-diadema': '/pmoc-diadema',
+    'manutencao-maua': '/manutencao-ar-condicionado-maua',
+    'limpeza-maua': '/limpeza-ar-condicionado-maua',
+    'pmoc-maua': '/pmoc-maua',
+    'seg-farmacia': '/ar-condicionado-farmacia-sao-paulo',
+    'seg-odonto': '/ar-condicionado-consultorio-odontologico-sao-paulo',
+    'seg-salao': '/ar-condicionado-salao-beleza-sao-paulo',
+    'seg-supermercado': '/ar-condicionado-supermercado-sao-paulo',
+    'seg-datacenter': '/ar-condicionado-data-center-sao-paulo',
+    'seg-coworking': '/ar-condicionado-coworking-sao-paulo',
+    'seg-igreja': '/ar-condicionado-igreja-sao-paulo',
+    'seg-laboratorio': '/ar-condicionado-laboratorio-sao-paulo',
+    'seg-petshop': '/ar-condicionado-pet-shop-sao-paulo',
+    'seg-estetica': '/ar-condicionado-clinica-estetica-sao-paulo',
+    'seg-loja': '/ar-condicionado-loja-varejo-sao-paulo',
+    'seg-banco': '/ar-condicionado-banco-financeira-sao-paulo',
+    'seg-padaria': '/ar-condicionado-padaria-sao-paulo',
+    'seg-concessionaria': '/ar-condicionado-concessionaria-sao-paulo',
+    'seg-advocacia': '/ar-condicionado-escritorio-advocacia-sao-paulo',
+    'seg-psicologia': '/ar-condicionado-consultorio-psicologia-sao-paulo',
+    'seg-fisioterapia': '/ar-condicionado-clinica-fisioterapia-sao-paulo',
+    'seg-creche': '/ar-condicionado-creche-sao-paulo',
+    'seg-bar': '/ar-condicionado-bar-pub-sao-paulo',
+    'servicos': '/servicos',
+    'inst-split': '/instalacao-ar-condicionado-split-sp',
+    'inst-cassete': '/instalacao-ar-condicionado-cassete-sp',
+    'inst-piso-teto': '/instalacao-ar-condicionado-piso-teto-sp',
+    'inst-multi-split': '/instalacao-multi-split-sp',
+    'inst-inverter': '/instalacao-ar-condicionado-inverter-sp',
+    'prob-nao-gela': '/ar-condicionado-nao-gela-sp',
+    'prob-vazando': '/ar-condicionado-vazando-agua-sp',
+    'prob-gas': '/recarga-gas-ar-condicionado-sp',
+    'prob-mau-cheiro': '/ar-condicionado-com-mau-cheiro-sp',
+    'prob-barulho': '/ar-condicionado-fazendo-barulho-sp',
+    'prob-desliga': '/ar-condicionado-desligando-sozinho-sp',
+    'serv-limpeza-sp': '/limpeza-ar-condicionado-sp',
+    'serv-higienizacao-sp': '/higienizacao-ar-condicionado-sp',
+    'serv-pmoc-sp': '/pmoc-sao-paulo',
+    'serv-contrato-sp': '/contrato-manutencao-ar-condicionado-sp',
+    'marca-lg': '/instalacao-ar-condicionado-lg-sao-paulo',
+    'marca-samsung': '/instalacao-ar-condicionado-samsung-sao-paulo',
+    'marca-daikin': '/instalacao-ar-condicionado-daikin-sao-paulo',
+    'marca-midea': '/instalacao-ar-condicionado-midea-sao-paulo',
+    'marca-fujitsu': '/instalacao-ar-condicionado-fujitsu-sao-paulo',
+    'marca-carrier': '/instalacao-ar-condicionado-carrier-sao-paulo',
+    'marca-elgin': '/instalacao-ar-condicionado-elgin-sao-paulo',
+    'marca-gree': '/instalacao-ar-condicionado-gree-sao-paulo',
+    'marca-springer': '/instalacao-ar-condicionado-springer-carrier-sao-paulo',
+    'marca-komeco': '/instalacao-ar-condicionado-komeco-sao-paulo',
+    'marca-philco': '/instalacao-ar-condicionado-philco-sao-paulo',
+    'marca-electrolux': '/instalacao-ar-condicionado-electrolux-sao-paulo',
+    'marca-trane': '/instalacao-ar-condicionado-trane-sao-paulo',
+    'marca-york': '/instalacao-ar-condicionado-york-sao-paulo',
+    'marca-hitachi': '/instalacao-ar-condicionado-hitachi-sao-paulo',
+    'marca-panasonic': '/instalacao-ar-condicionado-panasonic-sao-paulo',
+    'marca-bosch': '/instalacao-ar-condicionado-bosch-sao-paulo',
+    'marca-tcl': '/instalacao-ar-condicionado-tcl-sao-paulo',
+    'marca-agratto': '/instalacao-ar-condicionado-agratto-sao-paulo',
+    'marca-consul': '/instalacao-ar-condicionado-consul-sao-paulo',
+    'bairro-jardim-paulista': '/instalacao-ar-condicionado-jardim-paulista',
+    'bairro-jardim-europa': '/instalacao-ar-condicionado-jardim-europa',
+    'bairro-vila-andrade': '/instalacao-ar-condicionado-vila-andrade',
+    'bairro-campo-limpo': '/instalacao-ar-condicionado-campo-limpo',
+    'bairro-interlagos': '/instalacao-ar-condicionado-interlagos',
+    'bairro-cerqueira-cesar': '/instalacao-ar-condicionado-cerqueira-cesar',
+    'bairro-pacaembu': '/instalacao-ar-condicionado-pacaembu',
+    'bairro-sumare': '/instalacao-ar-condicionado-sumare',
+    'bairro-vila-leopoldina': '/instalacao-ar-condicionado-vila-leopoldina',
+    'bairro-barra-funda': '/instalacao-ar-condicionado-barra-funda',
+    'bairro-alto-de-pinheiros': '/instalacao-ar-condicionado-alto-de-pinheiros',
+    'bairro-consolacao': '/instalacao-ar-condicionado-consolacao',
+    'bairro-vila-guilherme': '/instalacao-ar-condicionado-vila-guilherme',
+    'bairro-vila-maria': '/instalacao-ar-condicionado-vila-maria',
+    'bairro-casa-verde': '/instalacao-ar-condicionado-casa-verde',
+    'bairro-mandaqui': '/instalacao-ar-condicionado-mandaqui',
+    'bairro-tremembe': '/instalacao-ar-condicionado-tremembe',
+    'bairro-freguesia-do-o': '/instalacao-ar-condicionado-freguesia-do-o',
+    'bairro-limao': '/instalacao-ar-condicionado-limao',
+    'bairro-belem': '/instalacao-ar-condicionado-belem',
+    'bairro-bras': '/instalacao-ar-condicionado-bras',
+    'bairro-carrao': '/instalacao-ar-condicionado-carrao',
+    'bairro-vila-formosa': '/instalacao-ar-condicionado-vila-formosa',
+    'bairro-sapopemba': '/instalacao-ar-condicionado-sapopemba',
+    'bairro-penha-de-franca': '/instalacao-ar-condicionado-penha-de-franca',
+    'bairro-jardim-analia': '/instalacao-ar-condicionado-jardim-analia',
+    'bairro-aricanduva': '/instalacao-ar-condicionado-aricanduva',
+    'bairro-republica': '/instalacao-ar-condicionado-republica',
+    'bairro-santa-cecilia': '/instalacao-ar-condicionado-santa-cecilia',
+    'bairro-bom-retiro': '/instalacao-ar-condicionado-bom-retiro',
+    'zona-sul': '/ar-condicionado-zona-sul-sp',
+    'zona-norte': '/ar-condicionado-zona-norte-sp',
+    'zona-leste': '/ar-condicionado-zona-leste-sp',
+    'zona-oeste': '/ar-condicionado-zona-oeste-sp',
+    'zona-central': '/ar-condicionado-zona-central-sp',
+  }
+  return routes[page] || '/'
+}
+
+export const BAIRRO_PAGE_MAP: Record<string, PageId> = {
+  'Vila Mariana': 'bairro-vila-mariana', 'Moema': 'bairro-moema', 'Brooklin': 'bairro-brooklin',
+  'Campo Belo': 'bairro-campo-belo', 'Itaim Bibi': 'bairro-itaim-bibi', 'Santo Amaro': 'bairro-santo-amaro',
+  'Jabaquara': 'bairro-jabaquara', 'Saúde': 'bairro-saude', 'Ipiranga': 'bairro-ipiranga',
+  'Cursino': 'bairro-cursino', 'Campo Grande': 'bairro-campo-grande', 'Morumbi': 'bairro-morumbi',
+  'Vila Andrade': 'bairro-vila-andrade', 'Vila Olímpia': 'bairro-vila-olimpia', 'Paraíso': 'bairro-paraiso',
+  'Aclimação': 'bairro-aclimacao', 'Mirandópolis': 'bairro-mirandopolis', 'Planalto Paulista': 'bairro-planalto-paulista',
+  'Vila Clementino': 'bairro-vila-clementino', 'Chácara Klabin': 'bairro-chacara-klabin', 'Cambuci': 'bairro-cambuci',
+  'Interlagos': 'bairro-interlagos', 'Campo Limpo': 'bairro-campo-limpo', 'Jardim Paulista': 'bairro-jardim-paulista',
+  'Jardim Europa': 'bairro-jardim-europa', 'Santana': 'bairro-santana', 'Tucuruvi': 'bairro-tucuruvi',
+  'Vila Guilherme': 'bairro-vila-guilherme', 'Vila Maria': 'bairro-vila-maria', 'Casa Verde': 'bairro-casa-verde',
+  'Mandaqui': 'bairro-mandaqui', 'Tremembé': 'bairro-tremembe', 'Freguesia do Ó': 'bairro-freguesia-do-o',
+  'Limão': 'bairro-limao', 'Tatuapé': 'bairro-tatuape', 'Anália Franco': 'bairro-analia-franco',
+  'Mooca': 'bairro-mooca', 'Vila Prudente': 'bairro-vila-prudente', 'Penha': 'bairro-penha',
+  'Carrão': 'bairro-carrao', 'Água Rasa': 'bairro-agua-rasa', 'Belém': 'bairro-belem',
+  'Brás': 'bairro-bras', 'Vila Formosa': 'bairro-vila-formosa', 'Sapopemba': 'bairro-sapopemba',
+  'Penha de França': 'bairro-penha-de-franca', 'Jardim Anália': 'bairro-jardim-analia', 'Aricanduva': 'bairro-aricanduva',
+  'Pinheiros': 'bairro-pinheiros', 'Vila Madalena': 'bairro-vila-madalena', 'Perdizes': 'bairro-perdizes',
+  'Lapa': 'bairro-lapa', 'Pompéia': 'bairro-pompeia', 'Butantã': 'bairro-butanta',
+  'Cerqueira César': 'bairro-cerqueira-cesar', 'Pacaembu': 'bairro-pacaembu', 'Sumaré': 'bairro-sumare',
+  'Vila Leopoldina': 'bairro-vila-leopoldina', 'Barra Funda': 'bairro-barra-funda', 'Alto de Pinheiros': 'bairro-alto-de-pinheiros',
+  'Consolação': 'bairro-consolacao', 'Higienópolis': 'bairro-higienopolis', 'Jardins': 'bairro-jardins',
+  'Bela Vista': 'bairro-bela-vista', 'Liberdade': 'bairro-liberdade', 'República': 'bairro-republica',
+  'Santa Cecília': 'bairro-santa-cecilia', 'Bom Retiro': 'bairro-bom-retiro',
+}
+
 export default function App({ pathname: initialPathname = '/' }: { pathname?: string }) {
   const router = useRouter();
   const currentPathname = usePathname();
@@ -361,225 +609,7 @@ export default function App({ pathname: initialPathname = '/' }: { pathname?: st
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   const navigate = (page: PageId) => {
-    const routes: Partial<Record<PageId, string>> = {
-      'home': '/',
-      'split-multisplit': '/instalacao-ar-condicionado-split-sao-paulo',
-      'sistemas-comerciais': '/ar-condicionado-comercial-sao-paulo',
-      'vrf-mini-vrf': '/instalacao-vrf-mini-vrf-sao-paulo',
-      'manutencao-preventiva': '/manutencao-preventiva-ar-condicionado-sp',
-      'manutencao-corretiva': '/manutencao-corretiva-ar-condicionado-sp',
-      'limpeza': '/limpeza-higienizacao-ar-condicionado-sp',
-      'blog': '/blog',
-      'sobre': '/sobre',
-      'contato': '/contato',
-      'mapa-site': '/mapa-site',
-      'bairro-moema': '/instalacao-ar-condicionado-moema',
-      'bairro-vila-mariana': '/instalacao-ar-condicionado-vila-mariana',
-      'bairro-pinheiros': '/instalacao-ar-condicionado-pinheiros',
-      'bairro-itaim-bibi': '/instalacao-ar-condicionado-itaim-bibi',
-      'bairro-jardins': '/instalacao-ar-condicionado-jardins',
-      'bairro-tatuape': '/instalacao-ar-condicionado-tatuape',
-      'bairro-santana': '/instalacao-ar-condicionado-santana',
-      'bairro-brooklin': '/instalacao-ar-condicionado-brooklin',
-      'bairro-perdizes': '/instalacao-ar-condicionado-perdizes',
-      'bairro-morumbi': '/instalacao-ar-condicionado-morumbi',
-      'bairro-mooca': '/instalacao-ar-condicionado-mooca',
-      'bairro-analia-franco': '/instalacao-ar-condicionado-analia-franco',
-      'bairro-vila-madalena': '/instalacao-ar-condicionado-vila-madalena',
-      'bairro-campo-belo': '/instalacao-ar-condicionado-campo-belo',
-      'bairro-saude': '/instalacao-ar-condicionado-saude',
-      'bairro-higienopolis': '/instalacao-ar-condicionado-higienopolis',
-      'bairro-lapa': '/instalacao-ar-condicionado-lapa',
-      'bairro-santo-amaro': '/instalacao-ar-condicionado-santo-amaro',
-      'bairro-tucuruvi': '/instalacao-ar-condicionado-tucuruvi',
-      'bairro-ipiranga': '/instalacao-ar-condicionado-ipiranga',
-      'bairro-vila-prudente': '/instalacao-ar-condicionado-vila-prudente',
-      'bairro-jabaquara': '/instalacao-ar-condicionado-jabaquara',
-      'bairro-campo-grande': '/instalacao-ar-condicionado-campo-grande',
-      'bairro-penha': '/instalacao-ar-condicionado-penha',
-      'bairro-cursino': '/instalacao-ar-condicionado-cursino',
-      'bairro-agua-rasa': '/instalacao-ar-condicionado-agua-rasa',
-      'bairro-bela-vista': '/instalacao-ar-condicionado-bela-vista',
-      'bairro-butanta': '/instalacao-ar-condicionado-butanta',
-      'bairro-vila-olimpia': '/instalacao-ar-condicionado-vila-olimpia',
-      'bairro-pompeia': '/instalacao-ar-condicionado-pompeia',
-      'bairro-paraiso': '/instalacao-ar-condicionado-paraiso',
-      'bairro-aclimacao': '/instalacao-ar-condicionado-aclimacao',
-      'bairro-mirandopolis': '/instalacao-ar-condicionado-mirandopolis',
-      'bairro-planalto-paulista': '/instalacao-ar-condicionado-planalto-paulista',
-      'bairro-vila-clementino': '/instalacao-ar-condicionado-vila-clementino',
-      'bairro-chacara-klabin': '/instalacao-ar-condicionado-chacara-klabin',
-      'bairro-cambuci': '/instalacao-ar-condicionado-cambuci',
-      'bairro-liberdade': '/instalacao-ar-condicionado-liberdade',
-      'segmento-clinica': '/ar-condicionado-clinica-medica-sp',
-      'segmento-escritorio': '/ar-condicionado-escritorio-sao-paulo',
-      'segmento-condominio': '/ar-condicionado-condominio-sp',
-      'segmento-restaurante': '/ar-condicionado-restaurante-sp',
-      'segmento-hotel': '/ar-condicionado-hotel-sp',
-      'segmento-pousada': '/ar-condicionado-pousada-sp',
-      'segmento-academia': '/ar-condicionado-academia-sp',
-      'segmento-escola': '/ar-condicionado-escola-sp',
-      'sem-instalacao': '/instalacao-ar-condicionado-sp',
-      'sem-manutencao': '/manutencao-ar-condicionado-sp',
-      'sem-tecnico': '/tecnico-ar-condicionado-sp',
-      'sem-conserto': '/conserto-ar-condicionado-sp',
-      'sem-empresa': '/empresa-ar-condicionado-sp',
-      'sem-assistencia': '/assistencia-tecnica-ar-condicionado-sp',
-      'res-apartamento': '/ar-condicionado-apartamento-sp',
-      'res-residencial': '/ar-condicionado-residencial-sp',
-      'res-casa': '/ar-condicionado-casa-sp',
-      'res-condominio-inst': '/instalacao-ar-condicionado-condominio-sp',
-      'sao-paulo': '/ar-condicionado-sao-paulo',
-      'santo-andre': '/ar-condicionado-santo-andre',
-      'sao-bernardo': '/ar-condicionado-sao-bernardo-do-campo',
-      'sao-caetano': '/ar-condicionado-sao-caetano-do-sul',
-      'diadema': '/ar-condicionado-diadema',
-      'maua': '/ar-condicionado-maua',
-      'blog-inverter': '/blog/ar-condicionado-inverter',
-      'blog-apartamento': '/blog/instalacao-ar-condicionado-apartamento-sp',
-      'blog-btus': '/blog/como-calcular-btus-ar-condicionado',
-      'blog-pmoc': '/blog/pmoc-obrigatorio-sao-paulo',
-      'blog-round-cassette': '/blog/lg-round-cassette',
-      'blog-obra-limpa': '/blog/instalacao-ar-condicionado-obra-limpa',
-      'blog-quarto': '/blog/ar-condicionado-quarto',
-      'blog-convencional-inverter': '/blog/split-convencional-vs-inverter',
-      'blog-empresas': '/blog/ar-condicionado-empresas-vrf',
-      'blog-pmoc-obrigatorio': '/blog/pmoc-obrigatorio-sao-paulo-lei',
-      'blog-multa-pmoc': '/blog/multa-pmoc-sao-paulo',
-      'blog-pmoc-condominio': '/blog/pmoc-condominios-sao-paulo',
-      'blog-custo-pmoc': '/blog/quanto-custa-pmoc-sao-paulo',
-      'blog-custo-instalacao': '/blog/quanto-custa-instalar-ar-condicionado-sp',
-      'blog-qual-ac': '/blog/qual-ar-condicionado-comprar-2026',
-      'blog-split-multi-split': '/blog/split-vs-multi-split-apartamento-sp',
-      'blog-manutencao-consequencias': '/blog/manutencao-ar-condicionado-consequencias',
-      'blog-saude': '/blog/ar-condicionado-faz-mal-saude',
-      'blog-dormir': '/blog/dormir-com-ar-condicionado-faz-mal',
-      'blog-consumo': '/blog/ar-condicionado-gasta-mais-dia-ou-noite',
-      'blog-quanto-gasta': '/blog/quanto-gasta-ar-condicionado-inverter',
-      'blog-mau-cheiro': '/blog/mau-cheiro-ar-condicionado',
-      'blog-desliga-sozinho': '/blog/ar-condicionado-desliga-sozinho',
-      'blog-vida-util': '/blog/vida-util-ar-condicionado',
-      'blog-temperatura': '/blog/temperatura-ideal-ar-condicionado',
-      'blog-funcao-dry': '/blog/funcao-dry-ar-condicionado',
-      'blog-gas': '/blog/gas-r32-r410a-ar-condicionado',
-      'blog-nao-gela': '/blog/ar-condicionado-nao-gela',
-      'blog-pingando-agua': '/blog/ar-condicionado-pingando-agua',
-      'blog-limpeza-sp': '/blog/limpeza-ar-condicionado-sp',
-      'blog-conserto-sp': '/blog/conserto-ar-condicionado-sp',
-      'blog-manutencao-preventiva-sp': '/blog/manutencao-preventiva-ar-condicionado-sp',
-      'blog-sala': '/blog/ar-condicionado-sala-de-estar',
-      'blog-escritorio-sp': '/blog/ar-condicionado-escritorio-sp',
-      'blog-custo-limpeza': '/blog/quanto-custa-limpeza-ar-condicionado',
-      'blog-barulhento': '/blog/ar-condicionado-barulhento',
-      'blog-nao-liga': '/blog/ar-condicionado-nao-liga',
-      'manutencao-santo-andre': '/manutencao-ar-condicionado-santo-andre',
-      'limpeza-santo-andre': '/limpeza-ar-condicionado-santo-andre',
-      'pmoc-santo-andre': '/pmoc-santo-andre',
-      'manutencao-sao-bernardo': '/manutencao-ar-condicionado-sao-bernardo-do-campo',
-      'limpeza-sao-bernardo': '/limpeza-ar-condicionado-sao-bernardo-do-campo',
-      'pmoc-sao-bernardo': '/pmoc-sao-bernardo-do-campo',
-      'manutencao-sao-caetano': '/manutencao-ar-condicionado-sao-caetano-do-sul',
-      'limpeza-sao-caetano': '/limpeza-ar-condicionado-sao-caetano-do-sul',
-      'pmoc-sao-caetano': '/pmoc-sao-caetano-do-sul',
-      'manutencao-diadema': '/manutencao-ar-condicionado-diadema',
-      'limpeza-diadema': '/limpeza-ar-condicionado-diadema',
-      'pmoc-diadema': '/pmoc-diadema',
-      'manutencao-maua': '/manutencao-ar-condicionado-maua',
-      'limpeza-maua': '/limpeza-ar-condicionado-maua',
-      'pmoc-maua': '/pmoc-maua',
-      'seg-farmacia': '/ar-condicionado-farmacia-sao-paulo',
-      'seg-odonto': '/ar-condicionado-consultorio-odontologico-sao-paulo',
-      'seg-salao': '/ar-condicionado-salao-beleza-sao-paulo',
-      'seg-supermercado': '/ar-condicionado-supermercado-sao-paulo',
-      'seg-datacenter': '/ar-condicionado-data-center-sao-paulo',
-      'seg-coworking': '/ar-condicionado-coworking-sao-paulo',
-      'seg-igreja': '/ar-condicionado-igreja-sao-paulo',
-      'seg-laboratorio': '/ar-condicionado-laboratorio-sao-paulo',
-      'seg-petshop': '/ar-condicionado-pet-shop-sao-paulo',
-      'seg-estetica': '/ar-condicionado-clinica-estetica-sao-paulo',
-      'seg-loja': '/ar-condicionado-loja-varejo-sao-paulo',
-      'seg-banco': '/ar-condicionado-banco-financeira-sao-paulo',
-      'seg-padaria': '/ar-condicionado-padaria-sao-paulo',
-      'seg-concessionaria': '/ar-condicionado-concessionaria-sao-paulo',
-      'seg-advocacia': '/ar-condicionado-escritorio-advocacia-sao-paulo',
-      'seg-psicologia': '/ar-condicionado-consultorio-psicologia-sao-paulo',
-      'seg-fisioterapia': '/ar-condicionado-clinica-fisioterapia-sao-paulo',
-      'seg-creche': '/ar-condicionado-creche-sao-paulo',
-      'seg-bar': '/ar-condicionado-bar-pub-sao-paulo',
-      'servicos': '/servicos',
-      'inst-split': '/instalacao-ar-condicionado-split-sp',
-      'inst-cassete': '/instalacao-ar-condicionado-cassete-sp',
-      'inst-piso-teto': '/instalacao-ar-condicionado-piso-teto-sp',
-      'inst-multi-split': '/instalacao-multi-split-sp',
-      'inst-inverter': '/instalacao-ar-condicionado-inverter-sp',
-      'prob-nao-gela': '/ar-condicionado-nao-gela-sp',
-      'prob-vazando': '/ar-condicionado-vazando-agua-sp',
-      'prob-gas': '/recarga-gas-ar-condicionado-sp',
-      'prob-mau-cheiro': '/ar-condicionado-com-mau-cheiro-sp',
-      'prob-barulho': '/ar-condicionado-fazendo-barulho-sp',
-      'prob-desliga': '/ar-condicionado-desligando-sozinho-sp',
-      'serv-limpeza-sp': '/limpeza-ar-condicionado-sp',
-      'serv-higienizacao-sp': '/higienizacao-ar-condicionado-sp',
-      'serv-pmoc-sp': '/pmoc-sao-paulo',
-      'serv-contrato-sp': '/contrato-manutencao-ar-condicionado-sp',
-      'marca-lg': '/instalacao-ar-condicionado-lg-sao-paulo',
-      'marca-samsung': '/instalacao-ar-condicionado-samsung-sao-paulo',
-      'marca-daikin': '/instalacao-ar-condicionado-daikin-sao-paulo',
-      'marca-midea': '/instalacao-ar-condicionado-midea-sao-paulo',
-      'marca-fujitsu': '/instalacao-ar-condicionado-fujitsu-sao-paulo',
-      'marca-carrier': '/instalacao-ar-condicionado-carrier-sao-paulo',
-      'marca-elgin': '/instalacao-ar-condicionado-elgin-sao-paulo',
-      'marca-gree': '/instalacao-ar-condicionado-gree-sao-paulo',
-      'marca-springer': '/instalacao-ar-condicionado-springer-carrier-sao-paulo',
-      'marca-komeco': '/instalacao-ar-condicionado-komeco-sao-paulo',
-      'marca-philco': '/instalacao-ar-condicionado-philco-sao-paulo',
-      'marca-electrolux': '/instalacao-ar-condicionado-electrolux-sao-paulo',
-      'marca-trane': '/instalacao-ar-condicionado-trane-sao-paulo',
-      'marca-york': '/instalacao-ar-condicionado-york-sao-paulo',
-      'marca-hitachi': '/instalacao-ar-condicionado-hitachi-sao-paulo',
-      'marca-panasonic': '/instalacao-ar-condicionado-panasonic-sao-paulo',
-      'marca-bosch': '/instalacao-ar-condicionado-bosch-sao-paulo',
-      'marca-tcl': '/instalacao-ar-condicionado-tcl-sao-paulo',
-      'marca-agratto': '/instalacao-ar-condicionado-agratto-sao-paulo',
-      'marca-consul': '/instalacao-ar-condicionado-consul-sao-paulo',
-      'bairro-jardim-paulista': '/instalacao-ar-condicionado-jardim-paulista',
-      'bairro-jardim-europa': '/instalacao-ar-condicionado-jardim-europa',
-      'bairro-vila-andrade': '/instalacao-ar-condicionado-vila-andrade',
-      'bairro-campo-limpo': '/instalacao-ar-condicionado-campo-limpo',
-      'bairro-interlagos': '/instalacao-ar-condicionado-interlagos',
-      'bairro-cerqueira-cesar': '/instalacao-ar-condicionado-cerqueira-cesar',
-      'bairro-pacaembu': '/instalacao-ar-condicionado-pacaembu',
-      'bairro-sumare': '/instalacao-ar-condicionado-sumare',
-      'bairro-vila-leopoldina': '/instalacao-ar-condicionado-vila-leopoldina',
-      'bairro-barra-funda': '/instalacao-ar-condicionado-barra-funda',
-      'bairro-alto-de-pinheiros': '/instalacao-ar-condicionado-alto-de-pinheiros',
-      'bairro-consolacao': '/instalacao-ar-condicionado-consolacao',
-      'bairro-vila-guilherme': '/instalacao-ar-condicionado-vila-guilherme',
-      'bairro-vila-maria': '/instalacao-ar-condicionado-vila-maria',
-      'bairro-casa-verde': '/instalacao-ar-condicionado-casa-verde',
-      'bairro-mandaqui': '/instalacao-ar-condicionado-mandaqui',
-      'bairro-tremembe': '/instalacao-ar-condicionado-tremembe',
-      'bairro-freguesia-do-o': '/instalacao-ar-condicionado-freguesia-do-o',
-      'bairro-limao': '/instalacao-ar-condicionado-limao',
-      'bairro-belem': '/instalacao-ar-condicionado-belem',
-      'bairro-bras': '/instalacao-ar-condicionado-bras',
-      'bairro-carrao': '/instalacao-ar-condicionado-carrao',
-      'bairro-vila-formosa': '/instalacao-ar-condicionado-vila-formosa',
-      'bairro-sapopemba': '/instalacao-ar-condicionado-sapopemba',
-      'bairro-penha-de-franca': '/instalacao-ar-condicionado-penha-de-franca',
-      'bairro-jardim-analia': '/instalacao-ar-condicionado-jardim-analia',
-      'bairro-aricanduva': '/instalacao-ar-condicionado-aricanduva',
-      'bairro-republica': '/instalacao-ar-condicionado-republica',
-      'bairro-santa-cecilia': '/instalacao-ar-condicionado-santa-cecilia',
-      'bairro-bom-retiro': '/instalacao-ar-condicionado-bom-retiro',
-      'zona-sul': '/ar-condicionado-zona-sul-sp',
-      'zona-norte': '/ar-condicionado-zona-norte-sp',
-      'zona-leste': '/ar-condicionado-zona-leste-sp',
-      'zona-oeste': '/ar-condicionado-zona-oeste-sp',
-      'zona-central': '/ar-condicionado-zona-central-sp',
-    }
-    const path = routes[page] || '/'
-    router.push(path)
+    router.push(pageToPath(page))
     setIsMobileMenuOpen(false);
     if (typeof window !== 'undefined') {
       window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -615,37 +645,37 @@ export default function App({ pathname: initialPathname = '/' }: { pathname?: st
         {/* Header */}
         <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-slate-100">
           <div className="container mx-auto px-4 h-28 md:h-32 flex items-center justify-between">
-            <div 
+            <Link 
+              href={pageToPath('home')}
               className="flex items-center cursor-pointer group" 
-              onClick={() => navigate('home')}
             >
               <img 
                 src="https://cdn.coteibem.com.br/company/41315/logo/f4d0405d-28b6-4834-a8ca-9e63b68073fa.png" 
                 alt="New Clima Ar Condicionado — Instalação e Manutenção em SP e ABC" 
                 className="h-24 md:h-28 w-auto object-contain transition-transform group-hover:scale-105"
               />
-            </div>
+            </Link>
 
             <nav className="hidden lg:flex items-center gap-1">
-              <button onClick={() => navigate('home')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light transition-colors">Início</button>
-              <button onClick={() => navigate('servicos')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light transition-colors">Serviços</button>
+              <Link href={pageToPath('home')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light transition-colors">Início</Link>
+              <Link href={pageToPath('servicos')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light transition-colors">Serviços</Link>
               <button onClick={() => { navigate('home'); setTimeout(() => { document.getElementById('depoimentos')?.scrollIntoView({ behavior: 'smooth' }); }, 300); }} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light transition-colors">Depoimentos</button>
               <div className="relative group">
                 <button className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light flex items-center gap-1">
                   Regiões <ChevronDown size={14} />
                 </button>
                 <div className="absolute top-full left-0 w-56 bg-white shadow-xl rounded-xl border border-slate-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all translate-y-2 group-hover:translate-y-0">
-                  <button onClick={() => navigate('sao-paulo')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors text-slate-700">São Paulo (Capital)</button>
-                  <button onClick={() => navigate('santo-andre')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors text-slate-700">Santo André</button>
-                  <button onClick={() => navigate('sao-bernardo')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors text-slate-700">São Bernardo do Campo</button>
-                  <button onClick={() => navigate('sao-caetano')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors text-slate-700">São Caetano do Sul</button>
-                  <button onClick={() => navigate('diadema')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors text-slate-700">Diadema</button>
-                  <button onClick={() => navigate('maua')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors text-slate-700">Mauá</button>
+                  <Link href={pageToPath('sao-paulo')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors text-slate-700">São Paulo (Capital)</Link>
+                  <Link href={pageToPath('santo-andre')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors text-slate-700">Santo André</Link>
+                  <Link href={pageToPath('sao-bernardo')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors text-slate-700">São Bernardo do Campo</Link>
+                  <Link href={pageToPath('sao-caetano')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors text-slate-700">São Caetano do Sul</Link>
+                  <Link href={pageToPath('diadema')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors text-slate-700">Diadema</Link>
+                  <Link href={pageToPath('maua')} className="w-full text-left px-4 py-2 text-sm hover:bg-ice hover:text-primary-light transition-colors text-slate-700">Mauá</Link>
                 </div>
               </div>
-              <button onClick={() => navigate('blog')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light">Blog</button>
-              <button onClick={() => navigate('sobre')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light">Quem Somos</button>
-              <button onClick={() => navigate('contato')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light">Contato</button>
+              <Link href={pageToPath('blog')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light">Blog</Link>
+              <Link href={pageToPath('sobre')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light">Quem Somos</Link>
+              <Link href={pageToPath('contato')} className="px-4 py-2 text-sm font-semibold text-slate-700 hover:text-primary-light">Contato</Link>
               <WhatsAppButton className="ml-4 h-11 text-sm px-5" text="WhatsApp (11) 96346-2516" />
             </nav>
 
@@ -665,13 +695,13 @@ export default function App({ pathname: initialPathname = '/' }: { pathname?: st
             }`}
           >
                 <div className="container mx-auto px-4 py-6 flex flex-col gap-4">
-                  <button onClick={() => navigate('home')} className="text-left font-semibold py-2 text-primary-light">Início</button>
-                  <button onClick={() => navigate('servicos')} className="text-left font-semibold py-2">Serviços</button>
+                  <Link href={pageToPath('home')} className="text-left font-semibold py-2 text-primary-light">Início</Link>
+                  <Link href={pageToPath('servicos')} className="text-left font-semibold py-2">Serviços</Link>
                   <button onClick={() => { setIsMobileMenuOpen(false); navigate('home'); setTimeout(() => { document.getElementById('depoimentos')?.scrollIntoView({ behavior: 'smooth' }); }, 300); }} className="text-left font-semibold py-2">Depoimentos</button>
                   <hr className="border-slate-100" />
-                  <button onClick={() => navigate('blog')} className="text-left font-semibold py-2">Blog</button>
-                  <button onClick={() => navigate('sobre')} className="text-left font-semibold py-2">Quem Somos</button>
-                  <button onClick={() => navigate('contato')} className="text-left font-semibold py-2">Contato</button>
+                  <Link href={pageToPath('blog')} className="text-left font-semibold py-2">Blog</Link>
+                  <Link href={pageToPath('sobre')} className="text-left font-semibold py-2">Quem Somos</Link>
+                  <Link href={pageToPath('contato')} className="text-left font-semibold py-2">Contato</Link>
                   <WhatsAppButton className="w-full mt-2" text="WhatsApp (11) 96346-2516" />
                 </div>
           </div>
@@ -961,11 +991,11 @@ export default function App({ pathname: initialPathname = '/' }: { pathname?: st
               <div>
                 <h4 className="font-bold text-white mb-6">Institucional</h4>
                 <ul className="space-y-3 text-sm text-blue-100/60">
-                  <li><button onClick={() => navigate('home')} className="hover:text-white transition-colors">Início</button></li>
-                  <li><button onClick={() => navigate('sobre')} className="hover:text-white transition-colors">Quem Somos</button></li>
-                  <li><button onClick={() => navigate('blog')} className="hover:text-white transition-colors">Blog</button></li>
-                  <li><button onClick={() => navigate('contato')} className="hover:text-white transition-colors">Contato</button></li>
-                  <li><button onClick={() => navigate('mapa-site')} className="hover:text-white transition-colors">Mapa do Site</button></li>
+                  <li><Link href={pageToPath('home')} className="hover:text-white transition-colors">Início</Link></li>
+                  <li><Link href={pageToPath('sobre')} className="hover:text-white transition-colors">Quem Somos</Link></li>
+                  <li><Link href={pageToPath('blog')} className="hover:text-white transition-colors">Blog</Link></li>
+                  <li><Link href={pageToPath('contato')} className="hover:text-white transition-colors">Contato</Link></li>
+                  <li><Link href={pageToPath('mapa-site')} className="hover:text-white transition-colors">Mapa do Site</Link></li>
                   <li>
                     <a
                       href="https://maps.app.goo.gl/kHeynjnXoG943iG3A"
@@ -1002,7 +1032,7 @@ export default function App({ pathname: initialPathname = '/' }: { pathname?: st
               <p>© 2026 New Clima Ar Condicionado. Todos os direitos reservados.</p>
               <div className="flex gap-6">
                 <a href="#" className="hover:text-white transition-colors">Política de Privacidade</a>
-                <button onClick={() => navigate('mapa-site')} className="hover:text-white transition-colors">Mapa do Site</button>
+                <Link href={pageToPath('mapa-site')} className="hover:text-white transition-colors">Mapa do Site</Link>
               </div>
             </div>
           </div>
@@ -1161,22 +1191,30 @@ function RegionsTabs({ navigate }: { navigate: (p: PageId) => void }) {
 
       {/* Bairros Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mb-6">
-        {active.bairros.map((bairro, i) => (
-          <div key={i} className="flex items-center gap-2 text-sm text-slate-600 font-medium">
-            <MapPin size={13} className="text-primary-light shrink-0" />
-            {bairro}
-          </div>
-        ))}
+        {active.bairros.map((bairro, i) => {
+          const bPage = BAIRRO_PAGE_MAP[bairro]
+          return bPage ? (
+            <Link key={i} href={pageToPath(bPage)} className="flex items-center gap-2 text-sm text-slate-600 font-medium hover:text-primary-light transition-colors">
+              <MapPin size={13} className="text-primary-light shrink-0" />
+              {bairro}
+            </Link>
+          ) : (
+            <div key={i} className="flex items-center gap-2 text-sm text-slate-600 font-medium">
+              <MapPin size={13} className="text-primary-light shrink-0" />
+              {bairro}
+            </div>
+          )
+        })}
       </div>
 
       <div className="flex items-center justify-between">
         <p className="text-slate-400 text-sm">{active.bairros.length} localidades cobertas em {active.label}.</p>
-        <button
-          onClick={() => navigate(active.page)}
+        <Link
+          href={pageToPath(active.page)}
           className="text-primary-light font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all"
         >
           Ver página completa <ArrowRight size={14} />
-        </button>
+        </Link>
       </div>
     </div>
   )
@@ -1436,10 +1474,10 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                 page: 'sistemas-comerciais' as PageId,
               },
             ].map((s, i) => (
-              <div
+              <Link
                 key={i}
-                onClick={() => navigate(s.page)}
-                className="group cursor-pointer bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+                href={pageToPath(s.page)}
+                className="group cursor-pointer bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 block"
               >
                 <div className="relative h-52 overflow-hidden">
                   <img
@@ -1469,7 +1507,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                     Saiba mais <ArrowRight size={14} />
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -1510,10 +1548,10 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                 page: 'manutencao-preventiva' as PageId,
               },
             ].map((seg, i) => (
-              <div
+              <Link
                 key={i}
-                onClick={() => navigate(seg.page)}
-                className="bg-white p-8 rounded-2xl border border-slate-200 hover:border-primary hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
+                href={pageToPath(seg.page)}
+                className="bg-white p-8 rounded-2xl border border-slate-200 hover:border-primary hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer group block"
               >
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary-light mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
                   {seg.icon}
@@ -1523,7 +1561,7 @@ function HomeView({ navigate }: { navigate: (p: PageId) => void }) {
                 <div className="flex items-center gap-2 text-primary-light font-semibold text-sm group-hover:gap-3 transition-all">
                   Ver serviços <ArrowRight size={14} />
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -2002,9 +2040,9 @@ function ServiceDetailView({ service, navigate }: { service: string, navigate: (
       {service === 'corretiva' && <ManutencaoCorretiva />}
       {service === 'limpeza' && <LimpezaHigienizacao />}
       <div className="container mx-auto px-4 pb-20">
-        <button onClick={() => navigate('home')} className="text-primary-light font-bold flex items-center gap-2 hover:gap-3 transition-all">
+        <Link href={pageToPath('home')} className="text-primary-light font-bold flex items-center gap-2 hover:gap-3 transition-all">
           <ArrowRight size={16} className="rotate-180" /> Voltar para Home
-        </button>
+        </Link>
       </div>
     </div>
   );
@@ -2012,9 +2050,9 @@ function ServiceDetailView({ service, navigate }: { service: string, navigate: (
 
 function BlogView({ navigate, postId }: { navigate: (p: PageId) => void, postId?: string }) {
   const BackButton = () => (
-    <button onClick={() => navigate('blog')} className="mb-20 text-primary-light font-bold flex items-center gap-2 hover:gap-3 transition-all">
+    <Link href={pageToPath('blog')} className="mb-20 text-primary-light font-bold flex items-center gap-2 hover:gap-3 transition-all">
       <ArrowRight size={16} className="rotate-180" /> Voltar para Blog
-    </button>
+    </Link>
   );
 
   if (postId === 'inverter') return <div className="container mx-auto px-4"><BlogInverter /><BackButton /></div>;
@@ -2069,172 +2107,172 @@ function BlogView({ navigate, postId }: { navigate: (p: PageId) => void, postId?
           title="PMOC Obrigatório: O Que É e Quem Precisa Ter em SP"
           desc="Lei 13.589/2018 exige PMOC para empresas com mais de 60.000 BTUs. Multas chegam a R$ 1,5 milhão."
           image="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-pmoc-obrigatorio')}
+          page='blog-pmoc-obrigatorio'
         />
         <BlogCard 
           title="Multa por Não Ter PMOC: R$ 2.000 a R$ 1,5 Milhão"
           desc="Como funciona a fiscalização da Vigilância Sanitária em SP e como regularizar antes de ser autuado."
           image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-multa-pmoc')}
+          page='blog-multa-pmoc'
         />
         <BlogCard 
           title="PMOC para Condomínios em SP: Guia para Síndicos"
           desc="Responsabilidades do síndico, quais condomínios são obrigados e passo a passo para regularizar."
           image="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-pmoc-condominio')}
+          page='blog-pmoc-condominio'
         />
         <BlogCard 
           title="Quanto Custa o PMOC em São Paulo em 2026?"
           desc="Tabela de preços por porte de empresa, o que está incluso e cálculo de ROI do contrato."
           image="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-custo-pmoc')}
+          page='blog-custo-pmoc'
         />
         <BlogCard 
           title="Quanto Custa Instalar Ar Condicionado em SP em 2026?"
           desc="Tabela completa de preços por tipo de sistema, o que está incluso e o que encarece a instalação."
           image="https://images.unsplash.com/photo-1621905252507-b353174ad739?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-custo-instalacao')}
+          page='blog-custo-instalacao'
         />
         <BlogCard 
           title="Qual Ar Condicionado Comprar em 2026?"
           desc="Guia completo: Inverter vs Convencional, melhores marcas para SP e como calcular BTUs."
           image="https://images.unsplash.com/photo-1563228911-37d40078021a?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-qual-ac')}
+          page='blog-qual-ac'
         />
         <BlogCard 
           title="Split ou Multi Split para Apartamento em SP?"
           desc="Quando escolher cada sistema, diferenças de custo e qual é mais econômico no longo prazo."
           image="https://images.unsplash.com/photo-1513584684374-8bdb7489feef?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-split-multi-split')}
+          page='blog-split-multi-split'
         />
         <BlogCard 
           title="O Que Acontece Sem Manutenção no Ar Condicionado?"
           desc="Do aumento na conta de luz à morte prematura do compressor — o que esperar mês a mês."
           image="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-manutencao-consequencias')}
+          page='blog-manutencao-consequencias'
         />
         <BlogCard 
           title="Ar Condicionado Inverter"
           desc="Entenda por que a tecnologia inverter é a melhor escolha para economia."
           image="https://images.unsplash.com/photo-1596752763335-513470717c18?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-inverter')}
+          page='blog-inverter'
         />
         <BlogCard 
           title="Instalação em Apartamento"
           desc="O que você precisa saber antes de instalar ar condicionado em condomínios."
           image="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-apartamento')}
+          page='blog-apartamento'
         />
         <BlogCard 
           title="Cálculo de BTUs"
           desc="Aprenda a calcular a potência ideal para cada tipo de ambiente."
           image="https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-btus')}
+          page='blog-btus'
         />
         <BlogCard 
           title="PMOC: Tudo que você precisa saber"
           desc="Guia básico sobre o Plano de Manutenção, Operação e Controle."
           image="https://images.unsplash.com/photo-1504917595217-d4dc5f6b276d?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-pmoc')}
+          page='blog-pmoc'
         />
         <BlogCard 
           title="LG Round Cassette"
           desc="Conheça o design e a eficiência do cassete circular 360° da LG."
           image="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-round-cassette')}
+          page='blog-round-cassette'
         />
         <BlogCard 
           title="Instalação Obra Limpa"
           desc="Saiba como é possível instalar seu ar sem sujeira e quebra-quebra."
           image="https://images.unsplash.com/photo-1527359443443-84a48abc7dfd?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-obra-limpa')}
+          page='blog-obra-limpa'
         />
         <BlogCard 
           title="Ar no Quarto"
           desc="Dicas para posicionar o aparelho e ter noites de sono perfeitas."
           image="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-quarto')}
+          page='blog-quarto'
         />
         <BlogCard 
           title="Convencional vs Inverter"
           desc="Qual a melhor escolha para sua realidade e seu bolso?"
           image="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-convencional-inverter')}
+          page='blog-convencional-inverter'
         />
         <BlogCard 
           title="Sistemas VRF"
           desc="A solução definitiva para grandes residências e empresas."
           image="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-empresas')}
+          page='blog-empresas'
         />
         <BlogCard
           title="Ar Condicionado Faz Mal à Saúde?"
           desc="Saiba quando o ar condicionado prejudica a saúde e como evitar com manutenção regular em SP."
           image="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-saude')}
+          page='blog-saude'
         />
         <BlogCard
           title="Dormir com Ar Condicionado Faz Mal?"
           desc="Temperatura certa e aparelho limpo fazem toda a diferença. Veja as melhores práticas para SP."
           image="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-dormir')}
+          page='blog-dormir'
         />
         <BlogCard
           title="Gasta Mais de Dia ou à Noite?"
           desc="Descubra quando o ar condicionado consome mais energia em SP e como economizar na conta de luz."
           image="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-consumo')}
+          page='blog-consumo'
         />
         <BlogCard
           title="Quanto Gasta um Inverter por Mês?"
           desc="Tabela completa de consumo por BTUs e horas de uso. Calcule o gasto real do seu aparelho em SP."
           image="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-quanto-gasta')}
+          page='blog-quanto-gasta'
         />
         <BlogCard
           title="Mau Cheiro no Ar Condicionado"
           desc="Causas do mau cheiro e como eliminar de vez com higienização profissional em São Paulo."
           image="https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-mau-cheiro')}
+          page='blog-mau-cheiro'
         />
         <BlogCard
           title="Ar Condicionado Desliga Sozinho"
           desc="7 causas para o desligamento automático e como resolver. Atendimento em SP e ABC."
           image="https://images.unsplash.com/photo-1621905252507-b353174ad739?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-desliga-sozinho')}
+          page='blog-desliga-sozinho'
         />
         <BlogCard
           title="Qual a Vida Útil do Ar Condicionado?"
           desc="Um split bem mantido dura até 15 anos. Saiba o que reduz a vida útil e como prolongar."
           image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-vida-util')}
+          page='blog-vida-util'
         />
         <BlogCard
           title="Temperatura Ideal do Ar Condicionado"
           desc="Entre 23°C e 25°C é o ideal para conforto e economia em São Paulo. Saiba o impacto na conta de luz."
           image="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-temperatura')}
+          page='blog-temperatura'
         />
         <BlogCard
           title="Função Dry: Para que Serve?"
           desc="O modo Dry desumidifica o ar sem resfriar demais. Ideal para dias úmidos e chuvosos em SP."
           image="https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-funcao-dry')}
+          page='blog-funcao-dry'
         />
         <BlogCard
           title="Gás R32 e R410A: Qual a Diferença?"
           desc="Entenda a diferença entre os gases refrigerantes e por que nunca devem ser misturados."
           image="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800"
-          onClick={() => navigate('blog-gas')}
+          page='blog-gas'
         />
       </div>
     </div>
   );
 }
 
-function BlogCard({ title, desc, image, onClick }: { title: string, desc: string, image?: string, onClick: () => void }) {
+function BlogCard({ title, desc, image, page }: { title: string, desc: string, image?: string, page: PageId }) {
   return (
-    <div onClick={onClick} className="bg-white border border-slate-200 rounded-3xl p-8 hover:shadow-xl transition-all cursor-pointer group">
+    <Link href={pageToPath(page)} className="bg-white border border-slate-200 rounded-3xl p-8 hover:shadow-xl transition-all cursor-pointer group block">
       <div className="w-full h-48 bg-slate-100 rounded-2xl mb-6 overflow-hidden">
         <img 
           src={image || `https://picsum.photos/seed/${title}/600/400`} 
@@ -2247,7 +2285,7 @@ function BlogCard({ title, desc, image, onClick }: { title: string, desc: string
       <h3 className="text-xl font-bold text-primary mb-3">{title}</h3>
       <p className="text-slate-500 text-sm mb-6">{desc}</p>
       <div className="text-primary-light font-bold text-sm flex items-center gap-2">Ler Artigo <ArrowRight size={16} /></div>
-    </div>
+    </Link>
   );
 }
 
@@ -2324,12 +2362,12 @@ function AboutView({ navigate }: { navigate: (p: PageId) => void }) {
         <p className="text-blue-100/70 mb-10 max-w-2xl mx-auto text-lg">Seja para instalação residencial ou manutenção corporativa em SP e ABC, a New Clima Ar é sua parceira de confiança.</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <WhatsAppButton text="Falar com um Especialista" className="bg-white !text-primary hover:bg-blue-50" />
-          <button 
-            onClick={() => navigate('contato')}
-            className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-xl transition-all border border-white/20"
+          <Link 
+            href={pageToPath('contato')}
+            className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-xl transition-all border border-white/20 inline-block"
           >
             Ver Canais de Contato
-          </button>
+          </Link>
         </div>
       </div>
     </div>
@@ -2427,9 +2465,9 @@ function RegionView({ region, navigate }: { region: string, navigate: (p: PageId
       {region === 'diadema' && <DiademaMauaRegion regionName="Diadema" navigate={navigate} />}
       {region === 'maua' && <DiademaMauaRegion regionName="Mauá" navigate={navigate} />}
       <div className="container mx-auto px-4 pb-20">
-        <button onClick={() => navigate('home')} className="text-primary-light font-bold flex items-center gap-2">
+        <Link href={pageToPath('home')} className="text-primary-light font-bold flex items-center gap-2">
           <ArrowRight size={16} className="rotate-180" /> Voltar para Home
-        </button>
+        </Link>
       </div>
     </div>
   );
@@ -2460,9 +2498,9 @@ function SegmentoView({ slug, title, tag, headline, desc, dor, servicos, faq, vi
       <section className="bg-primary py-16">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-2 text-blue-100/50 text-sm mb-4">
-            <button onClick={() => navigate('home')} className="hover:text-white transition-colors">Início</button>
+            <Link href={pageToPath('home')} className="hover:text-white transition-colors">Início</Link>
             <span>/</span>
-            <button onClick={() => navigate('split-multisplit')} className="hover:text-white transition-colors">Serviços</button>
+            <Link href={pageToPath('split-multisplit')} className="hover:text-white transition-colors">Serviços</Link>
             <span>/</span>
             <span className="text-white font-medium">{title}</span>
           </div>
@@ -2574,9 +2612,9 @@ function SegmentoView({ slug, title, tag, headline, desc, dor, servicos, faq, vi
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-xl font-bold text-primary mb-4">Regiões atendidas em SP e ABC</h2>
           <p className="text-slate-500 text-sm mb-2">{vizinhos}</p>
-          <button onClick={() => navigate('sao-paulo')} className="text-primary-light font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all mt-2">
+          <Link href={pageToPath('sao-paulo')} className="text-primary-light font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all mt-2">
             Ver todas as regiões <ArrowRight size={13} />
-          </button>
+          </Link>
         </div>
       </section>
 
@@ -2621,9 +2659,9 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
       <section className="bg-primary py-16">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-2 text-blue-100/50 text-sm mb-4">
-            <button onClick={() => navigate('home')} className="hover:text-white transition-colors">Início</button>
+            <Link href={pageToPath('home')} className="hover:text-white transition-colors">Início</Link>
             <span>/</span>
-            <button onClick={() => navigate('sao-paulo')} className="hover:text-white transition-colors">São Paulo</button>
+            <Link href={pageToPath('sao-paulo')} className="hover:text-white transition-colors">São Paulo</Link>
             <span>/</span>
             <span className="text-white font-medium">{bairro}</span>
           </div>
@@ -2677,10 +2715,10 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {servicos.map((s, i) => (
-              <div
+              <Link
                 key={i}
-                onClick={() => navigate(s.page)}
-                className="p-6 bg-white rounded-2xl border border-slate-100 hover:border-primary hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
+                href={pageToPath(s.page)}
+                className="p-6 bg-white rounded-2xl border border-slate-100 hover:border-primary hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer group block"
               >
                 <span className={`inline-block text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-4 ${
                   s.tag === 'INSTALAÇÃO' ? 'bg-blue-100 text-blue-700' :
@@ -2695,7 +2733,7 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
                 <div className="flex items-center gap-2 text-primary-light font-semibold text-sm group-hover:gap-3 transition-all">
                   Saiba mais <ArrowRight size={13} />
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -2777,17 +2815,24 @@ function BairroView({ bairro, slug, zona, vizinhos, navigate }: {
           <h2 className="text-xl font-bold text-primary mb-3">Também atendemos bairros próximos a {bairro}</h2>
           <p className="text-slate-500 text-sm mb-6">Instalação, manutenção e limpeza de ar condicionado nos bairros vizinhos.</p>
           <div className="flex flex-wrap gap-3">
-            {vizinhos.map((v, i) => (
-              <div key={i} className="flex items-center gap-2 bg-ice px-4 py-2 rounded-full text-sm font-semibold text-primary-light">
-                <MapPin size={12} /> {v}
-              </div>
-            ))}
-            <button
-              onClick={() => navigate('sao-paulo')}
+            {vizinhos.map((v, i) => {
+              const vPage = BAIRRO_PAGE_MAP[v]
+              return vPage ? (
+                <Link key={i} href={pageToPath(vPage)} className="flex items-center gap-2 bg-ice px-4 py-2 rounded-full text-sm font-semibold text-primary-light hover:bg-primary/10 transition-colors">
+                  <MapPin size={12} /> {v}
+                </Link>
+              ) : (
+                <div key={i} className="flex items-center gap-2 bg-ice px-4 py-2 rounded-full text-sm font-semibold text-primary-light">
+                  <MapPin size={12} /> {v}
+                </div>
+              )
+            })}
+            <Link
+              href={pageToPath('sao-paulo')}
               className="flex items-center gap-2 bg-primary/10 px-4 py-2 rounded-full text-sm font-semibold text-primary hover:bg-primary/20 transition-colors"
             >
               Ver todas as regiões <ArrowRight size={12} />
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -2894,7 +2939,7 @@ function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
       <section className="bg-primary py-16">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-2 text-blue-100/50 text-sm mb-4">
-            <button onClick={() => navigate('home')} className="hover:text-white transition-colors">Início</button>
+            <Link href={pageToPath('home')} className="hover:text-white transition-colors">Início</Link>
             <span>/</span>
             <span className="text-white font-medium">Serviços</span>
           </div>
@@ -2955,12 +3000,12 @@ function ServicosView({ navigate }: { navigate: (p: PageId) => void }) {
                   </div>
 
                   <div className="flex items-center gap-4">
-                    <button
-                      onClick={() => navigate(s.page)}
+                    <Link
+                      href={pageToPath(s.page)}
                       className="flex items-center gap-2 text-primary-light font-bold text-sm hover:gap-3 transition-all"
                     >
                       Saiba mais <ArrowRight size={14} />
-                    </button>
+                    </Link>
                     <a
                       href="https://wa.me/5511963462516"
                       rel="noopener noreferrer"
@@ -3026,41 +3071,15 @@ function ZonaView({ zona, bairros, navigate }: {
   bairros: string[]
   navigate: (p: PageId) => void
 }) {
-  const bairroPageMap: Record<string, PageId> = {
-    'Vila Mariana': 'bairro-vila-mariana', 'Moema': 'bairro-moema', 'Brooklin': 'bairro-brooklin',
-    'Campo Belo': 'bairro-campo-belo', 'Itaim Bibi': 'bairro-itaim-bibi', 'Santo Amaro': 'bairro-santo-amaro',
-    'Jabaquara': 'bairro-jabaquara', 'Saúde': 'bairro-saude', 'Ipiranga': 'bairro-ipiranga',
-    'Cursino': 'bairro-cursino', 'Campo Grande': 'bairro-campo-grande', 'Morumbi': 'bairro-morumbi',
-    'Vila Andrade': 'bairro-vila-andrade', 'Vila Olímpia': 'bairro-vila-olimpia', 'Paraíso': 'bairro-paraiso',
-    'Aclimação': 'bairro-aclimacao', 'Mirandópolis': 'bairro-mirandopolis', 'Planalto Paulista': 'bairro-planalto-paulista',
-    'Vila Clementino': 'bairro-vila-clementino', 'Chácara Klabin': 'bairro-chacara-klabin', 'Cambuci': 'bairro-cambuci',
-    'Interlagos': 'bairro-interlagos', 'Campo Limpo': 'bairro-campo-limpo', 'Jardim Paulista': 'bairro-jardim-paulista',
-    'Jardim Europa': 'bairro-jardim-europa', 'Santana': 'bairro-santana', 'Tucuruvi': 'bairro-tucuruvi',
-    'Vila Guilherme': 'bairro-vila-guilherme', 'Vila Maria': 'bairro-vila-maria', 'Casa Verde': 'bairro-casa-verde',
-    'Mandaqui': 'bairro-mandaqui', 'Tremembé': 'bairro-tremembe', 'Freguesia do Ó': 'bairro-freguesia-do-o',
-    'Limão': 'bairro-limao', 'Tatuapé': 'bairro-tatuape', 'Anália Franco': 'bairro-analia-franco',
-    'Mooca': 'bairro-mooca', 'Vila Prudente': 'bairro-vila-prudente', 'Penha': 'bairro-penha',
-    'Carrão': 'bairro-carrao', 'Água Rasa': 'bairro-agua-rasa', 'Belém': 'bairro-belem',
-    'Brás': 'bairro-bras', 'Vila Formosa': 'bairro-vila-formosa', 'Sapopemba': 'bairro-sapopemba',
-    'Penha de França': 'bairro-penha-de-franca', 'Jardim Anália': 'bairro-jardim-analia', 'Aricanduva': 'bairro-aricanduva',
-    'Pinheiros': 'bairro-pinheiros', 'Vila Madalena': 'bairro-vila-madalena', 'Perdizes': 'bairro-perdizes',
-    'Lapa': 'bairro-lapa', 'Pompéia': 'bairro-pompeia', 'Butantã': 'bairro-butanta',
-    'Cerqueira César': 'bairro-cerqueira-cesar', 'Pacaembu': 'bairro-pacaembu', 'Sumaré': 'bairro-sumare',
-    'Vila Leopoldina': 'bairro-vila-leopoldina', 'Barra Funda': 'bairro-barra-funda', 'Alto de Pinheiros': 'bairro-alto-de-pinheiros',
-    'Consolação': 'bairro-consolacao', 'Higienópolis': 'bairro-higienopolis', 'Jardins': 'bairro-jardins',
-    'Bela Vista': 'bairro-bela-vista', 'Liberdade': 'bairro-liberdade', 'República': 'bairro-republica',
-    'Santa Cecília': 'bairro-santa-cecilia', 'Bom Retiro': 'bairro-bom-retiro',
-  }
-
   return (
     <div className="pt-10 pb-20">
       {/* Hero */}
       <section className="bg-primary py-16">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-2 text-blue-100/50 text-sm mb-4">
-            <button onClick={() => navigate('home')} className="hover:text-white">Início</button>
+            <Link href={pageToPath('home')} className="hover:text-white">Início</Link>
             <span>/</span>
-            <button onClick={() => navigate('sao-paulo')} className="hover:text-white">São Paulo</button>
+            <Link href={pageToPath('sao-paulo')} className="hover:text-white">São Paulo</Link>
             <span>/</span>
             <span className="text-white font-medium">{zona}</span>
           </div>
@@ -3103,7 +3122,7 @@ function ZonaView({ zona, bairros, navigate }: {
               { tag: 'LIMPEZA', title: `Limpeza na ${zona}`, desc: 'Higienização profunda com bactericida. Elimina fungos e mau cheiro.', page: 'limpeza' as PageId },
               { tag: 'CONSERTO', title: `Conserto na ${zona}`, desc: 'Diagnóstico rápido e conserto no mesmo dia na maioria dos casos.', page: 'manutencao-corretiva' as PageId },
             ].map((s, i) => (
-              <div key={i} onClick={() => navigate(s.page)} className="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-primary hover:shadow-xl hover:-translate-y-1 transition-all cursor-pointer group">
+              <Link key={i} href={pageToPath(s.page)} className="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-primary hover:shadow-xl hover:-translate-y-1 transition-all cursor-pointer group block">
                 <span className={`inline-block text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full mb-4 ${
                   s.tag === 'INSTALAÇÃO' ? 'bg-blue-100 text-blue-700' :
                   s.tag === 'MANUTENÇÃO' ? 'bg-emerald-100 text-emerald-700' :
@@ -3115,7 +3134,7 @@ function ZonaView({ zona, bairros, navigate }: {
                 <div className="flex items-center gap-2 text-primary-light font-semibold text-sm group-hover:gap-3 transition-all">
                   Saiba mais <ArrowRight size={13} />
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -3130,16 +3149,16 @@ function ZonaView({ zona, bairros, navigate }: {
           <p className="text-slate-500 mb-8">Clique no bairro para ver informações específicas sobre instalação e manutenção de ar condicionado.</p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
             {bairros.map((bairro, i) => {
-              const page = bairroPageMap[bairro]
+              const page = BAIRRO_PAGE_MAP[bairro]
               return page ? (
-                <button
+                <Link
                   key={i}
-                  onClick={() => navigate(page)}
+                  href={pageToPath(page)}
                   className="flex items-center gap-2 bg-white px-4 py-3 rounded-xl border border-slate-200 hover:border-primary hover:shadow-md transition-all text-sm font-semibold text-primary-light text-left group"
                 >
                   <MapPin size={13} className="shrink-0" />
                   {bairro}
-                </button>
+                </Link>
               ) : (
                 <div key={i} className="flex items-center gap-2 bg-white px-4 py-3 rounded-xl border border-slate-100 text-sm font-semibold text-slate-500">
                   <MapPin size={13} className="shrink-0" />
@@ -3212,44 +3231,74 @@ function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
   ]
 
   const bairroLinks = [
-    { label: 'Instalação de Ar Condicionado em Moema', page: 'bairro-moema' as PageId },
-    { label: 'Instalação de Ar Condicionado em Vila Mariana', page: 'bairro-vila-mariana' as PageId },
-    { label: 'Instalação de Ar Condicionado em Pinheiros', page: 'bairro-pinheiros' as PageId },
-    { label: 'Instalação de Ar Condicionado no Itaim Bibi', page: 'bairro-itaim-bibi' as PageId },
-    { label: 'Instalação de Ar Condicionado nos Jardins', page: 'bairro-jardins' as PageId },
-    { label: 'Instalação de Ar Condicionado no Tatuapé', page: 'bairro-tatuape' as PageId },
-    { label: 'Instalação de Ar Condicionado em Santana', page: 'bairro-santana' as PageId },
-    { label: 'Instalação de Ar Condicionado no Brooklin', page: 'bairro-brooklin' as PageId },
-    { label: 'Instalação de Ar Condicionado em Perdizes', page: 'bairro-perdizes' as PageId },
-    { label: 'Instalação de Ar Condicionado no Morumbi', page: 'bairro-morumbi' as PageId },
-    { label: 'Instalação de Ar Condicionado na Mooca', page: 'bairro-mooca' as PageId },
-    { label: 'Instalação de Ar Condicionado no Anália Franco', page: 'bairro-analia-franco' as PageId },
-    { label: 'Instalação de Ar Condicionado em Vila Madalena', page: 'bairro-vila-madalena' as PageId },
-    { label: 'Instalação de Ar Condicionado em Campo Belo', page: 'bairro-campo-belo' as PageId },
-    { label: 'Instalação de Ar Condicionado na Saúde', page: 'bairro-saude' as PageId },
-    { label: 'Instalação de Ar Condicionado em Higienópolis', page: 'bairro-higienopolis' as PageId },
-    { label: 'Instalação de Ar Condicionado na Lapa', page: 'bairro-lapa' as PageId },
-    { label: 'Instalação de Ar Condicionado em Santo Amaro', page: 'bairro-santo-amaro' as PageId },
-    { label: 'Instalação de Ar Condicionado no Tucuruvi', page: 'bairro-tucuruvi' as PageId },
-    { label: 'Instalação de Ar Condicionado no Ipiranga', page: 'bairro-ipiranga' as PageId },
-    { label: 'Instalação de Ar Condicionado em Vila Prudente', page: 'bairro-vila-prudente' as PageId },
-    { label: 'Instalação de Ar Condicionado em Jabaquara', page: 'bairro-jabaquara' as PageId },
-    { label: 'Instalação de Ar Condicionado em Campo Grande', page: 'bairro-campo-grande' as PageId },
-    { label: 'Instalação de Ar Condicionado em Penha', page: 'bairro-penha' as PageId },
-    { label: 'Instalação de Ar Condicionado em Cursino', page: 'bairro-cursino' as PageId },
-    { label: 'Instalação de Ar Condicionado em Água Rasa', page: 'bairro-agua-rasa' as PageId },
-    { label: 'Instalação de Ar Condicionado em Bela Vista', page: 'bairro-bela-vista' as PageId },
-    { label: 'Instalação de Ar Condicionado em Butantã', page: 'bairro-butanta' as PageId },
-    { label: 'Instalação de Ar Condicionado em Vila Olímpia', page: 'bairro-vila-olimpia' as PageId },
-    { label: 'Instalação de Ar Condicionado em Pompéia', page: 'bairro-pompeia' as PageId },
-    { label: 'Instalação de Ar Condicionado em Paraíso', page: 'bairro-paraiso' as PageId },
     { label: 'Instalação de Ar Condicionado em Aclimação', page: 'bairro-aclimacao' as PageId },
-    { label: 'Instalação de Ar Condicionado em Mirandópolis', page: 'bairro-mirandopolis' as PageId },
-    { label: 'Instalação de Ar Condicionado em Planalto Paulista', page: 'bairro-planalto-paulista' as PageId },
-    { label: 'Instalação de Ar Condicionado em Vila Clementino', page: 'bairro-vila-clementino' as PageId },
-    { label: 'Instalação de Ar Condicionado em Chácara Klabin', page: 'bairro-chacara-klabin' as PageId },
+    { label: 'Instalação de Ar Condicionado em Alto de Pinheiros', page: 'bairro-alto-de-pinheiros' as PageId },
+    { label: 'Instalação de Ar Condicionado em Anália Franco', page: 'bairro-analia-franco' as PageId },
+    { label: 'Instalação de Ar Condicionado em Aricanduva', page: 'bairro-aricanduva' as PageId },
+    { label: 'Instalação de Ar Condicionado em Barra Funda', page: 'bairro-barra-funda' as PageId },
+    { label: 'Instalação de Ar Condicionado em Bela Vista', page: 'bairro-bela-vista' as PageId },
+    { label: 'Instalação de Ar Condicionado em Belém', page: 'bairro-belem' as PageId },
+    { label: 'Instalação de Ar Condicionado em Bom Retiro', page: 'bairro-bom-retiro' as PageId },
+    { label: 'Instalação de Ar Condicionado em Brooklin', page: 'bairro-brooklin' as PageId },
+    { label: 'Instalação de Ar Condicionado em Brás', page: 'bairro-bras' as PageId },
+    { label: 'Instalação de Ar Condicionado em Butantã', page: 'bairro-butanta' as PageId },
     { label: 'Instalação de Ar Condicionado em Cambuci', page: 'bairro-cambuci' as PageId },
+    { label: 'Instalação de Ar Condicionado em Campo Belo', page: 'bairro-campo-belo' as PageId },
+    { label: 'Instalação de Ar Condicionado em Campo Grande', page: 'bairro-campo-grande' as PageId },
+    { label: 'Instalação de Ar Condicionado em Campo Limpo', page: 'bairro-campo-limpo' as PageId },
+    { label: 'Instalação de Ar Condicionado em Carrão', page: 'bairro-carrao' as PageId },
+    { label: 'Instalação de Ar Condicionado em Casa Verde', page: 'bairro-casa-verde' as PageId },
+    { label: 'Instalação de Ar Condicionado em Cerqueira César', page: 'bairro-cerqueira-cesar' as PageId },
+    { label: 'Instalação de Ar Condicionado em Chácara Klabin', page: 'bairro-chacara-klabin' as PageId },
+    { label: 'Instalação de Ar Condicionado em Consolação', page: 'bairro-consolacao' as PageId },
+    { label: 'Instalação de Ar Condicionado em Cursino', page: 'bairro-cursino' as PageId },
+    { label: 'Instalação de Ar Condicionado em Freguesia do Ó', page: 'bairro-freguesia-do-o' as PageId },
+    { label: 'Instalação de Ar Condicionado em Higienópolis', page: 'bairro-higienopolis' as PageId },
+    { label: 'Instalação de Ar Condicionado em Interlagos', page: 'bairro-interlagos' as PageId },
+    { label: 'Instalação de Ar Condicionado em Ipiranga', page: 'bairro-ipiranga' as PageId },
+    { label: 'Instalação de Ar Condicionado em Itaim Bibi', page: 'bairro-itaim-bibi' as PageId },
+    { label: 'Instalação de Ar Condicionado em Jabaquara', page: 'bairro-jabaquara' as PageId },
+    { label: 'Instalação de Ar Condicionado em Jardim Anália', page: 'bairro-jardim-analia' as PageId },
+    { label: 'Instalação de Ar Condicionado em Jardim Europa', page: 'bairro-jardim-europa' as PageId },
+    { label: 'Instalação de Ar Condicionado em Jardim Paulista', page: 'bairro-jardim-paulista' as PageId },
+    { label: 'Instalação de Ar Condicionado em Jardins', page: 'bairro-jardins' as PageId },
+    { label: 'Instalação de Ar Condicionado em Lapa', page: 'bairro-lapa' as PageId },
     { label: 'Instalação de Ar Condicionado em Liberdade', page: 'bairro-liberdade' as PageId },
+    { label: 'Instalação de Ar Condicionado em Limão', page: 'bairro-limao' as PageId },
+    { label: 'Instalação de Ar Condicionado em Mandaqui', page: 'bairro-mandaqui' as PageId },
+    { label: 'Instalação de Ar Condicionado em Mirandópolis', page: 'bairro-mirandopolis' as PageId },
+    { label: 'Instalação de Ar Condicionado em Moema', page: 'bairro-moema' as PageId },
+    { label: 'Instalação de Ar Condicionado em Mooca', page: 'bairro-mooca' as PageId },
+    { label: 'Instalação de Ar Condicionado em Morumbi', page: 'bairro-morumbi' as PageId },
+    { label: 'Instalação de Ar Condicionado em Pacaembu', page: 'bairro-pacaembu' as PageId },
+    { label: 'Instalação de Ar Condicionado em Paraíso', page: 'bairro-paraiso' as PageId },
+    { label: 'Instalação de Ar Condicionado em Penha', page: 'bairro-penha' as PageId },
+    { label: 'Instalação de Ar Condicionado em Penha de França', page: 'bairro-penha-de-franca' as PageId },
+    { label: 'Instalação de Ar Condicionado em Perdizes', page: 'bairro-perdizes' as PageId },
+    { label: 'Instalação de Ar Condicionado em Pinheiros', page: 'bairro-pinheiros' as PageId },
+    { label: 'Instalação de Ar Condicionado em Planalto Paulista', page: 'bairro-planalto-paulista' as PageId },
+    { label: 'Instalação de Ar Condicionado em Pompéia', page: 'bairro-pompeia' as PageId },
+    { label: 'Instalação de Ar Condicionado em República', page: 'bairro-republica' as PageId },
+    { label: 'Instalação de Ar Condicionado em Santa Cecília', page: 'bairro-santa-cecilia' as PageId },
+    { label: 'Instalação de Ar Condicionado em Santana', page: 'bairro-santana' as PageId },
+    { label: 'Instalação de Ar Condicionado em Santo Amaro', page: 'bairro-santo-amaro' as PageId },
+    { label: 'Instalação de Ar Condicionado em Sapopemba', page: 'bairro-sapopemba' as PageId },
+    { label: 'Instalação de Ar Condicionado em Saúde', page: 'bairro-saude' as PageId },
+    { label: 'Instalação de Ar Condicionado em Sumaré', page: 'bairro-sumare' as PageId },
+    { label: 'Instalação de Ar Condicionado em Tatuapé', page: 'bairro-tatuape' as PageId },
+    { label: 'Instalação de Ar Condicionado em Tremembé', page: 'bairro-tremembe' as PageId },
+    { label: 'Instalação de Ar Condicionado em Tucuruvi', page: 'bairro-tucuruvi' as PageId },
+    { label: 'Instalação de Ar Condicionado em Vila Andrade', page: 'bairro-vila-andrade' as PageId },
+    { label: 'Instalação de Ar Condicionado em Vila Clementino', page: 'bairro-vila-clementino' as PageId },
+    { label: 'Instalação de Ar Condicionado em Vila Formosa', page: 'bairro-vila-formosa' as PageId },
+    { label: 'Instalação de Ar Condicionado em Vila Guilherme', page: 'bairro-vila-guilherme' as PageId },
+    { label: 'Instalação de Ar Condicionado em Vila Leopoldina', page: 'bairro-vila-leopoldina' as PageId },
+    { label: 'Instalação de Ar Condicionado em Vila Madalena', page: 'bairro-vila-madalena' as PageId },
+    { label: 'Instalação de Ar Condicionado em Vila Maria', page: 'bairro-vila-maria' as PageId },
+    { label: 'Instalação de Ar Condicionado em Vila Mariana', page: 'bairro-vila-mariana' as PageId },
+    { label: 'Instalação de Ar Condicionado em Vila Olímpia', page: 'bairro-vila-olimpia' as PageId },
+    { label: 'Instalação de Ar Condicionado em Vila Prudente', page: 'bairro-vila-prudente' as PageId },
+    { label: 'Instalação de Ar Condicionado em Água Rasa', page: 'bairro-agua-rasa' as PageId },
   ]
 
   const regionLinks = [
@@ -3332,13 +3381,13 @@ function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
     <ul className="space-y-2">
       {links.map((link, i) => (
         <li key={i}>
-          <button
-            onClick={() => navigate(link.page)}
+          <Link
+            href={pageToPath(link.page)}
             className="flex items-start gap-2 text-slate-600 hover:text-primary-light text-sm font-medium transition-colors group text-left"
           >
             <ArrowRight size={12} className="text-primary-light shrink-0 mt-1 group-hover:translate-x-1 transition-transform" />
             {link.label}
-          </button>
+          </Link>
         </li>
       ))}
     </ul>
@@ -3348,7 +3397,7 @@ function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
     <div className="py-16 container mx-auto px-4 max-w-5xl">
       {/* Breadcrumb */}
       <div className="flex items-center gap-2 text-sm text-slate-400 mb-8">
-        <button onClick={() => navigate('home')} className="hover:text-primary-light transition-colors">Início</button>
+        <Link href={pageToPath('home')} className="hover:text-primary-light transition-colors">Início</Link>
         <span>/</span>
         <span className="text-slate-600 font-medium">Mapa do Site</span>
       </div>
@@ -3370,10 +3419,10 @@ function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
             { label: 'Contato', page: 'contato' as PageId },
           ].map((link, i) => (
             <li key={i}>
-              <button onClick={() => navigate(link.page)} className="flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-primary-light transition-colors group">
+              <Link href={pageToPath(link.page)} className="flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-primary-light transition-colors group">
                 <ArrowRight size={12} className="text-primary-light group-hover:translate-x-1 transition-transform" />
                 {link.label}
-              </button>
+              </Link>
             </li>
           ))}
         </ul>
@@ -3488,6 +3537,26 @@ function SitemapView({ navigate }: { navigate: (p: PageId) => void }) {
             { label: 'Higienização de Ar Condicionado em São Paulo', page: 'serv-higienizacao-sp' as PageId },
             { label: 'PMOC em São Paulo — Contrato Obrigatório', page: 'serv-pmoc-sp' as PageId },
             { label: 'Contrato de Manutenção de Ar Condicionado em SP', page: 'serv-contrato-sp' as PageId },
+          ]} />
+        </div>
+        <div>
+          <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Ar Condicionado Residencial</h2>
+          <LinkList links={[
+            { label: 'Ar Condicionado para Apartamento em SP', page: 'res-apartamento' as PageId },
+            { label: 'Ar Condicionado Residencial em SP', page: 'res-residencial' as PageId },
+            { label: 'Ar Condicionado para Casa em SP', page: 'res-casa' as PageId },
+            { label: 'Instalação de Ar Condicionado em Condomínio', page: 'res-condominio-inst' as PageId },
+          ]} />
+        </div>
+        <div>
+          <h2 className="text-lg font-bold text-primary mb-4 pb-2 border-b border-slate-100">Outros Serviços em SP</h2>
+          <LinkList links={[
+            { label: 'Instalação de Ar Condicionado em São Paulo', page: 'sem-instalacao' as PageId },
+            { label: 'Manutenção de Ar Condicionado em São Paulo', page: 'sem-manutencao' as PageId },
+            { label: 'Técnico de Ar Condicionado em São Paulo', page: 'sem-tecnico' as PageId },
+            { label: 'Conserto de Ar Condicionado em São Paulo', page: 'sem-conserto' as PageId },
+            { label: 'Empresa de Ar Condicionado em São Paulo', page: 'sem-empresa' as PageId },
+            { label: 'Assistência Técnica de Ar Condicionado em SP', page: 'sem-assistencia' as PageId },
           ]} />
         </div>
         <div>
