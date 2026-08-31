@@ -1316,7 +1316,7 @@ export const BlogSaude = () => (
     <p>Não, desde que usado corretamente. A temperatura recomendada para crianças é entre 23°C e 25°C. O ar não deve ser direcionado diretamente para o berço ou cama. E a limpeza dos filtros deve ser mais frequente em ambientes com crianças — a cada 2 semanas.</p>
     <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
       <h3 className="text-lg font-bold text-primary mb-2">Mantenha o ar do seu ambiente saudável</h3>
-      <p className="text-slate-600 text-sm mb-4">Higienização profissional com bactericida · Remove fungos e ácaros · A partir de R$ 150</p>
+      <p className="text-slate-600 text-sm mb-4">Higienização profissional com bactericida · Remove fungos e ácaros · A partir de R$ 500</p>
       <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Gostaria%20de%20agendar%20uma%20higienização%20do%20meu%20ar%20condicionado." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Agendar Higienização</a>
     </div>
     <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
@@ -1520,7 +1520,7 @@ export const BlogMauCheiro = () => (
     <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Posso usar aromatizador para mascarar o cheiro?</h3>
     <p>Não é recomendado. O aromatizador mascara o sintoma sem tratar a causa — os fungos e bactérias continuam se proliferando e sendo expelidos no ar. A solução é a higienização do evaporador.</p>
     <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Quanto custa a higienização em SP?</h3>
-    <p>A higienização profissional de um split residencial em São Paulo custa em média R$ 150 a R$ 250. O preço varia conforme o tamanho do equipamento e o grau de contaminação.</p>
+    <p>A higienização profissional de um split residencial em São Paulo custa em média R$ 500 a R$ 550. O preço varia conforme o tamanho do equipamento e o grau de contaminação.</p>
     <h3 className="text-lg font-bold text-slate-800 mt-6 mb-2">Limpar o filtro resolve o mau cheiro?</h3>
     <p>Parcialmente. A limpeza do filtro remove parte da poeira e ácaros, mas o cheiro de mofo vem do evaporador (serpentina) — que fica atrás do filtro e só pode ser limpo com equipamento profissional e produto bactericida adequado.</p>
   </BlogPostLayout>
@@ -1883,7 +1883,7 @@ export const BlogLimpezaSP = () => (
         <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Serviço</th><th className="p-3 text-left border border-primary">Preço médio SP</th></tr></thead>
         <tbody>
           <tr className="bg-white"><td className="p-3 border border-slate-200">Limpeza de filtros (usuário)</td><td className="p-3 border border-slate-200 font-bold text-success">Gratuito</td></tr>
-          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Higienização profissional</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 150 a R$ 250</td></tr>
+          <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Higienização profissional</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 500 a R$ 550</td></tr>
           <tr className="bg-white"><td className="p-3 border border-slate-200">Manutenção preventiva completa</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 180 a R$ 350</td></tr>
           <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Higienização para clínicas (ANVISA)</td><td className="p-3 border border-slate-200 font-bold text-primary">R$ 200 a R$ 400</td></tr>
         </tbody>
@@ -1907,7 +1907,7 @@ export const BlogLimpezaSP = () => (
     </ul>
     <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
       <h3 className="text-lg font-bold text-primary mb-2">Agende a limpeza do seu ar condicionado em SP</h3>
-      <p className="text-slate-600 text-sm mb-4">Higienização com bactericida · Todas as marcas · A partir de R$ 150 · Garantia de 90 dias</p>
+      <p className="text-slate-600 text-sm mb-4">Higienização com bactericida · Todas as marcas · A partir de R$ 500 · Garantia de 90 dias</p>
       <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Gostaria%20de%20agendar%20a%20limpeza%20do%20meu%20ar%20condicionado." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Agendar Limpeza</a>
     </div>
     <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
@@ -2123,7 +2123,7 @@ export const BlogQuantoCustaLimpeza = () => (
     </ul>
     <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
       <h3 className="text-lg font-bold text-primary mb-2">Agende a limpeza do seu ar condicionado em SP</h3>
-      <p className="text-slate-600 text-sm mb-4">A partir de R$ 150 · Bactericida certificado · Todas as marcas · Garantia de 90 dias</p>
+      <p className="text-slate-600 text-sm mb-4">A partir de R$ 500 · Bactericida certificado · Todas as marcas · Garantia de 90 dias</p>
       <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Gostaria%20de%20saber%20o%20preço%20da%20limpeza%20do%20meu%20ar%20condicionado." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Solicitar Orçamento</a>
     </div>
     <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
