@@ -24,16 +24,16 @@ const localBusinessSchema = {
   ],
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'R. Santa Cruz, 2187',
+    streetAddress: 'R. Santa Cruz, 2187 - Sala 10',
     addressLocality: 'São Paulo',
     addressRegion: 'SP',
     addressCountry: 'BR',
-    postalCode: '04122-002',
+    postalCode: '04121-002',
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: -23.5893,
-    longitude: -46.6378,
+    latitude: -23.5955,
+    longitude: -46.6394,
   },
   openingHoursSpecification: [
     {
@@ -49,12 +49,6 @@ const localBusinessSchema = {
       closes: '13:00',
     },
   ],
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '24',
-    bestRating: '5',
-  },
   sameAs: [
     'https://www.instagram.com/newclimaar',
     'https://www.facebook.com/newclimaar',

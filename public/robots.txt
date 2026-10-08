@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /_next/static/
-Disallow: /_next/image/
 
 Sitemap: https://www.newclimaar.com.br/sitemap.xml
