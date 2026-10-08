@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/instalacao-ar-condicionado-split-sp",
+      "destination": "/instalacao-ar-condicionado-split-sao-paulo",
+      "permanent": true
+    },
+    {
       "source": "/instala%C3%A7%C3%A3o-de-ar-condicionado",
       "destination": "/instalacao-ar-condicionado-split-sao-paulo",
       "permanent": true

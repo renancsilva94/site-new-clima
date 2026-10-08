@@ -502,7 +502,7 @@ export function pageToPath(page: PageId): string {
     'seg-creche': '/ar-condicionado-creche-sao-paulo',
     'seg-bar': '/ar-condicionado-bar-pub-sao-paulo',
     'servicos': '/servicos',
-    'inst-split': '/instalacao-ar-condicionado-split-sp',
+    'inst-split': '/instalacao-ar-condicionado-split-sao-paulo',
     'inst-cassete': '/instalacao-ar-condicionado-cassete-sp',
     'inst-piso-teto': '/instalacao-ar-condicionado-piso-teto-sp',
     'inst-multi-split': '/instalacao-multi-split-sp',
