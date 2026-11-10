@@ -56,7 +56,7 @@ export const BlogEscritorioSP = () => (
       <li>Se houver servidor no ambiente, acrescente 20% a 30%</li>
     </ul>
     <h2 className="text-2xl font-bold text-primary mt-8 mb-4">PMOC é obrigatório para escritórios?</h2>
-    <p>Sim, para escritórios com sistema de ar condicionado acima de 60.000 BTUs de uso coletivo. A maioria dos escritórios comerciais em São Paulo se enquadra nessa obrigatoriedade. A New Clima elabora e executa o PMOC com ART inclusa.</p>
+    <p>Sim, para escritórios com sistema de ar condicionado acima de 60.000 BTUs de uso coletivo. A maioria dos escritórios comerciais em São Paulo se enquadra nessa obrigatoriedade. A New Clima elabora e executa o PMOC com ART de engenheiro parceiro.</p>
     <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quanto custa para escritório em SP?</h2>
     <div className="overflow-x-auto my-6">
       <table className="w-full border-collapse text-sm">

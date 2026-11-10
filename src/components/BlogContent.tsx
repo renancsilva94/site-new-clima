@@ -241,7 +241,7 @@ export const BlogPMOC = () => (
       <table className="w-full border-collapse text-sm">
         <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Item</th><th className="p-3 text-left border border-primary">PMOC completo</th><th className="p-3 text-left border border-primary">PMOC incompleto</th></tr></thead>
         <tbody>
-          <tr className="bg-white"><td className="p-3 border border-slate-200">ART do engenheiro</td><td className="p-3 border border-slate-200 font-bold text-success">✅ Inclusa</td><td className="p-3 border border-slate-200 font-bold text-red-600">❌ Ausente</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">ART do engenheiro</td><td className="p-3 border border-slate-200 font-bold text-success">✅ Engenheiro parceiro</td><td className="p-3 border border-slate-200 font-bold text-red-600">❌ Ausente</td></tr>
           <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Cadastro dos equipamentos</td><td className="p-3 border border-slate-200 font-bold text-success">✅ Todos listados</td><td className="p-3 border border-slate-200 font-bold text-red-600">❌ Parcial</td></tr>
           <tr className="bg-white"><td className="p-3 border border-slate-200">Cronograma de manutenções</td><td className="p-3 border border-slate-200 font-bold text-success">✅ Com datas e frequências</td><td className="p-3 border border-slate-200 font-bold text-red-600">❌ Genérico</td></tr>
           <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Registros de execução</td><td className="p-3 border border-slate-200 font-bold text-success">✅ Laudo após cada visita</td><td className="p-3 border border-slate-200 font-bold text-red-600">❌ Inexistente</td></tr>
@@ -257,7 +257,7 @@ export const BlogPMOC = () => (
     </ul>
     <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
       <h3 className="text-lg font-bold text-primary mb-2">Precisa de PMOC para sua empresa em SP?</h3>
-      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta no mesmo dia · ART inclusa · Documentação completa</p>
+      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta no mesmo dia · ART por engenheiro parceiro · Documentação completa</p>
       <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Preciso%20elaborar%20o%20PMOC%20para%20minha%20empresa%20em%20SP." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Solicitar Proposta</a>
     </div>
     <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
@@ -542,7 +542,7 @@ export const BlogEmpresas = () => (
       </table>
     </div>
     <h2 className="text-2xl font-bold text-primary mt-8 mb-4">PMOC: obrigação para todas as empresas</h2>
-    <p>Toda empresa com sistema de ar condicionado acima de 60.000 BTUs de uso coletivo é obrigada a ter o PMOC. A New Clima elabora e executa o PMOC com ART inclusa e documentação completa para a Vigilância Sanitária de SP.</p>
+    <p>Toda empresa com sistema de ar condicionado acima de 60.000 BTUs de uso coletivo é obrigada a ter o PMOC. A New Clima elabora e executa o PMOC com ART de engenheiro parceiro e documentação completa para a Vigilância Sanitária de SP.</p>
     <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Contrato de manutenção para empresas em SP</h2>
     <p>A New Clima oferece contratos de manutenção personalizados para empresas, incluindo:</p>
     <ul className="list-disc pl-6 space-y-2 my-4">
@@ -618,7 +618,7 @@ export const BlogPMOCObrigatorio = () => (
     </ol>
     <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
       <h3 className="text-lg font-bold text-primary mb-2">Regularize o PMOC da sua empresa agora</h3>
-      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta no mesmo dia · ART inclusa · Documentação completa para a Vigilância Sanitária</p>
+      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta no mesmo dia · ART por engenheiro parceiro · Documentação completa para a Vigilância Sanitária</p>
       <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Preciso%20regularizar%20o%20PMOC%20da%20minha%20empresa%20em%20SP." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Falar com Especialista</a>
     </div>
     <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
@@ -728,7 +728,7 @@ export const BlogPMOCCondominio = () => (
     </div>
     <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
       <h3 className="text-lg font-bold text-primary mb-2">PMOC para o seu condomínio em SP</h3>
-      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta para apresentar em assembleia · ART inclusa · Relatórios mensais</p>
+      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta para apresentar em assembleia · ART por engenheiro parceiro · Relatórios mensais</p>
       <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Sou%20síndico%20e%20preciso%20de%20PMOC%20para%20o%20meu%20condomínio%20em%20SP." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Solicitar Proposta</a>
     </div>
     <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
@@ -862,7 +862,7 @@ export const BlogCustoPMOC = () => (
     <p>Antes de contratar, verifique se a empresa oferece:</p>
 
     <ul className="list-disc pl-6 space-y-2 my-4">
-      <li>ART (Anotação de Responsabilidade Técnica) inclusa no contrato</li>
+      <li>ART (Anotação de Responsabilidade Técnica) emitida por engenheiro parceiro</li>
       <li>Relatório técnico após cada visita preventiva</li>
       <li>Técnicos certificados pelas marcas dos equipamentos</li>
       <li>Experiência comprovada com o tipo do seu estabelecimento</li>
@@ -880,7 +880,7 @@ export const BlogCustoPMOC = () => (
 
     <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
       <h3 className="text-lg font-bold text-primary mb-2">Solicite sua proposta de PMOC gratuitamente</h3>
-      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta no mesmo dia · ART inclusa · Documentação completa</p>
+      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta no mesmo dia · ART por engenheiro parceiro · Documentação completa</p>
       <div className="flex flex-col sm:flex-row gap-3">
         <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Gostaria%20de%20uma%20proposta%20de%20PMOC%20para%20minha%20empresa." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">
           Solicitar Proposta pelo WhatsApp
@@ -2062,7 +2062,7 @@ export const BlogEscritorioSP = () => (
       <li>Se houver servidor no ambiente, acrescente 20% a 30%</li>
     </ul>
     <h2 className="text-2xl font-bold text-primary mt-8 mb-4">PMOC é obrigatório para escritórios?</h2>
-    <p>Sim, para escritórios com sistema de ar condicionado acima de 60.000 BTUs de uso coletivo. A maioria dos escritórios comerciais em São Paulo se enquadra nessa obrigatoriedade. A New Clima elabora e executa o PMOC com ART inclusa.</p>
+    <p>Sim, para escritórios com sistema de ar condicionado acima de 60.000 BTUs de uso coletivo. A maioria dos escritórios comerciais em São Paulo se enquadra nessa obrigatoriedade. A New Clima elabora e executa o PMOC com ART de engenheiro parceiro.</p>
     <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Quanto custa para escritório em SP?</h2>
     <div className="overflow-x-auto my-6">
       <table className="w-full border-collapse text-sm">

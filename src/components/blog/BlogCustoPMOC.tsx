@@ -158,7 +158,7 @@ export const BlogCustoPMOC = () => (
     <p>Antes de contratar, verifique se a empresa oferece:</p>
 
     <ul className="list-disc pl-6 space-y-2 my-4">
-      <li>ART (Anotação de Responsabilidade Técnica) inclusa no contrato</li>
+      <li>ART (Anotação de Responsabilidade Técnica) emitida por engenheiro parceiro</li>
       <li>Relatório técnico após cada visita preventiva</li>
       <li>Técnicos certificados pelas marcas dos equipamentos</li>
       <li>Experiência comprovada com o tipo do seu estabelecimento</li>
@@ -176,7 +176,7 @@ export const BlogCustoPMOC = () => (
 
     <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
       <h3 className="text-lg font-bold text-primary mb-2">Solicite sua proposta de PMOC gratuitamente</h3>
-      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta no mesmo dia · ART inclusa · Documentação completa</p>
+      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta no mesmo dia · ART por engenheiro parceiro · Documentação completa</p>
       <div className="flex flex-col sm:flex-row gap-3">
         <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Gostaria%20de%20uma%20proposta%20de%20PMOC%20para%20minha%20empresa." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">
           Solicitar Proposta pelo WhatsApp

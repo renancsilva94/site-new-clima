@@ -63,7 +63,7 @@ export const BlogEmpresas = () => (
       </table>
     </div>
     <h2 className="text-2xl font-bold text-primary mt-8 mb-4">PMOC: obrigação para todas as empresas</h2>
-    <p>Toda empresa com sistema de ar condicionado acima de 60.000 BTUs de uso coletivo é obrigada a ter o PMOC. A New Clima elabora e executa o PMOC com ART inclusa e documentação completa para a Vigilância Sanitária de SP.</p>
+    <p>Toda empresa com sistema de ar condicionado acima de 60.000 BTUs de uso coletivo é obrigada a ter o PMOC. A New Clima elabora e executa o PMOC com ART de engenheiro parceiro e documentação completa para a Vigilância Sanitária de SP.</p>
     <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Contrato de manutenção para empresas em SP</h2>
     <p>A New Clima oferece contratos de manutenção personalizados para empresas, incluindo:</p>
     <ul className="list-disc pl-6 space-y-2 my-4">

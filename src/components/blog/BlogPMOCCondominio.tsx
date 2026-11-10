@@ -79,7 +79,7 @@ export const BlogPMOCCondominio = () => (
     </div>
     <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
       <h3 className="text-lg font-bold text-primary mb-2">PMOC para o seu condomínio em SP</h3>
-      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta para apresentar em assembleia · ART inclusa · Relatórios mensais</p>
+      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta para apresentar em assembleia · ART por engenheiro parceiro · Relatórios mensais</p>
       <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Sou%20síndico%20e%20preciso%20de%20PMOC%20para%20o%20meu%20condomínio%20em%20SP." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Solicitar Proposta</a>
     </div>
     <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>

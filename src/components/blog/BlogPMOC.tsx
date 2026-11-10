@@ -73,7 +73,7 @@ export const BlogPMOC = () => (
       <table className="w-full border-collapse text-sm">
         <thead><tr className="bg-primary text-white"><th className="p-3 text-left border border-primary">Item</th><th className="p-3 text-left border border-primary">PMOC completo</th><th className="p-3 text-left border border-primary">PMOC incompleto</th></tr></thead>
         <tbody>
-          <tr className="bg-white"><td className="p-3 border border-slate-200">ART do engenheiro</td><td className="p-3 border border-slate-200 font-bold text-success">✅ Inclusa</td><td className="p-3 border border-slate-200 font-bold text-red-600">❌ Ausente</td></tr>
+          <tr className="bg-white"><td className="p-3 border border-slate-200">ART do engenheiro</td><td className="p-3 border border-slate-200 font-bold text-success">✅ Engenheiro parceiro</td><td className="p-3 border border-slate-200 font-bold text-red-600">❌ Ausente</td></tr>
           <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Cadastro dos equipamentos</td><td className="p-3 border border-slate-200 font-bold text-success">✅ Todos listados</td><td className="p-3 border border-slate-200 font-bold text-red-600">❌ Parcial</td></tr>
           <tr className="bg-white"><td className="p-3 border border-slate-200">Cronograma de manutenções</td><td className="p-3 border border-slate-200 font-bold text-success">✅ Com datas e frequências</td><td className="p-3 border border-slate-200 font-bold text-red-600">❌ Genérico</td></tr>
           <tr className="bg-slate-50"><td className="p-3 border border-slate-200">Registros de execução</td><td className="p-3 border border-slate-200 font-bold text-success">✅ Laudo após cada visita</td><td className="p-3 border border-slate-200 font-bold text-red-600">❌ Inexistente</td></tr>
@@ -89,7 +89,7 @@ export const BlogPMOC = () => (
     </ul>
     <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
       <h3 className="text-lg font-bold text-primary mb-2">Precisa de PMOC para sua empresa em SP?</h3>
-      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta no mesmo dia · ART inclusa · Documentação completa</p>
+      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta no mesmo dia · ART por engenheiro parceiro · Documentação completa</p>
       <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Preciso%20elaborar%20o%20PMOC%20para%20minha%20empresa%20em%20SP." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Solicitar Proposta</a>
     </div>
     <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>

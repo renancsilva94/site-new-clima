@@ -90,7 +90,7 @@ export const BlogPMOCObrigatorio = () => (
     </ol>
     <div className="bg-ice rounded-2xl p-6 my-8 border border-primary/10">
       <h3 className="text-lg font-bold text-primary mb-2">Regularize o PMOC da sua empresa agora</h3>
-      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta no mesmo dia · ART inclusa · Documentação completa para a Vigilância Sanitária</p>
+      <p className="text-slate-600 text-sm mb-4">Levantamento gratuito · Proposta no mesmo dia · ART por engenheiro parceiro · Documentação completa para a Vigilância Sanitária</p>
       <a href="https://api.whatsapp.com/send/?phone=5511963462516&text=Olá!%20Preciso%20regularizar%20o%20PMOC%20da%20minha%20empresa%20em%20SP." rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-success text-white font-bold py-3 px-6 rounded-xl text-sm hover:-translate-y-0.5 transition-all">Falar com Especialista</a>
     </div>
     <h2 className="text-2xl font-bold text-primary mt-8 mb-4">Perguntas frequentes</h2>
