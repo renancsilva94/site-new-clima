@@ -38,9 +38,12 @@ import {
 } from 'lucide-react';
 
 
+const WA_SITE = "https://wa.me/5511963462516?text=" + encodeURIComponent("Olá! Vim pelo site da New Clima e gostaria de um orçamento.");
+const WA_INSTALACAO = "https://wa.me/5511963462516?text=" + encodeURIComponent("Olá! Quero um orçamento de instalação. Vou mandar uma foto do aparelho e do local.");
+
 const WhatsAppButton = ({ text = "Solicitar Orçamento" }: { text?: string }) => (
   <a 
-    href="https://wa.me/5511963462516" 
+    href={WA_SITE} 
     rel="noopener noreferrer"
     className="inline-flex items-center justify-center gap-2 bg-success hover:bg-success/90 text-white font-bold py-4 px-8 rounded-xl transition-all hover:-translate-y-0.5 shadow-lg shadow-success/20 w-full md:w-auto"
   >
@@ -142,7 +145,7 @@ export const RegioesSectionService = () => {
         <div className="flex items-center justify-between">
           <p className="text-slate-400 text-sm">{active.bairros.length} localidades cobertas em {active.label}.</p>
           <a
-            href="https://wa.me/5511963462516"
+            href={WA_SITE}
             rel="noopener noreferrer"
             className="text-primary-light font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all"
           >
@@ -201,7 +204,7 @@ export const ProcessoSection = ({ cidade = "São Paulo e ABC" }: { cidade?: stri
             { step: "02", title: "Projeto Técnico", icon: <Ruler />, desc: "Elaboramos o projeto com posicionamento dos equipamentos e traçado da infraestrutura." },
             { step: "03", title: "Infraestrutura", icon: <HardHat />, desc: "Instalamos tubulações, drenos e fiação elétrica com padrão de qualidade premium." },
             { step: "04", title: "Instalação", icon: <Wrench />, desc: "Fixamos e conectamos os equipamentos com testes de pressão e vácuo." },
-            { step: "05", title: "Obra Limpa", icon: <CheckCircle2 />, desc: "Fechamos paredes, refazemos forro de gesso e finalizamos com pintura." }
+            { step: "05", title: "Acabamento e Limpeza", icon: <CheckCircle2 />, desc: "Fazemos o acabamento nas passagens da tubulação, testamos o aparelho e deixamos o local limpo." }
           ].map((item, i) => (
             <div key={i} className="text-center space-y-6">
               <div className="relative inline-block">
@@ -229,7 +232,7 @@ export const FaqSection = () => {
   const faqItems = [
     { question: "Quanto tempo leva uma instalação completa de ar condicionado?", answer: "Uma instalação padrão de split hi-wall leva em média de 3 a 5 horas. Sistemas Multi Split ou que exigem infraestrutura embutida podem levar de 1 a 2 dias dependendo da complexidade." },
     { question: "Qual o melhor tipo de ar condicionado para minha residência ou empresa?", answer: "Depende do espaço e número de ambientes. O Split Hi-Wall é ideal para um único cômodo. O Multi Split é perfeito para climatizar vários quartos. Para empresas, Cassete e Piso-Teto oferecem maior vazão e potência." },
-    { question: "A instalação inclui o acabamento de parede e forro?", answer: "Sim, na New Clima oferecemos o conceito de 'Obra Limpa'. Realizamos a infraestrutura e, se necessário, o fechamento de gesso e pequenos reparos de pintura para que você não precise contratar outros profissionais." },
+    { question: "A instalação inclui o acabamento de parede e forro?", answer: "Fazemos o acabamento simples nas passagens da tubulação e deixamos o local limpo. Fechamento de gesso e pintura não estão incluídos. Se a obra precisar disso, avisamos na visita técnica." },
     { question: "Vocês instalam sistemas VRF para empresas?", answer: "Sim, somos especialistas em sistemas VRF e Mini VRF para residências de alto padrão e edifícios corporativos, oferecendo projetos completos e máxima eficiência energética." },
     { question: "Qual a garantia da instalação de ar condicionado?", answer: "Oferecemos 1 ano de garantia em toda a nossa mão de obra de instalação, além da garantia de fábrica dos equipamentos que instalamos." },
     { question: "Preciso preparar algo antes da instalação?", answer: "Nossa equipe realiza uma consulta técnica prévia para avaliar a rede elétrica e drenagem. Se houver necessidade de adequações, orientamos ou executamos conforme o projeto aprovado." }
@@ -600,14 +603,14 @@ const ServicosCorretivosSection = () => (
   </section>
 );
 
-export const ServiceCTA = ({ title, subtitle = "Solicite uma consulta técnica e receba um projeto completo com obra limpa e garantia real." }: { title: React.ReactNode, subtitle?: string }) => (
+export const ServiceCTA = ({ title, subtitle = "Peça uma visita técnica gratuita e receba o orçamento com garantia por escrito." }: { title: React.ReactNode, subtitle?: string }) => (
   <section className="bg-[#0f172a] py-16 border-t border-white/5">
     <div className="container mx-auto px-4 text-center max-w-4xl">
       <span className="text-blue-400 text-xs font-bold tracking-[0.3em] uppercase mb-6 block">Pronto para começar?</span>
       <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">{title}</h2>
       <p className="text-blue-100/60 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">{subtitle}</p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <a href="https://wa.me/5511963462516" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-full font-bold flex items-center gap-3 transition-all shadow-xl shadow-blue-600/20 group w-full sm:w-auto justify-center">
+        <a href={WA_SITE} rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-full font-bold flex items-center gap-3 transition-all shadow-xl shadow-blue-600/20 group w-full sm:w-auto justify-center">
           <MessageCircle size={22} />
           Falar no WhatsApp
           <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
@@ -657,7 +660,7 @@ const ServiceLayout = ({ title, tag, icon, imageUrl, imageAlt, children }: { tit
         </div>
         <div className="bg-primary p-6 rounded-2xl text-white">
           <h4 className="font-bold mb-2">Precisa de Urgência?</h4>
-          <p className="text-xs text-blue-100/70 mb-4 leading-relaxed">Ar parou de funcionar na sua empresa? Atendemos chamados emergenciais em até 4 horas.</p>
+          <p className="text-xs text-blue-100/70 mb-4 leading-relaxed">Ar parou de funcionar? Atendemos chamados emergenciais em até 4 horas.</p>
           <a href="tel:+5511963462516" className="block w-full bg-white/10 hover:bg-white/20 text-center py-3 rounded-xl font-bold transition-colors">Ligar Agora</a>
         </div>
       </aside>
@@ -668,8 +671,13 @@ const ServiceLayout = ({ title, tag, icon, imageUrl, imageAlt, children }: { tit
 export const SplitMultiSplit = () => (
   <div className="space-y-16 pb-20">
     <ServiceLayout tag="Residencial & Comercial" title="Instalação de Ar Condicionado Split e Multi Split em SP" icon={<Zap />} imageUrl="https://images.unsplash.com/photo-1631545806609-c7e2b0bf7e19?w=1200&q=80&auto=format&fit=crop" imageAlt="Técnico realizando instalação de ar condicionado split em apartamento em São Paulo">
-      <p>A <strong>instalação de sistemas Split e Multi Split</strong> é a solução mais eficiente para climatização de residências, apartamentos e escritórios em <strong>São Paulo e no ABC Paulista</strong>.</p>
-      <p>Diferente de instalações amadoras, nosso processo inclui o cálculo preciso da carga térmica. Utilizamos tubulação de cobre de alta qualidade e isolamento térmico adequado.</p>
+      <p>A New Clima faz a <strong>instalação de ar-condicionado split</strong> em casas, apartamentos e escritórios de <strong>São Paulo e do ABC Paulista</strong>, com garantia de 1 ano por escrito na mão de obra e nota fiscal.</p>
+      <div className="bg-ice border border-primary-light/20 rounded-2xl p-5 not-prose">
+        <p className="font-bold text-primary mb-1">Comprou o aparelho em outra loja?</p>
+        <p className="text-slate-600 text-sm mb-3">A gente instala. Mande uma foto do aparelho (ou do modelo) e do local pelo WhatsApp e receba o orçamento no mesmo dia.</p>
+        <a href={WA_INSTALACAO} rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-success text-white font-bold py-3 px-5 rounded-xl text-sm"><MessageCircle size={18} /> Mandar foto no WhatsApp</a>
+      </div>
+      <p>Antes de instalar, conferimos se a potência (BTUs) combina com o ambiente. Usamos tubulação de cobre, isolamento térmico adequado e suporte galvanizado, e testamos o aparelho antes da entrega.</p>
       <h3 className="text-xl font-bold text-primary">Vantagens do Sistema Multi Split em São Paulo</h3>
       <p>O sistema Multi Split é ideal para climatizar vários ambientes utilizando apenas uma unidade condensadora externa. É a escolha perfeita para apartamentos com varandas técnicas limitadas.</p>
       <ul className="space-y-2">
@@ -682,7 +690,7 @@ export const SplitMultiSplit = () => (
     <ProcessoSection />
     <FaqSection />
     <RegioesSectionService />
-    <ServiceCTA title={<>Pronto para climatizar seu ambiente com <span className="text-blue-500 italic">qualidade real</span>?</>} subtitle="Solicite uma consulta técnica e receba um projeto completo de instalação com obra limpa e garantia real." />
+    <ServiceCTA title={<>Pronto para climatizar seu ambiente com <span className="text-blue-500 italic">qualidade real</span>?</>} subtitle="Mande uma foto do aparelho e do local pelo WhatsApp e receba o orçamento da instalação no mesmo dia. Garantia de 1 ano por escrito." />
   </div>
 );
 
