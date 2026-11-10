@@ -3,13 +3,13 @@ import App from '@/src/App'
 
 export const metadata: Metadata = {
   title: 'Ar Condicionado para Hotéis em São Paulo | New Clima',
-  description: 'Sistemas de climatização para hotéis e apart-hotéis em SP. PMOC obrigatório, manutenção silenciosa e atendimento 24h. (11) 96346-2516.',
+  description: 'Sistemas de climatização para hotéis e apart-hotéis em SP. PMOC obrigatório, manutenção silenciosa e atendimento emergencial em até 4h. (11) 96346-2516.',
   alternates: {
     canonical: 'https://www.newclimaar.com.br/ar-condicionado-hotel-sp',
   },
   openGraph: {
     title: 'Ar Condicionado para Hotéis em São Paulo | New Clima',
-    description: 'Sistemas de climatização para hotéis e apart-hotéis em SP. PMOC obrigatório, manutenção silenciosa e atendimento 24h. (11) 96346-2516.',
+    description: 'Sistemas de climatização para hotéis e apart-hotéis em SP. PMOC obrigatório, manutenção silenciosa e atendimento emergencial em até 4h. (11) 96346-2516.',
     url: 'https://www.newclimaar.com.br/ar-condicionado-hotel-sp',
     type: 'website',
     images: [{ url: 'https://www.newclimaar.com.br/images/logo-new-clima.png' }],

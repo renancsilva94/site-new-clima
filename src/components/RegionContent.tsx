@@ -87,7 +87,7 @@ const RegionLayout = ({ region, title, description, neighborhoods, children, nav
             <div className="space-y-2 text-sm text-slate-500 font-medium">
               <div className="flex justify-between"><span>Segunda a Sexta</span> <span>08h - 18h</span></div>
               <div className="flex justify-between"><span>Sábado</span> <span>08h - 13h</span></div>
-              <div className="flex justify-between text-primary-light"><span>Emergências</span> <span>WhatsApp 24h</span></div>
+              <div className="flex justify-between text-primary-light"><span>Emergências</span> <span>Em até 4h</span></div>
             </div>
           </div>
         </aside>
@@ -110,9 +110,9 @@ export const SaoPauloRegion = ({ navigate }: { navigate: (p: any) => void }) => 
     <h2 className="text-2xl font-bold text-primary">Manutenção e PMOC em São Paulo</h2>
     <p>Atendemos escritórios nos principais polos corporativos de SP: <strong>Avenida Paulista, Faria Lima, Berrini e Alphaville</strong>. Oferecemos gestão completa do <strong>PMOC</strong>, garantindo conformidade com a Lei 13.589/2018.</p>
     <h2 className="text-2xl font-bold text-primary">Perguntas Frequentes</h2>
-    <p><strong>Quanto custa instalar ar condicionado em São Paulo?</strong><br />Uma instalação residencial padrão em SP começa a partir de R$ 350. A visita técnica é gratuita e o orçamento é entregue no mesmo dia.</p>
+    <p><strong>Quanto custa instalar ar condicionado em São Paulo?</strong><br />O valor da instalação depende do modelo e da infraestrutura do local: mande uma foto pelo WhatsApp e receba o orçamento no mesmo dia. A visita técnica é gratuita.</p>
     <p><strong>Vocês atendem em apartamentos com regras de condomínio?</strong><br />Sim. Somos especialistas em instalações em prédios e condomínios de SP.</p>
-    <p><strong>Qual o prazo de atendimento em São Paulo?</strong><br />Atendemos em até 24 horas para orçamento. Para emergências, nosso WhatsApp funciona 24h.</p>
+    <p><strong>Qual o prazo de atendimento em São Paulo?</strong><br />Respondemos em até 2 horas no WhatsApp, em horário comercial. Para emergências, atendemos em até 4 horas.</p>
   </RegionLayout>
 );
 
@@ -124,7 +124,7 @@ export const SantoAndreRegion = ({ navigate }: { navigate: (p: any) => void }) =
     <h2 className="text-2xl font-bold text-primary">Manutenção e Limpeza em Santo André</h2>
     <p>Oferecemos higienização profissional com bactericida para residências, clínicas, escritórios e comércios em Santo André.</p>
     <h2 className="text-2xl font-bold text-primary">Perguntas Frequentes</h2>
-    <p><strong>Quanto custa instalar ar condicionado em Santo André?</strong><br />Uma instalação residencial padrão começa a partir de R$ 350. Oferecemos visita técnica gratuita com orçamento no mesmo dia.</p>
+    <p><strong>Quanto custa instalar ar condicionado em Santo André?</strong><br />O valor da instalação depende do modelo e da infraestrutura do local: mande uma foto pelo WhatsApp e receba o orçamento no mesmo dia. A visita técnica é gratuita.</p>
     <p><strong>Vocês atendem no Centro de Santo André?</strong><br />Sim, atendemos toda a cidade de Santo André incluindo Centro, Campestre e Vila Assunção.</p>
     <p><strong>Fazem manutenção de ar condicionado em Santo André?</strong><br />Sim. Realizamos manutenção preventiva, corretiva e limpeza profunda de todas as marcas.</p>
   </RegionLayout>
@@ -140,7 +140,7 @@ export const SaoBernardoRegion = ({ navigate }: { navigate: (p: any) => void }) 
     <h2 className="text-2xl font-bold text-primary">Perguntas Frequentes</h2>
     <p><strong>Vocês atendem condomínios em São Bernardo do Campo?</strong><br />Sim. Atendemos condomínios residenciais e comerciais em toda a cidade.</p>
     <p><strong>Fazem PMOC para empresas em SBC?</strong><br />Sim. Elaboramos e executamos o PMOC completo para empresas em São Bernardo do Campo.</p>
-    <p><strong>Qual o prazo para atendimento em São Bernardo?</strong><br />Atendemos em até 24 horas para orçamento. Para emergências, nosso WhatsApp funciona 24h.</p>
+    <p><strong>Qual o prazo para atendimento em São Bernardo?</strong><br />Respondemos em até 2 horas no WhatsApp, em horário comercial. Para emergências, atendemos em até 4 horas.</p>
   </RegionLayout>
 );
 
@@ -152,7 +152,7 @@ export const SaoCaetanoRegion = ({ navigate }: { navigate: (p: any) => void }) =
     <h2 className="text-2xl font-bold text-primary">Especialistas em Clínicas e Consultórios em São Caetano</h2>
     <p>Realizamos higienização química profunda que elimina 99,9% de fungos e bactérias, garantindo um ambiente seguro para pacientes e colaboradores.</p>
     <h2 className="text-2xl font-bold text-primary">Perguntas Frequentes</h2>
-    <p><strong>Quanto custa instalar ar condicionado em São Caetano do Sul?</strong><br />Uma instalação residencial padrão começa a partir de R$ 350. A visita técnica é gratuita e o orçamento é entregue no mesmo dia.</p>
+    <p><strong>Quanto custa instalar ar condicionado em São Caetano do Sul?</strong><br />O valor da instalação depende do modelo e da infraestrutura do local: mande uma foto pelo WhatsApp e receba o orçamento no mesmo dia. A visita técnica é gratuita.</p>
     <p><strong>Vocês fazem higienização de ar condicionado em São Caetano?</strong><br />Sim. Realizamos higienização completa com bactericida em residências, clínicas e escritórios.</p>
     <p><strong>Atendem apartamentos em São Caetano?</strong><br />Sim, somos especialistas em instalações em condomínios.</p>
   </RegionLayout>
@@ -166,8 +166,8 @@ export const DiademaMauaRegion = ({ regionName, navigate }: { regionName: string
     <h2 className="text-2xl font-bold text-primary">Manutenção Preventiva e Corretiva em {regionName}</h2>
     <p>Oferecemos manutenção preventiva semestral para residências e contratos de PMOC para empresas em {regionName}.</p>
     <h2 className="text-2xl font-bold text-primary">Perguntas Frequentes</h2>
-    <p><strong>Quanto custa instalar ar condicionado em {regionName}?</strong><br />Uma instalação residencial padrão começa a partir de R$ 350. A visita técnica é gratuita e o orçamento é entregue no mesmo dia.</p>
+    <p><strong>Quanto custa instalar ar condicionado em {regionName}?</strong><br />O valor da instalação depende do modelo e da infraestrutura do local: mande uma foto pelo WhatsApp e receba o orçamento no mesmo dia. A visita técnica é gratuita.</p>
     <p><strong>Vocês fazem manutenção de ar condicionado em {regionName}?</strong><br />Sim. Realizamos manutenção preventiva, corretiva e limpeza profissional de todas as marcas.</p>
-    <p><strong>Qual o prazo de atendimento em {regionName}?</strong><br />Atendemos em até 24 horas para orçamento. Para emergências nosso WhatsApp funciona 24h.</p>
+    <p><strong>Qual o prazo de atendimento em {regionName}?</strong><br />Respondemos em até 2 horas no WhatsApp, em horário comercial. Para emergências, atendemos em até 4 horas.</p>
   </RegionLayout>
 );

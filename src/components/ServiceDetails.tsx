@@ -401,8 +401,8 @@ const FaqPreventivaSection = () => {
   const [openFaq, setOpenFaq] = React.useState<number | null>(null);
   const faqItems = [
     { question: "Com que frequência devo fazer manutenção preventiva no ar condicionado?", answer: "Para uso residencial, recomendamos a cada 6 meses. Em ambientes comerciais ou com uso intenso, o ideal é trimestralmente ou mensalmente via PMOC." },
-    { question: "O que é o PMOC e por que ele é obrigatório?", answer: "PMOC é o Plano de Manutenção, Operação e Controle. É obrigatório por lei (13.589/2018) para todos os edifícios de uso público e coletivo que possuem sistemas de ar condicionado." },
-    { question: "Quais são os benefícios da manutenção preventiva?", answer: "Redução de até 30% no consumo de energia, aumento da vida útil do aparelho, prevenção de quebras inesperadas e eliminação de fungos e bactérias." },
+    { question: "O que é o PMOC e quem precisa ter?", answer: "PMOC é o Plano de Manutenção, Operação e Controle. A Lei 13.589/2018 e a Portaria 3.523/GM exigem o plano em edifícios de uso público e coletivo climatizados, e a RE-09 da Anvisa define os padrões de qualidade do ar. Na avaliação gratuita, verificamos se a exigência se aplica ao seu imóvel." },
+    { question: "Quais são os benefícios da manutenção preventiva?", answer: "O aparelho limpo e regulado gasta menos energia, dura mais, quebra menos e mantém o ar livre de fungos e bactérias acumulados no filtro e na serpentina." },
     { question: "A New Clima oferece contrato de manutenção programada?", answer: "Sim, oferecemos contratos personalizados para empresas e condomínios, incluindo visitas mensais, suporte prioritário e gestão completa do PMOC." },
     { question: "O que inclui uma manutenção preventiva completa?", answer: "Limpeza de filtros e serpentinas, higienização da bandeja de dreno, verificação da carga de gás, reaperto de conexões elétricas, testes de sensores e medição da corrente do compressor." }
   ];
@@ -647,7 +647,7 @@ const ServiceLayout = ({ title, tag, icon, imageUrl, imageAlt, children }: { tit
         <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
           <h4 className="font-bold text-primary mb-4">Diferenciais New Clima</h4>
           <ul className="space-y-3">
-            {["Técnicos Certificados","Garantia de 1 Ano","Material de 1ª Linha","Limpeza Pós-Obra","Suporte 24h WhatsApp"].map((item, i) => (
+            {["Técnicos treinados por LG, Samsung, Daikin e Fujitsu","Técnicos com NR-10 e NR-35","Relatório técnico após cada visita","Serviço com nota fiscal","Resposta em até 2h no WhatsApp"].map((item, i) => (
               <li key={i} className="flex items-center gap-2 text-sm text-slate-600 font-medium">
                 <CheckCircle2 size={16} className="text-success shrink-0" />
                 {item}
@@ -657,7 +657,7 @@ const ServiceLayout = ({ title, tag, icon, imageUrl, imageAlt, children }: { tit
         </div>
         <div className="bg-primary p-6 rounded-2xl text-white">
           <h4 className="font-bold mb-2">Precisa de Urgência?</h4>
-          <p className="text-xs text-blue-100/70 mb-4 leading-relaxed">Nossa equipe móvel está posicionada estrategicamente para atender chamados emergenciais em até 4h.</p>
+          <p className="text-xs text-blue-100/70 mb-4 leading-relaxed">Ar parou de funcionar na sua empresa? Atendemos chamados emergenciais em até 4 horas.</p>
           <a href="tel:+5511963462516" className="block w-full bg-white/10 hover:bg-white/20 text-center py-3 rounded-xl font-bold transition-colors">Ligar Agora</a>
         </div>
       </aside>
@@ -730,13 +730,13 @@ export const VRFMiniVRF = () => (
 
 export const ManutencaoPreventiva = () => (
   <div className="space-y-16 pb-20">
-    <ServiceLayout tag="Saúde & Economia" title="Manutenção Preventiva de Ar Condicionado e PMOC em SP" icon={<ShieldCheck />} imageUrl= "/images/manutencao-preventiva-hero.png" imageAlt="Técnico realizando manutenção preventiva de ar condicionado em São Paulo">
+    <ServiceLayout tag="Manutenção Preventiva" title="Manutenção Preventiva de Ar Condicionado e PMOC em SP" icon={<ShieldCheck />} imageUrl="/images/manutencao-preventiva-hero.webp" imageAlt="Técnico realizando manutenção preventiva de ar condicionado em São Paulo">
       <p>A <strong>manutenção preventiva de ar condicionado</strong> é essencial para garantir a qualidade do ar e a vida útil do seu aparelho.</p>
-      <p>Para empresas, implementamos o <strong>PMOC (Plano de Manutenção, Operação e Controle)</strong>, garantindo conformidade com a Lei 13.589/2018.</p>
+      <p>Para empresas, implementamos o <strong>PMOC (Plano de Manutenção, Operação e Controle)</strong> conforme a Lei 13.589/2018, a Portaria 3.523/GM e a RE-09 da Anvisa. <a href="/pmoc-sao-paulo" className="text-primary-light font-semibold underline">Veja como funciona o PMOC da New Clima</a>.</p>
       <h3 className="text-xl font-bold text-primary">Benefícios da Manutenção Preventiva em SP e ABC</h3>
       <ul className="space-y-2">
         <li className="flex gap-2"><strong>✓ Ar Mais Puro:</strong> Eliminação de fungos, bactérias e ácaros do sistema.</li>
-        <li className="flex gap-2"><strong>✓ Menor Consumo:</strong> Equipamentos limpos e regulados gastam até 30% menos energia.</li>
+        <li className="flex gap-2"><strong>✓ Menor Consumo:</strong> Filtro e serpentina limpos deixam o compressor trabalhar menos, e a conta de luz cai.</li>
         <li className="flex gap-2"><strong>✓ Evita Paradas:</strong> Identificamos problemas antes que eles causem a quebra do aparelho.</li>
         <li className="flex gap-2"><strong>✓ Valorização do Ativo:</strong> Seu patrimônio dura muito mais com o cuidado adequado.</li>
       </ul>

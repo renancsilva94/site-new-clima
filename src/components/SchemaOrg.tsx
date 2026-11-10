@@ -131,16 +131,16 @@ const faqSchemas: Record<string, object> = {
     mainEntity: [
       { '@type': 'Question', name: 'Quanto tempo leva uma instalação de ar condicionado?', acceptedAnswer: { '@type': 'Answer', text: 'Uma instalação padrão de split hi-wall leva em média de 3 a 5 horas. Sistemas Multi Split podem levar de 1 a 2 dias dependendo da complexidade.' } },
       { '@type': 'Question', name: 'Qual a garantia da instalação de ar condicionado?', acceptedAnswer: { '@type': 'Answer', text: 'Oferecemos 1 ano de garantia em toda a nossa mão de obra de instalação, além da garantia de fábrica dos equipamentos.' } },
-      { '@type': 'Question', name: 'Quanto custa instalar ar condicionado em São Paulo?', acceptedAnswer: { '@type': 'Answer', text: 'Uma instalação residencial padrão em SP começa a partir de R$ 350. O valor varia conforme a complexidade da infraestrutura. A visita técnica é gratuita.' } },
+      { '@type': 'Question', name: 'Quanto custa instalar ar condicionado em São Paulo?', acceptedAnswer: { '@type': 'Answer', text: 'O valor da instalação depende do modelo e da infraestrutura do local: mande uma foto pelo WhatsApp e receba o orçamento no mesmo dia. O valor varia conforme a complexidade da infraestrutura. A visita técnica é gratuita.' } },
     ],
   },
   '/manutencao-preventiva-ar-condicionado-sp': {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: [
-      { '@type': 'Question', name: 'O que é o PMOC e por que ele é obrigatório?', acceptedAnswer: { '@type': 'Answer', text: 'PMOC é o Plano de Manutenção, Operação e Controle. É obrigatório por lei (13.589/2018) para todos os edifícios de uso público e coletivo que possuem sistemas de ar condicionado acima de 60.000 BTUs.' } },
+      { '@type': 'Question', name: 'O que é o PMOC e quem precisa ter?', acceptedAnswer: { '@type': 'Answer', text: 'PMOC é o Plano de Manutenção, Operação e Controle. A Lei 13.589/2018 e a Portaria 3.523/GM exigem o plano em edifícios de uso público e coletivo climatizados, e a RE-09 da Anvisa define os padrões de qualidade do ar. Na avaliação gratuita, verificamos se a exigência se aplica ao seu imóvel.' } },
       { '@type': 'Question', name: 'Com que frequência devo fazer manutenção preventiva no ar condicionado?', acceptedAnswer: { '@type': 'Answer', text: 'Para uso residencial, recomendamos a cada 6 meses. Em ambientes comerciais ou com uso intenso, o ideal é trimestralmente.' } },
-      { '@type': 'Question', name: 'Quais são os benefícios da manutenção preventiva?', acceptedAnswer: { '@type': 'Answer', text: 'Redução de até 30% no consumo de energia, aumento da vida útil do aparelho e eliminação de fungos e bactérias que causam doenças respiratórias.' } },
+      { '@type': 'Question', name: 'Quais são os benefícios da manutenção preventiva?', acceptedAnswer: { '@type': 'Answer', text: 'O aparelho limpo e regulado gasta menos energia, dura mais, quebra menos e mantém o ar livre de fungos e bactérias acumulados no filtro e na serpentina.' } },
     ],
   },
   '/limpeza-higienizacao-ar-condicionado-sp': {
