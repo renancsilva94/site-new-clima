@@ -2166,19 +2166,19 @@ function BlogView({ navigate, postId }: { navigate: (p: PageId) => void, postId?
         <BlogCard 
           title="Quanto Custa Instalar Ar Condicionado em SP em 2026?"
           desc="Tabela completa de preços por tipo de sistema, o que está incluso e o que encarece a instalação."
-          image="https://images.unsplash.com/photo-1621905252507-b353174ad739?auto=format&fit=crop&q=80&w=800"
+          image="/images/instalacao.png"
           page='blog-custo-instalacao'
         />
         <BlogCard 
           title="Qual Ar Condicionado Comprar em 2026?"
           desc="Guia completo: Inverter vs Convencional, melhores marcas para SP e como calcular BTUs."
-          image="https://images.unsplash.com/photo-1563228911-37d40078021a?auto=format&fit=crop&q=80&w=800"
+          image="/images/comercial.png"
           page='blog-qual-ac'
         />
         <BlogCard 
           title="Split ou Multi Split para Apartamento em SP?"
           desc="Quando escolher cada sistema, diferenças de custo e qual é mais econômico no longo prazo."
-          image="https://images.unsplash.com/photo-1513584684374-8bdb7489feef?auto=format&fit=crop&q=80&w=800"
+          image="/images/vrf.png"
           page='blog-split-multi-split'
         />
         <BlogCard 
@@ -2190,7 +2190,7 @@ function BlogView({ navigate, postId }: { navigate: (p: PageId) => void, postId?
         <BlogCard 
           title="Ar Condicionado Inverter"
           desc="Entenda por que a tecnologia inverter é a melhor escolha para economia."
-          image="https://images.unsplash.com/photo-1596752763335-513470717c18?auto=format&fit=crop&q=80&w=800"
+          image="/images/manutencao-preventiva-hero.webp"
           page='blog-inverter'
         />
         <BlogCard 
@@ -2202,13 +2202,13 @@ function BlogView({ navigate, postId }: { navigate: (p: PageId) => void, postId?
         <BlogCard 
           title="Cálculo de BTUs"
           desc="Aprenda a calcular a potência ideal para cada tipo de ambiente."
-          image="https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&fit=crop&q=80&w=800"
+          image="/images/comercial.png"
           page='blog-btus'
         />
         <BlogCard 
           title="PMOC: Tudo que você precisa saber"
           desc="Guia básico sobre o Plano de Manutenção, Operação e Controle."
-          image="https://images.unsplash.com/photo-1504917595217-d4dc5f6b276d?auto=format&fit=crop&q=80&w=800"
+          image="/images/pmoc.png"
           page='blog-pmoc'
         />
         <BlogCard 
@@ -2220,7 +2220,7 @@ function BlogView({ navigate, postId }: { navigate: (p: PageId) => void, postId?
         <BlogCard 
           title="Instalação Obra Limpa"
           desc="Saiba como é possível instalar seu ar sem sujeira e quebra-quebra."
-          image="https://images.unsplash.com/photo-1527359443443-84a48abc7dfd?auto=format&fit=crop&q=80&w=800"
+          image="/images/instalacao.png"
           page='blog-obra-limpa'
         />
         <BlogCard 
@@ -2274,7 +2274,7 @@ function BlogView({ navigate, postId }: { navigate: (p: PageId) => void, postId?
         <BlogCard
           title="Ar Condicionado Desliga Sozinho"
           desc="7 causas para o desligamento automático e como resolver. Atendimento em SP e ABC."
-          image="https://images.unsplash.com/photo-1621905252507-b353174ad739?auto=format&fit=crop&q=80&w=800"
+          image="/images/manutencao-corretiva.png"
           page='blog-desliga-sozinho'
         />
         <BlogCard

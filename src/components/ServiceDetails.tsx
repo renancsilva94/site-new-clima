@@ -670,7 +670,7 @@ const ServiceLayout = ({ title, tag, icon, imageUrl, imageAlt, children }: { tit
 
 export const SplitMultiSplit = () => (
   <div className="space-y-16 pb-20">
-    <ServiceLayout tag="Residencial & Comercial" title="Instalação de Ar Condicionado Split e Multi Split em SP" icon={<Zap />} imageUrl="https://images.unsplash.com/photo-1631545806609-c7e2b0bf7e19?w=1200&q=80&auto=format&fit=crop" imageAlt="Técnico realizando instalação de ar condicionado split em apartamento em São Paulo">
+    <ServiceLayout tag="Residencial & Comercial" title="Instalação de Ar Condicionado Split e Multi Split em SP" icon={<Zap />} imageUrl="/images/instalacao.png" imageAlt="Técnico realizando instalação de ar condicionado split em apartamento em São Paulo">
       <p>A New Clima faz a <strong>instalação de ar-condicionado split</strong> em casas, apartamentos e escritórios de <strong>São Paulo e do ABC Paulista</strong>, com garantia de 1 ano por escrito na mão de obra e nota fiscal.</p>
       <div className="bg-ice border border-primary-light/20 rounded-2xl p-5 not-prose">
         <p className="font-bold text-primary mb-1">Comprou o aparelho em outra loja?</p>
